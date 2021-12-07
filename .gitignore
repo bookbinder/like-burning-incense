@@ -30,5 +30,6 @@
 !*.tex
 !*.lytex
 !*.ly
+!*.ily
 !*.vim
 !*.xlsx

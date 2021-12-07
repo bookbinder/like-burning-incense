@@ -1,0 +1,56 @@
+\version "2.18.2"
+
+divisioMinima = {
+    \bar ""
+    \once \override BreathingSign.stencil = #ly:breathing-sign::divisio-minima
+    \once \override BreathingSign.Y-offset = #0
+    \breathe
+}
+
+dm = {
+    \bar ""
+    \once \override BreathingSign.stencil = #ly:breathing-sign::divisio-maior
+    \once \override BreathingSign.Y-offset = #0
+    \breathe
+}
+divisioMaxima = {
+    \bar ""
+    \once \override BreathingSign.stencil = #ly:breathing-sign::divisio-maxima
+    \once \override BreathingSign.Y-offset = #0
+    \breathe
+}
+
+fi = { \bar "||" }
+ll = { \once \override LyricText.self-alignment-X = #LEFT }
+sm = { \set melismaBusyProperties = #'() }
+usm = { \unset melismaBusyProperties }
+
+global = {
+    \key aes \major
+    \cadenzaOn
+    \set tieWaitForNote = ##t
+    \autoBeamOff
+    %\hide Staff.Stem
+}
+
+sopranoOneFlex = { \afterGrace aes'\breve^"A†" f'4 \breathe \bar "" aes'\breve bes'8 aes' 4 \bar "|" aes'\breve f'8 ees'4 \bar "||"  }
+sopranoOne = { aes'\breve^"A" bes'8 aes' 4 \bar "|" aes'\breve f'8 ees'4 \bar "||" }
+sopranoTwoFlex = { \afterGrace aes'\breve^"B†" f'4 \breathe  \bar "" aes'\breve bes'8 aes' 4 \bar "|" aes'\breve f'8 ees'4 \bar "||" }
+sopranoTwo = { aes'\breve^"B" bes'8 aes' 4 \bar "|" aes'\breve f'8 ees'4 \bar "||" }
+
+altoOneFlex = { \afterGrace ees'\breve des'4 ees'\breve~ s8 ees'4  des'\breve s8 bes4}
+altoOne = { ees'\breve~ s8 ees'4  des'\breve s8 bes4 }
+altoTwoFlex = { \afterGrace c'\breve des'4 c'\breve s8 f'4 des'\breve s8 bes4 }
+altoTwo = { c'\breve s8 f'4 des'\breve s8 bes4 }
+
+tenorOneFlex = { \afterGrace c'\breve bes4 \breathe c'\breve s8 aes4 \bar "|" f\breve s8 g4 \bar "||"  }
+tenorOne = { c'\breve s8 aes4 \bar "|" f\breve s8 g4 \bar "||" }
+tenorTwoFlex = { \afterGrace aes\breve bes4 \breathe aes\breve s8 aes4 \bar "|" aes\breve s8 g4 \bar "||" }
+tenorTwo = { aes\breve s8 aes4 \bar "|" aes\breve s8 g4 \bar "||" }
+
+bassOneFlex = { aes\breve aes\breve s8 c4 des\breve s8 ees4 }
+bassOne = { f\breve s8 c4 des\breve s8 ees4 }
+bassTwoFlex = { \afterGrace f\breve~ f4~ f\breve s8 des4 bes,\breve s8 ees4 }
+bassTwo = { f\breve s8 des4 bes,\breve s8 ees4 }
+
+
