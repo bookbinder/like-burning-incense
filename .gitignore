@@ -1,9 +1,9 @@
+# LIKE BURNING INCENSE
 # Ignore everything
 *
 
 # Whitelist the following directories and all their subdirectories (but files remain ignored)
 # You must whitelist the root directory first, THEN all the subdirectories
-# !/
 !/week1/
 !/week1/**/
 !/week2/
@@ -19,6 +19,9 @@
 !/skel/
 !/skel/**/
 
+# But ignore the out directories
+*out/
+
 # Whitelist files with these extensions in the directories above
 !*.md
 !*.txt
@@ -29,10 +32,3 @@
 !*.ly
 !*.vim
 !*.xlsx
-
-# Whitelist other dot files
-!.gitignore
-
-# Whitelist everything in this directory because its files have no extensions
-
-# Re-ignore certain files that were whitelisted with the extensions above
