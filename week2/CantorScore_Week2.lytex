@@ -1,0 +1,271 @@
+\input{../CantorPreamble.lytex}
+
+\chapter{Week 2}
+
+
+\section{Sunday Vespers 1}
+
+\subsection{Ps 119:105--112 (XIV: Nun)}
+
+\lilypondfile[line-width=4.5in]{B0-Vespers-1-Ant-Cantor.ly}
+
+\subsection{Ps 16}
+
+\lilypondfile[line-width=4.5in]{B0-Vespers-2-Ant-Cantor.ly}
+
+\subsection{Phil 2:6--11}
+
+\lilypondfile[line-width=4.5in]{B0-Vespers-3-Ant-Cantor.ly}
+
+\subsection{Magnificat}
+
+\lilypondfile[line-width=4.5in]{B0-Vespers-Mag-Ant-Cantor.ly}
+
+
+\section{Sunday Lauds}
+
+\subsection{Ps 118}
+
+\lilypondfile[line-width=4.5in]{B1-Lauds-1-Ant-Cantor.ly}
+
+\subsection{Dan 3:52--57}
+
+\lilypondfile[line-width=4.5in]{B1-Lauds-2-Ant-Cantor.ly}
+
+\subsection{Ps 150}
+
+\lilypondfile[line-width=4.5in]{B1-Lauds-3-Ant-Cantor.ly}
+
+\subsection{Benedictus}
+
+\lilypondfile[line-width=4.5in]{B1-Lauds-Ben-Ant-Cantor.ly}
+
+
+\section{Sunday Vespers 2}
+
+\subsection{Ps 110:1--5, 7}
+
+\lilypondfile[line-width=4.5in]{B1-Vespers-1-Ant-Cantor.ly}
+
+\subsection{Ps 115}
+
+\lilypondfile[line-width=4.5in]{B1-Vespers-2-Ant-Cantor.ly}
+
+\subsection{Rev 19:1--7}
+
+\lilypondfile[line-width=4.5in]{B1-Vespers-3-Ant-Cantor.ly}
+
+\subsection{Magnificat}
+
+\lilypondfile[line-width=4.5in]{B1-Vespers-Mag-Ant-Cantor.ly}
+
+
+\section{Monday Lauds}
+
+\subsection{Ps 42}
+
+\lilypondfile[line-width=4.5in]{B2-Lauds-1-Ant-Cantor.ly}
+
+\subsection{Sirach 36:1--5, 10--13}
+
+\lilypondfile[line-width=4.5in]{B2-Lauds-2-Ant-Cantor.ly}
+
+\subsection{Ps 19:2--7}
+
+\lilypondfile[line-width=4.5in]{B2-Lauds-3-Ant-Cantor.ly}
+
+\subsection{Benedictus}
+
+\lilypondfile[line-width=4.5in]{B2-Lauds-Ben-Ant-Cantor.ly}
+
+
+\section{Monday Vespers}
+
+\subsection{Ps 45:2--10}
+
+\lilypondfile[line-width=4.5in]{B2-Vespers-1-Ant-Cantor.ly}
+
+\subsection{Ps 45:11--18}
+
+\lilypondfile[line-width=4.5in]{B2-Vespers-2-Ant-Cantor.ly}
+
+\subsection{Eph 1:3--10}
+
+\lilypondfile[line-width=4.5in]{B2-Vespers-3-Ant-Cantor.ly}
+
+\subsection{Magnificat}
+
+\lilypondfile[line-width=4.5in]{B2-Vespers-Mag-Ant-Cantor.ly}
+
+
+\section{Tuesday Lauds}
+
+\subsection{Ps 43}
+
+\lilypondfile[line-width=4.5in]{B3-Lauds-1-Ant-Cantor.ly}
+
+\subsection{Isa 38:10--14, 17--20}
+
+\lilypondfile[line-width=4.5in]{B3-Lauds-2-Ant-Cantor.ly}
+
+\subsection{Ps 65}
+
+\lilypondfile[line-width=4.5in]{B3-Lauds-3-Ant-Cantor.ly}
+
+\subsection{Benedictus}
+
+\lilypondfile[line-width=4.5in]{B3-Lauds-Ben-Ant-Cantor.ly}
+
+
+\section{Tuesday Vespers}
+
+\subsection{Ps 49:2--13}
+
+\lilypondfile[line-width=4.5in]{B3-Vespers-1-Ant-Cantor.ly}
+
+\subsection{Ps 49:14--21}
+
+\lilypondfile[line-width=4.5in]{B3-Vespers-2-Ant-Cantor.ly}
+
+\subsection{Rev 4:11; 5:9, 10, 12}
+
+\lilypondfile[line-width=4.5in]{B3-Vespers-3-Ant-Cantor.ly}
+
+\subsection{Magnificat}
+
+\lilypondfile[line-width=4.5in]{B3-Vespers-Mag-Ant-Cantor.ly}
+
+
+\section{Wednesday Lauds}
+
+\subsection{Ps 77}
+
+\lilypondfile[line-width=4.5in]{B4-Lauds-1-Ant-Cantor.ly}
+
+\subsection{1 Sam 2:1--10}
+
+\lilypondfile[line-width=4.5in]{B4-Lauds-2-Ant-Cantor.ly}
+
+\subsection{Ps 97}
+
+\lilypondfile[line-width=4.5in]{B4-Lauds-3-Ant-Cantor.ly}
+
+\subsection{Benedictus}
+
+\lilypondfile[line-width=4.5in]{B4-Lauds-Ben-Ant-Cantor.ly}
+
+
+\section{Wednesday Vespers}
+
+\subsection{Ps 62}
+
+\lilypondfile[line-width=4.5in]{B4-Vespers-1-Ant-Cantor.ly}
+
+\subsection{Ps 67}
+
+\lilypondfile[line-width=4.5in]{B4-Vespers-2-Ant-Cantor.ly}
+
+\subsection{Col 1:12--20}
+
+\lilypondfile[line-width=4.5in]{B4-Vespers-3-Ant-Cantor.ly}
+
+\subsection{Magnificat}
+
+\lilypondfile[line-width=4.5in]{B4-Vespers-Mag-Ant-Cantor.ly}
+
+
+\section{Thursday Lauds}
+
+\subsection{Ps 80}
+
+\lilypondfile[line-width=4.5in]{B5-Lauds-1-Ant-Cantor.ly}
+
+\subsection{Isa 12:1--6}
+
+\lilypondfile[line-width=4.5in]{B5-Lauds-2-Ant-Cantor.ly}
+
+\subsection{Ps 81}
+
+\lilypondfile[line-width=4.5in]{B5-Lauds-3-Ant-Cantor.ly}
+
+\subsection{Benedictus}
+
+\lilypondfile[line-width=4.5in]{B5-Lauds-Ben-Ant-Cantor.ly}
+
+
+\section{Thursday Vespers}
+
+\subsection{Ps 72:2--11}
+
+\lilypondfile[line-width=4.5in]{B5-Vespers-1-Ant-Cantor.ly}
+
+\subsection{Ps 72:12--19}
+
+\lilypondfile[line-width=4.5in]{B5-Vespers-2-Ant-Cantor.ly}
+
+\subsection{Rev 11:17--18; 12:10b--12a}
+
+\lilypondfile[line-width=4.5in]{B5-Vespers-3-Ant-Cantor.ly}
+
+\subsection{Magnificat}
+
+\lilypondfile[line-width=4.5in]{B5-Vespers-Mag-Ant-Cantor.ly}
+
+
+\section{Friday Lauds}
+
+\subsection{Ps 51}
+
+\lilypondfile[line-width=4.5in]{B6-Lauds-1-Ant-Cantor.ly}
+
+\subsection{Hab 3:2--4, 13a, 15--19}
+
+\lilypondfile[line-width=4.5in]{B6-Lauds-2-Ant-Cantor.ly}
+
+\subsection{Ps 147:12--20}
+
+\lilypondfile[line-width=4.5in]{B6-Lauds-3-Ant-Cantor.ly}
+
+\subsection{Benedictus}
+
+\lilypondfile[line-width=4.5in]{B6-Lauds-Ben-Ant-Cantor.ly}
+
+
+\section{Friday Vespers}
+
+\subsection{Ps 116:1--9}
+
+\lilypondfile[line-width=4.5in]{B6-Vespers-1-Ant-Cantor.ly}
+
+\subsection{Ps 121}
+
+\lilypondfile[line-width=4.5in]{B6-Vespers-2-Ant-Cantor.ly}
+
+\subsection{Rev 15:3--4}
+
+\lilypondfile[line-width=4.5in]{B6-Vespers-3-Ant-Cantor.ly}
+
+\subsection{Magnificat}
+
+\lilypondfile[line-width=4.5in]{B6-Vespers-Mag-Ant-Cantor.ly}
+
+
+\section{Saturday Lauds}
+
+\subsection{Ps 92}
+
+\lilypondfile[line-width=4.5in]{B7-Lauds-1-Ant-Cantor.ly}
+
+\subsection{Deut 32:1--12}
+
+\lilypondfile[line-width=4.5in]{B7-Lauds-2-Ant-Cantor.ly}
+
+\subsection{Ps 8}
+
+\lilypondfile[line-width=4.5in]{B7-Lauds-3-Ant-Cantor.ly}
+
+\subsection{Benedictus}
+
+\lilypondfile[line-width=4.5in]{B7-Lauds-Ben-Ant-Cantor.ly}
+
+\end{document}
