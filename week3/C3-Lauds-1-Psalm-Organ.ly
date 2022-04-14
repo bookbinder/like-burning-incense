@@ -1,16 +1,16 @@
 \version "2.20.0"
 \include "../lbi_defs.ily"
 
-\include "../psalmtones/notes/09-notes.ily"
+\include "../psalmtones/notes/"
 psalmtone = # "09"
 
 \header {
-    title = "Psalm 96"
-    subtitle = "The Lord, king and judge of the world"
+    title = "Psalm 85"
+    subtitle = "Our salvation is near"
     %subsubtitle = "Subsubtitle"
 }
 
-\include "../psalmtexts/Ps_096/33/Ps_096.ily"
+\include "../psalmtexts/"
 
 sopMusic = {
     \global

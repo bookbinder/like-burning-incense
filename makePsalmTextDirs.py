@@ -1,6 +1,79 @@
 import fileinput
 from pathlib import Path
 
+psalmSkel = r"""\
+\version "2.20.0"
+\include "../lbi_defs.ily"
+
+\include "../psalmtones/notes/"
+psalmtone = # ""
+
+\header {
+    title = ""
+    subtitle = ""
+    %subsubtitle = "Subsubtitle"
+}
+
+\include "../psalmtexts/"
+
+sopMusic = {
+    \global
+    \voiceOne
+    \sopranoOne
+}
+altoMusic = {
+    \global
+    \voiceTwo
+    \altoOne
+}
+tenorMusic = {
+    \global
+    \voiceOne
+    \tenorOne
+}
+bassMusic = {
+    \global
+    \voiceTwo
+    \bassOne
+}
+
+\score {
+    <<
+        \transpose a a {
+            \new ChoirStaff \with { instrumentName = \psalmtone }
+            <<
+                \new Staff ="up"
+                   <<
+                        \clef treble
+                        \accidentalStyle forget
+                        \new Voice = "Soprano" \sopMusic
+                        \new Voice = "Alto" \altoMusic
+                        \new Lyrics \lyricsto Soprano \text
+                        \new Lyrics \lyricsto Soprano \textB
+                        %\new Lyrics \lyricsto Soprano \textC
+                    >>
+                \new Staff ="down"
+                    <<
+                        \clef bass
+                        \accidentalStyle forget
+                        \new Voice = "Tenor" \tenorMusic
+                        \new Voice = "Bass" \bassMusic
+                    >>
+            >>
+        }
+    >>
+
+    \layout {
+        \context {
+            \Staff
+            \remove Time_signature_engraver
+        }
+
+
+    }
+
+}"""
+
 
 psalmTitles = (
     "1_Pet_2_21-24", "1_Sam_2_1-10", "Col_1_12-20", "Dan_3_26,_27,_29,_34-41",
@@ -105,8 +178,15 @@ def adjustFiles():
             op_line = ip_line.replace('%% ', '%')
             print(op_line, end='')
 
+def makePsalmFiles():
+    path = Path('/home/ryan/sheetmusic/lbi/week3/')
+    toChange = list(path.glob('C*Psalm*.ly'))
+    for file in toChange:
+        if file.stat().st_size == 0:
+            file.write_text(psalmSkel)
+
 def main():
-    touchTexts()
+    makePsalmFiles()
     return
 
 if __name__ == "__main__":

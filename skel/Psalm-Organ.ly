@@ -5,8 +5,8 @@
 psalmtone = # ""
 
 \header {
-    title = "Psalm 51"
-    subtitle = "O God, have mercy on me"
+    title = ""
+    subtitle = ""
     %subsubtitle = "Subsubtitle"
 }
 
@@ -69,3 +69,4 @@ bassMusic = {
     }
 
 }
+

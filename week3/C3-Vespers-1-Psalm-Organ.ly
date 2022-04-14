@@ -1,16 +1,16 @@
 \version "2.20.0"
 \include "../lbi_defs.ily"
 
-\include "../psalmtones/notes/38-notes.ily"
-psalmtone = # "38"
+\include "../psalmtones/notes/"
+psalmtone = # ""
 
 \header {
-    title = "Psalm 123"
-    subtitle = "The Lord, unfailing hope of his people"
+    title = "Psalm 125"
+    subtitle = "The Lord, guardian of his people"
     %subsubtitle = "Subsubtitle"
 }
 
-\include "../psalmtexts/Ps_123/32/Ps_123.ily"
+\include "../psalmtexts/"
 
 sopMusic = {
     \global
