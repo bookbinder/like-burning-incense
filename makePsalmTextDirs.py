@@ -40,6 +40,7 @@ def makeBeatDirs(beats):
 def touchTexts():
     path = Path('/home/ryan/sheetmusic/lbi/psalmtexts')
     for dir in path.iterdir():
+        Path(dir, f'{dir.stem}.txt').unlink(missing_ok=True)
         Path(dir, f'{dir.stem}.txt').touch()
 
 def touchTexts2():
@@ -105,7 +106,7 @@ def adjustFiles():
             print(op_line, end='')
 
 def main():
-    renameToTxt()
+    touchTexts()
     return
 
 if __name__ == "__main__":
