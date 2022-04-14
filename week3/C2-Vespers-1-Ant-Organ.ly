@@ -2,7 +2,7 @@
 \include "../lbi_defs.ily"
 \include "notes/C2-Vespers-1-Ant.ily"
 
-\score {    
+\score {
     <<
         \transpose e e {
             \new ChoirStaff \with { instrumentName = \markup { 
