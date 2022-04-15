@@ -8,6 +8,7 @@
 tfirst = a
 tsecond = a
 
+% -----shouldn't need to change what's below------
 
 % notes for the psalm tone:
 \include #(string-append "../psalmtones/notes/" psalmtone "-notes.ily")
