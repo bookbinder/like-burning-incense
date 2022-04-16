@@ -96,14 +96,13 @@ different files. More information on the directory structure:
 - `psalmtones` directory: contains the psalm tones. The root portion of the
   folder contains the organ scores for the tones. The notes for the tones are
   in the `notes` subdirectory. The `AltogetherNew` lytex files produce
-  printouts of all the tones. These printouts are found in the `out`
-  subdirectory. There is a pdf of psalm tones organized by psalm-tone number
-  (something I assigned), and there is a pdf of the psalm tones organized by
-  the structure of the tone. Thus all the tones that have 3 beats in the first
-  line and  3 beats in the second line are grouped together. This is helpful
-  because the antiphons in the original project are followed by an unreferenced
-  psalm tone. It is easier to find the right psalm tone when you know you are
-  looking for, let’s say, a tone with 3 beats in both lines.
+  printouts of all the tones.  There is a pdf of psalm tones organized by
+  psalm-tone number (something I assigned), and there is a pdf of the psalm
+  tones organized by the structure of the tone. Thus all the tones that have 3
+  beats in the first line and  3 beats in the second line are grouped together.
+  This is helpful because the antiphons in the original project are followed by
+  an unreferenced psalm tone. It is easier to find the right psalm tone when
+  you know you are looking for--say, a tone with 3 beats in both lines.
 - the `skel` director contains “skeleton” files, or templates when creating new
   antiphon or psalm files
 - `week1` contains Week 1 of the psalter, week2 contains Week 2, etc. There is
@@ -139,8 +138,8 @@ parishes or small groups that would like to chant the psalms on certain
 occassions.
 
 Apparently a new translation of the Liturgy of the Hours will be coming out in
-several years’ time. At that point I would need to alter the individual files
-in the repository with the new translation. The musical accompaniment to the
-antiphons would need to be altered in places too. But the structure of the
-project would remain the same, so hopefully it won’t present too great a
-challenge.
+several years. At that point I would need to alter the individual files in the
+repository with the new translations. The musical accompaniment to the
+antiphons would need to be altered in places too. I’m not sure if I would be
+able to do that very well. But the structure of the project would remain the
+same, so hopefully it won’t present too great a challenge.
