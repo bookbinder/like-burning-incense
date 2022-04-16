@@ -119,16 +119,18 @@ structure:
 I’m a hobbyist so this is probably pretty hacky. A few things have made it
 easier. I use the editor Vim. If I want to work on, say, the first antiphon and
 psalm for Tuesday Evening Prayer, Week 3, then I need to open several files:
-organ scores for the antiphon and psalm, notes file for the antiphon, and text of
-the psalm for pointing. I wrote a function to handle that. So I enter `:Lbi
-C3-Vespers-1` and it opens the necessary files for editing.
+organ scores for the antiphon and psalm, cantor score for the antiphon, notes
+file for the antiphon, and text of the psalm for pointing. I wrote a function
+to handle that. So I enter `:Lbi C3-Vespers-1` and it opens the necessary files
+for editing.
 
 ```
 function! Lbi(office)
-    let s:antfile =  "/lbi/week3/".fnameescape(a:office)."-Ant-Organ.ly"
+    let s:antorganfile =  "/lbi/week3/".fnameescape(a:office)."-Ant-Organ.ly"
+    let s:antcantorfile =  " /lbi/week3/".fnameescape(a:office)."-Ant-Cantor.ly"
     let s:psalmfile =  " /lbi/week3/".fnameescape(a:office)."-Psalm-Organ.ly"
     let s:notesfile =  " /lbi/week3/notes/".fnameescape(a:office)."-Ant.ily"
-    execute "args ".s:antfile.s:psalmfile.s:notesfile
+    execute "args ".s:antorganfile.s:antcantorfile.s:psalmfile.s:notesfile
 endfunction
 command! -nargs=1 Lbi call Lbi(<f-args>)
 ```
@@ -136,6 +138,8 @@ command! -nargs=1 Lbi call Lbi(<f-args>)
 # To do
 
 - finish the 4-week psalter
+- add harmonization for a few psalm tones (see `/pdf/psalmtonesByNumber` (or
+  ByStructure). The corresponding `.ily` files are found in `psalmtones/notes`
 - proper of seasons (with directory structure)
 - proper of saints (with directory structure)
 
