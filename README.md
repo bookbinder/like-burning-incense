@@ -141,10 +141,12 @@ command! -nargs=1 Lbi call Lbi(<f-args>)
 If you are interested in helping, please let me know. This is a resource that
 could be valuable for many religious communities. Some communities are getting
 smaller and may not have a good keyboardist. By writing out all the
-accompaniments, someone with only a basic knowledge of the keyboard would be
-able to accompany. Everything can be sight-read. It can also be valuable for
-parishes or small groups that would like to chant the psalms on certain
-occassions.
+accompaniments (with the computer automating a lot of that), someone with only
+a basic knowledge of the keyboard would be able to accompany. Everything could be
+sight-read. It could also be valuable for parishes or small groups that would
+like to chant the psalms on certain occassions. Finally, you could fork this
+project and change the individual files with your own psalm tones and
+pointings, and then it would be ready for immediate building.
 
 Apparently a new translation of the Liturgy of the Hours will be coming out in
 several years. At that point I would need to alter the individual files in the
