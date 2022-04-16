@@ -77,6 +77,8 @@ and for the psalm, the notes are found in the `psalmtones/notes` directory.
 Separating the notes from the scores allows the notes to be imported into
 different files. More information on the directory structure:
 
+- the `pdf` directory contains pdfs ready to be printed. There are organ scores
+  and cantor scores.
 - `psalms` directory: contains folders of all the psalms and canticles by
   title. Each folder contains a `.txt` file of the text of the psalm and an
   `.ily` file containing the organ score. Because all the LBI psalm tones are
