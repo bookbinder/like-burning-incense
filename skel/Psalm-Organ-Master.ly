@@ -1,9 +1,9 @@
 \version "2.20.0"
 \include "../lbi_defs.ily"
 
-#(define psalmnum "Ps_084")
-#(define psalmtone "48")
-#(define psalmtonestruct "43")
+#(define psalmnum "")
+#(define psalmtone "")
+#(define psalmtonestruct "")
 % transposition interval for psalm tone:
 tfirst = a
 tsecond = a

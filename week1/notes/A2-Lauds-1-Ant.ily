@@ -7,8 +7,8 @@ psalmtone = "23"
 % transposition interval for  the corresponding psalm tone
 	% to match the key signature of this antiphon. For
 	% use in cantor (antiphon) and organ (psalm) scores:
-frompitch = a
-topitch = a
+tfirst = a
+tsecond = a
 
 
 text = \lyricmode {

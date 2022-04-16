@@ -1,13 +1,20 @@
 \version "2.20.0"
 \include "../lbi_defs.ily"
 
-psalmtone = # "9"
-\include "../psalmtones/notes/09-notes.ily"
-% psalm/canticle text:
-\include "../psalmtexts/Ps_096/33/Ps_096.ily"
-
-% transposition interval:
+#(define psalmnum "Ps_096")
+#(define psalmtone "09")
+#(define psalmtonestruct "33")
+% transposition interval for psalm tone:
 tfirst = a
 tsecond = gis
 
-\include "../psalms/Ps_096/Ps_096.ily"
+% -----shouldn't need to change what's below------
+
+% notes for the psalm tone:
+\include #(string-append "../psalmtones/notes/" psalmtone "-notes.ily")
+
+% psalm/canticle text
+\include #(string-append "../psalms/" psalmnum "/" psalmtonestruct "/" psalmnum ".ily")
+
+% psalm/canticle score
+\include #(string-append "../psalms/" psalmnum "/" psalmnum ".ily")
