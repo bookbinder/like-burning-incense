@@ -15,7 +15,7 @@
 !/week4/
 !/week4/**/
 !/pdf/
-!/pdf/**/
+!/pdf/**/*.pdf
 !/psalmtones/
 !/psalmtones/**/
 !/psalmtexts/
@@ -31,7 +31,6 @@
 # Whitelist files with these extensions in the directories above
 !Makefile
 !*.md
-!/pdf/*.pdf
 !*.txt
 !*.py
 !*.sh
