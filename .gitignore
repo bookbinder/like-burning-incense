@@ -26,6 +26,14 @@
 !/scripts/**/
 !/skel/
 !/skel/**/
+!/advent/
+!/advent/**/
+!/lent/
+!/lent/**/
+!/easter/
+!/easter/**/
+!/properOfSaints/
+!/properOfSaints/**/
 
 # But ignore the out directories
 *out/

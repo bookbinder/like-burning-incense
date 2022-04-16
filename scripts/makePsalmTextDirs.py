@@ -75,7 +75,7 @@ bassMusic = {
 }"""
 
 
-psalmTitles = [z.strip() for z in open('psalmnums.txt')]
+# psalmTitles = [z.strip() for z in open('psalmnums.txt')]
 
 beats = ('34', '43', '44', '33', '42', '32', '23')
 
@@ -172,8 +172,18 @@ def makePsalmFiles():
         if file.stat().st_size == 0:
             file.write_text(psalmSkel)
 
+def makeProperOfSaints():
+    saints = [z.strip() for z in
+            open('/home/ryan/sheetmusic/lbi/Proper-of-Saints.md')
+            if '#' not in z
+            if not z == ' ']
+    p = Path('/home/ryan/sheetmusic/lbi/properOfSaints/')
+    for saint in saints:
+        newp = p.joinpath(saint)
+        newp.mkdir(exist_ok=True)
+
 def main():
-    makeTextDirs(psalmTitles)
+    makeProperOfSaints()
     return
 
 if __name__ == "__main__":
