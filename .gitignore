@@ -31,7 +31,7 @@
 # Whitelist files with these extensions in the directories above
 !Makefile
 !*.md
-!*.pdf
+!/pdf/*.pdf
 !*.txt
 !*.py
 !*.sh
