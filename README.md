@@ -133,7 +133,10 @@ command! -nargs=1 Lbi call Lbi(<f-args>)
 - proper of saints (with directory structure)
 
 If you are interested in helping, please let me know. This is a resource that
-could be valuable for many religious communities. It can also be valuable for
+could be valuable for many religious communities. Some communities are getting
+smaller and may not have a good keyboardist. By writing out all the
+accompaniments, someone with only a basic knowledge of the keyboard would be
+able to accompany. Everything can be sight-read. It can also be valuable for
 parishes or small groups that would like to chant the psalms on certain
 occassions.
 
