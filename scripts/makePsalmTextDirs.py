@@ -182,8 +182,15 @@ def makeProperOfSaints():
         newp = p.joinpath(saint)
         newp.mkdir(exist_ok=True)
 
+def addFilesToProperOfSaints():
+    p = Path('/home/ryan/sheetmusic/lbi/properOfSaints')
+    for dir in p.iterdir():
+        newfile = p.joinpath(dir, "readme.md")
+        # print(newfile)
+        newfile.touch()
+
 def main():
-    makeProperOfSaints()
+    addFilesToProperOfSaints()
     return
 
 if __name__ == "__main__":
