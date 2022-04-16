@@ -76,7 +76,7 @@ the antiphon. And the file `A2-Vespers-1-Psalm-Organ.ly` would contain the
 organ score for the psalm attached to the antiphon. These files just contain
 the scores. The notes are imported. For the antiphon, the notes are found in
 the `notes` subdirectory, and for the psalm, the notes are found in the
-`psalmtones/notes` directory. Separating the notes from the scores allows the
+`/psalmtones/notes` directory. Separating the notes from the scores allows the
 notes to be imported into different files. More information on the directory
 structure:
 
