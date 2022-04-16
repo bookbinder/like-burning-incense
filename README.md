@@ -139,10 +139,11 @@ command! -nargs=1 Lbi call Lbi(<f-args>)
 # To do
 
 - finish the 4-week psalter
-- add harmonization for a few psalm tones (see `/pdf/psalmtonesByNumber` (or
-  ByStructure). The corresponding `.ily` files are found in `psalmtones/notes`
-- proper of seasons (with directory structure)
-- proper of saints (with directory structure)
+- find or create psalm tone harmonizations for tones 57 and 58. For the pdf,
+  see `/pdf` directory. For the corresponding notes files, see
+  `/psalmtones/notes`
+- proper of seasons
+- proper of saints
 
 If you are interested in helping, please let me know. This is a resource that
 could be valuable for many religious communities. Some communities are getting
