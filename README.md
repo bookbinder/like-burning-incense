@@ -112,7 +112,7 @@ different files. More information on the directory structure:
 I’m a hobbyist so this is probably pretty hacky. A few things have made it
 easier. I use the editor Vim. If I want to work on, say, the first antiphon and
 psalm for Tuesday Evening Prayer, Week 3, then I need to open several files.
-I wrote a function to handle that. So I enter `:LBI C3-Vespers-1` and it opens
+I wrote a function to handle that. So I enter `:Lbi C3-Vespers-1` and it opens
 the necessary files for editing.
 
 ```
@@ -125,6 +125,20 @@ endfunction
 command! -nargs=1 Lbi call Lbi(<f-args>)
 ```
 
-# How to help with this project
+# To do
 
-Please contact me.
+- finish the 4-week psalter
+- proper of seasons (with directory structure)
+- proper of saints (with directory structure)
+
+If you are interested in helping, please let me know. This is a resource that
+could be valuable for many religious communities. It can also be valuable for
+parishes or small groups that would like to chant the psalms on certain
+occassions.
+
+Apparently a new translation of the Liturgy of the Hours will be coming out in
+several years’ time. At that point I would need to alter the individual files
+in the repository with the new translation. The musical accompaniment to the
+antiphons would need to be altered in places too. But the structure of the
+project would remain the same, so hopefully it won’t present too great a
+challenge.

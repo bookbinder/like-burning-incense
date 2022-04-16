@@ -1,4 +1,0 @@
-~/sheetmusic/lbi/week3/C3-Vespers-1-Ant-Organ.ly
-~/sheetmusic/lbi/week3/notes/C3-Vespers-1-Ant.ily
-~/sheetmusic/lbi/week3/C3-Lauds-1-Psalm-Organ.ly
-~/sheetmusic/lbi/psalmtexts/Ps_008/23/Ps_008.ily
