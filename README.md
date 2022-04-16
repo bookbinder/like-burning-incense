@@ -62,22 +62,23 @@ understand our situation in this regard.
 # Structure of the Repository
 
 Files for this repository were created using Lilypond and LaTeX. Given the file
-name `A2-Vespers-1-Ant-Organ.ly`, the “A” stands for week 1 of the Psalter (B, C, and
-D would be weeks 2, 3, and 4). The “2” following “A” stands for the day, where Day 1
-is Sunday, Day 2 is Monday, etc., through Day 7, Saturday. Day 0 is the first
-Vespers of the week, or Saturday night. The next part of the name indicates
-either Lauds or Vespers. The “1” following Lauds or Vespers can be either “1”,
-“2”, or “3”, depending on which of the three psalms/canticles for that office
-is found in the file. Next is either “Ant” or “Psalm”, and finally “Organ” or
-“Cantor”. So the file above contains the organ score for the first antiphon of
-Monday Evening Prayer, Week 1. The file `A2-Vespers-1-Ant-Cantor.ly` would
-contain the cantor’s score for the antiphon. And the file
-`A2-Vespers-1-Psalm-Organ.ly` would contain the organ score for the psalm
-attached to the antiphon. These files just contain the scores. The notes are
-imported. For the antiphon, the notes are found in the `notes` subdirectory,
-and for the psalm, the notes are found in the `psalmtones/notes` directory.
-Separating the notes from the scores allows the notes to be imported into
-different files. More information on the directory structure:
+name `A2-Vespers-1-Ant-Organ.ly`, the “A” stands for week 1 of the Psalter (B,
+C, and D would be weeks 2, 3, and 4). The “2” following “A” stands for the day,
+where Day 1 is Sunday, Day 2 is Monday, etc., through Day 7, Saturday. Day 0 is
+the first Vespers of the week, or Saturday night. The next part of the name
+indicates either Lauds or Vespers. The “1” following Lauds or Vespers can be
+either “1”, “2”, “3”, “Ben” (Benedictus), or “Mag” (Magnificat), depending on
+which of the four psalms/canticles for that office is found in the file. Next is
+either “Ant” or “Psalm”, and finally “Organ” or “Cantor”. So the file above
+contains the organ score for the first antiphon of Monday Evening Prayer, Week
+1. The file `A2-Vespers-1-Ant-Cantor.ly` would contain the cantor’s score for
+the antiphon. And the file `A2-Vespers-1-Psalm-Organ.ly` would contain the
+organ score for the psalm attached to the antiphon. These files just contain
+the scores. The notes are imported. For the antiphon, the notes are found in
+the `notes` subdirectory, and for the psalm, the notes are found in the
+`psalmtones/notes` directory. Separating the notes from the scores allows the
+notes to be imported into different files. More information on the directory
+structure:
 
 - the `pdf` directory contains pdfs ready to be printed. There are organ scores
   and cantor scores.
