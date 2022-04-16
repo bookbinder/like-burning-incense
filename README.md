@@ -112,6 +112,8 @@ structure:
 - `week1` contains Week 1 of the psalter, week2 contains Week 2, etc. There is
   also a lytex file to build the score for the whole week using
   `lilypond-book`.
+- the folders `lent`, `easter`, `advent`, and `properOfSaints` contain the
+  offices for those times
 - the root directory contains a `Makefile` to facilitate building the project.
   It also has `lbi_defs.ily` which contains project-wide default settings.
 
