@@ -15,7 +15,7 @@
 !/week4/
 !/week4/**/
 !/pdf/
-!/pdf/**/*.pdf
+!/pdf/**/
 !/psalmtones/
 !/psalmtones/**/
 !/psalmtexts/
@@ -40,3 +40,4 @@
 !*.ily
 !*.vim
 !*.xlsx
+!/pdf/*.pdf
