@@ -68,10 +68,10 @@ where Day 1 is Sunday, Day 2 is Monday, etc., through Day 7, Saturday. Day 0 is
 the first Vespers of the week, or Saturday night. The next part of the name
 indicates either Lauds or Vespers. The “1” following Lauds or Vespers can be
 either “1”, “2”, “3”, “Ben” (Benedictus), or “Mag” (Magnificat), depending on
-which of the four psalms/canticles for that office is found in the file. Next is
-either “Ant” or “Psalm”, and finally “Organ” or “Cantor”. So the file above
+which of the four psalms/canticles for that office is found in the file. Next
+is either “Ant” or “Psalm”, and finally “Organ” or “Cantor”. So the file above
 contains the organ score for the first antiphon of Monday Evening Prayer, Week
-1. The file `A2-Vespers-1-Ant-Cantor.ly` would contain the cantor’s score for
+One. The file `A2-Vespers-1-Ant-Cantor.ly` would contain the cantor’s score for
 the antiphon. And the file `A2-Vespers-1-Psalm-Organ.ly` would contain the
 organ score for the psalm attached to the antiphon. These files just contain
 the scores. The notes are imported. For the antiphon, the notes are found in
