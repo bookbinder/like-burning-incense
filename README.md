@@ -102,11 +102,27 @@ different files. More information on the directory structure:
   looking for, let’s say, a tone with 3 beats in both lines.
 - the `skel` director contains “skeleton” files, or templates when creating new
   antiphon or psalm files
-- `week1` contains Week 1 of the psalter, week2 contains Week 2, etc.
-- the 
+- `week1` contains Week 1 of the psalter, week2 contains Week 2, etc. There is
+  also a lytex file to build the score for the whole week.
+- the root directory contains a `Makefile` to facilitate building the project.
+  It also has `lbi_defs.ily` which contains project-wide default settings.
 
 I’m a hobbyist so this is probably pretty hacky. A few things have made it
 easier. I use the editor Vim. If I want to work on, say, the first antiphon and
 psalm for Tuesday Evening Prayer, Week 3, then I need to open several files.
 I wrote a function to handle that. So I enter `:LBI C3-Vespers-1` and it opens
 the necessary files for editing.
+
+```
+function! Lbi(office)
+    let s:antfile =  "/lbi/week3/".fnameescape(a:office)."-Ant-Organ.ly"
+    let s:psalmfile =  " /lbi/week3/".fnameescape(a:office)."-Psalm-Organ.ly"
+    let s:notesfile =  " /lbi/week3/notes/".fnameescape(a:office)."-Ant.ily"
+    execute "args ".s:antfile.s:psalmfile.s:notesfile
+endfunction
+command! -nargs=1 Lbi call Lbi(<f-args>)
+```
+
+# How to help with this project
+
+Please contact me.
