@@ -40,4 +40,4 @@
 !*.ily
 !*.vim
 !*.xlsx
-!/pdf/*.pdf
+!/pdf/**/*.pdf
