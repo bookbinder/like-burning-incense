@@ -27,6 +27,7 @@
 *out/
 
 # Whitelist files with these extensions in the directories above
+!Makefile
 !*.md
 !*.txt
 !*.py

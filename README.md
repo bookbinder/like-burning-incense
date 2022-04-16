@@ -59,7 +59,54 @@ understand our situation in this regard.
 
 # Structure of the Repository
 
-Files for this repository were created using Lilypond and LaTeX. 
+Files for this repository were created using Lilypond and LaTeX. Given the file
+name `A2-Vespers-1-Ant-Organ.ly`, the “A” stands for week 1 of the Psalter (B, C, and
+D would be weeks 2, 3, and 4). The “2” following “A” stands for the day, where Day 1
+is Sunday, Day 2 is Monday, etc., through Day 7, Saturday. Day 0 is the first
+Vespers of the week, or Saturday night. The next part of the name indicates
+either Lauds or Vespers. The “1” following Lauds or Vespers can be either “1”,
+“2”, or “3”, depending on which of the three psalms/canticles for that office
+is found in the file. Next is either “Ant” or “Psalm”, and finally “Organ” or
+“Cantor”. So the file above contains the organ score for the first antiphon of
+Monday Evening Prayer, Week 1. The file `A2-Vespers-1-Ant-Cantor.ly` would
+contain the cantor’s score for the antiphon. And the file
+`A2-Vespers-1-Psalm-Organ.ly` would contain the organ score for the psalm
+attached to the antiphon. These files just contain the scores. The notes are
+imported. For the antiphon, the notes are found in the `notes` subdirectory,
+and for the psalm, the notes are found in the `psalmtones/notes` directory.
+Separating the notes from the scores allows the notes to be imported into
+different files. More information on the directory structure:
 
 - `psalms` directory: contains folders of all the psalms and canticles by
-  title. each
+  title. Each folder contains a `.txt` file of the text of the psalm and an
+  `.ily` file containing the organ score. Because all the LBI psalm tones are
+  two lines long, the structure of the organ score is constant no matter which
+  psalm tone is being used. However, the text of the psalm needs to be pointed
+  differently depending on the psalm tone. There are seven different ways of
+  pointing the text depending on which psalm tone is being used. If the first
+  line of the psalm tone has a total of 3 beats, and the second line a title of
+  2 beats, then the pointed psalm text can be found in the `32` subfolder of
+  the given psalm. Given the different feasts and commons, any given psalm
+  could end up being pointed in different ways throughout the liturgical year,
+  since the psalm tone for the psalm depends on the antiphon.
+- `psalmtones` directory: contains the psalm tones. The root portion of the
+  folder contains the organ scores for the tones. The notes for the tones are
+  in the `notes` subdirectory. The `AltogetherNew` lytex files produce
+  printouts of all the tones. These printouts are found in the `out`
+  subdirectory. There is a pdf of psalm tones organized by psalm-tone number
+  (something I assigned), and there is a pdf of the psalm tones organized by
+  the structure of the tone. Thus all the tones that have 3 beats in the first
+  line and  3 beats in the second line are grouped together. This is helpful
+  because the antiphons in the original project are followed by an unreferenced
+  psalm tone. It is easier to find the right psalm tone when you know you are
+  looking for, let’s say, a tone with 3 beats in both lines.
+- the `skel` director contains “skeleton” files, or templates when creating new
+  antiphon or psalm files
+- `week1` contains Week 1 of the psalter, week2 contains Week 2, etc.
+- the 
+
+I’m a hobbyist so this is probably pretty hacky. A few things have made it
+easier. I use the editor Vim. If I want to work on, say, the first antiphon and
+psalm for Tuesday Evening Prayer, Week 3, then I need to open several files.
+I wrote a function to handle that. So I enter `:LBI C3-Vespers-1` and it opens
+the necessary files for editing.
