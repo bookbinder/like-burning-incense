@@ -2,7 +2,7 @@
 
 “Like Burning Incense” (LBI) is the name of an antiphonary for the Liturgy of
 the Hours (Divine Office or Breviary) created for the Monastery of the Blessed
-Sacrament, a monastery of cloistered Dominican Nuns. This repository is a
+Sacrament in Michigan. This repository is a
 partial digitization of that project. This repository contains Lauds and
 Vespers (Morning Prayer and Evening Prayer) from LBI where each antiphon and
 accompanying Psalm/Canticle is completely written out for the organist, so that
@@ -13,7 +13,9 @@ number of times, saving the need to write out each psalm accompaniment by hand.
 
 # The Original Project
 
-The original project is contained in the pdf files in this source directory.
+The original project is contained in the pdf files under
+`pdf/originalAntiphonary`.
+
 Information about the original project:
 
 Monastery of the Blessed Sacrament
