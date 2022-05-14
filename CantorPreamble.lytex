@@ -2,7 +2,7 @@
 \usepackage[papersize={5.5in,8.5in},bottom=.3in,top=.6in,inner=.3in,outer=.3in]{geometry}
 %\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage{libertine}
+\usepackage{libertineRoman}
 \sloppy
 \fancyhf{}
 \fancyhead[CE]{\bfseries\sffamily\leftmark}
@@ -26,7 +26,7 @@
 \setcounter{tocdepth}{1}
 \AtBeginDocument{\addtocontents{toc}{\protect\thispagestyle{empty}}}
 
-\newcommand{\betweenLilyPondSystem}[1]{\vspace{4mm}\linebreak} 
+\newcommand{\betweenLilyPondSystem}[1]{\vspace{0mm}\linebreak} 
 \raggedbottom
 \raggedright
 %\usepackage{fontspec}

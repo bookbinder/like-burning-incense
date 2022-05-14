@@ -2,11 +2,12 @@
 \usepackage[bottom=.7in,top=.8in,inner=.8in,outer=.5in]{geometry}
 %\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr,titlesec}
-\usepackage{libertine}
+\usepackage{libertineRoman}
 \fancyhf{}
 \fancyhead[CE]{\large\bfseries\sffamily\leftmark}
 \fancyhead[CO]{\large\bfseries\sffamily\rightmark}
 \fancyhead[LE]{\large\sffamily\thepage}
+\fancyhead[RO]{\large\sffamily\thepage}
 \renewcommand{\headrulewidth}{0pt}
 \setlength{\headsep}{25pt}
 \setlength{\footskip}{20pt}
@@ -25,6 +26,9 @@
 \AtBeginDocument{\addtocontents{toc}{\protect\thispagestyle{empty}}}
 
 \newcommand{\betweenLilyPondSystem}[1]{\vspace{4mm}\linebreak} 
+% \newcommand{\lilycantor}[1]{\newpage\lilypondfile[line-width=6.9\in]{#1}} 
+% \newcommand{\lilypsalm}[1]{\vspace{4mm}\linebreak} 
+% \newcommand{\lilypsalmsmall}[1]{\vspace{4mm}\linebreak} 
 \raggedbottom
 \raggedright
 %\usepackage{fontspec}

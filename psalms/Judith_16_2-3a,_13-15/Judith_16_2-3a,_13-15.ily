@@ -1,0 +1,96 @@
+\header {
+    psalm_title = "Canticle, Judith 16:2-3a, 13-15"
+    psalm_subtitle = "God who created the world takes care of his people"
+    %psalm_subsubtitle = "Subsubtitle"
+}
+
+sopMusic = {
+    \global
+    \voiceOne
+    \sopranoOne
+    \sopranoTwoFlex
+    \sopranoOneFlex
+    \sopranoTwo
+    \sopranoOne
+    \sopranoTwo
+    \sopranoOne
+    \sopranoTwo
+    \sopranoOne
+}
+altoMusic = {
+    \global
+    \voiceTwo
+    \altoOne
+    \altoTwoFlex
+    \altoOneFlex
+    \altoTwo
+    \altoOne
+    \altoTwo
+    \altoOne
+    \altoTwo
+    \altoOne
+} 
+tenorMusic = {
+    \global
+    \voiceOne
+    \tenorOne
+    \tenorTwoFlex
+    \tenorOneFlex
+    \tenorTwo
+    \tenorOne
+    \tenorTwo
+    \tenorOne
+    \tenorTwo
+    \tenorOne
+}
+bassMusic = {
+    \global
+    \voiceTwo
+    \bassOne
+    \bassTwoFlex
+    \bassOneFlex
+    \bassTwo
+    \bassOne
+    \bassTwo
+    \bassOne
+    \bassTwo
+    \bassOne
+}
+
+\score {        
+    <<
+        \transpose \frompitch \topitch {
+            \new ChoirStaff \with { instrumentName = \psalmtone }
+            <<
+                \new Staff ="up"
+                   <<
+                        \clef treble
+                        \accidentalStyle forget
+                        \new Voice = "Soprano" \sopMusic
+                        \new Voice = "Alto" \altoMusic
+                        \new Lyrics \lyricsto Soprano \text
+		        %\new Lyrics \lyricsto Soprano \textB
+	                %\new Lyrics \lyricsto Soprano \textC
+                    >>
+                \new Staff ="down"
+                    <<
+                        \clef bass
+                        \accidentalStyle forget
+                        \new Voice = "Tenor" \tenorMusic
+                        \new Voice = "Bass" \bassMusic
+                    >>
+            >>
+        }
+    >>
+    
+    \layout { 
+        \context { 
+            \Staff 
+            \remove Time_signature_engraver 
+        } 
+
+            
+    } 
+    
+}
+

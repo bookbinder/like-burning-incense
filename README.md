@@ -82,12 +82,13 @@ structure:
 
 - the `pdf` directory contains pdfs ready to be printed. There are organ scores
   and cantor scores. It also contains a directory of pdf files from the
-  original project.
-- `psalms` directory: contains folders of all the psalms and canticles by
-  title. Each folder contains a `.txt` file of the text of the psalm and an
-  `.ily` file containing the organ score. Because all the LBI psalm tones are
-  two lines long, the structure of the organ score is constant no matter which
-  psalm tone is being used. However, the text of the psalm needs to be pointed
+  original handwritten project.
+- `psalms` directory: contains folders of all the psalms and canticles.
+  Each folder contains a `.txt` file of the unpointed text of the psalm
+  and an `.ily` file containing the organ score. Because all the LBI psalm
+  tones are two lines long, the structure of the organ score is constant no
+  matter which psalm tone is being used. Therefore, each psalm/canticle needs
+  only one organ score. However, the text of the psalm needs to be pointed
   differently depending on the psalm tone. There are seven different ways of
   pointing the text depending on which psalm tone is being used. If the first
   line of the psalm tone has a total of 3 beats, and the second line a title of
@@ -104,16 +105,16 @@ structure:
   beats in the first line and  3 beats in the second line are grouped together.
   This is helpful because the antiphons in the original project are followed by
   an unreferenced psalm tone. It is easier to find the right psalm tone when
-  you know you are looking for--say, a tone with 3 beats in both lines.
+  you know you are looking for a tone with, say, 3 beats in both lines.
 - the `scripts` directory contains scripts that were supposed to automate
   certain things
 - the `skel` director contains “skeleton” files, or templates when creating new
   antiphon or psalm files
-- `week1` contains Week 1 of the psalter, week2 contains Week 2, etc. There is
-  also a lytex file to build the score for the whole week using
-  `lilypond-book`.
-- the folders `lent`, `easter`, `advent`, and `properOfSaints` contain the
-  offices for those times
+- the `offices` directory contains the master files for each individual office.
+  The subdirectory `week1` contains Week 1 of the psalter, week2 contains Week
+  2, etc. There is also a lytex file in the subdirectory to build the score for
+  the whole week using `lilypond-book`. The folders `lent`, `easter`, `advent`,
+  and `properOfSaints` contain the offices for those times
 - the root directory contains a `Makefile` to facilitate building the project.
   It also has `lbi_defs.ily` which contains project-wide default settings.
 
@@ -122,18 +123,21 @@ easier. I use the editor Vim. If I want to work on, say, the first antiphon and
 psalm for Tuesday Evening Prayer, Week 3, then I need to open several files:
 organ scores for the antiphon and psalm, cantor score for the antiphon, notes
 file for the antiphon, and text of the psalm for pointing. I wrote a function
-to handle that. So I enter `:Lbi C3-Vespers-1` and it opens the necessary files
+to handle that. So I enter `:Lbi week3 C3-Vespers-1` and it opens the necessary files
 for editing.
 
 ```
-function! Lbi(office)
-    let s:antorganfile =  "/lbi/week3/".fnameescape(a:office)."-Ant-Organ.ly"
-    let s:antcantorfile =  " /lbi/week3/".fnameescape(a:office)."-Ant-Cantor.ly"
-    let s:psalmfile =  " /lbi/week3/".fnameescape(a:office)."-Psalm-Organ.ly"
-    let s:notesfile =  " /lbi/week3/notes/".fnameescape(a:office)."-Ant.ily"
-    execute "args ".s:antorganfile.s:antcantorfile.s:psalmfile.s:notesfile
+" open appropriate files for a particular office: E.g., `Lbi week1 A0-Vespers-1`
+function! Lbi(dir, office)
+    let s:path = "/home/ryan/sheetmusic/lbi/offices/"
+    let s:notesFile = s:path.a:dir."/notes/".a:office."-Ant.ily"
+    let s:antOrgFile = s:path.a:dir."/".a:office."-Ant-Organ.ly"
+    let s:antCantFile = s:path.a:dir."/".a:office."-Ant-Cantor.ly"
+    let s:psalmOrgFile = s:path.a:dir."/".a:office."-Psalm-Organ.ly"
+    execute "args ".s:notesFile." ".s:antOrgFile." ".s:antCantFile." ".s:psalmOrgFile
 endfunction
-command! -nargs=1 Lbi call Lbi(<f-args>)
+command! -nargs=+ Lbi call Lbi(<f-args>)
+
 ```
 
 # To do

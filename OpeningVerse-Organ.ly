@@ -1,6 +1,7 @@
 \version "2.18.2"
 \include "../lbi_defs.ily"
 
+#(set-global-staff-size 15)
 \paper {
     print-page-number = #f
     }
