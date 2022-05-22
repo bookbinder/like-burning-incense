@@ -1,0 +1,49 @@
+\version "2.18.2"
+\include "../../lbi_defs.ily"
+\include "notes/B6-Vespers-2-Ant.ily"
+\score {
+
+    <<
+        \transpose \frompitch \topitch {
+            \new ChoirStaff \with { instrumentName = \markup {
+                \center-column { \bold "Ant. 2"
+                \line {  "(4)"  } 
+            }
+        }
+    } 
+    <<
+        \new Staff \with { \omit TextScript }
+        <<
+            \set Staff.midiInstrument = # "drawbar organ"
+            \clef treble
+            \accidentalStyle forget
+            \new Voice = "Soprano" \sopNotesAnt
+            \new Voice = "Alto" \altoNotesAnt
+            \new Lyrics \lyricsto Soprano \text
+            %\new Lyrics \lyricsto Soprano \textB
+        >>
+        \new Staff ="down"
+        <<
+            \set Staff.midiInstrument = #"drawbar organ"
+            \clef bass
+            \accidentalStyle forget
+            \new Voice = "Tenor" \tenorNotesAnt
+            \new Voice = "Bass" \bassNotesAnt
+        >>
+    >>
+}
+    >>
+
+    \layout 
+    { 
+        ragged-last = ##t
+        \context 
+        { 
+            \Staff 
+            \remove Time_signature_engraver 
+        } 
+
+    }
+%    \midi {}
+
+}

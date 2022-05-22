@@ -4,6 +4,8 @@
 
 # Whitelist the following directories and all their subdirectories (but files remain ignored)
 # You must whitelist the root directory first, THEN all the subdirectories
+!/offices/
+!/offices/**/
 !/week1/
 !/week1/**/
 !/week2/
