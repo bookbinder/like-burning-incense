@@ -5,7 +5,7 @@ If you are just here for the Pdf files, see
 
 # About
 
-“Like Burning Incense” (LBI) is the name of an antiphonary for the Liturgy of
+*“Like Burning Incense”* (LBI) is the name of an antiphonary for the Liturgy of
 the Hours (aka Divine Office or Breviary) created for the Monastery of the Blessed
 Sacrament in Michigan. This repository is a
 partial digitization of that project. This repository contains Lauds and
@@ -22,10 +22,10 @@ The original handwritten project is available at [Dropbox here](https://www.drop
 
 (Quoting from the original Antiphonary:)
 
-> Monastery of the Blessed Sacrament
-> Cloistered Dominican Nuns
-> 29575 Middlebelt Road
-> Farmington Hills, MI, 48018
+> Monastery of the Blessed Sacrament  
+> Cloistered Dominican Nuns  
+> 29575 Middlebelt Road  
+> Farmington Hills, MI, 48018  
 > 
 > NAME: We have given the name LIKE BURNING INCENSE to this Antiphonary.
 > 
@@ -127,3 +127,15 @@ tone, so in a number of cases I subsituted Psalm tones. See the file
 - Gospel Canticles for Sundays in Ordinary Time
 - Proper of Seasons
 - Proper of Saints
+
+# About the Liturgy of the Hours
+
+> The hymns and litanies of the Liturgy of the Hours integrate the prayer of
+> the psalms into the age of the Church, expressing the symbolism of the time
+> of day, the liturgical season, or the feast being celebrated. Moreover, the
+> reading from the Word of God at each Hour (with the subsequent responses or
+> *troparia*) and readings from the Fathers and spiritual masters at certain Hours,
+> reveal more deeply the meaning of the mystery being celebrated, assist in
+> understanding the psalms, and prepare for silent prayer.
+
+(CCC 1177)
