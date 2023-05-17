@@ -1,0 +1,133 @@
+\documentclass{lbi_organ_bind}
+
+\begin{document}
+
+
+\begin{center}
+    \huge
+    Organ Score for Weeks 1--4.
+\end{center}
+
+\newpage
+
+\chaptermark{Week 1}
+\sectionmark{Sunday Evening Prayer I}
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/A0-Vespers-Organ}
+\sectionmark{Sunday Morning Prayer}
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/A1-Lauds-Organ}
+\sectionmark{Sunday Evening Prayer II}
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/A1-Vespers-Organ}
+\sectionmark{Monday Morning Prayer}
+\includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/A2-Lauds-Organ}
+% \sectionmark{Monday Evening Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/A2-Vespers-Organ}
+% \sectionmark{Tuesday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/A3-Lauds-Organ}
+% \sectionmark{Tuesday Evening Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/A3-Vespers-Organ}
+% \sectionmark{Wednesday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/A4-Lauds-Organ}
+% \sectionmark{Wednesday Evening Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/A4-Vespers-Organ}
+% \sectionmark{Thursday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/A5-Lauds-Organ}
+% \sectionmark{Thursday Evening Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/A5-Vespers-Organ}
+% \sectionmark{Friday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/A6-Lauds-Organ}
+% \sectionmark{Friday Evening Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/A6-Vespers-Organ}
+% \sectionmark{Saturday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/A6-Lauds-Organ}
+
+% \chaptermark{Week 2}
+% \sectionmark{Sunday Evening Prayer I}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/B0-Vespers-Organ}
+% \sectionmark{Sunday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/B1-Lauds-Organ}
+% \sectionmark{Sunday Evening Prayer II}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/B1-Vespers-Organ}
+% \sectionmark{Monday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/B2-Lauds-Organ}
+% \sectionmark{Monday Evening Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/B2-Vespers-Organ}
+% \sectionmark{Tuesday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/B3-Lauds-Organ}
+% \sectionmark{Tuesday Evening Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/B3-Vespers-Organ}
+% \sectionmark{Wednesday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/B4-Lauds-Organ}
+% \sectionmark{Wednesday Evening Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/B4-Vespers-Organ}
+% \sectionmark{Thursday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/B5-Lauds-Organ}
+% \sectionmark{Thursday Evening Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/B5-Vespers-Organ}
+% \sectionmark{Friday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/B6-Lauds-Organ}
+% \sectionmark{Friday Evening Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/B6-Vespers-Organ}
+% \sectionmark{Saturday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/B6-Lauds-Organ}
+
+% \chaptermark{Week 3}
+% \sectionmark{Sunday Evening Prayer I}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/C0-Vespers-Organ}
+% \sectionmark{Sunday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/C1-Lauds-Organ}
+% \sectionmark{Sunday Evening Prayer II}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/C1-Vespers-Organ}
+% \sectionmark{Monday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/C2-Lauds-Organ}
+% \sectionmark{Monday Evening Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/C2-Vespers-Organ}
+% \sectionmark{Tuesday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/C3-Lauds-Organ}
+% \sectionmark{Tuesday Evening Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/C3-Vespers-Organ}
+% \sectionmark{Wednesday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/C4-Lauds-Organ}
+% \sectionmark{Wednesday Evening Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/C4-Vespers-Organ}
+% \sectionmark{Thursday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/C5-Lauds-Organ}
+% \sectionmark{Thursday Evening Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/C5-Vespers-Organ}
+% \sectionmark{Friday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/C6-Lauds-Organ}
+% \sectionmark{Friday Evening Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/C6-Vespers-Organ}
+% \sectionmark{Saturday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/C6-Lauds-Organ}
+
+% \chaptermark{Week 4}
+% \sectionmark{Sunday Evening Prayer I}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/D0-Vespers-Organ}
+% \sectionmark{Sunday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/D1-Lauds-Organ}
+% \sectionmark{Sunday Evening Prayer II}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/D1-Vespers-Organ}
+% \sectionmark{Monday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/D2-Lauds-Organ}
+% \sectionmark{Monday Evening Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/D2-Vespers-Organ}
+% \sectionmark{Tuesday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/D3-Lauds-Organ}
+% \sectionmark{Tuesday Evening Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/D3-Vespers-Organ}
+% \sectionmark{Wednesday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/D4-Lauds-Organ}
+% \sectionmark{Wednesday Evening Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/D4-Vespers-Organ}
+% \sectionmark{Thursday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/D5-Lauds-Organ}
+% \sectionmark{Thursday Evening Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/D5-Vespers-Organ}
+% \sectionmark{Friday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/D6-Lauds-Organ}
+% \sectionmark{Friday Evening Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/D6-Vespers-Organ}
+% \sectionmark{Saturday Morning Prayer}
+% \includepdf[pages=-, pagecommand={\pagestyle{fancy}}]{out/D6-Lauds-Organ}
+
+\end{document}

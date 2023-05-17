@@ -1,0 +1,9 @@
+@image{./cb/lily-5ed3c4bd-1}
+@image{./cb/lily-5ed3c4bd-2}
+@image{./cb/lily-5ed3c4bd-3}
+@image{./cb/lily-5ed3c4bd-4}
+@image{./cb/lily-5ed3c4bd-5}
+@image{./cb/lily-5ed3c4bd-6}
+@image{./cb/lily-5ed3c4bd-7}
+@image{./cb/lily-5ed3c4bd-8}
+@c eof

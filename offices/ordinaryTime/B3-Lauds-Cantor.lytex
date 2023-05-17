@@ -1,0 +1,17 @@
+\documentclass{lbi_cantor_office}
+
+\begin{document}
+
+\topheader{Tuesday}{Week 2}
+
+\section*{Morning Prayer}
+
+\spacer\lilypondfile[line-width=4.4\in]{B3-Lauds-1-Ant-Cantor.ly}
+
+\spacer\lilypondfile[line-width=4.4\in]{B3-Lauds-2-Ant-Cantor.ly}
+
+\spacer\lilypondfile[line-width=4.4\in]{B3-Lauds-3-Ant-Cantor.ly}
+
+\spacer\lilypondfile[line-width=4.4\in]{B3-Lauds-Ben-Ant-Cantor.ly}
+
+\end{document}

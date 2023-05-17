@@ -1,0 +1,18 @@
+# LIKE BURNING INCENSE
+
+# Ignore directories
+**/out/
+**/pdf/
+
+# Ignore file types:
+*.dvi
+*.pdf
+*.midi
+*.aux
+*.dep
+*.log
+*.pyc
+*.toc
+
+# Un-ignore file types in specific directory and all its subdirectories
+# !/pdf/**/*.pdf

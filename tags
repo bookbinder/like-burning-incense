@@ -1,0 +1,386 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+1 Chr 29  10--13	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{1 Chr 29:10--13}$/;"	u
+1 Chr 29  10-13	headings.tex	/^\\subsection{1 Chr 29:10-13}$/;"	u
+1 Sam 2  1-10	headings.tex	/^\\subsection{1 Sam 2:1-10}$/;"	u
+Benedictus	headings.tex	/^\\subsection{Benedictus}$/;"	u
+Benedictus	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Benedictus}$/;"	u
+Benedictus	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Benedictus}$/;"	u
+Canticle  1 Samuel 2  1-10	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Canticle: 1 Samuel 2:1-10}$/;"	u
+Canticle  Colossians 1  12-20	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Canticle: Colossians 1:12-20}$/;"	u
+Canticle  Deuteronomy 32  1-12	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Canticle: Deuteronomy 32:1-12}$/;"	u
+Canticle  Ephesians 1  3-10	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Canticle: Ephesians 1:3-10}$/;"	u
+Canticle  Habakkuk 3  2-4  13a  15-19	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Canticle: Habakkuk 3:2-4, 13a, 15-19}$/;"	u
+Canticle  Isaiah 12  1-6	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Canticle: Isaiah 12:1-6}$/;"	u
+Canticle  Isaiah 38  10-14  17-20	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Canticle: Isaiah 38:10-14, 17-20}$/;"	u
+Canticle  Revelation 11  17-18  12  10b-12a	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Canticle: Revelation 11:17-18; 12:10b-12a}$/;"	u
+Canticle  Revelation 15  3-4	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Canticle: Revelation 15:3-4}$/;"	u
+Canticle  Sirach 36  1-5  10-13	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Canticle: Sirach 36:1-5, 10-13}$/;"	u
+Col 1  12--20	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Col 1:12--20}$/;"	u
+Col 1  12-20	headings.tex	/^\\subsection{Col 1:12-20}$/;"	u
+Dan 3  26  27  29  34-41	headings.tex	/^\\subsection{Dan 3:26, 27, 29, 34-41}$/;"	u
+Dan 3  52-57	headings.tex	/^\\subsection{Dan 3:52-57}$/;"	u
+Dan 3  57--88  56	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Dan 3:57--88, 56}$/;"	u
+Dan 3  57-88  56	headings.tex	/^\\subsection{Dan 3:57-88, 56}$/;"	u
+Daniel 3	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Daniel 3}$/;"	u
+DeleteLastLineIfEmpty	offices/week1/notes/deletelastlineifempty.vim	/^function! DeleteLastLineIfEmpty()$/;"	f
+Deut 32  1-12	headings.tex	/^\\subsection{Deut 32:1-12}$/;"	u
+Eph 1  3--10	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Eph 1:3--10}$/;"	u
+Eph 1  3-10	headings.tex	/^\\subsection{Eph 1:3-10}$/;"	u
+Exod 15  1--4a  8--13  17--18	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Exod 15:1--4a, 8--13, 17--18}$/;"	u
+Exod 15  1-4a  8-13  17-18	headings.tex	/^\\subsection{Exod 15:1-4a, 8-13, 17-18}$/;"	u
+Ezek 36  24-28	headings.tex	/^\\subsection{Ezek 36:24-28}$/;"	u
+Friday Evening Prayer	offices/week1/OrganScore_Week1.tex	/^\\section{Friday Evening Prayer}$/;"	s
+Friday Evening Prayer	offices/week1/out/OrganScore_Week1.tex	/^\\section{Friday Evening Prayer}$/;"	s
+Friday Evening Prayer	offices/week2/out/CantorScore_Week2.tex	/^\\section{Friday Evening Prayer}$/;"	s
+Friday Lauds	headings.tex	/^\\section{Friday Lauds}$/;"	s
+Friday Lauds	offices/week1/out/CantorScore_Week1.tex	/^\\section{Friday Lauds}$/;"	s
+Friday Morning Prayer	offices/week1/OrganScore_Week1.tex	/^\\section{Friday Morning Prayer}$/;"	s
+Friday Morning Prayer	offices/week1/out/OrganScore_Week1.tex	/^\\section{Friday Morning Prayer}$/;"	s
+Friday Morning Prayer	offices/week2/out/CantorScore_Week2.tex	/^\\section{Friday Morning Prayer}$/;"	s
+Friday Vespers	headings.tex	/^\\section{Friday Vespers}$/;"	s
+Friday Vespers	offices/week1/out/CantorScore_Week1.tex	/^\\section{Friday Vespers}$/;"	s
+Hab 3  2-4  13a  15-19	headings.tex	/^\\subsection{Hab 3:2-4, 13a, 15-19}$/;"	u
+Isa 12  1-6	headings.tex	/^\\subsection{Isa 12:1-6}$/;"	u
+Isa 2  2-5	headings.tex	/^\\subsection{Isa 2:2-5}$/;"	u
+Isa 26  1-4  7-9  12	headings.tex	/^\\subsection{Isa 26:1-4, 7-9, 12}$/;"	u
+Isa 33  13-16	headings.tex	/^\\subsection{Isa 33:13-16}$/;"	u
+Isa 38  10-14  17-20	headings.tex	/^\\subsection{Isa 38:10-14, 17-20}$/;"	u
+Isa 40  10-17	headings.tex	/^\\subsection{Isa 40:10-17}$/;"	u
+Isa 42  10-16	headings.tex	/^\\subsection{Isa 42:10-16}$/;"	u
+Isa 45  15--25	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Isa 45:15--25}$/;"	u
+Isa 45  15-25	headings.tex	/^\\subsection{Isa 45:15-25}$/;"	u
+Isa 61  10    62  5	headings.tex	/^\\subsection{Isa 61:10—62:5}$/;"	u
+Isa 66  10-14a	headings.tex	/^\\subsection{Isa 66:10-14a}$/;"	u
+Jer 14  17-21	headings.tex	/^\\subsection{Jer 14:17-21}$/;"	u
+Jer 31  10--14	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Jer 31:10--14}$/;"	u
+Jer 31  10-14	headings.tex	/^\\subsection{Jer 31:10-14}$/;"	u
+Judith 16  2--3a  13--15	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Judith 16:2--3a, 13--15}$/;"	u
+Judith 16  2-3a  13-15	headings.tex	/^\\subsection{Judith 16:2-3a, 13-15}$/;"	u
+LATEX	Makefile	/^LATEX=xelatex$/;"	m
+LILYPOND-BOOK	Makefile	/^LILYPOND-BOOK=lilypond-book -o out --pdf$/;"	m
+Magnificat	headings.tex	/^\\subsection{Magnificat}$/;"	u
+Magnificat	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Magnificat}$/;"	u
+Magnificat	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Magnificat}$/;"	u
+Monday Evening Prayer	offices/week1/OrganScore_Week1.tex	/^\\section{Monday Evening Prayer}$/;"	s
+Monday Evening Prayer	offices/week1/out/OrganScore_Week1.tex	/^\\section{Monday Evening Prayer}$/;"	s
+Monday Evening Prayer	offices/week2/out/CantorScore_Week2.tex	/^\\section{Monday Evening Prayer}$/;"	s
+Monday Lauds	headings.tex	/^\\section{Monday Lauds}$/;"	s
+Monday Lauds	offices/week1/out/CantorScore_Week1.tex	/^\\section{Monday Lauds}$/;"	s
+Monday Morning Prayer	offices/week1/OrganScore_Week1.tex	/^\\section{Monday Morning Prayer}$/;"	s
+Monday Morning Prayer	offices/week1/out/OrganScore_Week1.tex	/^\\section{Monday Morning Prayer}$/;"	s
+Monday Morning Prayer	offices/week2/out/CantorScore_Week2.tex	/^\\section{Monday Morning Prayer}$/;"	s
+Monday Morning Prayer	offices/week3/OrganScore_Week3.tex	/^\\section{Monday Morning Prayer}$/;"	s
+Monday Morning Prayer	offices/week3/out/OrganScore_Week3.tex	/^\\section{Monday Morning Prayer}$/;"	s
+Monday Vespers	headings.tex	/^\\section{Monday Vespers}$/;"	s
+Monday Vespers	offices/week1/out/CantorScore_Week1.tex	/^\\section{Monday Vespers}$/;"	s
+MyInclude	offices/week3/MyInclude.vim	/^function! MyInclude()$/;"	f
+MyNotes	psalmtones/newfunc.vim	/^function MyNotes()$/;"	f
+NiceFormat	psalmtones/notes/NiceFormat.vim	/^function! NiceFormat()$/;"	f
+Opening verse	offices/week1/OrganScore_Week1.tex	/^\\chapter{Opening verse}$/;"	c
+Opening verse	offices/week1/out/OrganScore_Week1.tex	/^\\chapter{Opening verse}$/;"	c
+Opening verse	offices/week2/Organscore_preamble.tex	/^\\chapter{Opening verse}$/;"	c
+Opening verse	offices/week3/OrganScore_Week3.tex	/^\\chapter{Opening verse}$/;"	c
+Opening verse	offices/week3/out/OrganScore_Week3.tex	/^\\chapter{Opening verse}$/;"	c
+Phil 2  6--11	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Phil 2:6--11}$/;"	u
+Phil 2  6-11	headings.tex	/^\\subsection{Phil 2:6-11}$/;"	u
+Philippians 2	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Philippians 2}$/;"	u
+PopulateCantorAnt	offices/week1/PopulateCantorAnt.vim	/^function! PopulateCantorAnt()$/;"	f
+PopulateOrganAnt	offices/week1/PopulateOrganAnt.vim	/^function! PopulateOrganAnt()$/;"	f
+PopulateOrganPsalm	offices/week1/PopulateOrganPsalm.vim	/^function! PopulateOrganPsalm()$/;"	f
+Ps 100	headings.tex	/^\\subsection{Ps 100}$/;"	u
+Ps 100	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 100}$/;"	u
+Ps 101	headings.tex	/^\\subsection{Ps 101}$/;"	u
+Ps 108	headings.tex	/^\\subsection{Ps 108}$/;"	u
+Ps 11	headings.tex	/^\\subsection{Ps 11}$/;"	u
+Ps 11	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 11}$/;"	u
+Ps 110  1--5  7	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 110:1--5, 7}$/;"	u
+Ps 110  1-5  7	headings.tex	/^\\subsection{Ps 110:1-5, 7}$/;"	u
+Ps 111	headings.tex	/^\\subsection{Ps 111}$/;"	u
+Ps 112	headings.tex	/^\\subsection{Ps 112}$/;"	u
+Ps 113	headings.tex	/^\\subsection{Ps 113}$/;"	u
+Ps 114	headings.tex	/^\\subsection{Ps 114}$/;"	u
+Ps 114	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 114}$/;"	u
+Ps 115	headings.tex	/^\\subsection{Ps 115}$/;"	u
+Ps 116  1-9	headings.tex	/^\\subsection{Ps 116:1-9}$/;"	u
+Ps 116  10-19	headings.tex	/^\\subsection{Ps 116:10-19}$/;"	u
+Ps 117	headings.tex	/^\\subsection{Ps 117}$/;"	u
+Ps 117	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 117}$/;"	u
+Ps 118	headings.tex	/^\\subsection{Ps 118}$/;"	u
+Ps 119  105-112  XIV  Nun 	headings.tex	/^\\subsection{Ps 119:105-112 (XIV: Nun)}$/;"	u
+Ps 119  145--152  XIX  Koph 	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 119:145--152 (XIX: Koph)}$/;"	u
+Ps 119  145-152  XIX  Koph 	headings.tex	/^\\subsection{Ps 119:145-152 (XIX: Koph)}$/;"	u
+Ps 121	headings.tex	/^\\subsection{Ps 121}$/;"	u
+Ps 122	headings.tex	/^\\subsection{Ps 122}$/;"	u
+Ps 123	headings.tex	/^\\subsection{Ps 123}$/;"	u
+Ps 124	headings.tex	/^\\subsection{Ps 124}$/;"	u
+Ps 125	headings.tex	/^\\subsection{Ps 125}$/;"	u
+Ps 126	headings.tex	/^\\subsection{Ps 126}$/;"	u
+Ps 127	headings.tex	/^\\subsection{Ps 127}$/;"	u
+Ps 130	headings.tex	/^\\subsection{Ps 130}$/;"	u
+Ps 131	headings.tex	/^\\subsection{Ps 131}$/;"	u
+Ps 132  1-10	headings.tex	/^\\subsection{Ps 132:1-10}$/;"	u
+Ps 132  11-18	headings.tex	/^\\subsection{Ps 132:11-18}$/;"	u
+Ps 135  1-12	headings.tex	/^\\subsection{Ps 135:1-12}$/;"	u
+Ps 135  13-21	headings.tex	/^\\subsection{Ps 135:13-21}$/;"	u
+Ps 136  1-9	headings.tex	/^\\subsection{Ps 136:1-9}$/;"	u
+Ps 136  10-26	headings.tex	/^\\subsection{Ps 136:10-26}$/;"	u
+Ps 137  1-6	headings.tex	/^\\subsection{Ps 137:1-6}$/;"	u
+Ps 138	headings.tex	/^\\subsection{Ps 138}$/;"	u
+Ps 139  1-12	headings.tex	/^\\subsection{Ps 139:1-12}$/;"	u
+Ps 139  13-18  23-24	headings.tex	/^\\subsection{Ps 139:13-18, 23-24}$/;"	u
+Ps 141  1--9	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 141:1--9}$/;"	u
+Ps 141  1-9	headings.tex	/^\\subsection{Ps 141:1-9}$/;"	u
+Ps 142	headings.tex	/^\\subsection{Ps 142}$/;"	u
+Ps 142	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 142}$/;"	u
+Ps 143  1-11	headings.tex	/^\\subsection{Ps 143:1-11}$/;"	u
+Ps 144  1-10	headings.tex	/^\\subsection{Ps 144:1-10}$/;"	u
+Ps 144  1-8	headings.tex	/^\\subsection{Ps 144:1-8}$/;"	u
+Ps 144  9-15	headings.tex	/^\\subsection{Ps 144:9-15}$/;"	u
+Ps 145  1-13a	headings.tex	/^\\subsection{Ps 145:1-13a}$/;"	u
+Ps 145  13b-21	headings.tex	/^\\subsection{Ps 145:13b-21}$/;"	u
+Ps 146	headings.tex	/^\\subsection{Ps 146}$/;"	u
+Ps 147  1-11	headings.tex	/^\\subsection{Ps 147:1-11}$/;"	u
+Ps 147  12-20	headings.tex	/^\\subsection{Ps 147:12-20}$/;"	u
+Ps 148	headings.tex	/^\\subsection{Ps 148}$/;"	u
+Ps 149	headings.tex	/^\\subsection{Ps 149}$/;"	u
+Ps 149	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 149}$/;"	u
+Ps 15	headings.tex	/^\\subsection{Ps 15}$/;"	u
+Ps 15	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 15}$/;"	u
+Ps 150	headings.tex	/^\\subsection{Ps 150}$/;"	u
+Ps 16	headings.tex	/^\\subsection{Ps 16}$/;"	u
+Ps 19  2-7	headings.tex	/^\\subsection{Ps 19:2-7}$/;"	u
+Ps 20	headings.tex	/^\\subsection{Ps 20}$/;"	u
+Ps 20	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 20}$/;"	u
+Ps 21  2--8  14	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 21:2--8, 14}$/;"	u
+Ps 21  2-8  14	headings.tex	/^\\subsection{Ps 21:2-8, 14}$/;"	u
+Ps 24	headings.tex	/^\\subsection{Ps 24}$/;"	u
+Ps 24	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 24}$/;"	u
+Ps 27  1--6	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 27:1--6}$/;"	u
+Ps 27  1-6	headings.tex	/^\\subsection{Ps 27:1-6}$/;"	u
+Ps 27  7--14	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 27:7--14}$/;"	u
+Ps 27  7-14	headings.tex	/^\\subsection{Ps 27:7-14}$/;"	u
+Ps 29	headings.tex	/^\\subsection{Ps 29}$/;"	u
+Ps 29	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 29}$/;"	u
+Ps 30	headings.tex	/^\\subsection{Ps 30}$/;"	u
+Ps 30	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 30}$/;"	u
+Ps 32	headings.tex	/^\\subsection{Ps 32}$/;"	u
+Ps 32	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 32}$/;"	u
+Ps 33	headings.tex	/^\\subsection{Ps 33}$/;"	u
+Ps 33	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 33}$/;"	u
+Ps 36	headings.tex	/^\\subsection{Ps 36}$/;"	u
+Ps 36	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 36}$/;"	u
+Ps 41	headings.tex	/^\\subsection{Ps 41}$/;"	u
+Ps 41	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 41}$/;"	u
+Ps 42	headings.tex	/^\\subsection{Ps 42}$/;"	u
+Ps 43	headings.tex	/^\\subsection{Ps 43}$/;"	u
+Ps 45  11-18	headings.tex	/^\\subsection{Ps 45:11-18}$/;"	u
+Ps 45  2-10	headings.tex	/^\\subsection{Ps 45:2-10}$/;"	u
+Ps 46	headings.tex	/^\\subsection{Ps 46}$/;"	u
+Ps 46	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 46}$/;"	u
+Ps 47	headings.tex	/^\\subsection{Ps 47}$/;"	u
+Ps 47	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 47}$/;"	u
+Ps 48	headings.tex	/^\\subsection{Ps 48}$/;"	u
+Ps 48	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 48}$/;"	u
+Ps 49  14-21	headings.tex	/^\\subsection{Ps 49:14-21}$/;"	u
+Ps 49  2-13	headings.tex	/^\\subsection{Ps 49:2-13}$/;"	u
+Ps 5  2--10  12--13	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 5:2--10, 12--13}$/;"	u
+Ps 5  2-10  12-13	headings.tex	/^\\subsection{Ps 5:2-10, 12-13}$/;"	u
+Ps 51	headings.tex	/^\\subsection{Ps 51}$/;"	u
+Ps 51	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 51}$/;"	u
+Ps 57	headings.tex	/^\\subsection{Ps 57}$/;"	u
+Ps 57	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 57}$/;"	u
+Ps 62	headings.tex	/^\\subsection{Ps 62}$/;"	u
+Ps 63  2--9	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Ps 63:2--9}$/;"	u
+Ps 63  2-9	headings.tex	/^\\subsection{Ps 63:2-9}$/;"	u
+Ps 65	headings.tex	/^\\subsection{Ps 65}$/;"	u
+Ps 67	headings.tex	/^\\subsection{Ps 67}$/;"	u
+Ps 72  12-19	headings.tex	/^\\subsection{Ps 72:12-19}$/;"	u
+Ps 72  2-11	headings.tex	/^\\subsection{Ps 72:2-11}$/;"	u
+Ps 77	headings.tex	/^\\subsection{Ps 77}$/;"	u
+Ps 8	headings.tex	/^\\subsection{Ps 8}$/;"	u
+Ps 80	headings.tex	/^\\subsection{Ps 80}$/;"	u
+Ps 81	headings.tex	/^\\subsection{Ps 81}$/;"	u
+Ps 84	headings.tex	/^\\subsection{Ps 84}$/;"	u
+Ps 85	headings.tex	/^\\subsection{Ps 85}$/;"	u
+Ps 86	headings.tex	/^\\subsection{Ps 86}$/;"	u
+Ps 87	headings.tex	/^\\subsection{Ps 87}$/;"	u
+Ps 90	headings.tex	/^\\subsection{Ps 90}$/;"	u
+Ps 92	headings.tex	/^\\subsection{Ps 92}$/;"	u
+Ps 93	headings.tex	/^\\subsection{Ps 93}$/;"	u
+Ps 96	headings.tex	/^\\subsection{Ps 96}$/;"	u
+Ps 97	headings.tex	/^\\subsection{Ps 97}$/;"	u
+Ps 98	headings.tex	/^\\subsection{Ps 98}$/;"	u
+Ps 99	headings.tex	/^\\subsection{Ps 99}$/;"	u
+Psalm 110  1-5  7	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 110: 1-5, 7}$/;"	u
+Psalm 115	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 115}$/;"	u
+Psalm 116  1-9	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 116:1-9}$/;"	u
+Psalm 117  118 	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 117 (118)}$/;"	u
+Psalm 118  119   105--112	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 118 (119): 105--112}$/;"	u
+Psalm 121	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 121}$/;"	u
+Psalm 145  I	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 145, I}$/;"	u
+Psalm 145  II	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 145, II}$/;"	u
+Psalm 147  12-20	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 147:12-20}$/;"	u
+Psalm 15  16 	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 15 (16)}$/;"	u
+Psalm 150	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 150}$/;"	u
+Psalm 19A	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 19A}$/;"	u
+Psalm 42	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 42}$/;"	u
+Psalm 43	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 43}$/;"	u
+Psalm 49  I	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 49, I}$/;"	u
+Psalm 49  II	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 49, II}$/;"	u
+Psalm 51	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 51}$/;"	u
+Psalm 62	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 62}$/;"	u
+Psalm 65	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 65}$/;"	u
+Psalm 67	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 67}$/;"	u
+Psalm 72  I	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 72, I}$/;"	u
+Psalm 72  II	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 72, II}$/;"	u
+Psalm 77	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 77}$/;"	u
+Psalm 8	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 8}$/;"	u
+Psalm 80	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 80}$/;"	u
+Psalm 81	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 81}$/;"	u
+Psalm 92	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 92}$/;"	u
+Psalm 97	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Psalm 97}$/;"	u
+PutInclude	offices/week1/PopulateOrganPsalmIncludesOnly.vim	/^function! PutInclude()$/;"	f
+Rev 11  17--18  12  10b--12a	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Rev 11:17--18; 12:10b--12a}$/;"	u
+Rev 11  17-18  12  10b-12a	headings.tex	/^\\subsection{Rev 11:17-18; 12:10b-12a}$/;"	u
+Rev 15  3--4	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Rev 15:3--4}$/;"	u
+Rev 15  3-4	headings.tex	/^\\subsection{Rev 15:3-4}$/;"	u
+Rev 19  1--7	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Rev 19:1--7}$/;"	u
+Rev 19  1-7  Lent    1 Pet 2  21-24 	headings.tex	/^\\subsection{Rev 19:1-7 (Lent: 1 Pet 2:21-24)}$/;"	u
+Rev 4  11  5  9  10  12	headings.tex	/^\\subsection{Rev 4:11; 5:9, 10, 12}$/;"	u
+Rev 4  11  5  9  10  12	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Rev 4:11; 5:9, 10, 12}$/;"	u
+Revelation 4  11  5  9  10  12	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{Revelation 4:11; 5:9; 10, 12}$/;"	u
+SHELL	Makefile	/^SHELL=\/bin\/bash$/;"	m
+Saturday Lauds	headings.tex	/^\\section{Saturday Lauds}$/;"	s
+Saturday Lauds	offices/week1/out/CantorScore_Week1.tex	/^\\section{Saturday Lauds}$/;"	s
+Saturday Morning Prayer	offices/week1/OrganScore_Week1.tex	/^\\section{Saturday Morning Prayer}$/;"	s
+Saturday Morning Prayer	offices/week1/out/OrganScore_Week1.tex	/^\\section{Saturday Morning Prayer}$/;"	s
+Saturday Morning Prayer	offices/week2/out/CantorScore_Week2.tex	/^\\section{Saturday Morning Prayer}$/;"	s
+See Rev 19  1-7	offices/week2/out/CantorScore_Week2.tex	/^\\subsection{See Rev 19:1-7}$/;"	u
+Sirach 36  1-5  10-13	headings.tex	/^\\subsection{Sirach 36:1-5, 10-13}$/;"	u
+Sunday Evening Prayer 2	offices/week2/out/CantorScore_Week2.tex	/^\\section{Sunday Evening Prayer 2}$/;"	s
+Sunday Evening Prayer 2	offices/week3/out/OrganScore_Week3.tex	/^\\section{Sunday Evening Prayer 2}$/;"	s
+Sunday Evening Prayer I	offices/week1/OrganScore_Week1.tex	/^\\section{Sunday Evening Prayer I}$/;"	s
+Sunday Evening Prayer I	offices/week1/out/OrganScore_Week1.tex	/^\\section{Sunday Evening Prayer I}$/;"	s
+Sunday Evening Prayer I	offices/week2/out/CantorScore_Week2.tex	/^\\section{Sunday Evening Prayer I}$/;"	s
+Sunday Evening Prayer I	offices/week3/OrganScore_Week3.tex	/^\\section{Sunday Evening Prayer I}$/;"	s
+Sunday Evening Prayer I	offices/week3/out/OrganScore_Week3.tex	/^\\section{Sunday Evening Prayer I}$/;"	s
+Sunday Evening Prayer II	offices/week1/OrganScore_Week1.tex	/^\\section{Sunday Evening Prayer II}$/;"	s
+Sunday Evening Prayer II	offices/week1/out/OrganScore_Week1.tex	/^\\section{Sunday Evening Prayer II}$/;"	s
+Sunday Lauds	headings.tex	/^\\section{Sunday Lauds}$/;"	s
+Sunday Lauds	offices/week1/out/CantorScore_Week1.tex	/^\\section{Sunday Lauds}$/;"	s
+Sunday Morning Prayer	offices/week1/OrganScore_Week1.tex	/^\\section{Sunday Morning Prayer}$/;"	s
+Sunday Morning Prayer	offices/week1/out/OrganScore_Week1.tex	/^\\section{Sunday Morning Prayer}$/;"	s
+Sunday Morning Prayer	offices/week2/out/CantorScore_Week2.tex	/^\\section{Sunday Morning Prayer}$/;"	s
+Sunday Morning Prayer	offices/week3/out/OrganScore_Week3.tex	/^\\section{Sunday Morning Prayer}$/;"	s
+Sunday Vespers 1	headings.tex	/^\\section{Sunday Vespers 1}$/;"	s
+Sunday Vespers 1	offices/week1/out/CantorScore_Week1.tex	/^\\section{Sunday Vespers 1}$/;"	s
+Sunday Vespers 2	headings.tex	/^\\section{Sunday Vespers 2}$/;"	s
+Sunday Vespers 2	offices/week1/out/CantorScore_Week1.tex	/^\\section{Sunday Vespers 2}$/;"	s
+Thursday Evening Prayer	offices/week1/OrganScore_Week1.tex	/^\\section{Thursday Evening Prayer}$/;"	s
+Thursday Evening Prayer	offices/week1/out/OrganScore_Week1.tex	/^\\section{Thursday Evening Prayer}$/;"	s
+Thursday Evening Prayer	offices/week2/out/CantorScore_Week2.tex	/^\\section{Thursday Evening Prayer}$/;"	s
+Thursday Lauds	headings.tex	/^\\section{Thursday Lauds}$/;"	s
+Thursday Lauds	offices/week1/out/CantorScore_Week1.tex	/^\\section{Thursday Lauds}$/;"	s
+Thursday Morning Prayer	offices/week1/OrganScore_Week1.tex	/^\\section{Thursday Morning Prayer}$/;"	s
+Thursday Morning Prayer	offices/week1/out/OrganScore_Week1.tex	/^\\section{Thursday Morning Prayer}$/;"	s
+Thursday Morning Prayer	offices/week2/out/CantorScore_Week2.tex	/^\\section{Thursday Morning Prayer}$/;"	s
+Thursday Vespers	headings.tex	/^\\section{Thursday Vespers}$/;"	s
+Thursday Vespers	offices/week1/out/CantorScore_Week1.tex	/^\\section{Thursday Vespers}$/;"	s
+Tobit 13  1--8	offices/week1/out/CantorScore_Week1.tex	/^\\subsection{Tobit 13:1--8}$/;"	u
+Tobit 13  1-8	headings.tex	/^\\subsection{Tobit 13:1-8}$/;"	u
+Tobit 13  8-11  13-15	headings.tex	/^\\subsection{Tobit 13:8-11, 13-15}$/;"	u
+Tuesday Evening Prayer	offices/week1/OrganScore_Week1.tex	/^\\section{Tuesday Evening Prayer}$/;"	s
+Tuesday Evening Prayer	offices/week1/out/OrganScore_Week1.tex	/^\\section{Tuesday Evening Prayer}$/;"	s
+Tuesday Evening Prayer	offices/week2/out/CantorScore_Week2.tex	/^\\section{Tuesday Evening Prayer}$/;"	s
+Tuesday Lauds	headings.tex	/^\\section{Tuesday Lauds}$/;"	s
+Tuesday Lauds	offices/week1/out/CantorScore_Week1.tex	/^\\section{Tuesday Lauds}$/;"	s
+Tuesday Morning Prayer	offices/week1/OrganScore_Week1.tex	/^\\section{Tuesday Morning Prayer}$/;"	s
+Tuesday Morning Prayer	offices/week1/out/OrganScore_Week1.tex	/^\\section{Tuesday Morning Prayer}$/;"	s
+Tuesday Morning Prayer	offices/week2/out/CantorScore_Week2.tex	/^\\section{Tuesday Morning Prayer}$/;"	s
+Tuesday Vespers	headings.tex	/^\\section{Tuesday Vespers}$/;"	s
+Tuesday Vespers	offices/week1/out/CantorScore_Week1.tex	/^\\section{Tuesday Vespers}$/;"	s
+Wednesday Evening Prayer	offices/week1/OrganScore_Week1.tex	/^\\section{Wednesday Evening Prayer}$/;"	s
+Wednesday Evening Prayer	offices/week1/out/OrganScore_Week1.tex	/^\\section{Wednesday Evening Prayer}$/;"	s
+Wednesday Evening Prayer	offices/week2/out/CantorScore_Week2.tex	/^\\section{Wednesday Evening Prayer}$/;"	s
+Wednesday Lauds	headings.tex	/^\\section{Wednesday Lauds}$/;"	s
+Wednesday Lauds	offices/week1/out/CantorScore_Week1.tex	/^\\section{Wednesday Lauds}$/;"	s
+Wednesday Morning Prayer	offices/week1/OrganScore_Week1.tex	/^\\section{Wednesday Morning Prayer}$/;"	s
+Wednesday Morning Prayer	offices/week1/out/OrganScore_Week1.tex	/^\\section{Wednesday Morning Prayer}$/;"	s
+Wednesday Morning Prayer	offices/week2/out/CantorScore_Week2.tex	/^\\section{Wednesday Morning Prayer}$/;"	s
+Wednesday Vespers	headings.tex	/^\\section{Wednesday Vespers}$/;"	s
+Wednesday Vespers	offices/week1/out/CantorScore_Week1.tex	/^\\section{Wednesday Vespers}$/;"	s
+Week 1	headings.tex	/^\\chapter{Week 1}$/;"	c
+Week 1	offices/week1/OrganScore_Week1.tex	/^\\chapter{Week 1}$/;"	c
+Week 1	offices/week1/out/CantorScore_Week1.tex	/^\\chapter{Week 1}$/;"	c
+Week 1	offices/week1/out/OrganScore_Week1.tex	/^\\chapter{Week 1}$/;"	c
+Week 2	headings.tex	/^\\chapter{Week 2}$/;"	c
+Week 2	offices/week2/out/CantorScore_Week2.tex	/^\\chapter{Week 2}$/;"	c
+Week 3	headings.tex	/^\\section{Week 3}$/;"	s
+Week 3	offices/week3/OrganScore_Week3.tex	/^\\chapter{Week 3}$/;"	c
+Week 3	offices/week3/out/OrganScore_Week3.tex	/^\\chapter{Week 3}$/;"	c
+Week 4	headings.tex	/^\\section{Week 4}$/;"	s
+Wis 9  1-6  9-11	headings.tex	/^\\subsection{Wis 9:1-6, 9-11}$/;"	u
+addFilesToProperOfSaints	scripts/makePsalmTextDirs.py	/^def addFilesToProperOfSaints():$/;"	f
+addStuff	scripts/makePsalmTextDirs.py	/^def addStuff():$/;"	f
+addToFiles	scripts/makePsalmTextDirs.py	/^def addToFiles():$/;"	f
+adjustFiles	scripts/makePsalmTextDirs.py	/^def adjustFiles():$/;"	f
+allFiles	scripts/get.py	/^allFiles = (path for path in Path('.').glob(pattern + '.ly'))$/;"	v
+ant	scripts/adjustnoteant.py	/^    ant = file.name.split('-')[2]$/;"	v
+antCantorFile	scripts/makeScores.py	/^    antCantorFile = parentDir.joinpath(stemBase + "-Ant-Cantor.ly")$/;"	v
+antCantorFile	scripts/week3.py	/^    antCantorFile = parentDir.joinpath(stemBase + "-Ant-Cantor.ly")$/;"	v
+antCantorTxt	scripts/makeScores.py	/^    antCantorTxt = Path($/;"	v
+antCantorTxt	scripts/makeScores.py	/^    antCantorTxt = antCantorTxt.replace("A0-Vespers-1-Ant.ily", file.name)$/;"	v
+antCantorTxt	scripts/week3.py	/^    antCantorTxt = Path("\/home\/ryan\/scores\/lbi\/skel\/Ant-Cantor.ily").read_text()$/;"	v
+antCantorTxt	scripts/week3.py	/^    antCantorTxt = antCantorTxt.replace("A0-Vespers-1-Ant.ily", file.name)$/;"	v
+antOrganFile	scripts/makeScores.py	/^    antOrganFile = parentDir.joinpath(stemBase + "-Ant-Organ.ly")$/;"	v
+antOrganFile	scripts/week3.py	/^    antOrganFile = parentDir.joinpath(stemBase + "-Ant-Organ.ly")$/;"	v
+antOrganTxt	scripts/makeScores.py	/^    antOrganTxt = Path($/;"	v
+antOrganTxt	scripts/makeScores.py	/^    antOrganTxt = antOrganTxt.replace("A0-Vespers-1-Ant.ily", file.name)$/;"	v
+antOrganTxt	scripts/week3.py	/^    antOrganTxt = Path("\/home\/ryan\/scores\/lbi\/skel\/Ant-Organ.ily").read_text()$/;"	v
+antOrganTxt	scripts/week3.py	/^    antOrganTxt = antOrganTxt.replace("A0-Vespers-1-Ant.ily", file.name)$/;"	v
+beats	scripts/makePsalmTextDirs.py	/^beats = ('34', '43', '44', '33', '42', '32', '23')$/;"	v
+fileTxt	scripts/changeAntBlock.py	/^    fileTxt = file.read_text()$/;"	v
+fileTxt	scripts/changeAntBlock.py	/^    fileTxt = re.sub(r'\\\\new ChoirStaff.*\\n.*\\}\\s+\\}\\s*\\n', newBlock, fileTxt)$/;"	v
+filename	scripts/populateCantor.py	/^    filename = item.stem$/;"	v
+files	scripts/adjustnoteant.py	/^files = [z for z in p.iterdir()]$/;"	v
+files	scripts/changeAntBlock.py	/^files = p.glob('*Ant-Organ.ly')$/;"	v
+main	scripts/adjustWeek2.py	/^def main():$/;"	f
+main	scripts/adjustweek2antorgan.py	/^def main():$/;"	f
+main	scripts/makePsalmTextDirs.py	/^def main():$/;"	f
+main	scripts/populateIndPsalm.py	/^def main():$/;"	f
+main	scripts/populateReadme.py	/^def main():$/;"	f
+main	scripts/rearrange.py	/^def main():$/;"	f
+main	scripts/restructureWeek1.py	/^def main():$/;"	f
+main	skel/psalmvar.py	/^def main():$/;"	f
+makeBeatDirs	scripts/makePsalmTextDirs.py	/^def makeBeatDirs(beats):$/;"	f
+makeProperOfSaints	scripts/makePsalmTextDirs.py	/^def makeProperOfSaints():$/;"	f
+makePsalmFiles	scripts/makePsalmTextDirs.py	/^def makePsalmFiles():$/;"	f
+makeTextDirs	scripts/makePsalmTextDirs.py	/^def makeTextDirs(psalmtitles):$/;"	f
+p	scripts/adjustnoteant.py	/^p = Path("\/home\/ryan\/scores\/lbi\/offices\/week2\/notes\/")$/;"	v
+p	scripts/changeAntBlock.py	/^p = Path("\/home\/ryan\/scores\/lbi\/offices\/week3\/")$/;"	v
+p	scripts/makeScores.py	/^p = Path("\/home\/ryan\/scores\/lbi\/offices\/week3\/notes\/")$/;"	v
+p	scripts/populateCantor.py	/^p = Path('\/home\/ryan\/sheetmusic\/lbi\/offices\/week2\/')$/;"	v
+p	scripts/week3.py	/^p = Path("\/home\/ryan\/scores\/lbi\/offices\/week3\/notes\/")$/;"	v
+parentDir	scripts/makeScores.py	/^    parentDir = p.parents[0]$/;"	v
+parentDir	scripts/week3.py	/^    parentDir = p.parents[0]$/;"	v
+pattern	scripts/get.py	/^pattern = sys.argv[1]$/;"	v
+psalmOrganFile	scripts/makeScores.py	/^    psalmOrganFile = parentDir.joinpath(stemBase + "-Psalm-Organ.ly")$/;"	v
+psalmOrganFile	scripts/week3.py	/^    psalmOrganFile = parentDir.joinpath(stemBase + "-Psalm-Organ.ly")$/;"	v
+psalmOrganTxt	scripts/makeScores.py	/^    psalmOrganTxt = Path($/;"	v
+psalmOrganTxt	scripts/makeScores.py	/^    psalmOrganTxt = psalmOrganTxt.replace("A0-Vespers-1-Ant.ily", file.name)$/;"	v
+psalmOrganTxt	scripts/week3.py	/^    psalmOrganTxt = Path("\/home\/ryan\/scores\/lbi\/skel\/Psalm-Organ.ily").read_text()$/;"	v
+psalmOrganTxt	scripts/week3.py	/^    psalmOrganTxt = psalmOrganTxt.replace("A0-Vespers-1-Ant.ily", file.name)$/;"	v
+recur	scripts/populateReadme.py	/^    def recur(dir):$/;"	f	function:main
+renameToIly2	scripts/makePsalmTextDirs.py	/^def renameToIly2():$/;"	f
+renameToTxt	scripts/makePsalmTextDirs.py	/^def renameToTxt():$/;"	f
+stemBase	scripts/makeScores.py	/^    stemBase = file.stem.replace("-Ant", "")$/;"	v
+stemBase	scripts/week3.py	/^    stemBase = file.stem.replace("-Ant", "")$/;"	v
+touchTexts	scripts/makePsalmTextDirs.py	/^def touchTexts():$/;"	f
+touchTexts2	scripts/makePsalmTextDirs.py	/^def touchTexts2():$/;"	f
+txt	scripts/adjustnoteant.py	/^    txt = file.read_text()$/;"	v
+txt	scripts/adjustnoteant.py	/^    txt = re.sub("\\"X\\"", f"\\"{ant}\\"", txt)$/;"	v

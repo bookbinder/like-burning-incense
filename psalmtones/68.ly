@@ -1,0 +1,61 @@
+\version "2.18.2"
+\include "notes/68-notes.ily"
+
+sopMusic = {
+    \global
+    \voiceOne
+    \sopranoOneFlex
+}
+altoMusic = {
+    \global
+    \voiceTwo
+}
+tenorMusic = {
+    \global
+    \voiceOne
+}
+bassMusic = {
+    \global
+    \voiceTwo
+}
+
+\score {
+
+    \header {
+        %piece = \markup { \fontsize #2 \bold "LBI_3a" }
+    }
+    <<
+        \transpose e e {
+
+            \new ChoirStaff \with { instrumentName = #"68" } % LBI_4C
+            <<
+                \new Staff ="up"
+                <<
+                    \clef treble
+                    \accidentalStyle forget
+                    \new Voice = "Soprano" \sopMusic
+                    \new Voice = "Alto" \altoMusic
+                >>
+                \new Staff ="down"
+                <<
+                    \clef bass
+                    \accidentalStyle forget
+                    \new Voice = "Tenor" \tenorMusic
+                    \new Voice = "Bass" \bassMusic
+                >>
+            >>
+        }
+    >>
+
+    \layout 
+    { 
+        ragged-last = ##t
+        \context 
+        { 
+            \Staff 
+            \remove Time_signature_engraver 
+        } 
+
+    } 
+
+}

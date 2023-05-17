@@ -1,0 +1,52 @@
+\version "2.20.0"
+\include "../../../lbi_defs.ily"
+
+% Will need these variables to build the cantor and organ scores:
+keysig =  \key des \major
+antiphon = "1"
+psalmtone = "34"
+psalmtonestruct = "33"
+psalmnum = "Ps_92"
+% transposition interval for the corresponding psalm tone
+% to match the key signature of this antiphon. For
+% use in in cantor (antiphon) and organ (psalm) scores
+frompitch = a
+topitch = a
+
+text = \lyricmode {
+    \set includeGraceNotes = ##t
+    We do well to sing to your name, Most High, " * "
+    and pro -- claim your mer -- cy at day -- break.
+}
+sopNotesAnt = \relative e' {
+    \global
+    \keysig
+    \voiceOne
+    f8 ees ees[ f] ees des[ f] aes aes bes[ des] c[ bes] bes4( aes) \bar "'"
+    \hideNotes e16 \unHideNotes   %so that I can align the * better
+    aes8 aes ges[ f] ees ges4 f8 ees ees[ des] des4 \bar "||"
+}
+altoNotesAnt = \relative c' {
+    \global
+    \keysig
+    \voiceTwo
+    s2 s8 des2~ des~ des2.
+    s16
+    bes4. des2 aes
+}
+tenorNotesAnt = \relative g {
+    \global
+    \keysig
+    \voiceOne
+    aes4 ges4. f2 ges2 f2.
+    s16
+    ges4.~ ges2~ ges4 f
+}
+bassNotesAnt = \relative c {
+    \global
+    \keysig
+    \voiceTwo
+    des4~ des4.~ des2 ges,4 bes des2.
+    s16
+    ees4. bes2 des
+}

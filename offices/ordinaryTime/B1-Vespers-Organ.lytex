@@ -1,0 +1,27 @@
+\documentclass{lbi_organ_office}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\section*{Sunday Evening Prayer II}
+
+\lilypondfile[line-width=6.9\in]{B1-Vespers-1-Ant-Organ.ly}
+
+\null\medskip\lilypondfile[line-width=6.9\in]{B1-Vespers-1-Psalm-Organ.ly}
+
+\newpage
+
+\lilypondfile[line-width=6.9\in]{B1-Vespers-2-Ant-Organ.ly}
+
+\null\medskip\lilypondfile[line-width=6.9\in]{B1-Vespers-2-Psalm-Organ.ly}
+
+\newpage
+
+\lilypondfile[line-width=6.9\in]{B1-Vespers-3-Ant-Organ.ly}
+
+\null\medskip\lilypondfile[line-width=6.9\in]{B1-Vespers-3-Psalm-Organ.ly}
+
+\null\newpage\null\newpage
+
+\end{document}

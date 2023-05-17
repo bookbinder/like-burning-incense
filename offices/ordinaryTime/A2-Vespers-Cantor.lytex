@@ -1,0 +1,17 @@
+\documentclass{lbi_cantor_office}
+
+\begin{document}
+
+\topheader{Monday}{Week 1}
+
+\section*{Evening Prayer}
+
+\spacer\lilypondfile[line-width=4.4\in]{A2-Vespers-1-Ant-Cantor.ly}
+
+\spacer\lilypondfile[line-width=4.4\in]{A2-Vespers-2-Ant-Cantor.ly}
+
+\spacer\lilypondfile[line-width=4.4\in]{A2-Vespers-3-Ant-Cantor.ly}
+
+\spacer\lilypondfile[line-width=4.4\in]{A2-Vespers-Mag-Ant-Cantor.ly}
+
+\end{document}
