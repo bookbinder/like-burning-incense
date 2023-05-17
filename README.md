@@ -1,7 +1,7 @@
 # TLDR
 
 If you are just here for the Pdf files, see 
-[this folder on Google Drive](https://drive.google.com/drive/folders/1ygq5PmqaLeVCf3xUOsLA-igjyIiH6In_?usp=sharing).
+[this folder on Google Drive](https://drive.google.com/drive/folders/1ygq5PmqaLeVCf3xUOsLA-igjyIiH6In_?usp=sharing). Currently contains Weeks 1-4 in Ordinary Time, organ and cantor scores as well as psalm tones.
 
 # About
 
