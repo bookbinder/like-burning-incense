@@ -18,7 +18,7 @@ organ accompaniment for each Psalm.
 
 # The Original Project
 
-The original handwritten project is available at [Dropbox here](https://www.dropbox.com/sh/f4wwbcx3ox2lr1a/AACSsf0c_C3QVPCTAif1mj5Ka)
+The original handwritten project is available at [Dropbox here](https://www.dropbox.com/sh/f4wwbcx3ox2lr1a/AACSsf0c_C3QVPCTAif1mj5Ka).
 
 (Quoting from the original Antiphonary:)
 
@@ -127,15 +127,3 @@ tone, so in a number of cases I subsituted Psalm tones. See the file
 - Gospel Canticles for Sundays in Ordinary Time
 - Proper of Seasons
 - Proper of Saints
-
-# About the Liturgy of the Hours
-
-> The hymns and litanies of the Liturgy of the Hours integrate the prayer of
-> the psalms into the age of the Church, expressing the symbolism of the time
-> of day, the liturgical season, or the feast being celebrated. Moreover, the
-> reading from the Word of God at each Hour (with the subsequent responses or
-> *troparia*) and readings from the Fathers and spiritual masters at certain Hours,
-> reveal more deeply the meaning of the mystery being celebrated, assist in
-> understanding the psalms, and prepare for silent prayer.
-
-(CCC 1177)
