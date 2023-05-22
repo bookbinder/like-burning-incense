@@ -30,9 +30,6 @@ text = \lyricmode {
     \ll "The Lord sat enthroned over" the flood;
         \ll "the Lord sits as king" for ever.
 
-    \ll "The Lord will give strength to" his people,
-        \ll "the Lord will bless his people" with peace.
-
 }
 textB = \lyricmode {
 %    \override InstrumentName #'X-offset = #4
@@ -41,6 +38,9 @@ textB = \lyricmode {
     \set stanza = # "2. "
 %    \set shortVocalName = "2."
    \set includeGraceNotes = ##t
+    \ll "The Lord will give strength to" his people,
+        \ll "the Lord will bless his people" with peace.
+
     \ll "Glory to the Father and to" the Son,
         \ll "and to the Ho" -- ly Spirit:
     \ll "as it was in the beginning," is now,

@@ -17,7 +17,6 @@ sopMusic = {
     \sopranoTwo
     \sopranoOne
     \sopranoTwo
-    \sopranoOne
     \mark "D.C."
 }
 altoMusic = {
@@ -33,7 +32,6 @@ altoMusic = {
     \altoTwo
     \altoOne
     \altoTwo
-    \altoOne
 }    
 tenorMusic = {
     \global
@@ -48,7 +46,6 @@ tenorMusic = {
     \tenorTwo
     \tenorOne
     \tenorTwo
-    \tenorOne
 }
 bassMusic = {
     \global
@@ -63,7 +60,6 @@ bassMusic = {
     \bassTwo
     \bassOne
     \bassTwo
-    \bassOne
 }
 
 \score {        

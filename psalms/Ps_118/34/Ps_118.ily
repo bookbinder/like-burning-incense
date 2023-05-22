@@ -4,7 +4,6 @@ text = \lyricmode {
     \set includeGraceNotes = ##t
     \set stanza = # "1. "
 %    \set shortVocalName = "1."
-    \ll "-------------->"  "-->"
     \ll "Give thanks to the Lord for he" is good,
     \ll "for his love en" -- dures for ever.
 
@@ -33,6 +32,11 @@ text = \lyricmode {
     \ll "They compassed me, compassed me" a -- bout;
     \ll "in the Lord’s" name I \ll "crushed them."
 
+    \ll "They compassed me about like" bees;
+    \ll "they blazed like a fire a" -- mong thorns.
+    \ll "In the Lord’s" name I \ll "crushed them."
+
+
 }
 textB = \lyricmode {
 %    \override InstrumentName #'X-offset = #2
@@ -40,9 +44,6 @@ textB = \lyricmode {
     \set includeGraceNotes = ##t
     \set stanza = # "2. "
 %    \set shortVocalName = "2."
-    \ll "They compassed me about like" bees;
-    \ll "they blazed like a fire a" -- mong thorns.
-    \ll "In the Lord’s" name I \ll "crushed them."
 
     \ll "I was hard-pressed and" was falling,
     \ll "but the Lord" came to  -- \ll "help me."
@@ -69,6 +70,13 @@ textB = \lyricmode {
     \ll "The stone which the builders" re -- jected
     \ll "has become the" cor -- ner stone.
 
+    \ll "This is the work of" the Lord,
+    \ll "a marvel" in our eyes.
+    \ll "--->" "-->"
+    \ll "This day was made by" the Lord;
+    \ll "we rejoice" and are glad.
+
+
 }
 textC = \lyricmode {
 %    \override InstrumentName #'X-offset = #2
@@ -76,11 +84,6 @@ textC = \lyricmode {
     \set includeGraceNotes = ##t
     \set stanza = # "3. "
 %    \set shortVocalName = "3."
-    \ll "-------------->"  "-->"
-    \ll "This is the work of" the Lord,
-    \ll "a marvel" in our eyes.
-    \ll "This day was made by" the Lord;
-    \ll "we rejoice" and are glad.
 
     \ll "O Lord, grant us" sal -- vation;
     \ll "O Lord," grant suc -- cess.

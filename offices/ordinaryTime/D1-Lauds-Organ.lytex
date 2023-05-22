@@ -8,7 +8,6 @@
 
 \enlargethispage{2\baselineskip}
 
-\renewcommand{\betweenLilyPondSystem}[1]{\vspace{1mm}\linebreak} 
 
 \lilypondfile[line-width=6.9\in]{D1-Lauds-1-Ant-Organ.ly}
 
@@ -16,7 +15,6 @@
 
 \newpage
 
-\renewcommand{\betweenLilyPondSystem}[1]{\vspace{4mm}\linebreak} 
 
 \lilypondfile[line-width=6.9\in]{D1-Lauds-2-Ant-Organ.ly}
 

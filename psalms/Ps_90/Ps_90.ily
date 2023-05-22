@@ -12,10 +12,11 @@ sopMusic = {
     \sopranoTwoFlex
     \sopranoOne 
     \sopranoTwo
-    \sopranoTwo
-    \sopranoOneFlex
+    \sopranoTwoFlex
+    \sopranoOne
     \sopranoTwo
     \sopranoOne 
+    \sopranoTwo
     \mark \markup {"D.C."}
 }
 altoMusic = {
@@ -27,10 +28,11 @@ altoMusic = {
     \altoTwoFlex
     \altoOne 
     \altoTwo
-    \altoTwo
-    \altoOneFlex
+    \altoTwoFlex
+    \altoOne
     \altoTwo
     \altoOne 
+    \altoTwo
 }
 tenorMusic = {
     \global
@@ -41,10 +43,11 @@ tenorMusic = {
     \tenorTwoFlex
     \tenorOne 
     \tenorTwo
-    \tenorTwo
-    \tenorOneFlex
+    \tenorTwoFlex
+    \tenorOne
     \tenorTwo
     \tenorOne 
+    \tenorTwo
 }
 bassMusic = {
     \global
@@ -55,10 +58,11 @@ bassMusic = {
     \bassTwoFlex
     \bassOne 
     \bassTwo
-    \bassTwo
-    \bassOneFlex
+    \bassTwoFlex
+    \bassOne
     \bassTwo
     \bassOne 
+    \bassTwo
 }
 
 \score {

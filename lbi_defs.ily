@@ -86,4 +86,3 @@ midi_instrument = {
 % #(hashq-set! toneStruct '56 "43")
 % #(hashq-set! toneStruct '57 "33")
 % #(hashq-set! toneStruct '58 "33")
-

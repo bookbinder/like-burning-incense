@@ -33,7 +33,7 @@ global = {
     %\hide Staff.Stem
 }
 
-sopranoOneFlex = { \afterGrace aes'\breve^"A† - alternate for 11B?" f'4 \breathe aes'\breve bes'8 aes'4 \bar "|" f'\breve g'8 ees'4 \bar "||" }
+sopranoOneFlex = { \afterGrace aes'\breve f'4 \breathe aes'\breve bes'8 aes'4 \bar "|" f'\breve g'8 ees'4 \bar "||" }
 sopranoOne = { aes'\breve^"A" bes'8 aes'4 \bar "|" f'\breve g'8 ees'4 \bar "||" }
 sopranoTwoFlex = { \afterGrace aes'\breve^"B†" f'4 \breathe aes'\breve bes'8 aes'4 \bar "|" f'\breve g'8 ees'4 \bar "||" }
 sopranoTwo = { aes'\breve^"B" bes'8 aes'4 \bar "|" f'\breve g'8 ees'4 \bar "||" }
