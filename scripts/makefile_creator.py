@@ -25,9 +25,9 @@ with open('testfile', 'w') as outfile:
     for f in filenames2():
         # organ
         outfile.write(f"\n\nout/{f}-Organ.pdf:")
-        outfile.write(f"\n\tlilypond-book -o out --pdf {f}-Organ.lytex")
-        outfile.write(f"\n\tcd out && pdflatex {f}-Organ.tex")
+        outfile.write(f"\n\t$(LILYPOND-BOOK) {f}-Organ.lytex")
+        outfile.write(f"\n\tcd out && $(LATEX) {f}-Organ.tex")
         # cantor
         outfile.write(f"\n\nout/{f}-Cantor.pdf:")
-        outfile.write(f"\n\tlilypond-book -o out --pdf {f}-Cantor.lytex")
-        outfile.write(f"\n\tcd out && pdflatex {f}-Cantor.tex")
+        outfile.write(f"\n\t$(LILYPOND-BOOK) {f}-Cantor.lytex")
+        outfile.write(f"\n\tcd out && $(LATEX) {f}-Cantor.tex")
