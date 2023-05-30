@@ -31,20 +31,14 @@ altoNotesAnt = \relative c' {
     \global
     \keysig
     \voiceTwo
-    
-
 }
 tenorNotesAnt = \relative g {
     \global
     \keysig
     \voiceOne
-
-
 }
 bassNotesAnt = \relative c {
     \global
     \keysig
     \voiceTwo
-
-
 }
