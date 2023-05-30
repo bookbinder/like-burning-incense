@@ -3,6 +3,7 @@
 # Ignore directories
 **/out/
 **/pdf/
+**/temp/
 
 # Ignore file types:
 *.dvi
