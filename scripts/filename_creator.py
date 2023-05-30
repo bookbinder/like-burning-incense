@@ -59,7 +59,7 @@ def filenamesSunOT():
             "23Sun", "24Sun", "25Sun", "26Sun", "27Sun", "28Sun", "29Sun",
             "30Sun", "31Sun", "32Sun", "33Sun"]
     days = "01"
-    offices = ["Lauds", "Vespers"],
+    offices = ["Lauds", "Vespers"]
     ants = ["Ben", "Mag"]
     kind = ["Ant", "Psalm"]
     performer = ["Organ", "Cantor"]
@@ -78,7 +78,7 @@ def filenamesSunOT():
     ])
 
     # .lytex files for the scores directory
-    # e.g. 1Sun0-Organ.lytex
+    # e.g. 1Sun-Organ.lytex
     lytexFiles = sorted([
         f"{z[0]}-{z[1]}.lytex" for z in list(it.product(weeks, performer))
     ])
