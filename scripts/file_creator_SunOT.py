@@ -29,8 +29,10 @@ for f in lyFiles:
 # # lytex files
 lytexStr = Path('../skel/sunOT.lytex').read_text()
 for f in lytexFiles:
+    sunday = f[:f.index('S')]
     curLytexStr = lytexStr.replace('changeme', f"{f.split('-')[0]}0", 2)
     curLytexStr = curLytexStr.replace('changeme', f"{f.split('-')[0]}1")
+    curLytexStr = curLytexStr.replace('XX Sunday in', f"Sunday {sunday},")
     Path(f'temp/{f}').write_text(curLytexStr)
 
 # # ily files
