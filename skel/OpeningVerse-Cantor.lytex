@@ -1,0 +1,10 @@
+\documentclass{lbi_cantor_office}
+
+\begin{document}
+
+% \section*{Opening Verse}
+
+\thispagestyle{empty}
+\spacer\lilypondfile[line-width=4.4\in]{../../OpeningVerse-Cantor.ly}
+
+\end{document}

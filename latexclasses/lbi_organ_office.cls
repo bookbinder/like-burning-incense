@@ -2,11 +2,12 @@
 \ProvidesClass{lbi_organ_office}
 \LoadClass{book}
 
-\RequirePackage[bottom=.7in,top=.8in,inner=.8in,outer=.5in]{geometry}
+\RequirePackage[bottom=.7in,top=.8in,inner=1in,outer=.3in]{geometry}
 \RequirePackage{titlesec}
 \RequirePackage{graphics}
 \RequirePackage{libertineRoman}
 
+\setcounter{secnumdepth}{0}
 \newcommand{\betweenLilyPondSystem}[1]{\vspace{4mm}\linebreak} 
 \raggedbottom
 \raggedright
@@ -20,7 +21,8 @@
   {\thesection}{1em}{}
 
 \titleformat{\subsection}
-  {\normalfont\sffamily\large\bfseries}
+  {\normalfont\large\bfseries}
   {\thesection}{1em}{}
 
 \titlespacing*{\chapter}{0pt}{30pt}{20pt}
+\newcommand{\spacer}{\null\medskip}

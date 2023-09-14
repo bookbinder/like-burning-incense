@@ -2,7 +2,6 @@
 
 # Ignore directories
 **/out/
-**/pdf/
 **/temp/
 
 # Ignore file types:
@@ -16,4 +15,4 @@
 *.toc
 
 # Un-ignore file types in specific directory and all its subdirectories
-# !/pdf/**/*.pdf
+!/pdf/*.pdf

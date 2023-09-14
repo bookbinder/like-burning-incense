@@ -46,11 +46,10 @@ def ilyfiles(file_names):
 
 def scorefiles(title='Score'):
     "Create and populate score files in the temp directory"
-    scoreOrganStr = Path('../skel/Scores.lytex').read_text().replace('<title>', title)
-    scoreCantorStr = scoreOrganStr.replace('Organ', 'Cantor')
-    scoreCantorStr = scoreCantorStr.replace('lbi_organ', 'lbi_cantor')
-    Path('temp/ScoreOrgan.lytex').write_text(scoreOrganStr)
-    Path('temp/ScoreCantor.lytex').write_text(scoreCantorStr)
+    scoreOrganStr = Path('../skel/ScoreOrganSunOT.tex').read_text().replace('<title>', title)
+    scoreCantorStr = Path('../skel/ScoreCantorSunOT.tex').read_text().replace('<title>', title)
+    Path('temp/ScoreOrgan.tex').write_text(scoreOrganStr)
+    Path('temp/ScoreCantor.tex').write_text(scoreCantorStr)
 
 
 def makefile():
@@ -58,11 +57,18 @@ def makefile():
     makefileStr = Path('../skel/SunOTMakefile').read_text()
     Path('temp/Makefile').write_text(makefileStr)
 
+def openingverse():
+    "Create and populate Opening Verse files for the temp directory"
+    openOrganStr = Path('../skel/OpeningVerse-Organ.lytex').read_text()
+    openCantorStr = Path('../skel/OpeningVerse-Cantor.lytex').read_text()
+    Path('temp/OpeningVerse-Organ.lytex').write_text(openOrganStr)
+    Path('temp/OpeningVerse-Cantor.lytex').write_text(openCantorStr)
 
 lyNames, lytexNames, ilyNames = filenamesSunOT()
 
-# lyfiles(lyNames)
-# lytexfiles(lytexNames)
-# ilyfiles(ilyNames)
-# scorefiles('Gospel Canticles for Sundays in Ordinary Time')
+lyfiles(lyNames)
+lytexfiles(lytexNames)
+ilyfiles(ilyNames)
+scorefiles('Gospel Canticles for Sundays in Ordinary Time')
 makefile()
+openingverse()

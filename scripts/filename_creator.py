@@ -85,6 +85,6 @@ def filenamesSunOT():
 
     # .ily files for the notes subdirectory
     ilyFiles = sorted(
-        list(set(['-'.join(z.split('-')[:3]) + '.ily' for z in lyFiles]))
+        list(set(['-'.join(z.split('-')[:3]) + '-Ant.ily' for z in lyFiles]))
     )
     return lyFiles, lytexFiles, ilyFiles

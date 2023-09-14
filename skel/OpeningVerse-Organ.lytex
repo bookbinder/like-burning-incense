@@ -1,0 +1,10 @@
+\documentclass{lbi_organ_office}
+
+\begin{document}
+
+% \section*{Opening Verse}
+
+\thispagestyle{empty}
+\lilypondfile[line-width=6.9\in]{../../OpeningVerse-Organ.ly}
+
+\end{document}

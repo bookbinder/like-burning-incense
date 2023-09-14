@@ -7,6 +7,7 @@
 \RequirePackage{graphics}
 \RequirePackage{libertineRoman}
 
+\setcounter{secnumdepth}{0}
 \newcommand{\betweenLilyPondSystem}[1]{\vspace{0mm}\linebreak} 
 \raggedbottom
 \raggedright

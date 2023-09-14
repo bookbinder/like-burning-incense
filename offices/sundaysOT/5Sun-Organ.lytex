@@ -1,0 +1,31 @@
+\documentclass{lbi_organ_office}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\section*{Sunday 5, Ordinary Time}
+
+\subsection{Evening Prayer I}
+
+\lilypondfile[line-width=6.9\in]{5Sun0-Vespers-Mag-Ant-Organ.ly}
+
+\spacer\lilypondfile[line-width=6.9\in]{5Sun0-Vespers-Mag-Psalm-Organ.ly}
+
+\newpage
+
+\subsection{Morning Prayer}
+
+\lilypondfile[line-width=6.9\in]{5Sun1-Lauds-Ben-Ant-Organ.ly}
+
+\spacer\lilypondfile[line-width=6.9\in]{5Sun1-Lauds-Ben-Psalm-Organ.ly}
+
+\newpage
+
+\subsection{Evening Prayer II}
+
+\lilypondfile[line-width=6.9\in]{5Sun1-Vespers-Mag-Ant-Organ.ly}
+
+\spacer\lilypondfile[line-width=6.9\in]{5Sun1-Vespers-Mag-Psalm-Organ.ly}
+
+\end{document}
