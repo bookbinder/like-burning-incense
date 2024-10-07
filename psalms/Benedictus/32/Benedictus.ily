@@ -32,7 +32,7 @@ textB = \lyricmode {
     \set includeGraceNotes = ##t
     \ll "You, my child, shall be called the prophet of the" Most High,
         \ll "for you will go before the Lord to prepare his" way,
-    \ll "to give his people knowledge" of salvation
+    \ll "to give his people knowledge of" sal -- vation
         \ll "by the forgiveness of their" sins.
 
     \ll "---------->" "--->"

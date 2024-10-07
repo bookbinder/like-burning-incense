@@ -26,35 +26,31 @@ sm = { \set melismaBusyProperties = #'() }
 usm = { \unset melismaBusyProperties }
 
 global = {
-    \key g \major
+    \key f \major
     \cadenzaOn
     \set tieWaitForNote = ##t
     \autoBeamOff
     %\hide Staff.Stem
 }
 
-sopranoOneFlex = { 
-    r8 g8 a[ b] a4 a \bar "|" g\breve fis8 a\breve b4 \bar "||"
-    g8 g e d4 \bar "|" g\breve fis8 a\breve b4 \bar "||"
-    r8 b8 b[ a] a g e g[ a] a[ g] g4 \bar "|."
-  }
-sopranoOne = {}
-sopranoTwoFlex = {}
-sopranoTwo = {}
+sopranoOneFlex = { \afterGrace a'\breve^"A†" g'4 \breathe a'\breve g'8 f'4 \bar "|" g'\breve bes'8 a'4 \bar "||"}
+sopranoOne = {a'\breve^"A" g'8 f'4 \bar "|" g'\breve bes'8 a'4 \bar "||"}
+sopranoTwoFlex = { \afterGrace a'\breve^"B†" g'4 \breathe a'\breve g'8 f'4 \bar "|" g'\breve bes'8 a'4 \bar "||"}
+sopranoTwo = {a'\breve^"B" g'8 f'4 \bar "|" g'\breve bes'8 a'4 \bar "||"}
 
-altoOneFlex = {}
-altoOne = {}
-altoTwoFlex = {}
-altoTwo = {}
+altoOneFlex = {\afterGrace c'\breve d'4 c'\breve*17/16~ c'4 d'\breve*17/16 f'4}
+altoOne = {c'\breve*17/16~ c'4 d'\breve*17/16 f'4}
+altoTwoFlex = {\afterGrace e'\breve d'4 e'\breve*17/16 d'4~ d'\breve*17/16 f'4}
+altoTwo = {e'\breve*17/16 d'4~ d'\breve*17/16 f'4}
 
-tenorOneFlex = {}
-tenorOne = {}
-tenorTwoFlex = {}
-tenorTwo = {}
+tenorOneFlex = {\afterGrace c'\breve bes4 c'\breve*17/16~ c'4 bes\breve*17/16 c'4}
+tenorOne = {c'\breve*17/16~ c'4 bes\breve*17/16 c'4}
+tenorTwoFlex = {\afterGrace a\breve bes4 a\breve*17/16~ a4 bes\breve*17/16 c'4}
+tenorTwo = {a\breve*17/16~ a4 bes\breve*17/16 c'4}
 
-bassOneFlex = {}
-bassOne = {}
-bassTwoFlex = {}
-bassTwo = {}
+bassOneFlex = {\afterGrace f\breve g4 f\breve*17/16 a4 g\breve*17/16 f4}
+bassOne = {f\breve*17/16 a4 g\breve*17/16 f4}
+bassTwoFlex = {\afterGrace c\breve g4 c\breve*17/16 d4 bes,\breve*17/16 f4}
+bassTwo = {c\breve*17/16 d4 bes,\breve*17/16 f4}
 
 

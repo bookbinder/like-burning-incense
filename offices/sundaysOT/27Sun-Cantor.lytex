@@ -1,4 +1,4 @@
-\documentclass{lbi_organ_office}
+\documentclass{lbi_cantor_office}
 
 \begin{document}
 
@@ -6,26 +6,16 @@
 
 \section*{Sunday 27, Ordinary Time}
 
-\subsection{Evening Prayer I}
+\bigskip\subsection{Evening Prayer I}
 
-\lilypondfile[line-width=6.9\in]{27Sun0-Vespers-Mag-Ant-Organ.ly}
-
-\spacer\lilypondfile[line-width=6.9\in]{27Sun0-Vespers-Mag-Psalm-Organ.ly}
-
-\newpage
+\lilypondfile[line-width=4\in]{27Sun0-Vespers-Mag-Ant-Cantor.ly}
 
 \subsection{Morning Prayer}
 
-\lilypondfile[line-width=6.9\in]{27Sun1-Lauds-Ben-Ant-Organ.ly}
-
-\spacer\lilypondfile[line-width=6.9\in]{27Sun1-Lauds-Ben-Psalm-Organ.ly}
-
-\newpage
+\lilypondfile[line-width=4\in]{27Sun1-Lauds-Ben-Ant-Cantor.ly}
 
 \subsection{Evening Prayer II}
 
-\lilypondfile[line-width=6.9\in]{27Sun1-Vespers-Mag-Ant-Organ.ly}
-
-\spacer\lilypondfile[line-width=6.9\in]{27Sun1-Vespers-Mag-Psalm-Organ.ly}
+\lilypondfile[line-width=4\in]{27Sun1-Vespers-Mag-Ant-Cantor.ly}
 
 \end{document}

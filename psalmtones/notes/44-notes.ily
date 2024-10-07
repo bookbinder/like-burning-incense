@@ -26,7 +26,7 @@ sm = { \set melismaBusyProperties = #'() }
 usm = { \unset melismaBusyProperties }
 
 global = {
-    \key d \minor
+    \key a \minor
     \cadenzaOn
     \set tieWaitForNote = ##t
     \autoBeamOff
@@ -49,8 +49,8 @@ tenorTwoFlex = {\afterGrace f\breve g4 \breathe f\breve s8 g4 \bar "|" f\breve a
 tenorTwo = { f\breve s8 g4 \bar "|" f\breve a4 \bar "||" }
 
 bassOneFlex = { \afterGrace f\breve e4 f\breve s8 a4 e\breve c4 }
-bassOne = {  }
+bassOne = {f\breve s8 a4 e\breve c4  }
 bassTwoFlex = { \afterGrace f\breve e4 f\breve s8 c4 d\breve a,4 }
-bassTwo = {  }
+bassTwo = { f\breve s8 c4 d\breve a,4 }
 
 

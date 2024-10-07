@@ -2,11 +2,11 @@
 \include "../../../lbi_defs.ily"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key x \minor
-antiphon = "x"
-psalmtone = "x"
-psalmtonestruct = "x"
-psalmnum = "x"
+keysig =  \key a \minor
+antiphon = "Ben."
+psalmtone = "11"
+psalmtonestruct = "33"
+psalmnum = "Benedictus"
 % transposition interval for the corresponding psalm tone
 % to match the key signature of this antiphon. For
 % use in in cantor (antiphon) and organ (psalm) scores
@@ -24,7 +24,7 @@ sopNotesAnt = \relative e' {
     \keysig
     \voiceOne
 
-    \hideNotes e16 \unHideNotes   %so that I can align the * better
+    
 
 }
 altoNotesAnt = \relative c' {

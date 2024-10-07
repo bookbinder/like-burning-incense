@@ -4,11 +4,11 @@
 
 \pagestyle{empty}
 
-\section*{Sunday 26, Ordinary Time}
+%% \section*{Sunday 26, Ordinary Time}
 
 \subsection{Evening Prayer I}
 
-\lilypondfile[line-width=6.9\in]{26Sun0-Vespers-Mag-Ant-Organ.ly}
+\lilypondfile[line-width=6.4\in]{26Sun0-Vespers-Mag-Ant-Organ.ly}
 
 \spacer\lilypondfile[line-width=6.9\in]{26Sun0-Vespers-Mag-Psalm-Organ.ly}
 
@@ -16,7 +16,7 @@
 
 \subsection{Morning Prayer}
 
-\lilypondfile[line-width=6.9\in]{26Sun1-Lauds-Ben-Ant-Organ.ly}
+\lilypondfile[line-width=6.4\in]{26Sun1-Lauds-Ben-Ant-Organ.ly}
 
 \spacer\lilypondfile[line-width=6.9\in]{26Sun1-Lauds-Ben-Psalm-Organ.ly}
 
@@ -24,7 +24,7 @@
 
 \subsection{Evening Prayer II}
 
-\lilypondfile[line-width=6.9\in]{26Sun1-Vespers-Mag-Ant-Organ.ly}
+\lilypondfile[line-width=6.4\in]{26Sun1-Vespers-Mag-Ant-Organ.ly}
 
 \spacer\lilypondfile[line-width=6.9\in]{26Sun1-Vespers-Mag-Psalm-Organ.ly}
 

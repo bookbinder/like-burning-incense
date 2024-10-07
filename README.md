@@ -1,7 +1,8 @@
 # TLDR
 
-If you are just here for the Pdf files, see 
-[the Pdf directory](https://github.com/bookbinder/like-burning-incense/tree/master/pdf). Currently contains complete organ and cantor scores for Weeks 1-4 in Ordinary Time, as well as psalm tones.
+If you are just here for the PDF files, see 
+[this Google Drive link](
+https://drive.google.com/drive/folders/1ygq5PmqaLeVCf3xUOsLA-igjyIiH6In_?usp=sharing). Currently contains complete organ and cantor scores for Weeks 1-4 in Ordinary Time with Sunday Gospel Canticles for weeks 2-33, as well as psalm tones.
 
 # About
 

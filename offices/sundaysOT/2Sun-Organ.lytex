@@ -4,28 +4,28 @@
 
 \pagestyle{empty}
 
-% \section*{Sunday 2, Ordinary Time}
+%% \section*{Sunday 2, Ordinary Time}
 
 \subsection{Evening Prayer I}
 
-\lilypondfile[line-width=6.9\in]{2Sun0-Vespers-Mag-Ant-Organ.ly}
+\lilypondfile[line-width=6.4\in]{2Sun0-Vespers-Mag-Ant-Organ.ly}
 
 \spacer\lilypondfile[line-width=6.9\in]{2Sun0-Vespers-Mag-Psalm-Organ.ly}
 
-% \newpage
+\newpage
 
-% \subsection{Morning Prayer}
+\subsection{Morning Prayer}
 
-% \lilypondfile[line-width=6.9\in]{2Sun1-Lauds-Ben-Ant-Organ.ly}
+\lilypondfile[line-width=6.4\in]{2Sun1-Lauds-Ben-Ant-Organ.ly}
 
-% \spacer\lilypondfile[line-width=6.9\in]{2Sun1-Lauds-Ben-Psalm-Organ.ly}
+\spacer\lilypondfile[line-width=6.9\in]{2Sun1-Lauds-Ben-Psalm-Organ.ly}
 
-% \newpage
+\newpage
 
-% \subsection{Evening Prayer II}
+\subsection{Evening Prayer II}
 
-% \lilypondfile[line-width=6.9\in]{2Sun1-Vespers-Mag-Ant-Organ.ly}
+\lilypondfile[line-width=6.4\in]{2Sun1-Vespers-Mag-Ant-Organ.ly}
 
-% \spacer\lilypondfile[line-width=6.9\in]{2Sun1-Vespers-Mag-Psalm-Organ.ly}
+\spacer\lilypondfile[line-width=6.9\in]{2Sun1-Vespers-Mag-Psalm-Organ.ly}
 
 \end{document}

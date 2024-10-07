@@ -13,6 +13,7 @@
 \include "44.ly"
 \include "38.ly"
 \include "30.ly"
+\include "71.ly"
 
 \markup {\huge \bold "33"}
 \include "64.ly"
@@ -53,6 +54,8 @@
 \include "20.ly"
 
 \markup {\huge \bold "43"}
+\include "70.ly"
+\include "69.ly"
 \include "67.ly"
 \include "66.ly"
 \include "65.ly"

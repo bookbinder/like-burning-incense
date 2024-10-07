@@ -4,33 +4,26 @@
 sopMusic = {
     \global
     \voiceOne
-    % \sopranoTwoFlex
-    \sopranoOne
-    \sopranoTwo
+    \sopranoOneFlex
+    \sopranoTwoFlex
 }
 altoMusic = {
     \global
     \voiceTwo
-    % \altoOneFlex
-    % \altoTwoFlex
-    \altoOne
-    \altoTwo
+    \altoOneFlex
+    \altoTwoFlex
 }
 tenorMusic = {
     \global
     \voiceOne
-    % \tenorOneFlex
-    % \tenorTwoFlex
-    \tenorOne
-    \tenorTwo
+    \tenorOneFlex
+    \tenorTwoFlex
 }
 bassMusic = {
     \global
     \voiceTwo
-    % \bassOneFlex
-    % \bassTwoFlex
-    \bassOne
-    \bassTwo
+    \bassOneFlex
+    \bassTwoFlex
 }
 
 \score {
