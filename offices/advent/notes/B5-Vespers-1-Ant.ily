@@ -1,14 +1,15 @@
-\version "2.20.0"
+\version "2.18.2"
+\include "../../../lbi_defs.ily"
+%CAN'T FIND THE PSALM TONE FOR THIS. 
+%Is it a variant of 24. There might be a mistake in the original 24 because it sounds a bit off.
+%Or maybe it's a variant of 31 or 36
+%If none of the above it is the new tone 58 which needs to be harmonized
 
-% Will need these variables to build the cantor and organ scores:
-keysig = \key c \major 
-antiphon = "3"
-psalmtone = "20"
-psalmtonestruct = "42"
-psalmnum = "Ps_149"
-% transposition interval for  the corresponding psalm tone
-	% to match the key c of this antiphon. For
-	% use in cantor (antiphon) score:
+antiphon = "1"
+psalmnum = "Ps_72_2-11"
+psalmtone = "46"
+psalmtonestruct = "33"
+keysig = \key cis \minor
 frompitch = a
 topitch = a
 

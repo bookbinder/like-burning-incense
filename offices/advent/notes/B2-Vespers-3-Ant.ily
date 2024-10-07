@@ -1,14 +1,11 @@
-\version "2.20.0"
+\version "2.18.2"
+\include "../../../lbi_defs.ily"
 
-% Will need these variables to build the cantor and organ scores:
-keysig = \key c \major 
 antiphon = "3"
-psalmtone = "20"
-psalmtonestruct = "42"
-psalmnum = "Ps_149"
-% transposition interval for  the corresponding psalm tone
-	% to match the key c of this antiphon. For
-	% use in cantor (antiphon) score:
+psalmnum = "Eph_1_3-10"
+psalmtone = "42"
+psalmtonestruct = "43"
+keysig = \key cis \minor
 frompitch = a
 topitch = a
 

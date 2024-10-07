@@ -1,14 +1,14 @@
 \version "2.20.0"
 
 % Will need these variables to build the cantor and organ scores:
-keysig = \key c \major 
+keysig =  \key c \major 
 antiphon = "3"
-psalmtone = "20"
-psalmtonestruct = "42"
-psalmnum = "Ps_149"
+psalmtone = "4"
+psalmtonestruct = "33"
+psalmnum = "Rev_15_3-4"
 % transposition interval for  the corresponding psalm tone
-	% to match the key c of this antiphon. For
-	% use in cantor (antiphon) score:
+	% to match the key signature of this antiphon. For
+	% use in cantor (antiphon) and organ (psalm) scores:
 frompitch = a
 topitch = a
 

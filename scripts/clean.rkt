@@ -41,6 +41,8 @@ bassNotesAnt = \\relative c {
 (define (run)
   (for ([f files])
     (let ([orig (regexp-replace #rx"topitch.*"
-                                (file->string (stream-first files))
+                                (file->string f)
                                 "")])
       (display-to-file (string-append orig new-text) f #:exists 'replace))))
+
+(run)
