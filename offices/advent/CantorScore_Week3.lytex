@@ -1,0 +1,397 @@
+\input{../CantorPreamble.lytex}
+
+\section{Week 3}
+
+
+\section{Sunday Vespers 1}
+
+\subsection{Ps 113}
+
+\lilypondfile[line-width=4.5in]{C0-Vespers-1-Ant-Cantor.ly}
+
+\subsection{Ps 116:10--19}
+
+\lilypondfile[line-width=4.5in]{C0-Vespers-2-Ant-Cantor.ly}
+
+\subsection{Phil 2:6--11}
+
+\lilypondfile[line-width=4.5in]{C0-Vespers-3-Ant-Cantor.ly}
+%
+% \subsection{Magnificat}
+%
+% \lilypondfile[line-width=4.5in]{C0-Vespers-Mag-Ant-Cantor.ly}
+%
+%
+\section{Sunday Lauds}
+
+\subsection{Ps 93}
+
+\lilypondfile[line-width=4.5in]{C1-Lauds-1-Ant-Cantor.ly}
+
+ \subsection{Dan 3:57--88, 56}
+
+ \lilypondfile[line-width=4.5in]{C1-Lauds-2-Ant-Cantor.ly}
+
+ \subsection{Ps 148}
+
+ \lilypondfile[line-width=4.5in]{C1-Lauds-3-Ant-Cantor.ly}
+%
+% \subsection{Dan 3:57--88, 56}
+%
+% \lilypondfile[line-width=4.5in]{C1-Lauds-2-Ant-Cantor.ly}
+%
+% \subsection{Ps 148}
+%
+% \lilypondfile[line-width=4.5in]{C1-Lauds-3-Ant-Cantor.ly}
+%
+% \subsection{Benedictus}
+%
+% \lilypondfile[line-width=4.5in]{C1-Lauds-Ben-Ant-Cantor.ly}
+
+
+ \section{Sunday Vespers 2}
+
+ \subsection{Ps 110:1--5, 7}
+
+ \lilypondfile[line-width=4.5in]{C1-Vespers-1-Ant-Cantor.ly}
+
+ \subsection{Ps 111}
+
+ \lilypondfile[line-width=4.5in]{C1-Vespers-2-Ant-Cantor.ly}
+
+ \subsection{Rev 19:1--7}
+
+ \lilypondfile[line-width=4.5in]{C1-Vespers-3-Ant-Cantor.ly}
+%
+%
+% \section{Sunday Vespers 2}
+%
+% \subsection{Ps 110:1--5, 7}
+%
+% \lilypondfile[line-width=4.5in]{C1-Vespers-1-Ant-Cantor.ly}
+%
+% \subsection{Ps 111}
+%
+% \lilypondfile[line-width=4.5in]{C1-Vespers-2-Ant-Cantor.ly}
+%
+% \subsection{Rev 19:1--7}
+%
+% \lilypondfile[line-width=4.5in]{C1-Vespers-3-Ant-Cantor.ly}
+%
+% \subsection{Magnificat}
+%
+% \lilypondfile[line-width=4.5in]{C1-Vespers-Mag-Ant-Cantor.ly}
+
+
+ \section{Monday Lauds}
+
+ \subsection{Ps 84}
+
+ \lilypondfile[line-width=4.5in]{C2-Lauds-2-Ant-Cantor.ly}
+
+ \subsection{Isa 2:2--5}
+
+ \lilypondfile[line-width=4.5in]{C2-Lauds-2-Ant-Cantor.ly}
+
+ \subsection{Ps 96}
+
+ \lilypondfile[line-width=4.5in]{C2-Lauds-3-Ant-Cantor.ly}
+
+ \subsection{Benedictus}
+
+ \lilypondfile[line-width=4.5in]{C2-Lauds-Ben-Ant-Cantor.ly}
+
+
+ \section{Monday Vespers}
+
+ \subsection{Ps 123}
+
+ \lilypondfile[line-width=4.5in]{C2-Vespers-1-Ant-Cantor.ly}
+
+ \subsection{Ps 124}
+
+ \lilypondfile[line-width=4.5in]{C2-Vespers-2-Ant-Cantor.ly}
+
+ \subsection{Eph 1:3--10}
+
+ \lilypondfile[line-width=4.5in]{C2-Vespers-3-Ant-Cantor.ly}
+
+ \subsection{Magnificat}
+
+ \lilypondfile[line-width=4.5in]{C2-Vespers-Mag-Ant-Cantor.ly}
+
+
+ \section{Tuesday Lauds}
+
+ \subsection{Ps 85}
+
+ \lilypondfile[line-width=4.5in]{C3-Lauds-1-Ant-Cantor.ly}
+
+ \subsection{Isa 26:1--4, 7--9, 12}
+
+ \lilypondfile[line-width=4.5in]{C3-Lauds-2-Ant-Cantor.ly}
+
+ \subsection{Ps 67}
+
+ \lilypondfile[line-width=4.5in]{C3-Lauds-3-Ant-Cantor.ly}
+
+ \subsection{Benedictus}
+
+ \lilypondfile[line-width=4.5in]{C3-Lauds-Ben-Ant-Cantor.ly}
+
+
+ \section{Tuesday Vespers}
+
+ \subsection{Ps 125}
+
+ \lilypondfile[line-width=4.5in]{C3-Vespers-1-Ant-Cantor.ly}
+
+ \subsection{Ps 131}
+
+ \lilypondfile[line-width=4.5in]{C3-Vespers-2-Ant-Cantor.ly}
+
+ \subsection{Rev 4:11; 5:9, 10, 12}
+
+ \lilypondfile[line-width=4.5in]{C3-Vespers-3-Ant-Cantor.ly}
+
+ \subsection{Magnificat}
+
+ \lilypondfile[line-width=4.5in]{C3-Vespers-Mag-Ant-Cantor.ly}
+
+
+ \section{Wednesday Lauds}
+
+ \subsection{Ps 86}
+
+ \lilypondfile[line-width=4.5in]{C4-Lauds-1-Ant-Cantor.ly}
+
+ \subsection{Isa 33:13--16}
+
+ \lilypondfile[line-width=4.5in]{C4-Lauds-2-Ant-Cantor.ly}
+
+ \subsection{Ps 98}
+
+ \lilypondfile[line-width=4.5in]{C4-Lauds-3-Ant-Cantor.ly}
+
+ \subsection{Benedictus}
+
+ \lilypondfile[line-width=4.5in]{C4-Lauds-Ben-Ant-Cantor.ly}
+
+
+ \section{Wednesday Vespers}
+
+ \subsection{Ps 126}
+
+ \lilypondfile[line-width=4.5in]{C4-Vespers-1-Ant-Cantor.ly}
+
+%
+%
+% \section{Monday Lauds}
+%
+% \subsection{Ps 84}
+%
+% \lilypondfile[line-width=4.5in]{C2-Lauds-2-Ant-Cantor.ly}
+%
+% \subsection{Isa 2:2--5}
+%
+% \lilypondfile[line-width=4.5in]{C2-Lauds-2-Ant-Cantor.ly}
+%
+% \subsection{Ps 96}
+%
+% \lilypondfile[line-width=4.5in]{C2-Lauds-3-Ant-Cantor.ly}
+%
+% \subsection{Benedictus}
+%
+% \lilypondfile[line-width=4.5in]{C2-Lauds-Ben-Ant-Cantor.ly}
+%
+%
+% \section{Monday Vespers}
+%
+% \subsection{Ps 123}
+%
+% \lilypondfile[line-width=4.5in]{C2-Vespers-1-Ant-Cantor.ly}
+%
+% \subsection{Ps 124}
+%
+% \lilypondfile[line-width=4.5in]{C2-Vespers-2-Ant-Cantor.ly}
+%
+% \subsection{Eph 1:3--10}
+%
+% \lilypondfile[line-width=4.5in]{C2-Vespers-3-Ant-Cantor.ly}
+%
+% \subsection{Magnificat}
+%
+% \lilypondfile[line-width=4.5in]{C2-Vespers-Mag-Ant-Cantor.ly}
+%
+%
+% \section{Tuesday Lauds}
+%
+% \subsection{Ps 85}
+%
+% \lilypondfile[line-width=4.5in]{C3-Lauds-1-Ant-Cantor.ly}
+%
+% \subsection{Isa 26:1--4, 7--9, 12}
+%
+% \lilypondfile[line-width=4.5in]{C3-Lauds-2-Ant-Cantor.ly}
+%
+% \subsection{Ps 67}
+%
+% \lilypondfile[line-width=4.5in]{C3-Lauds-3-Ant-Cantor.ly}
+%
+% \subsection{Benedictus}
+%
+% \lilypondfile[line-width=4.5in]{C3-Lauds-Ben-Ant-Cantor.ly}
+%
+%
+% \section{Tuesday Vespers}
+%
+% \subsection{Ps 125}
+%
+% \lilypondfile[line-width=4.5in]{C3-Vespers-1-Ant-Cantor.ly}
+%
+% \subsection{Ps 131}
+%
+% \lilypondfile[line-width=4.5in]{C3-Vespers-2-Ant-Cantor.ly}
+%
+% \subsection{Rev 4:11; 5:9, 10, 12}
+%
+% \lilypondfile[line-width=4.5in]{C3-Vespers-3-Ant-Cantor.ly}
+%
+% \subsection{Magnificat}
+%
+% \lilypondfile[line-width=4.5in]{C3-Vespers-Mag-Ant-Cantor.ly}
+%
+%
+% \section{Wednesday Lauds}
+%
+% \subsection{Ps 86}
+%
+% \lilypondfile[line-width=4.5in]{C4-Lauds-1-Ant-Cantor.ly}
+%
+% \subsection{Isa 33:13--16}
+%
+% \lilypondfile[line-width=4.5in]{C4-Lauds-2-Ant-Cantor.ly}
+%
+% \subsection{Ps 98}
+%
+% \lilypondfile[line-width=4.5in]{C4-Lauds-3-Ant-Cantor.ly}
+%
+% \subsection{Benedictus}
+%
+% \lilypondfile[line-width=4.5in]{C4-Lauds-Ben-Ant-Cantor.ly}
+%
+%
+% \section{Wednesday Vespers}
+%
+% \subsection{Ps 126}
+%
+% \lilypondfile[line-width=4.5in]{C4-Vespers-1-Ant-Cantor.ly}
+%
+% \subsection{Ps 127}
+%
+% \lilypondfile[line-width=4.5in]{C4-Vespers-2-Ant-Cantor.ly}
+%
+% \subsection{Col 1:12--20}
+%
+% \lilypondfile[line-width=4.5in]{C4-Vespers-3-Ant-Cantor.ly}
+%
+% \subsection{Magnificat}
+%
+% \lilypondfile[line-width=4.5in]{C4-Vespers-Mag-Ant-Cantor.ly}
+%
+%
+% \section{Thursday Lauds}
+%
+% \subsection{Ps 87}
+%
+% \lilypondfile[line-width=4.5in]{C5-Lauds-1-Ant-Cantor.ly}
+%
+% \subsection{Isa 40:10--17}
+%
+% \lilypondfile[line-width=4.5in]{C5-Lauds-2-Ant-Cantor.ly}
+%
+% \subsection{Ps 99}
+%
+% \lilypondfile[line-width=4.5in]{C5-Lauds-3-Ant-Cantor.ly}
+%
+% \subsection{Benedictus}
+%
+% \lilypondfile[line-width=4.5in]{C5-Lauds-Ben-Ant-Cantor.ly}
+%
+%
+% \section{Thursday Vespers}
+%
+% \subsection{Ps 132:1--10}
+%
+% \lilypondfile[line-width=4.5in]{C5-Vespers-1-Ant-Cantor.ly}
+%
+% \subsection{Ps 132:11--18}
+%
+% \lilypondfile[line-width=4.5in]{C5-Vespers-2-Ant-Cantor.ly}
+%
+% \subsection{Rev 11:17--18; 12:10b--12a}
+%
+% \lilypondfile[line-width=4.5in]{C5-Vespers-3-Ant-Cantor.ly}
+%
+% \subsection{Magnificat}
+%
+% \lilypondfile[line-width=4.5in]{C5-Vespers-Mag-Ant-Cantor.ly}
+%
+%
+% \section{Friday Lauds}
+%
+% \subsection{Ps 51}
+%
+% \lilypondfile[line-width=4.5in]{C6-Lauds-1-Ant-Cantor.ly}
+%
+% \subsection{Jer 14:17--21}
+%
+% \lilypondfile[line-width=4.5in]{C6-Lauds-2-Ant-Cantor.ly}
+%
+% \subsection{Ps 100}
+%
+% \lilypondfile[line-width=4.5in]{C6-Lauds-3-Ant-Cantor.ly}
+%
+% \subsection{Benedictus}
+%
+% \lilypondfile[line-width=4.5in]{C6-Lauds-Ben-Ant-Cantor.ly}
+%
+%
+% \section{Friday Vespers}
+%
+% \subsection{Ps 135:1--12}
+%
+% \lilypondfile[line-width=4.5in]{C6-Vespers-1-Ant-Cantor.ly}
+%
+% \subsection{Ps 135:13--21}
+%
+% \lilypondfile[line-width=4.5in]{C6-Vespers-2-Ant-Cantor.ly}
+%
+% \subsection{Rev 15:3--4}
+%
+% \lilypondfile[line-width=4.5in]{C6-Vespers-3-Ant-Cantor.ly}
+%
+% \subsection{Magnificat}
+%
+% \lilypondfile[line-width=4.5in]{C6-Vespers-Mag-Ant-Cantor.ly}
+%
+%
+% \section{Saturday Lauds}
+%
+% \subsection{Ps 119:145--152 (XIX: Koph)}
+%
+% \lilypondfile[line-width=4.5in]{C7-Lauds-1-Ant-Cantor.ly}
+%
+% \subsection{Wis 9:1--6, 9--11}
+%
+% \lilypondfile[line-width=4.5in]{C7-Lauds-2-Ant-Cantor.ly}
+%
+% \subsection{Ps 117}
+%
+% \lilypondfile[line-width=4.5in]{C7-Lauds-3-Ant-Cantor.ly}
+%
+% \subsection{Benedictus}
+%
+% \lilypondfile[line-width=4.5in]{C7-Lauds-Ben-Ant-Cantor.ly}
+
+\end{document}

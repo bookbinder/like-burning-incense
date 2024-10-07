@@ -125,6 +125,5 @@ tone, so in a number of cases I subsituted Psalm tones. See the file
 
 # To do
 
-- Gospel Canticles for Sundays in Ordinary Time
-- Proper of Seasons
+- Seasons: Advent, Christmas, Lent, Easter
 - Proper of Saints

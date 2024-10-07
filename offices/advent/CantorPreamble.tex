@@ -1,0 +1,70 @@
+\documentclass[]{book}
+\usepackage[papersize={5.5in,8.5in},bottom=.3in,top=.6in,inner=.3in,outer=.3in]{geometry}
+%\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{libertineRoman}
+\sloppy
+\fancyhf{}
+\fancyhead[CE]{\bfseries\sffamily\leftmark}
+\fancyhead[CO]{\bfseries\sffamily\leftmark}
+\fancyhead[LE]{\sffamily\thepage}
+\fancyhead[RO]{\sffamily\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headsep}{25pt}
+\setlength{\footskip}{20pt}
+\pagestyle{fancy}
+\fancypagestyle{plain}{ 
+    \fancyhf{}           
+    \setlength{\headsep}{25pt}
+    \setlength{\footskip}{20pt}
+    \renewcommand{\headrulewidth}{0pt}    
+    \renewcommand{\footrulewidth}{0pt}   
+    \fancyfoot[C]{\thepage}
+}
+\setlength{\headheight}{14pt}
+\setcounter{secnumdepth}{-1}
+\setcounter{tocdepth}{1}
+\AtBeginDocument{\addtocontents{toc}{\protect\thispagestyle{empty}}}
+
+\newcommand{\betweenLilyPondSystem}[1]{\vspace{0mm}\linebreak} 
+\raggedbottom
+\raggedright
+%\usepackage{fontspec}
+%\setmainfont[Ligatures={Common,TeX}]{Linux Libertine G}
+%\setsansfont[Ligatures={Common,TeX}]{Linux Biolinum G}
+
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily\large\bfseries\centering}
+  {\chaptertitlename\ \thechapter}{0pt}{\Large}
+
+\titleformat{\section}
+  {\normalfont\sffamily\large\bfseries\centering}
+  {\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\normalfont\large\itshape\centering}
+  {\thesection}{1em}{}
+
+\titlespacing*{\chapter}{0pt}{30pt}{20pt}
+
+
+
+%\newcommand{\betweenLilyPondSystem}[1]{\vspace{30pt}\linebreak}
+
+
+\usepackage{graphics}
+\begin{document}
+% \pagestyle{empty}
+% \tableofcontents
+% \pagestyle{fancy}
+
+%Start chapters on even pages
+\makeatletter
+\renewcommand*\cleardoublepage{\clearpage\if@twoside
+  \ifodd\c@page \hbox{}\newpage\if@twocolumn\hbox{}%
+  \newpage\fi\fi\fi}
+\makeatother
+
