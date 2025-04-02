@@ -15,15 +15,17 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    At day -- \ll "break,  * " _
+    At day -- break,  \markup { \tiny "🞵 " }
     be mer -- ci -- ful to me, O Lord.
 }
 sopNotesAnt = \relative e' {
     \global
     \keysig
-    r8 gis8 fis[ ais gis] gis4 \bar "'"
+    r8 gis8 fis[ ais gis] gis4 \bar ""
     \hideNotes e16 \unHideNotes   %so that I can align the * better
-    gis8 fis e dis e fis4 fis8[ e] e4( dis) \bar "||"
+    \allowBreak gis8 \allowBreak fis \allowBreak e \allowBreak dis
+    \allowBreak e \allowBreak fis4 \allowBreak
+    fis8[ e] \allowBreak e4( dis) \bar "||"
 }
 altoNotesAnt = \relative c' {
     \global

@@ -25,7 +25,7 @@ text = \lyricmode {
     
     \ll "the Lord who gives sight to" the blind,
     \ll "who raises up those who are" bowed down,
-    \ll "the Lord, who protects the" stranger
+    \ll "the Lord, who protects" the stranger
     \ll "and upholds the widow" and orphan.
     
     \ll "It is the Lord who loves" the just

@@ -15,15 +15,18 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Give your peo -- ple know -- ledge of sal -- va -- tion, \ll "Lord,  * " _
+    Give your peo -- ple know -- ledge of sal -- va -- tion, Lord,
+    \noBreak \markup { \tiny "🞵" } 
     and for -- give us our sins.
 }
 sopNotesAnt = \relative e' {
     \global
     \keysig
-    e8 dis cis b cis[ gis'] gis fis e fis[ gis] fis fis4 \bar "'"
+    e8 dis cis b cis[ gis'] gis fis e fis[ gis] \allowBreak
+    fis \allowBreak fis4 \bar ""
     \hideNotes e16 \unHideNotes   %so that I can align the * better
-    fis8 gis cis,[ fis] fis e dis4 \bar "||"
+    fis8 \allowBreak gis \allowBreak cis,[ fis]
+    \allowBreak fis e dis4 \bar "||"
 }
 altoNotesAnt = \relative c' {
     \global

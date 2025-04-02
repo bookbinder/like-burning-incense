@@ -15,15 +15,16 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The Lord will make a ri -- ver of \ll "peace  * " _
+    The Lord will make a ri -- ver of peace \noBreak \markup { \tiny "🞵" } 
     flow through Je -- ru -- sa -- lem.
 }
 sopNotesAnt = \relative e' {
     \global
     \keysig
-    r8 des8 f[ ees] des ees4 f8 ges aes bes bes4( aes) \bar "'"
+    r8 des8 f[ ees] des ees4 f8 ges aes bes \allowBreak bes4(\noBreak aes) \bar ""
     \hideNotes e16 \unHideNotes   %so that I can align the * better
-    aes8[( bes aes ges] f4) ees8 des ges[ f] ees des4 \bar "||"
+    aes8[( bes aes ges] f4) \allowBreak ees8 des
+    ges[ f] ees des4 \bar "||"
 }
 altoNotesAnt = \relative c' {
     \global

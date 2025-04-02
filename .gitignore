@@ -3,6 +3,7 @@
 # Ignore directories
 **/out/
 **/temp/
+**/pdf/
 
 # Ignore file types:
 *.dvi
@@ -15,4 +16,4 @@
 *.toc
 
 # Un-ignore file types in specific directory and all its subdirectories
-!/pdf/*.pdf
+# !/pdf/*.pdf

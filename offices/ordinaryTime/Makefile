@@ -4,7 +4,7 @@ ORGAN-FILES := out/OpeningVerse-Organ.pdf out/A0-Vespers-Organ.pdf out/A1-Lauds-
 CANTOR-FILES := out/OpeningVerse-Cantor.pdf out/A0-Vespers-Cantor.pdf out/A1-Lauds-Cantor.pdf out/A1-Vespers-Cantor.pdf out/A2-Lauds-Cantor.pdf out/A2-Vespers-Cantor.pdf out/A3-Lauds-Cantor.pdf out/A3-Vespers-Cantor.pdf out/A4-Lauds-Cantor.pdf out/A4-Vespers-Cantor.pdf out/A5-Lauds-Cantor.pdf out/A5-Vespers-Cantor.pdf out/A6-Lauds-Cantor.pdf out/A6-Vespers-Cantor.pdf out/A7-Lauds-Cantor.pdf out/B0-Vespers-Cantor.pdf out/B1-Lauds-Cantor.pdf out/B1-Vespers-Cantor.pdf out/B2-Lauds-Cantor.pdf out/B2-Vespers-Cantor.pdf out/B3-Lauds-Cantor.pdf out/B3-Vespers-Cantor.pdf out/B4-Lauds-Cantor.pdf out/B4-Vespers-Cantor.pdf out/B5-Lauds-Cantor.pdf out/B5-Vespers-Cantor.pdf out/B6-Lauds-Cantor.pdf out/B6-Vespers-Cantor.pdf out/B7-Lauds-Cantor.pdf out/C0-Vespers-Cantor.pdf out/C1-Lauds-Cantor.pdf out/C1-Vespers-Cantor.pdf out/C2-Lauds-Cantor.pdf out/C2-Vespers-Cantor.pdf out/C3-Lauds-Cantor.pdf out/C3-Vespers-Cantor.pdf out/C4-Lauds-Cantor.pdf out/C4-Vespers-Cantor.pdf out/C5-Lauds-Cantor.pdf out/C5-Vespers-Cantor.pdf out/C6-Lauds-Cantor.pdf out/C6-Vespers-Cantor.pdf out/C7-Lauds-Cantor.pdf out/D0-Vespers-Cantor.pdf out/D1-Lauds-Cantor.pdf out/D1-Vespers-Cantor.pdf out/D2-Lauds-Cantor.pdf out/D2-Vespers-Cantor.pdf out/D3-Lauds-Cantor.pdf out/D3-Vespers-Cantor.pdf out/D4-Lauds-Cantor.pdf out/D4-Vespers-Cantor.pdf out/D5-Lauds-Cantor.pdf out/D5-Vespers-Cantor.pdf out/D6-Lauds-Cantor.pdf out/D6-Vespers-Cantor.pdf out/D7-Lauds-Cantor.pdf
 
 newver:
-	# rm -rf out/*/
+	rm -rf out/*/
 	$(LILYPOND-BOOK) ScoreCantorLong.lytex
 	cd out && $(LATEX) ScoreCantorLong.tex
 	cd out && evince ScoreCantorLong.pdf
