@@ -1,0 +1,74 @@
+\version "2.18.2"
+
+divisioMinima = {
+    \bar ""
+    \once \override BreathingSign.stencil = #ly:breathing-sign::divisio-minima
+    \once \override BreathingSign.Y-offset = #0
+    \breathe
+}
+
+dm = {
+    \bar ""
+    \once \override BreathingSign.stencil = #ly:breathing-sign::divisio-maior
+    \once \override BreathingSign.Y-offset = #0
+    \breathe
+}
+divisioMaxima = {
+    \bar ""
+    \once \override BreathingSign.stencil = #ly:breathing-sign::divisio-maxima
+    \once \override BreathingSign.Y-offset = #0
+    \breathe
+}
+
+fi = { \bar "||" }
+ll = { \once \override LyricText.self-alignment-X = #LEFT }
+sm = { \set melismaBusyProperties = #'() }
+usm = { \unset melismaBusyProperties }
+
+global = {
+    \key c \major
+    \cadenzaOn
+    \set tieWaitForNote = ##t
+    \autoBeamOff
+    %\hide Staff.Stem
+}
+
+sopranoOneIntone = { f'8 g'[ a'] }
+sopranoOneMag = { a'\breve \bar "|"
+                  a'\breve g'8 f' g' g'([ a'] g'4) \bar "||"}
+sopranoOneFlex = { a'\breve \parenthesize g'4
+                   a'\breve bes'8 a' g' a'4 \bar "|"
+                   a'\breve g'8 f' g' g'([ a'] g'4) \bar "||"}
+sopranoOne = { a'\breve bes'8 a' g' a'4 \bar "|"
+               a'\breve g'8 f' g' g'([ a'] g'4) \bar "||" }
+
+altoOneIntone = { r8 d'4~ }
+altoOneMag = { d'\breve c'\breve~ s4. c'2}
+altoOneFlex = { d'\breve~ s4 d'\breve~ s4. d'4
+                c'\breve~ s4. c'2 }
+altoOne = { d'\breve~ s4. d'4
+            c'\breve~ s4. c'2 }
+
+tenorOneIntone = { r8 f4~ }
+tenorOneMag = { f\breve a\breve s4. f4 e4}
+tenorOneFlex = { f\breve \parenthesize g4 f\breve~ s4. f4~
+                 << {\voiceTwo \hideNotes f\breve \unHideNotes \voiceOne} \new Voice {\voiceOne a\breve} >> s4. f4 e4 }
+tenorOne = { f\breve~ s4. f4
+             a\breve s4. f4 e4 }
+
+bassOneIntone = { r8 d4~ }
+bassOneMag = { d\breve f\breve s4. c2}
+bassOneFlex = { d\breve~ s4 d\breve~ s4. d4
+                f\breve s4. c2 }
+bassOne = { d\breve~ s4. d4
+            f\breve s4. c2 }
+
+pedalOneIntone = { s8 \parenthesize d,4~ }
+pedalOneMag = { d,\breve~ }
+pedalOneFlex = { \parenthesize d,\breve~ s4
+                 \parenthesize d,\breve~ s4.
+                 \parenthesize d,4
+                 \parenthesize f,\breve s4. s2 }
+pedalOne = { \parenthesize d,\breve~ s4.
+             \parenthesize d,4
+             \parenthesize f,\breve s4. s2 }

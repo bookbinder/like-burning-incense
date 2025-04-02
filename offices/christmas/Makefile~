@@ -1,0 +1,15 @@
+LILYPOND-BOOK=lilypond-book -o out --pdf
+LATEX=xelatex
+
+all:
+	rm -rf out/*/
+	$(LILYPOND-BOOK) Benedictus-Cantor.lytex
+	cd out && $(LATEX) Benedictus-Cantor.tex
+	evince out/Benedictus-Cantor.pdf
+	# $(LILYPOND-BOOK) Magnificat-Latin-Organ.lytex
+	# cd out && $(LATEX) Magnificat-Latin-Organ.tex
+	# evince out/Magnificat-Latin-Organ.pdf
+	$(LILYPOND-BOOK) Magnificat-Cantor-En.lytex
+	cd out && $(LATEX) Magnificat-Cantor-En.tex
+	evince out/Magnificat-Cantor-En.pdf
+

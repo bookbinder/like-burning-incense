@@ -1,0 +1,50 @@
+\version "2.24.0"
+
+% Will need these variables to build the cantor and organ scores:
+keysig =  \key f \minor
+antiphon = "M"
+psalmtone = "52"
+psalmtonestruct = "44"
+psalmnum = "Magnificat"
+% transposition interval for the corresponding psalm tone
+% to match the key signature of this antiphon. For
+% use in in cantor (antiphon) and organ (psalm) scores
+frompitch = a
+topitch = a
+%% master transposition after accounting for psalm tone
+master-from-pitch = a
+master-to-pitch = a
+
+
+text = \lyricmode {
+    \set includeGraceNotes = ##t
+    O Flower of Jes -- se's "stem, * " you have been raised up as a sign
+    for all peo -- ples; kings stand si -- lent in your pre -- sence; the
+    na -- tions bow down in wor -- ship be -- fore you. Come, let
+    no -- thing keep you from co -- ming to our aid.
+}
+sopNotesAnt = \relative e' {
+    \global
+    \keysig
+    \voiceOne
+    r8 ees8( aes4 g8) aes f g[ f ees] f f4 \bar "'"
+    f8 ees f g[ aes] g g f aes g g[ f] f[ ees] ees4 \bar ","
+    aes8[ g] f g f ees f g4 g \bar "'"
+    f8 aes g f ees f g4 g8 aes bes4 bes \bar ","
+    c4 c8 bes[ aes] g f g f ees4 ees8 g aes f4 \bar "||"
+}
+altoNotesAnt = \relative c' {
+    \global
+    \keysig
+    \voiceTwo
+}
+tenorNotesAnt = \relative g {
+    \global
+    \keysig
+    \voiceOne
+}
+bassNotesAnt = \relative c {
+    \global
+    \keysig
+    \voiceTwo
+}

@@ -1,0 +1,85 @@
+\documentclass{lbi_cantor_bind}
+\usepackage{verse}
+\usepackage{libertine}
+
+\begin{document}
+%-----------------accent/pointing setup------------------
+\newcommand{\myaccentcolor}{\color{black!60}}
+\newcommand{\mytiebelowcolor}{\color{black!70}}
+\newcommand{\pointslurcolor}{\color{black!70}}
+\newcommand{\pointstaycolor}{\color{black!70}}
+\newcommand{\myastcolor}{\color{black!70}}
+\newcommand{\myaccentsize}{\LARGE}
+\newcommand{\mytiebelowsize}{\Large}
+\newcommand{\myaccentsizeslur}{\Large}
+\newcommand{\myaccentsizestay}{\LARGE}
+\newcommand{\myaccentsizesmaller}{\large}
+\newcommand{\myaccentposition}{\vskip-3.3pt}% 1.6 with times roman
+\newcommand{\mytiebelowposition}{\vskip-6.8pt}
+\newcommand{\myaccentpositionA}{\vskip-4.5pt}
+\newcommand{\myaccentpositionlik}{\vskip-.8pt}
+\newcommand{\myaccentpositionI}{\vskip-4.3pt}
+\newcommand{\myaccentpositionfi}{\vskip-4pt}
+\newcommand{\myaccentpositionTildeA}{\vskip1pt}
+\newcommand{\myaccentpositionTildeB}{\vskip3pt}
+\newcommand{\myaccentpositionpointslurA}{\vskip-0pt}
+\newcommand{\myaccentpositionpointslurB}{\vskip-1pt}
+\newcommand{\myaccentpositionpointslurC}{\vskip-0pt}
+\newcommand{\myaccentpositionpointslurD}{\vskip1pt}
+\newcommand{\myaccentpositionpointslurE}{\vskip1pt}
+\newcommand{\myaccentpositionpointstay}{\vskip0pt}
+
+
+\newcommand\pointup[1]{\leavevmode\vbox{\offinterlineskip
+\halign{##\cr\hss\makebox(0,0){\hspace{0pt}\myaccentcolor\myaccentsize\char"00B4}\hss\cr\noalign{\myaccentposition}#1\cr}}}
+
+\newcommand\pointslur[1]{\leavevmode\vbox{\offinterlineskip
+\halign{##\cr\hss\makebox(0,0){\hspace{2pt}\pointslurcolor\myaccentsizeslur\char"7E}\hss\cr\noalign{\myaccentpositionTildeA}#1\cr}}}
+
+\pagestyle{empty}
+
+\section*{Christmas Morning Prayer: Benedictus}
+
+\bigskip\lilypondfile[line-width=4.5\in]{Christmas-Lauds-Ben-Ant-Cantor.ly}
+
+\indentpattern{01 1 0101 1001 101 101 101 101}
+\begin{verse}
+\begin{patverse}  
+
+Blessed be the Lord, the G\pointup{o}d of Israel; *\\
+he has come to his people and set th\pointup{e}m free.
+
+He has raised up for us a m\pointup{\i}ghty savior, *\\
+born of the house of his serv\pointup{a}nt, David.
+
+Through his holy prophets he promised of \pointup{o}ld \dag\\
+that he would save us fr\pointup{o}m our enemies, *\\
+from the hands of all wh\pointup{o} hate us.\\
+He promised to show mercy t\pointup{o} our fathers *\\
+and to remember his hol\pointup{y} covenant.
+
+This was the oath he swore to our f\pointup{a}ther, Abraham: *\\
+to set us free from the hands of \pointup{o}ur enemies,\\
+free to worship him without f\pointup{e}ar, \dag\\
+holy and righteous \pointup{\i}n his sight *\\
+all the days of \pointup{o}ur life.
+
+\rightskip=-1cm You, my child, shall be called the prophet of th\pointup{e} Most High: *\\
+\rightskip=0cm for you will go before the Lord to prepare h\pointup{\i}s way,\\
+to give his people knowledge \pointup{o}f salvation *\\
+by the forgiveness of th\pointup{e}ir sins.
+
+In the tender compassion \pointup{o}f our God *\\
+the dawn from on high shall break \pointup{u}pon us,\\
+to shine on those who dwell in darkness and the shad\pointup{o}w of death, *\\
+and to guide our feet into the way \pointup{o}f peace.
+
+Glory to the Father, and t\pointup{o} the Son, *\\
+and to the Hol\pointup{y} Spirit:\\
+as it was in the beginn\pointup{\i}ng, is now, *\\
+and will be forever, \pointup{A}men.
+
+\end{patverse}
+\end{verse}
+
+\end{document}

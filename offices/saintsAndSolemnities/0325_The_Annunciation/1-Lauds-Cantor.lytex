@@ -1,0 +1,19 @@
+\documentclass{lbi_cantor_bind}
+
+\begin{document}
+
+%% \topheader{March 3}{The Annunciation}
+\chapter{THE ANNUNCIATION}
+\section{Morning Prayer}
+
+%% Note: you can also use \medmedspacer or \smallmedspacer
+\lilypondfile[line-width=4.8\in]{1-Lauds-1-Ant-Cantor.ly}
+
+\spacer\lilypondfile[line-width=4.8\in]{1-Lauds-2-Ant-Cantor.ly}
+
+\spacer\lilypondfile[line-width=4.8\in]{1-Lauds-3-Ant-Cantor.ly}
+
+\spacer\lilypondfile[line-width=4.8\in]{1-Lauds-Ben-Ant-Cantor.ly}
+
+
+\end{document}

@@ -1,0 +1,71 @@
+\documentclass{book}
+\RequirePackage[paperheight=8.5in,%
+  paperwidth=5.5in,%
+  inner=.15in,%
+  outer=.25in,%
+  top=.4in,%
+  bottom=.4in,%
+  headsep=.1in,%
+  footskip=.2in]{geometry}
+\usepackage{libertine}
+\usepackage{pdfpages}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[CE]{\sffamily\thepage}
+\fancyfoot[CO]{\sffamily\thepage}
+\fancyhead[CE]{\normalfont\sffamily\leftmark}
+\fancyhead[CO]{\normalfont\sffamily\leftmark}
+\renewcommand{\headrulewidth}{0pt}
+%% \setlength{\headheight}{14.0pt}
+%% \setlength{\headsep}{10pt}
+\setcounter{secnumdepth}{-1}
+\setcounter{tocdepth}{1}
+
+\usepackage[nobottomtitles]{titlesec}
+%% \newcommand{\sectionbreak}{\clearpage}
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily\filcenter}
+  {\chaptertitlename\ \thechapter}{0pt}{\LARGE}
+
+\titleformat{\section}
+  {\normalfont\sffamily\Large\bfseries\filcenter}
+  {\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\normalfont\sffamily\large}
+  {\thesection}{1em}{}
+
+\titlespacing*{\chapter}{0pt}{0pt}{10pt}
+\titlespacing*{\section}{0pt}{20pt}{10pt}
+\titlespacing*{\subsection}{0pt}{14pt}{5pt}
+
+%% \newcommand{\topheader}[2]{%
+    %% \noindent\fbox{\large\bfseries #1}\hfill\fbox{\large\bfseries #2}}
+%% \newcommand{\inlily}[1]{\lilypondfile%
+  %% [line-width=4.8\in]%
+  %% {#1}}
+\newcommand{\topheader}[2]{}
+\newcommand{\spacer}{\vspace{1.5\baselineskip}}
+\newcommand{\smallspacer}{\vspace{0.5\baselineskip}}
+\newcommand{\medspacer}{\vspace{0.85\baselineskip}}
+
+\raggedright
+\raggedbottom
+
+\begin{document}
+
+\chapter{Week 1}
+
+\section{Evening Prayer I}
+
+\lilypondfile[line-width=4.4\in]{A0-Vespers-1-Ant-Cantor.ly}
+
+text
+
+
+\spacer\lilypondfile[line-width=4.4\in]{A0-Vespers-2-Ant-Cantor.ly}
+
+\spacer\lilypondfile[line-width=4.4\in]{A0-Vespers-3-Ant-Cantor.ly}
+
+\end{document}

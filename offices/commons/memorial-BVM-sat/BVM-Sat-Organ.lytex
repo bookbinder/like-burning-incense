@@ -1,0 +1,33 @@
+\documentclass{lbi_organ_bind}
+\usepackage{savetrees}
+
+\newcommand{\betweenLilyPondSystem}[1]{\vspace{10pt}\linebreak}
+\begin{document}
+
+\chaptermark{Saturday Memorial of the Blessed Virgin Mary}
+\sectionmark{Benedictus Antiphons}
+
+\section*{Saturday Memorial for the BVM: Benedictus Antiphons}
+
+\subsection*{Antiphon 1}
+\lilypondfile[line-width=6.8\in]{Ben1-Ant-Organ.ly}
+
+\enlargethispage{\baselineskip}
+\subsection*{Antiphon 2}
+\lilypondfile[line-width=6.8\in]{Ben2-Ant-Organ.ly}
+
+\newpage
+\subsection*{Antiphon 3}
+\lilypondfile[line-width=6.8\in]{Ben3-Ant-Organ.ly}
+
+\subsection*{Antiphon 4}
+\lilypondfile[line-width=6.8\in]{Ben4-Ant-Organ.ly}
+
+\newpage
+\subsection*{Antiphon 5}
+\lilypondfile[line-width=6.8\in]{Ben5-Ant-Organ.ly}
+
+\subsection*{Antiphon 6}
+\lilypondfile[line-width=6.8\in]{Ben6-Ant-Organ.ly}
+
+\end{document}

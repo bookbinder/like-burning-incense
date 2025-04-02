@@ -1,0 +1,167 @@
+\documentclass[11pt,twocolumn]{book}
+\usepackage[paperheight=11in,%
+  paperwidth=8.5in,%
+  inner=.4in,%
+  outer=.4in,%
+  top=.6in,%
+  bottom=.6in,%
+  headsep=.25in,%
+  footskip=.30in]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage[USenglish]{babel}
+\usepackage{fontspec}
+\setmainfont{Linux Libertine O}
+\setsansfont[Scale=1]{Linux Biolinum O}
+\newfontfamily\QuintFirst[Scale=2]{Quintessential}
+\usepackage{leading}
+
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[CE]{\sffamily\thepage}
+\fancyfoot[CO]{\sffamily\thepage}
+\fancyhead[CE]{\normalfont\sffamily\leftmark}
+\fancyhead[CO]{\normalfont\sffamily\rightmark}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{14.0pt}
+%% \setlength{\headsep}{10pt}
+\setcounter{secnumdepth}{-1}
+\setcounter{tocdepth}{1}
+
+\usepackage{xstring}
+\usepackage{verse}
+\setlength{\leftmargini}{0em}
+
+\setlength{\columnseprule}{0.4pt}
+\setlength{\columnsep}{.5in}
+
+
+\usepackage[nobottomtitles]{titlesec}
+%% \newcommand{\sectionbreak}{\clearpage}
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily\filcenter}
+  {\chaptertitlename\ \thechapter}{0pt}{\LARGE}
+
+\titleformat{\section}
+  {\normalfont\sffamily\large\bfseries\filcenter}
+  {\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\normalfont\color{red}\bfseries\filcenter}
+  {\thesection}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\color{red}\filcenter}
+  {\thesection}{1em}{}
+
+\titlespacing*{\chapter}{0pt}{0pt}{10pt}
+\titlespacing*{\section}{0pt}{20pt}{10pt}
+\titlespacing*{\subsection}{0pt}{4pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{0pt}{2pt}
+\titlespacing*{\paragraph}{0pt}{0pt}{0pt}
+
+%% \newcommand{\topheader}[2]{%
+    %% \noindent\fbox{\large\bfseries #1}\hfill\fbox{\large\bfseries #2}}
+%% \newcommand{\inlily}[1]{\lilypondfile%
+  %% [line-width=4.8\in]%
+  %% {#1}}
+\newcommand{\topheader}[2]{}
+\newcommand{\spacer}{\vspace{1.5\baselineskip}}
+\newcommand{\smallspacer}{\vspace{0.5\baselineskip}}
+\newcommand{\medspacer}{\vspace{0.85\baselineskip}}
+\newcommand{\FirstLetter}[1]{{\QuintFirst\color{black!80}\raisebox{-4pt}{#1}}}
+\raggedright
+\raggedbottom
+
+\newcommand{\myaccentcolor}{\color{black!40}}
+\newcommand{\myastcolor}{\color{black!70}}
+\newcommand{\myaccentsize}{\Huge}
+\newcommand{\myaccentposition}{\vskip-4pt}
+\newcommand{\myaccentpositionl}{\vskip-5.5pt}
+
+\newcommand\pointup[1]{\leavevmode\vbox{\offinterlineskip
+    \halign{##\cr\hss\makebox(0,0){\hspace{2pt}\myaccentcolor\myaccentsize\char"00B4}\hss\cr\noalign{\myaccentposition}#1\cr}}}
+\newcommand\pointupl[1]{\leavevmode\vbox{\offinterlineskip
+\halign{##\cr\hss\makebox(0,0){\hspace{0pt}\myaccentcolor\myaccentsize\char"00B4}\hss\cr\noalign{\myaccentpositionl}#1\cr}}}
+\newcommand{\Med}{~\raisebox{2pt}{\color{black!80}$\ast$}}
+\newcommand{\Flex}{~{\color{black!80}\textdagger}}
+\newcommand{\Desc}[2]{\linespread{0.1}{\paragraph{}{\small\emph{#1} #2}\vspace{-3pt}}}
+
+
+\hyphenation{Co-rin-thi-an}
+\hyphenation{Co-rin-thi-ans}
+
+
+\begin{document}
+
+
+%% \chapter{Week 1}
+%% \chaptermark{Week 1}
+
+
+%% \section{Sunday Evening Prayer I}
+
+%% \noindent\lilypondfile[line-width=3.6\in]{A0-Vespers-1-Ant-Cantor.ly}
+%% \subsection{Psalm 141:1--9}
+%% \subsubsection{A prayer when in danger}
+%% \Desc{An angel stood before the throne of God, thurible in hand. The fragrant
+%%   incense soaring aloft was the prayer of God's people on earth}{(Revelation 8:4).}
+%% \input{../../psalms/Ps_141_1-9/43/Ps_141_1-9.lytex}
+
+%% \newpage
+
+%% \medskip\noindent\lilypondfile[line-width=3.6\in]{A0-Vespers-2-Ant-Cantor.ly}
+%% \subsection{Psalm 142}
+%% \subsubsection{You, Lord, are my refuge}
+%% \Desc{What is written in this psalm was fulfilled in our Lord's
+%%   passion}{(Saint Hilary).}
+%% \input{../../psalms/Ps_142/33/Ps_142.lytex}
+
+%% \newpage
+
+%% \medskip\noindent\lilypondfile[line-width=3.6\in]{A0-Vespers-3-Ant-Cantor.ly}
+%% \subsection{Canticle,  Phil.\ 2:6--11}
+%% \subsubsection{You, Lord, are my refuge}
+%% \Desc{Christ, God's holy servant}{}
+%% \input{../../psalms/Phil_2_6-11/33/Phil_2_6-11.lytex}
+
+%% \newpage
+
+\chaptermark{Week 4}
+\section{Wednesday Morning Prayer}
+
+\noindent\lilypondfile[line-width=3.6\in]{D4-Lauds-1-Ant-Cantor.ly}
+\subsection{Psalm 108}
+\subsubsection{Praise of God and a plea for help}
+\Desc{Since the Son of God has been exalted above the heavens,
+  his glory is proclaimed through all the eart}{(Arnobius).}
+%% \enlargethispage{-1\baselineskip}
+\input{../../psalms/Ps_108/33/Ps_108.lytex}
+
+\medskip\noindent\lilypondfile[line-width=3.6\in]{D4-Lauds-2-Ant-Cantor.ly}
+\subsection{Canticle, Isaiah 61:10---62:5}
+\subsubsection{The prophet's joy in the vision of a new Jerusalem}
+\Desc{I saw the holy city, new Jerusalem, with the beauty of a bride
+  adorned for her husband}{(Revelation 21:2).}
+\input{../../psalms/Isa_61_10--62_5/34/Isa_61_10--62_5.lytex}
+
+
+\medskip\noindent\lilypondfile[line-width=3.6\in]{D4-Lauds-3-Ant-Cantor.ly}
+\subsection{Psalm 146}
+\subsubsection{Those who trust in God know what it is to be happy}
+\Desc{To praise God in our lives means all we do must be for his
+  glory}{(Arnobius).}
+\input{../../psalms/Ps_146/33/Ps_146.lytex}
+
+\newpage
+
+\medskip\noindent\lilypondfile[line-width=3.6\in]{D4-Lauds-Ben-Ant-Cantor.ly}
+\subsection{Benedictus}
+\input{../../psalms/Benedictus/43/Benedictus.lytex}
+
+
+
+
+\end{document}

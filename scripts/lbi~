@@ -1,0 +1,100 @@
+#!/usr/bin/racket
+#lang racket
+
+;; This script creates four files based on a stem-name which is
+;; passed as an argument. For example `lbi Sat-BVM-1` creates the
+;; following files in the current directory:
+;; Sat-BVM-1-Ant-Organ.ly, Sat-BMV-1-Ant-Cantor.ly,
+;; Sat-BVM-1-Psalm-Organ.ly, and notes/Sat-BVM-1-Ant.ily
+;; Then all you have to do is go to the ily file in the notes directory
+;; and enter the notes and words for the antiphon. Then run lilypond
+;; on any of the 3 ly files that were just created, and it should work.
+
+
+(if (not (= 1 (vector-length (current-command-line-arguments))))
+    (error "You didn't enter exactly 1 argument.")
+    (let* ([curdir          (path->string (current-directory))]
+           [stem            (format
+                             "~a" (vector-ref
+                                   (current-command-line-arguments) 0))]
+           [antorganfile    (string->path
+                             (string-append curdir stem "-Ant-Organ.ly"))]
+           [antcantorfile   (string->path
+                             (string-append curdir stem "-Ant-Cantor.ly"))]
+           [psalmorganfile  (string->path
+                             (string-append curdir stem "-Psalm-Organ.ly"))]
+           [notesfile       (string->path
+                             (string-append curdir "notes/" stem "-Ant.ily"))])
+
+      (cond ((file-exists? antorganfile)
+             (error "Organ Ant already file exists. Exiting early."))
+            ((file-exists? antcantorfile)
+             (error "Cantor Ant file already exists. Exiting early."))
+            ((file-exists? psalmorganfile)
+             (error "Psalm Organ file already exists. Exiting early."))
+            ((file-exists? notesfile)
+             (error "Notes file already exists. Exiting early."))
+            (else
+
+             ;; Create Ant-Organ file
+             (display-to-file
+              (regexp-replace
+               "A0-Vespers-1"
+               (file->string
+                "/home/ryan/scores/like-burning-incense/skel/Ant-Organ.ily")
+               stem)
+              antorganfile
+              #:exists 'replace)
+
+             ;; Create Ant-Cantor file
+             (display-to-file
+              (regexp-replace
+               "A0-Vespers-1"
+               (file->string
+                "/home/ryan/scores/like-burning-incense/skel/Ant-Cantor.ily")
+               stem)
+              antcantorfile
+              #:exists 'replace)
+
+             ;; Create Psalm-Organ file
+             (display-to-file
+              (regexp-replace
+               "A0-Vespers-1"
+               (file->string
+                "/home/ryan/scores/like-burning-incense/skel/Psalm-Organ.ily")
+               stem)
+              psalmorganfile
+              #:exists 'replace)
+
+             ;; Create notes file
+             (unless (directory-exists? (format "~a/notes/" curdir))
+               (make-directory (format "~a/notes/" curdir)))
+             (display-to-file
+              (file->string
+               "/home/ryan/scores/like-burning-incense/skel/notes.ily")
+              notesfile
+              #:exists 'replace)
+
+             ;; ;; Create Makefile
+             ;; (if (file-exists? (format "~a/Makefile" curdir))
+             ;;     ;; append to existing Makefile
+             ;;     (display-to-file
+             ;;      (regexp-replace*
+             ;;       "QQQ"
+             ;;       (file->string
+             ;;        "/home/ryan/scores/like-burning-incense/skel/makefile-entry.txt")
+             ;;       stem)
+             ;;      (format "~a/Makefile" curdir)
+             ;;      #:exists 'append)
+
+             ;;     ;; or create new Makefil
+             ;;     (display-to-file
+             ;;      (regexp-replace*
+             ;;       "QQQ"
+             ;;       (file->string
+             ;;        "/home/ryan/scores/like-burning-incense/skel/newmakefile.txt")
+             ;;       stem)
+             ;;      (format "~a/Makefile" curdir)
+             ;;      #:exists 'replace))
+
+             ))))

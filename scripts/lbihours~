@@ -1,0 +1,73 @@
+#!/usr/bin/racket
+#lang racket
+
+;; This script creates two .lytex files in the current directory,
+;; based on the stem name passed as an argument. For example,
+;; `lbihours A0-Vespers` creates the following files in the current
+;; directory: A0-Vespers-Cantor.lytex and A0-Vespers-Organ.lytex
+;; 
+;; Assuming you've already made the files referenced in the lytex
+;; file, you can run lilypond-book on the lytex file to create
+;; something printable.
+
+
+(if (not (= 1 (vector-length (current-command-line-arguments))))
+    (error "You didn't enter exactly 1 argument.")
+    (let* ([curdir          (path->string (current-directory))]
+           [stem            (format
+                             "~a" (vector-ref
+                                   (current-command-line-arguments) 0))]
+           [organfile    (string->path
+                             (string-append curdir stem "-Organ.lytex"))]
+           [cantorfile   (string->path
+                             (string-append curdir stem "-Cantor.lytex"))])
+
+      
+      ;; Create Organ file
+      (unless (file-exists? organfile)
+        (display-to-file
+         (regexp-replace*
+          "A0-Vespers"
+          (file->string
+           "/home/ryan/scores/like-burning-incense/skel/organ_office.lytex")
+          stem)
+         organfile
+         #:exists 'replace))
+
+      ;; Create Cantor file
+      (unless (file-exists? cantorfile)
+        (display-to-file
+         (regexp-replace*
+          "A0-Vespers"
+          (file->string
+           "/home/ryan/scores/like-burning-incense/skel/cantor_office.lytex")
+          stem)
+         cantorfile
+         #:exists 'replace))
+      
+
+
+
+      ;; ;; Create Makefile
+      ;; (if (file-exists? (format "~a/Makefile" curdir))
+      ;;     ;; append to existing Makefile
+      ;;     (display-to-file
+      ;;      (regexp-replace*
+      ;;       "QQQ"
+      ;;       (file->string
+      ;;        "/home/ryan/scores/like-burning-incense/skel/makefile-entry.txt")
+      ;;       stem)
+      ;;      (format "~a/Makefile" curdir)
+      ;;      #:exists 'append)
+
+      ;;     ;; or create new Makefil
+      ;;     (display-to-file
+      ;;      (regexp-replace*
+      ;;       "QQQ"
+      ;;       (file->string
+      ;;        "/home/ryan/scores/like-burning-incense/skel/newmakefile.txt")
+      ;;       stem)
+      ;;      (format "~a/Makefile" curdir)
+      ;;      #:exists 'replace))
+
+      ))

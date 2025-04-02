@@ -1,0 +1,4 @@
+@image{/home/ryan/scores/like-burning-incense/offices/ordinaryTime/cb/lily-24da3176-1}
+@image{/home/ryan/scores/like-burning-incense/offices/ordinaryTime/cb/lily-24da3176-2}
+@image{/home/ryan/scores/like-burning-incense/offices/ordinaryTime/cb/lily-24da3176-3}
+@c eof

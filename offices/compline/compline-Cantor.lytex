@@ -1,0 +1,11 @@
+\documentclass{lbi_cantor_office}
+
+\begin{document}
+
+\topheader{Wednesday}{Compline}
+
+\section*{Eh}
+
+\spacer\lilypondfile[line-width=4.4\in]{A4-Vespers-Mag-Ant-Cantor.ly}
+
+\end{document}
