@@ -1,5 +1,5 @@
 \version "2.20.0"
-\include "../../../lbi_defs.ily"
+%% include "../../../lbi_defs.ily"
 
 % Will need these variables to build the cantor and organ scores:
 keysig =  \key gis \minor
@@ -16,13 +16,12 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Our eyes are fixed in -- ten -- tly on the Lord " * " 
+    Our eyes are fixed in -- ten -- tly on the \ll "Lord  * " _
     wai -- ting for his mer -- ci -- ful help.
 }
 sopNotesAnt = \relative e' {
     \global
     \keysig
-    \voiceOne
     r8 cis8 e[ dis] cis dis4 e8 gis fis fis fis dis4 \bar "'"
     \hideNotes e16 \unHideNotes   %so that I can align the * better
     e8 dis cis dis e4 e8 e e4( dis) \bar "||"
@@ -30,7 +29,6 @@ sopNotesAnt = \relative e' {
 altoNotesAnt = \relative c' {
     \global
     \keysig
-    \voiceTwo
     gis4~ gis4. b4. cis2 b4
     s16
     gis2 cis2 b
@@ -38,7 +36,6 @@ altoNotesAnt = \relative c' {
 tenorNotesAnt = \relative g {
     \global
     \keysig
-    \voiceOne
     e4~ e4. fis e2 fis4
     s16
     e2 gis2~ gis
@@ -46,7 +43,6 @@ tenorNotesAnt = \relative g {
 bassNotesAnt = \relative c {
     \global
     \keysig
-    \voiceTwo
     cis4~ cis4. b~ b2~ b4
     s16
     cis2~ cis gis

@@ -1,5 +1,5 @@
 \version "2.18.2"
-\include "../../../lbi_defs.ily"
+%% include "../../../lbi_defs.ily"
 
 antiphon = "3"
 psalmnum = "Eph_1_3-10"
@@ -11,32 +11,30 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    God planned in the full -- ness of time "*" to re -- store all things in Christ.
+    God planned in the full -- ness of time "* "
+    to re -- store all things in Christ.
 }
 
 sopNotesAnt = \relative e' {
     \keysig
     \global
-    \voiceOne
     cis4 e8[ dis] cis b cis[ gis'] gis gis \bar "" fis[( gis] fis4)
     \hideNotes fis16 \unHideNotes %so that I can align the * better
-    fis8 fis e[ fis] \bar "" gis4 cis,8 b cis4 \bar "||"
+    fis8 fis e[ fis] \bar "" gis4 \allowBreak cis,8
+    \allowBreak b \allowBreak cis4 \bar "||"
 }
 altoNotesAnt = \relative c' {
     \keysig
     \global
-    \voiceTwo
     gis\breve*10/16 cis1 s16 gis2~ gis4
 }
 tenorNotesAnt = \relative g {
     \keysig
     \global
-    \voiceOne
     e\breve*10/16 fis1~ s16 fis4 dis e
 }
 bassNotesAnt = \relative c {
     \keysig
     \global
-    \voiceTwo
     cis\breve*10/16 a1~ s16 cis2~ cis4
 }

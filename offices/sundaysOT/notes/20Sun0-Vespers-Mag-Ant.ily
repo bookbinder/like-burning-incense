@@ -1,9 +1,9 @@
 \version "2.20.0"
-\include "../../../lbi_defs.ily"
+%% \include "../../../lbi_defs.ily"
 
 % Will need these variables to build the cantor and organ scores:
 keysig =  \key e \major
-antiphon = "Mag."
+antiphon = "M"
 psalmtone = "8"
 psalmtonestruct = "33"
 psalmnum = "Magnificat"
@@ -22,24 +22,21 @@ text = \lyricmode {
 sopNotesAnt = \relative e' {
     \global
     \keysig
-    \voiceOne
-    gis4 gis fis8[ a] a gis fis4 \bar "'" fis8[ a] a fis4 a8 a gis gis4 \bar "||" 
+    gis4 gis fis8[ a] a gis fis4 \bar "'" fis8[ a] a \allowBreak fis4 \allowBreak
+    a8 a \allowBreak gis gis4 \bar "||" 
 }
 altoNotesAnt = \relative c' {
     \global
     \keysig
-    \voiceTwo
     e1 fis4~ fis4. e4.~ e2
 }
 tenorNotesAnt = \relative g {
     \global
     \keysig
-    \voiceOne
     b2 cis4 b cis4~ cis4.~ cis4. b2
 }
 bassNotesAnt = \relative c {
     \global
     \keysig
-    \voiceTwo
     e1 a4 fis4. cis4. e2
 }

@@ -1,5 +1,5 @@
 \version "2.20.0"
-\include "../../../lbi_defs.ily"
+%% include "../../../lbi_defs.ily"
 
 % Will need these variables to build the cantor and organ scores:
 keysig =  \key c \major
@@ -16,21 +16,19 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Lord, shine on those who dwell in dark -- ness " * " 
+    Lord, shine on those who dwell in dark -- \ll "ness  * " _
     and the sha -- dow of death.
 }
 sopNotesAnt = \relative e' {
     \global
     \keysig
-    \voiceOne
     g8[ c] c[ d] c b c a g a[ g] g4 \bar "'"
     \hideNotes e16 \unHideNotes   %so that I can align the * better
-    g8 g f[( g] a4) a8 a g4 \bar "||"
+    g8 g \bar "" f[( g] a4) a8 a \bar "" g4 \bar "||"
 }
 altoNotesAnt = \relative e' {
     \global
     \keysig
-    \voiceTwo
     g\breve*7/16 f4 e2.
     s16
     f2. d4
@@ -38,7 +36,6 @@ altoNotesAnt = \relative e' {
 tenorNotesAnt = \relative g {
     \global
     \keysig
-    \voiceOne
     c\breve*7/16~ c4~ c2.~
     s16
     c2. b4
@@ -46,7 +43,6 @@ tenorNotesAnt = \relative g {
 bassNotesAnt = \relative c {
     \global
     \keysig
-    \voiceTwo
     e\breve*7/16 f4 c2.
     s16
     d2. g4

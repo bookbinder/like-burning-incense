@@ -18,11 +18,10 @@
        <<
            \new Staff = "up"
            <<
-               \midi_instrument
                \clef treble
                \accidentalStyle forget
-               \new Voice = "Soprano" \sopNotesAnt
-               \new Voice = "Alto" \altoNotesAnt
+               \new Voice = "Soprano" { \voiceOne \sopNotesAnt }
+               \new Voice = "Alto" { \voiceTwo \altoNotesAnt }
                \new Lyrics \lyricsto Soprano \text
            >>
            \new Staff = "down"
@@ -30,8 +29,8 @@
                \midi_instrument
                \clef bass
                \accidentalStyle forget
-               \new Voice = "Tenor" \tenorNotesAnt
-               \new Voice = "Bass" \bassNotesAnt
+               \new Voice = "Tenor" { \voiceThree \tenorNotesAnt }
+               \new Voice = "Bass" { \voiceFour \bassNotesAnt }
            >>
        >>
     >>

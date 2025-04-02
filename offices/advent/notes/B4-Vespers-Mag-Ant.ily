@@ -3,39 +3,42 @@
 
 antiphon = "M"
 psalmnum = "Magnificat"
-psalmtone = "21"
-psalmtonestruct = "33"
-keysig = \key aes \major
+psalmtone = "40"
+psalmtonestruct = "43"
+keysig = \key ees \minor
 frompitch = a
-topitch = a
+topitch = aes
 
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    " * "
+    Zi -- "on, * " you will be re -- newed, and you will see the Just One
+    who is co -- ming to you.
 }
 sopNotesAnt = \relative fis' {
     \global	% will be populated by an include file
 		% in the cantor/organ scores called lbi_defs
     \keysig
     \voiceOne
-
+    ges8[ aes] aes4 \bar "'" aes8 bes4 bes8 ges8 aes4 \bar ","
+    aes8 ees aes ges f ees[ des] ees4( des8) \breathe
+    ces8 des ees4 ees8 ges ees4 \bar "||"
 }
 altoNotesAnt = \relative d' {
     \global
     \keysig
     \voiceTwo
-
+    des4~ des4.~ des2~ des4. ees2 r4 bes\breve*5/16 ces2 bes4
 }    
 tenorNotesAnt = \relative g {
     \global
     \keysig
     \voiceOne
-
+    ges4 f4. ges2 f4. ges2.~ ges\breve*5/16~ ges2~ ges4
 }
 bassNotesAnt = \relative c {
     \global
     \keysig
     \voiceTwo
-
+    bes4 des4.~ des2~ des4. ces2. ges\breve*5/16 aes2 ees'4
 }

@@ -1,5 +1,5 @@
 \version "2.20.0"
-\include "../../../lbi_defs.ily"
+%% include "../../../lbi_defs.ily"
 
 % Will need these variables to build the cantor and organ scores:
 keysig =  \key gis \minor
@@ -15,13 +15,12 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Give your peo -- ple know -- ledge of sal -- va -- tion, Lord, " * "
+    Give your peo -- ple know -- ledge of sal -- va -- tion, \ll "Lord,  * " _
     and for -- give us our sins.
 }
 sopNotesAnt = \relative e' {
     \global
     \keysig
-    \voiceOne
     e8 dis cis b cis[ gis'] gis fis e fis[ gis] fis fis4 \bar "'"
     \hideNotes e16 \unHideNotes   %so that I can align the * better
     fis8 gis cis,[ fis] fis e dis4 \bar "||"
@@ -29,7 +28,6 @@ sopNotesAnt = \relative e' {
 altoNotesAnt = \relative c' {
     \global
     \keysig
-    \voiceTwo
     gis4 s4 cis\breve*12/16
     s16
     cis4~ cis b
@@ -37,7 +35,6 @@ altoNotesAnt = \relative c' {
 tenorNotesAnt = \relative g {
     \global
     \keysig
-    \voiceOne
     e4 fis gis\breve*5/16 b\breve*7/16
     s16
     gis4~ gis~ gis
@@ -45,7 +42,6 @@ tenorNotesAnt = \relative g {
 bassNotesAnt = \relative c {
     \global
     \keysig
-    \voiceTwo
     cis4 dis e\breve*5/16 dis\breve*7/16
     s16
     e4 cis gis

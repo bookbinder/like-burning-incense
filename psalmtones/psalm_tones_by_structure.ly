@@ -55,6 +55,9 @@
 \include "20.ly"
 
 \markup {\huge \bold "43"}
+\include "78.ly"
+\include "76.ly"
+\include "75.ly"
 \include "70.ly"
 \include "69.ly"
 \include "67.ly"
@@ -88,3 +91,4 @@
 \include "16.ly"
 \include "5.ly"
 \include "3.ly"
+\include "80.ly"

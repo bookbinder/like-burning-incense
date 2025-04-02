@@ -1,5 +1,5 @@
 \version "2.20.0"
-\include "../../../lbi_defs.ily"
+%% include "../../../lbi_defs.ily"
 
 % Will need these variables to build the cantor and organ scores:
 keysig =  \key ges \major
@@ -16,23 +16,23 @@ topitch = aes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The Fa -- ther has gi -- ven Christ " * " 
+    The Fa -- ther has gi -- ven \ll "Christ  * " _ 
     all power, ho -- nor and king -- ship;
     all peo -- ple will o -- bey him.
 }
 sopNotesAnt = \relative e' {
     \global
     \keysig
-    \voiceOne
     r8 des8 ges f ges ges[ bes] bes ces([ bes] aes4) \bar "'"
     \hideNotes e16 \unHideNotes   %so that I can align the * better
-    aes8[ bes] ges4 f8 ges ees ees[ des] des4 \bar "'"
-    des8[ ees] ces[ ees] ges f ees f[ ees des] des4 \bar "||"
+    aes8[ bes] \bar "" ges4 \bar "" f8 ges ees \bar ""
+    ees[ des] des4 \bar "'"
+    des8[ ees] \bar "" ces[ ees] ges \bar "" f ees
+    \bar "" f[ ees des] \bar "" des4 \bar "||"
 }
 altoNotesAnt = \relative c' {
     \global
     \keysig
-    \voiceTwo
     s2 s8 des4. ees2
     s16
     des4 bes ces4. aes2
@@ -41,7 +41,6 @@ altoNotesAnt = \relative c' {
 tenorNotesAnt = \relative g {
     \global
     \keysig
-    \voiceOne
     ges\breve*5/16~ ges4. ees4( aes)
     s16
     f4 ges~ ges4.~ ges4 f
@@ -50,7 +49,6 @@ tenorNotesAnt = \relative g {
 bassNotesAnt = \relative c {
     \global
     \keysig
-    \voiceTwo
     bes\breve*5/16~ bes4. aes4( ces)
     s16
     des4 ees ces4. des2

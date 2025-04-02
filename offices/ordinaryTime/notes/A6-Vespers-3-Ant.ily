@@ -15,14 +15,13 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    All na -- tions will come " * " 
+    All na -- tions will \ll come  "* "
     and wor -- ship be -- fore you, O Lord.
 }
 sopNotesAnt = \relative e' {
     \global	% will be populated by an include file
 		% in the cantor/organ scores called lbi_defs
     \keysig
-    \voiceOne
     g4 b8 c a g[( f] a4) 
     \hideNotes a16 \unHideNotes   %so that I can align the * better
     a8 b c a b a a g4 \bar "||"  
@@ -30,21 +29,18 @@ sopNotesAnt = \relative e' {
 altoNotesAnt = \relative c' {
     \global
     \keysig
-    \voiceTwo
     d4 e4. d4~ d4. s16
     f2. d4
 }    
 tenorNotesAnt = \relative g {
     \global
     \keysig
-    \voiceOne
     b4 a4.~ a4~ a4. s16
     c2. b4
 }
 bassNotesAnt = \relative e {
     \global
     \keysig
-    \voiceTwo
     g4 c,4. d4( f4.~) s16
     f2. e4
 }

@@ -15,36 +15,33 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Lord, you have made us a king -- dom " * " 
+    Lord, you have made us a king -- dom  "*"
     and priests for God our Fa -- ther.
 }
 sopNotesAnt = \relative e' {
     \global	% will be populated by an include file
 		% in the cantor/organ scores called lbi_defs
     \keysig
-    \voiceOne
     e4 b8 cis cis[ gis'] fis e fis[ gis fis] fis4 
     \hideNotes fis16 \unHideNotes \bar ""  %so that I can align the * better
-    fis8 \bar "" gis[ fis] e \bar "" fis4 e8 \bar "" dis[ cis] cis4 \bar "||"
+    fis8 \bar "" gis[ fis] e \bar "" fis4 \allowBreak e8 \bar "" \allowBreak
+    dis[ cis] \allowBreak cis4 \bar "||"
 }
 altoNotesAnt = \relative c' {
     \global
     \keysig
-    \voiceTwo
     s1 s4. s4 s16
     s8 e4. cis4. a4 gis4
 }    
 tenorNotesAnt = \relative g {
     \global
     \keysig
-    \voiceOne
     gis4 fis gis2 b2. s16
     gis4. a4. fis4 e4
 }
 bassNotesAnt = \relative c {
     \global
     \keysig
-    \voiceTwo
     cis4 dis e2 dis2. s16
     cis2.~ cis2
 }

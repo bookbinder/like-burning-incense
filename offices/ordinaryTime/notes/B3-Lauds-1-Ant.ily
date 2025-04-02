@@ -1,5 +1,5 @@
 \version "2.18.2"
-\include "../../../lbi_defs.ily"
+%% include "../../../lbi_defs.ily"
 
 antiphon = "1"
 psalmnum = "Ps_43"
@@ -11,13 +11,13 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Lord, send forth "*" your light and your truth.
+    Lord, send forth "*  "
+    your light and your truth.
 }
 
 sopNotesAnt = \relative e' {
     \keysig
     \global
-    \voiceOne
     e4 b8[ cis] cis[( gis' a] gis4)
     \hideNotes gis16 \unHideNotes %so that I can align the * better
     gis8 fis[ gis] fis e dis4( cis) \bar "||"
@@ -25,18 +25,15 @@ sopNotesAnt = \relative e' {
 altoNotesAnt = \relative c' {
     \keysig
     \global
-    \voiceTwo
     s2 cis4. b4.~ s16 b2 gis2
 }
 tenorNotesAnt = \relative g {
     \keysig
     \global
-    \voiceOne
     gis4 fis e2. s16 dis2 e2
 }
 bassNotesAnt = \relative c {
     \keysig
     \global
-    \voiceTwo
     cis4 dis e2. s16 b2 cis2
 }

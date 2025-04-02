@@ -15,23 +15,24 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The man whose deeds are blame -- less " * " 
+    The man whose deeds are blame -- less  "*"
     and whose heart is pure will climb the moun -- tain of the Lord.
 }
 sopNotesAnt = \relative e' {
     \global	% will be populated by an include file
 		% in the cantor/organ scores called lbi_defs
     \keysig
-    \voiceOne
     r8 cis8 e[ dis] cis dis e \bar "" fis[ gis fis] fis4
     \hideNotes gis16 \unHideNotes   %so that I can align the * better
-   fis8 \bar "" e[ fis] fis[ gis a gis] fis \bar "" fis4( gis) \breathe
-   gis8 \bar "" fis[ gis] fis \bar "" e[ cis] cis4 b8 cis \bar "" dis4( cis) \bar "||"  
+    fis8 \bar "" \allowBreak
+    e[ fis] \allowBreak fis[ gis a gis] fis \bar ""
+    \allowBreak fis4( gis) \breathe \allowBreak 
+    gis8 \bar "" \allowBreak fis[ gis] fis \bar "" \allowBreak
+    e[ cis] \allowBreak cis4 b8 cis \bar "" \allowBreak dis4( cis) \bar "||"  
 }
 altoNotesAnt = \relative c' {
     \global
     \keysig
-    \voiceTwo
     gis\breve*7/16 cis2.~ s16
     cis4 e\breve*5/16~ e\breve*5/16 
     cis4. s4 s4 s4 gis2
@@ -39,7 +40,6 @@ altoNotesAnt = \relative c' {
 tenorNotesAnt = \relative g {
     \global
     \keysig
-    \voiceOne
     e\breve*7/16~ e2. s16
     a4~ a\breve*5/16 b\breve*5/16 
     a4. gis4 e dis e2
@@ -47,7 +47,6 @@ tenorNotesAnt = \relative g {
 bassNotesAnt = \relative c {
     \global
     \keysig
-    \voiceTwo
     cis\breve*7/16 a2.~ s16
     a4 cis\breve*5/16 e\breve*5/16 
     a4. cis,2.~ cis2

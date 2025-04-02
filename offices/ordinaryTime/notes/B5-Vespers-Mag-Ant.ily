@@ -1,5 +1,5 @@
 \version "2.18.2"
-\include "../../../lbi_defs.ily"
+%% include "../../../lbi_defs.ily"
 
 antiphon = "M"
 psalmnum = "Magnificat"
@@ -11,7 +11,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    If you hun -- ger for ho -- li -- ness,  "*" 
+    If you hun -- ger for ho -- li -- \ll "ness,  * " _ 
     God will sat -- is -- fy your long -- ing, good meas -- ure, and
     flow -- ing o -- ver.
 }
@@ -19,7 +19,6 @@ text = \lyricmode {
 sopNotesAnt = \relative e' {
     \keysig
     \global
-    \voiceOne
     cis8 dis e4 e8 e \bar "" fis e dis4
     \hideNotes dis16 \unHideNotes %so that I can align the * better
     dis8[ e] dis \bar "" e dis cis b \bar "" cis[ dis] dis4 \breathe \bar ""
@@ -28,7 +27,6 @@ sopNotesAnt = \relative e' {
 altoNotesAnt = \relative c' {
     \keysig
     \global
-    \voiceTwo
     gis2. b2~ s16
     b4. gis2 b2~
     b4~ b2 cis a4 gis
@@ -36,7 +34,6 @@ altoNotesAnt = \relative c' {
 tenorNotesAnt = \relative g {
     \keysig
     \global
-    \voiceOne
     e2. dis2 s16
     fis4. e2 gis2
     e4~ e2~ e2~ e2
@@ -44,7 +41,6 @@ tenorNotesAnt = \relative g {
 bassNotesAnt = \relative c {
     \keysig
     \global
-    \voiceTwo
     cis2. b2~ s16
     b4. cis2 gis2~
     gis4 e2 a cis

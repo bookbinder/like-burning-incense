@@ -1,6 +1,6 @@
 \version "2.20.0"
 
-\include "../../lbi_defs.ily"
+\include "lbi_defs.ly"
 \include "notes/0Sun1-Ant.ily"
 \include #(string-append "../../psalmtones/notes/" psalmtone "-notes.ily")
 

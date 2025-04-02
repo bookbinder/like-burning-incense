@@ -6,12 +6,12 @@
 
 \section*{Morning Prayer}
 
-\spacer\lilypondfile[line-width=4.4\in]{A3-Lauds-1-Ant-Cantor.ly}
+\medspacer\lilypondfile[line-width=4.4\in]{A3-Lauds-1-Ant-Cantor.ly}
 
-\spacer\lilypondfile[line-width=4.4\in]{A3-Lauds-2-Ant-Cantor.ly}
+\medspacer\lilypondfile[line-width=4.4\in]{A3-Lauds-2-Ant-Cantor.ly}
 
-\spacer\lilypondfile[line-width=4.4\in]{A3-Lauds-3-Ant-Cantor.ly}
+\medspacer\lilypondfile[line-width=4.4\in]{A3-Lauds-3-Ant-Cantor.ly}
 
-\spacer\lilypondfile[line-width=4.4\in]{A3-Lauds-Ben-Ant-Cantor.ly}
+\medspacer\lilypondfile[line-width=4.4\in]{A3-Lauds-Ben-Ant-Cantor.ly}
 
 \end{document}

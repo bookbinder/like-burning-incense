@@ -1,9 +1,9 @@
 \version "2.20.0"
-\include "../../../lbi_defs.ily"
+%% \include "../../../lbi_defs.ily"
 
 % Will need these variables to build the cantor and organ scores:
 keysig =  \key ges \major
-antiphon = "Mag."
+antiphon = "M"
 psalmtone = "37"
 psalmtonestruct = "33"
 psalmnum = "Magnificat"
@@ -24,7 +24,6 @@ text = \lyricmode {
 sopNotesAnt = \relative e' {
     \global
     \keysig
-    \voiceOne
     des8 des ees des ges4 ges8 ges8 bes bes[ aes] aes4 \bar "'"
     ges4 f8 ees ees[ f] ees des4 \bar "'" des4 des8 des \bar ""
     ees[ des] ces des ees[ ges] ges \bar "" ees ges aes4 \bar "'"
@@ -36,14 +35,12 @@ sopNotesAnt = \relative e' {
 altoNotesAnt = \relative c' {
     \global
     \keysig
-    \voiceTwo
     s2 des\breve*5/16~ des2 bes\breve*13/16 ces\breve*7/16 des4~ des
     ees\breve*7/16 des2~ des2. bes1~ bes4. ces4 des\breve*5/16 aes4.~ aes4
 }
 tenorNotesAnt = \relative g {
     \global
     \keysig
-    \voiceOne
     aes2 ges\breve*5/16 f2 ges\breve*7/16 aes\breve*6/16 ges\breve*7/16~
     ges4 f ges\breve*7/16~ ges2~ ges4 f2 ges1~ ges4. ges4~ ges\breve*5/16~
     ges4. f4
@@ -51,7 +48,6 @@ tenorNotesAnt = \relative g {
 bassNotesAnt = \relative c {
     \global
     \keysig
-    \voiceTwo
     f2 bes,\breve*5/16 des2 ees\breve*7/16 f\breve*6/16 ces\breve*7/16
     bes4 des ces\breve*7/16 bes4 ges des'2. ees1 des4. ces4
     bes\breve*5/16 des4.~ des4

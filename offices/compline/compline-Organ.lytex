@@ -1,12 +1,19 @@
 \documentclass{lbi_organ_bind}
 \newcommand{\betweenLilyPondSystem}[1]{\vspace{3mm}\linebreak}
+\renewcommand{\contentsname}{COMPLINE}
 
 %% \usepackage[margin=.5in]{geometry}
 
 \begin{document}
-\chaptermark{Compline}
-\section{COMPLINE}
+\thispagestyle{empty}
+\tableofcontents
 
+\newpage
+
+\chaptermark{Compline}
+%% \begin{center}{\Large\bfseries COMPLINE}\end{center}
+
+\section{Hymns}
 \subsection{Hymn A}
 \lilypondfile{hymn-a.ly}
 

@@ -1,15 +1,15 @@
-\version "2.20.0"
+\version "2.24.0"
 
-\include "../../lbi_defs.ily"
+\include "/home/ryan/scores/like-burning-incense/lbi_defs.ily"
 
 % get variables from the notes file
 \include "notes/A0-Vespers-1-Ant.ily"
 
 % notes for the psalm tone:
-\include #(string-append "../../psalmtones/notes/" psalmtone "-notes.ily")
+\include #(string-append "/home/ryan/scores/like-burning-incense/psalmtones/notes/" psalmtone "-notes.ily")
 
 % psalm/canticle text
-\include #(string-append "../../psalms/" psalmnum "/" psalmtonestruct "/" psalmnum ".ily")
+\include #(string-append "/home/ryan/scores/like-burning-incense/psalms/" psalmnum "/" psalmtonestruct "/" psalmnum ".ily")
 
 % psalm/canticle score
-\include #(string-append "../../psalms/" psalmnum "/" psalmnum ".ily")
+\include #(string-append "/home/ryan/scores/like-burning-incense/psalms/" psalmnum "/" psalmnum ".ily")

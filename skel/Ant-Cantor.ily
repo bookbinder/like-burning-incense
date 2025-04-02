@@ -1,34 +1,36 @@
-\version "2.20.0"
+\version "2.24.0"
 
-\include "../../lbi_defs_cantor.ily"
+\include "/home/ryan/scores/like-burning-incense/lbi_defs_cantor.ily"
 \include "notes/A0-Vespers-1-Ant.ily"
-\include #(string-append "../../psalmtones/notes/" psalmtone "-notes.ily")
+\include #(string-append "/home/ryan/scores/like-burning-incense/psalmtones/notes/" psalmtone "-notes.ily")
 
 
 \score {
-    \new Staff \with { \omit TextScript instrumentName = \markup {
+  \transpose \master-from-pitch \master-to-pitch {
+    \new Staff \with {
+      instrumentName = \markup {
         \center-column {
-            \bold { \line { Ant. \antiphon } }
-            \concat { #psalmtone } }
-        }
+          \bold { \line { Ant. \antiphon } }
+          \concat { #psalmtone } }
+      }
     }
     <<
-        \midi_instrument
-        \clef treble
-        \accidentalStyle forget
-        \new Voice = "Soprano" {
-            \sopNotesAnt
-            \transpose \frompitch \topitch {
-                \small \sopranoOneFlex
-            }
+      \midi_instrument
+      \clef treble
+      \accidentalStyle forget
+      \new Voice = "Soprano" {
+        \oneVoice \sopNotesAnt
+        \transpose \frompitch \topitch {
+          \small \sopranoShort
         }
-        \new Lyrics \lyricsto Soprano \text
+      }
+      \new Lyrics \lyricsto Soprano \text
     >>
-
-    \layout {
-        \context {
-            \Staff
-            \remove Time_signature_engraver
-        }
+  }  
+  \layout {
+    \context {
+      \Staff
+      \remove Time_signature_engraver
     }
+  }
 }

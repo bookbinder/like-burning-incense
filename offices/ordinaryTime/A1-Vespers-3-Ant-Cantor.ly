@@ -5,13 +5,15 @@
 % \include #(string-append "../../psalmtones/notes/" psalmtone "-notes.ily")
 
 
-\score {    
-    \new Staff \with { \omit TextScript instrumentName = \markup { 
-        \center-column { 
-            \bold { \line { Ant. \antiphon } } 
-            \concat { #psalmtone } } 
-        }
-    } 
+\score {
+    \header {
+      piece = \markup \with-color "red" { \fontsize #1 #(string-append "Ant. " antiphon) }
+      opus = #(string-append "(" psalmtone ")")
+      tagline = ##f
+    }
+    
+    \new Staff
+      
     <<
         \midi_instrument
         \clef treble
@@ -21,11 +23,11 @@
                 \global	% will be populated by an include file
                     % in the cantor/organ scores called lbi_defs
                 \keysig
-                \voiceOne
+                \oneVoice
                 g4( fis8) g e d4 
                 \hideNotes d16 \unHideNotes   %so that I can align the * better
-                 g4 a8 g a b b4 \breathe
-                d8 b a[ g] g4      \bar "||"
+                 g4 a8 g a b b4 \bar "'"
+                d8 b \bar "" a[ g] g4 \bar "||"
 
                 \small
                 r8 g8 a[ b] a4 a \bar "|" g\breve fis8 a\breve b4 \bar "||"

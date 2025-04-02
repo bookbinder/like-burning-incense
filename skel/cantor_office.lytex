@@ -2,19 +2,18 @@
 
 \begin{document}
 
-\topheader{Sunday}{Week 1}
+\topheader{Day}{Week}
 
-\section*{Morning Prayer}
+%% \section*{Evening Prayer I}
 
-\spacer\lilypondfile[line-width=4.4\in]{A1-Lauds-1-Ant-Cantor.ly}
+%% Note: you can also use \medspacer or \smallspacer
+\spacer\lilypondfile[line-width=4.4\in]{A0-Vespers-1-Ant-Cantor.ly}
 
-\spacer\lilypondfile[line-width=4.4\in]{A1-Lauds-2-Ant-Cantor.ly}
+\spacer\lilypondfile[line-width=4.4\in]{A0-Vespers-2-Ant-Cantor.ly}
 
-\spacer\lilypondfile[line-width=4.4\in]{A1-Lauds-3-Ant-Cantor.ly}
+\spacer\lilypondfile[line-width=4.4\in]{A0-Vespers-3-Ant-Cantor.ly}
 
-% Except Sundays:
-\newpage
+\spacer\lilypondfile[line-width=4.4\in]{A0-Vespers-Mag-Ant-Cantor.ly}
 
-\spacer\lilypondfile[line-width=6.9\in]{A4-Vespers-Mag-Ant-Organ.ly}
 
 \end{document}

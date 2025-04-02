@@ -15,36 +15,34 @@ topitch = aes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The Lord Je -- sus hum -- bled him -- self, " * " 
+    The Lord Je -- sus hum -- bled him -- self,  "* "  
     and God ex -- alt -- ed him for ev -- er.    
 }
 sopNotesAnt = \relative e' {
     \global	% will be populated by an include file
 		% in the cantor/organ scores called lbi_defs
     \keysig
-    \voiceOne
     r8 des8 ges[ f] ges[ bes] bes \bar "" aes aes bes aes4 
     \hideNotes aes16 \unHideNotes   %so that I can align the * better
-    aes8 \bar "" ges[ ees] f \bar "" ges ges f ees \bar "" ees[ des] des4 \bar "||"
+    aes8 \bar "" ges[ ees] f \bar "" ges
+    \allowBreak ges \allowBreak f \allowBreak ees \bar "" \allowBreak ees[ des]
+    \allowBreak des4 \bar "||"
 }
 altoNotesAnt = \relative c' {
     \global
     \keysig
-    \voiceTwo
     r8 des8~ des\breve*5/16~ des2. s16
     bes4 s8 des2 aes2
 }    
 tenorNotesAnt = \relative g {
     \global
     \keysig
-    \voiceOne
     <ges~ bes>4 ges\breve*5/16~ ges4. f4. s16
     ges4.~ ges2~ ges4 f4 \bar "||"
 }
 bassNotesAnt = \relative c {
     \global
     \keysig
-    \voiceTwo
     s4 bes\breve*5/16 des2. s16
     ees4. bes2 des2
 }

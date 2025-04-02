@@ -1,15 +1,26 @@
-#(set-global-staff-size 15)
+#(set-global-staff-size 16)
 
 \paper {
     %line-width = 7.3\in
     print-page-number = #f
     ragged-last = ##t 
-    scoreTitleMarkup = \markup {       
-        \fill-line {
-            \fontsize #2 \bold \fromproperty #'header:psalm_title  %% User-defined field
-            \fontsize #2 \italic \fromproperty #'header:psalm_subtitle %% User-defined field
-        }
-    }
+
+  #(define fonts
+    (make-pango-font-tree
+     "Linux Libertine O"
+     "Linux Biolinum O"
+     "DejaVu Sans Mono"
+     (/ staff-height pt 20)
+   ))
+    
+        % scoreTitleMarkup = \markup {       
+    %     \fill-line {
+    %         \fontsize #2 \bold \fromproperty #'header:psalm_title  %% User-defined field
+    %         \fontsize #2 \italic \fromproperty #'header:psalm_subtitle %% User-defined field
+    %     }
+    %   }
+
+    
 }
 
 ll = {  
@@ -20,10 +31,10 @@ global = {
     \cadenzaOn
     \set tieWaitForNote = ##t
     \autoBeamOff
-    \override Lyrics.LyricSpace.minimum-distance = #1.0            
+    \override Lyrics.LyricSpace.minimum-distance = #1.0
+    \set forbidBreakBetweenBarLines = ##f
 }
 
 midi_instrument = { 
     \set Staff.midiInstrument = # "drawbar organ" 
 }
-

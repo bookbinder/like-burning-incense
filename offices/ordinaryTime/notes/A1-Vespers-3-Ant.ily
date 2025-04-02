@@ -15,23 +15,21 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    All power is yours, " * "
+    All power is yours,  "*"
     Lord God, our might -- y King, al -- le -- lu -- ia.
 }
 sopNotesAnt = \relative e' {
     \global	% will be populated by an include file
 		% in the cantor/organ scores called lbi_defs
     \keysig
-    \voiceOne
-    g4( fis8) g e d4 
+    g4( fis8) \bar "" g e \bar "" d4 
     \hideNotes d16 \unHideNotes   %so that I can align the * better
-     g4 a8 g a b b4 \breathe
-    d8 b a[ g] g4      \bar "||"
+     g4 a8 \bar "" g \bar "" a \bar "" b \bar "" b4 \bar "" \breathe
+    d8 \bar "" b \bar "" a[ g] g4 \bar "||"
 }
 altoNotesAnt = \relative c' {
     \global
     \keysig
-    \voiceTwo
     b4. c4 d4 s16
     b2 d4~ d~ 
     d c b
@@ -39,7 +37,6 @@ altoNotesAnt = \relative c' {
 tenorNotesAnt = \relative g {
     \global
     \keysig
-    \voiceOne
     g4.~ g4~ g4~ s16
     g2 fis4 g4 
     fis e d
@@ -47,7 +44,6 @@ tenorNotesAnt = \relative g {
 bassNotesAnt = \relative c {
     \global
     \keysig
-    \voiceTwo
     g4. a4 b s16
     e2 d4 e 
     b c g

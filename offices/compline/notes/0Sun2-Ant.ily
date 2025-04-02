@@ -41,5 +41,5 @@ bassNotesAnt = \relative c {
     \global
     \keysig
     \voiceTwo
-    aes4 ees\breve*5/16~ ees2 c4( des4.) f2
+    aes'4 ees\breve*5/16~ ees2 c4( des4.) f2
 }

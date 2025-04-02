@@ -33,8 +33,12 @@ global = {
     %\hide Staff.Stem
 }
 
-sopranoOneFlex = { \afterGrace aes'\breve^"A†" f'4 \breathe aes'\breve bes'8 aes'4 \bar "|" f'\breve g'8 ees'4 \bar "||"  }
+sopranoOneFlex = { \afterGrace aes'\breve^"DON'T USE THIS. USE 26 INSTEAD." f'4 \breathe aes'\breve bes'8 aes'4 \bar "|" f'\breve g'8 ees'4 \bar "||"  }
 sopranoOne = { aes'\breve^"A" bes'8 aes'4 \bar "|" f'\breve g'8 ees'4 \bar "||" }
+sopranoShort = { \override Stem.stencil = ##f
+                 \afterGrace aes'\breve*1/2 \parenthesize f'4_"+"
+                 \revert Stem.stencil
+                 bes'8 aes'4 \bar "|" \allowBreak f'\breve*1/2 g'8 ees'4 \bar "||"  }
 sopranoTwoFlex = { \afterGrace aes'\breve^"B†" f'4 \breathe aes'\breve bes'8 aes'4 \bar "|" f'\breve g'8 ees'4 \bar "||" }
 sopranoTwo = { aes'\breve^"B" bes'8 aes'4 \bar "|" f'\breve g'8 ees'4 \bar "||" }
 

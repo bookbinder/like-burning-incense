@@ -4,28 +4,31 @@
 \include "notes/A3-Lauds-Ben-Ant.ily"
 \include #(string-append "../../psalmtones/notes/" psalmtone "-notes.ily")
 
-
-\score {    
-    \new Staff \with { \omit TextScript instrumentName = \markup { 
-        \center-column { 
-            \bold { \line { Ant. \antiphon } } 
-            \concat { #psalmtone } } 
-        }
-    } 
+\score {
+    \header {
+      piece = \markup \with-color "red" { \fontsize #1 #(string-append "Ant. " antiphon) }
+      opus = #(string-append "(" psalmtone ")")
+      tagline = ##f
+    }
+    
+    \new Staff
+      
     <<
         \midi_instrument
         \clef treble
         \accidentalStyle forget
         \new Voice = "Soprano" { 
-            \sopNotesAnt 
+            \oneVoice \autoLineBreaksOn \sopNotesAnt \autoLineBreaksOff
+            \allowBreak 
             \transpose \frompitch \topitch { 
-                \small \sopranoOneFlex 
+                \small \sopranoShort 
             }
         }
         \new Lyrics \lyricsto Soprano \text
     >>
 
-    \layout { 
+    \layout {
+       % #(layout-set-staff-size 16)
         \context { 
             \Staff 
             \remove Time_signature_engraver 

@@ -5,13 +5,15 @@
 % \include #(string-append "../../psalmtones/notes/" psalmtone "-notes.ily")
 
 
-\score {    
-    \new Staff \with { \omit TextScript instrumentName = \markup { 
-        \center-column { 
-            \bold { \line { Ant. \antiphon } } 
-            \concat { #psalmtone } } 
-        }
-    } 
+\score {
+    \header {
+      piece = \markup \with-color "red" { \fontsize #1 #(string-append "Ant. " antiphon) }
+      opus = #(string-append "(" psalmtone ")")
+      tagline = ##f
+    }
+    
+    \new Staff
+      
     <<
         \midi_instrument
         \clef treble
@@ -20,12 +22,14 @@
                \relative e' {
                 \keysig
                 \global
-                \voiceOne
-                g8[ a] b4 a8 c b a[ b a] \bar "" a4 \bar "'"
+                \oneVoice
+                g8[ a] b4 a8 c b a[ b a] \bar "" a4 \bar ""
                 \hideNotes a16 \unHideNotes %so that I can align the * better
-                g8 \bar "" fis[ g] e d4 \bar"'" g8 a[ b] g4 g \bar "||"
+                g8 \bar "" fis[ g] e d4 \bar"'"
+                g8 \allowBreak a[ b] \allowBreak g4
+                \allowBreak g \bar "||"
 
-                \small
+                % \small
                 r8 g8 a[ b] a4 a \bar "|" g\breve fis8 a\breve b4 \bar "||"
                 g8 g e d4 \bar "|" g\breve fis8 a\breve b4 \bar "||"
                 r8 b8 b[ a] a g e g[ a] a[ g] g4 \bar "||"}

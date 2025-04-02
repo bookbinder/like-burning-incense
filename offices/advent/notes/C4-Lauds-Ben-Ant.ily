@@ -16,30 +16,32 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    " * "
+    Be com -- for -- ted, my peo -- "ple; * " be com -- for -- ted,
+    says the Lord your God.
 }
 sopNotesAnt = \relative fis' {
     \global	% will be populated by an include file
 		% in the cantor/organ scores called lbi_defs
     \keysig
     \voiceOne
-
+    aes4 aes8 g f ees f[ aes] aes4 \bar "'" f8[ aes] bes[ c] bes bes4 \bar "'"
+    aes8 f ees[ f] g g4( f) \bar "||"
 }
 altoNotesAnt = \relative d' {
     \global
     \keysig
     \voiceTwo
-
+    c\breve*10/16~ c4 f\breve*7/16 ees4. c2
 }    
 tenorNotesAnt = \relative g {
     \global
     \keysig
     \voiceOne
-
+    aes\breve*10/16~ aes4~ aes\breve*7/16 bes4.~ bes4( aes)
 }
 bassNotesAnt = \relative c {
     \global
     \keysig
     \voiceTwo
-
+    f\breve*10/16 ees4 des\breve*7/16 c4. f2
 }

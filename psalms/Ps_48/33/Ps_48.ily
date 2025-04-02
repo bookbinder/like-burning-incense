@@ -36,15 +36,8 @@ text = \lyricmode {
 
     \ll "With justice your right hand "is filled.
         \ll "Mount Zion" re -- joices;
-    \ll "the people of Judah" re -- joice
-        \ll "at the sight of" your judgements.
+    
 
-    \ll "Walk through Zion, walk all round" it;
-    \ll "count the number of" its towers.
-        \ll "Review all its ramparts, examine" its castles,
-
-    \ll "that you may tell the next ge" ne -- ration
-        \ll "that such is" our God,
 }
 textB = \lyricmode {
 %    \override InstrumentName #'X-offset = #4
@@ -53,6 +46,17 @@ textB = \lyricmode {
     \set stanza = # "2. "
 %    \set shortVocalName = "2."
     \set includeGraceNotes = ##t
+        \ll "the people of Judah" re -- joice
+        \ll "at the sight of" your judgements.
+
+    \ll "Walk through Zion, walk" all \ll "round it;"
+    \ll "count the number of" its towers.
+
+    \ll "Review all" its ramparts,
+    \ll "examine" its castles,
+
+    \ll "that you may tell the next ge" ne -- ration
+    \ll "that such is" our God,
     \ll "our God for ever" and always.
         \ll "It is he" who \ll "leads us."
 

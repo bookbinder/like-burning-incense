@@ -15,23 +15,22 @@ topitch = aes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    As morn -- ing breaks, I look to you, O God, " * "
+    As morn -- ing breaks, I look to you, O God,  "* "
     to be my strength this day, al -- le -- lu  -- ia.
 }
 sopNotesAnt = \relative e' {
     \global	% will be populated by an include file
 		% in the cantor/organ scores called lbi_defs
     \keysig
-    \voiceOne
     r8 des8 ges[ f] ges \bar "" ees ees f ges \bar "" aes[ bes] aes aes4
     \hideNotes aes16 \unHideNotes   %so that I can align the * better
-    aes8 \bar "" ges[ aes] ges \bar "" f[( ges] ees4) f8[ ees] \bar "" des4 \breathe
+    aes8 \bar "" ges[ aes] \allowBreak
+    ges \bar "" f[( ges] ees4) f8[ ees] \bar "" des4 \breathe
     \bar "" ces8 des \bar "" ees[ des] des4 \bar "||" \bar "||"
 }
 altoNotesAnt = \relative c' {
     \global
     \keysig
-    \voiceTwo
     bes\breve*5/16 ces4 des4~ des2. s16
     bes4. ces2. bes4
     ces4 aes2
@@ -39,7 +38,6 @@ altoNotesAnt = \relative c' {
 tenorNotesAnt = \relative g {
     \global
     \keysig
-    \voiceOne
     ges\breve*5/16~ ges2~ ges4. f4. s16 
     ges4.~ ges2. ~ ges4~ 
     ges4~ ges4 f4 \bar "||"
@@ -47,7 +45,6 @@ tenorNotesAnt = \relative g {
 bassNotesAnt = \relative g {
     \global
     \keysig
-    \voiceTwo
     ges\breve*5/16 ces,4 bes4 des2. s16
     ees4. ces2. ges4 
     aes4 des2

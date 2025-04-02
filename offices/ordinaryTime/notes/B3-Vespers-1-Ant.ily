@@ -1,5 +1,5 @@
 \version "2.18.2"
-\include "../../../lbi_defs.ily"
+%% include "../../../lbi_defs.ily"
 
 antiphon = "1"
 psalmnum = "Ps_49_2-13"
@@ -11,13 +11,13 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    You can -- not serve "*" both God and mam -- mon.
+    You can -- not serve "*"
+    both God and mam -- mon.
 }
 
 sopNotesAnt = \relative e' {
     \keysig
     \global
-    \voiceOne
     r8 des8 f[ ges] aes \bar "" bes4( aes)
     \hideNotes aes16 \unHideNotes %so that I can align the * better
     f8[ aes] \bar "" ges[( f] ees4) f8 \bar "" ees4 des4 \bar "||"
@@ -25,21 +25,18 @@ sopNotesAnt = \relative e' {
 altoNotesAnt = \relative c' {
     \keysig
     \global
-    \voiceTwo
     r8 \hideNotes des8~ \unHideNotes des4.~ des2.
     s16 des4 bes4. aes2
 }
 tenorNotesAnt = \relative g {
     \keysig
     \global
-    \voiceOne
     f4 aes4. ges4( f) s16
     aes4 bes4 ges4.~ ges4 f
 }
 bassNotesAnt = \relative c {
     \keysig
     \global
-    \voiceTwo
     des4~ des4.~ des2.~ s16
     des4~ des4.~ des2
 }

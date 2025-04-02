@@ -27,7 +27,28 @@ sopMusic = \relative g' {
   a8 \bar "" a[ g]  c b[ c] a g f[ g] \bar "" g4 \bar "||"
   g8[ a g] \bar "" f4( g) \bar "||"
 }
-sopWords = \lyricmode {}
+sopWordsA = \lyricmode {
+    \set stanza = # "1. "
+    O Christ, thou art our Light and Day,
+    Who drive night's ter -- ror far a -- way!
+    We know thee as the Light of Light,
+    Il -- lu -- mi -- na -- ting mor -- tal sight.
+  }
+sopWordsB = \lyricmode {
+    \set stanza = # "2. "
+    And while our eyes their slum -- ber take,
+    Still be the heart to thee a -- wake;
+    Be thy right hand up -- held a -- bove
+    Thy ser -- vants res -- ting in thy love.
+  }
+sopWordsC = \lyricmode {
+    \set stanza = # "3. "
+    O Fa -- ther, this we ask be done
+    Through Je -- sus Christ, thine on -- ly Son,
+    Who, with the Pa -- ra -- clete and thee,
+    Now lives and reigns e -- ter -- nal -- ly.
+    A -- men.
+  }
 
 altoMusic = \relative c' {
   c\breve*8/16 e\breve*7/16 d2.
@@ -56,15 +77,18 @@ bassWords = \lyricmode {}
 
 \score {
   \new ChoirStaff <<
-    \new Lyrics = "sopranos" \with {
+    % \new Lyrics = "sopranos" \with {
       % this is needed for lyrics above a staff
-      \override VerticalAxisGroup.staff-affinity = #DOWN
-    }
+      % \override VerticalAxisGroup.staff-affinity = #DOWN
+    % }
     \new Staff = "women" \with {\omit TimeSignature} <<
       \new Voice = "sopranos" {
         \voiceOne
         << \global \sopMusic >>
       }
+      \new Lyrics \lyricsto "sopranos" \sopWordsA
+      \new Lyrics \lyricsto "sopranos" \sopWordsB
+      \new Lyrics \lyricsto "sopranos" \sopWordsC
       \new Voice = "altos" {
         \voiceTwo
         << \global \altoMusic >>
@@ -73,7 +97,7 @@ bassWords = \lyricmode {}
     \new Lyrics = "altos"
     \new Lyrics = "tenors" \with {
       % this is needed for lyrics above a staff
-      \override VerticalAxisGroup.staff-affinity = #DOWN
+      % \override VerticalAxisGroup.staff-affinity = #DOWN
     }
     \new Staff = "men" \with {\omit TimeSignature} <<
       \clef bass

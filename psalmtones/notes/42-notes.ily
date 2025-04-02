@@ -35,6 +35,10 @@ global = {
 
 sopranoOneFlex = { \afterGrace a'\breve*1/4^"A†" g'4 \breathe \bar "" a'\breve*1/4 g'8 f' g'4 \bar "|" g'\breve*1/4 a'8 d'4 \bar "||" }
 sopranoOne = { a'\breve*1/4^"A" g'8 f' g'4 \bar "|" g'\breve*1/4 a'8 d'4 \bar "||" }
+sopranoShort = { \override Stem.stencil = ##f
+                 \afterGrace a'\breve*1/2 \parenthesize g'4_"+"
+                 \revert Stem.stencil
+                 g'8 f'8 g'4 \bar "|" \allowBreak g'\breve*1/2 a'8 d'4 \bar "||"  }
 sopranoTwoFlex = { \afterGrace a'\breve*1/4^"B†" g'4 \breathe \bar "" a'\breve*1/4 g'8 f' g'4 \bar "|" g'\breve*1/4 a'8 d'4 \bar "||"  }
 sopranoTwo = { a'\breve*1/4^"B" g'8 f' g'4 \bar "|" g'\breve*1/4 a'8 d'4 \bar "||"  }
 

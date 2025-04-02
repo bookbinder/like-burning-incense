@@ -6,7 +6,7 @@
 
 
 \score {
-    \new Staff \with { \omit TextScript instrumentName = \markup {
+    \new Staff \with { instrumentName = \markup {
         \center-column {
             \bold { \line { Ant. \antiphon } }
             \concat { #psalmtone } }
@@ -17,9 +17,11 @@
         \clef treble
         \accidentalStyle forget
         \new Voice = "Soprano" {
-            \sopNotesAnt
+          \oneVoice \autoLineBreaksOn \sopNotesAnt \autoLineBreaksOff
+            \allowBreak
+          \allowBreak
             \transpose \frompitch \topitch {
-                \small \sopranoOneFlex
+                \small \sopranoShort
             }
         }
         \new Lyrics \lyricsto Soprano \text
@@ -30,5 +32,6 @@
             \Staff
             \remove Time_signature_engraver
         }
+        
     }
 }
