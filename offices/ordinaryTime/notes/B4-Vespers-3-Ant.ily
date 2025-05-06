@@ -11,7 +11,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    All cre -- a -- tion is found  -- ed in him; "* "
+    All cre -- a -- tion is found  -- ed in him; \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     he holds all things to -- ge -- ther in him -- self.
 }
 

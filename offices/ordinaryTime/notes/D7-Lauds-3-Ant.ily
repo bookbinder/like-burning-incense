@@ -15,15 +15,16 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    On the lips of chil -- dren and in -- \ll "fants  * " _
+    On the lips of chil -- dren and in -- fants  \noBreak \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     you have found per -- fect praise.
 }
 sopNotesAnt = \relative e' {
     \global
     \keysig
-    c8 c c[ des] bes ees4 ees8 f aes[ g f] ees4 \bar "'"
+    c8 c c[ des] bes ees4 ees8 f aes[ g f] \allowBreak ees4 \bar ""
     \hideNotes e16 \unHideNotes   %so that I can align the * better
-    ees8 ees des[ f] ees[( f] ees4) des8 des4( c) \bar "||"
+    \allowBreak ees8 \allowBreak ees \allowBreak des[ f] \allowBreak
+    ees[( f] ees4) \allowBreak des8 \allowBreak des4( c) \bar "||"
 }
 altoNotesAnt = \relative c' {
     \global

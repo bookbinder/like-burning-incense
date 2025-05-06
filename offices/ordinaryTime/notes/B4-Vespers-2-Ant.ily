@@ -11,7 +11,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    May God turn his ra -- diant face toward us, "* "
+    May God turn his ra -- diant face toward us, \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     and fill us with his bles -- sings.
 }
 

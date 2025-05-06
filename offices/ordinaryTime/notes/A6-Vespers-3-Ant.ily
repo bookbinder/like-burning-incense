@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    All na -- tions will \ll come  "* "
+    All na -- tions will \ll come  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     and wor -- ship be -- fore you, O Lord.
 }
 sopNotesAnt = \relative e' {

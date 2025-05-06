@@ -15,7 +15,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    My heart is rea -- dy, O God, \markup { \tiny "🞵  " }
+    My heart is rea -- dy, O God, \markup \with-color #(x11-color 'gray36) { \tiny "🞵  " }
     my heart is rea -- dy.
 }
 sopNotesAnt = \relative e' {

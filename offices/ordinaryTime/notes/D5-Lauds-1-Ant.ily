@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    At day -- break,  \markup { \tiny "🞵 " }
+    At day -- break, \markup \with-color #(x11-color 'gray36) { \tiny "🞵 " }
     be mer -- ci -- ful to me, O Lord.
 }
 sopNotesAnt = \relative e' {

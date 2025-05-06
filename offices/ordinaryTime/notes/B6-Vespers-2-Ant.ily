@@ -11,7 +11,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    My help comes from the \ll "Lord,  * " _
+    My help comes from the Lord,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     who made heav -- en and earth.
 }
 

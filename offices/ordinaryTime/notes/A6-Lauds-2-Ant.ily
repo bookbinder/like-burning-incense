@@ -15,7 +15,8 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    All the des -- cen -- dants of Is -- ra -- el  "* "
+    All the des -- cen -- dants of Is -- ra -- el
+    \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 "" }
     will glo -- ry in the Lord's gift of vic -- tor -- y.
 }
 sopNotesAnt = \relative e' {
@@ -24,8 +25,9 @@ sopNotesAnt = \relative e' {
     \keysig
     ees8 f ees aes g aes \bar "" f ees ees4 
     \hideNotes ees16 \unHideNotes   %so that I can align the * better
-    ees8 \bar "" f ees des ees \bar "" \allowBreak f[ aes] \bar "" g[( aes] f4) \allowBreak f8 \bar "" \allowBreak 
-    g[ f] ees \bar "" ees4 \bar "||"  
+    ees8 \bar "" f \allowBreak ees \allowBreak des \allowBreak ees
+    \bar "" \allowBreak f[ aes] \bar "" g[( aes] f4) \allowBreak f8 \bar ""
+    \allowBreak g[ f] \allowBreak ees \bar "" \allowBreak ees4 \bar "||"  
 }
 altoNotesAnt = \relative c' {
     \global

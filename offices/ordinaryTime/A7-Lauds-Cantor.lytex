@@ -1,17 +1,35 @@
-\documentclass{lbi_cantor_office}
+\subsubsection{Antiphon 1}
+\noindent\lilypondfile[line-width=3.73\in]{A7-Lauds-1-Ant-Cantor.ly}
+\subsection{Psalm 119:145--152}
+\subsubsection{XIX (Koph)}
+%% \Desc{}{}
+\input{../../psalms/Ps_119_145-152/42/Ps_119_145-152.lytex}
+\subsubsection{Antiphon}
+\lilypondfile[line-width=3.73\in]{A7-Lauds-1-Ant-Cantor.ly}
 
-\begin{document}
+\null\smallskip\subsubsection{Antiphon 2}
+\noindent\lilypondfile[line-width=3.73\in]{A7-Lauds-2-Ant-Cantor.ly}
+\subsection{Canticle, Exodus 15:1--4a, 8--13, 17--18}
+\subsubsection{Hymn of victory after the crossing of the Red Sea}
+\Desc{Those who had conquered the beast were singing the song of Moses, God's
+servant}{(see Revelation 15:2--3).}
+\input{../../psalms/Exod_15_1-4a,_8-13,_17-18/33/Exod_15_1-4a,_8-13,_17-18.lytex}
+\subsubsection{Antiphon}
+\noindent\lilypondfile[line-width=3.73\in]{A7-Lauds-2-Ant-Cantor.ly}
 
-\topheader{Saturday}{Week 1}
+\null\smallskip\subsubsection{Antiphon 3}
+\noindent\lilypondfile[line-width=3.73\in]{A7-Lauds-3-Ant-Cantor.ly}
+\subsection{Psalm 117}
+\subsubsection{Praise for God's loving compassion}
+\Desc{I affirm that\ldots the Gentile peoples are to praise God
+because of his mercy}{(Romans 15:8--9).}
+\input{../../psalms/Ps_117/43/Ps_117.lytex}
+\subsubsection{Antiphon}
+\lilypondfile[line-width=3.73\in]{A7-Lauds-3-Ant-Cantor.ly}
 
-\section*{Morning Prayer}
-
-\spacer\lilypondfile[line-width=4.4\in]{A7-Lauds-1-Ant-Cantor.ly}
-
-\spacer\lilypondfile[line-width=4.4\in]{A7-Lauds-2-Ant-Cantor.ly}
-
-\spacer\lilypondfile[line-width=4.4\in]{A7-Lauds-3-Ant-Cantor.ly}
-
-\spacer\lilypondfile[line-width=4.4\in]{A7-Lauds-Ben-Ant-Cantor.ly}
-
-\end{document}
+\null\smallskip\subsubsection{Benedictus Antiphon}
+\medskip\noindent\lilypondfile[line-width=3.73\in]{A7-Lauds-Ben-Ant-Cantor.ly}
+\smallskip\subsection{Benedictus}
+\input{../../psalms/Benedictus/33/Benedictus.lytex}
+\subsubsection{Antiphon}
+\lilypondfile[line-width=3.73\in]{A7-Lauds-Ben-Ant-Cantor.ly}

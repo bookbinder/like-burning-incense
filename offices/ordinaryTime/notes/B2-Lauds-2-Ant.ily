@@ -11,7 +11,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Lord, show us " * "
+    Lord, show us " \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     the ra -- diance of your mer -- cy.
 }
 

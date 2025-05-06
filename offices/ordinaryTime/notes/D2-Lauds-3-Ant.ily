@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    You who stand in the house of the \ll "Lord,  * " _
+    You who stand in the house of the Lord,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     praise the name of the Lord.
 }
 sopNotesAnt = \relative e' {

@@ -6,20 +6,22 @@
 
 
 \score {
-  \transpose \master-from-pitch \master-to-pitch {
-    \new Staff \with {
-      instrumentName = \markup {
-        \center-column {
-          \bold { \line { Ant. \antiphon } }
-          \concat { #psalmtone } }
-      }
+  \header {
+      % piece = \markup \with-color "red" { \fontsize #1 #(string-append "Ant. " antiphon) }
+      % opus = #(string-append "(" psalmtone ")")
+      tagline = ##f
     }
+  \transpose \master-from-pitch \master-to-pitch {
+    \new Staff % \with { instrumentName = \psalmtone }
     <<
-      \midi_instrument
       \clef treble
+      \antKeysig
       \accidentalStyle forget
       \new Voice = "Soprano" {
-        \oneVoice \sopNotesAnt
+        \global
+        \oneVoice
+        \mark \markup {\small \psalmtone}
+        \sopNotesAnt
         \transpose \frompitch \topitch {
           \small \sopranoShort
         }
@@ -28,6 +30,8 @@
     >>
   }  
   \layout {
+    % indent = 0.3\cm
+    % short-indent = 0\cm
     \context {
       \Staff
       \remove Time_signature_engraver

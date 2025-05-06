@@ -15,7 +15,8 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Dawn finds me read -- y  "* " 
+    Dawn finds me read -- y
+    \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 " " } 
     to wel -- come you, my God.
 }
 sopNotesAnt = \relative e' {
@@ -24,7 +25,8 @@ sopNotesAnt = \relative e' {
     \keysig
     e4 b8 cis cis[ gis'] gis4 
     \hideNotes des16 \unHideNotes   %so that I can align the * better
-    gis8 fis[ gis] fis e dis e[( dis] cis4) \bar "||"  
+    \allowBreak gis8 \allowBreak fis[ gis] \allowBreak fis \allowBreak e
+    \allowBreak dis \allowBreak e[( dis] cis4) \bar "||"  
 }
 altoNotesAnt = \relative c' {
     \global

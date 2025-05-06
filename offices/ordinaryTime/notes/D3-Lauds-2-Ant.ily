@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Lord, do not with -- \ll "hold  * " _
+    Lord, do not with -- hold  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     your com -- pas -- sion from us.
 }
 sopNotesAnt = \relative e' {

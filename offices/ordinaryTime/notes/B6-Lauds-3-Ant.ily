@@ -11,7 +11,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    O praise the \ll "Lord,  * " _ Je -- ru -- sa -- lem! 
+    O praise the Lord,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _ Je -- ru -- sa -- lem! 
 }
 
 sopNotesAnt = \relative e' {

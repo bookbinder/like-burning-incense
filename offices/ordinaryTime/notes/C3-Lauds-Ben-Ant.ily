@@ -16,7 +16,7 @@ topitch = aes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-     God has raised up for \ll "us  * " _
+     God has raised up for us  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
      a migh -- ty Sav -- ior, as he pro -- mised through 
      the words of his ho -- ly pro -- phets.
 }

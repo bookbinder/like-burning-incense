@@ -15,7 +15,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    To you a -- lone, \ll " Lord,  * " _
+    To you a -- lone,  Lord,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     we look with con -- fi -- dence: you are e -- ver
     close to those who call u -- pon you.
 }

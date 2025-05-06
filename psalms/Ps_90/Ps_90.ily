@@ -67,12 +67,13 @@ bassMusic = {
 
 \score {
     <<
-        \transpose \frompitch \topitch {
+        \transpose \master-from-pitch \master-to-pitch {
+          \transpose \frompitch \topitch {
             \new ChoirStaff \with { instrumentName = \psalmtone }
             <<
                 \new Staff ="up"
                    <<
-                        \clef treble
+                        \clef treble \toneKeysig
                         \accidentalStyle forget
                         \new Voice = "Soprano" \sopMusic
                         \new Voice = "Alto" \altoMusic
@@ -82,16 +83,18 @@ bassMusic = {
                     >>
                 \new Staff ="down"
                     <<
-                        \clef bass
+                        \clef bass \toneKeysig
                         \accidentalStyle forget
                         \new Voice = "Tenor" \tenorMusic
                         \new Voice = "Bass" \bassMusic
                     >>
             >>
         }
+      }
     >>
 
     \layout {
+      #(layout-set-staff-size 14)
         \context {
             \Staff
             \remove Time_signature_engraver

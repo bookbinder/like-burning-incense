@@ -16,7 +16,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Lord, you are near to \ll "us,  * " _
+    Lord, you are near to us,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     and all your ways are true.
 }
 sopNotesAnt = \relative e' {

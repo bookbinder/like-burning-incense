@@ -11,7 +11,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    My heart leaps up with joy to the Lord, "* "
+    My heart leaps up with joy to the Lord, \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     for he hum -- bles on -- ly to ex -- alt us.
 }
 

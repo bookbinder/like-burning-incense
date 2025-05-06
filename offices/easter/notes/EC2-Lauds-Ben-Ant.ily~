@@ -1,0 +1,40 @@
+\version "2.24.0"
+
+% Will need these variables to build the cantor and organ scores:
+antiphon = "B"
+psalmtone = "39"
+keysig = \key cis \minor
+psalmnum = "Benedictus"
+% transposition interval for the corresponding psalm tone
+% to match the key signature of this antiphon. For
+% use in in cantor (antiphon) and organ (psalm) scores
+frompitch = a
+topitch = gis
+%% master transposition after accounting for psalm tone
+master-from-pitch = a
+master-to-pitch = a
+
+
+text = \lyricmode {
+  \set includeGraceNotes = ##t
+  The world will per -- se -- cute you,
+  \markup { \tiny \raise #.5 \char ##x1F7B6 ""}
+  but have cou -- rage, I have o -- ver -- come the world,
+  al -- le -- lu -- ia.
+}
+sopNotesAnt = \relative e' {
+  r8 cis8 cis[ e] e fis4 e8 dis[ e] cis4
+    \noBreak \hideNotes cis16 \unHideNotes
+  dis8 dis[ e] cis[ gis'] gis4 \bar ","
+  fis8[ gis] fis e dis cis[ e] fis e4( dis) \bar "'"
+  fis8 fis[ e] dis4 dis \bar "||"
+}
+altoNotesAnt = \relative c' {
+
+}
+tenorNotesAnt = \relative g {
+
+}
+bassNotesAnt = \relative c {
+
+}

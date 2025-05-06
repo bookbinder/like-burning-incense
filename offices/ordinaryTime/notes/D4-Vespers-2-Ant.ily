@@ -15,7 +15,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    I am the \ll "Lord:  * " _
+    I am the Lord:  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     I search the mind and probe the heart.
     I give to each one as his deeds de -- serve.
 }

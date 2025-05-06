@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Give thanks to the \ll "Lord,  * " _
+    Give thanks to the Lord,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     for his great love is with -- out end.
 }
 sopNotesAnt = \relative e' {

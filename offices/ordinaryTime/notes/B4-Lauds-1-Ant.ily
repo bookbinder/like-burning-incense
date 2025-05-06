@@ -11,7 +11,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    O God, all your ways are ho -- ly; " * "
+    O God, all your ways are ho -- ly; " \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     what god can com -- pare with our God?
 }
 

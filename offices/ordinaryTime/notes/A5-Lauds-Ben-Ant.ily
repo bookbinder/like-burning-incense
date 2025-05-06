@@ -15,7 +15,8 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Let us serve the Lord in ho -- li -- ness,  "*"
+    Let us serve the Lord in ho -- li -- ness,
+    \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 " "}
     and he will save us from our e -- ne -- mies.
 }
 sopNotesAnt = \relative e' {
@@ -23,8 +24,11 @@ sopNotesAnt = \relative e' {
 		% in the cantor/organ scores called lbi_defs
     \keysig
     dis8 cis dis8[ fis] fis gis[ ais] gis ais gis gis4
+    \noBreak
     \hideNotes gis16 \unHideNotes  \bar ""  %so that I can align the * better
-    gis8 \bar "" fis gis \bar "" ais4 ais8 \bar "" gis  \bar "" fis \bar "" fis \bar "" dis dis4 \bar "||"
+    gis8 \allowBreak fis \allowBreak gis \allowBreak ais4
+    \allowBreak ais8 \allowBreak gis  \allowBreak fis \allowBreak fis
+    \allowBreak dis dis4 \bar "||"
 }
 altoNotesAnt = \relative c' {
     \global

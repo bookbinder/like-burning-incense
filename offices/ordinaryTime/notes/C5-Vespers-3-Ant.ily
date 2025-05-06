@@ -16,7 +16,7 @@ topitch = aes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The Fa -- ther has gi -- ven \ll "Christ  * " _ 
+    The Fa -- ther has gi -- ven Christ  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _ 
     all power, ho -- nor and king -- ship;
     all peo -- ple will o -- bey him.
 }

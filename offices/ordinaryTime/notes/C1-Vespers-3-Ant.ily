@@ -12,7 +12,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Praise God, all you who serve \ll "him, * " _
+    Praise God, all you who serve him, \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     both great and small, al -- le -- lu -- ia.
 }
 

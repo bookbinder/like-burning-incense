@@ -15,7 +15,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    A -- do -- ra -- tion and glo -- \ll "ry  * " _
+    A -- do -- ra -- tion and glo -- ry  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     be -- long by right to the Lamb who was slain.
 }
 sopNotesAnt = \relative e' {

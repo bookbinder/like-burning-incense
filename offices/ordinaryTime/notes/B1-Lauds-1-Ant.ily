@@ -11,7 +11,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Bless -- ed is he who comes "* "
+    Bless -- ed is he who comes \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     in the name of the Lord, al -- le -- lu -- ia.
 }
 

@@ -11,7 +11,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    God dwells in high -- est heav -- en;  "* "
+    God dwells in high -- est heav -- en;  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     he has power to do all he wills, al -- le -- lu -- ia.
 }
 

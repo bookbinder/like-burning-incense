@@ -11,7 +11,7 @@ topitch = aes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The Lord has worked mar -- vels for us; "*"
+    The Lord has worked mar -- vels for us; \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     make it known to the ends of the world.
 }
 

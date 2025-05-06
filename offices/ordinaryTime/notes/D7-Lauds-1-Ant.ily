@@ -15,15 +15,18 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    We do well to sing to your name, Most \ll "High,  * " _
+    We do well to sing to your name, Most High,
+    \noBreak
+    \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 "" }
     and pro -- claim your mer -- cy at day -- break.
 }
 sopNotesAnt = \relative e' {
     \global
     \keysig
-    f8 ees ees[ f] ees des[ f] aes aes bes[ des] c[ bes] bes4( aes) \bar "'"
+    f8 ees ees[ f] ees des[ f] aes aes bes[ des] c[ bes] \allowBreak bes4( aes) \bar ""
     \hideNotes e16 \unHideNotes   %so that I can align the * better
-    aes8 aes ges[ f] ees ges4 f8 ees ees[ des] des4 \bar "||"
+    aes8 \allowBreak aes \allowBreak ges[ f]
+    \allowBreak ees ges4 f8 ees ees[ des] des4 \bar "||"
 }
 altoNotesAnt = \relative c' {
     \global

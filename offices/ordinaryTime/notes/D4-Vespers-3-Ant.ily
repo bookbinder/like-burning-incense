@@ -15,7 +15,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Through him all things were \ll "made;  * " _
+    Through him all things were made;  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     he holds all cre -- a -- tion to -- ge -- ther in him -- self.
 }
 sopNotesAnt = \relative e' {

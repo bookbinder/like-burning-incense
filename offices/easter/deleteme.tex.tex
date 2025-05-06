@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+\usepackage{libertine}
+%% \usepackage{fontspec}
+%% \setmainfont{Linux Libertine O}
+\usepackage{verse}
+
+\usepackage{lyluatex}
+\setluaoption{ly}{pass-fonts}{true}
+\newcommand{\FirstLetter}[1]{#1}
+\newcommand{\pointup}[1]{#1}
+\newcommand{\pointupl}[1]{#1}
+\newcommand{\Med}{}
+\newcommand{\Flex}{}
+
+\begin{document}
+\begin{lilypond}
+  \relative c' {
+    c8 d4 e8 f4 | g1
+  }
+  \addlyrics {
+    \override LyricText.font-size = #0.53   
+    "Blessed be the Lord, " -- "the God of Israel" -- "The thing is" due c'mon
+  }
+\end{lilypond}
+
+\input{../../psalms/Benedictus/43/Benedictus.tex}
+
+\end{document}

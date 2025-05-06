@@ -11,7 +11,7 @@ topitch = aes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Let ev -- ery -- thing in hea -- ven and on "earth * " 
+    Let ev -- ery -- thing in hea -- ven and on "earth \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } 
     bend the knee at the name of Je -- sus, al -- le -- lu -- ia.
 }
 

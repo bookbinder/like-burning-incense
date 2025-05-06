@@ -25,6 +25,8 @@ ll = { \once \override LyricText.self-alignment-X = #LEFT }
 sm = { \set melismaBusyProperties = #'() }
 usm = { \unset melismaBusyProperties }
 
+toneStruct = "33"
+
 global = {
     \key f \minor
     \cadenzaOn

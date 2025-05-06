@@ -15,7 +15,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Praise the \ll "Lord,  * " _
+    Praise the Lord,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     for his lo -- ving kind -- ness will ne -- ver fail,
     al -- le -- lu -- ia.
 }

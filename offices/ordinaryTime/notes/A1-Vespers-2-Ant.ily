@@ -15,7 +15,7 @@ topitch = bes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-     The earth is shak -- en to its depths,  "* "
+     The earth is shak -- en to its depths,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     be -- fore the glo -- ry of your face.
 }
 sopNotesAnt = \relative e' {

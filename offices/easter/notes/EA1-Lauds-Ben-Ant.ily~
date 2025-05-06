@@ -1,0 +1,81 @@
+\version "2.24.0"
+
+% Will need these variables to build the cantor and organ scores:
+keysig =  \key aes \major
+antiphon = "B"
+psalmtone = "19"
+psalmtonestruct = "43"
+psalmnum = "Benedictus"
+% transposition interval for the corresponding psalm tone
+% to match the key signature of this antiphon. For
+% use in in cantor (antiphon) and organ (psalm) scores
+frompitch = a
+topitch = a
+%% master transposition after accounting for psalm tone
+master-from-pitch = a
+master-to-pitch = a
+
+
+text = \lyricmode {
+    \set includeGraceNotes = ##t
+    Ve -- ry ear -- ly
+    \markup { \tiny \raise #.5 \char ##x1F7B6 ""}
+    on the mor -- ning af -- ter
+    the sab -- bath, when the sun had just ri -- sen,
+    they came to the tomb, al -- le -- lu -- ia.
+}
+sopNotesAnt = \relative e' {
+    \global
+    \keysig
+
+    ees8[ aes] f f4
+    \noBreak \hideNotes f16 \unHideNotes
+    \allowBreak ees4
+    \allowBreak ees8
+    \allowBreak f
+    \allowBreak ees4
+    \allowBreak des8
+    \allowBreak ees
+    \allowBreak f
+    \allowBreak f \bar ""
+    \allowBreak ees4
+    \allowBreak ees4 \bar "'"
+    \allowBreak ees8
+    \allowBreak ees \bar ""
+    \allowBreak g([ aes] bes4)
+    \allowBreak aes8 \bar ""
+    \allowBreak f[ aes] \bar ""
+    \allowBreak aes[ g]
+    \allowBreak g4 \bar "'"
+    \allowBreak aes8 \bar ""
+    \allowBreak f[ aes]
+    \allowBreak g
+    \allowBreak f \bar ""
+    \allowBreak f4( ees) \bar "'"
+    \allowBreak f8 \bar ""
+    \allowBreak f[ g] \bar ""
+    \allowBreak ees4
+    \allowBreak ees \bar "||"
+}
+altoNotesAnt = \relative c' {
+    \global
+    \keysig
+
+    c\breve*9/16~ s16 c2. ees2.~ ees4~ ees4.~ ees4~ ees\breve*5/16
+    c2~ c\breve*5/16 bes4~ bes2
+}
+tenorNotesAnt = \relative g {
+    \global
+    \keysig
+
+    aes\breve*9/16~ s16 aes2.~ aes2. bes4 g4. c4
+    bes\breve*5/16 aes2~ aes\breve*5/16~ aes4~ aes4 g4
+}
+bassNotesAnt = \relative f {
+    \global
+    \keysig
+
+    aes\breve*9/16 s16 aes,2. c2.
+    ees4~ ees4.~ ees4~ ees\breve*5/16 aes2
+    aes,\breve*5/16 des4 ees2
+}

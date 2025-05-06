@@ -15,7 +15,8 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-     O Lord,  "*"
+    O Lord,
+    \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 " " }
      in your light we see light it -- self.
 }
 sopNotesAnt = \relative e' {
@@ -23,8 +24,8 @@ sopNotesAnt = \relative e' {
 		% in the cantor/organ scores called lbi_defs
     \keysig
     r8 aes8 g[( aes] f4) 
-    \hideNotes f16 \unHideNotes   %so that I can align the * better
-    aes8 bes[ aes] aes4 f8[ aes] g[ aes] f[( ees] f4) ees8 f4( des) \bar "||"
+    \noBreak \hideNotes f16 \unHideNotes   %so that I can align the * better
+    \allowBreak aes8 \allowBreak bes[ aes] aes4 \allowBreak f8[ aes] \allowBreak g[ aes] \allowBreak f[( ees] f4) \allowBreak ees8 f4( des) \bar "||"
 }
 altoNotesAnt = \relative c' {
     \global

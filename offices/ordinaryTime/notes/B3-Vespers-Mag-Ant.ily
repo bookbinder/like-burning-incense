@@ -11,7 +11,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Do great things for us, O Lord, "* "
+    Do great things for us, O Lord, \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     for you are might -- y, and ho -- ly is your name.
 }
 

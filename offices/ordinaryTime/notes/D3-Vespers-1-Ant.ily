@@ -15,7 +15,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    If I for -- get you, Je -- ru -- sa -- \ll "lem,  * " _
+    If I for -- get you, Je -- ru -- sa -- lem,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     let my right hand wi -- ther.
 }
 sopNotesAnt = \relative e' {

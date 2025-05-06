@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Lord, with the strength of your \ll "arm  * " _
+    Lord, with the strength of your arm  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     scat -- ter the proud, and lift up the low -- ly.
 }
 sopNotesAnt = \relative e' {

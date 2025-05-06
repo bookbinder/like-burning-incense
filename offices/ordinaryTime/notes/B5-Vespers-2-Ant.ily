@@ -11,7 +11,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The Lord will save the chil -- dren of the poor, " * " 
+    The Lord will save the chil -- dren of the poor, " \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } 
     and res -- cue them from slav -- ery.
 }
 

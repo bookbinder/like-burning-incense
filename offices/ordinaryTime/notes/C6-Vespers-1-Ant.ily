@@ -16,7 +16,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Great is the Lord, our \ll "God,  * " _
+    Great is the Lord, our God,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     tran -- scen -- ding all o -- ther gods.
 }
 sopNotesAnt = \relative e' {

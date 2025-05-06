@@ -11,7 +11,7 @@ topitch = aes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Now has be -- gun  "*" the vic -- to -- rious reign of our God.
+    Now has be -- gun  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } the vic -- to -- rious reign of our God.
 }
 
 sopNotesAnt = \relative e' {

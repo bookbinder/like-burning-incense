@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    In the pre -- sence of the an -- \ll "gels  * " _
+    In the pre -- sence of the an -- gels  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     I will sing to you, my God.
 }
 sopNotesAnt = \relative e' {

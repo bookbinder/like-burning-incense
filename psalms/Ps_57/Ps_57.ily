@@ -16,15 +16,15 @@ sopMusic = {
     \sopranoOne
     \sopranoTwo
     \sopranoOne
-    \sopranoTwo
-    \sopranoOne
+    \sopranoTwoFlex
+    \sopranoOneFlex
     \sopranoTwo
     \mark "D.C."
 }
 altoMusic = {
     \global
     \voiceTwo
-    \altoOne
+        \altoOne 
     \altoTwo
     \altoOne
     \altoTwoFlex
@@ -33,14 +33,14 @@ altoMusic = {
     \altoOne
     \altoTwo
     \altoOne
-    \altoTwo
-    \altoOne
+    \altoTwoFlex
+    \altoOneFlex
     \altoTwo
 }
 tenorMusic = {
     \global
     \voiceOne
-    \tenorOne
+        \tenorOne 
     \tenorTwo
     \tenorOne
     \tenorTwoFlex
@@ -49,14 +49,15 @@ tenorMusic = {
     \tenorOne
     \tenorTwo
     \tenorOne
+    \tenorTwoFlex
+    \tenorOneFlex
     \tenorTwo
-    \tenorOne
-    \tenorTwo
+
 }
 bassMusic = {
     \global
     \voiceTwo
-    \bassOne
+    \bassOne 
     \bassTwo
     \bassOne
     \bassTwoFlex
@@ -65,19 +66,20 @@ bassMusic = {
     \bassOne
     \bassTwo
     \bassOne
-    \bassTwo
-    \bassOne
+    \bassTwoFlex
+    \bassOneFlex
     \bassTwo
 }
 
 \score {        
     <<
-        \transpose \frompitch \topitch {
+        \transpose \master-from-pitch \master-to-pitch {
+          \transpose \frompitch \topitch {
             \new ChoirStaff \with { instrumentName = \psalmtone }
             <<
                 \new Staff ="up"
                    <<
-                        \clef treble
+                        \clef treble \toneKeysig
                         \accidentalStyle forget
                         \new Voice = "Soprano" \sopMusic
                         \new Voice = "Alto" \altoMusic
@@ -87,13 +89,14 @@ bassMusic = {
                     >>
                 \new Staff ="down"
                     <<
-                        \clef bass
+                        \clef bass \toneKeysig
                         \accidentalStyle forget
                         \new Voice = "Tenor" \tenorMusic
                         \new Voice = "Bass" \bassMusic
                     >>
             >>
         }
+      }
     >>
     
     \layout { 

@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    All power is yours,  "*"
+    All power is yours,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     Lord God, our might -- y King, al -- le -- lu -- ia.
 }
 sopNotesAnt = \relative e' {

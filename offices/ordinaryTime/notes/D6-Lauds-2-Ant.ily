@@ -15,16 +15,17 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Re -- joice, Je -- ru -- sa -- \ll "lem,  * " _
+    Re -- joice, Je -- ru -- sa -- lem, \markup \with-color #(x11-color 'gray36) { \tiny "🞵  " }
     for through you all men will be ga -- thered to the Lord.
 }
 sopNotesAnt = \relative e' {
     \global
     \keysig
-    r8 des8 ges[ f] ges ges[ bes] aes aes4 \bar "'"
+    r8 des8 ges[ f] ges ges[ bes] aes aes4 \bar ""
     \hideNotes e16 \unHideNotes   %so that I can align the * better
     aes8 bes \bar "" ces[( bes] aes4) \bar ""
-    ges8 ges f ges \bar "" ees des ces des \bar "" ees4( des) \bar "||"
+    ges8 \allowBreak ges \allowBreak f \allowBreak ges \bar ""
+    \allowBreak ees \allowBreak des ces des \bar "" ees4( des) \bar "||"
 }
 altoNotesAnt = \relative c' {
     \global

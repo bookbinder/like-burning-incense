@@ -11,7 +11,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Your word, O Lord, "*  " 
+    Your word, O Lord, \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } 
     is the lan -- tern to light our way,
     al -- le -- lu -- ia.
 }

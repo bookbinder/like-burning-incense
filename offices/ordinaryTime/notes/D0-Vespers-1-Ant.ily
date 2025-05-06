@@ -15,7 +15,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Pray for \ll "peace,  * " _
+    Pray for peace,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     for the peace of Je -- ru -- sa -- lem.
 }
 sopNotesAnt = \relative e' {

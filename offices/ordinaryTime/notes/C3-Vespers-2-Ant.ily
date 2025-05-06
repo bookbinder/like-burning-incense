@@ -16,7 +16,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Un -- less you ac -- \ll "quire  * " _
+    Un -- less you ac -- quire  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     the heart of a child, you can -- not en -- ter
     the king -- dom of God.
 }

@@ -15,7 +15,8 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Ex -- ult in God's pre -- sence  "*"
+    Ex -- ult in God's pre -- sence
+    \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     with hymns of praise.
 }
 sopNotesAnt = \relative e' {
@@ -24,7 +25,8 @@ sopNotesAnt = \relative e' {
     \keysig
     r8 g g[ c] c b[ c] a4 g 
     \hideNotes g16 \unHideNotes   %so that I can align the * better
-    g8 f[ g a] c b[( a] g4) \bar "||"  
+    \allowBreak g8 \allowBreak f[ g a] \allowBreak c \allowBreak
+    b[( a] g4) \bar "||"  
 }
 altoNotesAnt = \relative c' {
     \global

@@ -1,6 +1,16 @@
 LILYPOND-BOOK=lilypond-book -o out --pdf
 LATEX=xelatex
 
+
+cur:
+	rm -rf out/*/
+	$(LILYPOND-BOOK) ScoreCantorLong.lytex
+	cd out && $(LATEX) ScoreCantorLong.tex
+	cd out && evince ScoreCantorLong.pdf
+	# $(LILYPOND-BOOK) ScoreOrganLong.lytex
+	# cd out && $(LATEX) ScoreOrganLong.tex
+	# cd out && evince ScoreOrganLong.pdf
+
 cantor:
 	rm -rf out/*/
 	$(LILYPOND-BOOK) ScoreCantorBind.lytex

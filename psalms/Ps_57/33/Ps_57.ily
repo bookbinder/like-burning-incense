@@ -28,11 +28,13 @@ text = \lyricmode {
     \ll "They dug a pit in" my path
         \ll "but fell in it" them -- selves.
 
-    \ll "My heart is ready, O God, my heart" is ready.
+    \ll "My heart is ready, O" God,
+    \ll "my heart" is ready.
     \ll "I will sing, I will sing" your praise.
         
-    \ll "Awake, my soul, awake, lyre" and harp,
-        \ll "I will awake" the dawn.
+    \ll "Awake, my" soul,
+    \ll "awake, lyre" and harp,
+    \ll "I will awake" the dawn.
 
     \ll "I will thank you, Lord, among" the peoples,
         \ll "among the nations I" will \ll "praise you"

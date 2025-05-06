@@ -15,7 +15,8 @@ topitch = aes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The Lord is my strength, "*" 
+    The Lord is my strength,
+    \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 "" } 
     and I shall sing his praise, for he has be -- come my Sav -- ior.
 }
 sopNotesAnt = \relative e' {
@@ -24,10 +25,10 @@ sopNotesAnt = \relative e' {
     \keysig
     r8 des8 ges[ f]  ges aes ces[( bes] aes4)  
     \hideNotes aes16 \unHideNotes   %so that I can align the * better
-    aes8 ges[ aes]  ges \bar ""
-    ees[ f] ees \bar "" ees4( des) \bar "'"
-    des8 \bar "" ces4 ees8 ges \bar ""
-    f[ ges] ees \bar "" f[ ees des]  \bar "" des4 \bar "||"
+    aes8 \allowBreak ges[ aes]  \allowBreak ges \allowBreak
+    ees[ f] \allowBreak ees \allowBreak ees4( des) \bar "'"
+    des8 \allowBreak ces4 \allowBreak ees8 \allowBreak ges \allowBreak
+    f[ ges] \allowBreak ees \allowBreak f[ ees des]  \allowBreak des4 \bar "||"
 }
 altoNotesAnt = \relative c' {
     \global

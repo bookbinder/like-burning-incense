@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    I will sing to you, O \ll "Lord;  * " _
+    I will sing to you, O Lord;  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     I will learn from you the way of per -- fec -- tion.
 }
 sopNotesAnt = \relative e' {

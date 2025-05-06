@@ -15,7 +15,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    From the midst of the flames,  "*"
+    From the midst of the flames,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     the three young men cried out with one voice: 
     Bless -- ed be God, al -- le -- lu -- ia.
 }

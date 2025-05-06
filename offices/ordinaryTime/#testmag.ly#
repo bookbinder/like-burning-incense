@@ -1,0 +1,94 @@
+\version "2.20.0"
+
+\include "../../lbi_defs.ily"
+
+% get variables from the notes file
+% \include "notes/A1-Lauds-1-Ant.ily"
+
+% notes for the psalm tone:
+\include #(string-append "../../psalmtones/notes/" psalmtone "-notes.ily")
+
+% psalm/canticle text
+\include #(string-append "../../psalms/" psalmnum "/" psalmtonestruct "/" psalmnum ".ily")
+
+% psalm/canticle score
+\include #(string-append "../../psalms/" psalmnum "/" psalmnum ".ily")
+
+
+\score {
+  \transpose \frompitch \topitch {
+  \new PianoStaff \with { instrumentName = #"VIII"} <<
+    \new Staff = "women" <<
+      \key a \major
+      \new Voice = "sopranos" {
+        \voiceOne
+        << \global
+	   \relative e' {
+	    e8 fis a\breve \parenthesize fis4^\markup {\italic "Flexe"}
+	    a\breve b8 a4 \bar "||"
+	    a\breve^\markup {\italic "G"} gis8 a fis e4 \bar "||"
+	    a\breve^\markup {\italic "C"} fis8 a b a4 \bar "||"
+	    a\breve^\markup {\italic "ou:"} fis8 a b a a4 \bar "||"
+	    a\breve^\markup {\italic "G*"} gis8 a fis e4( fis) \bar "||"
+	    gis8^\markup {\italic "ou:"} a fis e e4( fis) \bar "||"
+	    e8^\markup {\italic "Solen."} fis[ e] e[ a] a\breve
+	    a8[ gis] a[ b] b a[ b] a4 \bar "|."
+	   }
+	 >>
+      }
+      \new Voice = "altos" {
+        \voiceTwo
+        << \global
+	   \relative d' {
+	     cis\breve*37/16~ cis4
+	     e\breve*18/16 r8 b4
+	     e\breve*17/16 d4 cis
+	     e\breve*18/16 d4 cis
+	     e\breve*17/16 cis4~ cis2
+	     e4 \repeatTie cis4~ cis2
+	     r8 cis\breve*22/16 e4. cis2
+	   }
+	 >>
+      }
+    >>
+    \new Staff = "men" <<
+      \clef bass
+      \key a \major
+      \new Voice = "tenors" {
+        \voiceOne
+        << \global
+	   \relative f {
+	     e\breve*18/16 \parenthesize fis4 e\breve*17/16~ e4
+	     a\breve*19/16 gis4
+	     a\breve*17/16 fis4 e
+	     a\breve*18/16 fis4 e
+	     a\breve*17/16 b4~ b a
+	     a4 \repeatTie b4~ b4 a
+	     r8 a\breve*22/16~ a4.~ a2
+	   }
+	 >>
+      }
+      \new Voice = "basses" {
+        \voiceTwo <<
+	  \global
+	  \relative d {
+	    a\breve*37/16~ a4 cis\breve*19/16 e4
+	    cis\breve*17/16 d4 a4
+	    cis\breve*18/16 d4 a
+	    cis\breve*17/16~ cis4 fis2
+	    cis2 \repeatTie fis2
+	    r8 <a, e'>\breve*22/16~ e'4. fis2 
+	  }  
+	>>
+      }
+      \new Voice = "pedal" {
+	\voiceTwo <<
+	  \global
+	  \relative d, {
+	  }	  
+	>>
+      }
+    >>
+  >>
+}
+}

@@ -1,17 +1,35 @@
-\documentclass{lbi_cantor_office}
+\subsubsection{Antiphon 1}
+\noindent\lilypondfile[line-width=3.73\in]{A6-Lauds-1-Ant-Cantor.ly}
+\subsection{Psalm 51}
+\subsubsection{O God, have mercy on me}
+\Desc{Your inmost being must be renewed, and you must put on the
+new man}{(Ephesians 4:23--24).}
+\input{../../psalms/Ps_51/33/Ps_51.lytex}
+\subsubsection{Antiphon}
+\lilypondfile[line-width=3.73\in]{A6-Lauds-1-Ant-Cantor.ly}
 
-\begin{document}
+\null\smallskip\subsubsection{Antiphon 2}
+\noindent\lilypondfile[line-width=3.73\in]{A6-Lauds-2-Ant-Cantor.ly}
+\subsection{Canticle, Isaiah 45:15--25}
+\subsubsection{People of all nations will become disciples of the Lord}
+\Desc{Every knee shall bend at the name of Jesus}{(Philippians 2:10)}
+\input{../../psalms/Isa_45_15-25/33/Isa_45_15-25.lytex}
+\subsubsection{Antiphon}
+\noindent\lilypondfile[line-width=3.73\in]{A6-Lauds-2-Ant-Cantor.ly}
 
-\topheader{Friday}{Week 1}
+\null\smallskip\subsubsection{Antiphon 3}
+\noindent\lilypondfile[line-width=3.73\in]{A6-Lauds-3-Ant-Cantor.ly}
+\subsection{Psalm 100}
+\subsubsection{The joyful song of those entering God's temple}
+\Desc{The Lord calls his ransomed people to sing songs
+of victory}{(Athanasius).}
+\input{../../psalms/Ps_100/43/Ps_100.lytex}
+\subsubsection{Antiphon}
+\lilypondfile[line-width=3.73\in]{A6-Lauds-3-Ant-Cantor.ly}
 
-\section*{Morning Prayer}
-
-\spacer\lilypondfile[line-width=4.4\in]{A6-Lauds-1-Ant-Cantor.ly}
-
-\spacer\lilypondfile[line-width=4.4\in]{A6-Lauds-2-Ant-Cantor.ly}
-
-\spacer\lilypondfile[line-width=4.4\in]{A6-Lauds-3-Ant-Cantor.ly}
-
-\spacer\lilypondfile[line-width=4.4\in]{A6-Lauds-Ben-Ant-Cantor.ly}
-
-\end{document}
+\null\smallskip\subsubsection{Benedictus Antiphon}
+\medskip\noindent\lilypondfile[line-width=3.73\in]{A6-Lauds-Ben-Ant-Cantor.ly}
+\smallskip\subsection{Benedictus}
+\input{../../psalms/Benedictus/42/Benedictus.lytex}
+\subsubsection{Antiphon}
+\lilypondfile[line-width=3.73\in]{A6-Lauds-Ben-Ant-Cantor.ly}

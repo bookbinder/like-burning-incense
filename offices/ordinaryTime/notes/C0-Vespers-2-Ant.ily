@@ -16,7 +16,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    I shall take in -- to my hands the sa -- ving cha -- \ll "lice  * " _
+    I shall take in -- to my hands the sa -- ving cha -- lice  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     and in -- voke the name of the Lord.
 }
 sopNotesAnt = \relative e' {

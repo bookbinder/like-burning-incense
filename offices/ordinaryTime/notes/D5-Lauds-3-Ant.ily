@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Let us joy -- ful -- ly  \noBreak \markup { \tiny "🞵" } 
+    Let us joy -- ful -- ly  \noBreak \markup \with-color #(x11-color 'gray36) { \tiny "🞵" } 
     praise the Lord our God.
 }
 sopNotesAnt = \relative e' {

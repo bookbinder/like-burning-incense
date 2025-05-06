@@ -15,7 +15,7 @@ topitch = aes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Let the peo -- ple of Zi -- on  "* "
+    Let the peo -- ple of Zi -- on  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     re -- joice in their King, al -- le -- lu -- ia.
 }
 sopNotesAnt = \relative e' {

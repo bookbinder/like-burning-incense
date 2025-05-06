@@ -15,7 +15,8 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    A -- wake, lyre and harp,  "*"
+    A -- wake, lyre and harp,
+    \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 "" }
     with praise let us a -- wake the dawn.
 }
 sopNotesAnt = \relative e' {
@@ -23,8 +24,9 @@ sopNotesAnt = \relative e' {
 		% in the cantor/organ scores called lbi_defs
     \keysig
     r8 b8 e4 cis8[ e] e8 fis4
-    \hideNotes fis16 \unHideNotes   %so that I can align the * better
-    fis8 gis4 gis8 fis gis a[ gis] \allowBreak fis
+    \noBreak \hideNotes fis16 \unHideNotes   %so that I can align the * better
+    \allowBreak fis8 \allowBreak gis4 \allowBreak gis8 \allowBreak fis
+    \allowBreak gis \allowBreak a[ gis] \allowBreak fis
     \allowBreak e4 \bar "||"
 }
 altoNotesAnt = \relative c' {

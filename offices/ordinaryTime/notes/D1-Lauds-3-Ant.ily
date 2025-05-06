@@ -15,7 +15,7 @@ topitch = aes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Let e -- very -- thing that \ll "breathes  * " _
+    Let e -- very -- thing that breathes  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     give praise to the Lord, al -- le -- lu -- ia.
 }
 sopNotesAnt = \relative e' {

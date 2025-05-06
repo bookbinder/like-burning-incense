@@ -1,9 +1,9 @@
-#(set-global-staff-size 16)
+#(set-global-staff-size 17)
 
 \paper {
     %line-width = 7.3\in
-    print-page-number = #f
-    ragged-last = ##t 
+    % print-page-number = #f
+    % ragged-last = ##t 
 
   #(define fonts
     (make-pango-font-tree
@@ -27,14 +27,16 @@ ll = {
     \once \override LyricText.self-alignment-X = #LEFT
 }
 
+lyricsize = #1.6
+
 global = {  
     \cadenzaOn
     \set tieWaitForNote = ##t
     \autoBeamOff
-    \override Lyrics.LyricSpace.minimum-distance = #1.0
+    % \override Lyrics.LyricSpace.minimum-distance = #0.8
     \set forbidBreakBetweenBarLines = ##f
 }
 
 midi_instrument = { 
     \set Staff.midiInstrument = # "drawbar organ" 
-}
+  }

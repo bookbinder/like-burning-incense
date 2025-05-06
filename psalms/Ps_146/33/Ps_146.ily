@@ -3,7 +3,7 @@ text = \lyricmode {
 %     \override InstrumentName #'font-series = #'bold
 %     \set stanza = # "1. "
 %     \set shortVocalName = "1."
-%     \set includeGraceNotes = ##t
+    \set includeGraceNotes = ##t
     \ll "My soul, give praise to the" Lord;
     \ll "I will praise the Lord all" my days,
     \ll "make music to my God while" I live.

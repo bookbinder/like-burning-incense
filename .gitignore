@@ -4,6 +4,7 @@
 **/out/
 **/temp/
 **/pdf/
+**/tmp-ly/
 
 # Ignore file types:
 *.dvi

@@ -7,8 +7,8 @@
 
 \score {
     \header {
-      piece = \markup \with-color "red" { \fontsize #1 #(string-append "Ant. " antiphon) }
-      opus = #(string-append "(" psalmtone ")")
+      % % piece = \markup \with-color "red" { \bold \fontsize #1 #(string-append "Ant. " antiphon) }
+      % % opus = #(string-append "(" psalmtone ")")
       tagline = ##f
     }
     

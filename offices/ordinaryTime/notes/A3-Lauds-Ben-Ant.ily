@@ -15,8 +15,9 @@ topitch = aes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    God has raised up for us  "* "
-    a migh -- ty Sav -- ior, 
+    God has raised up for us
+    \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 " " }
+    a migh __ -- ty Sav -- ior, 
     as he prom -- ised through the words of his ho -- ly pro -- phets.    
 }
 sopNotesAnt = \relative e' {
@@ -25,11 +26,14 @@ sopNotesAnt = \relative e' {
     \keysig
     des8[ ges] f ges[ bes] bes bes aes4 \bar ""
     \hideNotes aes16 \unHideNotes   %so that I can align the * better
-    aes8 \bar "" ges[ ees f] ees8 \allowBreak
+    aes8 \bar "" \allowBreak ges[ ees f] \allowBreak ees8 \allowBreak
     ees[ des] \bar ""\allowBreak  des4 \breathe \bar "" \allowBreak 
-    des8 des \bar "" \allowBreak des[ aes'] aes ges aes \bar ""
-    \allowBreak ces[( bes] aes4) aes8 aes \bar "" \allowBreak
-    ges[ ees f] ees8 \bar "" \allowBreak  ees[ des] des4 \bar "||"
+    des8 \allowBreak des \bar "" \allowBreak des[ aes'] \allowBreak aes
+    \allowBreak ges \allowBreak aes \bar ""
+    \allowBreak ces[( bes] aes4) \allowBreak aes8
+    \allowBreak aes \bar "" \allowBreak
+    ges[ ees f] \allowBreak ees8 \bar "" \allowBreak  ees[ des]
+    \allowBreak des4 \bar "||"
 }
 altoNotesAnt = \relative c' {
     \global

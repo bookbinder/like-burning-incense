@@ -15,7 +15,8 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Let us go in -- to God's pre -- sence  "* "
+    Let us go in -- to God's pre -- sence
+    \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 "" }
     sing -- ing for joy.
 }
 sopNotesAnt = \relative e' {
@@ -24,7 +25,7 @@ sopNotesAnt = \relative e' {
     \keysig
     cis8 dis e4 cis8 e e[ fis] gis[ b gis] gis4 
     \hideNotes gis16 \unHideNotes   %so that I can align the * better
-    fis8[ gis] fis gis cis,4 \bar "||"  
+    fis8[ gis] \allowBreak fis \allowBreak gis \allowBreak cis,4 \bar "||"  
 }
 altoNotesAnt = \relative c' {
     \global

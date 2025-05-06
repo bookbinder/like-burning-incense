@@ -16,7 +16,7 @@ topitch = gis
 text = \lyricmode {
     \set includeGraceNotes = ##t
     Give your peo -- ple know -- ledge of sal -- va -- tion, Lord,
-    \noBreak \markup { \tiny "🞵" } 
+    \noBreak \markup \with-color #(x11-color 'gray36) { \tiny "🞵" } 
     and for -- give us our sins.
 }
 sopNotesAnt = \relative e' {

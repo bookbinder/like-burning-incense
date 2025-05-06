@@ -16,7 +16,7 @@ topitch = a
 text = \lyricmode {
     \set includeGraceNotes = ##t
     The Lord will stretch forth his might -- y scep -- ter from
-    Zi -- on,  "* "
+    Zi -- on,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     and he will reign for ev -- er, al -- le -- lu -- ia.
 }
 sopNotesAnt = \relative e' {

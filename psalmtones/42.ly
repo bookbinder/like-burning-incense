@@ -32,7 +32,7 @@ bassMusic = {
         %piece = \markup { \fontsize #2 \bold "LBI_3a" }
     }
     <<
-        \transpose a gis {
+        \transpose a a {
 
 
 

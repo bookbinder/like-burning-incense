@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The Lord has come to the help of his ser -- vants, "* " 
+    The Lord has come to the help of his ser -- vants, \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } 
     for he has re -- mem -- bered his pro -- mise of mer -- cy.
 }
 sopNotesAnt = \relative e' {

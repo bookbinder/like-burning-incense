@@ -12,7 +12,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Ea -- ger -- ly we a -- \ll "wait * " _
+    Ea -- ger -- ly we a -- wait \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     the ful -- fill -- ment of our hope,
     the glo -- rious com -- ing of our Sav -- ior.
 }

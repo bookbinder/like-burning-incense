@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    I cried to you, Lord,  "* "
+    I cried to you, Lord,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     and you healed me; I will praise you for ev -- er.
 }
 sopNotesAnt = \relative e' {

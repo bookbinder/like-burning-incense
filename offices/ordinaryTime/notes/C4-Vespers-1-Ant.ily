@@ -16,7 +16,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Those who sow in \ll "tears  * " _
+    Those who sow in tears  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     will reap in joy.
 }
 sopNotesAnt = \relative e' {

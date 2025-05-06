@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    He is the first -- born of all cre -- a -- tion;  "*"
+    He is the first -- born of all cre -- a -- tion;  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     in ev -- ery way the pri -- ma -- cy is his.
 }
 sopNotesAnt = \relative e' {

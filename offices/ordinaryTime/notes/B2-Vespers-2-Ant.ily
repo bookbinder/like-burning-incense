@@ -11,7 +11,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The Bride -- groom is here; "* "
+    The Bride -- groom is here; \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     go out and wel -- come him.
 }
 

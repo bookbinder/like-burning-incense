@@ -15,16 +15,17 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    O praise the Lord, "* "
+    O praise the Lord,
+    \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 " " }
     all you nations.
 }
 sopNotesAnt = \relative e' {
     \global	% will be populated by an include file
 		% in the cantor/organ scores called lbi_defs
     \keysig
-    gis4 fis8[ gis] ais8 b8[( ais] gis4) 
-    \hideNotes des16 \unHideNotes   %so that I can align the * better
-    gis4 fis8 ais4 gis \bar "||"  
+    gis4 fis8[ gis] ais8 \allowBreak b8[( ais] gis4) 
+    \noBreak \hideNotes des16 \unHideNotes   %so that I can align the * better
+    \allowBreak gis4 \allowBreak fis8 \allowBreak ais4 \allowBreak gis \bar "||"  
 }
 altoNotesAnt = \relative c' {
     \global

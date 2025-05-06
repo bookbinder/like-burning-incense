@@ -16,7 +16,7 @@ topitch = aes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-     Give joy to your ser -- vant, \ll "Lord;  * " _
+     Give joy to your ser -- vant, Lord;  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     to you I lift up my heart.
 }
 sopNotesAnt = \relative e' {

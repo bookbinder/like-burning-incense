@@ -16,7 +16,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    House of Is -- ra -- el, bless the \ll "Lord!  * " _
+    House of Is -- ra -- el, bless the Lord!  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     Sing psalms to him, for he is mer -- ci -- ful.
 }
 sopNotesAnt = \relative e' {

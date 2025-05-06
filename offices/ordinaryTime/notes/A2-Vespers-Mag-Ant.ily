@@ -15,7 +15,7 @@ topitch = aes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    My soul pro -- claims the great -- ness of the Lord,  "*  "
+    My soul pro -- claims the great -- ness of the Lord,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     for he has looked with fa -- vor on his low -- ly ser -- vant.
 }
 sopNotesAnt = \relative e' {

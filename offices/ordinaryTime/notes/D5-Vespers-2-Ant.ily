@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Bles -- sed are the peo -- \ll "ple  * " _
+    Bles -- sed are the peo -- ple  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     whose God is the Lord.
 }
 sopNotesAnt = \relative e' {

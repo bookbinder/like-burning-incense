@@ -11,7 +11,7 @@ topitch = aes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The Lord is king, "*  "
+    The Lord is king, \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     let the earth re -- joice.
 }
 

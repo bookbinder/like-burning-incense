@@ -16,7 +16,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    You a -- lone I have grieved by my \ll "sin;  * " _
+    You a -- lone I have grieved by my sin;  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     have pi -- ty on me, O Lord.
 }
 sopNotesAnt = \relative e' {

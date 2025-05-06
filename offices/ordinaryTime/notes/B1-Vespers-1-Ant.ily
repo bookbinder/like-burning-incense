@@ -11,7 +11,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Christ our Lord "* "
+    Christ our Lord \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     is a priest for ev -- er, like Mel -- chiz -- e -- dek of old,
     al -- le -- lu -- ia
 }

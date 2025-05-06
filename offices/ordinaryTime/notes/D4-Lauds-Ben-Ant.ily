@@ -15,7 +15,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Let us serve the Lord in ho -- li -- ness \markup { \tiny "🞵 " }
+    Let us serve the Lord in ho -- li -- ness \markup \with-color #(x11-color 'gray36) { \tiny "🞵 " }
     all the days of our life.
 }
 sopNotesAnt = \relative e' {

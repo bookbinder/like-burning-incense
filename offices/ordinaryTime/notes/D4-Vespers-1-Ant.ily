@@ -15,7 +15,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Lord, how won -- der -- ful is your wis -- \ll "dom,  * " _
+    Lord, how won -- der -- ful is your wis -- dom,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     so far be -- yond my un -- der -- stand -- ing.
 }
 sopNotesAnt = \relative e' {

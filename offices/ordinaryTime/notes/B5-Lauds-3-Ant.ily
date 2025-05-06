@@ -11,7 +11,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Ring out your joy  "* " to God our strength.
+    Ring out your joy  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } to God our strength.
 }
 
 sopNotesAnt = \relative e' {

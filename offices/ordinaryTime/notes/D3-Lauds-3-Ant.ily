@@ -15,7 +15,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    O "God,  * " _
+    O "God,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     I will sing to you a new song.
 }
 sopNotesAnt = \relative e' {

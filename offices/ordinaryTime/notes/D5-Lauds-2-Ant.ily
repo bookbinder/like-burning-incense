@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The Lord will make a ri -- ver of peace \noBreak \markup { \tiny "🞵" } 
+    The Lord will make a ri -- ver of peace \noBreak \markup \with-color #(x11-color 'gray36) { \tiny "🞵" } 
     flow through Je -- ru -- sa -- lem.
 }
 sopNotesAnt = \relative e' {

@@ -81,7 +81,7 @@ pedalMusic = {
             <<
                 \new Staff ="up"
                    <<
-                        \clef treble
+                        \clef treble \toneKeysig
                         \accidentalStyle forget
                         \new Voice = "Soprano" \sopMusic
                         \new Voice = "Alto" \altoMusic
@@ -91,7 +91,7 @@ pedalMusic = {
                     >>
                 \new Staff ="down"
                     <<
-                        \clef bass
+                        \clef bass \toneKeysig
                         \accidentalStyle forget
                         \new Voice = "Tenor" \tenorMusic
                         \new Voice = "Bass" \bassMusic

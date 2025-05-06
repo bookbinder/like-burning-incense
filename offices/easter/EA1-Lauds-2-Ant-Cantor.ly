@@ -7,24 +7,26 @@
 
 \score {
   \transpose \master-from-pitch \master-to-pitch {
-    \new Staff \with {
-      \omit TextScript instrumentName = \markup {
-        \center-column {
-          \bold { \line { Ant. \antiphon } }
-          \concat { #psalmtone } }
-      }
-    }
+    \new Staff
+    % \with {
+    %   \omit TextScript instrumentName = \markup {
+    %     \center-column {
+    %       \bold { \line { Ant. \antiphon } }
+    %       \concat { #psalmtone } }
+    %   }
+    % }
     <<
-      \midi_instrument
-      \clef treble
+      % \midi_instrument
+      \clef treble \antKeysig
       \accidentalStyle forget
       \new Voice = "Soprano" {
-        \sopNotesAnt
+        \global \oneVoice \sopNotesAnt
         \transpose \frompitch \topitch {
-          \small \sopranoOneFlex
+          \small \sopranoShort
         }
       }
-      \new Lyrics \lyricsto Soprano \text
+      \new Lyrics \lyricsto Soprano { \override LyricText.font-size = \lyricsize
+				      \text }
     >>
   }  
   \layout {

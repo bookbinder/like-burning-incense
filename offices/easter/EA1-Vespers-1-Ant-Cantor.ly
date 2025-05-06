@@ -16,7 +16,7 @@
     }
     <<
       \midi_instrument
-      \clef treble
+      \clef treble \antKeysig
       \accidentalStyle forget
       \new Voice = "Soprano" {
         \sopNotesAnt
@@ -24,7 +24,8 @@
           \small \sopranoOneFlex
         }
       }
-      \new Lyrics \lyricsto Soprano \text
+      \new Lyrics \lyricsto Soprano { \override LyricText.font-size = \lyricsize
+				      \text }
     >>
   }  
   \layout {

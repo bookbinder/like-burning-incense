@@ -15,7 +15,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    From the far -- thest bounds of \ll "earth,  * " _
+    From the far -- thest bounds of earth,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     may God be praised!
 }
 sopNotesAnt = \relative e' {

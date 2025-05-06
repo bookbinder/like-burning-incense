@@ -15,7 +15,8 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The Lord has come to his peo -- ple  "*"
+    The Lord has come to his peo -- ple
+    \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 " " }
     and set them free.
 }
 sopNotesAnt = \relative e' {
@@ -23,7 +24,7 @@ sopNotesAnt = \relative e' {
 		% in the cantor/organ scores called lbi_defs
     \keysig
     r8 c8 c[ des] bes ees4 f8 aes g[ f ees] ees4 
-    \hideNotes des16 \unHideNotes   %so that I can align the * better
+    \noBreak \hideNotes des16 \unHideNotes   %so that I can align the * better
     ees8 \bar "" f[ ees] \bar "" des[ f] \bar "" ees4 \bar "||"  
 }
 altoNotesAnt = \relative c' {

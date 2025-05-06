@@ -16,7 +16,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Come, let us \ll "climb  * " _
+    Come, let us climb  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     the moun -- tain of the Lord.
 }
 sopNotesAnt = \relative e' {

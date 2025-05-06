@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    I will praise my God \markup { \tiny "🞵  " }
+    I will praise my God \markup \with-color #(x11-color 'gray36) { \tiny "🞵  " }
     all the days of my life.
 }
 sopNotesAnt = \relative e' {

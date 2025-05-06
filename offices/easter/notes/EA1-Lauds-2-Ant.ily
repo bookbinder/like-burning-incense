@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key c \major
+antKeysig =  \key c \major
 antiphon = "2"
 psalmtone = "7"
 psalmtonestruct = "43"
@@ -18,36 +18,58 @@ master-to-pitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Our re -- dee -- "mer * "
+    Our re -- dee -- mer
+    \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
     has ri -- sen from the tomb; let us sing a hymn
     of praise to the Lord our God, al -- le -- lu -- ia.
 }
 sopNotesAnt = \relative e' {
-    \global
-    \keysig
-    \voiceOne
-    g8 c b[ g] \bar "" g4 g8 \bar "" b[ c] a a b \bar "" a4( g) \bar ","
-    g8 g \bar "" f[ e] d \bar "" d[ a'] g \bar "" a4 b8 c d[ c] b[ a]
-    \bar "" a4( g) \bar "'" a8 \bar "" a[ b] \bar "" g4 g \bar "||"
+    
+    
+
+    g8 c b[ g] \bar "" g4
+    \noBreak \hideNotes g16 \unHideNotes
+    \allowBreak g8 \bar ""
+    \allowBreak b[ c]
+    \allowBreak a
+    \allowBreak a
+    \allowBreak b \bar ""
+    \allowBreak a4( g) \bar ","
+    \allowBreak g8
+    \allowBreak g \bar ""
+    \allowBreak f[ e]
+    \allowBreak d \bar ""
+    \allowBreak d[ a']
+    \allowBreak g \bar ""
+    \allowBreak a4
+    \allowBreak b8
+    \allowBreak c
+    \allowBreak d[ c]
+    \allowBreak b[ a] \bar ""
+    \allowBreak a4( g) \bar "'"
+    \allowBreak a8 \bar ""
+    \allowBreak a[ b] \bar ""
+    \allowBreak g4
+    g \bar "||"
 }
 altoNotesAnt = \relative g' {
-    \global
-    \keysig
-    \voiceTwo
-    g4~ g4~ g4. e\breve*5/16~ e2. d4.~ d4.
+    
+    
+    
+    g4~ g4~ g4. s16 e\breve*5/16~ e2. d4.~ d4.
     f1 d\breve*5/16 e4 d2
 }
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
-    \voiceOne
-    c4 d4 b4. a\breve*5/16 c2. a4.~ a4.
+    
+    
+
+    c4 d4 b4. s16 a\breve*5/16 c2. a4.~ a4.
     c1 b\breve*5/16 c4~ c4 b4
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
-    \voiceTwo
-    e4 g4~ g4. c,\breve*5/16~ c2. d4. f4.~
+    
+    
+
+    e4 g4~ g4. s16 c,\breve*5/16~ c2. d4. f4.~
     f1 g\breve*5/16~ g4~ g2
 }

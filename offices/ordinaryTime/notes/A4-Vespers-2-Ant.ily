@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    I long to look on you, O Lord;  "* "
+    I long to look on you, O Lord;  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     do not turn your face from me.
 }
 sopNotesAnt = \relative e' {

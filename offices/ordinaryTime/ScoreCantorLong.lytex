@@ -1,12 +1,15 @@
-\documentclass[11pt,twocolumn]{book}
-\usepackage[paperheight=11in,%
-  paperwidth=8.5in,%
-  inner=.4in,%
-  outer=.4in,%
-  top=.6in,%
-  bottom=.75in,%
-  headsep=.25in,%
-  footskip=.30in]{geometry}
+\documentclass[12pt,twocolumn]{book}
+
+%% Layout settings optimized for my linux setup, which doesn't have the
+%% best print drivers. In the print dialog, select 'Fit to whole page' 
+\usepackage[paperheight=10.66in,%
+  paperwidth=8.16in,%
+  inner=.15in,%
+  outer=.15in,%
+  top=.39in,%
+  bottom=.34in,%
+  headsep=.23in,%
+  footskip=.3in]{geometry}
 
 \usepackage[T1]{fontenc}
 \usepackage[USenglish]{babel}
@@ -30,17 +33,18 @@
 \setcounter{secnumdepth}{-1}
 \setcounter{tocdepth}{1}
 
-\usepackage{xstring}
+%% \usepackage{xstring}
 \usepackage{verse}
-\setlength{\leftmargini}{0em}  %% left margin
-\setlength{\stanzaskip}{0.5\baselineskip}  %% space between verses
+\setlength{\leftmargini}{0pt}  %% left margin
+\setlength{\stanzaskip}{0.4\baselineskip}  %% space between verses
 
 
 \setlength{\columnseprule}{0.4pt}
-\setlength{\columnsep}{.5in}
+\setlength{\columnsep}{.3in}
 
 
-\usepackage[nobottomtitles]{titlesec}
+\usepackage[nobottomtitles*]{titlesec}
+\renewcommand{\bottomtitlespace}{4\baselineskip}
 %% \newcommand{\sectionbreak}{\clearpage}
 \titleformat{\chapter}[display]
   {\normalfont\sffamily\filcenter}
@@ -60,7 +64,7 @@
 
 \titlespacing*{\chapter}{0pt}{0pt}{10pt}
 \titlespacing*{\section}{0pt}{20pt}{10pt}
-\titlespacing*{\subsection}{0pt}{4pt}{4pt}
+\titlespacing*{\subsection}{0pt}{6pt}{6pt}
 \titlespacing*{\subsubsection}{0pt}{0pt}{2pt}
 \titlespacing*{\paragraph}{0pt}{0pt}{0pt}
 
@@ -74,11 +78,11 @@
 \newcommand{\smallspacer}{\vspace{0.5\baselineskip}}
 \newcommand{\medspacer}{\vspace{0.85\baselineskip}}
 \newcommand{\FirstLetter}[1]{{\QuintFirst\color{black!80}\raisebox{-4pt}{#1}}}
-\raggedright
+%% \raggedright
 \raggedbottom
 
-\newcommand{\myaccentcolor}{\color{black!40}}
-\newcommand{\myastcolor}{\color{black!70}}
+\newcommand{\myaccentcolor}{\color{black!60}}
+\newcommand{\myastcolor}{\color{black!80}}
 \newcommand{\myaccentsize}{\Huge}
 \newcommand{\myaccentposition}{\vskip-4pt}
 \newcommand{\myaccentpositionl}{\vskip-5.5pt}
@@ -87,31 +91,53 @@
     \halign{##\cr\hss\makebox(0,0){\hspace{2pt}\myaccentcolor\myaccentsize\char"00B4}\hss\cr\noalign{\myaccentposition}#1\cr}}}
 \newcommand\pointupl[1]{\leavevmode\vbox{\offinterlineskip
 \halign{##\cr\hss\makebox(0,0){\hspace{0pt}\myaccentcolor\myaccentsize\char"00B4}\hss\cr\noalign{\myaccentpositionl}#1\cr}}}
-\newcommand{\Med}{~\raisebox{2pt}{\color{black!80}$\ast$}}
-\newcommand{\Flex}{~{\color{black!80}\textdagger}}
-\newcommand{\Desc}[2]{\linespread{0.1}{\paragraph{}{\small\emph{#1} #2}\vspace{-3pt}}}
+\newcommand{\Med}{~\raisebox{2pt}{\myastcolor$\ast$}}
+\newcommand{\Flex}{~{\myastcolor\textdagger}}
+\newcommand{\Desc}[2]{\linespread{0.1}{\paragraph{}{\small\emph{#1} #2}\vspace{-1pt}}}
 
 
 \hyphenation{Co-rin-thi-an}
 \hyphenation{Co-rin-thi-ans}
-
+%% \hyphenation{E-phe-sians}
 
 \begin{document}
 
 
 %% \chapter{Week 1}
-%% \chaptermark{Week 1}
-%% \section{Sunday Evening Prayer I}
-%% \input{A0-Vespers-Cantor.lytex}
+\chaptermark{Week 1}
+
+%% \section{No scaling}
+%% \input{A2-Lauds-Cantor.lytex}
+
+%% \section{Tuesday Morning Prayer}
+%% \input{A3-Lauds-Cantor.lytex}
+
+%% \section{Wednesday Morning Prayer}
+%% \input{A4-Lauds-Cantor.lytex}
+
+%% \section{Thursday Morning Prayer}
+%% \input{A5-Lauds-Cantor.lytex}
+
+%% \section{Friday Morning Prayer}
+%% \input{A6-Lauds-Cantor.lytex}
+
+\section{Saturday Morning Prayer}
+\input{A7-Lauds-Cantor.lytex}
 
 %% \cleardoublepage
 %% \chapter{Week 4}
-\chaptermark{Week 4}
+%% \chaptermark{Week 4}
 
 %% \section{Wednesday Morning Prayer}
 %% \input{D4-Lauds-Cantor.lytex}
 
-\section{Thursday Morning Prayer}
-\input{D5-Lauds-Cantor.lytex}
+%% \section{Thursday Morning Prayer}
+%% \input{D5-Lauds-Cantor.lytex}
+
+%% \section{Friday Morning Prayer}
+%% \input{D6-Lauds-Cantor.lytex}
+
+%% \section{Saturday Morning Prayer}
+%% \input{D7-Lauds-Cantor.lytex}
 
 \end{document}

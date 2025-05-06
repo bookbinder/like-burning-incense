@@ -11,7 +11,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    When I see your face, O Lord, "* "
+    When I see your face, O Lord, \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     I shall know the full -- ness of joy, al -- le -- lu -- ia.
 }
 

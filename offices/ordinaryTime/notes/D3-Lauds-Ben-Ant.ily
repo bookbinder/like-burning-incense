@@ -15,7 +15,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Lord, save "us  * " _
+    Lord, save "us  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     from the hands of all who hate us.
 }
 sopNotesAnt = \relative e' {

@@ -11,7 +11,7 @@ topitch = aes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Store up for your -- selves "*"
+    Store up for your -- selves \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     trea -- sure in heav -- en, says the Lord.
 }
 

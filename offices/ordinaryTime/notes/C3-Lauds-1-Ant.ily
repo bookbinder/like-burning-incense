@@ -16,7 +16,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Lord, you have blessed your \ll "land;  * " _
+    Lord, you have blessed your land;  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     you have for -- giv -- en the sins of your peo -- ple.
 }
 sopNotesAnt = \relative e' {

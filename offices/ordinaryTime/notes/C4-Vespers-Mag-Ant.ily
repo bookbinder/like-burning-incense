@@ -16,7 +16,7 @@ topitch = aes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The Al -- migh -- ty has done great things for \ll "me  * " _
+    The Al -- migh -- ty has done great things for me  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     and ho -- ly is his Name.
 }
 sopNotesAnt = \relative e' {

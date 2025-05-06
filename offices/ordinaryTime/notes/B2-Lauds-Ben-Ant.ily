@@ -11,7 +11,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Bles -- sed be the Lord "* "
+    Bles -- sed be the Lord \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     for he has come to his peo -- ple and set them free.
 }
 

@@ -11,7 +11,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    When will I come to the end of my pil -- grim -- age "* "
+    When will I come to the end of my pil -- grim -- age \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     and en -- ter the pres -- ence of God?
 }
 

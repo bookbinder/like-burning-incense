@@ -1,8 +1,8 @@
 text = \lyricmode {
-    %\override InstrumentName #'X-offset = #4
-    %\override InstrumentName #'font-series = #'bold
-    %\set stanza = # "1. "
-    %\set shortVocalName = "1."
+%     \override InstrumentName #'X-offset = #4
+%     \override InstrumentName #'font-series = #'bold
+%     \set stanza = # "1. "
+%     \set shortVocalName = "1."
     \set includeGraceNotes = ##t
     \ll "O God, be gracious" and \ll "bless us"
     \ll "and let your face shed its light" u -- \ll "pon us."
@@ -33,12 +33,12 @@ text = \lyricmode {
     \ll "as it was in the beginning," is now,
     \ll "and will be for ever." A -- men.
 }
-%textB = \lyricmode {
-    %        \override InstrumentName #'X-offset = #4
-    %        \override InstrumentName #'font-series = #'bold	
-    %	\set includeGraceNotes = ##t
-    %	\set stanza = # "2. "
-    %        \set shortVocalName = "2."
-    %
-    %}
-
+% textB = \lyricmode {
+%     \override InstrumentName #'X-offset = #4
+%     \override InstrumentName #'font-series = #'bold	
+%     \set includeGraceNotes = ##t
+%     \set stanza = # "2. "
+%     \set shortVocalName = "2."
+%     \set includeGraceNotes = ##t
+%     \ll "The Lord will not refuse" an -- y good
+% }

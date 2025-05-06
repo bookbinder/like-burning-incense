@@ -15,7 +15,7 @@ topitch = aes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The Lord Je -- sus hum -- bled him -- self,  "* "  
+    The Lord Je -- sus hum -- bled him -- self,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }  
     and God ex -- alt -- ed him for ev -- er.    
 }
 sopNotesAnt = \relative e' {

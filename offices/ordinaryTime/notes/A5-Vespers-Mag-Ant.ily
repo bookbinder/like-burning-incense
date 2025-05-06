@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    God has cast down the migh -- ty from their thrones  "* "
+    God has cast down the migh -- ty from their thrones  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     and has lift -- ed up the low -- ly.
 }
 sopNotesAnt = \relative e' {

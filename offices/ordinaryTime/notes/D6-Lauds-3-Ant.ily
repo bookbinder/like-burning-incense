@@ -15,15 +15,16 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Zi -- on, praise your \ll "God,  * " _
+    Zi -- on, praise your God,  \markup \with-color #(x11-color 'gray36) { \tiny "🞵  " }
     who sent his word to re -- new the earth.
 }
 sopNotesAnt = \relative e' {
     \global
     \keysig
-    gis8[ a] gis fis4 gis8 b4( gis) \bar "'"
+    gis8[ a] gis fis4 gis8 b4( gis) \bar ""
     \hideNotes e16 \unHideNotes   %so that I can align the * better
-    fis8 \bar "" e[ fis] e \bar "" fis[( gis] a4) a8 a gis fis
+    \allowBreak fis8 \bar "" \allowBreak e[ fis] \allowBreak
+    e \bar "" \allowBreak fis[( gis] a4) a8 a gis fis
     \bar "" e4 \bar "||"
 }
 altoNotesAnt = \relative c' {

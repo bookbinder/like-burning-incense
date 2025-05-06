@@ -15,15 +15,17 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    I will cre -- ate a new heart in \ll "you,  * " _
+    I will cre -- ate a new heart in you,
+    \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     and breathe in -- to you a new spi -- rit.
 }
 sopNotesAnt = \relative e' {
     \global
     \keysig
-    e8 fis gis fis[ a] gis b4 gis8 gis fis4 \bar "'"
+    e8 fis gis fis[ a] gis b4 gis8 gis fis4 \bar ""
     \hideNotes e16 \unHideNotes   %so that I can align the * better
-    fis8 e[( fis] e4) dis8 cis b4 b8 cis[ e] e4 e \bar "||"
+    \allowBreak fis8 \allowBreak e[( fis] e4) \allowBreak dis8 \allowBreak
+    cis b4 b8 cis[ e] e4 e \bar "||"
 }
 altoNotesAnt = \relative c' {
     \global

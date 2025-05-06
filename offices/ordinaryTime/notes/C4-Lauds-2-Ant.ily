@@ -16,7 +16,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Bless -- ed is the up -- right \ll "man,  * " _
+    Bless -- ed is the up -- right man,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     who speaks the truth.
 }
 sopNotesAnt = \relative e' {

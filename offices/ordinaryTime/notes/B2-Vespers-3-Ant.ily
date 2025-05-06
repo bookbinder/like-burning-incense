@@ -11,7 +11,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    God planned in the full -- ness of time "* "
+    God planned in the full -- ness of time \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     to re -- store all things in Christ.
 }
 

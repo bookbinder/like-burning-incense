@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The Lord has robed me \markup { \tiny "🞵  " }
+    The Lord has robed me \markup \with-color #(x11-color 'gray36) { \tiny "🞵  " }
     with grace and sal -- va -- tion.
 }
 sopNotesAnt = \relative e' {

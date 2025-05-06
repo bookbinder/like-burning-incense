@@ -15,7 +15,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The might -- y Lord is with us; "* "
+    The might -- y Lord is with us; \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     the God of Ja -- cob is our strong -- hold.
 }
 sopNotesAnt = \relative e' {

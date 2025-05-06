@@ -1,0 +1,38 @@
+\subsubsection{Antiphon 1}
+\noindent\lilypondfile[line-width=3.73in]{EB6-Lauds-1-Ant-Cantor.ly}
+\subsection{Psalm 51}
+\subsubsection{O God, have mercy on me}
+\Desc{Your inmost being must be renewed, and you must put on the new man}%
+     {(Ephesians 4:23--24).}
+\input{../../psalms/Ps_51/43/Ps_51.tex}
+\subsubsection{Antiphon}
+\lilypondfile[line-width=3.73in]{EB6-Lauds-1-Ant-Cantor.ly}
+
+%% \clearpage
+
+\null\smallskip\subsubsection{Antiphon 2}
+\noindent\lilypondfile[line-width=3.73in]{EB6-Lauds-2-Ant-Cantor.ly}
+\subsection{Canticle\hfill Habakkuk 3:2--4, 13a, 15--19}
+\subsubsection{God comes to judge}
+\Desc{Lift up your heads for your redemption is at hand}%
+     {(Luke 21:28).}
+\input{../../psalms/Hab_3_2-4,_13a,_15-19/43/Hab_3_2-4,_13a,_15-19.tex}
+\subsubsection{Antiphon}
+\noindent\lilypondfile[line-width=3.73in]{EB6-Lauds-2-Ant-Cantor.ly}
+
+\null\smallskip\subsubsection{Antiphon 3}
+\noindent\lilypondfile[line-width=3.73in]{EB6-Lauds-3-Ant-Cantor.ly}
+\subsection{Psalm 147:12--20}
+\subsubsection{The restoration of Jerusalem}
+\Desc{Come, I will show you the bride of the Lamb}%
+     {(Revelation 21:9).}
+\input{../../psalms/Ps_147_12-20/43/Ps_147_12-20.tex}
+\subsubsection{Antiphon}
+\lilypondfile[line-width=3.73in]{EB6-Lauds-3-Ant-Cantor.ly}
+
+\null\smallskip\subsubsection{Benedictus Antiphon}
+\medskip\noindent\lilypondfile[line-width=3.73in]{EB6-Lauds-Ben-Ant-Cantor.ly}
+\smallskip\subsection{Benedictus}
+\input{../../psalms/Benedictus/43/Benedictus.tex}
+\subsubsection{Antiphon}
+\lilypondfile[line-width=3.73in]{EB6-Lauds-Ben-Ant-Cantor.ly}

@@ -16,7 +16,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    God chose us in his \ll "Son  * " _
+    God chose us in his Son  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     to be his a -- dop -- ted chil -- dren.
 }
 sopNotesAnt = \relative e' {

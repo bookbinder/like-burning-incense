@@ -1,17 +1,33 @@
-\documentclass{lbi_cantor_office}
+\noindent\lilypondfile[line-width=3.6\in]{A2-Lauds-1-Ant-Cantor.ly}
+\subsection{Psalm 5:2--10, 12--13}
+\subsubsection{A morning prayer asking for help}
+\Desc{Those who welcome the Word as the guest of their hearts
+will have abiding joy.}{}
+\input{../../psalms/Ps_5_2-10,_12-13/42/Ps_5_2-10,_12-13.lytex}
+\lilypondfile[line-width=3.6\in]{A2-Lauds-1-Ant-Cantor.ly}
 
-\begin{document}
 
-\topheader{Monday}{Week 1}
+\medskip\noindent\lilypondfile[line-width=3.6\in]{A2-Lauds-2-Ant-Cantor.ly}
+\subsection{Canticle, 1 Chronicles 29:10--13}
+\subsubsection{Glory and honor are due to God alone}
+\Desc{Blessed be the God and Father of our Lord Jesus Christ}%
+     {(Ephesians 1:3).}
+\input{../../psalms/1_Chr_29_10-13/33/1_Chr_29_10-13.lytex}
+\newpage
+\noindent\lilypondfile[line-width=3.6\in]{A2-Lauds-2-Ant-Cantor.ly}
 
-\section*{Morning Prayer}
 
-\spacer\lilypondfile[line-width=4.4\in]{A2-Lauds-1-Ant-Cantor.ly}
+\medskip\noindent\lilypondfile[line-width=3.6\in]{A2-Lauds-3-Ant-Cantor.ly}
+\subsection{Psalm 29}
+\subsubsection{A tribute of praise to the Word of God}
+\Desc{The Father's voice proclaimed: ``This is my beloved
+  Son''}{(Matthew 3:17).}
+\input{../../psalms/Ps_29/33/Ps_29.lytex}
+\newpage
+\lilypondfile[line-width=3.6\in]{A2-Lauds-3-Ant-Cantor.ly}
 
-\spacer\lilypondfile[line-width=4.4\in]{A2-Lauds-2-Ant-Cantor.ly}
 
-\spacer\lilypondfile[line-width=4.4\in]{A2-Lauds-3-Ant-Cantor.ly}
-
-\spacer\lilypondfile[line-width=4.4\in]{A2-Lauds-Ben-Ant-Cantor.ly}
-
-\end{document}
+\medskip\noindent\lilypondfile[line-width=3.6\in]{A2-Lauds-Ben-Ant-Cantor.ly}
+\smallskip\subsection{Benedictus}
+\input{../../psalms/Benedictus/33/Benedictus.lytex}
+\lilypondfile[line-width=3.6\in]{A2-Lauds-Ben-Ant-Cantor.ly}

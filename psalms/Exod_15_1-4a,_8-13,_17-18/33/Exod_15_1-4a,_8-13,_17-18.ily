@@ -38,8 +38,13 @@ textB = \lyricmode {
     \ll "when you stretched out your right hand, the earth swal" -- lowed them!
 
     \ll "In your mercy you led the people you" re -- deemed;
-    \ll "in your strength you guided them to your ho" -- ly dwelling.  
-
+    \ll "in your strength you guided them to your ho" -- ly dwelling.
+    \ll "---->" "-->"
+    \ll "And you brought them in and planted them on the mountain of your" in -- heritance-
+    \ll "the place where you made your seat," O Lord,
+    \ll "----->"  "-->"
+    \ll "the sanctuary, O Lord, which your hands" es -- tablished.
+    \ll "The Lord shall reign forever" and ever.
 }
 textC = \lyricmode {
 %    \override InstrumentName #'X-offset = #4
@@ -49,10 +54,7 @@ textC = \lyricmode {
 %    \set shortVocalName = "3."
     \set includeGraceNotes = ##t
 
-    \ll "And you brought them in and planted them on the mountain of your" in -- heritance-
-    \ll "the place where you made your seat," O Lord,
-    \ll "the sanctuary, O Lord, which your hands" es -- tablished.
-    \ll "The Lord shall reign forever" and ever.
+    
     \ll "Glory to the Father and to" the \ll Son,
         \ll "and to the Ho" -- ly \ll Spirit:
     \ll "as it was in the beginning," is now,

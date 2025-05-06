@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    In e -- ter -- nal splen -- \ll "dor,  * " _
+    In e -- ter -- nal splen -- dor,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     be -- fore the dawn of light on earth,
     I have be -- got -- ten you, al -- le -- lu -- ia.
 }

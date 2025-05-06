@@ -1,22 +1,31 @@
 #!/usr/bin/racket
 #lang racket
 
-;; This script creates four files based on a stem-name which is
+;; This script creates four to six files based on a stem-name which is
 ;; passed as an argument. For example `lbi Sat-BVM-1` creates the
 ;; following files in the current directory:
 ;; Sat-BVM-1-Ant-Organ.ly, Sat-BMV-1-Ant-Cantor.ly,
 ;; Sat-BVM-1-Psalm-Organ.ly, and notes/Sat-BVM-1-Ant.ily
+;; It also checks if organ and cantor lytex files exist. If not, it creates them.
 ;; Then all you have to do is go to the ily file in the notes directory
 ;; and enter the notes and words for the antiphon. Then run lilypond
 ;; on any of the 3 ly files that were just created, and it should work.
 
 
-(if (not (= 1 (vector-length (current-command-line-arguments))))
-    (error "You didn't enter exactly 1 argument.")
+(if (zero? (vector-length (current-command-line-arguments)))
+    (error "Enter an argument")
     (let* ([curdir          (path->string (current-directory))]
+           
            [stem            (format
                              "~a" (vector-ref
                                    (current-command-line-arguments) 0))]
+           [shortstem       (string-join
+                             (take (string-split stem "-") 2) "-")]
+           [psalmtone (begin (display "Enter psalm tone number: ") (read-line))]
+           ;; [tonestructure (begin (display "Enter psalm tone structure: ") (read-line))]
+           [mkey (begin (display "Enter key (e.g. e \\major): ") (read-line))]
+           [trans (begin (display "Enter transpotion interval for psalm tone (a is base): ") (read-line))]
+           [psalmnum (begin (display "Enter the Psalm or Canticle (e.g. Ps_148): ") (read-line))]
            [antorganfile    (string->path
                              (string-append curdir stem "-Ant-Organ.ly"))]
            [antcantorfile   (string->path
@@ -24,77 +33,163 @@
            [psalmorganfile  (string->path
                              (string-append curdir stem "-Psalm-Organ.ly"))]
            [notesfile       (string->path
-                             (string-append curdir "notes/" stem "-Ant.ily"))])
+                             (string-append curdir "notes/" stem "-Ant.ily"))]
+           [cantorlytexfile (string->path
+                             (string-append curdir shortstem "-Cantor.lytex"))]
+           [organlytexfile  (string->path
+                             (string-append curdir shortstem "-Organ.lytex"))])
 
-      (cond ((file-exists? antorganfile)
-             (error "Organ Ant already file exists. Exiting early."))
-            ((file-exists? antcantorfile)
-             (error "Cantor Ant file already exists. Exiting early."))
-            ((file-exists? psalmorganfile)
-             (error "Psalm Organ file already exists. Exiting early."))
-            ((file-exists? notesfile)
-             (error "Notes file already exists. Exiting early."))
-            (else
+      
 
-             ;; Create Ant-Organ file
-             (display-to-file
-              (regexp-replace
-               "A0-Vespers-1"
+      ;; Create Ant-Organ file
+      (unless (file-exists? antorganfile)
+        (display-to-file
+         (regexp-replace
+          "A0-Vespers-1"
+          (file->string
+           "/home/ryan/scores/like-burning-incense/skel/Ant-Organ.ily")
+          stem)
+         antorganfile
+         #:exists 'replace))
+      
+      ;; Create Ant-Cantor file
+      (unless (file-exists? antcantorfile)
+        (display-to-file
+         (regexp-replace
+          "A0-Vespers-1"
+          (file->string
+           "/home/ryan/scores/like-burning-incense/skel/Ant-Cantor.ily")
+          stem)
+         antcantorfile
+         #:exists 'replace))
+
+      ;; Create Psalm-Organ file
+      (unless (file-exists? psalmorganfile)
+        (display-to-file
+         (regexp-replace
+          "A0-Vespers-1"
+          (file->string
+           "/home/ryan/scores/like-burning-incense/skel/Psalm-Organ.ily")
+          stem)
+         psalmorganfile
+         #:exists 'replace))
+
+      ;; Create notes file
+      (unless (directory-exists? (format "~a/notes/" curdir))
+        (make-directory (format "~a/notes/" curdir)))
+      (unless (file-exists? notesfile)
+        (let ([notesfiletxt
                (file->string
-                "/home/ryan/scores/like-burning-incense/skel/Ant-Organ.ily")
-               stem)
-              antorganfile
-              #:exists 'replace)
+                "/home/ryan/scores/like-burning-incense/skel/notes.ily")])
+          (set! notesfiletxt
+                (string-replace
+                 notesfiletxt
+                 "psalmtone = \"\""
+                 (format "psalmtone = \"~a\"" psalmtone)))
+          ;; (set! notesfiletxt
+          ;;       (string-replace
+          ;;        notesfiletxt
+          ;;        "psalmtonestruct = \"\""
+          ;;        (format "psalmtonestruct = \"~a\"" tonestructure)))
+          (set! notesfiletxt
+                (string-replace
+                 notesfiletxt
+                 "antKeysig = \\key c \\major"
+                 (format "antKeysig = \\key ~a" mkey)))
+          (set! notesfiletxt
+                (string-replace
+                 notesfiletxt
+                 "topitch = a"
+                 (format "topitch = ~a" trans)))
+          (set! notesfiletxt
+                (string-replace
+                 notesfiletxt
+                 "psalmnum = \"\""
+                 (format "psalmnum = \"~a\"" psalmnum)))
+          (when (regexp-match "Ben" stem)
+            (set! notesfiletxt
+                  (string-replace
+                   notesfiletxt "antiphon = \"\"" "antiphon = \"B\""))
+            (set! notesfiletxt
+                  (string-replace
+                   notesfiletxt "psalmnum = \"\"" "psalmnum = \"Benedictus\"")))
+          (when (regexp-match "Mag" stem)
+            (set! notesfiletxt
+                  (string-replace
+                   notesfiletxt "antiphon = \"\"" "antiphon = \"M\""))
+            (set! notesfiletxt
+                  (string-replace
+                   notesfiletxt "psalmnum = \"\"" "psalmnum = \"Magnificat\"")))
+          (when (regexp-match "-1$" stem)
+            (set! notesfiletxt
+                  (string-replace
+                   notesfiletxt "antiphon = \"\"" "antiphon = \"1\"")))
+          (when (regexp-match "-2$" stem)
+            (set! notesfiletxt
+                  (string-replace
+                   notesfiletxt "antiphon = \"\"" "antiphon = \"2\"")))
+          (when (regexp-match "-3$" stem)
+            (set! notesfiletxt
+                  (string-replace
+                   notesfiletxt "antiphon = \"\"" "antiphon = \"3\"")))
+          
+          (display-to-file
+           notesfiletxt
+           notesfile
+           #:exists 'replace)))
 
-             ;; Create Ant-Cantor file
-             (display-to-file
-              (regexp-replace
-               "A0-Vespers-1"
+      
+      ;; Create *-Cantor.lytex file
+      (unless (file-exists? cantorlytexfile)
+        (let ([cantorfiletxt
                (file->string
-                "/home/ryan/scores/like-burning-incense/skel/Ant-Cantor.ily")
-               stem)
-              antcantorfile
-              #:exists 'replace)
-
-             ;; Create Psalm-Organ file
-             (display-to-file
-              (regexp-replace
-               "A0-Vespers-1"
+                "/home/ryan/scores/like-burning-incense/skel/Cantor.lytex")])
+          (when (regexp-match "Vespers" stem)
+            (set! cantorfiletxt
+                  (string-replace cantorfiletxt "Benedictus" "Magnificat"))
+            (set! cantorfiletxt
+                  (string-replace cantorfiletxt "Ben" "Mag")))
+          (display-to-file
+           (regexp-replace* "A4-Lauds" cantorfiletxt shortstem)
+           cantorlytexfile
+           #:exists 'replace)))
+      
+      ;; Create *-Organ.lytex file
+      (unless (file-exists? organlytexfile)
+        (let ([organfiletxt
                (file->string
-                "/home/ryan/scores/like-burning-incense/skel/Psalm-Organ.ily")
-               stem)
-              psalmorganfile
-              #:exists 'replace)
+                "/home/ryan/scores/like-burning-incense/skel/Organ.lytex")])
+          (when (regexp-match "Vespers" stem)
+            (set! organfiletxt
+                  (string-replace organfiletxt "Benedictus" "Magnificat"))
+            (set! organfiletxt
+                  (string-replace organfiletxt "Ben" "Mag")))
+          (display-to-file
+           (regexp-replace* "A4-Lauds" organfiletxt shortstem)
+           organlytexfile
+           #:exists 'replace)))
 
-             ;; Create notes file
-             (unless (directory-exists? (format "~a/notes/" curdir))
-               (make-directory (format "~a/notes/" curdir)))
-             (display-to-file
-              (file->string
-               "/home/ryan/scores/like-burning-incense/skel/notes.ily")
-              notesfile
-              #:exists 'replace)
+      
+      ;; ;; Create Makefile
+      ;; (if (file-exists? (format "~a/Makefile" curdir))
+      ;;     ;; append to existing Makefile
+      ;;     (display-to-file
+      ;;      (regexp-replace*
+      ;;       "QQQ"
+      ;;       (file->string
+      ;;        "/home/ryan/scores/like-burning-incense/skel/makefile-entry.txt")
+      ;;       stem)
+      ;;      (format "~a/Makefile" curdir)
+      ;;      #:exists 'append)
 
-             ;; ;; Create Makefile
-             ;; (if (file-exists? (format "~a/Makefile" curdir))
-             ;;     ;; append to existing Makefile
-             ;;     (display-to-file
-             ;;      (regexp-replace*
-             ;;       "QQQ"
-             ;;       (file->string
-             ;;        "/home/ryan/scores/like-burning-incense/skel/makefile-entry.txt")
-             ;;       stem)
-             ;;      (format "~a/Makefile" curdir)
-             ;;      #:exists 'append)
+      ;;     ;; or create new Makefil
+      ;;     (display-to-file
+      ;;      (regexp-replace*
+      ;;       "QQQ"
+      ;;       (file->string
+      ;;        "/home/ryan/scores/like-burning-incense/skel/newmakefile.txt")
+      ;;       stem)
+      ;;      (format "~a/Makefile" curdir)
+      ;;      #:exists 'replace))
 
-             ;;     ;; or create new Makefil
-             ;;     (display-to-file
-             ;;      (regexp-replace*
-             ;;       "QQQ"
-             ;;       (file->string
-             ;;        "/home/ryan/scores/like-burning-incense/skel/newmakefile.txt")
-             ;;       stem)
-             ;;      (format "~a/Makefile" curdir)
-             ;;      #:exists 'replace))
-
-             ))))
+      ))

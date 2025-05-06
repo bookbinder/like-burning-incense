@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The Lord is my light and my help;  " * "
+    The Lord is my light and my help;  " \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     whom shall I fear?
 }
 sopNotesAnt = \relative e' {

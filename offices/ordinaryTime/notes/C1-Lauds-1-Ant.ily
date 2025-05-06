@@ -16,7 +16,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Glo -- rious is the \ll "Lord!  * " _
+    Glo -- rious is the Lord!  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     Glo -- rious is the Lord on high, al -- le -- lu -- ia.
 }
 sopNotesAnt = \relative e' {

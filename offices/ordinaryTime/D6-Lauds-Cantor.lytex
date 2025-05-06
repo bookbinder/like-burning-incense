@@ -1,17 +1,34 @@
-\documentclass{lbi_cantor_office}
+\noindent\lilypondfile[line-width=3.6\in]{D6-Lauds-1-Ant-Cantor.ly}
+\subsection{Psalm 51}
+\subsubsection{O God, have mercy on me}
+\Desc{Your inmost being must be renewed, and you must put on the new
+  man}{(Ephesians 4:23--24).}
+\input{../../psalms/Ps_51/43/Ps_51.lytex}
+\lilypondfile[line-width=3.6\in]{D6-Lauds-1-Ant-Cantor.ly}
 
-\begin{document}
+%% \newpage
 
-\topheader{Friday}{Week 4}
+\medskip\noindent\lilypondfile[line-width=3.6\in]{D6-Lauds-2-Ant-Cantor.ly}
+\subsection{Canticle, Tobit 13:8--11, 13--15}
+\subsubsection{Thanksgiving for the people's deliverance.}
+\Desc{He showed me the holy city Jerusalem which shone with the
+  glory of God}{(Revelation 21:10--11).}
+\input{../../psalms/Tobit_13_8-11,_13-15/33/Tobit_13_8-11,_13-15.lytex}
+\noindent\lilypondfile[line-width=3.6\in]{D6-Lauds-2-Ant-Cantor.ly}
 
-\section*{Morning Prayer}
+%% \newpage
 
-\medspacer\lilypondfile[line-width=4.4\in]{D6-Lauds-1-Ant-Cantor.ly}
+\medskip\noindent\lilypondfile[line-width=3.6\in]{D6-Lauds-3-Ant-Cantor.ly}
+\subsection{Psalm 147:12--20}
+\subsubsection{The restoration of Jerusalem}
+\Desc{Come, I will show you the bride of the Lamb}{(Revelation
+  21:9).}
+\input{../../psalms/Ps_147_12-20/33/Ps_147_12-20.lytex}
+\lilypondfile[line-width=3.6\in]{D6-Lauds-3-Ant-Cantor.ly}
 
-\medspacer\lilypondfile[line-width=4.4\in]{D6-Lauds-2-Ant-Cantor.ly}
+%% \newpage
 
-\medspacer\lilypondfile[line-width=4.4\in]{D6-Lauds-3-Ant-Cantor.ly}
-
-\medspacer\lilypondfile[line-width=4.4\in]{D6-Lauds-Ben-Ant-Cantor.ly}
-
-\end{document}
+\medskip\noindent\lilypondfile[line-width=3.6\in]{D6-Lauds-Ben-Ant-Cantor.ly}
+\smallskip\subsection{Benedictus}
+\input{../../psalms/Benedictus/33/Benedictus.lytex}
+\lilypondfile[line-width=3.6\in]{D6-Lauds-Ben-Ant-Cantor.ly}

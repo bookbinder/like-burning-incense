@@ -16,7 +16,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The Lord has cho -- sen Zi -- \ll "on;  * " _
+    The Lord has cho -- sen Zi -- on;  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     he has de -- sired it for his dwell -- ing.
 }
 sopNotesAnt = \relative e' {

@@ -16,7 +16,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The Lord, the migh -- ty con -- quer -- or, will \ll "come;  * " _
+    The Lord, the migh -- ty con -- quer -- or, will come;  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     he will bring with him the prize of vic -- to -- ry.
 }
 sopNotesAnt = \relative e' {

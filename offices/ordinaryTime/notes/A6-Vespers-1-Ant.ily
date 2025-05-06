@@ -15,7 +15,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Lord, lay your heal -- ing hand up -- on me,  "* "
+    Lord, lay your heal -- ing hand up -- on me,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     for I have sinned
 }
 sopNotesAnt = \relative e' {

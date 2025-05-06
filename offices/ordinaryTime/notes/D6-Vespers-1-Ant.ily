@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Day af -- ter day I will bless you, \ll "Lord;  * " _
+    Day af -- ter day I will bless you, Lord;  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     I will tell of your mar -- ve -- lous deeds.
 }
 sopNotesAnt = \relative e' {

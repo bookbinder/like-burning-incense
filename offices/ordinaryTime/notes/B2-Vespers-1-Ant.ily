@@ -11,7 +11,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Yours is more than mor -- tal beau -- ty; "* " 
+    Yours is more than mor -- tal beau -- ty; \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } 
     ev -- ery word you speak is full of grace.
 }
 

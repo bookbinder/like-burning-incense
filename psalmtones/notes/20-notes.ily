@@ -1,37 +1,8 @@
 \version "2.18.2"
 
-divisioMinima = {
-    \bar ""
-    \once \override BreathingSign.stencil = #ly:breathing-sign::divisio-minima
-    \once \override BreathingSign.Y-offset = #0
-    \breathe
-}
+toneStruct = "42"
+toneKeysig = \key a \major
 
-dm = {
-    \bar ""
-    \once \override BreathingSign.stencil = #ly:breathing-sign::divisio-maior
-    \once \override BreathingSign.Y-offset = #0
-    \breathe
-}
-divisioMaxima = {
-    \bar ""
-    \once \override BreathingSign.stencil = #ly:breathing-sign::divisio-maxima
-    \once \override BreathingSign.Y-offset = #0
-    \breathe
-}
-
-fi = { \bar "||" }
-ll = { \once \override LyricText.self-alignment-X = #LEFT }
-sm = { \set melismaBusyProperties = #'() }
-usm = { \unset melismaBusyProperties }
-
-global = {
-    \key a \major
-    \cadenzaOn
-    \set tieWaitForNote = ##t
-    \autoBeamOff
-    %\hide Staff.Stem
-}
 
 sopranoOneFlex = { \afterGrace a'\breve^"A†" fis'4 \breathe a'\breve fis'8 a' gis'4 \bar "|" fis'\breve e'4 \bar "||"  }
 sopranoOne = { a'\breve^"A" fis'8 a' gis'4 \bar "|" fis'\breve e'4 \bar "||" }

@@ -15,7 +15,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The one who is sin -- less in the eyes of God  "* "
+    The one who is sin -- less in the eyes of God  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     is bless -- ed in -- deed.
 }
 sopNotesAnt = \relative e' {

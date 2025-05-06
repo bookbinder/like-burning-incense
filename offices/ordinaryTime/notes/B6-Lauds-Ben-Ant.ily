@@ -11,7 +11,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Through the ten -- der com -- pas -- sion of our \ll "God   * " _
+    Through the ten -- der com -- pas -- sion of our God   \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     the dawn from on high shall break u -- pon us.
 }
 

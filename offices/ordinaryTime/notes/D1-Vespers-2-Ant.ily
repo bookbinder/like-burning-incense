@@ -16,7 +16,7 @@ topitch = a
 text = \lyricmode {
     \set includeGraceNotes = ##t
     Bles -- sed are they who hun -- ger and thirst
-    for ho -- li -- \ll "ness;  * " _
+    for ho -- li -- ness;  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     they will be sa -- tis -- fied.
 }
 sopNotesAnt = \relative e' {

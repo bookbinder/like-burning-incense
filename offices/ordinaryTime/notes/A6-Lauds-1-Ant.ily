@@ -15,7 +15,8 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Lord, you will ac -- cept the true sac -- ri -- fice  "*"
+    Lord, you will ac -- cept the true sac -- ri -- fice
+    \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 "" }
     of -- fered on your al -- tar.
 }
 sopNotesAnt = \relative e' {
@@ -23,9 +24,9 @@ sopNotesAnt = \relative e' {
 		% in the cantor/organ scores called lbi_defs
     \keysig
     e8[ gis] e dis e cis b e[( fis] gis4) \bar "" a8 gis fis4 
-    \hideNotes fis16 \unHideNotes   %so that I can align the * better
-    \bar "" fis8[ gis] fis \bar "" \allowBreak fis \allowBreak
-    gis \bar "" \allowBreak fis[ e] \bar "" e4 \bar "||"  
+    \noBreak \hideNotes fis16 \unHideNotes   %so that I can align the * better
+    \bar "" fis8[ gis] \allowBreak fis \bar "" \allowBreak fis \allowBreak
+    gis \bar "" \allowBreak fis[ e] \bar "" \allowBreak e4 \bar "||"  
 }
 altoNotesAnt = \relative c' {
     \global

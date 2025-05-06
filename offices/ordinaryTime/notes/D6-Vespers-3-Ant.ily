@@ -15,7 +15,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    King of all the a -- \ll "ges,  * " _
+    King of all the a -- ges,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     your ways are per -- fect and true.
 }
 sopNotesAnt = \relative e' {

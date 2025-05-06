@@ -15,7 +15,7 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    God has crowned his Christ  "*" 
+    God has crowned his Christ  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } 
     with vic -- tor -- y.
 }
 sopNotesAnt = \relative e' {

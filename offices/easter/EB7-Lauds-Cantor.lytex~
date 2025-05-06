@@ -1,0 +1,38 @@
+\subsubsection{Antiphon 1}
+\noindent\lilypondfile[line-width=3.73\in]{EB5-Lauds-1-Ant-Cantor.ly}
+\subsection{Psalm 80}
+\subsubsection{Lord, come, take care of your vineyard}
+\Desc{Come, Lord Jesus}%
+     {(Revelation 22:20).}
+\input{../../psalms/Ps_80/43/Ps_80.lytex}
+\subsubsection{Antiphon}
+\lilypondfile[line-width=3.73\in]{EB5-Lauds-1-Ant-Cantor.ly}
+
+%% \clearpage
+
+\null\smallskip\subsubsection{Antiphon 2}
+\noindent\lilypondfile[line-width=3.73\in]{EB5-Lauds-2-Ant-Cantor.ly}
+\subsection{Canticle\hfill Isaiah 12:1--6}
+\subsubsection{Joy of God's ransomed people}
+\Desc{If anyone thirsts, let him come to me and drink}%
+     {(John 7:37).}
+\input{../../psalms/Isa_12_1-6/33/Isa_12_1-6.lytex}
+\subsubsection{Antiphon}
+\noindent\lilypondfile[line-width=3.73\in]{EB5-Lauds-2-Ant-Cantor.ly}
+
+\null\smallskip\subsubsection{Antiphon 3}
+\noindent\lilypondfile[line-width=3.73\in]{EB5-Lauds-3-Ant-Cantor.ly}
+\subsection{Psalm 81}
+\subsubsection{Solemn renewal of the Covenant}
+\Desc{See that no one among you has a faithless heart}%
+     {(Hebrews 5:12).}
+\input{../../psalms/Ps_81/43/Ps_81.lytex}
+\subsubsection{Antiphon}
+\lilypondfile[line-width=3.73\in]{EB5-Lauds-3-Ant-Cantor.ly}
+
+\null\smallskip\subsubsection{Benedictus Antiphon}
+\medskip\noindent\lilypondfile[line-width=3.73\in]{EB5-Lauds-Ben-Ant-Cantor.ly}
+\smallskip\subsection{Benedictus}
+\input{../../psalms/Benedictus/43/Benedictus.lytex}
+\subsubsection{Antiphon}
+\lilypondfile[line-width=3.73\in]{EB5-Lauds-Ben-Ant-Cantor.ly}

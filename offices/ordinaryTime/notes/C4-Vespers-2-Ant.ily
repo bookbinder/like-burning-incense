@@ -16,7 +16,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    May the Lord build our "house  * " _
+    May the Lord build our "house  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     and guard our ci -- ty.
 }
 sopNotesAnt = \relative e' {

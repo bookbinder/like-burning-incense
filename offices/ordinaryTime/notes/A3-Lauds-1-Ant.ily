@@ -15,20 +15,21 @@ topitch = gis
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The man whose deeds are blame -- less  "*"
-    and whose heart is pure will climb the moun -- tain of the Lord.
+    The man whose deeds are blame __ -- less
+    \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 " " }
+    and whose heart __ is pure will climb the moun -- tain of the Lord.
 }
 sopNotesAnt = \relative e' {
     \global	% will be populated by an include file
 		% in the cantor/organ scores called lbi_defs
     \keysig
-    r8 cis8 e[ dis] cis dis e \bar "" fis[ gis fis] fis4
-    \hideNotes gis16 \unHideNotes   %so that I can align the * better
+    r8 cis8 e[ dis] cis dis e \bar "" fis[ gis fis] \allowBreak fis4
+    \noBreak \hideNotes gis16 \unHideNotes   %so that I can align the * better
     fis8 \bar "" \allowBreak
     e[ fis] \allowBreak fis[ gis a gis] fis \bar ""
     \allowBreak fis4( gis) \breathe \allowBreak 
-    gis8 \bar "" \allowBreak fis[ gis] fis \bar "" \allowBreak
-    e[ cis] \allowBreak cis4 b8 cis \bar "" \allowBreak dis4( cis) \bar "||"  
+    gis8 \bar "" \allowBreak fis[ gis] \allowBreak fis \bar "" \allowBreak
+    e[ cis] \allowBreak cis4 \allowBreak b8 \allowBreak cis \bar "" \allowBreak dis4( cis) \bar "||"  
 }
 altoNotesAnt = \relative c' {
     \global

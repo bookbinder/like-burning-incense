@@ -1,0 +1,33 @@
+\subsubsection{Antiphon 1}
+\noindent\lilypondfile[line-width=3.73\in]{PalmSunday-Lauds-1-Ant-Cantor.ly}
+\subsection{Psalm 118}
+%% \subsubsection{}
+%% \Desc{}{}
+%% \input{../../psalms/Ps_118/33/Ps_118.lytex}
+\subsubsection{Antiphon}
+\lilypondfile[line-width=3.73\in]{PalmSunday-Lauds-1-Ant-Cantor.ly}
+
+\null\smallskip\subsubsection{Antiphon 2}
+\noindent\lilypondfile[line-width=3.73\in]{PalmSunday-Lauds-2-Ant-Cantor.ly}
+\subsection{Canticle, Daniel 3:52--57}
+%% \subsubsection{}
+%% \Desc{}{}
+%% \input{../../psalms/Dan_3_52-57/43/Dan_3_52-57.lytex}
+\subsubsection{Antiphon}
+\noindent\lilypondfile[line-width=3.73\in]{PalmSunday-Lauds-2-Ant-Cantor.ly}
+
+\null\smallskip\subsubsection{Antiphon 3}
+\noindent\lilypondfile[line-width=3.73\in]{PalmSunday-Lauds-3-Ant-Cantor.ly}
+\subsection{Psalm 150}
+%% \subsubsection{}
+%% \Desc{}{}
+%% \input{../../psalms/Ps_150/33/Ps_150.lytex}
+\subsubsection{Antiphon}
+\lilypondfile[line-width=3.73\in]{PalmSunday-Lauds-3-Ant-Cantor.ly}
+
+\null\smallskip\subsubsection{Benedictus Antiphon}
+\medskip\noindent\lilypondfile[line-width=3.73\in]{PalmSunday-Lauds-Ben-Ant-Cantor.ly}
+\smallskip\subsection{Benedictus}
+\input{../../psalms/Benedictus/43/Benedictus.lytex}
+\subsubsection{Antiphon}
+\lilypondfile[line-width=3.73\in]{PalmSunday-Lauds-Ben-Ant-Cantor.ly}

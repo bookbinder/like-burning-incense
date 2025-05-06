@@ -16,7 +16,7 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    My soul has yearned for you in the \ll "night,  * " _
+    My soul has yearned for you in the night,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     and as mor -- ning breaks I watch for your co -- ming.
 }
 sopNotesAnt = \relative e' {

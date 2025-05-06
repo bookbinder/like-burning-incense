@@ -11,7 +11,7 @@ topitch = aes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Let us sing a hymn of praise "* "
+    Let us sing a hymn of praise \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
     to our God, al -- le -- lu -- ia.
 }
 

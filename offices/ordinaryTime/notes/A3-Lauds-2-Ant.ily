@@ -15,7 +15,8 @@ topitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Praise the e -- ter -- nal \ll "King  * " _
+    Praise the e -- ter -- nal King
+    \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 " " }
     in all your deeds.
 }
 sopNotesAnt = \relative e' {
@@ -24,7 +25,7 @@ sopNotesAnt = \relative e' {
     \keysig
      g8[ a] g a c b a4 
     \hideNotes a16 \unHideNotes   %so that I can align the * better
-     a8 b a a4( g) \bar "||" 
+     a8 \allowBreak b \allowBreak a \allowBreak a4( g) \bar "||" 
 }
 altoNotesAnt = \relative c' {
     \global

@@ -16,7 +16,7 @@ topitch = aes
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    My spi -- rit re -- joi -- \ll "ces  * " _
+    My spi -- rit re -- joi -- ces  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
     in God my Sa -- vior.
 }
 sopNotesAnt = \relative e' {
