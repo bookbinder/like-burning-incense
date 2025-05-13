@@ -1,47 +1,85 @@
 \documentclass[12pt,twocolumn]{book}
-\usepackage[paperheight=11in,%
-  paperwidth=8.5in,%
-  inner=.3in,%
-  outer=.2in,%
-  top=.5in,%
-  bottom=.5in,%
-  headsep=.1in,%
-  footskip=.2in]{geometry}
-\usepackage{libertine}
 
+%% Layout settings optimized for my linux setup, which doesn't have the
+%% best print drivers. In the print dialog, select 'Fit to whole page' 
+\usepackage[paperheight=10.66in,%
+  paperwidth=8.16in,%
+  inner=.15in,%
+  outer=.15in,%
+  top=.39in,%
+  bottom=.34in,%
+  headsep=.23in,%
+  footskip=4.36pt]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage[USenglish]{babel}
+\usepackage{fontspec}
+\setmainfont{Linux Libertine O}
+\setsansfont[Scale=1]{Linux Biolinum O}
+\newfontfamily\QuintFirst[Scale=2]{Quintessential}
+
+\usepackage{lettrine}
+
+\usepackage[nofragment, insert=systems]{lyluatex}
+%% \setluaoption{ly}{pass-fonts}{true}
+
+\usepackage{leading}
+
+\usepackage{xcolor}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyfoot[CE]{\sffamily\thepage}
-\fancyfoot[CO]{\sffamily\thepage}
-\fancyhead[CE]{\normalfont\sffamily\leftmark}
-\fancyhead[CO]{\normalfont\sffamily\leftmark}
+\fancyhead[LE]{\sffamily\thepage}
+\fancyhead[RO]{\sffamily\thepage}
+\fancyhead[CE]{\normalfont\sffamily\color{red}\leftmark}
+\fancyhead[CO]{\normalfont\sffamily\color{red}\rightmark}
 \renewcommand{\headrulewidth}{0pt}
-%% \setlength{\headheight}{14.0pt}
+\setlength{\headheight}{14.5pt}
 %% \setlength{\headsep}{10pt}
 \setcounter{secnumdepth}{-1}
 \setcounter{tocdepth}{1}
 
-\usepackage{xstring}
+%% \usepackage{xstring}
 \usepackage{verse}
+\newcommand{\defleftmargini}{1em}
+\newcommand{\Aleftmargini}{2em}
+\newcommand{\Bleftmargini}{3em}
+\newcommand{\Cleftmargini}{4em}
+\newcommand{\Dleftmargini}{5em}
+\newcommand{\Eleftmargini}{6em}
+\setlength{\leftmargini}{\defleftmargini}  %% left margin
+\setlength{\stanzaskip}{0.6\baselineskip}  %% space between verses
 
-\usepackage[nobottomtitles]{titlesec}
+
+\setlength{\columnseprule}{0.4pt}
+\setlength{\columnsep}{.3in}
+
+
+\usepackage[nobottomtitles*]{titlesec}
+\renewcommand{\bottomtitlespace}{7\baselineskip}
 %% \newcommand{\sectionbreak}{\clearpage}
 \titleformat{\chapter}[display]
   {\normalfont\sffamily\filcenter}
   {\chaptertitlename\ \thechapter}{0pt}{\LARGE}
 
 \titleformat{\section}
-  {\normalfont\sffamily\Large\bfseries\filcenter}
-  {\thesection}{1em}{}
+  {\normalfont\sffamily\large\bfseries\filcenter}
+  {\thesection}{1em}{{\color{red}\titlerule\vspace{1ex}}}
 
 \titleformat{\subsection}
-  {\normalfont\bfseries\filcenter}
+  {\normalfont\color{red}\bfseries\filcenter}
   {\thesection}{1em}{}
 
+\titleformat{\subsubsection}
+  {\normalfont\color{red}\filcenter}
+  {\thesection}{1em}{}
+  
+%% \titlespacing*{⟨command ⟩}{⟨left⟩}{⟨before-sep⟩}{⟨after-sep⟩}[⟨right-sep⟩]
 \titlespacing*{\chapter}{0pt}{0pt}{10pt}
 \titlespacing*{\section}{0pt}{20pt}{10pt}
-\titlespacing*{\subsection}{0pt}{3pt}{0pt}
+\titlespacing*{\subsection}{0pt}{2ex}{1ex}
+\titlespacing*{\subsubsection}{0pt}{3ex}{1ex}
+\titlespacing*{\paragraph}{0ex}{0ex}{0ex}[0ex]
 
 %% \newcommand{\topheader}[2]{%
     %% \noindent\fbox{\large\bfseries #1}\hfill\fbox{\large\bfseries #2}}
@@ -52,51 +90,146 @@
 \newcommand{\spacer}{\vspace{1.5\baselineskip}}
 \newcommand{\smallspacer}{\vspace{0.5\baselineskip}}
 \newcommand{\medspacer}{\vspace{0.85\baselineskip}}
-\newcommand{\FirstLetter}[1]{{\huge\color{black!70}\raisebox{-5pt}{#1}}}
+\newcommand{\FirstLetter}[1]{{\QuintFirst\color{black!80}\raisebox{-4pt}{#1}}}
+\newcommand{\psalmtitle}{}
+\newcommand{\subhead}{}
+\newcommand{\descA}{}
+\newcommand{\descB}{}
+\newcommand{\reading}[1]{\subsubsection{\textsc{Reading}\hfill #1}}
+\newcommand{\benAbsentSeasons}{{\medskip\color{red}\noindent%
+{\textsc{Benedictus}, %
+antiphon as in the Proper of %
+Seasons.}\medskip}}
 
-\raggedright
+\newcommand{\responsory}[4]{\subsubsection{\textsc{Responsory}\hfill\null}%
+#1
+
+\noindent{\color{red}---}#1
+
+\medskip\noindent #2
+
+\noindent{\color{red}---}#3
+
+\medskip\noindent Glory to the Father\ldots
+
+\noindent{\color{red}---}#4\ldots
+}
+\newcommand{\intercessions}{\subsubsection{\textsc{Intercessions}\hfill\null}}
+%% \raggedright
 \raggedbottom
 
-\newcommand{\myaccentcolor}{\color{black!50}}
-\newcommand{\myastcolor}{\color{black!70}}
+\newcommand{\myaccentcolor}{\color{black!60}}
+\newcommand{\myastcolor}{\color{black!90}}
 \newcommand{\myaccentsize}{\Huge}
 \newcommand{\myaccentposition}{\vskip-4pt}
-\newcommand\pointup[1]{\leavevmode\vbox{\offinterlineskip
-\halign{##\cr\hss\makebox(0,0){\hspace{0pt}\myaccentcolor\myaccentsize\char"00B4}\hss\cr\noalign{\myaccentposition}#1\cr}}}
-\newcommand{\Med}{~\raisebox{2pt}{\color{black!70}$\ast$}}
-\newcommand\point[4]{\leavevmode\vbox{\offinterlineskip
-\halign{##\cr\hss\makebox(0,0){\hspace{0pt}#2#3#1}\hss\cr\noalign{\myaccentposition}#4\cr}}}
+\newcommand{\myaccentpositionl}{\vskip-5.5pt}
 
-\usepackage{graphics}
+\newcommand\pointup[1]{\leavevmode\vbox{\offinterlineskip
+    \halign{##\cr\hss\makebox(0,0){\hspace{2pt}\myaccentcolor\myaccentsize\char"00B4}\hss\cr\noalign{\myaccentposition}#1\cr}}}
+\newcommand\pointupl[1]{\leavevmode\vbox{\offinterlineskip
+\halign{##\cr\hss\makebox(0,0){\hspace{0pt}\myaccentcolor\myaccentsize\char"00B4}\hss\cr\noalign{\myaccentpositionl}#1\cr}}}
+\newcommand{\Med}{~\raisebox{2pt}{\myastcolor$\ast$}}
+\newcommand{\Flex}{~{\myastcolor\textdagger}}
+\newcommand{\Desc}[2]{\linespread{0.1}{\paragraph{}{\small\emph{#1} #2}\vspace{-1pt}}}
+
+
+\hyphenation{Co-rin-thi-an}
+\hyphenation{Co-rin-thi-ans}
+\hyphenation{E-phe-sians}
+
 \begin{document}
 
-\chapter{Week 1}
+\chaptermark{Week I}
 
-t\point{e}{\color{60!black}}{\Huge}{-1pt}est
+\section{Sunday Morning Prayer}
+\input{A1-Lauds-Cantor.tex}
 
-\section{Sunday Evening Prayer I}
-\subsection{Ps 141}
-\subsection{Prayer of a poor man}
-{%
-\parindent 0pt
-\noindent
-\ifx\preLilyPondExample \undefined
-\else
-  \expandafter\preLilyPondExample
-\fi
-\def\lilypondbook{}%
-\input{cb/lily-24da3176-systems.tex}%
-\ifx\postLilyPondExample \undefined
-\else
-  \expandafter\postLilyPondExample
-\fi
-}
-\input{../../psalms/Ps_141_1-9/33/Ps_141_1-9.tex}
+\section{Monday Morning Prayer}
+\input{A2-Lauds-Cantor.tex}
 
-%% \subsection{Ps 141}
-%% \subsection{Prayer of a poor man}
-%% \lilypondfile{A0-Vespers-1-Ant-Cantor.ly}
-%% \input{../../psalms/Ps_141_1-9/33/Ps_141_1-9.lytex}
+\section{Tuesday Morning Prayer}
+\input{A3-Lauds-Cantor.tex}
+
+\section{Wednesday Morning Prayer}
+\input{A4-Lauds-Cantor.tex}
+
+\section{Thursday Morning Prayer}
+\input{A5-Lauds-Cantor.tex}
+
+\section{Friday Morning Prayer}
+\input{A6-Lauds-Cantor.tex}
+
+\section{Saturday Morning Prayer}
+\input{A7-Lauds-Cantor.tex}
+
+\chaptermark{Week II}
+
+\section{Sunday Morning Prayer}
+\input{B1-Lauds-Cantor.tex}
+
+\section{Monday Morning Prayer}
+\input{B2-Lauds-Cantor.tex}
+
+\section{Tuesday Morning Prayer}
+\input{B3-Lauds-Cantor.tex}
+
+\section{Wednesday Morning Prayer}
+\input{B4-Lauds-Cantor.tex}
+
+\section{Thursday Morning Prayer}
+\input{B5-Lauds-Cantor.tex}
+
+\section{Friday Morning Prayer}
+\input{B6-Lauds-Cantor.tex}
+
+\section{Saturday Morning Prayer}
+\input{B7-Lauds-Cantor.tex}
+
+\chaptermark{Week III}
+
+\section{Sunday Morning Prayer}
+\input{C1-Lauds-Cantor.tex}
+
+\section{Monday Morning Prayer}
+\input{C2-Lauds-Cantor.tex}
+
+\section{Tuesday Morning Prayer}
+\input{C3-Lauds-Cantor.tex}
+
+\section{Wednesday Morning Prayer}
+\input{C4-Lauds-Cantor.tex}
+
+\section{Thursday Morning Prayer}
+\input{C5-Lauds-Cantor.tex}
+
+\section{Friday Morning Prayer}
+\input{C6-Lauds-Cantor.tex}
+
+\section{Saturday Morning Prayer}
+\input{C7-Lauds-Cantor.tex}
+
+%% \chaptermark{Week IV}
+
+%% \section{Sunday Morning Prayer}
+%% \input{D1-Lauds-Cantor.tex}
+
+%% \section{Monday Morning Prayer}
+%% \input{D2-Lauds-Cantor.tex}
+
+%% \section{Tuesday Morning Prayer}
+%% \input{D3-Lauds-Cantor.tex}
+
+%% \section{Wednesday Morning Prayer}
+%% \input{D4-Lauds-Cantor.tex}
+
+%% \section{Thursday Morning Prayer}
+%% \input{D5-Lauds-Cantor.tex}
+
+%% \section{Friday Morning Prayer}
+%% \input{D6-Lauds-Cantor.tex}
+
+%% \section{Saturday Morning Prayer}
+%% \input{D7-Lauds-Cantor.tex}
 
 
 \end{document}

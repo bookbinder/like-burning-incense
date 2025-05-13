@@ -1,0 +1,102 @@
+\documentclass[12pt,twocolumn]{book}
+\usepackage[paperheight=11in,%
+  paperwidth=8.5in,%
+  inner=.3in,%
+  outer=.2in,%
+  top=.5in,%
+  bottom=.5in,%
+  headsep=.1in,%
+  footskip=.2in]{geometry}
+\usepackage{libertine}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[CE]{\sffamily\thepage}
+\fancyfoot[CO]{\sffamily\thepage}
+\fancyhead[CE]{\normalfont\sffamily\leftmark}
+\fancyhead[CO]{\normalfont\sffamily\leftmark}
+\renewcommand{\headrulewidth}{0pt}
+%% \setlength{\headheight}{14.0pt}
+%% \setlength{\headsep}{10pt}
+\setcounter{secnumdepth}{-1}
+\setcounter{tocdepth}{1}
+
+\usepackage{xstring}
+\usepackage{verse}
+
+\usepackage[nobottomtitles]{titlesec}
+%% \newcommand{\sectionbreak}{\clearpage}
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily\filcenter}
+  {\chaptertitlename\ \thechapter}{0pt}{\LARGE}
+
+\titleformat{\section}
+  {\normalfont\sffamily\Large\bfseries\filcenter}
+  {\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\normalfont\bfseries\filcenter}
+  {\thesection}{1em}{}
+
+\titlespacing*{\chapter}{0pt}{0pt}{10pt}
+\titlespacing*{\section}{0pt}{20pt}{10pt}
+\titlespacing*{\subsection}{0pt}{3pt}{0pt}
+
+%% \newcommand{\topheader}[2]{%
+    %% \noindent\fbox{\large\bfseries #1}\hfill\fbox{\large\bfseries #2}}
+%% \newcommand{\inlily}[1]{\lilypondfile%
+  %% [line-width=4.8\in]%
+  %% {#1}}
+\newcommand{\topheader}[2]{}
+\newcommand{\spacer}{\vspace{1.5\baselineskip}}
+\newcommand{\smallspacer}{\vspace{0.5\baselineskip}}
+\newcommand{\medspacer}{\vspace{0.85\baselineskip}}
+\newcommand{\FirstLetter}[1]{{\huge\color{black!70}\raisebox{-5pt}{#1}}}
+
+\raggedright
+\raggedbottom
+
+\newcommand{\myaccentcolor}{\color{black!50}}
+\newcommand{\myastcolor}{\color{black!70}}
+\newcommand{\myaccentsize}{\Huge}
+\newcommand{\myaccentposition}{\vskip-4pt}
+\newcommand\pointup[1]{\leavevmode\vbox{\offinterlineskip
+\halign{##\cr\hss\makebox(0,0){\hspace{0pt}\myaccentcolor\myaccentsize\char"00B4}\hss\cr\noalign{\myaccentposition}#1\cr}}}
+\newcommand{\Med}{~\raisebox{2pt}{\color{black!70}$\ast$}}
+\newcommand\point[4]{\leavevmode\vbox{\offinterlineskip
+\halign{##\cr\hss\makebox(0,0){\hspace{0pt}#2#3#1}\hss\cr\noalign{\myaccentposition}#4\cr}}}
+
+\usepackage{graphics}
+\begin{document}
+
+\chapter{Week 1}
+
+t\point{e}{\color{60!black}}{\Huge}{-1pt}est
+
+\section{Sunday Evening Prayer I}
+\subsection{Ps 141}
+\subsection{Prayer of a poor man}
+{%
+\parindent 0pt
+\noindent
+\ifx\preLilyPondExample \undefined
+\else
+  \expandafter\preLilyPondExample
+\fi
+\def\lilypondbook{}%
+\input{cb/lily-24da3176-systems.tex}%
+\ifx\postLilyPondExample \undefined
+\else
+  \expandafter\postLilyPondExample
+\fi
+}
+\input{../../psalms/Ps_141_1-9/33/Ps_141_1-9.tex}
+
+%% \subsection{Ps 141}
+%% \subsection{Prayer of a poor man}
+%% \lilypondfile{A0-Vespers-1-Ant-Cantor.ly}
+%% \input{../../psalms/Ps_141_1-9/33/Ps_141_1-9.lytex}
+
+
+\end{document}

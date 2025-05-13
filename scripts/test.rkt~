@@ -1,0 +1,3 @@
+#lang racket
+
+(display-to-file "" (string->path "whatever.txt"))

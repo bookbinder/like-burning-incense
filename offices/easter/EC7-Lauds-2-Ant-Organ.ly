@@ -4,7 +4,8 @@
 \include "notes/EC7-Lauds-2-Ant.ily"
 \include #(string-append "/home/ryan/scores/like-burning-incense/psalmtones/notes/" psalmtone "-notes.ily")
 
-%% update
+%% update again
+
 \score {
   \transpose \master-from-pitch \master-to-pitch {
     <<

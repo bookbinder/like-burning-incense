@@ -1,6 +1,6 @@
 \version "2.18.2"
 
-toneStruct = "32"
+toneStruct = "43"
 toneKeysig = \key f \major
 
 

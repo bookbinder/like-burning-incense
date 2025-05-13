@@ -2,7 +2,7 @@
 %% include "../../../lbi_defs.ily"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key des \major
+antKeysig =  \key des \major
 antiphon = "M"
 psalmtone = "62"
 psalmtonestruct = "32"
@@ -12,39 +12,46 @@ psalmnum = "Magnificat"
 % use in in cantor (antiphon) and organ (psalm) scores
 frompitch = a
 topitch = a
+%% Master transposition after accounting for psalm tone
+master-from-pitch = a
+master-to-pitch = a
 
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    My soul pro -- claims the great -- ness of the Lord,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
+    My soul pro -- claims the great -- ness of the Lord,  
+    \markup { \tiny \raise #.5 \char ##x1F7B6 " "} 
     for he has looked with fa -- vor on his low -- ly ser -- vant.
 }
 sopNotesAnt = \relative e' {
-    \global
-    \keysig
-    r8 f8 ees[ f] ees des[ f] aes bes[ c] bes bes bes bes4( aes) \bar "'"
+    r8 f8 ees[ f] ees des[ f] aes bes[ c] bes bes bes bes4( aes) \bar ""
     \hideNotes e16 \unHideNotes   %so that I can align the * better
-    aes8 ges[ aes] bes bes[( aes] bes4) bes8 aes[ f] f4 \bar "" ees8 ees f ees 
-    \bar "" ees[ des] des4 \bar "||"
+    \allowBreak aes8
+    \allowBreak ges[ aes]
+    \allowBreak bes
+    \allowBreak bes[( aes] bes4)
+    \allowBreak bes8
+    \allowBreak aes[ f]
+    \allowBreak f4
+    \allowBreak ees8
+    \allowBreak ees
+    \allowBreak f
+    \allowBreak ees
+    \allowBreak ees[ des]
+    \allowBreak des4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    \global
-    \keysig
     aes4 bes4. des4.~ des\breve*5/16~ des\breve*5/16~
     s16
     des4.~ des\breve*5/16 des2 bes aes
 }
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
     f4 ges4. f ges\breve*5/16 f2
     s16
     s8
     bes4. ges\breve*5/16 f2 ges f
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
     des4~ des2. ges,\breve*5/16 des'2~
     s16
     s8

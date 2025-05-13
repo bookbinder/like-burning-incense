@@ -3,7 +3,7 @@
 % Will need these variables to build the cantor and organ scores:
 antiphon = "B"
 psalmtone = "43"
-antKeysig = \key cis \minor
+antKeysig = \key gis \minor
 psalmnum = "Benedictus"
 % transposition interval for the corresponding psalm tone
 % to match the key signature of this antiphon. For

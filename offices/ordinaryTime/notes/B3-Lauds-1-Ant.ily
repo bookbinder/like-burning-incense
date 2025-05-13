@@ -5,35 +5,35 @@ antiphon = "1"
 psalmnum = "Ps_43"
 psalmtone = "56"
 psalmtonestruct = "43"
-keysig = \key cis \minor
+antKeysig = \key cis \minor
 frompitch = a
 topitch = gis
+%% Master transposition after accounting for psalm tone
+master-from-pitch = a
+master-to-pitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Lord, send forth \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
+    Lord, send forth 
+    \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
     your light and your truth.
 }
 
 sopNotesAnt = \relative e' {
-    \keysig
-    \global
     e4 b8[ cis] cis[( gis' a] gis4)
     \hideNotes gis16 \unHideNotes %so that I can align the * better
-    gis8 fis[ gis] fis e dis4( cis) \bar "||"
+    \allowBreak gis8
+    \allowBreak fis[ gis]
+    \allowBreak fis
+    \allowBreak e
+    \allowBreak dis4( cis) \bar "||"
 }
 altoNotesAnt = \relative c' {
-    \keysig
-    \global
     s2 cis4. b4.~ s16 b2 gis2
 }
 tenorNotesAnt = \relative g {
-    \keysig
-    \global
     gis4 fis e2. s16 dis2 e2
 }
 bassNotesAnt = \relative c {
-    \keysig
-    \global
     cis4 dis e2. s16 b2 cis2
 }

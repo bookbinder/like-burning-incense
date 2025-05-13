@@ -8,6 +8,7 @@
 
 
 \score {
+  \transpose \master-from-pitch \master-to-pitch {
     <<
        \new ChoirStaff \with {
            instrumentName = \markup {
@@ -20,22 +21,23 @@
        <<
            \new Staff = "up"
            <<
-               \clef treble
+               \clef treble \antKeysig
                \accidentalStyle forget
-               \new Voice = "Soprano" { \voiceOne \sopNotesAnt }
-               \new Voice = "Alto" { \voiceTwo \altoNotesAnt }
+               \new Voice = "Soprano" { \voiceOne \global \sopNotesAnt }
+               \new Voice = "Alto" { \voiceTwo \global \altoNotesAnt }
                \new Lyrics \lyricsto Soprano \text
            >>
            \new Staff = "down"
            <<
-               \clef bass
+               \clef bass \antKeysig
                \accidentalStyle forget
-               \new Voice = "Tenor" { \voiceOne \tenorNotesAnt }
-               \new Voice = "Bass" { \voiceTwo \bassNotesAnt }
+               \new Voice = "Tenor" { \voiceOne \global \tenorNotesAnt }
+               \new Voice = "Bass" { \voiceTwo \global \bassNotesAnt }
            >>
        >>
     >>
 
+    }
     \layout {
         ragged-last = ##t
         \context {

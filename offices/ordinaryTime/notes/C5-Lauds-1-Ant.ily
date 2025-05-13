@@ -2,7 +2,7 @@
 %% include "../../../lbi_defs.ily"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key e \major
+antKeysig =  \key e \major
 antiphon = "1"
 psalmtone = "12"
 psalmtonestruct = "34"
@@ -12,37 +12,37 @@ psalmnum = "Ps_87"
 % use in in cantor (antiphon) and organ (psalm) scores
 frompitch = a
 topitch = gis
+%% Master transposition after accounting for psalm tone
+master-from-pitch = a
+master-to-pitch = a
 
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Glo -- rious things are said of you,  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
+    Glo -- rious things are said of you,  
+    \markup { \tiny \raise #.5 \char ##x1F7B6 " "} 
     O Ci -- ty of God.
 }
 sopNotesAnt = \relative e' {
-    \global
-    \keysig
     gis8[ a] gis gis gis fis[ gis] fis e4
     \hideNotes e16 \unHideNotes   %so that I can align the * better
-    e8 fis[ e] cis b cis4( e) \bar "||"
+    \allowBreak e8
+    \allowBreak fis[ e]
+    \allowBreak cis
+    \allowBreak b
+    \allowBreak cis4( e) \bar "||"
 }
 altoNotesAnt = \relative c' {
-    \global
-    \keysig
     e\breve*5/16 cis\breve*6/16
     s16
     cis4 s4 a4( gis)
 }
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
     b\breve*5/16 a\breve*6/16~ 
     s16
     a4 dis,4 e2
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
     e\breve*5/16 a\breve*6/16
     s16
     a,4 b e,2

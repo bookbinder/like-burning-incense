@@ -5,36 +5,38 @@ antiphon = "3"
 psalmnum = "Ps_65"
 psalmtone = "40"
 psalmtonestruct = "43"
-keysig = \key gis \minor
+antKeysig = \key gis \minor
 frompitch = a
 topitch = gis
+%% Master transposition after accounting for psalm tone
+master-from-pitch = a
+master-to-pitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    To you, O God, \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
+    To you, O God, 
+    \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
     our praise is due in Zi -- on.
 }
 
 sopNotesAnt = \relative e' {
-    \keysig
-    \global
     r8 dis8 dis[ fis] fis \bar "" gis[( fis ais] gis4)
     \hideNotes gis16 \unHideNotes %so that I can align the * better
-    gis8 \bar "" gis[ ais] gis fis4 fis8 dis4 dis  \bar "||"
+    \allowBreak gis8
+    \allowBreak gis[ ais]
+    \allowBreak gis
+    \allowBreak fis4
+    \allowBreak fis8
+    \allowBreak dis4
+    \allowBreak dis \bar "||"
 }
 altoNotesAnt = \relative c' {
-    \keysig
-    \global
     r8 \hideNotes dis8~ \unHideNotes dis4. e2. s16
     cis2.~ cis4 b
 }
 tenorNotesAnt = \relative g {
-    \keysig
-    \global
     b4~ b4.~ b2. s16 gis2.~ gis2
 }
 bassNotesAnt = \relative g {
-    \keysig
-    \global
     gis4 fis4. e2.~ s16 e4. cis 4. gis2
 }

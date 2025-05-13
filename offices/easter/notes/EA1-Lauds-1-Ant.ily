@@ -25,30 +25,28 @@ text = \lyricmode {
     al -- le -- lu -- ia.
 }
 sopNotesAnt = \relative e' {
-    
-    
-    r8 b8 e dis e \bar "" fis4
-    \noBreak \hideNotes fis16 \unHideNotes
-    \allowBreak gis8[ a]
-    \allowBreak gis
-    \allowBreak fis
-    \allowBreak e \bar ""
-    \allowBreak fis4 \bar "'"
-    \allowBreak fis8 \bar ""
-    \allowBreak fis[ gis]
-    \allowBreak fis
-    \allowBreak e \bar ""
-    \allowBreak e4
-    \allowBreak gis8
-    \allowBreak b
-    \allowBreak a[ gis]
-    \allowBreak fis
-    \allowBreak e \bar ""
-    \allowBreak fis--([ gis a gis] fis4) \bar "'"
-    \allowBreak fis8 \bar ""
-    \allowBreak fis[ gis] \bar ""
-    \allowBreak e4
-    e \bar "||"
+  r8 b8 e dis e \bar "" fis4
+  \noBreak \hideNotes fis16 \unHideNotes
+  \allowBreak gis8[ a]
+  \allowBreak gis
+  \allowBreak fis
+  \allowBreak e \bar ""
+  \allowBreak fis4 \bar "'"
+  \allowBreak fis8 \bar ""
+  \allowBreak fis[ gis]
+  \allowBreak fis
+  \allowBreak e \bar ""
+  \allowBreak e4
+  \allowBreak gis8
+  \allowBreak b
+  \allowBreak a[ gis]
+  \allowBreak fis
+  \allowBreak e \bar ""
+  \allowBreak fis--([ gis a gis] fis4) \bar "'"
+  \allowBreak fis8 \bar ""
+  \allowBreak fis[ gis] \bar ""
+  \allowBreak e4
+  e \bar "||"
 }
 altoNotesAnt = \relative c' {
     

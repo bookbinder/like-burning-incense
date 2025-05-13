@@ -12,11 +12,12 @@
       tagline = ##f
     }
 
+    \transpose \master-from-pitch \master-to-pitch {
     \new Staff
       
     <<
         \midi_instrument
-        \clef treble
+        \clef treble \antKeysig
         \accidentalStyle forget
         \new Voice = "Soprano" { 
             \relative e' {
@@ -43,7 +44,9 @@
         }
     >>
 
+    }
     \layout {
+      ragged-last = ##t
         \context {
             \Staff
             \remove Time_signature_engraver

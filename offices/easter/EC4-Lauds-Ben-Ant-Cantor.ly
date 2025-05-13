@@ -4,6 +4,7 @@
 \include "notes/EC4-Lauds-Ben-Ant.ily"
 \include #(string-append "/home/ryan/scores/like-burning-incense/psalmtones/notes/" psalmtone "-notes.ily")
 
+%% update
 
 \score {
   \header {

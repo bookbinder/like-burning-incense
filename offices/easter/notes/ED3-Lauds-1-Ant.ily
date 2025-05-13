@@ -36,7 +36,7 @@ sopNotesAnt = \relative e' {
   \allowBreak ees8
   \allowBreak ees[ f]
   \allowBreak f4
-  f \bar "||"
+  \allowBreak f \bar "||"
 }
 altoNotesAnt = \relative c' {
   s\breve*10/16 f\breve*5/16 s16 ees4. f2 des\breve*5/16 ees4 c2

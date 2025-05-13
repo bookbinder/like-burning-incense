@@ -1,0 +1,19 @@
+#lang racket
+
+(define files
+  (filter
+   (lambda (p)
+     (regexp-match? #rx"-Cantor.tex$" p))
+   (directory-list
+    (string->path
+     "/home/ryan/scores/like-burning-incense/offices/ordinaryTime/"))))
+
+(for ([f files])
+  (let* ([fsplit (string-split (path->string f) "-")]
+         [day (first fsplit)]
+         [office (second fsplit)]
+         [dir "/home/ryan/scores/like-burning-incense/offices/ordinaryTime"]
+         [readingsfile (format "~a/~a-~a-ReadResp.tex" dir day office)]
+         [intfile (format "~a/~a-~a-Intercessions.tex" dir day office)])
+    (println readingsfile)
+    ))

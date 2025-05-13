@@ -21,10 +21,10 @@ text = \lyricmode {
     \ll "You sweep men away" like a dream,
     \ll "like the grass which springs up in" the morning.
 
+    \ll "------->" "-->"
     \ll "In the morning it springs" up and flowers:
     \ll "by evening it withers" and fades.
-    
-    \ll "-->" "->"
+
     \ll "So we are destroyed" in your anger,
     \ll "struck with terror in" your fury.
 
@@ -39,6 +39,11 @@ text = \lyricmode {
 
     \ll "And most of these are empti" -- ness and pain.
     \ll "They pass swiftly and we" are gone.
+
+    \ll "Who understands the power" of your anger
+    \ll "and fears the strength of" your fury?
+    
+   
 }
 textB = \lyricmode {
 %    \override InstrumentName #'X-offset = #4
@@ -47,23 +52,22 @@ textB = \lyricmode {
     \set stanza = # "2. "
 %    \set shortVocalName = "2."
     \set includeGraceNotes = ##t
-    \ll "Who understands the power" of your anger
-    \ll "and fears the strength of" your fury?
-    
-    \ll "-->" "->"
+     
     \ll "Make us know the shortness" of our life
     \ll "that we may gain wisdom" of heart.
 
+    \ll "------->" "-->"
     \ll "Lord, relent! Is your an" -- ger for ever?
     \ll "Show pity to" your servants.
     
-    \ll "-->" "->"
+
     \ll "In the morning, fill us" with your love;
     \ll "we shall exult and rejoice all" our days.
 
+    \ll "------->" "-->"
     \ll "Give us joy to balance" our af -- fliction
     \ll "for the years when we knew" mis -- fortune.
-    
+
     \ll "Show forth your work" to your servants;
     \ll "let your glory shine on" their children.
 

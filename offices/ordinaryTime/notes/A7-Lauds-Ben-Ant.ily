@@ -1,7 +1,7 @@
 \version "2.20.0"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key c \major 
+antKeysig =  \key c \major 
 antiphon = "B"
 psalmtone = "4"
 psalmtonestruct = "33"
@@ -11,38 +11,36 @@ psalmnum = "Benedictus"
 	% use in cantor (antiphon) and organ (psalm) scores:
 frompitch = a
 topitch = a
+%% Master transposition after accounting for psalm tone
+master-from-pitch = a
+master-to-pitch = a
 
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
     Lord, shine on those who dwell in dark -- ness
-    \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 "" }
+    \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
     and the sha -- dow of death.
 }
 sopNotesAnt = \relative e' {
-    \global	% will be populated by an include file
-		% in the cantor/organ scores called lbi_defs
-    \keysig
      g8[ c] c[ d] c b c a g \bar "" a[ g] \allowBreak g4 
     \noBreak \hideNotes g16 \unHideNotes   %so that I can align the * better
-    \allowBreak g8 \allowBreak g \bar "" \allowBreak f([ g] a4)
-    \allowBreak a8 a \bar "" \allowBreak g4 \bar "||"  
+     \allowBreak g8
+     \allowBreak g
+     \allowBreak f([ g] a4)
+     \allowBreak a8
+     \allowBreak a
+     \allowBreak g4 \bar "||"
 }
 altoNotesAnt = \relative e' {
-    \global
-    \keysig
     g\breve*7/16 f4 e2. s16
     f2. d4
 }    
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
     c\breve*7/16~ c4~ c2. s16
     c2. b4
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
     e\breve*7/16 f4 c2. s16
     d2. g4
 }

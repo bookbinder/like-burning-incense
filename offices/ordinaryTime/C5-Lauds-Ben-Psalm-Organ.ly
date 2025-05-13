@@ -9,7 +9,7 @@
 \include #(string-append "../../psalmtones/notes/" psalmtone "-notes.ily")
 
 % psalm/canticle text
-\include #(string-append "../../psalms/" psalmnum "/" psalmtonestruct "/" psalmnum ".ily")
+\include #(string-append "../../psalms/" psalmnum "/" toneStruct "/" psalmnum ".ily")
 
 % psalm/canticle score
 \include #(string-append "../../psalms/" psalmnum "/" psalmnum ".ily")

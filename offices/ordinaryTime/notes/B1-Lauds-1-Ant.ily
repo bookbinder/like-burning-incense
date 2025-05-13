@@ -1,40 +1,45 @@
 \version "2.18.2"
 %% include "../../../lbi_defs.ily"
 
-keysig = \key c \major
+antKeysig = \key c \major
 antiphon = "1"
 psalmnum = "Ps_118"
 psalmtone = "1"
 psalmtonestruct = "34"
 frompitch = a
 topitch = a
+%% Master transposition after accounting for psalm tone
+master-from-pitch = a
+master-to-pitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Bless -- ed is he who comes \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
+    Bless -- ed is he who comes 
+    \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
     in the name of the Lord, al -- le -- lu -- ia.
 }
 
 sopNotesAnt = \relative e' {
-    \keysig
-    \global
     g8 a g e[ f]  g \bar "" f[( e] d4) \bar ""
     \hideNotes d16 \unHideNotes
-    d8 e \bar "" f[ g] f g \bar ""
-    a4 \breathe \allowBreak g8 \allowBreak f \bar "" \allowBreak a[ g] \allowBreak g4 \bar "||"
+    \allowBreak d8
+    \allowBreak e
+    \allowBreak f[ g]
+    \allowBreak f
+    \allowBreak g
+    \allowBreak a4
+    \allowBreak \breathe
+    \allowBreak g8
+    \allowBreak f
+    \allowBreak a[ g]
+    \allowBreak g4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    \keysig
-    \global
     e2. s2. s16 c2~ c~ c4 b
 }
 tenorNotesAnt = \relative g {
-    \keysig
-    \global
     c2.~ c2 s16 a4 f2~ f d
 }
 bassNotesAnt = \relative c {
-    \keysig
-    \global
     c2. d4 f4~ s16 f4 a,2 f4 d g2
 }

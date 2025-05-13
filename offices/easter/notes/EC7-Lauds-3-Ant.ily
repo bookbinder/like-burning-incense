@@ -28,7 +28,7 @@ sopNotesAnt = \relative e' {
   dis8 e[ dis] cis4 cis \bar "||"
 }
 altoNotesAnt = \relative c' {
-  s4 s4 s4. s4. s2 dis\breve*5/16 s16 b4 gis2
+  s4 s4 s4. s4. s16 s2 dis\breve*5/16 b4 gis2
 }
 tenorNotesAnt = \relative g {
   gis4 fis gis4. b4.~ s16 b2~ b\breve*5/16 fis4~ fis e

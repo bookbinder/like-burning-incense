@@ -2,7 +2,7 @@
 %% include "../../../lbi_defs.ily"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key ges \major
+antKeysig =  \key ges \major
 antiphon = "3"
 psalmtone = "37"
 psalmtonestruct = "33"
@@ -12,37 +12,40 @@ psalmnum = "Ps_150"
 % use in in cantor (antiphon) and organ (psalm) scores
 frompitch = a
 topitch = aes
+%% Master transposition after accounting for psalm tone
+master-from-pitch = ges
+master-to-pitch = f
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Let e -- very -- thing that breathes  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 } _
+    Let e -- very -- thing that breathes  
+    \markup { \tiny \raise #.5 \char ##x1F7B6 " "} 
     give praise to the Lord, al -- le -- lu -- ia.
 }
 sopNotesAnt = \relative e' {
-    \global
-    \keysig
-    r8 aes8 aes[ bes] aes aes bes ces[( bes] aes4) \bar "'"
+    r8 aes8 aes[ bes] aes aes bes ces[( bes] aes4) \bar ""
     \hideNotes e16 \unHideNotes   %so that I can align the * better
-    aes8 \bar "" ges[ f] ees f \bar "" ges4 \bar ""
-    f8 ees \bar "" ees[ des] des4 \bar "||"
+    \allowBreak aes8
+    \allowBreak ges[ f]
+    \allowBreak ees
+    \allowBreak f
+    \allowBreak ges4
+    \allowBreak f8
+    \allowBreak ees
+    \allowBreak ees[ des]
+    \allowBreak des4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    \global
-    \keysig
     f\breve*7/16 ees4~ ees4.
     s16
     des2~ des4 ces aes2
 }
 tenorNotesAnt = \relative c' {
-    \global
-    \keysig
     des\breve*7/16 aes4 ces4.
     s16
     bes2~ bes4 ges4~ ges f
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
     s\breve*7/16 s4 s4.
     s16
     bes'2 bes,4 ces des2

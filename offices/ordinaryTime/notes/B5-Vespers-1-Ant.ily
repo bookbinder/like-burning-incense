@@ -9,39 +9,46 @@ antiphon = "1"
 psalmnum = "Ps_72_2-11"
 psalmtone = "46"
 psalmtonestruct = "33"
-keysig = \key cis \minor
+antKeysig = \key cis \minor
 frompitch = a
 topitch = gis
+%% Master transposition after accounting for psalm tone
+master-from-pitch = a
+master-to-pitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    I have made you the light of all na -- tions  " \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
+    I have made you the light of all na -- tions
+    \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
     to car -- ry my sal -- va -- tion to the ends of the earth.
 }
 
 sopNotesAnt = \relative e' {
-    \keysig
-    \global
     cis8 dis e dis cis gis'4 gis8 \bar "" fis[ gis] \bar "" b[ gis] \bar "" gis4
     \noBreak \hideNotes gis16 \unHideNotes %so that I can align the * better
-    gis8 \bar "" gis[ a] \allowBreak gis \allowBreak
-    fis \allowBreak e \bar "" fis4 fis8 fis gis \bar "" cis,[ e] \bar "" dis b cis4  \bar "||"
+    \allowBreak gis8
+    \allowBreak gis[ a]
+    \allowBreak gis
+    \allowBreak fis
+    \allowBreak e
+    \allowBreak fis4
+    \allowBreak fis8
+    \allowBreak fis
+    \allowBreak gis
+    \allowBreak cis,[ e]
+    \allowBreak dis
+    \allowBreak b
+    \allowBreak cis4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    \keysig
-    \global
     gis1 b4 dis4 e4. s16 
     dis\breve*5/16 cis4.~ cis4 a b gis
 }
 tenorNotesAnt = \relative g {
-    \keysig
-    \global
     e1 dis4 fis gis4.~ s16
     gis\breve*5/16 e4.~ e4 fis2 e4
 }
 bassNotesAnt = \relative c {
-    \keysig
-    \global
     cis1~ cis2~ cis4. s16
     b\breve*5/16 a4.~ a4 fis gis cis
 }

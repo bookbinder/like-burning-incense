@@ -5,39 +5,43 @@ antiphon = "M"
 psalmnum = "Magnificat"
 psalmtone = "21"
 psalmtonestruct = "33"
-keysig = \key aes \major
+antKeysig = \key aes \major
 frompitch = a
 topitch = a
+%% Master transposition after accounting for psalm tone
+master-from-pitch = a
+master-to-pitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Lord, with the strength of your arm  \markup \with-color #(x11-color 'gray36) { \tiny \raise #.5 \char ##x1F7B6 }
+    Lord, with the strength of your arm  
+    \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
     scat -- ter the proud, and lift up the low -- ly.
 }
 
 sopNotesAnt = \relative e' {
-    \keysig
-    \global
     ees4 ees8 f ees[ aes] g aes \bar "" bes4
     \hideNotes bes16 \unHideNotes %so that I can align the * better
-    aes4 aes8 bes \bar "" aes[( g f] ees4)
-    \bar "" ees8 \bar "" f[ ees] des ees \bar "" f4 ees \bar "||"
+    \allowBreak aes4
+    \allowBreak aes8
+    \allowBreak bes
+    \allowBreak aes[( g f] ees4)
+    \allowBreak ees8
+    \allowBreak f[ ees]
+    \allowBreak des
+    \allowBreak ees
+    \allowBreak f4
+    \allowBreak ees \bar "||"
 }
 altoNotesAnt = \relative c' {
-    \keysig
-    \global
     ees1 f2. s16 ees2.
     des2 bes
 }
 tenorNotesAnt = \relative g {
-    \keysig
-    \global
     aes1~ aes2.~ s16
     aes2.~ aes2~ aes4 g
 }
 bassNotesAnt = \relative c {
-    \keysig
-    \global
     c1 des2. s16
     c2. bes2 ees
 }

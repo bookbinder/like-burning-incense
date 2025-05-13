@@ -23,10 +23,7 @@ text = \lyricmode {
     the Lord is ri -- sen as he pro -- mised, al -- le -- lu -- ia.
 }
 sopNotesAnt = \relative e' {
-    
-    
-
-    e8 b cis[ gis'] gis4 \bar ""
+  e8 b cis[ gis'] gis4 \bar ""
     \noBreak \hideNotes gis16 \unHideNotes
     \allowBreak gis8 \bar ""
     \allowBreak gis[ a]
