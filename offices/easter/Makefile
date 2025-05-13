@@ -4,11 +4,11 @@ LUATEX=lualatex -shell-escape
 
 cur:
 	# rm -rf out/*/
-	# rm -rf tmp-ly/*.*
+	rm -rf tmp-ly/*.*
 	$(LUATEX) ScoreCantorLong.tex
-	evince ScoreCantorLong.pdf
+	okular ScoreCantorLong.pdf
 	$(LUATEX) ScoreOrganLong.tex
-	evince ScoreOrganLong.pdf
+	okular ScoreOrganLong.pdf
 
 # cantor:
 # 	rm -rf out/*/

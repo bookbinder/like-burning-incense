@@ -18,6 +18,7 @@
 \setsansfont[Scale=1]{Linux Biolinum O}
 \newfontfamily\QuintFirst[Scale=2]{Quintessential}
 
+\usepackage{lettrine}
 
 \usepackage[nofragment, insert=systems]{lyluatex}
 %% \setluaoption{ly}{pass-fonts}{true}
@@ -66,18 +67,28 @@
   {\thesection}{1em}{{\color{red}\titlerule\vspace{1ex}}}
 
 \titleformat{\subsection}
-  {\normalfont\color{red}\bfseries\filcenter}
+  {\normalfont\color{red}}
   {\thesection}{1em}{}
 
 \titleformat{\subsubsection}
   {\normalfont\color{red}\filcenter}
   {\thesection}{1em}{}
-
+  
+%% \titlespacing*{⟨command ⟩}{⟨left⟩}{⟨before-sep⟩}{⟨after-sep⟩}[⟨right-sep⟩]
 \titlespacing*{\chapter}{0pt}{0pt}{10pt}
 \titlespacing*{\section}{0pt}{20pt}{10pt}
-\titlespacing*{\subsection}{0pt}{2ex}{1ex}
-\titlespacing*{\subsubsection}{0pt}{1ex}{0ex}
-\titlespacing*{\paragraph}{0pt}{2ex}{0pt}
+\titlespacing*{\subsection}{0pt}{3ex}{0ex}
+\titlespacing*{\subsubsection}{0pt}{2ex}{1ex}
+\titlespacing*{\paragraph}{0ex}{1ex}{1ex}[0ex]
+
+\newcommand{\psalm}[1]{\subsubsection{\textbf{#1}}}
+\newcommand{\psalmsubtitle}[1]{\subsubsection{#1}}
+\newcommand{\antiphonA}{\subsubsection{Antiphon 1}}
+\newcommand{\antiphonB}{\subsubsection{Antiphon 2}}
+\newcommand{\antiphonC}{\subsubsection{Antiphon 3}}
+\newcommand{\antiphonBen}{\subsubsection{Benedictus Antiphon}}
+\newcommand{\antiphonMag}{\subsubsection{Magnificat Antiphon}}
+\newcommand{\antiphon}{\subsubsection{Antiphon}}
 
 %% \newcommand{\topheader}[2]{%
     %% \noindent\fbox{\large\bfseries #1}\hfill\fbox{\large\bfseries #2}}
@@ -93,6 +104,23 @@
 \newcommand{\subhead}{}
 \newcommand{\descA}{}
 \newcommand{\descB}{}
+\newcommand{\reading}[1]{\subsection{\textsc{Reading}\hfill #1}}
+\newcommand{\benAbsentSeasons}{\subsection{\textsc{Benedictus}, antiphon as in the Proper of Seasons.}}
+
+\newcommand{\responsory}[3]{\subsection{\textsc{Responsory}}%
+#1 #2
+
+\noindent{\color{red}---}#1 #2
+
+\medskip\noindent #3
+
+\noindent{\color{red}---}#2
+
+\medskip\noindent Glory to the Father, and to the Son, and to the Holy Spirit.
+
+\noindent{\color{red}---}#1 #2
+}
+\newcommand{\intercessions}{\null\subsection{\textsc{Intercessions}}}
 %% \raggedright
 \raggedbottom
 
@@ -108,12 +136,13 @@
 \halign{##\cr\hss\makebox(0,0){\hspace{0pt}\myaccentcolor\myaccentsize\char"00B4}\hss\cr\noalign{\myaccentpositionl}#1\cr}}}
 \newcommand{\Med}{~\raisebox{2pt}{\myastcolor$\ast$}}
 \newcommand{\Flex}{~{\myastcolor\textdagger}}
-\newcommand{\Desc}[2]{\linespread{0.1}{\paragraph{}{\small\emph{#1} #2}\vspace{-1pt}}}
+\newcommand{\Desc}[2]{\linespread{0.1}{\paragraph{}{\small\emph{#1} #2}}}
 
 
 \hyphenation{Co-rin-thi-an}
 \hyphenation{Co-rin-thi-ans}
-%% \hyphenation{E-phe-sians}
+\hyphenation{E-phe-sians}
+
 
 \begin{document}
 %% \sectionmark{Monday, Morning Prayer}
@@ -170,11 +199,11 @@
 %% \section{Monday Morning Prayer}
 %% \input{ED2-Lauds-Cantor.tex}
 
-\section{Tuesday Morning Prayer}
-\input{ED3-Lauds-Cantor.tex}
+%% \section{Tuesday Morning Prayer}
+%% \input{ED3-Lauds-Cantor.tex}
 
-%% \section{Wednesday Morning Prayer}
-%% \input{ED4-Lauds-Cantor.tex}
+\section{Wednesday Morning Prayer}
+\input{ED4-Lauds-Cantor.tex}
 
 %% \section{Thursday Morning Prayer}
 %% \input{ED5-Lauds-Cantor.tex}

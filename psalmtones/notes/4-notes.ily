@@ -12,9 +12,9 @@ sopranoShort = { \override Stem.stencil = ##f
 sopranoTwoFlex = { \afterGrace g'\breve^"B†" e'4 \breathe g'\breve a'8 g'4 \bar "|" a'\breve b'8 g'4 \bar "||"  }
 sopranoTwo = { g'\breve^"B" a'8 g'4 \bar "|" a'\breve b'8 g'4 \bar "||"  }
 
-altoOneFlex = { e'\breve e'\breve s8 d'4 d'\breve s8 d'4}
-altoOne = { e'\breve s8 d'4 d'\breve s8 d'4   }
-altoTwoFlex = { e'\breve e'\breve s8 c'4 f'\breve s8 d'4  }
+altoOneFlex = { e'\breve~ e'\breve s8 d'4~ d'\breve~ s8 d'4}
+altoOne = { e'\breve s8 d'4~ d'\breve~ s8 d'4   }
+altoTwoFlex = { e'\breve~ e'\breve s8 c'4 f'\breve s8 d'4  }
 altoTwo = { e'\breve s8 c'4 f'\breve s8 d'4  }
 
 tenorOneFlex = { \afterGrace c'\breve c'4 c'\breve s8 b4 \bar "|" c'\breve s8 b4 \bar "||" }
@@ -24,7 +24,7 @@ tenorTwo = { c'\breve s8 c'4 \bar "|" c'\breve s8 b4 \bar "||"  }
 
 bassOneFlex = { \afterGrace s\breve a4 s\breve s8 b4 f\breve s8 g4 }
 bassOne = { s\breve s8 b4 f\breve s8 g4   }
-bassTwoFlex = { \afterGrace c\breve c4 c\breve s8 e4 d\breve s8 g4  }
+bassTwoFlex = { \afterGrace c\breve~ c4~ c\breve s8 e4 d\breve s8 g4  }
 bassTwo = { c\breve s8 e4 d\breve s8 g4  }
 
 
