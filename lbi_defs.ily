@@ -14,6 +14,9 @@
 
 ll = {
     \once \override LyricText.self-alignment-X = #LEFT
+  }
+lr = {
+    \once \override LyricText.self-alignment-X = #RIGHT
 }
 
 global = {

@@ -11,7 +11,7 @@ sopranoShort = { \override Stem.stencil = ##f
                  \revert Stem.stencil
                  f'8 ges' aes'4 \bar "|" \allowBreak ges'\breve*1/2 ees'8 des'4 \bar "||"  }
 sopranoTwoFlex = { \afterGrace aes'\breve^"B†" f'4 \breathe  aes'\breve f'8 ges' aes'4 \bar "|" ges'\breve ees'8 des'4 \bar "||" }
-sopranoTwo = { aes'\breve^"B" f'8 ges' aes'4 \bar "|" ges'\breve ees'8 aes'4 \bar "||" }
+sopranoTwo = { aes'\breve^"B" f'8 ges' aes'4 \bar "|" ges'\breve ees'8 des'4 \bar "||" }
 
 altoOneFlex = { \afterGrace f'\breve des'4 f'\breve s4 des'4 bes\breve s8 des'4 }
 altoOne = { f'\breve s4 des'4 bes\breve s8 des'4 }

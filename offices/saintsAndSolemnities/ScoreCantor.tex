@@ -1,0 +1,486 @@
+\documentclass[12pt,twocolumn]{book}
+
+%% Layout settings optimized for my linux setup, which doesn't have the
+%% best print drivers. In the print dialog, select 'Fit to whole page' 
+\usepackage[paperheight=10.66in,%
+  paperwidth=8.16in,%
+  inner=.15in,%
+  outer=.15in,%
+  top=.39in,%
+  bottom=.34in,%
+  headsep=.23in,%
+  footskip=4.36pt]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage[USenglish]{babel}
+\usepackage{fontspec}
+\setmainfont{Linux Libertine O}
+\setsansfont[Scale=1]{Linux Biolinum O}
+\newfontfamily\QuintFirst[Scale=2]{Quintessential}
+
+\usepackage{lettrine}
+
+\usepackage[nofragment, insert=systems]{lyluatex}
+%% \setluaoption{ly}{pass-fonts}{true}
+
+\usepackage{leading}
+
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\sffamily\thepage}
+\fancyhead[RO]{\sffamily\thepage}
+\fancyhead[CE]{\normalfont\sffamily\color{red}\leftmark}
+\fancyhead[CO]{\normalfont\sffamily\color{red}\rightmark}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{14.5pt}
+%% \setlength{\headsep}{10pt}
+\setcounter{secnumdepth}{-1}
+\setcounter{tocdepth}{1}
+
+%% \usepackage{xstring}
+\usepackage{verse}
+\newcommand{\defleftmargini}{1em}
+\newcommand{\Aleftmargini}{2em}
+\newcommand{\Bleftmargini}{3em}
+\newcommand{\Cleftmargini}{4em}
+\newcommand{\Dleftmargini}{5em}
+\newcommand{\Eleftmargini}{6em}
+\setlength{\leftmargini}{\defleftmargini}  %% left margin
+\setlength{\stanzaskip}{0.6\baselineskip}  %% space between verses
+
+
+\setlength{\columnseprule}{0.4pt}
+\setlength{\columnsep}{.3in}
+
+
+\usepackage[nobottomtitles*]{titlesec}
+\renewcommand{\bottomtitlespace}{7\baselineskip}
+%% \newcommand{\sectionbreak}{\clearpage}
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily\filcenter}
+  {\chaptertitlename\ \thechapter}{0pt}{\LARGE}
+
+\titleformat{\section}
+  {\normalfont\sffamily\large\bfseries\filcenter}
+  {\thesection}{1em}{{\color{red}\titlerule\vspace{1ex}}}
+
+\titleformat{\subsection}
+  {\normalfont\color{red}}
+  {\thesection}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\color{red}\filcenter}
+  {\thesection}{1em}{}
+  
+%% \titlespacing*{⟨command ⟩}{⟨left⟩}{⟨before-sep⟩}{⟨after-sep⟩}[⟨right-sep⟩]
+\titlespacing*{\chapter}{0pt}{0pt}{10pt}
+\titlespacing*{\section}{0pt}{20pt}{10pt}
+\titlespacing*{\subsection}{0pt}{3ex}{0ex}
+\titlespacing*{\subsubsection}{0pt}{2ex}{1ex}
+\titlespacing*{\paragraph}{0ex}{1ex}{1ex}[0ex]
+
+\newcommand{\psalm}[1]{\subsubsection{\textbf{#1}}}
+\newcommand{\psalmsubtitle}[1]{\subsubsection{#1}}
+\newcommand{\antiphonA}{\subsubsection{Antiphon 1}}
+\newcommand{\antiphonB}{\subsubsection{Antiphon 2}}
+\newcommand{\antiphonC}{\subsubsection{Antiphon 3}}
+\newcommand{\antiphonBen}{\subsubsection{Benedictus Antiphon}}
+\newcommand{\antiphonMag}{\subsubsection{Magnificat Antiphon}}
+\newcommand{\antiphon}{\subsubsection{Antiphon}}
+
+%% \newcommand{\topheader}[2]{%
+    %% \noindent\fbox{\large\bfseries #1}\hfill\fbox{\large\bfseries #2}}
+%% \newcommand{\inlily}[1]{\lilypondfile%
+  %% [line-width=4.8\in]%
+  %% {#1}}
+\newcommand{\topheader}[2]{}
+\newcommand{\spacer}{\vspace{1.5\baselineskip}}
+\newcommand{\smallspacer}{\vspace{0.5\baselineskip}}
+\newcommand{\medspacer}{\vspace{0.85\baselineskip}}
+\newcommand{\FirstLetter}[1]{{\QuintFirst\color{black!80}\raisebox{-4pt}{#1}}}
+\newcommand{\psalmtitle}{}
+\newcommand{\subhead}{}
+\newcommand{\descA}{}
+\newcommand{\descB}{}
+\newcommand{\reading}[1]{\subsection{\textsc{Reading}\hfill #1}}
+\newcommand{\benAbsentSeasons}{\subsection{\textsc{Benedictus}, antiphon as in the Proper of Seasons.}}
+
+\newcommand{\responsory}[3]{\subsection{\textsc{Responsory}}%
+#1 #2
+
+\noindent{\color{red}---}#1 #2
+
+\medskip\noindent #3
+
+\noindent{\color{red}---}#2
+
+\medskip\noindent Glory to the Father, and to the Son, and to the Holy Spirit.
+
+\noindent{\color{red}---}#1 #2
+}
+\newcommand{\intercessions}{\null\subsection{\textsc{Intercessions}}}
+\newcommand{\saints}[3]{\section*{\normalsize{#1}\\\medskip\large{#2}\\\smallskip\normalsize{#3}\\\medskip\large{{Morning Prayer}}}\chaptermark{#1---#2}}
+
+
+
+%% \raggedright
+\raggedbottom
+
+\newcommand{\myaccentcolor}{\color{black!60}}
+\newcommand{\myastcolor}{\color{black!90}}
+\newcommand{\myaccentsize}{\Huge}
+\newcommand{\myaccentposition}{\vskip-4pt}
+\newcommand{\myaccentpositionl}{\vskip-5.5pt}
+
+\newcommand\pointup[1]{\leavevmode\vbox{\offinterlineskip
+    \halign{##\cr\hss\makebox(0,0){\hspace{2pt}\myaccentcolor\myaccentsize\char"00B4}\hss\cr\noalign{\myaccentposition}#1\cr}}}
+\newcommand\pointupl[1]{\leavevmode\vbox{\offinterlineskip
+\halign{##\cr\hss\makebox(0,0){\hspace{0pt}\myaccentcolor\myaccentsize\char"00B4}\hss\cr\noalign{\myaccentpositionl}#1\cr}}}
+\newcommand{\Med}{~\raisebox{2pt}{\myastcolor$\ast$}}
+\newcommand{\Flex}{~{\myastcolor\textdagger}}
+\newcommand{\Desc}[2]{\linespread{0.1}{\paragraph{}{\small\emph{#1} #2}}}
+
+
+\hyphenation{Co-rin-thi-an}
+\hyphenation{Co-rin-thi-ans}
+\hyphenation{E-phe-sians}
+
+
+\begin{document}
+
+
+%% 0101_Mary,_Mother_of_God
+%%  0102_Basil_the_Great_and_Gregory_Nazianzen
+%%  0103_Holy_Name_of_Jesus
+%%  0104_Elizabeth_Seton
+%%  0105_John_Neumann
+%%  0106_Andre_Bessette
+%%  0107_Raymond_Penyafort
+%%  0112_Aelred_of_Rievaulx
+%%  0113_Hilary_of_Poitiers
+%%  0113_Remigius_of_Rheims
+%%  0117_Antony_of_Egypt
+%%  0118_The_Confession_of_Peter
+%%  0120_St_Fabian
+%%  0120_St_Sebastian
+%%  0121_St_Agnes
+%%  0122_St_Vincent_of_Saragossa
+%%  0123_St_Marianne_Cope
+%%  0124_Francis_de_Sales
+%%  0125_The_Conversion_of_Paul
+%%  0126_Sts_Timothy_and_Titus
+%%  0127_Angela_Merici
+%%  0127_St_John_Chrysostom
+%%  0128_Thomas_Aquinas
+%%  0131_Don_Bosco
+%%  0201_Brigid_of_Kildare
+%%  0202_The_Presentation_in_the_Temple
+%%  0203_St_Anskar
+%%  0203_St_Blaise
+%%  0205_St_Agatha
+%%  0206_Paul_Miki_and_Companions
+%%  0208_Jerome_Emiliani
+%%  0208_Josephine_Bakhita
+%%  0210_St_Scholastica
+%%  0211_Our_Lady_of_Lourdes
+%%  0214_Cyril_and_Methodius
+%%  0217_Seven_Founders_of_the_Servite_Order
+%%  0221_Peter_Damian
+%%  0222_Chair_of_Peter
+%%  0223_St_Polycarp
+%%  0224_Matthias
+%%  0301_David_of_Wales
+%%  0302_Chad_of_Lichfield
+%%  0303_Katharine_Drexel
+%%  0304_Casimir
+%%  0307_Perpetua_and_Felicity
+%%  0308_John_of_God
+%%  0309_Frances_of_Rome
+%%  0312_Gregory_the_Great
+%%  0317_Patrick_of_Ireland
+%%  0318_Cyril_of_Jerusalem
+%%  0319_Joseph
+%%  0323_Turibius_of_Mongrovejo
+%%  0325_The_Annunciation
+%%  0402_Francis_of_Paola
+%%  0404_Isidore
+%%  0405_Vincent_Ferrer
+%%  0407_John_Baptist_de_la_Salle
+%%  0411_Stanislaus
+%%  0413_Martin_I
+%%  0421_Anselm_of_Canterbury
+%%  0423_Adalbert
+%%  0423_George
+%%  0423_Giles
+%%  0424_Fidelis_of_Sigmaringen
+%%  0425_Mark
+%%  0428_Louis_De_Montfort
+%%  0428_Peter_Chanel
+%%  0429_Catherine_of_Siena
+%%  0430_James_the_Greater
+%%  0430_Pius_V
+%%  0501_Philip_and_James
+%%  0501_St_Joseph_the_Worker
+%%  0502_Athanasius
+%%  0503_Philip_and_James
+%%  0510_Damien_of_Molokai
+%%  0510_John_of_Avila
+%%  0511_Cyril_and_Methodius
+%%  0512_Nereus_and_Achilleus
+%%  0512_Pancras
+%%  0513_Our_Lady_of_Fatima
+%%  0514_Matthias
+%%  0518_John_I
+%%  0521_Christopher_Magallanes
+%%  0522_Rita_of_Cascia
+%%  0524_Jackson_Kemper
+%%  0525_Bede_the_Venerable
+%%  0525_Gregory_VII
+%%  0525_Mary_Magdelene_de_Pazzi
+%%  0526_Philip_Neri
+%%  0527_Augustine_of_Canterbury
+%%  0529_Pope_Paul_VI
+
+%%  0531_The_Visitation_of_Mary
+\saints{May 31}{Visitation}{Feast}
+\sectionmark{Morning Prayer}
+\input{0531_The_Visitation_of_Mary/1-Lauds-Cantor.tex}
+
+%%  0601_Justin_Martyr
+\saints{June 1}{Justin, Martyr}{Memorial}
+\sectionmark{Morning Prayer}
+\input{0601_Justin_Martyr/1-Lauds-Cantor.tex}
+
+%%  0602_Marcellinus_and_Peter
+%%  0602_The_Martyrs_of_Lyons
+%%  0603_The_Martyrs_of_Uganda
+%%  0605_St_Boniface
+%%  0606_St_Norbert
+%%  0609_Ephrem_of_Edessa
+%%  0609_St_Columba_of_Iona
+
+%%  0611_St_Barnabas
+\saints{June 11}{Barnabas, Apostle}{Memorial}
+\sectionmark{Morning Prayer}
+\input{0611_St_Barnabas/1-Lauds-Cantor.tex}
+
+%%  0613_Anthony_of_Padua
+%%  0614_Basil_the_Great
+%%  0615_Evelyn_Underhill
+%%  0616_Joseph_Butler
+%%  0618_Bernard_Mizeki
+%%  0619_St_Romuald
+%%  0621_Aloysius_Gonzaga
+%%  0622_John_Fisher_and_Thomas_More
+%%  0622_St_Alban
+%%  0622_St_Paulinus_of_Nola
+%%  0624_Nativity_of_John_the_Baptist
+%%  0627_Cyril_of_Alexandria
+%%  0628_Irenaeus
+%%  0629_Peter_and_Paul
+%%  0630_First_Martyrs_of_Rome
+%%  0701_Junipero_Serra
+%%  0703_Thomas
+%%  0705_Anthony_Mary_Zaccaria
+%%  0705_Elizabeth_of_Portugal
+%%  0706_Maria_Goretti
+%%  0709_Augustine_Zhao_Rong_and_the_Chinese_Martyrs
+%%  0711_St_Benedict_of_Nursia
+%%  0713_St_Henry_II
+%%  0714_Kateri_Tekakwitha
+%%  0715_St_Bonaventure
+%%  0716_Our_Lady_of_Mt_Carmel
+%%  0718_Camillus_de_Lellis
+%%  0720_Apollinaris
+%%  0721_Lawrence_of_Brindisi
+%%  0722_Mary_Magdalene
+%%  0723_Bridget_of_Sweden
+%%  0724_Sharbel_Makhluf
+%%  0725_James_the_Greater
+%%  0726_Ann_and_Joachim
+%%  0729_Sts_Martha,_Mary,_and_Lazarus
+%%  0730_Peter_Chrysologus
+%%  0731_Ignatius_of_Loyola
+%%  0801_Alphonsus_Liguori
+%%  0802_Eusebius_of_Vercelli
+%%  0802_Peter_Julian_Eymard
+%%  0804_John_Vianney
+%%  0806_Transfiguration
+%%  0807_Cajetan
+%%  0807_Sixtus_II
+%%  0808_Mary_MacKillop_of_the_Cross
+%%  0808_St_Dominic
+%%  0809_Teresa_Benedicta_of_the_Cross
+%%  0810_St_Laurence
+%%  0811_St_Clare_of_Assisi
+%%  0812_St_Jane_Frances_De_Chantal
+%%  0813_Pontian_and_Hippolytus
+%%  0814_Maximilian_Kolbe
+%%  0815_The_Assumption_of_Mary
+%%  0816_Stephen_of_Hungary
+%%  0819_St_John_Eudes
+%%  0820_Bernard_of_Clairvaux
+%%  0821_Pope_Pius_X
+%%  0822_Queenship_of_Mary
+%%  0823_Rose_of_Lima
+%%  0824_Bartholomew
+%%  0825_Joseph_Calasanz
+%%  0825_Louis,_King_of_France
+%%  0827_St_Monica
+%%  0828_Augustine,_Bishop_of_Hippo
+%%  0829_Beheading_of_John_the_Baptist
+%%  0831_Aidan,_Missionary_to_Northumbria
+%%  0903_Gregory_the_Great
+%%  0905_Teresa_of_Calcutta
+%%  0908_The_Nativity_of_Mary
+%%  0909_Peter_Claver
+%%  0912_Holy_Name_of_Mary
+%%  0913_St_John_Chrysostom
+%%  0914_Holy_Cross
+%%  0915_Our_Lady_of_Sorrows
+%%  0916_Cornelius_and_Cyprian
+%%  0916_Ninian_of_Galloway
+%%  0917_Robert_Bellarmine
+%%  0917_St_Hildegard_of_Bingen
+%% '0919_Januarius_(Gennaro)'
+%%  0920_Andrew_Kim_Taegon_and_Paul_Chong_Hasang
+%%  0921_Matthew
+%%  0923_Pio_of_Pietrelcina
+%%  0924_Thecla
+%%  0925_St_Sergius_of_Rádonezh
+%%  0926_Sts_Cosmas_and_Damian
+%%  0927_St_Vincent_de_Paul
+%%  0928_St_Lawrence_Ruiz
+%%  0928_St_Wenceslaus
+%%  0929_St_Michael_and_All_Angels
+%%  0930_St_Jerome
+%%  1001_Protection_of_the_Mother_of_God
+%%  1001_Remigius_of_Rheims
+%%  1001_Therese_of_Lisieux
+%%  1002_Guardian_Angels
+%%  1004_St_Francis_of_Assisi
+%%  1005_Faustina_Kowalska
+%%  1005_Francis_Xavier_Seelos
+%%  1006_Marie-Rose_Durocher
+%%  1006_St_Bruno
+%%  1007_Our_Lady_of_the_Rosary
+%%  1009_Denis_and_Companions
+%%  1009_John_Leonardi
+%%  1009_Robert_Grosseteste
+%%  1011_Pope_John_XXIII
+%%  1014_Callistus_I
+%%  1015_Teresa_of_Avila
+%%  1016_Hedwig
+%%  1016_Margaret_Mary_Alacoque
+%%  1017_Ignatius_of_Antioch
+%%  1018_Luke
+%%  1019_Isaac_Jogues_and_John_De_Brebeuf
+%%  1020_Paul_of_the_Cross
+%%  1022_John_Paul_II
+%%  1023_John_of_Capistrano
+%%  1024_Anthony_Claret
+%%  1028_Simon_and_Jude
+%%  1101_All_Saints_Day
+%%  1102_All_Souls_Day
+%%  1103_Martin_de_Porres
+%%  1104_Charles_Borromeo
+%%  1107_Willibrord
+%%  1110_Leo_The_Great
+%%  1111_Martin_of_Tours
+%%  1112_St_Josaphat_Kuncevyv
+%%  1113_St_Frances_Xavier_Cabrini
+%%  1113_St_John_Chrysostom
+%%  1115_St_Albert_the_Great
+%%  1116_Gertrude_the_Great
+%%  1116_Margaret_of_Scotland
+%%  1117_St_Elizabeth_of_Hungary
+%%  1117_St_Hilda_of_Whitby
+%%  1117_St_Hugh_of_Lincoln
+%%  1118_Rose_Philippine_Duchesne
+%%  1118_St_Hilda_of_Whitby
+%%  1119_St_Elizabeth_of_Hungary
+%%  1121_Presentation_of_Mary
+%%  1122_St_Cecilia
+%%  1123_Clement_of_Rome
+%%  1123_Columban
+%%  1123_Miguel_Agustín_Pro
+%%  1124_Andrew_Dung-Lac
+%%  1125_Catherine_of_Alexandria
+%%  1130_Andrew_the_Apostle
+%%  1203_St_Francis_Xavier
+%%  1204_St_John_Damascene
+%%  1206_St_Nicholas_of_Myra
+%%  1207_St_Ambrose
+%%  1208_Immaculate_Conception
+%%  1209_Juan_Diego
+%%  1210_Our_Lady_of_Loreto
+%%  1211_Pope_Damasus_I
+%%  1212_Our_Lady_of_Guadalupe
+%%  1213_St_Lucy
+%%  1214_John_of_the_Cross
+%%  1221_Peter_Canisius
+%%  1221_Thomas
+%%  1223_John_of_Kanty
+%%  1226_St_Stephen
+%%  1227_John_the_Apostle
+%%  1228_Holy_Innocents
+%%  1229_Thomas_Becket
+%%  1231_Sylvester_I
+%%  All_Saints_Day
+%%  Andrew
+%%  Annunciation
+%%  Bartholomew
+%%  Christian_Unity
+%%  Christmas
+%%  Christ_the_King
+
+%%  Trinity_Sunday
+\saints{Sunday after Pentecost}{Trinity Sunday}{Solemnity}
+\chaptermark{Trinity Sunday}
+\sectionmark{Morning Prayer}
+\input{Trinity_Sunday/1-Lauds-Cantor.tex}
+
+%%  Corpus_Christi
+\saints{Thursday or Sunday after Trinity Sunday}{Corpus Christi}{Solemnity}
+\chaptermark{Corpus Christi}
+\sectionmark{Morning Prayer}
+\input{Corpus_Christi/1-Lauds-Cantor.tex}
+
+%%  Sacred_Heart
+\saints{Friday after the 2nd Sunday after Pentecost}{Sacred Heart}{Solemnity}
+\chaptermark{Sacred Heart}
+\sectionmark{Morning Prayer}
+\input{Sacred_Heart/1-Lauds-Cantor.tex}
+
+
+%%  Holy_Cross
+%%  Holy_Family
+%%  Holy_Innocents
+%%  James_the_Greater
+%%  John_the_Apostle
+%%  John_the_Baptist
+%%  Joseph
+%%  Luke
+%%  Mark
+%%  Mary
+%%  Mary_Magdalene
+%%  Matthew
+%%  Matthias
+%%  Paul
+%%  Peter
+%%  Philip_and_James
+%%  README.md
+
+%%  ScoreCantor.tex
+%%  Simon_and_Jude
+%%  St_Barnabas
+%%  Stephen
+%%  St_Michael_and_All_Angels
+%%  The_Presentation_in_the_Temple
+%%  Thomas
+%%  Transfiguration
+
+
+\end{document}

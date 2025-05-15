@@ -1,0 +1,12 @@
+\documentclass{lbi_organ_bind}
+\usepackage[nofragment, insert=systems]{lyluatex}
+
+\begin{document}
+\null\clearpage
+
+
+\chaptermark{Chapter what}
+\sectionmark{Morning Prayer}
+\input{1-Lauds-Organ.tex}
+
+\end{document}

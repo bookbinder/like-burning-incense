@@ -1,0 +1,6 @@
+Since lyluatex does its includes from the current working directory
+and not from the directory of the .tex document in question, then if I want
+to use one Score file in the saintsAndSolemnities directory instead having
+a Score file for each subdirectory, then I need to use absolute paths in files
+like saintsAndSolemnities/0531_The_Visitation_of_Mary/1-Lauds-1-Ant-Cantor.ly,
+etc.
