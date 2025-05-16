@@ -1,0 +1,6 @@
+#lang racket
+(require racket/include)
+
+(include "test2.rkt")
+
+psalm-dict

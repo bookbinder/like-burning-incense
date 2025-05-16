@@ -2,14 +2,14 @@
 
 % Will need these variables to build the cantor and organ scores:
 antiphon = "1"
-psalmtone = "14"
-antKeysig = \key e \major
-psalmnum = "Ps_92"
+psalmtone = "80"
+antKeysig = \key c \major
+psalmnum = "Ps_63_2-9"
 % transposition interval for the corresponding psalm tone
 % to match the key signature of this antiphon. For
 % use in in cantor (antiphon) and organ (psalm) scores
 frompitch = a
-topitch = gis
+topitch = a
 %% master transposition after accounting for psalm tone
 master-from-pitch = a
 master-to-pitch = a
@@ -17,29 +17,30 @@ master-to-pitch = a
 
 text = \lyricmode {
   \set includeGraceNotes = ##t
-  How won -- der -- ful
+  He lived a ho -- ly life;
   \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
-  are your works, O Lord, al -- le -- lu -- ia.
+  Be -- ne -- dict, bles -- sed in name and in grace.
 }
 sopNotesAnt = \relative e' {
-  r8 e8 gis gis fis4
-  \noBreak \hideNotes fis16 \unHideNotes
-  \allowBreak e8
-  \allowBreak fis
-  \allowBreak gis[ a]
-  \allowBreak gis
-  \allowBreak gis4( fis) \bar "'"
-  \allowBreak gis8
-  \allowBreak b[ gis]
-  \allowBreak fis[ gis fis e]
-  \allowBreak e4 \bar "||"
+  r8 f8 f e e d d4
+  \noBreak \hideNotes d16 \unHideNotes
+  \allowBreak a'8
+  \allowBreak a
+  \allowBreak a4
+  \allowBreak g8
+  \allowBreak a
+  \allowBreak g
+  \allowBreak f4
+  \allowBreak f8
+  \allowBreak e
+  \allowBreak e4( d) \bar "||"
 }
 altoNotesAnt = \relative c' {
-  b4 cis2. s16 e4. dis\breve*5/16 e4 cis2 gis4
+  a2~^"Different psalm tone. Does it work?"  a2 s16 c2~ c4.~ c2 a2
 }
 tenorNotesAnt = \relative g {
-  gis4 a2. s16 b4.~ b\breve*5/16 e,4~ e2~ e4
+  f2 g4 f4~ s16 f2 e4. a4 g f2
 }
 bassNotesAnt = \relative c {
-  e4~ e2.~ s16 e4. b\breve*5/16 gis4 a2 e4
+  d2~ d2 s16 f,2 c'4.~ c2 d2
 }
