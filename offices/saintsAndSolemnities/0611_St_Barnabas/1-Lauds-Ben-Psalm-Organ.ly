@@ -3,7 +3,7 @@
 \include "/home/ryan/scores/like-burning-incense/lbi_defs.ily"
 
 % get variables from the notes file
-\include "notes/1-Lauds-Ben-Ant.ily"
+\include "/home/ryan/scores/like-burning-incense/offices/saintsAndSolemnities/0611_St_Barnabas/notes/1-Lauds-Ben-Ant.ily"
 
 % notes for the psalm tone:
 \include #(string-append "/home/ryan/scores/like-burning-incense/psalmtones/notes/" psalmtone "-notes.ily")
