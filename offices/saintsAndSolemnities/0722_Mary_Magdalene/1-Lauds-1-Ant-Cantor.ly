@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 \include "/home/ryan/scores/like-burning-incense/lbi_defs_cantor.ily"
-\include "/home/ryan/scores/like-burning-incense/offices/saintsAndSolemnities/0711_St_Benedict_of_Nursia/notes/1-Lauds-1-Ant.ily"
+\include "/home/ryan/scores/like-burning-incense/offices/saintsAndSolemnities/0722_Mary_Magdalene/notes/1-Lauds-1-Ant.ily"
 \include #(string-append "/home/ryan/scores/like-burning-incense/psalmtones/notes/" psalmtone "-notes.ily")
 
 

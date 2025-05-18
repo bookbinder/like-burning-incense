@@ -24,7 +24,7 @@
           \small \sopranoShort
         }
       }
-      \new Lyrics \lyricsto Soprano { \override LyricText.font-size = \lyricsize
+      \new Lyrics \lyricsto Soprano { \mylyricsize
                                       \text }
     >>
   }  

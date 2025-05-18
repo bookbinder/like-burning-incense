@@ -27,7 +27,7 @@
           \small \sopranoShort
         }
       }
-      \new Lyrics \lyricsto Soprano \text
+      \new Lyrics \lyricsto Soprano { \mylyricsize \text }
     >>
   }  
   \layout {

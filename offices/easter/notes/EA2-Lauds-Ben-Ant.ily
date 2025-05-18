@@ -1,4 +1,4 @@
-\version "2.24.0"
+n\version "2.24.0"
 
 % Will need these variables to build the cantor and organ scores:
 antKeysig = \key ges \major

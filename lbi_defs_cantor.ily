@@ -31,6 +31,8 @@ lr = {
 }
 
 lyricsize = #1.6
+mylyricsize = { \override LyricText.font-size = #1.5 }
+
 
 global = {  
     \cadenzaOn
