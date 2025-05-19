@@ -4,6 +4,10 @@ If you are just here for the PDF files, see
 [this Google Drive link](
 https://drive.google.com/drive/folders/1ygq5PmqaLeVCf3xUOsLA-igjyIiH6In_?usp=sharing). Currently contains complete organ and cantor scores for Weeks 1-4 in Ordinary Time with Sunday Gospel Canticles for weeks 2-33, as well as psalm tones.
 
+# Update: May 2025
+
+I'm making progress on the seasons of Advent, Lent, and Easter, and have started working on the Sanctoral. I should have Morning Prayer for those seasons finished in half a year.  I made it easier to transpose the antiphons and accompaniments for the corresponding psalm. Antiphons with six flats in the original antiphonary are now transposed down a semi-tone to one flat. When I finish this, then it should be relatively easy to create a new version of the Psalter containing the Gethsemani antiphons matched with Gregorian (instead of Gethsemani) psalm tones.
+
 # About
 
 *“Like Burning Incense”* (LBI) is the name of an antiphonary for the Liturgy of
