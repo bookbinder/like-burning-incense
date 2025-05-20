@@ -24,8 +24,16 @@ text = \lyricmode {
 sopNotesAnt = \relative e' {
   r8 aes8 g! aes f ees f[ ees] des des4  
   \noBreak \hideNotes des16 \unHideNotes
-  ees8[ f] ees des[ f] aes bes4 bes \bar "'"
-  aes8 g![ aes] f8([ ees] f[ ees des]) des4 \bar "||"
+  \allowBreak ees8[ f]
+  \allowBreak ees
+  \allowBreak des[ f]
+  \allowBreak aes
+  \allowBreak bes4
+  \allowBreak bes \bar "'"
+  \allowBreak aes8
+  \allowBreak g![ aes]
+  \allowBreak f8([ ees] f[ ees des])
+  \allowBreak des4 \bar "||"
 }
 altoNotesAnt = \relative c' {
   des\breve*11/16 s16 s4. des4. f\breve*5/16 des4~ des\breve*5/16~ des4

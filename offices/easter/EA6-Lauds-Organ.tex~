@@ -1,0 +1,5 @@
+%%%% Begin Ant4
+\lilypondfile[line-width=6.9in]{EA6-Lauds-Ben-Ant-Organ.ly}
+\null\medskip\lilypondfile[line-width=6.9in]{EA6-Lauds-Ben-Psalm-Organ.ly}
+\newpage
+%%%% End Ant4

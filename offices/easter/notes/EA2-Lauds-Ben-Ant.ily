@@ -1,4 +1,4 @@
-n\version "2.24.0"
+\version "2.24.0"
 
 % Will need these variables to build the cantor and organ scores:
 antKeysig = \key ges \major
@@ -12,8 +12,8 @@ psalmnum = "Benedictus"
 frompitch = a
 topitch = a
 %% master transposition after accounting for psalm tone
-master-from-pitch = a
-master-to-pitch = a
+master-from-pitch = ges
+master-to-pitch = f
 
 
 text = \lyricmode {

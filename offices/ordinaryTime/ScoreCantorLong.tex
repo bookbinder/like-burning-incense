@@ -19,7 +19,7 @@
 \newfontfamily\QuintFirst[Scale=2]{Quintessential}
 
 \usepackage{lettrine}
-
+\renewcommand{\LettrineFontHook}{\QuintFirst}
 \usepackage[nofragment, insert=systems]{lyluatex}
 %% \setluaoption{ly}{pass-fonts}{true}
 
@@ -121,6 +121,12 @@
 \noindent{\color{red}---}#1 #2
 }
 \newcommand{\intercessions}{\null\subsection{\textsc{Intercessions}}}
+\newcommand{\psalmody}{\null\subsection{\textsc{Psalmody}}}
+\newcommand{\hymn}{\null\subsection{\textsc{Hymn}}}
+\newcommand{\benedictus}{\null\subsection{\textsc{Canticle of Zechariah}}}
+\newcommand{\magnificat}{\null\subsection{\textsc{Canticle of Mary}}}
+\newcommand{\gospelcanticle}{\null\subsection{\textsc{Gospel Canticle}}}
+\newcommand{\nogospelcanticle}{\subsection{\textsc{Gospel Canticle}, antiphon as in the Proper of Seasons.}}
 %% \raggedright
 \raggedbottom
 
@@ -136,12 +142,12 @@
 \halign{##\cr\hss\makebox(0,0){\hspace{0pt}\myaccentcolor\myaccentsize\char"00B4}\hss\cr\noalign{\myaccentpositionl}#1\cr}}}
 \newcommand{\Med}{~\raisebox{2pt}{\myastcolor$\ast$}}
 \newcommand{\Flex}{~{\myastcolor\textdagger}}
-\newcommand{\Desc}[2]{\linespread{0.1}{\paragraph{}{\noindent\small\emph{#1} #2}}}
-
+\newcommand{\Desc}[2]{\linespread{0.1}{\noindent\small\emph{#1} #2}}
 
 \hyphenation{Co-rin-thi-an}
 \hyphenation{Co-rin-thi-ans}
 \hyphenation{E-phe-sians}
+\hyphenation{Mat-thew}
 
 \begin{document}
 

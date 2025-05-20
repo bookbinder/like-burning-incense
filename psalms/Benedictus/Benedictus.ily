@@ -74,7 +74,8 @@ bassMusic = {
       }
     >>
     
-    \layout { 
+    \layout {
+      #(layout-set-staff-size 14)
         \context { 
             \Staff 
             \remove Time_signature_engraver 

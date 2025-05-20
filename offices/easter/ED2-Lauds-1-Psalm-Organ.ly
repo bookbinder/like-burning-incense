@@ -2,7 +2,7 @@
 
 \include "/home/ryan/scores/like-burning-incense/lbi_defs.ily"
 
-%% update
+%% update2
 
 % get variables from the notes file
 \include "notes/ED2-Lauds-1-Ant.ily"

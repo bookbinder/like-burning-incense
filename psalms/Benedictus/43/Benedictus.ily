@@ -23,11 +23,7 @@ text = \lyricmode {
     \ll "holy and righteous" in his sight
     \ll "all the days of" our life.
 
-    \ll "You, my child, shall be called the prophet of" the Most High,
-    \ll "for you will go before the Lord to prepare" his way,
-    \ll "to give his people knowledge" of sal -- vation
-    \ll "by the forgiveness of" their sins.
-
+    
 
 }
 textB = \lyricmode {
@@ -35,15 +31,21 @@ textB = \lyricmode {
 %    \override InstrumentName #'font-series = #'bold	
     \set includeGraceNotes = ##t
     \set stanza = # "2. "
-%    \set shortVocalName = "2."
+    %    \set shortVocalName = "2."
+    \ll "You, my child, shall be called the prophet of" the Most High,
+    \ll "for you will go before the Lord to prepare" his way,
+    \ll "to give his people knowledge" of sal -- vation
+    \ll "by the forgiveness of" their sins.
+
+    \ll "-------->" "-->"
     \ll "In the tender compassion" of our God
     \ll "the dawn from on high shall break" u -- \ll "pon us,"
     \ll "to shine on those who dwell in darkness and the sha" -- dow of death,
     \ll "and to guide our feet into the way" of peace.
 
-    \ll "---->" "-->"
     \ll "Glory to the Father and" to the Son,
     \ll "and to the Ho" -- ly \ll Spirit:
+    \ll "---->" "-->"
     \ll "as it was in the begin" -- ning, is now,
     \ll "and will be for ever." A -- men.
 }

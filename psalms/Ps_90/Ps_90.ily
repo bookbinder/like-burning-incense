@@ -3,9 +3,6 @@
     psalm_subtitle = "May we live in the radiance of God"
 }
 
-AB+AB+ABABAB
-ABABABAB+
-
 sopMusic = {
     \global
     \voiceOne
@@ -17,7 +14,7 @@ sopMusic = {
     \sopranoTwoFlex
     \sopranoOne 
     \sopranoTwo
-    \sopranoaOne
+    \sopranoOne
     \sopranoTwo
     \sopranoOne
     \sopranoTwo
@@ -34,7 +31,7 @@ altoMusic = {
     \altoTwoFlex
     \altoOne 
     \altoTwo
-    \altoaOne
+    \altoOne
     \altoTwo
     \altoOne
     \altoTwo
@@ -50,7 +47,7 @@ tenorMusic = {
     \tenorTwoFlex
     \tenorOne 
     \tenorTwo
-    \tenoraOne
+    \tenorOne
     \tenorTwo
     \tenorOne
     \tenorTwo
@@ -66,7 +63,7 @@ bassMusic = {
     \bassTwoFlex
     \bassOne 
     \bassTwo
-    \bassaOne
+    \bassOne
     \bassTwo
     \bassOne
     \bassTwo
