@@ -12,8 +12,8 @@ psalmnum = "Exod_15_1-4a,_8-13,_17-18"
 frompitch = a
 topitch = a
 %% master transposition after accounting for psalm tone
-master-from-pitch = a
-master-to-pitch = a
+master-from-pitch = ges
+master-to-pitch = f
 
 
 text = \lyricmode {

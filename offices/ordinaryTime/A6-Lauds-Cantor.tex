@@ -1,56 +1,68 @@
-\hymn
+\opt{hymn}{\hymn}
 
-\psalmody
+\opt{psalmody-heading}{\psalmody}
 
 %%%% Begin Ant1
 \antiphonA
 \input{~/scores/like-burning-incense/psalms/Ps_51/vars.tex}
 \lilypondfile[line-width=3.73in]{A6-Lauds-1-Ant-Cantor.ly}
-\psalm{\psalmtitle}
-\psalmsubtitle{\subhead}
-\Desc{\descA}{\descB}
-\input{~/scores/like-burning-incense/psalms/Ps_51/33/Ps_51.tex}
-\antiphon
-\lilypondfile[line-width=3.73in]{A6-Lauds-1-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Ps_51/33/Ps_51.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{A6-Lauds-1-Ant-Cantor.ly}
+  }
 %%%% End Ant1
 
 %%%% Begin Ant2
 \antiphonB
 \input{~/scores/like-burning-incense/psalms/Isa_45_15-25/vars.tex}
 \lilypondfile[line-width=3.73in]{A6-Lauds-2-Ant-Cantor.ly}
-\psalm{\psalmtitle}
-\psalmsubtitle{\subhead}
-\Desc{\descA}{\descB}
-\input{~/scores/like-burning-incense/psalms/Isa_45_15-25/33/Isa_45_15-25.tex}
-\antiphon
-\lilypondfile[line-width=3.73in]{A6-Lauds-2-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Isa_45_15-25/33/Isa_45_15-25.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{A6-Lauds-2-Ant-Cantor.ly}
+  }
 %%%% End Ant2
 
 %%%% Begin Ant3
 \antiphonC
 \input{~/scores/like-burning-incense/psalms/Ps_100/vars.tex}
 \lilypondfile[line-width=3.73in]{A6-Lauds-3-Ant-Cantor.ly}
-\psalm{\psalmtitle}
-\psalmsubtitle{\subhead}
-\Desc{\descA}{\descB}
-\input{~/scores/like-burning-incense/psalms/Ps_100/43/Ps_100.tex}
-\antiphon
-\lilypondfile[line-width=3.73in]{A6-Lauds-3-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Ps_100/43/Ps_100.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{A6-Lauds-3-Ant-Cantor.ly}
+  }
 %%%% End Ant3
 
 \input{A6-Lauds-Reading.tex}
 
 \input{A6-Lauds-Responsory.tex}
 
-\gospelcanticle
+\opt{gospelcanticle-heading}{\gospelcanticle}
 
 %%%% Begin Ant4
-\null\antiphonBen
+\antiphonBen
 \lilypondfile[line-width=3.73in]{A6-Lauds-Ben-Ant-Cantor.ly}
-\psalm{Benedictus}
-\input{~/scores/like-burning-incense/psalms/Benedictus/42/Benedictus.tex}
-\antiphon
-\lilypondfile[line-width=3.73in]{A6-Lauds-Ben-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{Benedictus}
+  \input{~/scores/like-burning-incense/psalms/Benedictus/42/Benedictus.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{A6-Lauds-Ben-Ant-Cantor.ly}
+  }
 %%%% End Ant4
 
 \input{A6-Lauds-Intercessions.tex}

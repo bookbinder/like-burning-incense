@@ -2,7 +2,7 @@
 %% include "../../../lbi_defs.ily"
 
 antiphon = "1"
-psalmnum = "Ps_119_105-112_(XIV_Nun)"
+psalmnum = "Ps_119_105-112"
 psalmtone = "48"
 psalmtonestruct = "43"
 antKeysig = \key aes \major

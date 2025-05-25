@@ -1,56 +1,68 @@
-\hymn
+\opt{hymn}{\hymn}
 
-\psalmody
+\opt{psalmody-heading}{\psalmody}
 
 %%%% Begin Ant1
 \antiphonA
 \input{~/scores/like-burning-incense/psalms/Ps_84/vars.tex}
 \lilypondfile[line-width=3.73in]{C2-Lauds-1-Ant-Cantor.ly}
-\psalm{\psalmtitle}
-\psalmsubtitle{\subhead}
-\Desc{\descA}{\descB}
-\input{~/scores/like-burning-incense/psalms/Ps_84/43/Ps_84.tex}
-\antiphon
-\lilypondfile[line-width=3.73in]{C2-Lauds-1-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Ps_84/43/Ps_84.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{C2-Lauds-1-Ant-Cantor.ly}
+  }
 %%%% End Ant1
 
 %%%% Begin Ant2
 \antiphonB
 \input{~/scores/like-burning-incense/psalms/Isa_2_2-5/vars.tex}
 \lilypondfile[line-width=3.73in]{C2-Lauds-2-Ant-Cantor.ly}
-\psalm{\psalmtitle}
-\psalmsubtitle{\subhead}
-\Desc{\descA}{\descB}
-\input{~/scores/like-burning-incense/psalms/Isa_2_2-5/44/Isa_2_2-5.tex}
-\antiphon
-\lilypondfile[line-width=3.73in]{C2-Lauds-2-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Isa_2_2-5/44/Isa_2_2-5.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{C2-Lauds-2-Ant-Cantor.ly}
+  }
 %%%% End Ant2
 
 %%%% Begin Ant3
 \antiphonC
 \input{~/scores/like-burning-incense/psalms/Ps_96/vars.tex}
 \lilypondfile[line-width=3.73in]{C2-Lauds-3-Ant-Cantor.ly}
-\psalm{\psalmtitle}
-\psalmsubtitle{\subhead}
-\Desc{\descA}{\descB}
-\input{~/scores/like-burning-incense/psalms/Ps_96/33/Ps_96.tex}
-\antiphon
-\lilypondfile[line-width=3.73in]{C2-Lauds-3-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Ps_96/33/Ps_96.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{C2-Lauds-3-Ant-Cantor.ly}
+  }
 %%%% End Ant3
 
 \input{C2-Lauds-Reading.tex}
 
 \input{C2-Lauds-Responsory.tex}
 
-\gospelcanticle
+\opt{gospelcanticle-heading}{\gospelcanticle}
 
 %%%% Begin Ant4
-\null\antiphonBen
+\antiphonBen
 \lilypondfile[line-width=3.73in]{C2-Lauds-Ben-Ant-Cantor.ly}
-\psalm{Benedictus}
-\input{~/scores/like-burning-incense/psalms/Benedictus/33/Benedictus.tex}
-\antiphon
-\lilypondfile[line-width=3.73in]{C2-Lauds-Ben-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{Benedictus}
+  \input{~/scores/like-burning-incense/psalms/Benedictus/33/Benedictus.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{C2-Lauds-Ben-Ant-Cantor.ly}
+  }
 %%%% End Ant4
 
 \input{C2-Lauds-Intercessions.tex}

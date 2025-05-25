@@ -1,37 +1,46 @@
 %%%% Begin Ant1
-\subsubsection{Antiphon 1}
+\antiphonA
 \input{~/scores/like-burning-incense/psalms/Ps_110_1-5,_7/vars.tex}
-\noindent\lilypondfile[line-width=3.73in]{D1-Vespers-1-Ant-Cantor.ly}
-\subsection{\psalmtitle}
-\subsubsection{\subhead}
-\Desc{\descA}{\descB}
-\input{~/scores/like-burning-incense/psalms/Ps_110_1-5,_7/33/Ps_110_1-5,_7.tex}
-\subsubsection{Antiphon}
 \lilypondfile[line-width=3.73in]{D1-Vespers-1-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Ps_110_1-5,_7/33/Ps_110_1-5,_7.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{D1-Vespers-1-Ant-Cantor.ly}
+  }
 %%%% End Ant1
 
 %%%% Begin Ant2
-\null\smallskip\subsubsection{Antiphon 2}
+\antiphonB
 \input{~/scores/like-burning-incense/psalms/Ps_112/vars.tex}
-\noindent\lilypondfile[line-width=3.73in]{D1-Vespers-2-Ant-Cantor.ly}
-\subsection{\psalmtitle}
-\subsubsection{\subhead}
-\Desc{\descA}{\descB}
-\input{~/scores/like-burning-incense/psalms/Ps_112/33/Ps_112.tex}
-\subsubsection{Antiphon}
 \lilypondfile[line-width=3.73in]{D1-Vespers-2-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Ps_112/33/Ps_112.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{D1-Vespers-2-Ant-Cantor.ly}
+  }
 %%%% End Ant2
 
 %%%% Begin Ant3
-\null\smallskip\subsubsection{Antiphon 3}
+\antiphonC
 \input{~/scores/like-burning-incense/psalms/Rev_19_1-7/vars.tex}
-\noindent\lilypondfile[line-width=3.73in]{D1-Vespers-3-Ant-Cantor.ly}
-\subsection{\psalmtitle}
-\subsubsection{\subhead}
-\Desc{\descA}{\descB}
-\input{~/scores/like-burning-incense/psalms/Rev_19_1-7/special/Rev_19_1-7.tex}
-\subsubsection{Antiphon}
 \lilypondfile[line-width=3.73in]{D1-Vespers-3-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \null\smallskip\lilypondfile[line-width=3.73in]{A1-Vespers-3a-Ant-Cantor.ly}
+  \input{~/scores/like-burning-incense/psalms/Rev_19_1-7/special/Rev_19_1-7.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{D1-Vespers-3-Ant-Cantor.ly}
+  }
 %%%% End Ant3
 
 \input{D1-Vespers-Reading.tex}

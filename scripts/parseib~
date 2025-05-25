@@ -1,0 +1,887 @@
+#!/usr/bin/racket
+#lang racket
+
+;; This script parses pasted-in data from iBreviary.com.
+;; First it asks for a stem (e.g. A1-Lauds), then for a string pasted in
+;; from iBreviary. Based on that, the script creates a string for a
+;; <stem>-Readings.tex file, one for a <stem>-Responsory.tex file, one
+;; for a <stem>-Intercessions.tex file, and one for a <stem>-Prayer.tex
+;; file. It creates/overwrites those files and updates the
+;; <stem>-Cantor.tex file.
+
+(define s
+  "Breviary
+    Reading
+    Prayers
+    Missal
+    More
+
+Breviary
+
+Morning Prayer
+
+INVITATORY
+
+The Invitatory is said when this is the first ‘hour’ of the day.
+
+Go to the Hymn
+
+Go to the Psalmody
+
+Lord, + open my lips.
+— And my mouth will proclaim your praise.
+
+Ant. The Lord is risen, alleluia.
+
+The antiphon is repeated. In individual recitation, the antiphon may be said only at the beginning of the psalm; it need not be repeated after each strophe.
+
+Psalm 24
+
+Psalm 67
+
+Psalm 100
+
+Psalm 95
+A call to praise God
+
+Encourage each other daily while it is still today (Hebrews 3:13).
+
+Come, let us sing to the Lord *
+  and shout with joy to the Rock who saves us.
+Let us approach him with praise and thanksgiving *
+  and sing joyful songs to the Lord.
+
+Ant. The Lord is risen, alleluia.
+
+The Lord is God, the mighty God, *
+  the great king over all the gods.
+He holds in his hands the depths of the earth *
+  and the highest mountains as well.
+He made the sea; it belongs to him, *
+  the dry land, too, for it was formed by his hands.
+
+Ant. The Lord is risen, alleluia.
+
+Come, then, let us bow down and worship, *
+  bending the knee before the Lord, our maker.
+For he is our God and we are his people, *
+  the flock he shepherds.
+
+Ant. The Lord is risen, alleluia.
+
+Today, listen to the voice of the Lord: †
+Do not grow stubborn, as your fathers did
+  in the wilderness, *
+when at Meriba and Massah
+  they challenged me and provoked me, *
+Although they had seen all of my works.
+
+Ant. The Lord is risen, alleluia.
+
+Forty years I endured that generation. *
+I said, “They are a people whose hearts go astray
+  and they do not know my ways.”
+So I swore in my anger, *
+  “They shall not enter into my rest.”
+
+Ant. The Lord is risen, alleluia.
+
+Glory to the Father, and to the Son, *
+and to the Holy Spirit:
+as it was in the beginning, is now, *
+and will be for ever. Amen.
+
+Ant. The Lord is risen, alleluia.
+
+If the Invitatory is not said, then the following is used:
+
+God, + come to my assistance.
+— Lord, make haste to help me.
+
+Glory to the Father, and to the Son, and to the Holy Spirit:
+— as it was in the beginning, is now, and will be for ever. Amen. Alleluia.
+
+HYMN
+
+Alternate Hymns
+
+The morning light dawns crimson gold,
+all heaven echoes hymns of praise,
+the world exulting shouts for joy,
+and hell with groaning howls in grief.
+
+For that most strong and mighty King,
+by crushing all the pow’rs of death
+and trampling hell beneath his feet,
+has freed the wretched from their chains.
+
+Enclosed within a tomb of stone,
+secured by strong and zealous guard,
+the Victor rises from the grave,
+in triumph nobly marching forth.
+
+Now grief of hell and cries of woe,
+all pain and sorrow are undone;
+an angel, clothed in light, proclaims:
+The Lord is risen as he said.
+
+O Jesus, be for mind and heart
+our everlasting paschal joy
+and gather us, reborn by grace,
+to share your triumphs evermore.
+
+To you, Lord Jesus, glory be,
+who shine in vict’ry over death,
+with God the Father, ever blest,
+and loving Spirit, ever one. Amen.
+
+Tune: DUKE STREET, 8 8 8 8
+Music: attributed to John Warrington Hatton, ca. 1710-1793, in William Dixon’s Euphonia, ca. 1805
+or Mode VIII, melody 98; Liber Hymnarius, Solesmes, 1983
+Text: Aurora lucis rutilat, 5th c., © 2023 ICEL
+
+Continue with the Psalmody
+
+Or:
+
+Now let the new Jerusalem
+draw forth new sweetness from this hymn,
+and let the chorus celebrate
+with solemn joy this Paschal Feast.
+
+For Christ, unconquered lion comes,
+the dragon crushed beneath his feet;
+with living voice he cries aloud,
+and, rising, wakes the dead from death.
+
+The prey that Satan had devoured
+his nether kingdom must expel:
+a crowd of captives, free at last,
+now follows Jesus from the tomb.
+
+He triumphs, filled with splendid light,
+in sov’reign pow’r and majesty;
+he forms a single commonwealth,
+one native land of heav’n and earth.
+
+Let us entreat him with our song
+as soldiers of our God and King,
+that rank on rank he order us
+within the splendor of his courts.
+
+O Jesus, be for mind and heart
+our everlasting paschal joy
+and gather us, reborn by grace,
+to share your triumphs evermore.
+
+To you, Lord Jesus, glory be,
+who shine in vict’ry over death,
+with God the Father, ever blest,
+and loving Spirit, ever one. Amen.
+
+Tune: DUKE STREET, as above
+or Mode I, melody 10; Liber Hymnarius, Solesmes, 1983
+Text: Chorus novæ Ierusalem, Saint Fulbert of Chartres, ca. 960-1029, © 2023 ICEL
+
+PSALMODY
+
+Ant. 1 You, O Lord, are the source of life, alleluia.
+
+Psalm 36
+The malice of sinners and God’s goodness
+
+No follower of mine wanders in the dark; he shall have the light of life (John 8:12).
+
+Sin speaks to the sinner *
+in the depths of his heart.
+There is no fear of God *
+before his eyes.
+
+He so flatters himself in his mind *
+that he knows not his guilt.
+In his mouth are mischief and deceit. *
+All wisdom is gone.
+
+He plots the defeat of goodness *
+as he lies on his bed.
+He has set his foot on evil ways, *
+he clings to what is evil.
+
+Your love, Lord, reaches to heaven; *
+your truth to the skies.
+Your justice is like God’s mountain, *
+your judgments like the deep.
+
+To both man and beast you give protection. *
+O Lord, how precious is your love.
+My God, the sons of men *
+find refuge in the shelter of your wings.
+
+They feast on the riches of your house; *
+they drink from the stream of your delight.
+In you is the source of life *
+and in your light we see light.
+
+Keep on loving those who know you, *
+doing justice for upright hearts.
+Let the foot of the proud not crush me *
+nor the hand of the wicked cast me out.
+
+See how the evildoers fall! *
+Flung down, they shall never arise.
+
+Glory to the Father and to the Son *
+and to the Holy Spirit:
+as it was in the beginning, is now, *
+and will be for ever. Amen.
+
+Psalm Prayer
+
+Lord, you are the source of unfailing light. Give us true knowledge of your mercy so that we may renounce our pride and be filled with the riches of your house.
+
+Ant. You, O Lord, are the source of life, alleluia.
+
+Ant. 2 You sent forth your Spirit, O Lord, and all things were created, alelluia.
+
+Canticle: Judith 16:2-3a, 13-15
+God who created the world takes care of his people
+
+They were singing a new song (Revelation 5:9).
+
+Strike up the instruments, *
+a song to my God with timbrels,
+chant to the Lord with cymbals. †
+Sing to him a new song, *
+exalt and acclaim his name.
+
+A new hymn I will sing to my God. †
+O Lord, great are you and glorious, *
+wonderful in power and unsurpassable.
+
+Let your every creature serve you; *
+for you spoke, and they were made,
+you sent forth your spirit, and they were created; *
+no one can resist your word.
+
+The mountains to their bases, and the seas, are shaken; *
+the rocks, like wax, melt before your glance.
+But to those who fear you, *
+you are very merciful.
+
+Glory to the Father and to the Son *
+and to the Holy Spirit:
+as it was in the beginning, is now, *
+and will be for ever. Amen.
+
+Ant. You sent forth your Spirit, O Lord, and all things were created, alelluia.
+
+Ant. 3 God is king over all the earth; make music for him with all your skill, alleluia.
+
+Psalm 47
+The Lord Jesus is King of all
+
+He is seated at the right hand of the Father and his kingdom will have no end.
+
+All peoples, clap your hands, *
+cry to God with shouts of joy!
+For the Lord, the Most High, we must fear, *
+great king over all the earth.
+
+He subdues peoples under us *
+and nations under our feet.
+Our inheritance, our glory, is from him, *
+given to Jacob out of love.
+
+God goes up with shouts of joy; *
+the Lord goes up with trumpet blast.
+Sing praise for God, sing praise, *
+sing praise to our king, sing praise.
+
+God is king of all the earth. *
+Sing praise with all your skill.
+God is king over the nations; *
+God reigns on his holy throne.
+
+The princes of the people are assembled *
+with the people of Abraham’s God.
+The rulers of the earth belong to God, *
+to God who reigns over all.
+
+Glory to the Father and to the Son *
+and to the Holy Spirit:
+as it was in the beginning, is now, *
+and will be for ever. Amen.
+
+Psalm Prayer
+
+God, King of all peoples and all ages, it is your victory we celebrate as we sing with all the skill at our command. Help us always to overcome evil by good, that we may rejoice in your triumph for ever.
+
+Ant. God is king over all the earth; make music for him with all your skill, alleluia.
+
+READING
+Romans 6:8-11
+
+If we have died with Christ, we believe that we are also to live with him. We know that Christ, once raised from the dead, will never die again; death has no more power over him. His death was death to sin, once for all; his life is life for God. In the same way, you must consider yourselves dead to sin but alive for God in Christ Jesus.
+
+RESPONSORY
+
+The Lord is risen from the tomb, alleluia, alleluia.
+— The Lord is risen from the tomb, alleluia, alleluia.
+
+He hung upon the cross for us,
+— alleluia, alleluia.
+
+Glory to the Father, and to the Son, and to the Holy Spirit.
+— The Lord is risen from the tomb, alleluia, alleluia.
+
+GOSPEL CANTICLE
+
+Ant. I am the true vine, alleluia; you are the branches, alleluia.
+
+Canticle of Zechariah
+Luke 1:68-79
+The Messiah and his forerunner
+
+Blessed + be the Lord, the God of Israel; *
+he has come to his people and set them free.
+
+He has raised up for us a mighty savior, *
+born of the house of his servant David.
+
+Through his holy prophets he promised of old †
+  that he would save us from our enemies, *
+  from the hands of all who hate us.
+
+He promised to show mercy to our fathers *
+and to remember his holy covenant.
+
+This was the oath he swore to our father Abraham: *
+to set us free from the hands of our enemies,
+free to worship him without fear, *
+holy and righteous in his sight
+   all the days of our life.
+
+You, my child, shall be called the prophet of the Most High; *
+for you will go before the Lord to prepare his way,
+to give his people knowledge of salvation *
+by the forgiveness of their sins.
+
+In the tender compassion of our God *
+the dawn from on high shall break upon us,
+to shine on those who dwell in darkness and the shadow of death, *
+and to guide our feet into the way of peace.
+
+Glory to the Father, and to the Son, *
+and to the Holy Spirit:
+as it was in the beginning, is now, *
+and will be for ever. Amen.
+
+Ant. I am the true vine, alleluia; you are the branches, alleluia.
+
+INTERCESSIONS
+
+Christ was given up for our sins and rose again to make us righteous. Let us cry out to him, saying:
+Save us, Lord, by your victory.
+
+Christ our Savior, in conquering death you brought us joy, in rising again you raised us up and filled us with the abundance of your gifts,
+— stir up our hearts, and sanctify this day through the gift of your Holy Spirit.
+Save us, Lord, by your victory.
+
+You are glorified by the angels in heaven and adored by mankind on earth; as we celebrate your resurrection,
+— accept our worship in spirit and in truth.
+Save us, Lord, by your victory.
+
+Lord Jesus, save us; show your great mercy to your people, as we look forward to our own resurrection,
+— have mercy on us, and protect us today from every evil.
+Save us, Lord, by your victory.
+
+King of glory, source of our life, grant that, when you come again,
+— we may be one with you in glory
+Save us, Lord, by your victory.
+
+THE LORD’S PRAYER
+
+(Remember us, Lord, when you come to your kingdom, and teach us how to pray:)
+
+Our Father, who art in heaven,
+hallowed be thy name;
+thy kingdom come.
+thy will be done
+on earth as it is in heaven.
+Give us this day our daily bread;
+and forgive us our trespasses
+as we forgive those who trespass against us;
+and lead us not into temptation,
+but deliver us from evil.
+
+CONCLUDING PRAYER
+
+Father of all holiness,
+guide our hearts to you.
+Keep in the light of your truth
+all those you have freed from the darkness of unbelief.
+We ask this through our Lord Jesus Christ, your Son,
+who lives and reigns with you and the Holy Spirit,
+God, for ever and ever.
+— Amen.
+
+Or:
+
+O God, restorer and lover of innocence,
+direct the hearts of your servants towards yourself,
+that those you have set free from the darkness of unbelief
+may never stray from the light of your truth.
+Through our Lord Jesus Christ, your Son,
+who lives and reigns with you in the unity of the Holy Spirit,
+God, for ever and ever.
+— Amen.
+
+DISMISSAL
+
+If a priest or deacon presides, he dismisses the people:
+
+The Lord be with you.
+— And with your spirit.
+
+May almighty God bless you,
+the Father, and the Son, and the Holy Spirit.
+— Amen.
+
+Another form of the blessing may be used, as at Mass.
+
+Then he adds:
+
+Go in peace.
+— Thanks be to God.
+
+In the absence of a priest or deacon and in individual recitation, Morning Prayer concludes:
+
+May the Lord + bless us,
+protect us from all evil
+and bring us to everlasting life.
+— Amen.
+
+******
+
+DONATE to support the continued development of the iBreviary
+
+SUBSCRIBE iBreviary newsletter
+
+Psalm 24
+The Lord’s entry into his temple
+
+Christ opened heaven for us in the manhood he assumed (Saint Irenaeus).
+
+The Lord’s is the earth and its fullness, *
+the world and all its peoples.
+It is he who set it on the seas; *
+on the waters he made it firm.
+
+Ant. The Lord is risen, alleluia.
+
+Who shall climb the mountain of the Lord? *
+Who shall stand in his holy place?
+The man with clean hands and pure heart, †
+who desires not worthless things, *
+who has not sworn so as to deceive his neighbor.
+
+Ant. The Lord is risen, alleluia.
+
+He shall receive blessings from the Lord *
+and reward from the God who saves him.
+Such are the men who seek him, *
+seek the face of the God of Jacob.
+
+Ant. The Lord is risen, alleluia.
+
+O gates, lift high your heads; †
+grow higher, ancient doors. *
+Let him enter, the king of glory!
+
+Ant. The Lord is risen, alleluia.
+
+Who is the king of glory? †
+The Lord, the mighty, the valiant, *
+the Lord, the valiant in war.
+
+Ant. The Lord is risen, alleluia.
+
+O gates, lift high your heads; †
+grow higher, ancient doors. *
+Let him enter, the king of glory!
+
+Ant. The Lord is risen, alleluia.
+
+Who is he, the king of glory? †
+He, the Lord of armies, *
+he is the king of glory.
+
+Ant. The Lord is risen, alleluia.
+
+Glory to the Father, and to the Son, *
+and to the Holy Spirit:
+as it was in the beginning, is now, *
+and will be for ever. Amen.
+
+Ant. The Lord is risen, alleluia.
+
+Continue with the Hymn
+
+Psalm 67
+People of all nations will worship the Lord
+
+You must know that God is offering his salvation to all the world (Acts 28:28).
+
+O God, be gracious and bless us *
+and let your face shed its light upon us.
+So will your ways be known upon earth *
+and all nations learn your saving help.
+
+Ant. The Lord is risen, alleluia.
+
+Let the peoples praise you, O God; *
+let all the peoples praise you.
+
+Ant. The Lord is risen, alleluia.
+
+Let the nations be glad and exult *
+for you rule the world with justice.
+With fairness you rule the peoples, *
+you guide the nations on earth.
+
+Ant. The Lord is risen, alleluia.
+
+Let the peoples praise you, O God; *
+let all the peoples praise you.
+
+Ant. The Lord is risen, alleluia.
+
+The earth has yielded its fruit *
+for God, our God, has blessed us.
+May God still give us his blessing *
+till the ends of the earth revere him.
+
+Ant. The Lord is risen, alleluia.
+
+Glory to the Father, and to the Son, *
+and to the Holy Spirit:
+as it was in the beginning, is now, *
+and will be for ever. Amen.
+
+Ant. The Lord is risen, alleluia.
+
+Continue with the Hymn
+
+Psalm 100
+The joyful song of those entering God’s temple
+
+The Lord calls his ransomed people to sing songs of victory (Saint Athanasius).
+
+Cry out with joy to the Lord, all the earth. †
+Serve the Lord with gladness. *
+Come before him, singing for joy.
+
+Ant. The Lord is risen, alleluia.
+
+Know that he, the Lord, is God. †
+He made us, we belong to him, *
+we are his people, the sheep of his flock.
+
+Ant. The Lord is risen, alleluia.
+
+Go within his gates, giving thanks. †
+Enter his courts with songs of praise. *
+Give thanks to him and bless his name.
+
+Ant. The Lord is risen, alleluia.
+
+Indeed, how good is the Lord, †
+eternal his merciful love. *
+He is faithful from age to age.
+
+Ant. The Lord is risen, alleluia.
+
+Glory to the Father, and to the Son, *
+and to the Holy Spirit:
+as it was in the beginning, is now, *
+and will be for ever. Amen.
+
+Ant. The Lord is risen, alleluia.
+
+Continue with the Hymn
+
+Jesus Christ is ris’n today, Alleluia
+Our triumphant holy day, Alleluia!
+Who did once upon the cross, Alleluia!
+Suffer to redeem our loss, Alleluia!
+
+Hymns of praise then let us sing, Alleluia!
+Unto Christ our heav’nly King, Alleluia!
+Who endured the cross and grave, Alleluia!
+Sinners to redeem and save, Alleluia!
+
+But the pains which he endured, Alleluia!
+Our salvation have procured, Alleluia!
+Now He rules eternal King, Alleluia!
+Where the angels ever sing, Alleluia!
+
+Praise to God the Father sing, Alleluia!
+Praise to God the Son, our King, Alleluia!
+Praise to God the Spirit be, Alleluia!
+Now and through eternity, Alleluia!
+
+Tune: Easter Hymn 77.77 with alleluia
+Music: Lyra Davidica, 1708
+Text: Stanza 1 In Lyra Davidica, Latin Carol, paraphrased, 1708, alt; stanzas 2, 3, The Compleat Psalmodist, 1749, alt; stanza 4, William Reynolds, 1860
+
+Continue with the Psalmody
+
+Or:
+
+Alleluia, alleluia, alleluia.
+Ye sons and daughters, let us sing!
+The King of Heav’n, the glorious King,
+O’er death today rose triumphing.
+Alleluia!
+
+Alleluia, alleluia, alleluia.
+That Easter morn, at break of day,
+The faithful women went their way
+To seek the tomb where Jesus lay.
+Alleluia!
+
+Alleluia, alleluia, alleluia.
+An angel clad in white they see,
+Who sat, and spoke unto the three,
+“Your Lord doth go to Galilee.”
+Alleluia!
+
+Alleluia, alleluia, alleluia.
+On this most holy day of days,
+To God your hearts and voices raise,
+In laud and jubilee and praise.
+Alleluia!
+
+Alleluia, alleluia, alleluia.
+And we with Holy Church unite,
+As evermore is just and right,
+In glory to the King of light.
+Alleluia!
+
+Tune: O Filii et Filiae 888 with alleluias
+Music: Seventeenth Century French Proper Melody
+Text: Jean Tisserand, d. 1495
+Translation: John Mason Neale, 1818-1866, alt.
+
+Continue with the Psalmody
+
+Or:
+
+This joyful Eastertide
+Away with sin and sorrow!
+My love, the Crucified,
+Has sprung to life this morrow:
+
+Refrain: Had Christ, who once was slain,
+Not burst his three-day prison,
+Our faith had been in vain:
+But now has Christ arisen,
+Arisen, arisen, arisen;
+But now has Christ arisen!
+
+My flesh in hope shall rest
+And for a season slumber
+Till trump from east to west
+Shall wake the dead in number:
+
+Refrain: Had Christ, who once was slain,
+Not burst his three-day prison,
+Our faith had been in vain:
+But now has Christ arisen,
+Arisen, arisen, arisen;
+But now has Christ arisen!
+
+Death’s flood has lost its chill
+Since Jesus crossed the river;
+Lover of souls, from ill
+My passing soul deliver:
+
+Refrain: Had Christ, who once was slain,
+Not burst his three-day prison,
+Our faith had been in vain:
+But now has Christ arisen,
+Arisen, arisen, arisen;
+But now has Christ arisen!
+
+Tune: Vreuchten 67.67 with refrain
+Music: Ooudaen’s David’s Psalmen, 1685
+Text: George R. Woodward, 1848-1934
+
+Continue with the Psalmody
+
+Or:
+
+This day our risen Savior reigns,
+Creation’s undefeated King,
+While angels in resplendent light
+With mighty voice his triumph sing.
+
+This day the Lord has made his own,
+Who broke from his confining grave,
+His living presence fills the world
+That by his cross he came to save.
+
+To God the Father glory give
+For Jesus Christ his deathless Son,
+Who with the Holy Spirit lives
+Immortal, and for ever one.
+
+Tune: Solemnis Haec Festivas L.M.
+Music: Graduale, 1685
+Text: © 1974 Stanbrook Abbey, used with permission
+
+Continue with the Psalmody
+
+- Menu -")
+
+
+
+;; (define stem (begin (display "Enter a stem (e.g. A1-Lauds): ") (read)))
+(define stem "A2-Lauds")
+;; (define s (begin
+;;             (display "Enter multi-line string (end with Ctrl+D in terminal or Ctrl+Z <Enter> Ctrl+D in emacs shell):\n")
+;;             (port->string (current-input-port))))
+
+(define parts (regexp-match "READING\n(.*?)\nRESPONSORY\n(.*?)\nGOSPEL CANTICLE.*?INTERCESSIONS\n(.*?)\nTHE LORD.*?CONCLUDING PRAYER\n(.*)\nDISMISSAL" s))
+(define reading (string-trim (second parts)))
+(define resp (string-trim (third parts)))
+(define inter (string-trim (fourth parts)))
+(define prayer (string-trim (fifth parts)))
+;; (define curdir (current-directory))
+(define curdir (string->path "/home/ryan/scores/like-burning-incense/offices/ordinaryTime/"))
+(define readingfile (string->path (format "~a~a-Reading.tex"
+                                          curdir stem)))
+(define responsoryfile (string->path (format "~a~a-Responsory.tex"
+                                             curdir stem)))
+(define intercessionsfile (string->path (format "~a~a-Intercessions.tex"
+                                                curdir stem)))
+(define prayerfile (string->path (format "~a~a-Prayer.tex"
+                                            curdir stem)))
+(define cantortexfile (string->path (format "~a~a-Cantor.tex"
+                                            curdir stem)))
+
+(define (get-first-half-of-string full-string second-half)
+  "Given the full string and the second half of that string, return
+the first half. For use in the <stem>-Responsory.tex file."
+  (let loop ([i 0])
+    (if (= i (string-length full-string))
+        (error "Didn't find the substring.")
+        (if (string=? (string-downcase (substring full-string i))
+                      (string-downcase second-half))
+            (substring full-string 0 i)
+            (loop (add1 i))))))
+
+(define (produce-reading s)
+  "Produce the text that will populate the <stem>-Readings.tex file"
+  (let* ([s-parts (regexp-split "\n\n" s)]
+         [first-par (string-split (first (cdr s-parts)) " ")]
+         [first-word (format "\\lettrine{~a}{~a} "
+                             (string-ref (first first-par) 0)
+                             (substring (first first-par) 1))])
+    (set! first-par (string-append
+                     first-word
+                     (string-join (cdr first-par) " ")))
+    (if (= (length s-parts) 2)
+      (format "\\reading{~a}\n\n~a"
+              (string-replace (first s-parts) "-" "--")
+              first-par)
+      (format "\\reading{~a}\n\n~a~a"
+              (string-replace (first s-parts) "-" "--")
+              first-par
+              (string-join (cdr (cdr s-parts)) "\n\n")))))    
+
+(define (produce-responsory s)
+  "Produce the text that will populate the <stem>-Responsory.tex file"
+  (let* ([s (string-replace s "— " "")]
+         [resp-parts (string-split s "\n")]
+         [first-half (get-first-half-of-string
+                      (string-trim (string-replace (first resp-parts) "\n" " "))
+                      (string-trim (string-replace (fifth resp-parts) "\n\n" " ")))])
+    (format "\\responsory{~a}{~a}{~a}"
+            (string-trim first-half)
+            (fifth resp-parts)
+            (fourth resp-parts))))
+
+(define (produce-responsory2 s)
+  "A more fail-safe version."
+  (let* ([s (string-replace s "— " "{\\color{red}---\\thinspace}")]
+         [s (regexp-split "\n\n+" s)]
+         [s (map (λ (x) (string-append "\\noindent " x)) s)]
+         [s (map (λ (x) (string-replace x "\n" "\\\\\n")) s)]
+         [s (string-join s "\n\n\\medskip")])
+    (string-append "\\responsory\n\n" s))
+  )
+
+(define (produce-intercessions s)
+  "Produce the text that will populate the <stem>-Intercessions.tex file"
+  (let* ([s (string-replace (string-trim s) "— " "{\\color{red}---\\thinspace}")]
+         [s (regexp-split "\n\n" s)]
+         [s-parts (map (λ (x) (string-split x "\n")) s)]
+         [res (format "\\intercessions\\indent\n\n\\begin{hangpar}\n\n~a\n\n\\emph{~a}"
+                      (first (first s-parts))
+                      (second (first s-parts)))])
+    (for ([l (cdr s-parts)])
+      (set! res (string-append res (format "\n\n\\medskip ~a\n\n~a"
+                                           (first l) (second l)))))
+    (string-append res "\n\n\\end{hangpar}\n\n")))
+
+(define (produce-prayer s)
+  "Produce the text that will populate the <stem>-Prayer.tex file"
+  (let ([s-parts (map (λ (x) (string-replace x "\n" "\\\\\n"))
+                      (regexp-split "\n\n+"
+                                    (string-replace
+                                     (string-replace s "Or:" "")
+                                     "— Amen"
+                                     "{\\color{red}---\\thinspace}Amen")))])
+    (string-append "\\prayer\n\n\\setlength{\\leftmargini}{\\prayerleftmargini}\n\n\\begin{verse}\n"
+                   (string-join s-parts "\n\n{\\color{red}Or:}\n\n")
+                   "\n\\end{verse}\n\n\\setlength{\\leftmargini}{\\defleftmargini}")
+))
+
+(define (produce-files)
+  "Create/Overwrite the accessory files."
+  (display-to-file
+   (produce-reading reading) readingfile #:exists 'replace)
+  (display-to-file
+   (produce-responsory2 resp) responsoryfile #:exists 'replace)
+  (display-to-file
+   (produce-intercessions inter) intercessionsfile #:exists 'replace)
+  (display-to-file
+   (produce-prayer prayer) prayerfile #:exists 'replace))
+
+
+(define (update-cantor-tex-file)
+  (when (file-exists? cantortexfile)
+    (let* ([s (file->string cantortexfile)]
+           [partsA (regexp-match "(%%%% Begin Ant1.*%%%% End Ant3)(.*)(%%%% Begin Ant4.*%%%% End Ant4)" s)])
+      (if partsA
+          (display-to-file
+           (format
+            "\\hymn\n\n\\psalmody\n\n~a\n\n\\opt{full}{\\input{~a-Reading.tex}\n\n}\\opt{full}{\\input{~a-Responsory.tex}\n\n}\\gospelcanticle\n\n~a\n\n\\opt{full}{\\input{~a-Intercessions.tex}\n\n}\\opt{full}{\\input{~a-Prayer.tex}}"
+            (second partsA) stem stem (fourth partsA) stem stem)
+           cantortexfile
+           #:exists 'replace)
+          (let ([partsB (regexp-match "(%%%% Begin Ant1.*%%%% End Ant3)"
+                                      s)])
+            (when partsB
+              (display-to-file
+               (format
+                "\\hymn\n\n\\psalmody\n\n~a\n\n\\opt{ful}{\\input{~a-Reading.tex}\n\n}\\opt{full}{\\input{~a-Responsory.tex}\n\n}\\nogospelcanticle\n\n\\opt{full}{\\input{~a-Intercessions.tex}\n\n}\\opt{full}{\\noprayer}"
+                (second partsB) stem stem stem stem)
+               cantortexfile
+               #:exists 'replace)))))))
+
+
+(produce-files)
+(update-cantor-tex-file)
+;; (display (produce-intercessions inter))

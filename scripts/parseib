@@ -1,0 +1,148 @@
+#!/usr/bin/racket
+#lang racket
+
+;; This script parses pasted-in data from iBreviary.com.
+;; First it asks for a stem (e.g. A1-Lauds), then for a string pasted in
+;; from iBreviary. Based on that, the script creates a string for a
+;; <stem>-Readings.tex file, one for a <stem>-Responsory.tex file, one
+;; for a <stem>-Intercessions.tex file, and one for a <stem>-Prayer.tex
+;; file. It creates/overwrites those files and updates the
+;; <stem>-Cantor.tex file.
+
+(define stem (begin (display "Enter a stem (e.g. A1-Lauds): ") (read)))
+(define s (begin
+            (display "Enter multi-line string (end with Ctrl+D in terminal or Ctrl+Z <Enter> Ctrl+D in emacs shell):\n")
+            (port->string (current-input-port))))
+
+(define parts (regexp-match "READING\n(.*?)\nRESPONSORY\n(.*?)\nGOSPEL CANTICLE.*?INTERCESSIONS\n(.*?)\nTHE LORD.*?CONCLUDING PRAYER\n(.*)\nDISMISSAL" s))
+(define reading (string-trim (second parts)))
+(define resp (string-trim (third parts)))
+(define inter (string-trim (fourth parts)))
+(define prayer (string-trim (fifth parts)))
+;; (define curdir (current-directory))
+(define curdir (string->path "/home/ryan/scores/like-burning-incense/offices/ordinaryTime/"))
+(define readingfile (string->path (format "~a~a-Reading.tex"
+                                          curdir stem)))
+(define responsoryfile (string->path (format "~a~a-Responsory.tex"
+                                             curdir stem)))
+(define intercessionsfile (string->path (format "~a~a-Intercessions.tex"
+                                                curdir stem)))
+(define prayerfile (string->path (format "~a~a-Prayer.tex"
+                                            curdir stem)))
+(define cantortexfile (string->path (format "~a~a-Cantor.tex"
+                                            curdir stem)))
+
+(define (get-first-half-of-string full-string second-half)
+  "Given the full string and the second half of that string, return
+the first half. For use in the <stem>-Responsory.tex file."
+  (let loop ([i 0])
+    (if (= i (string-length full-string))
+        (error "Didn't find the substring.")
+        (if (string=? (string-downcase (substring full-string i))
+                      (string-downcase second-half))
+            (substring full-string 0 i)
+            (loop (add1 i))))))
+
+(define (produce-reading s)
+  "Produce the text that will populate the <stem>-Readings.tex file"
+  (let* ([s-parts (regexp-split "\n\n" s)]
+         [first-par (string-split (first (cdr s-parts)) " ")]
+         [first-word (format "\\lettrine{~a}{~a} "
+                             (string-ref (first first-par) 0)
+                             (substring (first first-par) 1))])
+    (set! first-par (string-append
+                     first-word
+                     (string-join (cdr first-par) " ")))
+    (if (= (length s-parts) 2)
+      (format "\\reading{~a}\n\n~a"
+              (string-replace (first s-parts) "-" "--")
+              first-par)
+      (format "\\reading{~a}\n\n~a~a"
+              (string-replace (first s-parts) "-" "--")
+              first-par
+              (string-join (cdr (cdr s-parts)) "\n\n")))))    
+
+(define (produce-responsory s)
+  "Produce the text that will populate the <stem>-Responsory.tex file"
+  (let* ([s (string-replace s "— " "")]
+         [resp-parts (string-split s "\n")]
+         [first-half (get-first-half-of-string
+                      (string-trim (string-replace (first resp-parts) "\n" " "))
+                      (string-trim (string-replace (fifth resp-parts) "\n\n" " ")))])
+    (format "\\responsory{~a}{~a}{~a}"
+            (string-trim first-half)
+            (fifth resp-parts)
+            (fourth resp-parts))))
+
+(define (produce-responsory2 s)
+  "A more fail-safe version."
+  (let* ([s (string-replace s "— " "{\\color{red}---\\thinspace}")]
+         [s (regexp-split "\n\n+" s)]
+         [s (map (λ (x) (string-append "\\noindent " x)) s)]
+         [s (map (λ (x) (string-replace x "\n" "\\\\\n")) s)]
+         [s (string-join s "\n\n\\medskip")])
+    (string-append "\\responsory\n\n" s))
+  )
+
+(define (produce-intercessions s)
+  "Produce the text that will populate the <stem>-Intercessions.tex file"
+  (let* ([s (string-replace (string-trim s) "— " "{\\color{red}---\\thinspace}")]
+         [s (regexp-split "\n\n" s)]
+         [s-parts (map (λ (x) (string-split x "\n")) s)]
+         [res (format "\\intercessions\\indent\n\n\\begin{hangpar}\n\n~a\n\n\\emph{~a}"
+                      (first (first s-parts))
+                      (second (first s-parts)))])
+    (for ([l (cdr s-parts)])
+      (set! res (string-append res (format "\n\n\\medskip ~a\n\n~a"
+                                           (first l) (second l)))))
+    (string-append res "\n\n\\end{hangpar}\n\n")))
+
+(define (produce-prayer s)
+  "Produce the text that will populate the <stem>-Prayer.tex file"
+  (let ([s-parts (map (λ (x) (string-replace x "\n" "\\\\\n"))
+                      (regexp-split "\n\n+"
+                                    (string-replace
+                                     (string-replace s "Or:" "")
+                                     "— Amen"
+                                     "{\\color{red}---\\thinspace}Amen")))])
+    (string-append "\\prayer\n\n\\setlength{\\leftmargini}{\\prayerleftmargini}\n\n\\begin{verse}\n"
+                   (string-join s-parts "\n\n{\\color{red}Or:}\n\n")
+                   "\n\\end{verse}\n\n\\setlength{\\leftmargini}{\\defleftmargini}")
+))
+
+(define (produce-files)
+  "Create/Overwrite the accessory files."
+  (display-to-file
+   (produce-reading reading) readingfile #:exists 'replace)
+  (display-to-file
+   (produce-responsory2 resp) responsoryfile #:exists 'replace)
+  (display-to-file
+   (produce-intercessions inter) intercessionsfile #:exists 'replace)
+  (display-to-file
+   (produce-prayer prayer) prayerfile #:exists 'replace))
+
+
+(define (update-cantor-tex-file)
+  (when (file-exists? cantortexfile)
+    (let* ([s (file->string cantortexfile)]
+           [partsA (regexp-match "(%%%% Begin Ant1.*%%%% End Ant3)(.*)(%%%% Begin Ant4.*%%%% End Ant4)" s)])
+      (if partsA
+          (display-to-file
+           (format
+            "\\hymn\n\n\\psalmody\n\n~a\n\n\\opt{full}{\\input{~a-Reading.tex}\n\n}\\opt{full}{\\input{~a-Responsory.tex}\n\n}\\gospelcanticle\n\n~a\n\n\\opt{full}{\\input{~a-Intercessions.tex}\n\n}\\opt{full}{\\input{~a-Prayer.tex}}"
+            (second partsA) stem stem (fourth partsA) stem stem)
+           cantortexfile
+           #:exists 'replace)
+          (let ([partsB (regexp-match "(%%%% Begin Ant1.*%%%% End Ant3)"
+                                      s)])
+            (when partsB
+              (display-to-file
+               (format
+                "\\hymn\n\n\\psalmody\n\n~a\n\n\\opt{ful}{\\input{~a-Reading.tex}\n\n}\\opt{full}{\\input{~a-Responsory.tex}\n\n}\\nogospelcanticle\n\n\\opt{full}{\\input{~a-Intercessions.tex}\n\n}\\opt{full}{\\noprayer}"
+                (second partsB) stem stem stem stem)
+               cantortexfile
+               #:exists 'replace)))))))
+
+
+(produce-files)
+(update-cantor-tex-file)

@@ -1,5 +1,17 @@
 \documentclass[12pt,twocolumn]{book}
 
+\usepackage[ %% uncomment options below to exclude them
+  %% hymn,
+  psalmody-heading,
+  psalmtexts,
+  reading,
+  responsory,
+  gospelcanticle-heading,
+  intercessions,
+  prayer,
+  default, %% don't uncomment this one
+]{optional}
+
 %% Layout settings optimized for my linux setup, which doesn't have the
 %% best print drivers. In the print dialog, select 'Fit to whole page' 
 \usepackage[paperheight=10.66in,%
@@ -19,11 +31,10 @@
 \newfontfamily\QuintFirst[Scale=2]{Quintessential}
 
 \usepackage{lettrine}
+%% \renewcommand{\LettrineFontHook}{\QuintFirst}
 
 \usepackage[nofragment, insert=systems]{lyluatex}
 %% \setluaoption{ly}{pass-fonts}{true}
-
-\usepackage{leading}
 
 \usepackage{xcolor}
 \usepackage{fancyhdr}
@@ -42,6 +53,7 @@
 %% \usepackage{xstring}
 \usepackage{verse}
 \newcommand{\defleftmargini}{1em}
+\newcommand{\prayerleftmargini}{0em}
 \newcommand{\Aleftmargini}{2em}
 \newcommand{\Bleftmargini}{3em}
 \newcommand{\Cleftmargini}{4em}
@@ -76,8 +88,8 @@
   
 %% \titlespacing*{⟨command ⟩}{⟨left⟩}{⟨before-sep⟩}{⟨after-sep⟩}[⟨right-sep⟩]
 \titlespacing*{\chapter}{0pt}{0pt}{10pt}
-\titlespacing*{\section}{0pt}{20pt}{10pt}
-\titlespacing*{\subsection}{0pt}{3ex}{0ex}
+\titlespacing*{\section}{0pt}{20pt}{4pt}
+\titlespacing*{\subsection}{0pt}{3ex}{1ex}
 \titlespacing*{\subsubsection}{0pt}{2ex}{1ex}
 \titlespacing*{\paragraph}{0ex}{1ex}{1ex}[0ex]
 
@@ -107,20 +119,29 @@
 \newcommand{\reading}[1]{\subsection{\textsc{Reading}\hfill #1}}
 \newcommand{\benAbsentSeasons}{\subsection{\textsc{Benedictus}, antiphon as in the Proper of Seasons.}}
 
-\newcommand{\responsory}[3]{\subsection{\textsc{Responsory}}%
-#1 #2
+%% \newcommand{\responsory2}[3]{\subsection{\textsc{Responsory}}%
+%% #1 #2
 
-\noindent{\color{red}---}#1 #2
+%% \noindent{\color{red}---}#1 #2
 
-\medskip\noindent #3
+%% \medskip\noindent #3
 
-\noindent{\color{red}---}#2
+%% \noindent{\color{red}---}#2
 
-\medskip\noindent Glory to the Father, and to the Son, and to the Holy Spirit.
+%% \medskip\noindent Glory to the Father, and to the Son, and to the Holy Spirit.
 
-\noindent{\color{red}---}#1 #2
-}
-\newcommand{\intercessions}{\null\subsection{\textsc{Intercessions}}}
+%% \noindent{\color{red}---}#1 #2
+%% }
+\newcommand{\intercessions}{\subsection{\textsc{Intercessions}}}
+\newcommand{\psalmody}{\subsection{\textsc{Psalmody}}}
+\newcommand{\responsory}{\subsection{\textsc{Responsory}}}
+\newcommand{\hymn}{\subsection{\textsc{Hymn}}}
+\newcommand{\prayer}{\subsubsection{Prayer}}
+\newcommand{\benedictus}{\subsection{\textsc{Canticle of Zechariah}}}
+\newcommand{\magnificat}{\subsection{\textsc{Canticle of Mary}}}
+\newcommand{\gospelcanticle}{\subsection{\textsc{Gospel Canticle}}}
+\newcommand{\nogospelcanticle}{\subsection{\textsc{Gospel Canticle}, antiphon as in the Proper of Seasons.}}
+\newcommand{\noprayer}{\subsection{Prayer, as in the Proper of Seasons.}\null\medskip}
 %% \raggedright
 \raggedbottom
 
@@ -136,12 +157,18 @@
 \halign{##\cr\hss\makebox(0,0){\hspace{0pt}\myaccentcolor\myaccentsize\char"00B4}\hss\cr\noalign{\myaccentpositionl}#1\cr}}}
 \newcommand{\Med}{~\raisebox{2pt}{\myastcolor$\ast$}}
 \newcommand{\Flex}{~{\myastcolor\textdagger}}
-\newcommand{\Desc}[2]{\linespread{0.1}{\paragraph{}{\small\emph{#1} #2}}}
-
+\newcommand{\Desc}[2]{\noindent\small\emph{#1} #2}
 
 \hyphenation{Co-rin-thi-an}
 \hyphenation{Co-rin-thi-ans}
 \hyphenation{E-phe-sians}
+\hyphenation{Mat-thew}
+
+
+\newenvironment{hangpar}
+  {\setlength{\leftskip}{1em}%%
+    \setlength{\parindent}{-1em}%%
+  }
 
 
 \begin{document}
@@ -256,8 +283,8 @@
 %% \section{Monday Morning Prayer}
 %% \input{EE2-Lauds-Cantor.tex}
 
-\section{Tuesday Morning Prayer}
-\input{EE3-Lauds-Cantor.tex}
+%% \section{Tuesday Morning Prayer}
+%% \input{EE3-Lauds-Cantor.tex}
 
 %% \section{Wednesday Morning Prayer}
 %% \input{EE4-Lauds-Cantor.tex}
@@ -268,8 +295,8 @@
 %% \section{Friday Morning Prayer}
 %% \input{EE6-Lauds-Cantor.tex}
 
-%% \section{Saturday Morning Prayer}
-%% \input{EE7-Lauds-Cantor.tex}
+\section{Saturday Morning Prayer}
+\input{EE7-Lauds-Cantor.tex}
 
 
 %% \chapter{Easter, Week VI}

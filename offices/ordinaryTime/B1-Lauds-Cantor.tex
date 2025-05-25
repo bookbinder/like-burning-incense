@@ -1,47 +1,56 @@
-\hymn
+\opt{hymn}{\hymn}
 
-\psalmody
+\opt{psalmody-heading}{\psalmody}
 
 %%%% Begin Ant1
 \antiphonA
 \input{~/scores/like-burning-incense/psalms/Ps_118/vars.tex}
 \lilypondfile[line-width=3.73in]{B1-Lauds-1-Ant-Cantor.ly}
-\psalm{\psalmtitle}
-\psalmsubtitle{\subhead}
-\Desc{\descA}{\descB}
-\input{~/scores/like-burning-incense/psalms/Ps_118/34/Ps_118.tex}
-\antiphon
-\lilypondfile[line-width=3.73in]{B1-Lauds-1-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Ps_118/34/Ps_118.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{B1-Lauds-1-Ant-Cantor.ly}
+  }
 %%%% End Ant1
 
 %%%% Begin Ant2
 \antiphonB
 \input{~/scores/like-burning-incense/psalms/Dan_3_52-57/vars.tex}
 \lilypondfile[line-width=3.73in]{B1-Lauds-2-Ant-Cantor.ly}
-\psalm{\psalmtitle}
-\psalmsubtitle{\subhead}
-\Desc{\descA}{\descB}
-\input{~/scores/like-burning-incense/psalms/Dan_3_52-57/33/Dan_3_52-57.tex}
-\antiphon
-\lilypondfile[line-width=3.73in]{B1-Lauds-2-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Dan_3_52-57/33/Dan_3_52-57.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{B1-Lauds-2-Ant-Cantor.ly}
+  }
 %%%% End Ant2
 
 %%%% Begin Ant3
 \antiphonC
 \input{~/scores/like-burning-incense/psalms/Ps_150/vars.tex}
 \lilypondfile[line-width=3.73in]{B1-Lauds-3-Ant-Cantor.ly}
-\psalm{\psalmtitle}
-\psalmsubtitle{\subhead}
-\Desc{\descA}{\descB}
-\input{~/scores/like-burning-incense/psalms/Ps_150/33/Ps_150.tex}
-\antiphon
-\lilypondfile[line-width=3.73in]{B1-Lauds-3-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Ps_150/33/Ps_150.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{B1-Lauds-3-Ant-Cantor.ly}
+  }
 %%%% End Ant3
 
 \input{B1-Lauds-Reading.tex}
 
 \input{B1-Lauds-Responsory.tex}
 
-\nogospelcanticle
+\opt{gospelcanticle-heading}{\nogospelcanticle}
 
 \input{B1-Lauds-Intercessions.tex}

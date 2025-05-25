@@ -1,37 +1,46 @@
 %%%% Begin Ant1
-\subsubsection{Antiphon 1}
+\antiphonA
 \input{~/scores/like-burning-incense/psalms/Ps_62/vars.tex}
-\noindent\lilypondfile[line-width=3.73in]{B4-Vespers-1-Ant-Cantor.ly}
-\subsection{\psalmtitle}
-\subsubsection{\subhead}
-\Desc{\descA}{\descB}
-\input{~/scores/like-burning-incense/psalms/Ps_62/33/Ps_62.tex}
-\subsubsection{Antiphon}
 \lilypondfile[line-width=3.73in]{B4-Vespers-1-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Ps_62/33/Ps_62.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{B4-Vespers-1-Ant-Cantor.ly}
+  }
 %%%% End Ant1
 
 %%%% Begin Ant2
-\null\smallskip\subsubsection{Antiphon 2}
+\antiphonB
 \input{~/scores/like-burning-incense/psalms/Ps_67/vars.tex}
-\noindent\lilypondfile[line-width=3.73in]{B4-Vespers-2-Ant-Cantor.ly}
-\subsection{\psalmtitle}
-\subsubsection{\subhead}
-\Desc{\descA}{\descB}
-\input{~/scores/like-burning-incense/psalms/Ps_67/43/Ps_67.tex}
-\subsubsection{Antiphon}
 \lilypondfile[line-width=3.73in]{B4-Vespers-2-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Ps_67/43/Ps_67.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{B4-Vespers-2-Ant-Cantor.ly}
+  }
 %%%% End Ant2
 
 %%%% Begin Ant3
-\null\smallskip\subsubsection{Antiphon 3}
+\antiphonC
 \input{~/scores/like-burning-incense/psalms/Col_1_12-20/vars.tex}
-\noindent\lilypondfile[line-width=3.73in]{B4-Vespers-3-Ant-Cantor.ly}
-\subsection{\psalmtitle}
-\subsubsection{\subhead}
-\Desc{\descA}{\descB}
-\input{~/scores/like-burning-incense/psalms/Col_1_12-20/33/Col_1_12-20.tex}
-\subsubsection{Antiphon}
 \lilypondfile[line-width=3.73in]{B4-Vespers-3-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Col_1_12-20/33/Col_1_12-20.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{B4-Vespers-3-Ant-Cantor.ly}
+  }
 %%%% End Ant3
 
 \input{B4-Vespers-Reading.tex}
@@ -39,12 +48,15 @@
 \input{B4-Vespers-Responsory.tex}
 
 %%%% Begin Ant4
-\null\smallskip\subsubsection{Benedictus Antiphon}
-\noindent\lilypondfile[line-width=3.73in]{B4-Vespers-Ben-Ant-Cantor.ly}
-\smallskip\subsection{Benedictus}
-\input{~/scores/like-burning-incense/psalms/Magnificat/33/Magnificat.tex}
-\subsubsection{Antiphon}
-\lilypondfile[line-width=3.73in]{B4-Vespers-Ben-Ant-Cantor.ly}
+\antiphonMag
+\lilypondfile[line-width=3.73in]{B4-Vespers-Mag-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{Magnificat}
+  \input{~/scores/like-burning-incense/psalms/Magnificat/33/Magnificat.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{B4-Vespers-Mag-Ant-Cantor.ly}
+  }
 %%%% End Ant4
 
 \input{B4-Vespers-Intercessions.tex}

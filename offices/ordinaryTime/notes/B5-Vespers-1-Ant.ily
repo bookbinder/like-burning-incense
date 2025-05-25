@@ -41,7 +41,7 @@ sopNotesAnt = \relative e' {
     \allowBreak cis4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    gis1 b4 dis4 e4. s16 
+    gis1^"Check psalmtone." b4 dis4 e4. s16 
     dis\breve*5/16 cis4.~ cis4 a b gis
 }
 tenorNotesAnt = \relative g {
