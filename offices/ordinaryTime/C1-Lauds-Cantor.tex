@@ -1,4 +1,4 @@
-\opt{hymn}{\hymn}
+\opt{hymn}{\input{C1-Lauds-Hymn.tex}}
 
 \opt{psalmody-heading}{\psalmody}
 
@@ -47,10 +47,12 @@
   }
 %%%% End Ant3
 
-\input{C1-Lauds-Reading.tex}
+\opt{reading}{\input{C1-Lauds-Reading.tex}}
 
-\input{C1-Lauds-Responsory.tex}
+\opt{responsory}{\input{C1-Lauds-Responsory.tex}}
 
 \opt{gospelcanticle-heading}{\nogospelcanticle}
 
-\input{C1-Lauds-Intercessions.tex}
+\opt{intercessions}{\input{C1-Lauds-Intercessions.tex}}
+
+\opt{prayer}{\noprayer}

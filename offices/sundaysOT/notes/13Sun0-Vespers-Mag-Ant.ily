@@ -2,7 +2,7 @@
 %% \include "../../../lbi_defs.ily"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key ges \major
+antKeysig =  \key ges \major
 antiphon = "M"
 psalmtone = "60"
 psalmtonestruct = "33"
@@ -12,33 +12,47 @@ psalmnum = "Magnificat"
 % use in in cantor (antiphon) and organ (psalm) scores
 frompitch = a
 topitch = a
+%% transposition after accounting for psalm tone
+master-from-pitch = a
+master-to-pitch = a
 
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    Those who wel -- come "you * " 
+    Those who wel -- come you 
+    \markup { \tiny \raise #.5 \char ##x1F7B6 " "} 
     are wel -- co -- ming me, and those who wel -- come me are
     wel -- co -- coming him who sent me.
 }
 sopNotesAnt = \relative e' {
-    \global
-    \keysig
-    des4 des8 ees[ ges] ges f4 \bar "'" ees8 f ees ees des4 \bar "'"
-    des8 f[ ges] aes aes[ bes] bes \bar "" aes4 f8 \bar "" ges8 f ees
-    \bar "" ees([ f] ges4) f8 \bar "" ees8[ des] des4 \bar "||"
+  des4 des8 ees[ ges] ges f4
+  \hideNotes f16 \unHideNotes  %so taht I can align the * better
+  \allowBreak ees8
+  \allowBreak f
+  \allowBreak ees
+  \allowBreak ees
+  \allowBreak des4 \bar "'"
+  \allowBreak des8
+  \allowBreak f[ ges]
+  \allowBreak aes
+  \allowBreak aes[ bes]
+  \allowBreak bes
+  \allowBreak aes4
+  \allowBreak f8
+  \allowBreak ges8
+  \allowBreak f
+  \allowBreak ees
+  \allowBreak ees([ f] ges4)
+  \allowBreak f8
+  \allowBreak ees8[ des]
+  \allowBreak des4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    \global
-    \keysig
-    des2.~ des4. bes4. aes4. s4 s4. s4. s2 des\breve*5/16 aes2
+  des2.~ des4. bes4. aes4. s4 s4. s4. s2 des\breve*5/16 aes2
 }
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
-    f4. ges aes ges f des'4.~ des~ des bes ges\breve*5/16~ ges4 f
+  f4. ges aes ges f des'4.~ des~ des bes ges\breve*5/16~ ges4 f
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
-    des2.~ des4.~ des~ des~ des f~ f ees bes\breve*5/16 des2
+  des2.~ des4.~ des~ des~ des f~ f ees bes\breve*5/16 des2
 }

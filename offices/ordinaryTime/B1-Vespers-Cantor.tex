@@ -1,3 +1,7 @@
+\opt{hymn}{\input{B1-Vespers-Hymn.tex}}
+
+\opt{psalmody-heading}{\psalmody}
+
 %%%% Begin Ant1
 \antiphonA
 \input{~/scores/like-burning-incense/psalms/Ps_110_1-5,_7/vars.tex}
@@ -43,9 +47,12 @@
   }
 %%%% End Ant3
 
-\input{B1-Vespers-Reading.tex}
+\opt{reading}{\input{B1-Vespers-Reading.tex}}
 
-\input{B1-Vespers-Responsory.tex}
+\opt{responsory}{\input{B1-Vespers-Responsory.tex}}
 
+\opt{gospelcanticle-heading}{\nogospelcanticle}
 
-\input{B1-Vespers-Intercessions.tex}
+\opt{intercessions}{\input{B1-Vespers-Intercessions.tex}}
+
+\opt{prayer}{\noprayer}

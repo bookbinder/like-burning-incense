@@ -6,18 +6,16 @@
 
 
 \score {
-    \new Staff \with { instrumentName = \markup {
-        \center-column {
-            \bold { \line { Ant. \antiphon } }
-            \concat { #psalmtone } }
-        }
-    }
-    <<
+    \transpose \master-from-pitch \master-to-pitch {
+  \new Staff
+  <<
         \midi_instrument
-        \clef treble
+        \clef treble \antKeysig
         \accidentalStyle forget
         \new Voice = "Soprano" {
-            \oneVoice \autoLineBreaksOn \sopNotesAnt \autoLineBreaksOff
+            \oneVoice \autoLineBreaksOn \global 
+    \mark \markup { \small \psalmtone }
+    \sopNotesAnt \autoLineBreaksOff
             \allowBreak
             \transpose \frompitch \topitch {
                 \small \sopranoShort
@@ -26,6 +24,7 @@
         \new Lyrics \lyricsto Soprano \text
     >>
 
+    }
     \layout {
         \context {
             \Staff

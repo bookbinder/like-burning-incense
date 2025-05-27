@@ -2,7 +2,7 @@
 %% \include "../../../lbi_defs.ily"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key f \minor
+antKeysig =  \key f \minor
 antiphon = "B"
 psalmtone = "50"
 psalmtonestruct = "33"
@@ -12,38 +12,55 @@ psalmnum = "Benedictus"
 % use in in cantor (antiphon) and organ (psalm) scores
 frompitch = a
 topitch = a
+%% transposition after accounting for psalm tone
+master-from-pitch = a
+master-to-pitch = a
 
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The pa -- ra -- lyzed "man * "
+    The pa -- ra -- lyzed man 
+    \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
     picked up the bed on which he was ly -- ing,
     and gave praise to God; all who saw it gave glo -- ry to God.
 }
 sopNotesAnt = \relative e' {
-    \global
-    \keysig
-    r8 f8 aes g f f4 \bar ""
-    aes8[ g] f ees f[ aes] aes bes aes g \bar "" f4 f \bar "'"
-    ees8 \bar "" f[ c'] \bar "" c([ des] c4) bes8 \bar "" aes4( g) \bar "'"
-    g8[ aes] g \bar "" bes4 aes g8[ aes] \bar "" f([ g] aes4)
-    aes8 g \bar "" g4( f) \bar "||"
+  r8 f8 aes g f f4
+  \hideNotes f16 \unHideNotes  %so taht I can align the * better
+  \allowBreak aes8[ g]
+  \allowBreak f
+  \allowBreak ees
+  \allowBreak f[ aes]
+  \allowBreak aes
+  \allowBreak bes
+  \allowBreak aes
+  \allowBreak g
+  \allowBreak f4
+  \allowBreak f \bar "'"
+  \allowBreak ees8
+  \allowBreak f[ c']
+  \allowBreak c([ des] c4)
+  \allowBreak bes8
+  \allowBreak aes4( g) \bar "'"
+  \allowBreak g8[ aes]
+  \allowBreak g
+  \allowBreak bes4
+  \allowBreak aes
+  \allowBreak g8[ aes]
+  \allowBreak f([ g] aes4)
+  \allowBreak aes8
+  \allowBreak g
+  \allowBreak g4( f) \bar "||"
 }
 altoNotesAnt = \relative c' {
-    \global
-    \keysig
-    c\breve*7/16~ c\breve*10/16 des\breve*5/16~
-    des4 ees\breve*5/16~ ees\breve*7/16 f2. des2. c2
+  c\breve*7/16~ s16 c\breve*10/16 des\breve*5/16~
+  des4 ees\breve*5/16~ ees\breve*7/16 f2. des2. c2
 }
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
-    aes\breve*7/16~ aes\breve*10/16~ aes\breve*5/16~
-    aes4~ aes\breve*5/16 bes\breve*7/16~ bes2.~ bes2. aes2
+  aes\breve*7/16~ s16 aes\breve*10/16~ aes\breve*5/16~
+  aes4~ aes\breve*5/16 bes\breve*7/16~ bes2.~ bes2. aes2
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
-    f\breve*7/16 ees\breve*10/16 des\breve*5/16
-    bes4 aes\breve*5/16 ees'\breve*7/16 des2. f2.~ f2
-  }
+  f\breve*7/16 s16 ees\breve*10/16 des\breve*5/16
+  bes4 aes\breve*5/16 ees'\breve*7/16 des2. f2.~ f2
+}

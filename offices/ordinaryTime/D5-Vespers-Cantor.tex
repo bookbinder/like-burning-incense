@@ -1,3 +1,7 @@
+\opt{hymn}{\input{D5-Vespers-Hymn.tex}}
+
+\opt{psalmody-heading}{\psalmody}
+
 %%%% Begin Ant1
 \antiphonA
 \input{~/scores/like-burning-incense/psalms/Ps_144_1-8/vars.tex}
@@ -43,9 +47,11 @@
   }
 %%%% End Ant3
 
-\input{D5-Vespers-Reading.tex}
+\opt{reading}{\input{D5-Vespers-Reading.tex}}
 
-\input{D5-Vespers-Responsory.tex}
+\opt{responsory}{\input{D5-Vespers-Responsory.tex}}
+
+\opt{gospelcanticle-heading}{\gospelcanticle}
 
 %%%% Begin Ant4
 \antiphonMag
@@ -59,4 +65,6 @@
   }
 %%%% End Ant4
 
-\input{D5-Vespers-Intercessions.tex}
+\opt{intercessions}{\input{D5-Vespers-Intercessions.tex}}
+
+\opt{prayer}{\input{D5-Vespers-Prayer.tex}}
