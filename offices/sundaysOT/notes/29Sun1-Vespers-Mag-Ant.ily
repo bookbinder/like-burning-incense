@@ -24,24 +24,25 @@ text = \lyricmode {
     faith in men's hearts?
 }
 sopNotesAnt = \relative e' {
-    
-    
-    cis8 dis e[ dis] cis cis([ e] dis4) dis8 e fis4 \bar "'"
-    e8 fis \bar "" gis8[ b] gis gis gis \bar ""
-    fis8([ gis a gis] fis4) e8 \bar "" e8[ dis] dis4( cis) \bar "||"
+  cis8 dis e[ dis] cis cis([ e] dis4) dis8 e fis4
+  \hideNotes fis16 \unHideNotes  %so taht I can align the * better
+  \allowBreak e8
+  \allowBreak fis
+  \allowBreak gis8[ b]
+  \allowBreak gis
+  \allowBreak gis
+  \allowBreak gis
+  \allowBreak fis8([ gis a gis] fis4)
+  \allowBreak e8
+  \allowBreak e8[ dis]
+  \allowBreak dis4( cis) \bar "||"
 }
 altoNotesAnt = \relative c' {
-    
-    
-    gis\breve*5/16 b2.~ b2~ b\breve*5/16 cis2~ cis4 b gis2
+  gis\breve*5/16 b2.~ b2~ s16 b\breve*5/16 cis2~ cis4 b gis2
 }
 tenorNotesAnt = \relative g {
-    
-    
-    e\breve*5/16 fis2. dis2 e\breve*5/16~ e2 a4. fis4~ fis( e)
+  e\breve*5/16 fis2. dis2 s16 e\breve*5/16~ e2 a4. fis4~ fis( e)
 }
 bassNotesAnt = \relative c {
-    
-    
-    cis\breve*5/16 b2.~ b2 e,\breve*5/16 a2~ a4. b4 cis2
+  cis\breve*5/16 b2.~ b2 s16 e,\breve*5/16 a2~ a4. b4 cis2
 }

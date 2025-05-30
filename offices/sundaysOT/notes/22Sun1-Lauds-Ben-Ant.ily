@@ -24,23 +24,22 @@ text = \lyricmode {
     the Lord has gi -- ven to you.
 }
 sopNotesAnt = \relative e' {
-    
-    
-    aes4 g8 f g f f[ c'] c c c[ bes] bes4 \bar "'" bes8 c[ f,] f g4
-    f8 ees f4 \bar "||"
+  aes4 g8 f g f f[ c'] c c c[ bes] bes4
+  \hideNotes bes16 \unHideNotes  %so taht I can align the * better
+  \allowBreak bes8
+  \allowBreak c[ f,]
+  \allowBreak f
+  \allowBreak g4
+  \allowBreak f8
+  \allowBreak ees
+  \allowBreak f4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    
-    
-    c\breve*10/16 f\breve*5/16 c4.~ c2~ c4
+  c\breve*10/16 f\breve*5/16 s16 c4.~ c2~ c4
 }
 tenorNotesAnt = \relative g {
-    
-    
-    aes\breve*10/16~ aes\breve*5/16 f4. ees2 aes4
+  aes\breve*10/16~ aes\breve*5/16 s16 f4. ees2 aes4
 }
 bassNotesAnt = \relative c {
-    
-    
-    f\breve*10/16 des\breve*5/16 aes4. c2 f,4
+  f\breve*10/16 des\breve*5/16 s16 aes4. c2 f,4
 }

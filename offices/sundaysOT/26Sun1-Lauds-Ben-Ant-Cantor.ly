@@ -4,6 +4,7 @@
 \include "notes/26Sun1-Lauds-Ben-Ant.ily"
 \include #(string-append "../../psalmtones/notes/" psalmtone "-notes.ily")
 
+%% update
 
 \score {
     \transpose \master-from-pitch \master-to-pitch {
@@ -26,6 +27,7 @@
 
     }
     \layout {
+      ragged-last = ##t
         \context {
             \Staff
             \remove Time_signature_engraver

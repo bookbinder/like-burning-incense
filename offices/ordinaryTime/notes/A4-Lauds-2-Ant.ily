@@ -12,8 +12,8 @@ psalmnum = "Judith_16_2-3a,_13-15"
 frompitch = a
 topitch = a
 %% Master transposition after accounting for psalm tone
-master-from-pitch = a
-master-to-pitch = a
+master-from-pitch = cis
+master-to-pitch = c
 
 
 text = \lyricmode {

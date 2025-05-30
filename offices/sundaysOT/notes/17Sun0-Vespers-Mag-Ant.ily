@@ -25,25 +25,47 @@ text = \lyricmode {
     he had and bought it.
 }
 sopNotesAnt = \relative e' {
-    
-    
-    r8 g8 g[ a] g g f[ e d] d4 f8 e f g[ c] c b \bar "" a[ b] c \bar ""
-    b--[ a] \bar "" a4( g) r4 \bar "|"
-    g8 g e[ g] g4 g8 \bar "" f[ e] d[ a'] a4 \bar "'" g8 \bar "" a[ b] \bar "" c[ d]
-    c b c \bar "" a4 b8 \bar "" g4 g \bar "||" 
+  r8 g8 g[ a] g g f[ e d] d4
+  \hideNotes d16 \unHideNotes  %so taht I can align the * better
+  \allowBreak f8
+  \allowBreak e
+  \allowBreak f
+  \allowBreak g[ c]
+  \allowBreak c
+  \allowBreak b
+  \allowBreak a[ b]
+  \allowBreak c
+  \allowBreak b--[ a]
+  \allowBreak a4( g)
+  \allowBreak r4 \bar "|"
+  \allowBreak g8
+  \allowBreak g
+  \allowBreak e[ g]
+  \allowBreak g4
+  \allowBreak g8
+  \allowBreak f[ e]
+  \allowBreak d[ a']
+  \allowBreak a4 \bar "'"
+  \allowBreak g8
+  \allowBreak a[ b]
+  \allowBreak c[ d]
+  \allowBreak c
+  \allowBreak b
+  \allowBreak c
+  \allowBreak a4
+  \allowBreak b8
+  \allowBreak g4
+  \allowBreak g \bar "||"
 }
 altoNotesAnt = \relative c' {
-    
-    
-    e2. d4.~ d\breve*5/16 c2~ c4. f4 d2. e\breve*7/16 d4~ d4 c4. f4 g\breve*5/16 f4. d2
+  e2. d4.~ d\breve*5/16 s16
+  c2~ c4. f4 d2. e\breve*7/16 d4~ d4 c4. f4 g\breve*5/16 f4. d2
 }
 tenorNotesAnt = \relative g {
-    
-    
-    c2. a4.~ a\breve*5/16 g2 a4. c4 b2. c\breve*7/16 a4~ a~ a4.~ a4 g\breve*5/16 c4.~ c4 b
+  c2. a4.~ a\breve*5/16 s16
+  g2 a4. c4 b2. c\breve*7/16 a4~ a~ a4.~ a4 g\breve*5/16 c4.~ c4 b
 }
 bassNotesAnt = \relative c {
-    
-    
-    c2. d4. f\breve*5/16 e2 f4.~ f4 g2. c,\breve*7/16 d4 f~ f4. d4 e\breve*5/16 f4. g2
+  c2. d4. f\breve*5/16 s16
+  e2 f4.~ f4 g2. c,\breve*7/16 d4 f~ f4. d4 e\breve*5/16 f4. g2
 }

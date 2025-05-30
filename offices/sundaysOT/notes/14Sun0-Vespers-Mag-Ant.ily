@@ -24,22 +24,24 @@ text = \lyricmode {
     and my bur -- den is light, says the Lord.
 }
 sopNotesAnt = \relative e' {
-    
-    
-    g4 c8[ b] c a[ g] g4 \bar "'" g8 g g f e d4 f8 g a4( g) \bar "||"
+  g4 c8[ b] c a[ g] g4
+  \hideNotes g16 \unHideNotes  %so taht I can align the * better
+  \allowBreak g8
+  \allowBreak g
+  \allowBreak g
+  \allowBreak f
+  \allowBreak e
+  \allowBreak d4
+  \allowBreak f8
+  \allowBreak g
+  \allowBreak a4( g) \bar "||"
 }
 altoNotesAnt = \relative d' {
-    
-    
-    g\breve*5/16 e2. d\breve*5/16~ d4~ d2
+  g\breve*5/16 e2. s16 d\breve*5/16~ d4~ d2
 }
 tenorNotesAnt = \relative g {
-    
-    
-    c\breve*5/16~ c2. a\breve*5/16~ a4 c( b)
+  c\breve*5/16~ c2. s16 a\breve*5/16~ a4 c( b)
 }
 bassNotesAnt = \relative c {
-    
-    
-    e\breve*5/16 c2. f\breve*5/16 d4 g2
+  e\breve*5/16 c2. s16 f\breve*5/16 d4 g2
 }

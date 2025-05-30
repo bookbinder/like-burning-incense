@@ -9,8 +9,8 @@ antKeysig = \key gis \minor
 frompitch = a
 topitch = gis
 %% Master transposition after accounting for psalm tone
-master-from-pitch = a
-master-to-pitch = a
+master-from-pitch = cis
+master-to-pitch = c
 
 text = \lyricmode {
     \set includeGraceNotes = ##t

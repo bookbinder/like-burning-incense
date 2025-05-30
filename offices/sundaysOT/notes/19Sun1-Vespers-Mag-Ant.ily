@@ -24,23 +24,23 @@ text = \lyricmode {
     there is your heart, says the Lord.
 }
 sopNotesAnt = \relative e' {
-    
-    
-    cis4 e8 gis[ fis] gis cis,4 \bar "'" cis8[ e] dis e \allowBreak fis4 \allowBreak \breathe e8 dis
-    \allowBreak e([ dis] cis4) \bar "||"
+  cis4 e8 gis[ fis] gis cis,4
+  \hideNotes cis16 \unHideNotes  %so taht I can align the * better
+  \allowBreak cis8[ e]
+  \allowBreak dis
+  \allowBreak e
+  \allowBreak fis4
+  \allowBreak \breathe
+  \allowBreak e8
+  \allowBreak dis
+  \allowBreak e([ dis] cis4) \bar "||"
 }
 altoNotesAnt = \relative c' {
-    
-    
-    gis\breve*8/16 a2 cis4 b4 gis2
+  gis\breve*8/16 s16 a2 cis4 b4 gis2
 }
 tenorNotesAnt = \relative g {
-    
-    
-    e\breve*8/16~ e2 a4 fis4~ fis( e)
+  e\breve*8/16~ s16 e2 a4 fis4~ fis( e)
 }
 bassNotesAnt = \relative c {
-    
-    
-    cis\breve*8/16 a2. b4 cis2
+  cis\breve*8/16 s16 a2. b4 cis2
 }

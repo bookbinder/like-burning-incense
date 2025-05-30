@@ -24,24 +24,26 @@ text = \lyricmode {
     for they are at home in my Fa -- ther's king -- dom.
 }
 sopNotesAnt = \relative e' {
-    
-    
-    e8 fis gis4 a8 gis fis \bar "" e[ fis] fis \bar "" gis4 \bar "'"
-    gis8 \bar "" a[ gis] fis a \bar ""
-    b4 e,8 e \bar "" fis([ gis] fis4) e8 \bar "" cis[ e] \bar "" e4 \bar "||"
+  e8 fis gis4 a8 gis fis \bar "" e[ fis] fis \bar "" gis4
+  \hideNotes gis16 \unHideNotes  %so taht I can align the * better
+  \allowBreak gis8
+  \allowBreak a[ gis]
+  \allowBreak fis
+  \allowBreak a
+  \allowBreak b4
+  \allowBreak e,8
+  \allowBreak e
+  \allowBreak fis([ gis] fis4)
+  \allowBreak e8
+  \allowBreak cis[ e]
+  \allowBreak e4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    
-    
-    e\breve*7/16~ e4.~ e~ e2~ e cis\breve*5/16 a4 gis
+  e\breve*7/16~ e4.~ e~ s16 e2~ e cis\breve*5/16 a4 gis
 }
 tenorNotesAnt = \relative g {
-    
-    
-    gis\breve*7/16 a4. b a2 e2~ e\breve*5/16~ e2
+  gis\breve*7/16 a4. b s16 a2 e2~ e\breve*5/16~ e2
 }
 bassNotesAnt = \relative c {
-    
-    
-    e\breve*7/16~ e4.~ e4. cis2 gis2 a\breve*5/16 e2
+  e\breve*7/16~ e4.~ e4. s16 cis2 gis2 a\breve*5/16 e2
 }

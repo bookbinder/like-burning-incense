@@ -24,22 +24,23 @@ text = \lyricmode {
     and I will pay you a jsut wage.
 }
 sopNotesAnt = \relative e' {
-    
-    
-    c'4 b8 c a a[ g] g4 \bar "'" g8 a g f([ a] c4) b8 c b[ a g] g4 \bar "||"
+  c'4 b8 c a a[ g] g4
+  \hideNotes g16 \unHideNotes  %so taht I can align the * better
+  \allowBreak g8
+  \allowBreak a
+  \allowBreak g
+  \allowBreak f([ a] c4)
+  \allowBreak b8
+  \allowBreak c
+  \allowBreak b[ a g]
+  \allowBreak g4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    
-    
-    g'\breve*5/16 e\breve*7/16 f2. d4.~ d4
+  g'\breve*5/16 e\breve*7/16 s16 f2. d4.~ d4
 }
 tenorNotesAnt = \relative g {
-    
-    
-    c\breve*5/16~ c\breve*7/16~ c2.~ c4. b4
+  c\breve*5/16~ c\breve*7/16~ s16 c2.~ c4. b4
 }
 bassNotesAnt = \relative c {
-    
-    
-    e\breve*5/16 c\breve*7/16 d2. g4.~ g4
+  e\breve*5/16 c\breve*7/16 s16 d2. g4.~ g4
 }

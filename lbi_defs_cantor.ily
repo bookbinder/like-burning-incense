@@ -30,8 +30,8 @@ lr = {
     \once \override LyricText.self-alignment-X = #RIGHT
 }
 
-lyricsize = #1.6
-mylyricsize = { \override LyricText.font-size = #1.1 }
+lyricsize = #1
+mylyricsize = { \override LyricText.font-size = #1 }
 
 
 global = {  

@@ -6,8 +6,8 @@ temp:
 	# rm -rf tmp-ly/*.*
 	$(LUATEX) ScoreCantor.tex
 	evince ScoreCantor.pdf
-	$(LUATEX) ScoreOrgan.tex
-	evince ScoreOrgan.pdf
+	# $(LUATEX) ScoreOrgan.tex
+	# evince ScoreOrgan.pdf
 
 
 # all: 2Sun 3Sun 4Sun 5Sun 6Sun 7Sun 8Sun 9Sun 10Sun 11Sun 12Sun 13Sun 14Sun 15Sun 16Sun 17Sun 18Sun 19Sun 20Sun 21Sun 22Sun 23Sun 24Sun 25Sun 26Sun 27Sun 28Sun 29Sun 30Sun 31Sun 32Sun 33Sun

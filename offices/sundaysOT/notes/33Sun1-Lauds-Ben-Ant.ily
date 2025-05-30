@@ -24,23 +24,28 @@ text = \lyricmode {
     co -- ming in the clouds with great glo -- ry and ma -- jes -- ty.
 }
 sopNotesAnt = \relative e' {
-    
-    
-    e8 e f[ e] d g[ a] c \bar "" b([ a] g4) \bar "'"
-    a8 g f g \bar "" a4( c) c8 b8--[c] \bar "" b4 a8 a \bar "" a g g4 \bar "||"
+  e8 e f[ e] d g[ a] c \bar "" b([ a] g4)
+  \hideNotes g16 \unHideNotes  %so taht I can align the * better
+  \allowBreak a8
+  \allowBreak g
+  \allowBreak f
+  \allowBreak g
+  \allowBreak a4( c)
+  \allowBreak c8
+  \allowBreak b8--[c]
+  \allowBreak b4
+  \allowBreak a8
+  \allowBreak a
+  \allowBreak a
+  \allowBreak g
+  \allowBreak g4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    
-    
-    s2 s8 e4. g2 s2 g\breve*7/16 f2 d
+  s2 s8 e4. g2 s16 s2 g\breve*7/16 f2 d
 }
 tenorNotesAnt = \relative g {
-    
-    
-    g4 a4. c4. d4( b) c2~ c\breve*7/16~ c2~ c4 b
+  g4 a4. c4. d4( b) s16 c2~ c\breve*7/16~ c2~ c4 b
 }
 bassNotesAnt = \relative c {
-    
-    
-    c4~ c4.~ c4. g'2 f2 e\breve*7/16 f2 g
+  c4~ c4.~ c4. g'2 s16 f2 e\breve*7/16 f2 g
 }

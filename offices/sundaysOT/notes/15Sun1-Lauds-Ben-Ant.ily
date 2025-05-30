@@ -27,24 +27,29 @@ text = \lyricmode {
     They a -- noin -- ted ma -- ny sick peo -- ple with oil and healed them.
 }
 sopNotesAnt = \relative e' {
-    
-    
-    e8 e f e d g4 g8 a[ c] c b[ a g] g4 \bar "'"
-    g8 g a[ g] f \bar "" f a \bar "" c4 b8 c a \bar ""
-    g([ a] g4) f8 \bar "" f[ e] e4 \bar "||"
+  e8 e f e d g4 g8 a[ c] c b[ a g] g4
+  \hideNotes g16 \unHideNotes  %so taht I can align the * better
+  \allowBreak g8
+  \allowBreak g
+  \allowBreak a[ g]
+  \allowBreak f
+  \allowBreak f
+  \allowBreak a
+  \allowBreak c4
+  \allowBreak b8
+  \allowBreak c
+  \allowBreak a
+  \allowBreak g([ a] g4)
+  \allowBreak f8
+  \allowBreak f[ e]
+  \allowBreak e4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    
-    
-    s2 s8 e4. f d\breve*7/16~ d4.~ d4 e4~ e4. d\breve*5/16 b4 c4
+  s2 s8 e4. f d\breve*7/16~ s16 d4.~ d4 e4~ e4. d\breve*5/16 b4 c4
 }
 tenorNotesAnt = \relative g {
-    
-    
-    g4 a4. c a b\breve*7/16 a4.~ a4~ a4~ a4.~ a\breve*5/16~ a4
+  g4 a4. c a b\breve*7/16 s16 a4.~ a4~ a4~ a4.~ a\breve*5/16~ a4
 }
 bassNotesAnt = \relative c {
-    
-    
-    c4~ c4.~ c f g\breve*7/16 f4.~ f4 a,4 c4. d\breve*5/16 a2
+  c4~ c4.~ c f g\breve*7/16 s16 f4.~ f4 a,4 c4. d\breve*5/16 a2
 }

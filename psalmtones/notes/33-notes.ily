@@ -9,7 +9,7 @@ sopranoOne = { aes'\breve^"A" f'8 des'4 \bar "|" bes'\breve c''8 aes'4 \bar "||"
 sopranoShort = { \override Stem.stencil = ##f
                  \afterGrace aes'\breve*1/2 \parenthesize f'4_"+"
                  \revert Stem.stencil
-                 f'8 des'4 \bar "|" \allowBreak bes'\breve*1/2 ces''8 ees'4 \bar "||"  }
+                 f'8 des'4 \bar "|" \allowBreak bes'\breve*1/2 c''8 ees'4 \bar "||"  }
 sopranoTwoFlex = { \afterGrace aes'\breve^"B†" f'4 \breathe  aes'\breve f'8 des'4 \bar "|" bes'\breve c''8 aes'4 \bar "||" }
 sopranoTwo = { aes'\breve^"B" f'8 des'4 \bar "|" bes'\breve c''8 aes'4 \bar "||" }
 

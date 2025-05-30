@@ -13,8 +13,8 @@ psalmnum = "Ps_143_1-11"
 frompitch = a
 topitch = a
 %% Master transposition after accounting for psalm tone
-master-from-pitch = a
-master-to-pitch = a
+master-from-pitch = cis
+master-to-pitch = c
 
 text = \lyricmode {
     \set includeGraceNotes = ##t

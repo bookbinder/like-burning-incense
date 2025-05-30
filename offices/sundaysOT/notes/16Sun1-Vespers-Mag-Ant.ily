@@ -24,23 +24,24 @@ text = \lyricmode {
     and it shall not be ta -- ken from her.
 }
 sopNotesAnt = \relative e' {
-    
-    
-    g4 g8 g a g f g--[a c] g g4 \bar "'" g8 g \allowBreak g
-    \allowBreak f[ a] c \allowBreak b([ c] a4) a8 a g4 \bar "||"
+  g4 g8 g a g f g--[a c] g g4
+  \hideNotes g16 \unHideNotes  %so taht I can align the * better
+  \allowBreak g8
+  \allowBreak g
+  \allowBreak g
+  \allowBreak f[ a]
+  \allowBreak c
+  \allowBreak b([ c] a4)
+  \allowBreak a8
+  \allowBreak a
+  \allowBreak g4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    
-    
-    e2 f4.~ f2 s4 s4. f4.~ f2. d4
+  e2 f4.~ f2 s16 s4 s4. f4.~ f2. d4
 }
 tenorNotesAnt = \relative g {
-    
-    
-    c2~ c4.~ c2~ c\breve*5/16~ c4.~ c2. b4
+  c2~ c4.~ c2~ c\breve*5/16~ s16 c4.~ c2. b4
 }
 bassNotesAnt = \relative c {
-    
-    
-    c2 f4. d2 e\breve*5/16 a4. f2. g4
+  c2 f4. d2 e\breve*5/16 s16 a4. f2. g4
 }

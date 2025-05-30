@@ -25,26 +25,39 @@ text = \lyricmode {
     un -- til all the dough had ri -- sen.
 }
 sopNotesAnt = \relative e' {
-    
-    
-    r8 ees aes g aes f ees des ees[ f] f4( ees) \bar "'"
-    ees8 ees g[ aes] bes \bar "" bes4 aes8 \bar "" g aes f ees \bar ""
-    des4 f8 g f ees4 \bar "'"
-    ees8 ees \bar "" des[ c] des ees4 f8 \bar "" ees4 ees \bar "||"
+  r8 ees aes g aes f ees des ees[ f] f4( ees)
+  \hideNotes ees16 \unHideNotes  %so taht I can align the * better
+  \allowBreak ees8
+  \allowBreak ees
+  \allowBreak g[ aes]
+  \allowBreak bes
+  \allowBreak bes4
+  \allowBreak aes8
+  \allowBreak g
+  \allowBreak aes
+  \allowBreak f
+  \allowBreak ees
+  \allowBreak des4
+  \allowBreak f8
+  \allowBreak g
+  \allowBreak f
+  \allowBreak ees4 \bar "'"
+  \allowBreak ees8
+  \allowBreak ees
+  \allowBreak des[ c]
+  \allowBreak des
+  \allowBreak ees4
+  \allowBreak f8
+  \allowBreak ees4
+  \allowBreak ees \bar "||"
 }
 altoNotesAnt = \relative c' {
-    
-    
-    s4 s1 s2 s4 g'4. f des2~ des\breve*12/16 des4. bes2
+  s4 s1 s2 s16 s4 g'4. f des2~ des\breve*12/16 des4. bes2
 }
 tenorNotesAnt = \relative g {
-    
-    
-    aes4~ aes4.~ aes\breve*5/16 g2. bes4.~ bes aes2 f\breve*5/16
-    aes2~ aes2.~ aes4 g
+  aes4~ aes4.~ aes\breve*5/16 g2. s16 bes4.~ bes aes2 f\breve*5/16
+  aes2~ aes2.~ aes4 g
 }
 bassNotesAnt = \relative c {
-    
-    
-    c4~ c4. des\breve*5/16 ees2.~ ees4. des4.~ des2~ des\breve*5/16 c2 bes2. ees2
+  c4~ c4. des\breve*5/16 ees2.~ s16 ees4. des4.~ des2~ des\breve*5/16 c2 bes2. ees2
 }

@@ -25,29 +25,50 @@ text = \lyricmode {
     with your whole heart, al -- le -- lu -- ia.
 }
 sopNotesAnt = \relative e' {
-    
-    
-    e4 dis cis8[ gis'] fis gis b4 gis8 fis e e e fis \bar "" dis4 \bar "'"
-    dis8[ e] dis \bar "" cis[ gis'] gis fis4 \bar "'"
-    e8 fis \bar "" gis[ a] gis fis[ gis] a \bar "" a4 gis8 a
-    \bar "" b[ gis a gis fis]
-    \bar "" fis4( e) \bar "'" e8 dis[ e] \bar "" cis4 cis \bar "||"
+  \allowBreak e4
+  \allowBreak dis
+  \allowBreak cis8[ gis']
+  \allowBreak fis
+  \allowBreak gis
+  \allowBreak b4
+  \allowBreak gis8
+  \allowBreak fis
+  \allowBreak e
+  \allowBreak e
+  \allowBreak e
+  \allowBreak fis
+  \allowBreak dis4
+  \hideNotes dis16 \unHideNotes  %so taht I can align the * better
+  \allowBreak dis8[ e]
+  \allowBreak dis
+  \allowBreak cis[ gis']
+  \allowBreak gis
+  \allowBreak fis4 \bar "'"
+  \allowBreak e8
+  \allowBreak fis
+  \allowBreak gis[ a]
+  \allowBreak gis
+  \allowBreak fis[ gis]
+  \allowBreak a
+  \allowBreak a4
+  \allowBreak gis8
+  \allowBreak a
+  \allowBreak b[ gis a gis fis]
+  \allowBreak fis4( e) \bar "'"
+  \allowBreak e8
+  \allowBreak dis[ e]
+  \allowBreak cis4
+  \allowBreak cis \bar "||"
 }
 altoNotesAnt = \relative c' {
-    
-    
-    s2 cis2 b1~ b\breve*5/16 cis4.~ cis4 e4~ e2.~ e2~ e\breve*5/16
-    cis\breve*5/16 b4 gis2
+  s2 cis2 b1~ b\breve*5/16 s16 cis4.~ cis4 e4~ e2.~ e2~ e\breve*5/16
+  cis\breve*5/16 b4 gis2
 }
 tenorNotesAnt = \relative g {
-    
-    
-    gis4 fis e2~ e1 fis\breve*5/16 gis4. a4 a4 b2. cis2 gis\breve*5/16
-    a\breve*5/16 fis4~ fis e4
+  gis4 fis e2~ e1 fis\breve*5/16 s16 gis4. a4 a4 b2. cis2 gis\breve*5/16
+  a\breve*5/16 fis4~ fis e4
 }
 bassNotesAnt = \relative c {
-    
-    
-    cis2~ cis2 gis1 b\breve*5/16 e4.~ e4~ e4~ e2.~ e2~ e\breve*5/16
-    a,\breve*5/16 b4 cis2
+  cis2~ cis2 gis1 b\breve*5/16 s16 e4.~ e4~ e4~ e2.~ e2~ e\breve*5/16
+  a,\breve*5/16 b4 cis2
 }

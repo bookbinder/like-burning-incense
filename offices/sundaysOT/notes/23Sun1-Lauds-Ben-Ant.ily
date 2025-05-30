@@ -24,24 +24,29 @@ text = \lyricmode {
     he has made the deaf hear and the mute speak, al -- le -- lu -- ia.
 }
 sopNotesAnt = \relative e' {
-    
-    
-    g8 g a4 g8[ c] c c4( b) \bar "'" b8 c \allowBreak a[ b] a \allowBreak
-    g[ a] b4 \allowBreak a8 a \bar ""
-    g[ a] b4 \bar "'" a8 \bar "" b[ a] a[ g] g4 \bar "||"
+  g8 g a4 g8[ c] c c4( b)
+  \hideNotes b16 \unHideNotes  %so taht I can align the * better
+  \allowBreak b8
+  \allowBreak c
+  \allowBreak a[ b]
+  \allowBreak a
+  \allowBreak g[ a]
+  \allowBreak b4
+  \allowBreak a8
+  \allowBreak a
+  \allowBreak g[ a]
+  \allowBreak b4 \bar "'"
+  \allowBreak a8
+  \allowBreak b[ a]
+  \allowBreak a[ g]
+  \allowBreak g4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    
-    
-    s2 g'4. g2. e4.~ e4 g e d~ d4. c4~ c b
-  }
+  s2 g'4. g2. s16 e4.~ e4 g e d~ d4. c4~ c b
+}
 tenorNotesAnt = \relative g {
-    
-    
-    c\breve*7/16 d2. c4.~ c4 d4 c b g4. e4 d2
-  }
+  c\breve*7/16 d2. s16 c4.~ c4 d4 c b g4. e4 d2
+}
 bassNotesAnt = \relative c {
-    
-    
-    e\breve*7/16 g2. c4.~ c4 g2~ g4 g,4.~ g4 g2
-  }
+  e\breve*7/16 g2. s16 c4.~ c4 g2~ g4 g,4.~ g4 g2
+}

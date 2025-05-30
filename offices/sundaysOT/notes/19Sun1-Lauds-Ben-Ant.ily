@@ -24,23 +24,32 @@ text = \lyricmode {
     Who -- e -- ver be -- lieves in me will live for -- e -- ver, al -- le -- lu -- ia.
 }
 sopNotesAnt = \relative e' {
-    
-    
-    r8 g8 g[ c] a a[ g] f g[ a] a g4 \bar "'" g8 b c d c[ a] c c4( b) \bar "'"
-    a8 g[ a] g a b \breathe a8 a a[ g] g4 \bar "||"
+  r8 g8 g[ c] a a[ g] f g[ a] a g4
+  \hideNotes g16 \unHideNotes  %so taht I can align the * better
+  \allowBreak g8
+  \allowBreak b
+  \allowBreak c
+  \allowBreak d
+  \allowBreak c[ a]
+  \allowBreak c
+  \allowBreak c4( b) \bar "'"
+  \allowBreak a8
+  \allowBreak g[ a]
+  \allowBreak g
+  \allowBreak a
+  \allowBreak b
+  \allowBreak \breathe
+  \allowBreak a8
+  \allowBreak a
+  \allowBreak a[ g]
+  \allowBreak g4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    
-    
-    s2 s8 f2. d\breve*6/16 e4. g\breve*5/16 f\breve*7/16 d2
+  s2 s8 f2. d\breve*6/16 s16 e4. g\breve*5/16 f\breve*7/16 d2
 }
 tenorNotesAnt = \relative g {
-    
-    
-    c\breve*5/16~ c2. b\breve*6/16 a4. d\breve*5/16~ d\breve*5/16 c4~ c b
+  c\breve*5/16~ c2. b\breve*6/16 s16 a4. d\breve*5/16~ d\breve*5/16 c4~ c b
 }
 bassNotesAnt = \relative c {
-    
-    
-    e\breve*5/16 f2. g\breve*6/16~ g4.~ g\breve*5/16 d\breve*7/16 g2
+  e\breve*5/16 f2. g\breve*6/16~ s16 g4.~ g\breve*5/16 d\breve*7/16 g2
 }

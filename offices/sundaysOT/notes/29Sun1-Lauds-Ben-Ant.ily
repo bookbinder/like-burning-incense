@@ -13,8 +13,8 @@ psalmnum = "Benedictus"
 frompitch = a
 topitch = a
 %% transposition after accounting for psalm tone
-master-from-pitch = a
-master-to-pitch = a
+master-from-pitch = cis
+master-to-pitch = c
 
 
 text = \lyricmode {
@@ -24,25 +24,40 @@ text = \lyricmode {
     and to give his life as a ran -- som for ma -- ny.
 }
 sopNotesAnt = \relative e' {
-    
-    
-    r8 gis8 fis[ gis] ais gis4 gis8 fis[ gis] b[ gis] fis e \bar ""
-    fis4 fis8 e \bar "" dis4
-    \bar "'" dis8 dis \bar "" e[ dis] cis cis[ gis'] gis fis gis4 gis8 fis
-    \bar "" e[ dis] \bar "" dis4 \bar "||"
+  \allowBreak r8
+  \allowBreak gis8
+  \allowBreak fis[ gis]
+  \allowBreak ais
+  \allowBreak gis4
+  \allowBreak gis8
+  \allowBreak fis[ gis]
+  \allowBreak b[ gis]
+  \allowBreak fis
+  \allowBreak e
+  \allowBreak fis4
+  \allowBreak fis8
+  \allowBreak e
+  \allowBreak dis4
+  \hideNotes dis16 \unHideNotes  %so taht I can align the * better
+  \allowBreak dis8
+  \allowBreak dis
+  \allowBreak e[ dis]
+  \allowBreak cis
+  \allowBreak cis[ gis']
+  \allowBreak gis
+  \allowBreak fis
+  \allowBreak gis4
+  \allowBreak gis8
+  \allowBreak fis
+  \allowBreak e[ dis]
+  \allowBreak dis4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    
-    
-    dis4 cis4. dis\breve*9/16 cis2 b gis\breve*11/16 cis4 b
+  dis4 cis4. dis\breve*9/16 cis2 b s16 gis\breve*11/16 cis4 b
 }
 tenorNotesAnt = \relative g {
-    
-    
-    b4 ais4. b\breve*9/16 gis2~ gis e\breve*11/16 gis2
+  b4 ais4. b\breve*9/16 gis2~ gis s16 e\breve*11/16 gis2
 }
 bassNotesAnt = \relative c {
-    
-    
-    gis'4~ gis4.~ gis\breve*9/16 cis,2 gis cis\breve*11/16 gis2
+  gis'4~ gis4.~ gis\breve*9/16 cis,2 gis s16 cis\breve*11/16 gis2
 }

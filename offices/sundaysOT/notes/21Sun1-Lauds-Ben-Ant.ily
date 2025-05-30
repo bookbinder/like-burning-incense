@@ -25,29 +25,49 @@ text = \lyricmode {
     con -- vinced that you are Christ, the Son of God, al -- le -- lu -- ia.
 }
 sopNotesAnt = \relative e' {
-    
-    
-    e4 fis8 gis[ a] gis a b4 \bar "'" e,4 dis8 e \allowBreak
-    fis4 \allowBreak e8 fis a[ gis] fis e4 r4 \bar "|"
-    e8 gis b[ cis] b b gis b \bar "" cis4 b8 \bar "" gis[ b a] gis \bar ""
-    fis8--[ e cis] \breathe e8 \bar "" fis[ a gis] a \bar "" fis--([ e] gis4)
-    \bar "'" e8 fis[ gis] e4 e \bar "||"
+  e4 fis8 gis[ a] gis a b4
+  \hideNotes b16 \unHideNotes  %so taht I can align the * better
+  \allowBreak e,4
+  \allowBreak dis8
+  \allowBreak e
+  \allowBreak fis4
+  \allowBreak e8
+  \allowBreak fis
+  \allowBreak a[ gis]
+  \allowBreak fis
+  \allowBreak e4
+  \allowBreak r4 \bar "|"
+  \allowBreak e8
+  \allowBreak gis
+  \allowBreak b[ cis]
+  \allowBreak b
+  \allowBreak b
+  \allowBreak gis
+  \allowBreak b
+  \allowBreak cis4
+  \allowBreak b8
+  \allowBreak gis[ b a]
+  \allowBreak gis
+  \allowBreak fis8--[ e cis]
+  \allowBreak \breathe
+  \allowBreak e8
+  \allowBreak fis[ a gis]
+  \allowBreak a
+  \allowBreak fis--([ e] gis4) \bar "'"
+  \allowBreak e8
+  \allowBreak fis[ gis]
+  \allowBreak e4
+  \allowBreak e \bar "||"
 }
 altoNotesAnt = \relative c' {
-    
-    
-    e\breve*9/16 cis\breve*11/16 b2 e\breve*8/16~ e4. dis2 cis e
-    cis\breve*5/16~ cis4 b2
+  e\breve*9/16 s16 cis\breve*11/16 b2 e\breve*8/16~ e4. dis2 cis e
+  cis\breve*5/16~ cis4 b2
 }
 tenorNotesAnt = \relative g {
-    
-    
-    gis\breve*9/16 a\breve*11/16 gis2 e\breve*8/16~ e4. gis2~ gis a
-    gis\breve*5/16 a4~ a gis
+  gis\breve*9/16 s16 a\breve*11/16 gis2 e\breve*8/16~ e4. gis2~ gis a
+  gis\breve*5/16 a4~ a gis
 }
 bassNotesAnt = \relative c {
-    
-    
-    e\breve*9/16~ e\breve*11/16~ e2 gis,\breve*8/16 a4. b2 cis4( e~) e2~
-    e\breve*5/16~ e4~ e2
+  e\breve*9/16~ s16 e\breve*11/16~ e2 gis,\breve*8/16 a4. b2 cis4( e~) e2~
+  e\breve*5/16~ e4~ e2
 }

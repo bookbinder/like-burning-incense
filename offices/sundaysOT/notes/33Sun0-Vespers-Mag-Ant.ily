@@ -25,27 +25,33 @@ text = \lyricmode {
     share your mas -- ter's joy.
 }
 sopNotesAnt = \relative e' {
-    
-    
-    gis8[ cis,] cis4 e8 fis[ gis] fis e[ cis] e \bar "" fis4 fis \bar "'"
-    fis8 fis fis \bar "" gis[ b] cis b gis \bar "" gis[ fis] fis4 \bar "'"
-    e4 \bar "" dis8[ e] fis e dis \bar "" cis4 \bar "||"
+  gis8[ cis,] cis4 e8 fis[ gis] fis e[ cis] e \bar "" fis4 fis
+  \hideNotes fis16 \unHideNotes  %so taht I can align the * better
+  \allowBreak fis8
+  \allowBreak fis
+  \allowBreak fis
+  \allowBreak gis[ b]
+  \allowBreak cis
+  \allowBreak b
+  \allowBreak gis
+  \allowBreak gis[ fis]
+  \allowBreak fis4 \bar "'"
+  \allowBreak e4
+  \allowBreak dis8[ e]
+  \allowBreak fis
+  \allowBreak e
+  \allowBreak dis
+  \allowBreak cis4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    
-    
-    gis\breve*5/16 cis2. dis\breve*7/16 e\breve*5/16 dis2
-    cis4 a\breve*5/16 gis4
+  gis\breve*5/16 cis2. dis\breve*7/16 s16 e\breve*5/16 dis2
+  cis4 a\breve*5/16 gis4
 }
 tenorNotesAnt = \relative g {
-    
-    
-    e\breve*5/16 a4. gis4. b\breve*7/16~ b\breve*5/16~ b2
-    gis4 fis\breve*5/16 e4
+  e\breve*5/16 a4. gis4. b\breve*7/16~ s16 b\breve*5/16~ b2
+  gis4 fis\breve*5/16 e4
 }
 bassNotesAnt = \relative c {
-    
-    
-    cis\breve*5/16~ cis2. b\breve*7/16 e\breve*5/16 b2
-    cis4~ cis\breve*5/16~ cis4
+  cis\breve*5/16~ cis2. b\breve*7/16 s16 e\breve*5/16 b2
+  cis4~ cis\breve*5/16~ cis4
 }

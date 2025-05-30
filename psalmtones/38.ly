@@ -1,4 +1,5 @@
 \version "2.18.2"
+\include "/home/ryan/scores/like-burning-incense/lbi_defs.ily"
 \include "notes/38-notes.ily"
 
 sopMusic = {
@@ -44,14 +45,14 @@ bassMusic = {
             <<
                 \new Staff ="up"
                 <<
-                    \clef treble
+                    \clef treble \toneKeysig
                     \accidentalStyle forget
                     \new Voice = "Soprano" \sopMusic
                     \new Voice = "Alto" \altoMusic
                 >>
                 \new Staff ="down"
                 <<
-                    \clef bass
+                    \clef bass \toneKeysig
                     \accidentalStyle forget
                     \new Voice = "Tenor" \tenorMusic
                     \new Voice = "Bass" \bassMusic
