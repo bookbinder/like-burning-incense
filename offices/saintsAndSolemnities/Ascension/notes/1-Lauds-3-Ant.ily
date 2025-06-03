@@ -17,7 +17,7 @@ master-to-pitch = a
 
 text = \lyricmode {
   \set includeGraceNotes = ##t
-  As the watched,
+  As they watched,
   \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
   he was lif -- ted up, and a cloud took him from their
   sight, al -- le -- lu -- ia.

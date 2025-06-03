@@ -1,0 +1,372 @@
+\documentclass[12pt,twocolumn]{book}
+
+\usepackage[ %% uncomment options below to exclude them
+  lauds,
+  vespers,
+  hymn,
+  psalmody-heading,
+  psalmtexts,
+  reading,
+  responsory,
+  gospelcanticle-heading,
+  intercessions,
+  prayer,
+  default, %% don't uncomment this one
+]{optional}
+
+%% Layout settings optimized for my linux setup, which doesn't have the
+%% best print drivers. In the print dialog, select 'Fit to whole page' 
+\usepackage[paperheight=10.66in,%
+  paperwidth=8.16in,%
+  inner=.15in,%
+  outer=.15in,%
+  top=.39in,%
+  bottom=.3in,%
+  headsep=.23in,%
+  footskip=14pt]{geometry}
+
+
+\usepackage[T1]{fontenc}
+\usepackage[USenglish]{babel}
+\usepackage{fontspec}
+\setmainfont{Linux Libertine O}
+\setsansfont[Scale=1]{Linux Biolinum O}
+\newfontfamily\QuintFirst[Scale=2]{Quintessential}
+
+\usepackage{lettrine}
+%% \renewcommand{\LettrineFontHook}{\QuintFirst}
+
+\usepackage[nofragment, insert=systems]{lyluatex}
+%% \setluaoption{ly}{pass-fonts}{true}
+
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\sffamily\thepage}
+\fancyhead[RO]{\sffamily\thepage}
+\fancyhead[CE]{\normalfont\sffamily\color{red}\leftmark}
+\fancyhead[CO]{\normalfont\sffamily\color{red}\rightmark}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{14.5pt}
+%% \setlength{\headsep}{10pt}
+\setcounter{secnumdepth}{-1}
+\setcounter{tocdepth}{1}
+
+%% \usepackage{xstring}
+\usepackage{verse}
+\newcommand{\defleftmargini}{1em}
+\newcommand{\prayerleftmargini}{0em}
+\newcommand{\Aleftmargini}{2em}
+\newcommand{\Bleftmargini}{3em}
+\newcommand{\Cleftmargini}{4em}
+\newcommand{\Dleftmargini}{5em}
+\newcommand{\Eleftmargini}{6em}
+\setlength{\leftmargini}{\defleftmargini}  %% left margin
+\setlength{\stanzaskip}{0.6\baselineskip}  %% space between verses
+
+
+\usepackage{hyperref}
+\hypersetup{colorlinks, citecolor=black, filecolor=black, linkcolor=black, urlcolor=black}
+
+
+\setlength{\columnseprule}{0.4pt}
+\setlength{\columnsep}{.3in}
+
+
+\usepackage[nobottomtitles*]{titlesec}
+\renewcommand{\bottomtitlespace}{7\baselineskip}
+%% \newcommand{\sectionbreak}{\clearpage}
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily\filcenter}
+  {\chaptertitlename\ \thechapter}{0pt}{\LARGE}
+
+\titleformat{\section}
+  {\normalfont\sffamily\large\bfseries\filcenter}
+  {\thesection}{1em}{{\color{red}\titlerule\vspace{1ex}}}
+
+\titleformat{\subsection}
+  {\normalfont\color{red}}
+  {\thesection}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\color{red}\filcenter}
+  {\thesection}{1em}{}
+  
+%% \titlespacing*{⟨command ⟩}{⟨left⟩}{⟨before-sep⟩}{⟨after-sep⟩}[⟨right-sep⟩]
+\titlespacing*{\chapter}{0pt}{0pt}{10pt}
+\titlespacing*{\section}{0pt}{20pt}{4pt}
+\titlespacing*{\subsection}{0pt}{3ex}{1ex}
+\titlespacing*{\subsubsection}{0pt}{2ex}{1ex}
+\titlespacing*{\paragraph}{0ex}{1ex}{1ex}[0ex]
+
+\newcommand{\psalm}[1]{\subsubsection{\textbf{#1}}}
+\newcommand{\psalmsubtitle}[1]{\subsubsection{#1}}
+\newcommand{\antiphonA}{\subsubsection{Antiphon 1}}
+\newcommand{\antiphonB}{\subsubsection{Antiphon 2}}
+\newcommand{\antiphonC}{\subsubsection{Antiphon 3}}
+\newcommand{\antiphonBen}{\subsubsection{Benedictus Antiphon}}
+\newcommand{\antiphonMag}{\subsubsection{Magnificat Antiphon}}
+\newcommand{\antiphon}{\subsubsection{Antiphon}}
+
+%% \newcommand{\topheader}[2]{%
+    %% \noindent\fbox{\large\bfseries #1}\hfill\fbox{\large\bfseries #2}}
+%% \newcommand{\inlily}[1]{\lilypondfile%
+  %% [line-width=4.8\in]%
+  %% {#1}}
+\newcommand{\topheader}[2]{}
+\newcommand{\spacer}{\vspace{1.5\baselineskip}}
+\newcommand{\smallspacer}{\vspace{0.5\baselineskip}}
+\newcommand{\medspacer}{\vspace{0.85\baselineskip}}
+\newcommand{\FirstLetter}[1]{{\QuintFirst\color{black!80}\raisebox{-4pt}{#1}}}
+\newcommand{\psalmtitle}{}
+\newcommand{\subhead}{}
+\newcommand{\descA}{}
+\newcommand{\descB}{}
+\newcommand{\reading}[1]{\subsection{\textsc{Reading}\hfill\normalsize #1}}
+\newcommand{\benAbsentSeasons}{\subsection{\textsc{Benedictus}, antiphon as in the Proper of Seasons.}}
+
+%% \newcommand{\responsory2}[3]{\subsection{\textsc{Responsory}}%
+%% #1 #2
+
+%% \noindent{\color{red}---}#1 #2
+
+%% \medskip\noindent #3
+
+%% \noindent{\color{red}---}#2
+
+%% \medskip\noindent Glory to the Father, and to the Son, and to the Holy Spirit.
+
+%% \noindent{\color{red}---}#1 #2
+%% }
+\newcommand{\intercessions}{\subsection{\textsc{Intercessions}}}
+\newcommand{\psalmody}{\subsection{\textsc{Psalmody}}}
+\newcommand{\responsory}{\subsection{\textsc{Responsory}}}
+\newcommand{\hymn}{\subsection{\textsc{Hymn}}}
+\newcommand{\prayer}{\subsubsection{Prayer}}
+\newcommand{\benedictus}{\subsection{\textsc{Canticle of Zechariah}}}
+\newcommand{\magnificat}{\subsection{\textsc{Canticle of Mary}}}
+\newcommand{\gospelcanticle}{\subsection{\textsc{Gospel Canticle}}}
+\newcommand{\nogospelcanticle}{\subsection{\textsc{Gospel Canticle}, antiphon as in the Proper of Seasons.}}
+\newcommand{\noprayer}{\subsection{Prayer, as in the Proper of Seasons.}\null\medskip}
+%% \raggedright
+\raggedbottom
+
+\newcommand{\myaccentcolor}{\color{black!60}}
+\newcommand{\myastcolor}{\color{black!90}}
+\newcommand{\myaccentsize}{\Huge}
+\newcommand{\myaccentposition}{\vskip-4pt}
+\newcommand{\myaccentpositionl}{\vskip-5.5pt}
+
+\newcommand\pointup[1]{\leavevmode\vbox{\offinterlineskip
+    \halign{##\cr\hss\makebox(0,0){\hspace{2pt}\myaccentcolor\myaccentsize\char"00B4}\hss\cr\noalign{\myaccentposition}#1\cr}}}
+\newcommand\pointupl[1]{\leavevmode\vbox{\offinterlineskip
+\halign{##\cr\hss\makebox(0,0){\hspace{0pt}\myaccentcolor\myaccentsize\char"00B4}\hss\cr\noalign{\myaccentpositionl}#1\cr}}}
+\newcommand{\Med}{~\raisebox{2pt}{\myastcolor$\ast$}}
+\newcommand{\Flex}{~{\myastcolor\textdagger}}
+\newcommand{\Desc}[2]{\noindent\small\emph{#1} #2}
+
+\hyphenation{Co-rin-thi-an}
+\hyphenation{Co-rin-thi-ans}
+\hyphenation{E-phe-sians}
+\hyphenation{Mat-thew}
+
+
+\newenvironment{hangpar}
+  {\setlength{\leftskip}{1em}%%
+    \setlength{\parindent}{-1em}%%
+  }
+
+\newenvironment{hymnsource}%%
+               {%%
+                 \scriptsize
+                 \setlength{\leftskip}{1em}%%
+                 \setlength{\parindent}{-1em}%%
+               }%%
+
+
+
+\begin{document}
+
+%% \chapter{Advent, Week I}
+
+%% \opt{vespers}{\section{Sunday Evening Prayer I}}
+%% \opt{vespers}{\input{AA0-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Sunday Morning Prayer}}
+%% \opt{lauds}{\input{AA1-Lauds-Cantor.tex}}
+
+%% \opt{vespers}{\section{Sunday Evening Prayer II}}
+%% \opt{vespers}{\input{AA1-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Monday Morning Prayer}}
+%% \opt{lauds}{\input{AA2-Lauds-Cantor.tex}}
+
+%% \opt{vespers}{\section{Monday Evening Prayer}}
+%% \opt{vespers}{\input{AA2-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Tuesday Morning Prayer}}
+%% \opt{lauds}{\input{AA3-Lauds-Cantor.tex}}
+
+%% \opt{vespers}{\section{Tuesday Evening Prayer}}
+%% \opt{vespers}{\input{AA3-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Wednesday Morning Prayer}}
+%% \opt{lauds}{\input{AA4-Lauds-Cantor.tex}}
+
+%% \opt{vespers}{\section{Wednesday Evening Prayer}}
+%% \opt{vespers}{\input{AA4-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Thursday Morning Prayer}}
+%% \opt{lauds}{\input{AA5-Lauds-Cantor.tex}}
+
+%% \opt{vespers}{\section{Thursday Evening Prayer}}
+%% \opt{vespers}{\input{AA5-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Friday Morning Prayer}}
+%% \opt{lauds}{\input{AA6-Lauds-Cantor.tex}}
+
+%% \opt{vespers}{\section{Frday Evening Prayer}}
+%% \opt{vespers}{\input{AA6-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Saturday Morning Prayer}}
+%% \opt{lauds}{\input{AA7-Lauds-Cantor.tex}}
+
+
+\chapter{Advent, Week II}
+
+%% \opt{vespers}{\section{Sunday Evening Prayer I}}
+%% \opt{vespers}{\input{AB0-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Sunday Morning Prayer}}
+%% \opt{lauds}{\input{AB1-Lauds-Cantor.tex}}
+
+%% \opt{vespers}{\section{Sunday Evening Prayer II}}
+%% \opt{vespers}{\input{AB1-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Monday Morning Prayer}}
+%% \opt{lauds}{\input{AB2-Lauds-Cantor.tex}}
+
+\opt{vespers}{\section{Monday Evening Prayer}}
+\opt{vespers}{\input{AB2-Vespers-Cantor.tex}}
+
+\opt{lauds}{\section{Tuesday Morning Prayer}}
+\opt{lauds}{\input{AB3-Lauds-Cantor.tex}}
+
+\opt{vespers}{\section{Tuesday Evening Prayer}}
+\opt{vespers}{\input{AB3-Vespers-Cantor.tex}}
+
+\opt{lauds}{\section{Wednesday Morning Prayer}}
+\opt{lauds}{\input{AB4-Lauds-Cantor.tex}}
+
+\opt{vespers}{\section{Wednesday Evening Prayer}}
+\opt{vespers}{\input{AB4-Vespers-Cantor.tex}}
+
+\opt{lauds}{\section{Thursday Morning Prayer}}
+\opt{lauds}{\input{AB5-Lauds-Cantor.tex}}
+
+\opt{vespers}{\section{Thursday Evening Prayer}}
+\opt{vespers}{\input{AB5-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Friday Morning Prayer}}
+%% \opt{lauds}{\input{AB6-Lauds-Cantor.tex}}
+
+%% \opt{vespers}{\section{Frday Evening Prayer}}
+%% \opt{vespers}{\input{AB6-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Saturday Morning Prayer}}
+%% \opt{lauds}{\input{AB7-Lauds-Cantor.tex}}
+
+
+%% \chapter{Advent, Week III}
+
+%% \opt{vespers}{\section{Sunday Evening Prayer I}}
+%% \opt{vespers}{\input{AC0-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Sunday Morning Prayer}}
+%% \opt{lauds}{\input{AC1-Lauds-Cantor.tex}}
+
+%% \opt{vespers}{\section{Sunday Evening Prayer II}}
+%% \opt{vespers}{\input{AC1-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Monday Morning Prayer}}
+%% \opt{lauds}{\input{AC2-Lauds-Cantor.tex}}
+
+%% \opt{vespers}{\section{Monday Evening Prayer}}
+%% \opt{vespers}{\input{AC2-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Tuesday Morning Prayer}}
+%% \opt{lauds}{\input{AC3-Lauds-Cantor.tex}}
+
+%% \opt{vespers}{\section{Tuesday Evening Prayer}}
+%% \opt{vespers}{\input{AC3-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Wednesday Morning Prayer}}
+%% \opt{lauds}{\input{AC4-Lauds-Cantor.tex}}
+
+%% \opt{vespers}{\section{Wednesday Evening Prayer}}
+%% \opt{vespers}{\input{AC4-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Thursday Morning Prayer}}
+%% \opt{lauds}{\input{AC5-Lauds-Cantor.tex}}
+
+%% \opt{vespers}{\section{Thursday Evening Prayer}}
+%% \opt{vespers}{\input{AC5-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Friday Morning Prayer}}
+%% \opt{lauds}{\input{AC6-Lauds-Cantor.tex}}
+
+%% \opt{vespers}{\section{Frday Evening Prayer}}
+%% \opt{vespers}{\input{AC6-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Saturday Morning Prayer}}
+%% \opt{lauds}{\input{AC7-Lauds-Cantor.tex}}
+
+
+%% \chapter{Advent, Week IV}
+
+%% \opt{vespers}{\section{Sunday Evening Prayer I}}
+%% \opt{vespers}{\input{AD0-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Sunday Morning Prayer}}
+%% \opt{lauds}{\input{AD1-Lauds-Cantor.tex}}
+
+%% \opt{vespers}{\section{Sunday Evening Prayer II}}
+%% \opt{vespers}{\input{AD1-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Monday Morning Prayer}}
+%% \opt{lauds}{\input{AD2-Lauds-Cantor.tex}}
+
+%% \opt{vespers}{\section{Monday Evening Prayer}}
+%% \opt{vespers}{\input{AD2-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Tuesday Morning Prayer}}
+%% \opt{lauds}{\input{AD3-Lauds-Cantor.tex}}
+
+%% \opt{vespers}{\section{Tuesday Evening Prayer}}
+%% \opt{vespers}{\input{AD3-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Wednesday Morning Prayer}}
+%% \opt{lauds}{\input{AD4-Lauds-Cantor.tex}}
+
+%% \opt{vespers}{\section{Wednesday Evening Prayer}}
+%% \opt{vespers}{\input{AD4-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Thursday Morning Prayer}}
+%% \opt{lauds}{\input{AD5-Lauds-Cantor.tex}}
+
+%% \opt{vespers}{\section{Thursday Evening Prayer}}
+%% \opt{vespers}{\input{AD5-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Friday Morning Prayer}}
+%% \opt{lauds}{\input{AD6-Lauds-Cantor.tex}}
+
+%% \opt{vespers}{\section{Frday Evening Prayer}}
+%% \opt{vespers}{\input{AD6-Vespers-Cantor.tex}}
+
+%% \opt{lauds}{\section{Saturday Morning Prayer}}
+%% \opt{lauds}{\input{AD7-Lauds-Cantor.tex}}
+
+
+
+\end{document}

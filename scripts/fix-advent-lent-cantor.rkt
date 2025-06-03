@@ -1,0 +1,77 @@
+#lang racket
+
+(define offices "/home/ryan/scores/like-burning-incense/offices/")
+(define advpath (string->path (format "~aadvent/" offices)))
+(define lentpath (string->path (format "~alent/" offices)))
+
+(define adv-files
+  (filter
+   (lambda (p) (regexp-match? #rx"Vespers-Cantor.tex$" p))
+   (directory-list advpath)))
+
+(define lent-files
+  (filter
+   (lambda (p) (regexp-match? #rx"Vespers-Cantor.tex$" p))
+   (directory-list lentpath)))
+
+(define bentext "%%%% Begin Ant4
+%% \\antiphonBen
+%% \\lilypondfile[line-width=3.73in]{A4-Lauds-Ben-Ant-Cantor.ly}
+%% \\opt{psalmtexts}
+%%   {
+%%   \\psalm{Benedictus}
+%%   \\input{~/scores/like-burning-incense/psalms/psalm4/toneStruc4/psalm4.tex}
+%%   \\antiphon
+%%   \\lilypondfile[line-width=3.73in]{A4-Lauds-Ben-Ant-Cantor.ly}
+%%   }
+%%%% End Ant4")
+
+(define magtext "%%%% Begin Ant4
+%% \\antiphonMag
+%% \\lilypondfile[line-width=3.73in]{A4-Lauds-Mag-Ant-Cantor.ly}
+%% \\opt{psalmtexts}
+%%   {
+%%   \\psalm{Magnificat}
+%%   \\input{~/scores/like-burning-incense/psalms/psalm4/toneStruc4/psalm4.tex}
+%%   \\antiphon
+%%   \\lilypondfile[line-width=3.73in]{A4-Lauds-Mag-Ant-Cantor.ly}
+%%   }
+%%%% End Ant4")
+
+;; (for ([f (append adv-files lent-files)])
+;;   (let* ([fstrpath (path->string f)]
+;;          [offices "/home/ryan/scores/like-burning-incense/offices/"]
+;;          [ftxt (first
+;;                 (regexp-match "%%%% Begin Ant1.*%%%% End Ant3"
+;;                               (file->string
+;;                                (string->path
+;;                                 (format "~aordinaryTime/~a" offices f)))))]
+;;          [ftxt (string-replace ftxt "3.73in]{" "3.73in]{/home/ryan/scores/like-burning-incense/offices/ordinaryTime/")]
+;;          [advtexfile (string->path (format "~aadvent/A~a" offices fstrpath))]
+;;          [lenttexfileA (string->path (format "~alent/L~a" offices fstrpath))]
+;;          [lenttexfileB
+;;           (if (char=? #\D (string-ref fstrpath 0))
+;;               #f
+;;               (string->path
+;;                (format "~alent/L~a~a"
+;;                        offices
+;;                        (integer->char
+;;                         (+ 4 (char->integer (string-ref fstrpath 0))))
+;;                        (substring fstrpath 1))))]
+;;          [weekday? (and (not (char=? #\0 (string-ref fstrpath 1)))
+;;                         (not (char=? #\1 (string-ref fstrpath 1))))])
+
+;;     (when weekday?
+;;       (display-to-file
+;;        (string-append ftxt "\n\n" bentext) advtexfile #:exists 'replace)
+;;       (display-to-file
+;;        (string-append ftxt "\n\n" bentext) lenttexfileA #:exists 'replace)
+;;       (when lenttexfileB
+;;         (display-to-file
+;;          (string-append ftxt "\n\n" bentext) lenttexfileB #:exists 'replace)))
+
+;;     ;; (displayln (string-append ftxt "\n\n" bentext))
+;;     ;; (display-to-file (string-append ftxt "\n\n" bentext))
+;;     ;; (when lenttexfileB (println lenttexfileB))
+    
+;;     ))

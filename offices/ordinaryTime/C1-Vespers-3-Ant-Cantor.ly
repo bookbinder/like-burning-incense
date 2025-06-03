@@ -2,7 +2,7 @@
 
 
 \include "/home/ryan/scores/like-burning-incense/lbi_defs_cantor.ily"
-\include "notes/C1-Vespers-3-Ant.ily"
+\include "/home/ryan/scores/like-burning-incense/offices/ordinaryTime/notes/C1-Vespers-3-Ant.ily"
 \include "/home/ryan/scores/like-burning-incense/psalmtones/notes/68-notes.ily"
 
 

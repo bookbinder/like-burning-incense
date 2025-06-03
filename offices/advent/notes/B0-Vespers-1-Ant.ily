@@ -2,7 +2,7 @@
 \include "../../../lbi_defs.ily"
 
 antiphon = "1"
-psalmnum = "Ps_119_105-112_(XIV_Nun)"
+psalmnum = "Ps_119_105-112"
 psalmtone = "36"
 psalmtonestruct = "33"
 keysig = \key ges \major
@@ -28,8 +28,7 @@ altoNotesAnt = \relative d' {
     \global
     \keysig
     \voiceTwo
-    des\breve*5/16 ees4. f4 des4 bes2 aes2. des4.~ des4~ des4. aes4.
-    ces4 des4. aes2
+    des\breve*5/16 ees4. f4 des4 bes2 aes2. des4.~ des4~ des4. aes4. ces4 des4. aes2
 }    
 tenorNotesAnt = \relative g {
     \global
