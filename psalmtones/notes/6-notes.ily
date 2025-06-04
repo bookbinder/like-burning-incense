@@ -20,8 +20,8 @@ altoTwo = {  e'\breve s4 c'4 f'\breve s8 d'4  }
 
 tenorOneFlex = { \afterGrace c'\breve c'4 c'\breve~ s4 c'4 \bar "|" d'\breve s8 b4 \bar "||" }
 tenorOne = { c'\breve~ s4 c'4 \bar "|" d'\breve s8 b4 \bar "||"  }
-tenorTwoFlex = { \afterGrace c'\breve a4 c'\breve~ s4 \parenthesize c'4~ \bar "|" c'\breve s8 b4 \bar "||" }_"+"
-tenorTwo = { c'\breve~ s4 \parenthesize c'4~ \bar "|" c'\breve s8 b4 \bar "||" }_"+"
+tenorTwoFlex = { \afterGrace c'\breve a4 c'\breve~ s4 \parenthesize c'4~ \bar "|" c'\breve s8 b4 \bar "||" }
+tenorTwo = { c'\breve~ s4 \parenthesize c'4~ \bar "|" c'\breve s8 b4 \bar "||" }
 
 bassOneFlex = { \afterGrace s\breve a4 s\breve s4 a4 f\breve s8 g4 }
 bassOne = { s\breve s4 a4 f\breve s8 g4  }

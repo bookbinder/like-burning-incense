@@ -2,7 +2,7 @@
 \include "../../../lbi_defs.ily"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key ges \major 
+keysig =  \key f \minor 
 antiphon = "3"
 psalmtone = "37"
 psalmtonestruct = "33"
