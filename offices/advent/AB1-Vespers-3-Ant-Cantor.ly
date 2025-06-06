@@ -1,7 +1,7 @@
 \version "2.20.0"
 
 \include "/home/ryan/scores/like-burning-incense/lbi_defs_cantor.ily"
-\include "/home/ryan/scores/like-burning-incense/offices/advent/notes/AA1-Vespers-3-Ant.ily"
+\include "/home/ryan/scores/like-burning-incense/offices/advent/notes/AB1-Vespers-3-Ant.ily"
 \include "/home/ryan/scores/like-burning-incense/psalmtones/notes/68-notes.ily"
 
 \score {

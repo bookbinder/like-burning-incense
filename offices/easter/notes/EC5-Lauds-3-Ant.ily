@@ -19,7 +19,7 @@ text = \lyricmode {
   \set includeGraceNotes = ##t
   Great is the Lord in Zi -- on;
   \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
-  he is e -- xal -- ted a -- bove all the peo -- ples, al -- le -- lu -- ia.
+  he is ex -- al -- ted a -- bove all the peo -- ples, al -- le -- lu -- ia.
 }
 sopNotesAnt = \relative e' {
   aes4 f8 ges aes[ bes] aes aes[ des,] des4

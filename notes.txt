@@ -2,3 +2,7 @@ psalmtones 17 and 19 ... where there is overlapping in the bass clef, maybe shou
 psalmtone 2: put a tie in the alto
 psalmtone 43: does it sound better than psalmtone 56?
 psalmtone 79: consider sprung rhythm in second bar
+ADVENT Week 1 Friday Evening Prayer missing
+ADVENT WEEK 3 Saturday morning prayer missing
+ADVENT WEEK 4 Sunday Lauds -- no Benedictus, or do we always use the dec17-24 Benedictus?
+

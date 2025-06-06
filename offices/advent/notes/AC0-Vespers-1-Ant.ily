@@ -49,7 +49,7 @@ altoNotesAnt = \relative c' {
 tenorNotesAnt = \relative g {
   a4 g4. \tieDown
   <<  {a2 \hideNotes f4 s16 \unHideNotes } \\
-      {\voiceOne \hideNotes  f2~ s16 \unHideNotes f4~ }
+      { \hideNotes  f2~ s16 \unHideNotes f4~ }
     >> \tieUp
   f4~ f4. e4.~ e\breve*7/16 f4. e4 d2
 }

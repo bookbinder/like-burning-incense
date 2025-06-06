@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key f \minor
+antKeysig =  \key f \minor
 antiphon = "M"
 psalmtone = "52"
 psalmtonestruct = "44"
@@ -24,9 +24,9 @@ text = \lyricmode {
     no -- thing keep you from co -- ming to our aid.
 }
 sopNotesAnt = \relative e' {
-    \global
-    \keysig
-    \voiceOne
+
+    
+    
     r8 ees8( aes4 g8) aes f \bar "" g[ f ees] f f4 \bar "'"
     f8 ees f g[ aes] g g f aes g g[ f] \bar "" f[ ees] ees4 \bar ","
     aes8[ g] f g f ees f \bar "" g4 g \bar "'"
@@ -35,25 +35,25 @@ sopNotesAnt = \relative e' {
     \bar "" f4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    \global
-    \keysig
-    \voiceTwo
+
+    
+    
     r8 ees8 c\breve*5/16 ees2 c4. ees4~ ees\breve*13/16~
     ees\breve*7/16~ ees\breve*5/16 c\breve*5/16 ees2 f2 ees4.
     f4. des4. ees\breve*5/16 c4
 }
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
-    \voiceOne
+
+    
+    
     bes4 aes\breve*5/16 bes2 aes4. bes4~ bes\breve*9/16~ bes2
     aes\breve*7/16 bes\breve*5/16 aes\breve*5/16 bes2~ bes2
     g4. f4. bes4.~ bes\breve*5/16 aes4
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
-    \voiceTwo
+
+    
+    
     g'4 f\breve*5/16 ees4 c4 f4. g4 ees\breve*9/16 g2 c,\breve*7/16
     ees\breve*5/16 f\breve*5/16 ees2 des2 c4. des4. bes4.
     c\breve*5/16 f4

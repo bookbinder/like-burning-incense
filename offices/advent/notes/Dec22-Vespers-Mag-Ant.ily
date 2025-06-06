@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key f \minor
+antKeysig =  \key f \minor
 antiphon = "M"
 psalmtone = "52"
 psalmtonestruct = "44"
@@ -24,9 +24,9 @@ text = \lyricmode {
     from the dust.
 }
 sopNotesAnt = \relative e' {
-    \global
-    \keysig
-    \voiceOne
+
+    
+    
     r8 ees8( aes4 g8) aes f g f ees[ f] f4 \bar "'"
     f8 \bar "" f[ g] f \bar "" g4 f8 ees f g f \bar "" ees4 \bar ","
     f8 \bar "" aes[ f g] \bar "" f4 ees8 f \bar "" g[ aes] aes g aes
@@ -34,27 +34,27 @@ sopNotesAnt = \relative e' {
     c4 c8 \bar "" bes[ aes] g \bar "" f g f \bar "" ees ees g aes f4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    \global
-    \keysig
-    \voiceTwo
+
+    
+    
     r8 ees8 c4. des2. c4.~ c4. des4.~ des2 ees4.
     c4. s2 ees\breve*5/16 f4 ees4. f4. des4. ees2 c4
 }
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
-    \voiceOne
+
+    
+    
     bes4 aes4. bes2 g4 aes4. f4.~ f4. bes4 aes4 g4.
     aes4. bes2~ bes\breve*5/16~ bes4 g4. f4. bes4.~ bes2 aes4
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
-    \voiceTwo
+
+    
+    
     g'4 f4.~ f2.~ f4.~
     <<
-      {\hideNotes \voiceOne f4. \unHideNotes \voiceTwo}
-      \new Voice {\voiceTwo aes,4.}
+      {\hideNotes  f4. \unHideNotes }
+      \new Voice { aes,4.}
     >>
     bes4.~ bes2 ees4. f4. g2
     ees\breve*5/16 des4 c4. des4. bes4. c2 f4

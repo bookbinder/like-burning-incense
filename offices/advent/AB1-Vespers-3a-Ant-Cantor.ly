@@ -1,7 +1,7 @@
 \version "2.24.3"
 
 \include "/home/ryan/scores/like-burning-incense/lbi_defs_cantor.ily"
-\include "/home/ryan/scores/like-burning-incense/offices/ordinaryTime/notes/AA1-Vespers-3-Ant.ily"
+\include "/home/ryan/scores/like-burning-incense/offices/ordinaryTime/notes/AB1-Vespers-3-Ant.ily"
 \include #(string-append "../../psalmtones/notes/" "68" "-notes.ily")
 
 

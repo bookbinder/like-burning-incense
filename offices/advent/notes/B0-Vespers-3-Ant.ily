@@ -1,7 +1,7 @@
 \version "2.18.2"
 \include "../../../lbi_defs.ily"
 
-keysig = \key f \minor
+antKeysig = \key f \minor
 antiphon = "3"
 psalmnum = "Phil_2_6-11"
 psalmtonestruct = "33"
@@ -16,28 +16,28 @@ text = \lyricmode {
     come through Je -- sus Christ.
 }
 sopNotesAnt = \relative fis' {
-    \global	% will be populated by an include file
-		% in the cantor/organ scores called lbi_defs
-    \keysig
-    \voiceOne
+
+		
+    
+    
     r8 f8 f4 ees8 g aes bes aes[ g f] f4 \bar "'" f8 g[ aes] g g([ aes] bes4)
     bes8 g \bar "" aes g \bar "" g4( f) \bar "||"
 }
 altoNotesAnt = \relative d' {
-    \global
-    \keysig
-    \voiceTwo
+
+    
+    
     s2 s2 s4. s4 s8 ees4. f2. ees4 c2
 }    
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
-    \voiceOne
+
+    
+    
     c4 bes2. c4. aes4. bes4.~ bes2.~ bes4~ bes( aes4)
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
-    \voiceTwo
+
+    
+    
     aes'4 g2. f2. ees4. des2. ees4 f2
 }

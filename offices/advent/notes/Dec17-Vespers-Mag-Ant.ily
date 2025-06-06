@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key f \minor
+antKeysig =  \key f \minor
 antiphon = "M"
 psalmtone = "52"
 psalmtonestruct = "44"
@@ -23,35 +23,35 @@ text = \lyricmode {
     and show your peo -- ple the way to sal -- va -- tion.
 }
 sopNotesAnt = \relative e' {
-    \global
-    \keysig
-    \voiceOne
+
+    
+    
     r8 ees8( aes4 g8) aes g f g f ees f f4 \bar "," f8 aes[ g] f g f f ees
     ees f \bar "" g[ aes] g g aes \bar "" bes4 \bar ","
     c4 c8 \bar "" bes[ aes] g \bar "" f g f \bar "" ees4 g8 aes
     \bar "" f4 f \bar "||"
 }
 altoNotesAnt = \relative c' {
-    \global
-    \keysig
-    \voiceTwo
+
+    
+    
     r8 ees8 c\breve*6/16 ees2 \parenthesize c4. ees\breve*9/16~ ees\breve*5/16
     f4 ees4. f4. des4. ees2 c2
 }
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
-    \voiceOne
+
+    
+    
     bes4 aes\breve*6/16 bes2 c4. aes\breve*9/16 bes\breve*5/16~ bes4 g4.
     f4. bes4.~ bes2~ bes4 aes4
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
-    \voiceTwo
+
+    
+    
     g'4 f\breve*6/16 ees4 c4 aes'4.~
     <<
-      {\voiceOne aes\breve*9/16 \voiceTwo} \new Voice { c,\breve*9/16}
+      { aes\breve*9/16 } \new Voice { c,\breve*9/16}
      >> ees\breve*5/16 des4
     c4. des4. bes4. c2 f2
 }

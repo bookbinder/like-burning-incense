@@ -2,7 +2,7 @@
 \include "../../../lbi_defs.ily"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key des \major
+antKeysig =  \key des \major
 antiphon = "2"
 psalmtone = "32"
 psalmtonestruct = "33"
@@ -19,27 +19,27 @@ text = \lyricmode {
     " * "
 }
 sopNotesAnt = \relative fis' {
-    \global	% will be populated by an include file
-		% in the cantor/organ scores called lbi_defs
-    \keysig
-    \voiceOne
+
+		
+    
+    
 
 }
 altoNotesAnt = \relative d' {
-    \global
-    \keysig
-    \voiceTwo
+
+    
+    
 
 }    
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
-    \voiceOne
+
+    
+    
 
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
-    \voiceTwo
+
+    
+    
 
 }

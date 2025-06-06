@@ -48,13 +48,13 @@ sopNotesAnt = \relative e' {
   \allowBreak e4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-  s4 s2. s\breve*7/16 cis\breve*5/16~ s16 cis4. b2 s\breve*5/16
+  s4 s2. s16 s\breve*7/16 cis\breve*5/16~  cis4. b2 s\breve*5/16
   cis4 b2
 }
 tenorNotesAnt = \relative g {
-  gis4 a2. b\breve*7/16 a\breve*5/16~ s16 a4. fis2 gis\breve*5/16
+  gis4 a2. s16 b\breve*7/16 a\breve*5/16~ a4. fis2 gis\breve*5/16
   a4~ a gis
 }
 bassNotesAnt = \relative c {
-  e4~ e2.~ e\breve*7/16 a\breve*5/16 s16 a,4. b2 e\breve*5/16~ e4~ e2
+  e4~ e2.~ s16 e\breve*7/16 a\breve*5/16 a,4. b2 e\breve*5/16~ e4~ e2
 }

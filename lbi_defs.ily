@@ -23,7 +23,7 @@ global = {
     \cadenzaOn
     \set tieWaitForNote = ##t
     \autoBeamOff
-    \override Lyrics.LyricSpace.minimum-distance = #1.0
+    \override Lyrics.LyricSpace.minimum-distance = #2.0
 }
 
 midi_instrument = {

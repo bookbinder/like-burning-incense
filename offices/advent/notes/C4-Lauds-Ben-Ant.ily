@@ -2,7 +2,7 @@
 \include "../../../lbi_defs.ily"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key f \minor
+antKeysig =  \key f \minor
 antiphon = "B"
 psalmtone = "50"
 psalmtonestruct = "33"
@@ -12,6 +12,9 @@ psalmnum = "Benedictus"
 % use in in cantor (antiphon) and organ (psalm) scores
 frompitch = a
 topitch = a
+%% Transposition interval after accounting for psalm tone
+master-from-pitch = a
+master-to-pitch = a
 
 
 text = \lyricmode {
@@ -20,28 +23,28 @@ text = \lyricmode {
     says the Lord your God.
 }
 sopNotesAnt = \relative fis' {
-    \global	% will be populated by an include file
-		% in the cantor/organ scores called lbi_defs
-    \keysig
-    \voiceOne
+
+		
+    
+    
     aes4 aes8 g f ees f[ aes] aes4 \bar "'" f8[ aes] bes[ c] bes bes4 \bar "'"
     aes8 f ees[ f] g g4( f) \bar "||"
 }
 altoNotesAnt = \relative d' {
-    \global
-    \keysig
-    \voiceTwo
+
+    
+    
     c\breve*10/16~ c4 f\breve*7/16 ees4. c2
 }    
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
-    \voiceOne
+
+    
+    
     aes\breve*10/16~ aes4~ aes\breve*7/16 bes4.~ bes4( aes)
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
-    \voiceTwo
+
+    
+    
     f\breve*10/16 ees4 des\breve*7/16 c4. f2
 }

@@ -2,7 +2,7 @@
 \include "../../../lbi_defs.ily"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key ges \major
+antKeysig =  \key ges \major
 antiphon = "B"
 psalmtone = "60"
 psalmtonestruct = "33"
@@ -12,6 +12,9 @@ psalmnum = "Benedictus"
 % use in in cantor (antiphon) and organ (psalm) scores
 frompitch = a
 topitch = a
+%% Transposition interval after accounting for psalm tone
+master-from-pitch = a
+master-to-pitch = a
 
 
 text = \lyricmode {
@@ -21,33 +24,33 @@ text = \lyricmode {
     Zi -- on.
 }
 sopNotesAnt = \relative fis' {
-    \global	% will be populated by an include file
-		% in the cantor/organ scores called lbi_defs
-    \keysig
-    \voiceOne
+
+		
+    
+    
     r8 des8 ges[ f] ges bes4( aes) \bar "," aes8[ bes] aes aes aes4
     ges8 bes des[ ces] bes aes4 \bar ","
     aes8[ bes] aes ges[ f] ees8 des ces([ ees] ges4) \bar "'"
     aes4 ges8 f[ ges] ees des4 des4 \bar "||"
 }
 altoNotesAnt = \relative d' {
-    \global
-    \keysig
-    \voiceTwo
+
+    
+    
     r8 des8~ des4.~ des2 ees2 des2 ees4. ees4 des4.
     bes2 ces2 ees4. ces4. aes2
 }    
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
-    \voiceOne
+
+    
+    
     ges4~ ges4. f2 ges2~ ges2 ees4. aes4
     f4. ges2~ ges2~ ges2.~ ges4 f
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
-    \voiceTwo
+
+    
+    
     bes4^"(bes4 or ces4 in bass?)"~ bes4. des2 ces2 bes2 aes4. ces4
     des4. ees2~ ees ces2. des2
 }

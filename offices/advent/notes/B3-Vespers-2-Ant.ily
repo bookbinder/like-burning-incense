@@ -5,7 +5,7 @@ antiphon = "2"
 psalmnum = "Ps_49_14-21"
 psalmtone = "37"
 psalmtonestruct = "33"
-keysig = \key ges \major
+antKeysig = \key ges \major
 frompitch = a
 topitch = a
 
@@ -15,27 +15,27 @@ text = \lyricmode {
     " * "
 }
 sopNotesAnt = \relative fis' {
-    \global	% will be populated by an include file
-		% in the cantor/organ scores called lbi_defs
-    \keysig
-    \voiceOne
+
+		
+    
+    
 
 }
 altoNotesAnt = \relative d' {
-    \global
-    \keysig
-    \voiceTwo
+
+    
+    
 
 }    
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
-    \voiceOne
+
+    
+    
 
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
-    \voiceTwo
+
+    
+    
 
 }

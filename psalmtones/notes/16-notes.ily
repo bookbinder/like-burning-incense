@@ -16,7 +16,7 @@ sopranoTwo = { a'\breve^"B" g'8 f' g'4 \bar "|" g'\breve f'8 d' f'4  \bar "||" }
 altoOneFlex = { \afterGrace c'\breve d'4 c'\breve s4 d'4~ d'\breve s4 c'4  }
 altoOne = { c'\breve s4 d'4~ d'\breve s4 c'4 }
 altoTwoFlex = { \afterGrace e'\breve d'4 e'\breve s4 bes4 d'\breve s4 c'4 }
-altoTwo = {   }
+altoTwo = { e'\breve s4 bes4 d'\breve s4 c'4  }
 
 tenorOneFlex = { \afterGrace c'\breve bes4 \breathe c'\breve s4 bes4~ \bar "|" bes\breve s4 a4 \bar "||" }
 tenorOne = { c'\breve s4 bes4~ \bar "|" bes\breve s4 a4 \bar "||" }

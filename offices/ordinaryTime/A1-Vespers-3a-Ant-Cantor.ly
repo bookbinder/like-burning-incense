@@ -2,7 +2,7 @@
 
 \include "/home/ryan/scores/like-burning-incense/lbi_defs_cantor.ily"
 \include "/home/ryan/scores/like-burning-incense/offices/ordinaryTime/notes/A1-Vespers-3-Ant.ily"
-\include #(string-append "../../psalmtones/notes/" "68" "-notes.ily")
+\include #(string-append "home/ryan/scores/like-burning-incense/psalmtones/notes/" "68" "-notes.ily")
 
 
 \score {

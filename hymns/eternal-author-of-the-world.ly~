@@ -1,0 +1,38 @@
+\include "/home/ryan/scores/like-burning-incense/hymns/notes/melody-26.ily"
+
+\score {
+    <<
+        \transpose \master-from-pitch \master-to-pitch {
+          \transpose \frompitch \topitch {
+            \new ChoirStaff 
+            <<
+                \new Staff ="up"
+                   <<
+                        \clef treble \hymnKeysig
+                        \accidentalStyle forget
+                        \new Voice = "Soprano" \sopNotes
+                        \new Voice = "Alto" \altoNotes
+                        % \new Lyrics \lyricsto Soprano \text
+                        % \new Lyrics \lyricsto Soprano \textB
+                        % \new Lyrics \lyricsto Soprano \textC
+                    >>
+                \new Staff ="down"
+                    <<
+                        \clef bass \hymnKeysig
+                        \accidentalStyle forget
+                        \new Voice = "Tenor" \tenorNotes
+                        \new Voice = "Bass" \bassNotes
+                    >>
+            >>
+        }
+      }
+    >>
+
+    \layout {
+        \context {
+            \Staff
+            \remove Time_signature_engraver
+        }
+    }
+}
+

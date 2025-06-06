@@ -1,7 +1,7 @@
 \version "2.20.0"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key cis \minor 
+antKeysig =  \key cis \minor 
 antiphon = "3"
 psalmtone = "42"
 psalmtonestruct = "43"
@@ -18,27 +18,27 @@ text = \lyricmode {
     " * "
 }
 sopNotesAnt = \relative fis' {
-    \global	% will be populated by an include file
-		% in the cantor/organ scores called lbi_defs
-    \keysig
-    \voiceOne
+
+		
+    
+    
 
 }
 altoNotesAnt = \relative d' {
-    \global
-    \keysig
-    \voiceTwo
+
+    
+    
 
 }    
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
-    \voiceOne
+
+    
+    
 
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
-    \voiceTwo
+
+    
+    
 
 }

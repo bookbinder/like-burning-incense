@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key c \major
+antKeysig =  \key c \major
 antiphon = "B"
 psalmtone = "7"
 psalmtonestruct = "43"
@@ -23,9 +23,9 @@ text = \lyricmode {
     womb of the Vir -- gin, al -- le -- lu -- ia.
 }
 sopNotesAnt = \relative e' {
-    \global
-    \keysig
-    \voiceOne
+
+    
+    
     g8 g g[ d] f g g[ a] g g4 g8 a4 g8 f g \bar "" a[ c] b
     \bar "" g8([ a] g4) \bar ","
     g8 \bar "" f[ e] d c \bar "" d[ e f] f4 c8 d f \bar ""
@@ -33,24 +33,24 @@ sopNotesAnt = \relative e' {
     \bar "" a[ g] f g \bar "" a[ g] f \breathe g[ a] a \bar "" g4 g \bar "||"
 }
 altoNotesAnt = \relative c' {
-    \global
-    \keysig
-    \voiceTwo
+
+    
+    
     s2. f4. g4. f\breve*5/16 g4. d4~ d4.~ \bar ""
     d4 s4 s4. s4 s4. s4. e2.
     f2 d4. f4. d2
 }
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
-    \voiceOne
+
+    
+    
     c4 a2 c4.~ c4.~ c\breve*5/16~ c4.~ c4 b4.
     a4 g a\breve*8/16~ a4.~ a2.~ a2~ a4. c4.~ c4 b4
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
-    \voiceTwo
+
+    
+    
     e4 f2~ f4. e4. d\breve*5/16 e4. g4~ g4.
     d4 e f\breve*8/16 d4. c2.
     d2 f2. g2
