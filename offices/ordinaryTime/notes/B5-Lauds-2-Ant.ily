@@ -10,7 +10,7 @@ frompitch = a
 topitch = aes
 %% Master transposition after accounting for psalm tone
 master-from-pitch = ges
-master-to-pitch = f
+master-to-pitch = ges
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
@@ -41,6 +41,7 @@ tenorNotesAnt = \relative g {
     f4. ges2.~ ges2~ ges4( f)
 }
 bassNotesAnt = \relative c {
-    aes1~ aes4 s16
-    des4. ces2. aes2 des
+  bes4~ bes4. ces\breve*5/16 s16
+  des4. ces2. aes2 des2
+    
 }

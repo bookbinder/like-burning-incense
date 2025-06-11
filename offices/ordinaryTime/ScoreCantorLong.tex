@@ -3,7 +3,8 @@
 \usepackage[ %% uncomment options below to exclude them
   lauds,
   %% vespers,
-  hymn,
+  %% hymn,
+  hymnmusic,
   psalmody-heading,
   psalmtexts,
   reading,
@@ -64,6 +65,7 @@
 \newcommand{\Eleftmargini}{6em}
 \setlength{\leftmargini}{\defleftmargini}  %% left margin
 \setlength{\stanzaskip}{0.6\baselineskip}  %% space between verses
+\setlength{\vleftskip}{.5em}  %% space between verse numbers and verse
 
 
 \usepackage{hyperref}
@@ -164,7 +166,7 @@
 \halign{##\cr\hss\makebox(0,0){\hspace{0pt}\myaccentcolor\myaccentsize\char"00B4}\hss\cr\noalign{\myaccentpositionl}#1\cr}}}
 \newcommand{\Med}{~\raisebox{2pt}{\myastcolor$\ast$}}
 \newcommand{\Flex}{~{\myastcolor\textdagger}}
-\newcommand{\Desc}[2]{\noindent\small\emph{#1} #2}
+\newcommand{\Desc}[2]{{\noindent\small\emph{#1} #2}}
 
 \hyphenation{Co-rin-thi-an}
 \hyphenation{Co-rin-thi-ans}
@@ -217,10 +219,16 @@
 \tableofcontents
 \setlength{\columnseprule}{0pt}
 \null
+
 \twocolumn
+
 \chapter{Week I}
 \setlength{\columnseprule}{0.4pt}
 \pagestyle{fancy}
+
+
+\chaptermark{Week I}
+
 \opt{vespers}{\section{Sunday Evening Prayer I}}
 \opt{vespers}{\input{A0-Vespers-Cantor.tex}}
 
@@ -265,6 +273,7 @@
 
 
 \chapter{Week II}
+\chaptermark{Week II}
 
 \opt{vespers}{\section{Sunday Evening Prayer I}}
 \opt{vespers}{\input{B0-Vespers-Cantor.tex}}

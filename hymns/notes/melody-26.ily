@@ -8,36 +8,47 @@ master-from-pitch = c
 master-to-pitch = c
 
 sopNotes = \relative e' {
-  f4 f g a bes a g a \bar "'"
-  a g c c g a bes a \bar ","
-  g a g a g e d f \bar "'"
-  g a g f e f( g) f( e) d \bar "||"
-  d( e d) c4.( d4.) \bar "||"
+  \allowBreak f4
+  \allowBreak f
+  \allowBreak g
+  \allowBreak a
+  \allowBreak bes
+  \allowBreak a
+  \allowBreak g
+  \allowBreak a \bar "'"
+  \allowBreak a
+  \allowBreak g
+  \allowBreak c
+  \allowBreak c
+  \allowBreak g
+  \allowBreak a
+  \allowBreak bes
+  \allowBreak a \bar ","
+  \allowBreak g
+  \allowBreak a
+  \allowBreak g
+  \allowBreak a
+  \allowBreak g
+  \allowBreak e
+  \allowBreak d
+  \allowBreak f \bar "'"
+  \allowBreak g
+  \allowBreak a
+  \allowBreak g
+  \allowBreak f
+  \allowBreak e
+  \allowBreak f( g)
+  \allowBreak f( e)
+  \allowBreak d \bar "||"
+  \allowBreak d( e d)
+  \allowBreak c4.( d4.) \bar "||"
 }
 altoNotes = \relative c' {
-  \allowBreak d2.~
-  \allowBreak d2~
-  \allowBreak d2~
-  \allowBreak d4~
-  \allowBreak d4~
-  \allowBreak d2
-  \allowBreak c2
-  \allowBreak f2
-  \allowBreak e4~
-  \allowBreak e4~
-  \allowBreak e2
-  \allowBreak d2
-  \allowBreak c2~
-  \allowBreak c4~
-  \allowBreak c4~
-  \allowBreak c2~
-  \allowBreak c2
-  \allowBreak d
-  \allowBreak c
-  \allowBreak a4
-  \allowBreak bes2.
-  \allowBreak a4.~
-  \allowBreak a4.
+  d2.~ d2~ d2~ d4~
+  d4~ d2 c2 f2 e4~
+  e4~ e2 d2 c2~ c4~
+  c4~ c2~ c2 d c a4
+  bes2. a4.~ a4.
 }    
 tenorNotes = \relative g {
   a2.~ a2~ a2~ a4~
