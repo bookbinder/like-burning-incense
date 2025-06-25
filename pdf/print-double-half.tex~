@@ -1,7 +1,0 @@
-\documentclass{book}
-\usepackage[pdfpages]{pdfpages}
-
-\begin{document}
-
-\includepdf[pages=8]{ScoreCantorWeeks1-4}
-\end{document}

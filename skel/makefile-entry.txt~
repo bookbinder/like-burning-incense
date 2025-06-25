@@ -1,8 +1,0 @@
-QQQ:
-	rm -rf out/*/
-	$(LILYPOND-BOOK) QQQ-Organ.lytex
-	cd out && $(LATEX) QQQ-Organ.tex
-	cd out && xdg-open QQQ-Organ.pdf
-	$(LILYPOND-BOOK) QQQ-Cantor.lytex
-	cd out && $(LATEX) QQQ-Cantor.tex
-	cd out && xdg-open QQQ-Cantor.pdf

@@ -1,6 +1,0 @@
-\documentclass{book}
-\usepackage{pdfpages}
-
-\begin{document}
-\includepdf[pages={1,1},booklet,landscape]{Benedictus-Cantor}]
-\end{document}

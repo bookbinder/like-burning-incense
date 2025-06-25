@@ -1,4 +1,0 @@
-#lang racket
-
-(define files (directory-list (current-directory)))
-files

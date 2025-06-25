@@ -1,5 +1,0 @@
-#lang racket
-
-(define input (file->lines "/home/ryan/scores/like-burning-incense/psalmtones/tonechart.txt"))
-
-input

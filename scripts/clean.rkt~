@@ -1,3 +1,0 @@
-#lang racket
-
-(directory-list "/home/ryan/scores/lbi/offices/advent/notes/")
