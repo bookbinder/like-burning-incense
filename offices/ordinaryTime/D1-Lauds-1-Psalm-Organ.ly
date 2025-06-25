@@ -5,7 +5,7 @@
 % get variables from the notes file
 \include "notes/D1-Lauds-1-Ant.ily"
 
-#(set-global-staff-size 14)
+% #(set-global-staff-size 14)
 
 % notes for the psalm tone:
 \include #(string-append "../../psalmtones/notes/" psalmtone "-notes.ily")

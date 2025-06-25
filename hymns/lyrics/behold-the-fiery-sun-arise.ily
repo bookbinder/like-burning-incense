@@ -1,5 +1,6 @@
 verseone = \lyricmode {
-  \set stanza = "1."
+  \override InstrumentName #'X-offset = #4
+  \set stanza = "  1."
   Be -- hold the fier -- y sun a -- rise!
   It trou -- bles, shames, and brings re -- morse,
   for no one can per -- sist in sin
@@ -7,6 +8,7 @@ verseone = \lyricmode {
 }
 
 versetwo = \lyricmode {
+  \override InstrumentName #'X-offset = #4
   \set stanza = "2."
   Let blind -- ness dis -- ap -- pear at last
   that long has plunged us deep in sin
@@ -30,19 +32,19 @@ versefour = \lyricmode {
   lest sin de -- file our mor -- tal flesh.
 }
 
-% versefive = \lyricmode {
-%   \set stanza = "5."
-%   The One who sees stands by on high
-%   and watches us through all our days,
-%   discerning ev’ry act and deed
-%   from early dawn to eventide.
-% }
+versefive = \lyricmode {
+  \set stanza = "5."
+  The One who sees stands by on high
+  and wa -- tches us through all our days,
+  dis -- cer -- ning ev’ -- ry act and deed
+  from ear -- ly dawn to e -- ven -- tide.
+}
 
-% versesix = \lyricmode {
-%   \set stanza = "6."
-%   To God the Father glory be,
-%   all honor to his only Son,
-%   one with the Spirit Paraclete,
-%   from age to age for evermore. Amen.
+versesix = \lyricmode {
+  \set stanza = "6."
+  To God the Fa -- ther glo -- ry be,
+  all ho -- nor to his on -- ly Son,
+  one with the Spi -- rit Pa -- ra -- clete,
+  from age to age for e -- ver -- more. A -- men.
   
-% }
+}

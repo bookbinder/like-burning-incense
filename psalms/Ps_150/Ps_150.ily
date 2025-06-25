@@ -83,7 +83,8 @@ bassMusic = {
 
 \layout 
 { 
-    ragged-last = ##t
+  ragged-last = ##t
+  indent = 0.5\in
     \context 
     { 
         \Staff 

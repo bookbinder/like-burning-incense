@@ -45,5 +45,5 @@ tenorNotesAnt = \relative g {
   gis\breve*5/16 b2~ s16 b\breve*5/16 gis4 e4. a4. gis2 b
 }
 bassNotesAnt = \relative c {
-  e\breve*5/16~ e2 s16 b\breve*5/16 cis4~ cis4. a4. e2~ e2
+  e\breve*5/16~ e2 s16 b\breve*5/16 cis4~ cis4. a4. e'2~ e2
 }

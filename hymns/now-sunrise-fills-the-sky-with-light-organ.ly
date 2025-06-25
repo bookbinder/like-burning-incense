@@ -4,6 +4,7 @@
 \include "/home/ryan/scores/like-burning-incense/hymns/lyrics/now-sunrise-fills-the-sky-with-light.ily"
 \include "/home/ryan/scores/like-burning-incense/lbi_defs.ily"
 
+%% update again
 
 \score {
   <<
@@ -20,10 +21,7 @@
           \new Lyrics \lyricsto Soprano \versetwo
           \new Lyrics \lyricsto Soprano \versethree
           \new Lyrics \lyricsto Soprano \versefour
-          % \new Lyrics \lyricsto Soprano \versefive
-          % \new Lyrics \lyricsto Soprano \versesix
-          % \new Lyrics \lyricsto Soprano \verseseven
-          % \new Lyrics \lyricsto Soprano \verseeight
+          \new Lyrics \lyricsto Soprano \versefive
         >>
         \new Staff ="down"
         <<
@@ -37,9 +35,14 @@
   >>
   
   \layout {
+    #(layout-set-staff-size 18)
     \context {
       \Staff
       \remove Time_signature_engraver
+    }
+    \context {
+      \Lyrics
+      \override LyricSpace.minimum-distance = #2.0
     }
   }
 }

@@ -4,6 +4,7 @@
 \include "/home/ryan/scores/like-burning-incense/offices/ordinaryTime/notes/A4-Vespers-3-Ant.ily"
 \include #(string-append "../../psalmtones/notes/" psalmtone "-notes.ily")
 
+%% update
 
 \score {
     \header {

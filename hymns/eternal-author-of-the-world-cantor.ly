@@ -4,6 +4,8 @@
 \include "/home/ryan/scores/like-burning-incense/hymns/lyrics/eternal-author-of-the-world.ily"
 \include "/home/ryan/scores/like-burning-incense/lbi_defs.ily"
 
+%% udpate
+
 \score {
     <<
       \transpose \master-from-pitch \master-to-pitch {
@@ -11,14 +13,16 @@
         <<
           \clef treble \melodyKeysig
           \accidentalStyle forget
-          \new Voice = "Soprano" { \oneVoice \global \omit Stem \sopNotes }
+          \new Voice = "Soprano"
+          \with { \remove "Fingering_engraver" \remove "New_fingering_engraver" }
+          { \oneVoice \global \omit Stem \sopNotes }
           \new Lyrics \lyricsto Soprano \verseone
           \new Lyrics \lyricsto Soprano \versetwo
           \new Lyrics \lyricsto Soprano \versethree
           \new Lyrics \lyricsto Soprano \versefour
-          \new Lyrics \lyricsto Soprano \versefive
-          \new Lyrics \lyricsto Soprano \versesix
-          \new Lyrics \lyricsto Soprano \verseseven
+          % \new Lyrics \lyricsto Soprano \versefive
+          % \new Lyrics \lyricsto Soprano \versesix
+          % \new Lyrics \lyricsto Soprano \verseseven
           
         >>
       }

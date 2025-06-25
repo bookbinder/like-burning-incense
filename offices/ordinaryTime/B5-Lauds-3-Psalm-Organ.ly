@@ -1,6 +1,7 @@
 \version "2.20.0"
 
 \include "../../lbi_defs.ily"
+%%update
 
 % get variables from notes file
 \include "notes/B5-Lauds-3-Ant.ily"

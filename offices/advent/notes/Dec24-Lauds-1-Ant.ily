@@ -17,33 +17,42 @@ master-to-pitch = a
 
 
 text = \lyricmode {
-    \set includeGraceNotes = ##t
-    Beth -- le -- hem in Ju -- dah's "land, * " how glo -- rious your
-    fu -- ture! The king who will rule my peo -- ple comes from you.
+  \set includeGraceNotes = ##t
+  Beth -- le -- hem in Ju -- dah's land,
+  \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
+  how glo -- rious your fu -- ture!
+  The king who will rule my peo -- ple comes from you.
 }
 sopNotesAnt = \relative e' {
-
-    
-    
-    g8[ f] d d e f[ a] a g4 \bar "'"
-    g8 \bar "" c[ d] c b \bar "" a[ g] g4 \bar ","
-    g8 a g f \bar "" f[ a] c b[ c a] a4 \bar "" b8 a \bar "" g4 \bar "||"
+  g8[ f] d d e f[ a] a g4
+  \noBreak \hideNotes g16 \unHideNotes
+  \allowBreak g8
+  \allowBreak c[ d]
+  \allowBreak c
+  \allowBreak b
+  \allowBreak a[ g]
+  \allowBreak g4 \bar ","
+  \allowBreak g8
+  \allowBreak a
+  \allowBreak g
+  \allowBreak f
+  \allowBreak f[ a]
+  \allowBreak c
+  \allowBreak b[ c a]
+  \allowBreak a4
+  \allowBreak b8
+  \allowBreak a
+  \allowBreak g4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-
-    
-    
-    s2 s8 s4. \parenthesize c4. e2~ e\breve*8/16 f\breve*8/16 e4 d4
+  s2 s8 s4. \parenthesize c4. s16
+  e2~ e\breve*8/16 f\breve*8/16 e4 d4
 }
 tenorNotesAnt = \relative g {
-
-    
-    
-    a\breve*8/16 c4.~ c2~ c\breve*8/16~ c\breve*8/16~ c4 b4
+  a\breve*8/16 c4.~ s16
+  c2~ c\breve*8/16~ c\breve*8/16~ c4 b4
 }
 bassNotesAnt = \relative c {
-
-    
-    
-    d\breve*8/16 e4. a,2 c\breve*8/16 d\breve*8/16 f4 g4
+  d\breve*8/16 e4. s16
+  a,2 c\breve*8/16 d\breve*8/16 f4 g4
 }

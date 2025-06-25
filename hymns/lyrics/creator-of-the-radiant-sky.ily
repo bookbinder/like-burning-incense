@@ -30,3 +30,18 @@ versefour = \lyricmode {
   no fault or er -- ror snare our tongue;
 }
 
+versefive = \lyricmode {
+  \set stanza = "5."
+  But, as the sun tra -- ver -- ses day,
+  may faith be ar -- dent, firm, and deep,
+  may hope in -- cite to pro -- mised good,
+  may cha -- ri -- ty wed us to Christ.
+}
+
+versesix = \lyricmode {
+  \set stanza = "6."
+  Most lo -- ving Fa -- ther, hear our prayer,
+  and you, O Christ co- -- e -- qual Son,
+  who with the Spi -- rit Pa -- ra -- clete
+  now reign for all e -- ter -- ni -- ty. A -- men.
+}

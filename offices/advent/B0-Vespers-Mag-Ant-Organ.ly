@@ -20,18 +20,18 @@ global = { \cadenzaOn \autoBeamOff }
        <<
            \new Staff = "up"
            <<
-               \clef treble
+               \clef treble \antKeysig
                \accidentalStyle forget
-               \new Voice = "Soprano" { \voiceOne \sopNotesAnt }
-               \new Voice = "Alto" { \voiceTwo \altoNotesAnt }
+               \new Voice = "Soprano" { \voiceOne { \global \voiceOne \sopNotesAnt } }
+               \new Voice = "Alto" { \voiceTwo { \global \voiceTwo \altoNotesAnt } }
                \new Lyrics \lyricsto Soprano \text
            >>
            \new Staff = "down"
            <<
-               \clef bass
+               \clef bass \antKeysig
                \accidentalStyle forget
-               \new Voice = "Tenor" { \voiceOne \tenorNotesAnt }
-               \new Voice = "Bass" { \voiceTwo \bassNotesAnt  }
+               \new Voice = "Tenor" { \voiceOne { \global \voiceThree \tenorNotesAnt } }
+               \new Voice = "Bass" { \voiceTwo { \global \voiceFour \bassNotesAnt }  }
            >>
        >>
     >>

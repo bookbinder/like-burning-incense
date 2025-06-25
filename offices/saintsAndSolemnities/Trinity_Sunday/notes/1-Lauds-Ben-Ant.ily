@@ -9,7 +9,7 @@ psalmnum = "Benedictus"
 % to match the key signature of this antiphon. For
 % use in in cantor (antiphon) and organ (psalm) scores
 frompitch = a
-topitch = aes
+topitch = a
 %% master transposition after accounting for psalm tone
 master-from-pitch = ges
 master-to-pitch = f

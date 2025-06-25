@@ -17,31 +17,23 @@ master-to-pitch = a
 
 
 text = \lyricmode {
-    \set includeGraceNotes = ##t
-    The time has "come * " for Ma -- ry to give birth to her first -- born Son. 
+  \set includeGraceNotes = ##t
+  The time has come
+  \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
+  for Ma -- ry to give birth to her first -- born Son. 
 }
 sopNotesAnt = \relative e' {
-
-    
-    
-    r8 f8 des8 ees ees([ f] ees4) f8 aes[ bes] aes aes g[ aes]
-    f[ ees] des ees f[ g] f ees4 \bar "||"
+  r8 f8 des8 ees ees([ f] ees4)
+  \noBreak \hideNotes ees16 \unHideNotes
+  f8 aes[ bes] aes aes g[ aes]
+  f[ ees] des ees f[ g] f ees4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-
-    
-    
-    aes4 des4~ des4 c4. ees2. des2 c4. bes4
+  aes4 des4~ des4 c4. s16 ees2. des2 c4. bes4
 }
 tenorNotesAnt = \relative g {
-
-    
-    
-    f2 aes4~ aes4.~ aes2.~ aes2~ aes4. g4
+  f2 aes4~ aes4.~ s16 aes2.~ aes2~ aes4. g4
 }
 bassNotesAnt = \relative c {
-
-    
-    
-    f2 aes,4~ aes4. c2. des2~ des4. ees4
+  f2 aes,4~ aes4. s16 c2. des2~ des4. ees4
 }

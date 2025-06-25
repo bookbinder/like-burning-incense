@@ -15,38 +15,26 @@ topitch = a
 
 
 text = \lyricmode {
-    \set includeGraceNotes = ##t
-    Sound the trum -- pet in Zi -- "on, * " the day of the Lord is near;
-    he comes to save us, al -- le -- lu -- ia.
+  \set includeGraceNotes = ##t
+  Sound the trum -- pet in Zi -- "on, * " the day of the Lord is near;
+  he comes to save us, al -- le -- lu -- ia.
 }
 sopNotesAnt = \relative fis' {
-
 		
-    
-    
-    des8[ ees] des des[ aes'] aes ges ges[ f] f4 \bar "'"
-    aes8 aes[ bes] aes ges aes aes des,4 \bar ","
-    des8 ces8[ ees] ges f[ ges ees] ees4 \bar "'"
-    f8 ges \bar "" aes[ des,] des4 \bar "||"
+  des8[ ees] des des[ aes'] aes ges ges[ f] f4 \bar "'"
+  aes8 aes[ bes] aes ges aes aes des,4 \bar ","
+  des8 ces8[ ees] ges f[ ges ees] ees4 \bar "'"
+  f8 ges \bar "" aes[ des,] des4 \bar "||"
 }
 altoNotesAnt = \relative d' {
-
-    
-    
-    s4. des4 s4 des4~ des4. ees2 bes4 aes4.
-    ces4.~ ces\breve*5/16 des4 aes2
+  s4. des4 s4 des4~ des4. ees2 bes4 aes4.
+  ces4.~ ces\breve*5/16 des4 aes2
 }    
 tenorNotesAnt = \relative g {
-
-    
-    
-    bes4. f2 bes4 aes4. ges2 ees4 f4.
-    ges4.~ ges\breve*5/16~ ges4~ ges f
+  bes4. f2 bes4 aes4. ges2 ees4 f4.
+  ges4.~ ges\breve*5/16~ ges4~ ges f
 }
 bassNotesAnt = \relative c {
-
-    
-    
-    ges'4. des2~ des4~ des4.~ des2.~ des4.
-    ees4. ces\breve*5/16 bes4 des2
+  ges'4. des2~ des4~ des4.~ des2.~ des4.
+  ees4. ces\breve*5/16 bes4 des2
 }

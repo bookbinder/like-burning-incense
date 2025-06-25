@@ -1,5 +1,5 @@
 verseone = \lyricmode {
-  \set stanza = "1."
+  \set stanza = "  1."
   O night and dark -- ness, clou -- ded gloom,
   dis -- turbed con -- fu -- sion of the world,
   the dawn ap -- pears, the sky grows pale;
@@ -30,18 +30,18 @@ versefour = \lyricmode {
   to come to you with tears and praise.
 }
 
-% versefive = \lyricmode {
-%   \set stanza = "5."
-%   Look deeply now into our hearts,
-%   examine closely our whole life,
-%   where much is tainted by deceit:
-%   Lord, cleanse and purge it by your light.
-% }
+versefive = \lyricmode {
+  \set stanza = "5."
+  Look dee -- ply now in -- to our hearts,
+  e -- xa -- mine close -- ly our whole life,
+  where much is tain -- ted by de -- ceit:
+  Lord, cleanse and purge it by your light.
+}
 
-% versesix = \lyricmode {
-%   \set stanza = "6."
-%   O Christ, to you, most loving King,
-%   and to the Father glory be,
-%   one with the Spirit Paraclete,
-%   from age to age for evermore. Amen.
-% }
+versesix = \lyricmode {
+  \set stanza = "6."
+  O Christ, to you, most lo -- ving King,
+  and to the Fa -- ther glo -- ry be,
+  one with the Spi -- rit Pa -- ra -- clete,
+  from age to age for e -- ver -- more. A -- men.
+}

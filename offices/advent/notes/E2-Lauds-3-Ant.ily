@@ -17,32 +17,20 @@ master-to-pitch = a
 
 
 text = \lyricmode {
-    \set includeGraceNotes = ##t
-    When the Son of Man comes to "earth, * " do you think he will
-    find faith in men's hearts?
+  \set includeGraceNotes = ##t
+  When the Son of Man comes to "earth, * " do you think he will
+  find faith in men's hearts?
 }
 sopNotesAnt = \relative e' {
-
-    
-    
-    cis8 dis e[ dis] cis dis[ e] fis[ gis fis] e dis4 \bar "'"
-    dis8 e fis[ e] dis dis e fis4( gis8) gis fis[ e] e4( dis4) \bar "||"
+  cis8 dis e[ dis] cis dis[ e] fis[ gis fis] e dis4 \bar "'"
+  dis8 e fis[ e] dis dis e fis4( gis8) gis fis[ e] e4( dis4) \bar "||"
 }
 altoNotesAnt = \relative c' {
-
-    
-    
-    s2 s4. cis2 b2~ b\breve*5/16~ b2 cis4 b2
+  s2 s4. cis2 b2~ b\breve*5/16~ b2 cis4 b2
 }
 tenorNotesAnt = \relative g {
-
-    
-    
-    gis\breve*7/16~ gis2~ gis2 fis\breve*5/16 e2 gis4~ gis2
+  gis\breve*7/16~ gis2~ gis2 fis\breve*5/16 e2 gis4~ gis2
 }
 bassNotesAnt = \relative c {
-
-    
-    
-    e\breve*7/16 cis2 gis2 dis'\breve*5/16 e2 cis4 gis2
+  e\breve*7/16 cis2 gis2 dis'\breve*5/16 e2 cis4 gis2
 }

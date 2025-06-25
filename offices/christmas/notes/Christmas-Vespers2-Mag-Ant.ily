@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key cis \minor
+antKeysig =  \key cis \minor
 antiphon = "M"
 psalmtone = "Ig2"
 psalmtonestruct = "55"
@@ -24,9 +24,6 @@ text = \lyricmode {
     to God in the high -- est, al -- le -- lu -- ia.
 }
 sopNotesAnt = \relative e' {
-    \global
-    \keysig
-    \voiceOne
     e8 fis fis4( gis) gis8 fis[ gis a gis] fis e4( gis) \bar ","
     e8 e4( fis) e8 fis[ gis] gis gis fis \bar "" fis4( e) r4 \bar "|"
     gis8[ b] \bar "" b[ cis] b b b \bar "" b ais gis4 \bar "'"
@@ -37,27 +34,18 @@ sopNotesAnt = \relative e' {
     cis8 \bar "" e[ dis] \bar "" cis4 cis \bar "||"
 }
 altoNotesAnt = \relative c' {
-    \global
-    \keysig
-    \voiceTwo
     s4 s2 s2 s4 s2 s8 cis\breve*5/16~ cis\breve*5/16 b2.
     gis'4 fis\breve*5/16~ fis4 dis4 s4
     cis4.~ cis4 e2 s4 e4. dis4. cis4.~ cis2~ cis2
     b2 s4. s4. b4 gis2
 }
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
-    \voiceOne
     gis4 a4( b4.) a\breve*5/16 gis4( b4.)
     a\breve*5/16~ a\breve*5/16 gis2. b4~ b\breve*5/16
     cis4 b2 a4.~ a4 gis4( b)~ b~ b4.~ b4. gis4. a2 gis2
     fis2 gis2. fis4~ fis4 e4
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
-    \voiceTwo
     e4~ e4~ e4.~ e\breve*5/16~ e4~ e4. a\breve*5/16
     a,\breve*5/16 e'2.~ e4 dis\breve*5/16 fis4
     gis2 a4.~ a4 e2~ e4~ e4. b4. cis4. a2 cis2

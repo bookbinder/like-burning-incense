@@ -17,26 +17,14 @@ master-to-pitch = a
 
 
 text = \lyricmode {
-    \set includeGraceNotes = ##t
-     " * " 
+  \set includeGraceNotes = ##t
+  " * " 
 }
 sopNotesAnt = \relative e' {
-
-    
-    
 }
 altoNotesAnt = \relative c' {
-
-    
-    
 }
 tenorNotesAnt = \relative g {
-
-    
-    
 }
 bassNotesAnt = \relative c {
-
-    
-    
 }

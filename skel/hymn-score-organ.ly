@@ -37,9 +37,14 @@
   >>
   
   \layout {
+    #(layout-set-staff-size 18)
     \context {
       \Staff
       \remove Time_signature_engraver
+    }
+    \context {
+      \Lyrics
+      \override LyricSpace.minimum-distance = #2.0
     }
   }
 }

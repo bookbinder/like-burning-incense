@@ -6,72 +6,61 @@
 sopMusic = {
     \global
     \voiceOne
-    \sopranoOne
-    \sopranoTwo
-    \sopranoOne
-    \sopranoTwo
-    \sopranoOne
-    \sopranoTwo
-    \sopranoOne
-    \sopranoTwo
-    \sopranoOne
-    \sopranoTwo
     \sopranoOneFlex
+    \sopranoTwo
+    \sopranoOne
+    \sopranoTwo
+    \sopranoOne
+    \sopranoTwo
+    \sopranoOne
+    \sopranoTwo
+    \sopranoOne
     \sopranoTwo
     \mark "D.C."
 }
 altoMusic = {
     \global
     \voiceTwo
-    \altoOne
-    \altoTwo
-    \altoOne
-    \altoTwo
-    \altoOne
-    \altoTwo
-    \altoOne
-    \altoTwo
-    \altoOne
-    \altoTwo
     \altoOneFlex
     \altoTwo
-
+    \altoOne
+    \altoTwo
+    \altoOne
+    \altoTwo
+    \altoOne
+    \altoTwo
+    \altoOne
+    \altoTwo
 }
 
 tenorMusic = {
     \global
     \voiceOne
-    \tenorOne
-    \tenorTwo
-    \tenorOne
-    \tenorTwo
-    \tenorOne
-    \tenorTwo
-    \tenorOne
-    \tenorTwo
-    \tenorOne
-    \tenorTwo
     \tenorOneFlex
     \tenorTwo
-
+    \tenorOne
+    \tenorTwo
+    \tenorOne
+    \tenorTwo
+    \tenorOne
+    \tenorTwo
+    \tenorOne
+    \tenorTwo
 }
 
 bassMusic = {
     \global
     \voiceTwo
-    \bassOne
-    \bassTwo
-    \bassOne
-    \bassTwo
-    \bassOne
-    \bassTwo
-    \bassOne
-    \bassTwo
-    \bassOne
-    \bassTwo
     \bassOneFlex
     \bassTwo
-
+    \bassOne
+    \bassTwo
+    \bassOne
+    \bassTwo
+    \bassOne
+    \bassTwo
+    \bassOne
+    \bassTwo
 }
 
 \score {        <<
@@ -100,8 +89,8 @@ bassMusic = {
     >> }}
 >>
 
-\layout 
-{ 
+\layout {
+        indent = 0.5\in 
     ragged-last = ##t
     \context 
     { 

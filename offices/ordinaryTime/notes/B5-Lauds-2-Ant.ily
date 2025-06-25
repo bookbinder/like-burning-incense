@@ -1,5 +1,4 @@
 \version "2.18.2"
-%% include "../../../lbi_defs.ily"
 
 antiphon = "2"
 psalmnum = "Isa_12_1-6"
@@ -10,7 +9,7 @@ frompitch = a
 topitch = aes
 %% Master transposition after accounting for psalm tone
 master-from-pitch = ges
-master-to-pitch = ges
+master-to-pitch = f
 
 text = \lyricmode {
     \set includeGraceNotes = ##t

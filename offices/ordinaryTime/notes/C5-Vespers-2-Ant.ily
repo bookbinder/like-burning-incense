@@ -13,8 +13,8 @@ psalmnum = "Ps_132_11-18"
 frompitch = a
 topitch = a
 %% Master transposition after accounting for psalm tone
-master-from-pitch = a
-master-to-pitch = a
+master-from-pitch = aes
+master-to-pitch = g
 
 
 text = \lyricmode {

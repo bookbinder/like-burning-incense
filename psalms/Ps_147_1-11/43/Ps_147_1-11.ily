@@ -1,7 +1,7 @@
 text = \lyricmode {
 %     \override InstrumentName #'X-offset = #4
 %     \override InstrumentName #'font-series = #'bold
-%     \set stanza = # "1. "
+    \set stanza = # "1. "
 %     \set shortVocalName = "1."
     \set includeGraceNotes = ##t
     \ll "Praise the Lord for he is" good;
@@ -24,6 +24,17 @@ text = \lyricmode {
     
     \ll "He covers the hea" -- vens with clouds;
     \ll "he prepares the rain for" the earth,
+
+}
+textB = \lyricmode {
+%     \override InstrumentName #'X-offset = #4
+%     \override InstrumentName #'font-series = #'bold	
+%     \set includeGraceNotes = ##t
+    \set stanza = # "2. "
+%     \set shortVocalName = "2."
+    \set includeGraceNotes = ##t
+
+    \ll "----------->" "--->"
     \ll "making mountains" sprout with grass
     \ll "and with plants to serve" man’s needs.
     \ll "He provides the beasts" with their food
@@ -39,12 +50,3 @@ text = \lyricmode {
     \ll "as it was in the begin" -- ning, is now,
     \ll "and will be for ever." A -- men.
 }
-% textB = \lyricmode {
-%     \override InstrumentName #'X-offset = #4
-%     \override InstrumentName #'font-series = #'bold	
-%     \set includeGraceNotes = ##t
-%     \set stanza = # "2. "
-%     \set shortVocalName = "2."
-%     \set includeGraceNotes = ##t
-%     \ll "The Lord will not refuse" an -- y good
-% }

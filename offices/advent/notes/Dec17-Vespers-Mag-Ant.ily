@@ -17,41 +17,29 @@ master-to-pitch = a
 
 
 text = \lyricmode {
-    \set includeGraceNotes = ##t
-    O Wis -- dom, O ho -- ly Word of "God, * " you go -- vern
-    all cre -- a -- tion with your strong yet ten -- der care. Come
-    and show your peo -- ple the way to sal -- va -- tion.
+  \set includeGraceNotes = ##t
+  O Wis -- dom, O ho -- ly Word of "God, * " you go -- vern
+  all cre -- a -- tion with your strong yet ten -- der care. Come
+  and show your peo -- ple the way to sal -- va -- tion.
 }
 sopNotesAnt = \relative e' {
-
-    
-    
-    r8 ees8( aes4 g8) aes g f g f ees f f4 \bar "," f8 aes[ g] f g f f ees
-    ees f \bar "" g[ aes] g g aes \bar "" bes4 \bar ","
-    c4 c8 \bar "" bes[ aes] g \bar "" f g f \bar "" ees4 g8 aes
-    \bar "" f4 f \bar "||"
+  r8 ees8( aes4 g8) aes g f g f ees f f4 \bar "," f8 aes[ g] f g f f ees
+  ees f \bar "" g[ aes] g g aes \bar "" bes4 \bar ","
+  c4 c8 \bar "" bes[ aes] g \bar "" f g f \bar "" ees4 g8 aes
+  \bar "" f4 f \bar "||"
 }
 altoNotesAnt = \relative c' {
-
-    
-    
-    r8 ees8 c\breve*6/16 ees2 \parenthesize c4. ees\breve*9/16~ ees\breve*5/16
-    f4 ees4. f4. des4. ees2 c2
+  r8 ees8 c\breve*6/16 ees2 \parenthesize c4. ees\breve*9/16~ ees\breve*5/16
+  f4 ees4. f4. des4. ees2 c2
 }
 tenorNotesAnt = \relative g {
-
-    
-    
-    bes4 aes\breve*6/16 bes2 c4. aes\breve*9/16 bes\breve*5/16~ bes4 g4.
-    f4. bes4.~ bes2~ bes4 aes4
+  bes4 aes\breve*6/16 bes2 c4. aes\breve*9/16 bes\breve*5/16~ bes4 g4.
+  f4. bes4.~ bes2~ bes4 aes4
 }
 bassNotesAnt = \relative c {
-
-    
-    
-    g'4 f\breve*6/16 ees4 c4 aes'4.~
-    <<
-      { aes\breve*9/16 } \new Voice { c,\breve*9/16}
+  g'4 f\breve*6/16 ees4 c4 aes'4.~
+  <<
+  { aes\breve*9/16 } \new Voice { c,\breve*9/16}
      >> ees\breve*5/16 des4
     c4. des4. bes4. c2 f2
 }

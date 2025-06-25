@@ -1,5 +1,5 @@
 verseone = \lyricmode {
-  \set stanza = "1."
+  \set stanza = "  1."
   %% \set shortVocalName = #"1."  % For all lines
   %% \override InstrumentName #'X-offset = #1  % Adjust horizontal offset
   %% \override InstrumentName #'font-series = #'bold  % Optional: make it bold

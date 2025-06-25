@@ -1,4 +1,4 @@
-text = \lyricmode {
+% text = \lyricmode {
 %     \override InstrumentName #'X-offset = #4
 %     \override InstrumentName #'font-series = #'bold
 %     \set stanza = # "1. "
@@ -6,7 +6,7 @@ text = \lyricmode {
 %     \set includeGraceNotes = ##t
 %     \ll "How lovely is your" dwell -- ing place,
 %     etc.
-}
+% }
 % textB = \lyricmode {
 %     \override InstrumentName #'X-offset = #4
 %     \override InstrumentName #'font-series = #'bold	

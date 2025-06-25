@@ -4,7 +4,7 @@
 \include "/home/ryan/scores/like-burning-incense/hymns/lyrics/o-splendor-of-the-fathers-light.ily"
 \include "/home/ryan/scores/like-burning-incense/lbi_defs_cantor.ily"
 
-%% update again
+%% update
 
 \score {
   <<
@@ -13,7 +13,9 @@
       <<
         \clef treble \melodyKeysig
         \accidentalStyle forget
-        \new Voice = "Soprano" { \oneVoice \global \omit Stem \sopNotes }
+        \new Voice = "Soprano" 
+        \with { \remove "Fingering_engraver" \remove "New_fingering_engraver" }
+        { \oneVoice \global \omit Stem \sopNotes }
         % \new Voice = "Alto" { \voiceTwo \global \omit Stem \altoNotes }
         \new Lyrics \lyricsto Soprano \verseone
         \new Lyrics \lyricsto Soprano \versetwo

@@ -12,7 +12,7 @@ sopMusic = {
     \sopranoOneFlex
     \sopranoTwo
     \sopranoOne
-    \sopranoTwoFlex
+    \sopranoTwo
     \mark "D.C."
 }
 altoMusic = {
@@ -23,7 +23,7 @@ altoMusic = {
     \altoOneFlex
     \altoTwo
     \altoOne
-    \altoTwoFlex
+    \altoTwo
 }  
 tenorMusic = {
     \global
@@ -33,7 +33,7 @@ tenorMusic = {
     \tenorOneFlex
     \tenorTwo
     \tenorOne
-    \tenorTwoFlex
+    \tenorTwo
 }
 bassMusic = {
     \global
@@ -43,7 +43,7 @@ bassMusic = {
     \bassOneFlex
     \bassTwo
     \bassOne
-    \bassTwoFlex
+    \bassTwo
 }
 
 \score {        
@@ -75,7 +75,8 @@ bassMusic = {
     >>
     
     \layout {
-      #(layout-set-staff-size 14)
+        indent = 0.5\in
+      % #(layout-set-staff-size 14)
         \context { 
             \Staff 
             \remove Time_signature_engraver 

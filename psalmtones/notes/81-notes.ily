@@ -3,13 +3,13 @@
 toneStruct = "33"
 toneKeysig = \key gis \minor
 
-sopranoOneFlex = {  gis'\breve^"A†" e'4 \breathe gis'\breve fis'8 dis'4 \bar "|" fis'\breve ais'8 gis'4 \bar "||"  }
+sopranoOneFlex = {  gis'\breve^"A†" e'4 \bar "'" gis'\breve fis'8 dis'4 \bar "|" fis'\breve ais'8 gis'4 \bar "||"  }
 sopranoOne = { gis'\breve^"A" fis'8 dis'4 \bar "|" fis'\breve ais'8 gis'4 \bar "||" }
 sopranoShort = { \override Stem.stencil = ##f
                  \afterGrace gis'\breve*1/2 \parenthesize e'4_"+"
                  \revert Stem.stencil
                  fis'8 dis'4 \bar "|" \allowBreak fis'\breve*1/2 ais'8 gis'4 \bar "||"  }
-sopranoTwoFlex = {  gis'\breve^"B†" e'4 \breathe gis'\breve fis'8 dis'4 \bar "|" fis'\breve ais'8 gis'4 \bar "||"  }
+sopranoTwoFlex = {  gis'\breve^"B†" e'4 \bar "'" gis'\breve fis'8 dis'4 \bar "|" fis'\breve ais'8 gis'4 \bar "||"  }
 sopranoTwo = { gis'\breve^"B" fis'8 dis'4 \bar "|" fis'\breve ais'8 gis'4 \bar "||"  }
 
 altoOneFlex = {  cis'\breve cis'4 cis'\breve s4. dis'\breve~ s8 dis'4  }

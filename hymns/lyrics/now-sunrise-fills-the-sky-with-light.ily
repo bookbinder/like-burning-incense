@@ -29,3 +29,11 @@ versefour = \lyricmode {
   with hearts kept pure by self- -- re -- straint,
   we may ex -- tol him in our song.
 }
+
+versefive = \lyricmode {
+  \set stanza = "5."
+  To God the Fa -- ther glo -- ry be,
+  all ho -- nor to his on -- ly Son,
+  one with the Spi -- rit Pa -- ra -- clete,
+  from age to age for e -- ver -- more. A -- men.
+}

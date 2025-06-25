@@ -12,7 +12,7 @@ psalmnum = "Ps_15"
 frompitch = a
 topitch = a
 %% Master transposition after accounting for psalm tone
-master-from-pitch = a
+master-from-pitch = ais
 master-to-pitch = a
 
 

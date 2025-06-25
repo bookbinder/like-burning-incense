@@ -17,40 +17,28 @@ master-to-pitch = a
 
 
 text = \lyricmode {
-    \set includeGraceNotes = ##t
-    There was no god be -- fore "me * " and af -- ter me there will be none;
-    e -- very knee shall bend in wor -- ship, and e -- very tongue shall praise
-    me.
+  \set includeGraceNotes = ##t
+  There was no god be -- fore "me * " and af -- ter me there will be none;
+  e -- very knee shall bend in wor -- ship, and e -- very tongue shall praise
+  me.
 }
 sopNotesAnt = \relative e' {
-
-    
-    
-    cis8 cis cis[ gis'] gis([ a] gis4) gis8 gis4 \bar ""
-    gis4( fis) \bar "'" fis8 fis fis \bar "" e4
-    \bar "" e e8 dis \bar "" cis4 r4 \bar "|"
-    cis8 b \bar "" cis--([ dis] e4) e8 fis e \bar ""
-    e[ dis] dis4 \bar "'" dis8 dis[ e] dis8
-    \bar "" dis([ e] dis4) e8 \bar "" dis[ cis] cis4 \bar "||"
+  cis8 cis cis[ gis'] gis([ a] gis4) gis8 gis4 \bar ""
+  gis4( fis) \bar "'" fis8 fis fis \bar "" e4
+  \bar "" e e8 dis \bar "" cis4 r4 \bar "|"
+  cis8 b \bar "" cis--([ dis] e4) e8 fis e \bar ""
+  e[ dis] dis4 \bar "'" dis8 dis[ e] dis8
+  \bar "" dis([ e] dis4) e8 \bar "" dis[ cis] cis4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-
-    
-    
-    cis4 cis4 e\breve*5/16 dis4 cis\breve*7/16~ cis4 a2 gis2
-    s4 s2 s4. b\breve*8/16~ b\breve*5/16 gis2
+  cis4 cis4 e\breve*5/16 dis4 cis\breve*7/16~ cis4 a2 gis2
+  s4 s2 s4. b\breve*8/16~ b\breve*5/16 gis2
 }
 tenorNotesAnt = \relative g {
-
-    
-    
-    a4 gis b\breve*5/16 gis4 a\breve*7/16 gis4 fis2 e2
-    fis4 gis\breve*7/16 fis\breve*8/16~ fis\breve*5/16~ fis4 e4
+  a4 gis b\breve*5/16 gis4 a\breve*7/16 gis4 fis2 e2
+  fis4 gis\breve*7/16 fis\breve*8/16~ fis\breve*5/16~ fis4 e4
 }
 bassNotesAnt = \relative c {
-
-    
-    
-    fis4 e4~ e\breve*5/16 b4 a\breve*7/16 cis4~ cis2~ cis2
-    dis4 e\breve*7/16 b\breve*8/16 gis\breve*5/16 cis2
+  fis4 e4~ e\breve*5/16 b4 a\breve*7/16 cis4~ cis2~ cis2
+  dis4 e\breve*7/16 b\breve*8/16 gis\breve*5/16 cis2
 }

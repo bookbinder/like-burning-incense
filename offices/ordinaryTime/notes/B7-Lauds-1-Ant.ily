@@ -37,7 +37,7 @@ sopNotesAnt = \relative e' {
     \allowBreak e4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    r8 e8~ dis4~ e4. gis2 e4.~ e4~ e4. s16
+    r8 e8~ e4~ e4. gis2 e4.~ e4~ e4. s16
     cis\breve*6/16 e\breve*5/16 b2
 }
 tenorNotesAnt = \relative g {

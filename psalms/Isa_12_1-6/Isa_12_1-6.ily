@@ -9,8 +9,8 @@ sopMusic = {
     \sopranoOneFlex
     \sopranoTwo
     \sopranoOne
-    \sopranoTwoFlex
-    \sopranoOne
+    \sopranoTwo
+    \sopranoOneFlex
     \sopranoTwo
     \sopranoOneFlex
     \sopranoTwo
@@ -23,8 +23,8 @@ altoMusic = {
     \altoOneFlex
     \altoTwo
     \altoOne
-    \altoTwoFlex
-    \altoOne
+    \altoTwo
+    \altoOneFlex
     \altoTwo
     \altoOneFlex
     \altoTwo
@@ -38,8 +38,8 @@ tenorMusic = {
     \tenorOneFlex
     \tenorTwo
     \tenorOne
-    \tenorTwoFlex
-    \tenorOne
+    \tenorTwo
+    \tenorOneFlex
     \tenorTwo
     \tenorOneFlex
     \tenorTwo
@@ -52,8 +52,8 @@ bassMusic = {
     \bassOneFlex
     \bassTwo
     \bassOne
-    \bassTwoFlex
-    \bassOne
+    \bassTwo
+    \bassOneFlex
     \bassTwo
     \bassOneFlex
     \bassTwo
@@ -88,8 +88,8 @@ bassMusic = {
           }
 >>
 
-\layout 
-{ 
+\layout {
+        indent = 0.5\in 
     ragged-last = ##t
     \context 
     { 

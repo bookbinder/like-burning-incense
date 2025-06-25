@@ -14,23 +14,12 @@ sopMusic = {
     \sopranoTwo
     \sopranoOne 
     \sopranoTwo
-    \sopranoOne 
-    \sopranoTwo
-    \sopranoOne 
-    \sopranoTwo
-    \sopranoOne 
-    \sopranoTwo
+    \mark "D.C."
 }
 altoMusic = {
     \global
     \voiceTwo
     \altoOneFlex
-    \altoTwo
-    \altoOne 
-    \altoTwo
-    \altoOne 
-    \altoTwo
-    \altoOne 
     \altoTwo
     \altoOne 
     \altoTwo
@@ -50,23 +39,11 @@ tenorMusic = {
     \tenorTwo
     \tenorOne 
     \tenorTwo
-    \tenorOne 
-    \tenorTwo
-    \tenorOne 
-    \tenorTwo
-    \tenorOne 
-    \tenorTwo
 }
 bassMusic = {
     \global
     \voiceTwo
     \bassOneFlex
-    \bassTwo
-    \bassOne 
-    \bassTwo
-    \bassOne 
-    \bassTwo
-    \bassOne 
     \bassTwo
     \bassOne 
     \bassTwo
@@ -89,7 +66,7 @@ bassMusic = {
                         \new Voice = "Soprano" \sopMusic
                         \new Voice = "Alto" \altoMusic
                         \new Lyrics \lyricsto Soprano \text
-                        % \new Lyrics \lyricsto Soprano \textB
+                        \new Lyrics \lyricsto Soprano \textB
                         % \new Lyrics \lyricsto Soprano \textC
                     >>
                 \new Staff ="down"
@@ -105,6 +82,7 @@ bassMusic = {
     >>
 
     \layout {
+        indent = 0.5\in
         \context {
             \Staff
             \remove Time_signature_engraver

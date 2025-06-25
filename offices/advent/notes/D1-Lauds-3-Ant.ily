@@ -15,38 +15,26 @@ topitch = a
 
 
 text = \lyricmode {
-    \set includeGraceNotes = ##t
-    Your all -- pow -- er -- ful Word, O "Lord, * " will come to earth
-    from his throne of glo -- ry, al -- le -- lu -- ia.
+  \set includeGraceNotes = ##t
+  Your all -- pow -- er -- ful Word, O "Lord, * " will come to earth
+  from his throne of glo -- ry, al -- le -- lu -- ia.
 }
 sopNotesAnt = \relative fis' {
-
 		
-    
-    
-    cis8 dis e dis cis dis[ cis] b cis4( gis') \bar "'"
-    gis8 gis[ a] gis fis4 fis8 e[ fis]
-    gis([ fis] gis4) fis8 e8([ dis] e[ gis fis]) fis4 \bar "'"
-    e8 dis8[ fis] e[ dis cis] cis4 \bar "||"
+  cis8 dis e dis cis dis[ cis] b cis4( gis') \bar "'"
+  gis8 gis[ a] gis fis4 fis8 e[ fis]
+  gis([ fis] gis4) fis8 e8([ dis] e[ gis fis]) fis4 \bar "'"
+  e8 dis8[ fis] e[ dis cis] cis4 \bar "||"
 }
 altoNotesAnt = \relative d' {
-
-    
-    
-    gis,\breve*8/16 cis\breve*5/16 e4. dis4.~ dis4
-    cis4 b4. cis\breve*8/16 b4 gis4.~ gis4
+  gis,\breve*8/16 cis\breve*5/16 e4. dis4.~ dis4
+  cis4 b4. cis\breve*8/16 b4 gis4.~ gis4
 }    
 tenorNotesAnt = \relative g {
-
-    
-    
-    e\breve*5/16 fis4. gis\breve*5/16 b4.~ b4.~ b4
-    gis4~ gis4. a\breve*8/16 fis4~ fis4. e4
+  e\breve*5/16 fis4. gis\breve*5/16 b4.~ b4.~ b4
+  gis4~ gis4. a\breve*8/16 fis4~ fis4. e4
 }
 bassNotesAnt = \relative c {
-
-    
-    
-    cis\breve*5/16 b4. e\breve*5/16~ e4. b4.~ b4
-    e4~ e4. a,\breve*8/16 b4 cis4.~ cis4
+  cis\breve*5/16 b4. e\breve*5/16~ e4. b4.~ b4
+  e4~ e4. a,\breve*8/16 b4 cis4.~ cis4
 }

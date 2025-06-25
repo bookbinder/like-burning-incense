@@ -20,18 +20,18 @@
        <<
            \new Staff = "up"
            <<
-               \clef treble
+               \clef treble \antKeysig
                \accidentalStyle forget
-               \new Voice = "Soprano" \sopNotesAnt
-               \new Voice = "Alto" \altoNotesAnt
+               \new Voice = "Soprano" { \global \voiceOne \sopNotesAnt }
+               \new Voice = "Alto" { \global \voiceTwo \altoNotesAnt }
                \new Lyrics \lyricsto Soprano \text
            >>
            \new Staff = "down"
            <<
-               \clef bass
+               \clef bass \antKeysig
                \accidentalStyle forget
-               \new Voice = "Tenor" \tenorNotesAnt
-               \new Voice = "Bass" \bassNotesAnt
+               \new Voice = "Tenor" { \global \voiceThree \tenorNotesAnt }
+               \new Voice = "Bass" { \global \voiceFour \bassNotesAnt }
            >>
        >>
     >>

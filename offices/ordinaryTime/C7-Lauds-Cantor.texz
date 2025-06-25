@@ -1,0 +1,70 @@
+\opt{hymn}{\input{C7-Lauds-Hymn.tex}}
+\opt{hymnmusic}{\input{/home/ryan/scores/like-burning-incense/hymns/now-dawn-unfolds-across-the-sky-cantor.tex}}
+
+\opt{psalmody-heading}{\psalmody}
+
+%%%% Begin Ant1
+\antiphonA
+\input{~/scores/like-burning-incense/psalms/Ps_119_145-152/vars.tex}
+\lilypondfile[line-width=3.73in]{C7-Lauds-1-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \input{~/scores/like-burning-incense/psalms/Ps_119_145-152/43/Ps_119_145-152.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{C7-Lauds-1-Ant-Cantor.ly}
+  }
+%%%% End Ant1
+
+%%%% Begin Ant2
+\antiphonB
+\input{~/scores/like-burning-incense/psalms/Wis_9_1-6,_9-11/vars.tex}
+\lilypondfile[line-width=3.73in]{C7-Lauds-2-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Wis_9_1-6,_9-11/33/Wis_9_1-6,_9-11.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{C7-Lauds-2-Ant-Cantor.ly}
+  }
+%%%% End Ant2
+
+%%%% Begin Ant3
+\antiphonC
+\input{~/scores/like-burning-incense/psalms/Ps_117/vars.tex}
+\lilypondfile[line-width=3.73in]{C7-Lauds-3-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Ps_117/33/Ps_117.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{C7-Lauds-3-Ant-Cantor.ly}
+  }
+%%%% End Ant3
+
+\opt{reading}{\input{C7-Lauds-Reading.tex}}
+
+\opt{responsory}{\input{C7-Lauds-Responsory.tex}}
+
+\opt{gospelcanticle-heading}{\gospelcanticle}
+
+%%%% Begin Ant4
+\antiphonBen
+\lilypondfile[line-width=3.73in]{C7-Lauds-Ben-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{Benedictus}
+  \input{~/scores/like-burning-incense/psalms/Benedictus/33/Benedictus.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{C7-Lauds-Ben-Ant-Cantor.ly}
+  }
+%%%% End Ant4
+
+\opt{intercessions}{\input{C7-Lauds-Intercessions.tex}}
+
+\opt{prayer}{\input{C7-Lauds-Prayer.tex}}

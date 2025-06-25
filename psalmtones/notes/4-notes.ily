@@ -3,13 +3,13 @@
 toneStruct = "33"
 toneKeysig = \key c \major
 
-sopranoOneFlex = { \afterGrace g'\breve^"A†" e'4 \breathe g'\breve a'8 g'4 \bar "|" a'\breve b'8 g'4 \bar "||" }
+sopranoOneFlex = { \afterGrace g'\breve^"A†" e'4 \bar "'" g'\breve a'8 g'4 \bar "|" a'\breve b'8 g'4 \bar "||" }
 sopranoOne = { g'\breve^"A" a'8 g'4 \bar "|" a'\breve b'8 g'4 \bar "||"   }
 sopranoShort = { \override Stem.stencil = ##f
                  \afterGrace g'\breve*1/2 \parenthesize e'4_"+"
                  \revert Stem.stencil
                  a'8 g'4 \bar "|" \allowBreak a'\breve*1/2 b'8 g'4 \bar "||"  }
-sopranoTwoFlex = { \afterGrace g'\breve^"B†" e'4 \breathe g'\breve a'8 g'4 \bar "|" a'\breve b'8 g'4 \bar "||"  }
+sopranoTwoFlex = { \afterGrace g'\breve^"B†" e'4 \bar "'" g'\breve a'8 g'4 \bar "|" a'\breve b'8 g'4 \bar "||"  }
 sopranoTwo = { g'\breve^"B" a'8 g'4 \bar "|" a'\breve b'8 g'4 \bar "||"  }
 
 altoOneFlex = { e'\breve~ e'\breve s8 d'4~ d'\breve~ s8 d'4}

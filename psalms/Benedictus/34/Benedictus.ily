@@ -19,9 +19,8 @@ text = \lyricmode {
 
     \ll "This was the oath he swore to our fa" -- ther Abraham,
         \ll "to set us free from the hands" of our enemies,
-    \ll "free to worship him without" fear,
-        \ll "holy and righteous in" his sight
-        \ll "all the days" of our life.
+    \ll "free to worship him with" -- out fear,
+        \ll "holy and righteous in his sight all the days" of our life.
 
 }
 textB = \lyricmode {
@@ -44,7 +43,6 @@ textB = \lyricmode {
 
     \ll "Glory to the Father and to" the Son,
         \ll "and to the" Ho -- ly Spirit:
-    \ll "--------->" "-->"
     \ll "as it was in the beginning," is now,
         \ll "and will be for e" -- ver. A -- men.
 }

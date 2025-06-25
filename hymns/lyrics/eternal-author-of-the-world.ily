@@ -1,5 +1,5 @@
 verseone = \lyricmode {
-  \set stanza = "1."
+  \set stanza = "  1."
   E -- ter -- nal Au -- thor of the world,
   who rule and or -- der night and day,
   you mea -- sure sea -- sons by the hours

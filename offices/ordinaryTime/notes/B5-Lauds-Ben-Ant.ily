@@ -5,7 +5,7 @@ antiphon = "B"
 psalmnum = "Benedictus"
 psalmtone = "39"
 psalmtonestruct = "43"
-antKeysig = \key gis \minor
+antKeysig = \key cis \minor
 frompitch = a
 topitch = gis
 %% Master transposition after accounting for psalm tone

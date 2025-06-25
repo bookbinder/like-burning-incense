@@ -13,8 +13,8 @@ psalmnum = "Benedictus"
 frompitch = a
 topitch = a
 %% transposition after accounting for psalm tone
-master-from-pitch = cis
-master-to-pitch = c
+master-from-pitch = a
+master-to-pitch = g
 
 
 text = \lyricmode {

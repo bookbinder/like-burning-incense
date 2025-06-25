@@ -4,6 +4,7 @@ text = \lyricmode {
     \set stanza = # "1. "
 %    \set shortVocalName = "1."
     \set includeGraceNotes = ##t
+    \ll "------>" "--->"
     \ll "Ring out your joy to God" our strength,
     \ll "shout in triumph to the God" of Jacob.
 
@@ -29,13 +30,6 @@ text = \lyricmode {
 
     \ll "‘Let there be no foreign god" a -- \ll "mong you,"
     \ll "no worship of an ali" -- en god.
-    \ll "I am the Lord your" God,
-    \ll "who brought you from the land" of \ll Egypt.
-    \ll "Open wide your mouth and I" will \ll "fill it."
-
-    \ll "‘But my people did not heed" my voice
-    \ll "and Israel would not" o -- bey,
-
 }
 textB = \lyricmode {
 %    \override InstrumentName #'X-offset = #4
@@ -43,6 +37,13 @@ textB = \lyricmode {
     \set includeGraceNotes = ##t
     \set stanza = # "2. "
 %    \set shortVocalName = "2."
+
+    \ll "I am the Lord your" God,
+    \ll "who brought you from the land" of \ll Egypt.
+    \ll "Open wide your mouth and I" will \ll "fill it."
+
+    \ll "‘But my people did not heed" my voice
+    \ll "and Israel would not" o -- bey,
     \ll "so I left them in their stubbornness" of heart
     \ll "to follow their own" de -- signs.
 

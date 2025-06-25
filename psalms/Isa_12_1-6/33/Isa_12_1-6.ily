@@ -13,9 +13,9 @@ text = \lyricmode {
     \ll "My strength and my courage is" the Lord,
     \ll "and he has been" my savior.
 
-    \ll "With joy you will draw" \ll water
+    \ll "With joy you will" draw \ll water
     \ll "at the fountain of salvation, and say on" that day:
-    \ll "Give thanks to the Lord, acclaim" his name;
+    \ll "Give thanks to the Lord, acclaim his" name;
     \ll "among the nations make known" his deeds,
     \ll "proclaim how exalted is" his name.
 

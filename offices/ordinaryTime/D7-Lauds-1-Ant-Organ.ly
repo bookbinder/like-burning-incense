@@ -4,6 +4,7 @@
 \include "notes/D7-Lauds-1-Ant.ily"
 \include #(string-append "../../psalmtones/notes/" psalmtone "-notes.ily")
 
+%% udpate
 
 \score {
   \transpose \master-from-pitch \master-to-pitch {
@@ -39,7 +40,8 @@
 
     }
     \layout {
-        ragged-last = ##t
+        indent = 0.5\in
+      ragged-last = ##t
         \context {
             \Staff
             \remove Time_signature_engraver

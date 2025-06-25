@@ -1,11 +1,10 @@
 \version "2.20.0"
 
 \include "../../lbi_defs.ily"
+%% udpate
 
 % get variables from notes file
 \include "notes/B1-Lauds-1-Ant.ily"
-
-#(set-global-staff-size 14)
 
 % notes for the psalm tone:
 \include #(string-append "../../psalmtones/notes/" psalmtone "-notes.ily")

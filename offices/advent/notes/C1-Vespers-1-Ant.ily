@@ -15,37 +15,25 @@ topitch = a
 
 
 text = \lyricmode {
-    \set includeGraceNotes = ##t
-    Our Lord will "come * " to claim his glo -- rious throne
-    in the as -- sem -- bly of the prin -- ces.
+  \set includeGraceNotes = ##t
+  Our Lord will "come * " to claim his glo -- rious throne
+  in the as -- sem -- bly of the prin -- ces.
 }
 sopNotesAnt = \relative fis' {
-
 		
-    
-    
-    r8 des8 ges[ f] ges ges([ bes] aes4) aes8 aes[ bes aes] bes ces
-    bes bes4( aes) \bar "'" aes8 aes aes ges ees \bar ""
-    ees f \bar "" ees[ des] des4 \bar "||"
+  r8 des8 ges[ f] ges ges([ bes] aes4) aes8 aes[ bes aes] bes ces
+  bes bes4( aes) \bar "'" aes8 aes aes ges ees \bar ""
+  ees f \bar "" ees[ des] des4 \bar "||"
 }
 altoNotesAnt = \relative d' {
-
-    
-    
-    r8 des8~ des4.~ des4~ des4. ees2. des\breve*7/16~ des4 ces4 aes2
+  r8 des8~ des4.~ des4~ des4. ees2. des\breve*7/16~ des4 ces4 aes2
 }    
 tenorNotesAnt = \relative g {
-
-    
-    
-    bes4 ges4.~ ges4 f4. ges2. f\breve*7/16 ges4~ ges~ ges f
+  bes4 ges4.~ ges4 f4. ges2. f\breve*7/16 ges4~ ges~ ges f
 }
 bassNotesAnt = \relative c {
-
-    
-    
-    ges'4~ <<
-      { \hideNotes ges4. \unHideNotes }
+  ges'4~ <<
+  { \hideNotes ges4. \unHideNotes }
       \new Voice { bes,4. }
     >>
     des4~ des4. ces2. des\breve*7/16 bes4 ces4 des2

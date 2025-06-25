@@ -28,5 +28,12 @@ versefour = \lyricmode {
   and you a -- lone the Light of light,
   one God of pow’r through -- out all things,
   al -- migh -- ty God -- head, Three in One.
-  
+}
+
+versefive = \lyricmode {
+  \set stanza = "5."
+  To you, O Sa -- vior, now we raise
+  our hum -- ble prayer on ben -- ded knee,
+  as with full voice we sing and praise
+  the Fa -- ther with the Spi -- rit blest. A -- men.
 }

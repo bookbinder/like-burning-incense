@@ -4,13 +4,13 @@ toneStruct = "43"
 toneKeysig = \key f \minor
 
 
-sopranoOneFlex = { \afterGrace aes'\breve^"A†" f'4 \breathe \bar "" aes'\breve g'8 f'8 aes'4 \bar "|" g'\breve aes'8 f'4 \bar "||" }
+sopranoOneFlex = { \afterGrace aes'\breve^"A†" f'4 \bar "'" \bar "" aes'\breve g'8 f'8 aes'4 \bar "|" g'\breve aes'8 f'4 \bar "||" }
 sopranoOne = { aes'\breve^"A" g'8 f'8 aes'4 \bar "|" g'\breve aes'8 f'4 \bar "||" }
 sopranoShort = { \override Stem.stencil = ##f
                  \afterGrace aes'\breve*1/2 \parenthesize f'4_"+"
                  \revert Stem.stencil
                  g'8 f' aes'4 \bar "|" \allowBreak g'\breve*1/2 aes'8 f'4 \bar "||"  }
-sopranoTwoFlex = { \afterGrace aes'\breve^"B†" f'4 \breathe \bar "" aes'\breve g'8 f'8 aes'4 \bar "|" g'\breve aes'8 f'4 \bar "||" }
+sopranoTwoFlex = { \afterGrace aes'\breve^"B†" f'4 \bar "'" \bar "" aes'\breve g'8 f'8 aes'4 \bar "|" g'\breve aes'8 f'4 \bar "||" }
 sopranoTwo = { aes'\breve^"B" g'8 f'8 aes'4 \bar "|" g'\breve aes'8 f'4 \bar "||" }
 
 altoOneFlex = { \afterGrace c'\breve des'4 c'\breve s4 des'4~ des'\breve s8 c'4 }
@@ -18,9 +18,9 @@ altoOne = { c'\breve s4 des'4~ des'\breve s8 c'4 }
 altoTwoFlex = { \afterGrace f'\breve des'4 f'\breve s4 ees'4 ees'\breve s8 c'4 }
 altoTwo = { f'\breve s4 ees'4 ees'\breve s8 c'4 }
 
-tenorOneFlex = { \afterGrace aes\breve bes4 \breathe aes\breve s2 \bar "|" bes\breve s8 aes4 \bar "||" }
+tenorOneFlex = { \afterGrace aes\breve bes4 \bar "'" aes\breve s2 \bar "|" bes\breve s8 aes4 \bar "||" }
 tenorOne = { aes\breve s2 \bar "|" bes\breve s8 aes4 \bar "||" }
-tenorTwoFlex = { \afterGrace aes\breve bes4 \breathe aes\breve~ s4 aes4 \bar "|" bes\breve s8 aes4 \bar "||" }
+tenorTwoFlex = { \afterGrace aes\breve bes4 \bar "'" aes\breve~ s4 aes4 \bar "|" bes\breve s8 aes4 \bar "||" }
 tenorTwo = { aes\breve~ s4 aes4 \bar "|" bes\breve s8 aes4 \bar "||" }
 
 bassOneFlex = { \afterGrace f\breve~ f4~ f\breve~ s2 f\breve~ s8 f4 }

@@ -11,11 +11,9 @@ sopMusic = {
     \sopranoOne 
     \sopranoTwoFlex
     \sopranoOne 
-    \sopranoTwoFlex
+    \sopranoTwo
     \sopranoOne 
-    \sopranoTwo
-    \sopranoOne
-    \sopranoTwo
+    \sopranoTwoFlex
     \sopranoOne
     \sopranoTwo
     \mark \markup {"D.C."}
@@ -28,11 +26,9 @@ altoMusic = {
     \altoOne 
     \altoTwoFlex
     \altoOne 
-    \altoTwoFlex
+    \altoTwo
     \altoOne 
-    \altoTwo
-    \altoOne
-    \altoTwo
+    \altoTwoFlex
     \altoOne
     \altoTwo
 }
@@ -44,11 +40,9 @@ tenorMusic = {
     \tenorOne 
     \tenorTwoFlex
     \tenorOne 
-    \tenorTwoFlex
+    \tenorTwo
     \tenorOne 
-    \tenorTwo
-    \tenorOne
-    \tenorTwo
+    \tenorTwoFlex
     \tenorOne
     \tenorTwo
 }
@@ -60,11 +54,9 @@ bassMusic = {
     \bassOne 
     \bassTwoFlex
     \bassOne 
-    \bassTwoFlex
+    \bassTwo
     \bassOne 
-    \bassTwo
-    \bassOne
-    \bassTwo
+    \bassTwoFlex
     \bassOne
     \bassTwo
 }
@@ -98,7 +90,8 @@ bassMusic = {
     >>
 
     \layout {
-      #(layout-set-staff-size 14)
+        indent = 0.5\in
+      % #(layout-set-staff-size 14)
         \context {
             \Staff
             \remove Time_signature_engraver

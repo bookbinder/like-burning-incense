@@ -1,8 +1,8 @@
 \version "2.20.0"
 
-\include "../../lbi_defs.ily"
+\include "/home/ryan/scores/like-burning-incense/lbi_defs.ily"
 \include "/home/ryan/scores/like-burning-incense/offices/ordinaryTime/notes/A1-Vespers-3-Ant.ily"
-\include #(string-append "../../psalmtones/notes/" psalmtone "-notes.ily")
+\include #(string-append "/home/ryan/scores/like-burning-incense/psalmtones/notes/" psalmtone "-notes.ily")
 
 
 \score {
@@ -39,7 +39,8 @@
 
     }
     \layout { 
-        ragged-last = ##t
+        indent = 0.5\in
+      ragged-last = ##t
         \context { 
             \Staff 
             \remove Time_signature_engraver 

@@ -30,27 +30,27 @@ versefour = \lyricmode {
   to trap our minds in world -- ly guile.
 }
 
-% versefive = \lyricmode {
-%   \set stanza = "5."
-%   Let not our anger stir up strife,
-%   nor appetite provoke excess,
-%   nor hungry greed for wealth pervert,
-%   nor base indulgence seize our hearts.
-% }
+versefive = \lyricmode {
+  \set stanza = "5."
+  Let not our an -- ger stir up strife,
+  nor ap -- pe -- tite pro -- voke ex -- cess,
+  nor hun -- gry greed for wealth per -- vert,
+  nor base in -- dul -- gence seize our hearts.
+}
 
-% versesix = \lyricmode {
-%   \set stanza = "6."
-%   But firmly and with sober mind,
-%   steadfast in body, chaste, and pure,
-%   in spirit wholly formed by faith,
-%   so let us live this day for Christ.
-% }
+versesix = \lyricmode {
+  \set stanza = "6."
+  But firm -- ly and with so -- ber mind,
+  stead -- fast in bo -- dy, chaste, and pure,
+  in spi -- rit whol -- ly formed by faith,
+  so let us live this day for Christ.
+}
 
-% verseseven = \lyricmode {
-%   \set stanza = "7."
-%   Most loving Father, hear our prayer,
-%   and you, O Christ coequal Son,
-%   who with the Spirit Paraclete
-%   now reign for all eternity. Amen.
+verseseven = \lyricmode {
+  \set stanza = "7."
+  Most lo -- ving Fa -- ther, hear our prayer,
+  and you, O Christ co- -- e -- qual Son,
+  who with the Spi -- rit Pa -- ra -- clete
+  now reign for all e -- ter -- ni -- ty. A -- men.
   
-% }
+}

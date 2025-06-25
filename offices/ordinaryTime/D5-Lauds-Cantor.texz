@@ -1,0 +1,71 @@
+\opt{hymn}{\input{D5-Lauds-Hymn.tex}}
+\opt{hymnmusic}{\input{/home/ryan/scores/like-burning-incense/hymns/now-sunrise-fills-the-sky-with-light-cantor.tex}}
+
+\opt{psalmody-heading}{\psalmody}
+
+%%%% Begin Ant1
+\antiphonA
+\input{~/scores/like-burning-incense/psalms/Ps_143_1-11/vars.tex}
+\lilypondfile[line-width=3.73in]{D5-Lauds-1-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Ps_143_1-11/43/Ps_143_1-11.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{D5-Lauds-1-Ant-Cantor.ly}
+  }
+%%%% End Ant1
+
+%%%% Begin Ant2
+\antiphonB
+\input{~/scores/like-burning-incense/psalms/Isa_66_10-14a/vars.tex}
+\lilypondfile[line-width=3.73in]{D5-Lauds-2-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Isa_66_10-14a/33/Isa_66_10-14a.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{D5-Lauds-2-Ant-Cantor.ly}
+  }
+%%%% End Ant2
+
+%%%% Begin Ant3
+\antiphonC
+\input{~/scores/like-burning-incense/psalms/Ps_147_1-11/vars.tex}
+\lilypondfile[line-width=3.73in]{D5-Lauds-3-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Ps_147_1-11/33/Ps_147_1-11.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{D5-Lauds-3-Ant-Cantor.ly}
+  }
+%%%% End Ant3
+
+\opt{reading}{\input{D5-Lauds-Reading.tex}}
+
+\opt{responsory}{\input{D5-Lauds-Responsory.tex}}
+
+\opt{gospelcanticle-heading}{\gospelcanticle}
+
+%%%% Begin Ant4
+\antiphonBen
+\lilypondfile[line-width=3.73in]{D5-Lauds-Ben-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{Benedictus}
+  \input{~/scores/like-burning-incense/psalms/Benedictus/43/Benedictus.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{D5-Lauds-Ben-Ant-Cantor.ly}
+  }
+%%%% End Ant4
+
+\opt{intercessions}{\input{D5-Lauds-Intercessions.tex}}
+
+\opt{prayer}{\input{D5-Lauds-Prayer.tex}}

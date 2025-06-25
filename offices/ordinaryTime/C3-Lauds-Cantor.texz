@@ -1,0 +1,71 @@
+\opt{hymn}{\input{C3-Lauds-Hymn.tex}}
+\opt{hymnmusic}{\input{/home/ryan/scores/like-burning-incense/hymns/now-dawn-proclaims-the-suns-approach-cantor.tex}}
+
+\opt{psalmody-heading}{\psalmody}
+
+%%%% Begin Ant1
+\antiphonA
+\input{~/scores/like-burning-incense/psalms/Ps_85/vars.tex}
+\lilypondfile[line-width=3.73in]{C3-Lauds-1-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Ps_85/43/Ps_85.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{C3-Lauds-1-Ant-Cantor.ly}
+  }
+%%%% End Ant1
+
+%%%% Begin Ant2
+\antiphonB
+\input{~/scores/like-burning-incense/psalms/Isa_26_1-4,_7-9,_12/vars.tex}
+\lilypondfile[line-width=3.73in]{C3-Lauds-2-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Isa_26_1-4,_7-9,_12/33/Isa_26_1-4,_7-9,_12.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{C3-Lauds-2-Ant-Cantor.ly}
+  }
+%%%% End Ant2
+
+%%%% Begin Ant3
+\antiphonC
+\input{~/scores/like-burning-incense/psalms/Ps_67/vars.tex}
+\lilypondfile[line-width=3.73in]{C3-Lauds-3-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{\psalmtitle}
+  \psalmsubtitle{\subhead}
+  \Desc{\descA}{\descB}
+  \input{~/scores/like-burning-incense/psalms/Ps_67/43/Ps_67.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{C3-Lauds-3-Ant-Cantor.ly}
+  }
+%%%% End Ant3
+
+\opt{reading}{\input{C3-Lauds-Reading.tex}}
+
+\opt{responsory}{\input{C3-Lauds-Responsory.tex}}
+
+\opt{gospelcanticle-heading}{\gospelcanticle}
+
+%%%% Begin Ant4
+\antiphonBen
+\lilypondfile[line-width=3.73in]{C3-Lauds-Ben-Ant-Cantor.ly}
+\opt{psalmtexts}
+  {
+  \psalm{Benedictus}
+  \input{~/scores/like-burning-incense/psalms/Benedictus/33/Benedictus.tex}
+  \antiphon
+  \lilypondfile[line-width=3.73in]{C3-Lauds-Ben-Ant-Cantor.ly}
+  }
+%%%% End Ant4
+
+\opt{intercessions}{\input{C3-Lauds-Intercessions.tex}}
+
+\opt{prayer}{\input{C3-Lauds-Prayer.tex}}

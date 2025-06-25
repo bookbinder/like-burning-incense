@@ -11,7 +11,9 @@
         <<
           \clef treble \melodyKeysig
           \accidentalStyle forget
-          \new Voice = "Soprano" { \oneVoice \global \sopNotes }
+          \new Voice = "Soprano" 
+          \with { \remove "Fingering_engraver" \remove "New_fingering_engraver" }
+          { \oneVoice \global \sopNotes }
           \new Lyrics \lyricsto Soprano \verseone
           \new Lyrics \lyricsto Soprano \versetwo
           \new Lyrics \lyricsto Soprano \versethree

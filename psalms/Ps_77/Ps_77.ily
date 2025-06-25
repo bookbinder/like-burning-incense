@@ -80,8 +80,8 @@ bassMusic = {
           }
 >>
 
-\layout 
-{ 
+\layout {
+        indent = 0.5\in 
     ragged-last = ##t
     \context 
     { 

@@ -1,4 +1,4 @@
-#(set-global-staff-size 14)
+% #(set-global-staff-size 14)
 
 \header {
     psalm_title = "Tobit_13_8-11,_13-15"
@@ -84,6 +84,7 @@ bassMusic = {
     >>
 
     \layout {
+        indent = 0.5\in
         \context {
             \Staff
             \remove Time_signature_engraver

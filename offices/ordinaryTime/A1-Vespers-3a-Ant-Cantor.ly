@@ -2,7 +2,7 @@
 
 \include "/home/ryan/scores/like-burning-incense/lbi_defs_cantor.ily"
 \include "/home/ryan/scores/like-burning-incense/offices/ordinaryTime/notes/A1-Vespers-3-Ant.ily"
-\include #(string-append "home/ryan/scores/like-burning-incense/psalmtones/notes/" "68" "-notes.ily")
+\include #(string-append "/home/ryan/scores/like-burning-incense/psalmtones/notes/" "68" "-notes.ily")
 
 
 \score {
@@ -25,47 +25,26 @@
                 \global	% will be populated by an include file
                     % in the cantor/organ scores called lbi_defs
                 \oneVoice
-                \allowBreak r8
-                \allowBreak g8
-                \allowBreak a[ b]
-                \allowBreak a4
-                \allowBreak a \bar "|"
-                \allowBreak g\breve
-                \allowBreak fis8
-                \allowBreak a\breve
-                \allowBreak b4 \bar "||"
-                \allowBreak g8
-                \allowBreak g
-                \allowBreak e
-                \allowBreak d4 \bar "|"
-                \allowBreak g\breve
-                \allowBreak fis8
-                \allowBreak a\breve
-                \allowBreak b4 \bar "||"
-                \allowBreak r8
-                \allowBreak b8
-                \allowBreak b[ a]
-                \allowBreak a
-                \allowBreak g
-                \allowBreak e
-                \allowBreak g[ a]
-                \allowBreak a[ g]
-                \allowBreak g4 \bar "||"}
-                \addlyrics { 
-                \set includeGraceNotes = ##t
-                Al -- le -- lu -- ia _ _ _ _ \markup { \bold Al } -- \markup { \bold le } -- \markup { \bold lu } -- \markup { \bold ia }
-                 _ _ _ _ \markup { \bold Al } -- \markup { \bold le } -- \markup { \bold lu } -- \markup { \bold ia, } \markup { \bold Al } -- \markup { \bold le } -- \markup { \bold lu } -- \markup { \bold ia }}
-            }
+                r8 g8 a[ b] a4 a \bar "|"
+                g\breve fis8 a\breve b4 \bar "||" \break
+                g8 g e d4 \bar "|"
+                g\breve fis8 a\breve b4 \bar "||" \break
+                r8 b8 b[ a] a g e g[ a] a[ g] g4 \bar "||"}
+            \addlyrics { 
+              \set includeGraceNotes = ##t
+              Al -- le -- lu -- ia _ _ _ _ \markup { \bold Al } -- \markup { \bold le } -- \markup { \bold lu } -- \markup { \bold ia }
+              _ _ _ _ \markup { \bold Al } -- \markup { \bold le } -- \markup { \bold lu } -- \markup { \bold ia, } \markup { \bold Al } -- \markup { \bold le } -- \markup { \bold lu } -- \markup { \bold ia }}
+          }
         
-    >>
+      >>
 
-    }
+  }
     \layout {
       ragged-last = ##t 
-        \context { 
-            \Staff 
-            \remove Time_signature_engraver 
-        } 
-
+      \context { 
+        \Staff 
+        \remove Time_signature_engraver 
+      } 
+      
     }
-}
+  }

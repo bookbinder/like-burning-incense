@@ -4,13 +4,13 @@ toneStruct = "23"
 toneKeysig = \key a \minor
 
 
-sopranoOneFlex = { \afterGrace g'\breve^"A†" e'4 \breathe g'\breve a'4 \bar "|" a'\breve g'8 e'4 \bar "||" }
+sopranoOneFlex = { \afterGrace g'\breve^"A†" e'4 \bar "'" g'\breve a'4 \bar "|" a'\breve g'8 e'4 \bar "||" }
 sopranoOne = { g'\breve^"A" a'4 \bar "|" a'\breve g'8 e'4 \bar "||" }
 sopranoShort = { \override Stem.stencil = ##f
                  \afterGrace g'\breve*1/2 \parenthesize e'4_"+"
                  \revert Stem.stencil
                  a'4 \bar "|" \allowBreak a'\breve*1/2 g'8 e'4 \bar "||"  }
-sopranoTwoFlex = { \afterGrace g'\breve^"B†" e'4 \breathe g'\breve a'4 \bar "|" a'\breve g'8 e'4 \bar "||" }
+sopranoTwoFlex = { \afterGrace g'\breve^"B†" e'4 \bar "'" g'\breve a'4 \bar "|" a'\breve g'8 e'4 \bar "||" }
 sopranoTwo = { g'\breve^"B" a'4 \bar "|" a'\breve g'8 e'4 \bar "||"  }
 
 altoOneFlex = { \afterGrace c'\breve c'4 c'\breve e'4 d'\breve s8 c'4 }

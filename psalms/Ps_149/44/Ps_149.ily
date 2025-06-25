@@ -1,7 +1,7 @@
 text = \lyricmode {
 %    \override InstrumentName #'X-offset = #4
 %    \override InstrumentName #'font-series = #'bold
-%    \set stanza = # "1. "
+   \set stanza = # "1. "
 %    \set shortVocalName = "1."
     \set includeGraceNotes = ##t
     \ll "Sing a new song" to the Lord,
@@ -18,6 +18,14 @@ text = \lyricmode {
     \ll "Let the praise of God be" on their lips
         \ll "and a two-edged sword" in their hand,
 
+
+}
+textB = \lyricmode {
+%    \override InstrumentName #'X-offset = #4
+%    \override InstrumentName #'font-series = #'bold	
+   \set includeGraceNotes = ##t
+   \set stanza = # "2. "
+%    \set shortVocalName = "2."
     \ll "to deal out vengeance" to the nations
         \ll "and punishment on" all the peoples;
     \ll "to bind their" kings in chains
@@ -30,11 +38,3 @@ text = \lyricmode {
     \ll "as it was in the begin" -- ning, is now,
         \ll "and will be for e" -- ver. A -- men.  
 }
-%textB = \lyricmode {
-%    \override InstrumentName #'X-offset = #4
-%    \override InstrumentName #'font-series = #'bold	
-%    \set includeGraceNotes = ##t
-%    \set stanza = # "2. "
-%    \set shortVocalName = "2."
-%
-%}

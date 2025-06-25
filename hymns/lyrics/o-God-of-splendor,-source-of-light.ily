@@ -30,10 +30,10 @@ versefour = \lyricmode {
   the Spi -- rit’s ho -- ly dwel -- ling place.
 }
 
-% versefive = \lyricmode {
-%   \set stanza = "5."
-%   O Christ, to you, most loving King,
-%   and to the Father glory be,
-%   one with the Spirit Paraclete,
-%   from age to age for evermore. Amen.
-% }
+versefive = \lyricmode {
+  \set stanza = "5."
+  O Christ, to you, most lo -- ving King,
+  and to the Fa -- ther glo -- ry be,
+  one with the Spi -- rit Pa -- ra -- clete,
+  from age to age for e -- ver -- more. A -- men.
+}

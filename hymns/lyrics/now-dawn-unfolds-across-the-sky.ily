@@ -1,5 +1,5 @@
 verseone = \lyricmode {
-  \set stanza = "1."
+  \set stanza = "  1."
   Now dawn un -- folds a -- cross the sky
   and day drifts down u -- pon the earth;
   a pier -- cing ray re -- bounds in light:

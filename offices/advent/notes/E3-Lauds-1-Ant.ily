@@ -17,31 +17,19 @@ master-to-pitch = a
 
 
 text = \lyricmode {
-    \set includeGraceNotes = ##t
-    The Lord will come from his ho -- ly "place * " to save his peo -- ple.
+  \set includeGraceNotes = ##t
+  The Lord will come from his ho -- ly "place * " to save his peo -- ple.
 }
 sopNotesAnt = \relative e' {
-
-    
-    
-    r8 cis8 e[ dis] cis dis[ e] dis e fis[ gis] fis fis4
-    fis8 gis([ fis] gis4) fis8 e[ dis] dis4 \bar "||"
+  r8 cis8 e[ dis] cis dis[ e] dis e fis[ gis] fis fis4
+  fis8 gis([ fis] gis4) fis8 e[ dis] dis4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-
-    
-    
-    gis\breve*5/16 b2~ b2. gis\breve*5/16 b2
+  gis\breve*5/16 b2~ b2. gis\breve*5/16 b2
 }
 tenorNotesAnt = \relative g {
-
-    
-    
-    e\breve*5/16 fis2~ fis2. e\breve*5/16 gis2
+  e\breve*5/16 fis2~ fis2. e\breve*5/16 gis2
 }
 bassNotesAnt = \relative c {
-
-    
-    
-    cis\breve*5/16 b2 dis2. cis\breve*5/16 gis2
+  cis\breve*5/16 b2 dis2. cis\breve*5/16 gis2
 }

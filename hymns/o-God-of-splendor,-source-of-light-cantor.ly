@@ -4,6 +4,8 @@
 \include "/home/ryan/scores/like-burning-incense/hymns/lyrics/o-God-of-splendor,-source-of-light.ily"
 \include "/home/ryan/scores/like-burning-incense/lbi_defs_cantor.ily"
 
+%% update
+
 \score {
   <<
     \transpose \master-from-pitch \master-to-pitch {
@@ -11,11 +13,14 @@
       <<
         \clef treble \melodyKeysig
         \accidentalStyle forget
-        \new Voice = "Soprano" { \oneVoice \global \omit Stem \sopNotes }
+        \new Voice = "Soprano" 
+        \with { \remove "Fingering_engraver" \remove "New_fingering_engraver" }
+        { \oneVoice \global \omit Stem \sopNotes }
         \new Lyrics \lyricsto Soprano \verseone
         \new Lyrics \lyricsto Soprano \versetwo
         \new Lyrics \lyricsto Soprano \versethree
         \new Lyrics \lyricsto Soprano \versefour
+        % \new Lyrics \lyricsto Soprano \versefive
       >>
     }
   >>

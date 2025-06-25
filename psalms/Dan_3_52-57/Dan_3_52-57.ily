@@ -84,18 +84,19 @@ bassMusic = {
                 \new Voice = "Bass" \bassMusic
             >>
         
-    >> }}
->>
-
-\layout 
-{ 
-    ragged-last = ##t
-    \context 
-    { 
-        \Staff 
-        \remove Time_signature_engraver 
-    } 
-
-} 
-
-}
+          >> }
+        }
+  >>
+                
+                \layout {
+                  indent = 0.5\in
+                  ragged-last = ##t
+                  \context 
+                  { 
+                    \Staff 
+                    \remove Time_signature_engraver 
+                  } 
+                  
+                } 
+                
+              }

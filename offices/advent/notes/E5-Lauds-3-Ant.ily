@@ -17,30 +17,18 @@ master-to-pitch = a
 
 
 text = \lyricmode {
-    \set includeGraceNotes = ##t
-    Turn to us, O "Lord, * " make haste to help your peo -- ple.
+  \set includeGraceNotes = ##t
+  Turn to us, O "Lord, * " make haste to help your peo -- ple.
 }
 sopNotesAnt = \relative e' {
-
-    
-    
-    aes8[ g] f g f f4( ees) \bar "'" ees8 des[ f] f g4 f8 f[ ees] ees4 \bar "||"
+  aes8[ g] f g f f4( ees) \bar "'" ees8 des[ f] f g4 f8 f[ ees] ees4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-
-    
-    
-    ees4. des4 c\breve*5/16 des2. bes2
+  ees4. des4 c\breve*5/16 des2. bes2
 }
 tenorNotesAnt = \relative g {
-
-    
-    
-    aes4.~ aes4~ aes\breve*5/16~ aes2.~ aes4 g4
+  aes4.~ aes4~ aes\breve*5/16~ aes2.~ aes4 g4
 }
 bassNotesAnt = \relative c {
-
-    
-    
-    c4. des4 aes\breve*5/16 bes4. des4. ees2
+  c4. des4 aes\breve*5/16 bes4. des4. ees2
 }

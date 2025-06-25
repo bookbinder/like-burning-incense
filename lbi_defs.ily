@@ -1,4 +1,4 @@
-#(set-global-staff-size 15)
+#(set-global-staff-size 16)
 
 \paper {
     %line-width = 7.3\in

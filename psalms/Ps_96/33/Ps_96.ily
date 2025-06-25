@@ -49,6 +49,7 @@ textB = \lyricmode {
     \ll "-->" "-->" 
     \ll "at the presence of the Lord for" he comes,
     \ll "he comes to rule" the earth.
+
     \ll "-->" "-->" 
     \ll "With justice he will rule" the world,
     \ll "he will judge the peoples with" his truth.
@@ -56,6 +57,7 @@ textB = \lyricmode {
     \ll "-->" "-->" 
     \ll "Glory to the Father, and to" the Son, 
     \ll "and to the Ho" -- ly Spirit:
+
     \ll "-->" "-->" 
     \ll "as it was in the beginning," is now,
     \ll "and will be for ever." A -- men. 

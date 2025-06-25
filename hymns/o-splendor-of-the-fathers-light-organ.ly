@@ -4,6 +4,11 @@
 \include "/home/ryan/scores/like-burning-incense/hymns/lyrics/o-splendor-of-the-fathers-light.ily"
 \include "/home/ryan/scores/like-burning-incense/lbi_defs.ily"
 
+%% update again
+
+% \header {
+%   title = "O Splendor of the Father's Light"
+% }
 
 \score {
   <<
@@ -37,9 +42,14 @@
   >>
   
   \layout {
+    #(layout-set-staff-size 18)
     \context {
       \Staff
       \remove Time_signature_engraver
+    }
+    \context {
+      \Lyrics
+      \override LyricSpace.minimum-distance = #2.0
     }
   }
 }

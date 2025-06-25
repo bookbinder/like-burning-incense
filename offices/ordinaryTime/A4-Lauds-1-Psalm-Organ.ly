@@ -2,6 +2,8 @@
 
 \include "../../lbi_defs.ily"
 
+%% update
+
 % get variables from the notes file
 \include "notes/A4-Lauds-1-Ant.ily"
 

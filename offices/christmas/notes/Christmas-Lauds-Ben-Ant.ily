@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key d \minor
+antKeysig =  \key d \minor
 antiphon = "Ben"
 psalmtone = "56"
 psalmtonestruct = "43"
@@ -17,33 +17,24 @@ master-to-pitch = a
 
 
 text = \lyricmode {
-    \set includeGraceNotes = ##t
-    Glo -- ry to God in the high -- "est, * " and peace
-    to his peo -- ple on earth, al -- le -- lu -- ia.
+  \set includeGraceNotes = ##t
+  Glo -- ry to God in the high -- est,
+  \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
+  and peace
+  to his peo -- ple on earth, al -- le -- lu -- ia.
 }
 sopNotesAnt = \relative e' {
-    \global
-    \keysig
-    \voiceOne
-    d4 f8 g a4 g8 f \bar "" g4 g \bar "'"
-    g8 \bar "" a([ f] d4) \bar "" c8 d \bar "" e f e \bar "" d4 \bar "'"
-    e8 \bar "" f[ e] \bar "" d4 d \bar "||"
+  d4 f8 g a4 g8 f \bar "" g4 g
+  \noBreak \hideNotes g16 \unHideNotes
+  g8 \bar "" a([ f] d4) \bar "" c8 d \bar "" e f e \bar "" d4 \bar "'"
+  e8 \bar "" f[ e] \bar "" d4 d \bar "||"
 }
 altoNotesAnt = \relative c' {
-    \global
-    \keysig
-    \voiceTwo
-    a\breve*7/16 c\breve*6/16 c4( d4) s4 c4. a4. c4 a2
+  a\breve*7/16 c\breve*6/16 s16 c4( d4) s4 c4. a4. c4 a2
 }
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
-    \voiceOne
-    f\breve*7/16 e\breve*6/16 f4( a4)~ a4 g4. f4. e4 g4 f4
+  f\breve*7/16 e\breve*6/16 s16 f4( a4)~ a4 g4. f4. e4 g4 f4
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
-    \voiceTwo
-    d\breve*7/16 c\breve*6/16 f2~ f4 c4. d4.~ d4~ d2
+  d\breve*7/16 c\breve*6/16 s16 f2~ f4 c4. d4.~ d4~ d2
 }
