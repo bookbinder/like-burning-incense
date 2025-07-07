@@ -2,6 +2,8 @@
 
 \include "../../lbi_defs.ily"
 
+%% update
+
 % get variables from notes file
 \include "notes/B5-Vespers-1-Ant.ily"
 

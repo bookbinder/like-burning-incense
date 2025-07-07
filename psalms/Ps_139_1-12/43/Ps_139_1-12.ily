@@ -1,7 +1,7 @@
 text = \lyricmode {
 %     \override InstrumentName #'X-offset = #4
 %     \override InstrumentName #'font-series = #'bold
-%     \set stanza = # "1. "
+    \set stanza = # "1. "
 %     \set shortVocalName = "1."
     \set includeGraceNotes = ##t
     \ll "O Lord, you search me and you" \ll "know me,"
@@ -24,6 +24,16 @@ text = \lyricmode {
     
     \ll "If I take the wings" of the dawn
     \ll "and dwell at the sea’s fur" -- thest end,
+
+}
+textB = \lyricmode {
+%     \override InstrumentName #'X-offset = #4
+%     \override InstrumentName #'font-series = #'bold	
+    \set includeGraceNotes = ##t
+    \set stanza = # "2. "
+%     \set shortVocalName = "2."
+
+    \ll "-------->" "-->"
     \ll "even there your" hand would \ll "lead me,"
     \ll "your right hand would hold" me fast.
     
@@ -37,12 +47,3 @@ text = \lyricmode {
     \ll "as it was in the begin" -- ning, is now,
     \ll "and will be for ever." A -- men.
 }
-% textB = \lyricmode {
-%     \override InstrumentName #'X-offset = #4
-%     \override InstrumentName #'font-series = #'bold	
-%     \set includeGraceNotes = ##t
-%     \set stanza = # "2. "
-%     \set shortVocalName = "2."
-%     \set includeGraceNotes = ##t
-%     \ll "The Lord will not refuse" an -- y good
-% }

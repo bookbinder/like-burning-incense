@@ -1,7 +1,7 @@
 text = \lyricmode {
 %    \override InstrumentName #'X-offset = #4
 %    \override InstrumentName #'font-series = #'bold
-%    \set stanza = # "1. "
+   \set stanza = # "1. "
 %    \set shortVocalName = "1."
     \set includeGraceNotes = ##t
   \ll "My soul proclaims the greatness of the" Lord,
@@ -18,12 +18,23 @@ text = \lyricmode {
 \ll "and has lifted" up the lowly.
 \ll "He has filled the hungry with" good things,
 \ll "and the rich he has sent" a -- way empty.
-\ll "He has come to the help of his ser" -- vant Israel,
+
+}
+
+textB = \lyricmode {
+%    \override InstrumentName #'X-offset = #4
+%    \override InstrumentName #'font-series = #'bold	
+   \set includeGraceNotes = ##t
+   \set stanza = # "2. "
+%    \set shortVocalName = "2."
+   \ll "-------->" "-->"
+   \ll "He has come to the help of his ser" -- vant Israel,
 \ll "for he has remembered his pro" -- mise of mercy,
-\ll "The promise he made to" our fathers,
+   \ll "-------->" "-->"
+   \ll "The promise he made to" our fathers,
 \ll "to Abraham and his chil" -- dren for ever.
 \ll "Glory to the Father and to" the Son,
     \ll "and to the" Ho -- ly Spirit:
 \ll "as it was in the beginning," is now,
-    \ll "and will be for e" -- ver. A -- men.
-}
+   \ll "and will be for e" -- ver. A -- men.
+   }

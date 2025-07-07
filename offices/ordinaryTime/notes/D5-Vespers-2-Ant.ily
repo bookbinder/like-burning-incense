@@ -13,8 +13,8 @@ psalmnum = "Ps_144_9-15"
 frompitch = a
 topitch = a
 %% Master transposition after accounting for psalm tone
-master-from-pitch = a
-master-to-pitch = a
+master-from-pitch = aes
+master-to-pitch = g
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
@@ -24,7 +24,7 @@ text = \lyricmode {
 }
 sopNotesAnt = \relative e' {
     f8[ ges] f ees ges ges[ aes] aes4 \bar ""
-    \hideNotes e16 \unHideNotes   %so that I can align the * better
+    \noBreak \hideNotes e16 \unHideNotes   %so that I can align the * better
     \allowBreak des8
     \allowBreak ees[ ges]
     \allowBreak f

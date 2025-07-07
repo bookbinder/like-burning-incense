@@ -11,7 +11,7 @@ psalmnum = "Ps_110_1-5,_7"
 frompitch = a
 topitch = gis
 %% master transposition after accounting for psalm tone
-master-from-pitch = a
+master-from-pitch = ais
 master-to-pitch = a
 
 
@@ -25,7 +25,7 @@ text = \lyricmode {
 }
 sopNotesAnt = \relative e' {
   r8 cis8 cis4( gis')
-  \noBreak \hideNotes g16 \unHideNotes
+  \noBreak \noBreak \hideNotes g16 \unHideNotes
   \allowBreak gis8
   \allowBreak gis
   \allowBreak gis4

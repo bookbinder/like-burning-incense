@@ -33,7 +33,7 @@ tenorNotesAnt = \relative g {
 }
 bassNotesAnt = \relative c {
   ges'4~ <<
-  { \hideNotes ges4. \unHideNotes }
+  { \noBreak \hideNotes ges4. \unHideNotes }
       \new Voice { bes,4. }
     >>
     des4~ des4. ces2. des\breve*7/16 bes4 ces4 des2

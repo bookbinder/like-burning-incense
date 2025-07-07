@@ -21,7 +21,7 @@ text = \lyricmode {
 
 sopNotesAnt = \relative e' {
     e8[ fis] e fis4 e8 dis e \bar "" cis4 b 
-    \hideNotes b16 \unHideNotes %so that I can align the * better
+    \noBreak \hideNotes b16 \unHideNotes %so that I can align the * better
     \allowBreak e8
     \allowBreak fis
     \allowBreak gis[ b]

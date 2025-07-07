@@ -61,7 +61,7 @@ tenorMusic = \relative e {
   g\breve*7/16 a4~ a4.
   <<
     {f\breve*9/16 s4}
-    \new Voice {\voiceTwo \stemUp \tieUp \hideNotes d\breve*9/16~ \unHideNotes d4 \stemDown \tieDown}
+    \new Voice {\voiceTwo \stemUp \tieUp \noBreak \hideNotes d\breve*9/16~ \unHideNotes d4 \stemDown \tieDown}
   >>
   e4. d2
 }

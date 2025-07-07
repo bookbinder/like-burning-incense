@@ -12,7 +12,7 @@ psalmnum = "Benedictus"
 frompitch = a
 topitch = gis
 %% master transposition after accounting for psalm tone
-master-from-pitch = a
+master-from-pitch = ais
 master-to-pitch = a
 
 
@@ -28,7 +28,7 @@ sopNotesAnt = \relative e' {
     \global
     \keysig
     r8 cis8 gis'([ a] gis4)
-    \noBreak \hideNotes gis16 \unHideNotes
+    \noBreak \noBreak \hideNotes gis16 \unHideNotes
     \allowBreak gis8
     \allowBreak fis
     \allowBreak fis4

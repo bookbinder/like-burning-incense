@@ -27,7 +27,7 @@ sopNotesAnt = \relative e' {
   f8 ees ees[ f] ees des[ f] aes aes bes[ des]
   \allowBreak c[ bes]
   \allowBreak bes4( aes)
-  \hideNotes e16 \unHideNotes   %so that I can align the * better
+  \noBreak \hideNotes e16 \unHideNotes   %so that I can align the * better
   \allowBreak aes8
   \allowBreak aes
   \allowBreak ges[ f]

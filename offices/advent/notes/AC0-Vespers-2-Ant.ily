@@ -3,7 +3,7 @@
 % Will need these variables to build the cantor and organ scores:
 antiphon = "2"
 psalmtone = "56"
-antKeysig = \key cis \minor
+antKeysig = \key gis \minor
 psalmnum = "Ps_116_10-19"
 % transposition interval for the corresponding psalm tone
 % to match the key signature of this antiphon. For
@@ -11,7 +11,7 @@ psalmnum = "Ps_116_10-19"
 frompitch = a
 topitch = gis
 %% master transposition after accounting for psalm tone
-master-from-pitch = a
+master-from-pitch = ais
 master-to-pitch = a
 
 
@@ -23,7 +23,7 @@ text = \lyricmode {
 }
 sopNotesAnt = \relative e' {
   e4 b8 cis8[ gis'] gis gis[ a] gis gis gis[ fis] fis4
-  \noBreak \hideNotes fis16 \unHideNotes
+  \noBreak \noBreak \hideNotes fis16 \unHideNotes
   \allowBreak fis8
   \allowBreak e[ gis]
   \allowBreak gis

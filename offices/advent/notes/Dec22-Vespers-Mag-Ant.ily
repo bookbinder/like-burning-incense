@@ -41,7 +41,7 @@ tenorNotesAnt = \relative g {
 bassNotesAnt = \relative c {
   g'4 f4.~ f2.~ f4.~
   <<
-  {\hideNotes  f4. \unHideNotes }
+  {\noBreak \hideNotes  f4. \unHideNotes }
       \new Voice { aes,4.}
     >>
     bes4.~ bes2 ees4. f4. g2

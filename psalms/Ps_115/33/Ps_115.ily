@@ -11,6 +11,7 @@ text = \lyricmode {
 
     \ll "But our God is in" the heavens;
     \ll "he does whatever" he wills.
+    \ll "---------->" "--->"
     \ll "Their idols are silver" and gold,
     \ll "the work of hu" -- man hands.
 
@@ -24,7 +25,13 @@ text = \lyricmode {
     \ll "No sound comes from" their throats.
     \ll "Their makers will come to be" like them
     \ll "and so will all who trust" in them.
-
+}
+textB = \lyricmode {
+%    \override InstrumentName #'X-offset = #4
+%    \override InstrumentName #'font-series = #'bold
+    \set stanza = # "2. "
+%    \set shortVocalName = "2."
+    \set includeGraceNotes = ##t
     \ll "Sons of Israel, trust in" the Lord;
     \ll "he is their help and" their shield.
     \ll "Sons of Aaron, trust in" the Lord;
@@ -36,31 +43,35 @@ text = \lyricmode {
     \ll "he will bless the sons" of Israel.
     \ll "He will bless the sons" of Aaron.
 
-}
-textB = \lyricmode {
-%    \override InstrumentName #'X-offset = #4
-%    \override InstrumentName #'font-series = #'bold
-    \set stanza = # "2. "
-%    \set shortVocalName = "2."
-    \set includeGraceNotes = ##t
+    
     \ll "The Lord will bless those" who \ll "fear him,"
     \ll "the little no less than" the great:
     \ll "to you may the Lord" grant increase,
     \ll "to you and all" your children.
 
+    \ll "---------->" "--->"
     \ll "May you be blessed by" the Lord,
     \ll "the maker of heaven" and earth.
     \ll "The heavens belong to" the Lord
     \ll "but the earth he has given" to men.
 
+
+  }
+
+textC = \lyricmode {
+%    \override InstrumentName #'X-offset = #4
+%    \override InstrumentName #'font-series = #'bold
+    \set stanza = # "3. "
+%    \set shortVocalName = "3."
+    \set includeGraceNotes = ##t
     \ll "The dead shall not praise" the Lord,
     \ll "nor those who go down into" the silence.
     \ll "But we who live bless" the Lord
     \ll "now and for ever." A -- men.
 
-    \ll "----->" "-->"
     \ll "Glory to the Father and to" the Son,
     \ll "and to the Ho" -- ly Spirit:
+    \ll "----->" "-->"
     \ll "as it was in the beginning," is now,
     \ll "and will be for ever." A -- men.
 }

@@ -23,7 +23,7 @@ text = \lyricmode {
 }
 sopNotesAnt = \relative e' {
   aes4 aes8 g f ees f[ aes] aes4
-  \noBreak \hideNotes aes16 \unHideNotes
+  \noBreak \noBreak \hideNotes aes16 \unHideNotes
   \allowBreak f8[ aes]
   \allowBreak bes[ c]
   \allowBreak bes

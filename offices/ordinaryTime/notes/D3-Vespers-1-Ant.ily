@@ -13,7 +13,7 @@ psalmnum = "Ps_137_1-6"
 frompitch = a
 topitch = gis
 %% Master transposition after accounting for psalm tone
-master-from-pitch = a
+master-from-pitch = ais
 master-to-pitch = a
 
 text = \lyricmode {
@@ -24,7 +24,7 @@ text = \lyricmode {
 }
 sopNotesAnt = \relative e' {
     r8 cis8 b cis e[ fis] fis4 gis8 fis[ e] dis dis4 \bar ""
-    \hideNotes e16 \unHideNotes   %so that I can align the * better
+    \noBreak \hideNotes e16 \unHideNotes   %so that I can align the * better
     \allowBreak dis8
     \allowBreak e
     \allowBreak cis[ gis']

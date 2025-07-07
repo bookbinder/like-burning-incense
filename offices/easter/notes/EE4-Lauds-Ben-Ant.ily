@@ -23,7 +23,7 @@ text = \lyricmode {
 }
 sopNotesAnt = \relative e' {
   e4 fis8 gis fis[ gis fis] fis4
-  \noBreak \hideNotes fis16 \unHideNotes
+  \noBreak \noBreak \hideNotes fis16 \unHideNotes
   \allowBreak e8
   \allowBreak fis[ gis]
   \allowBreak gis[-- fis e]

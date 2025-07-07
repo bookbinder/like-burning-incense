@@ -24,8 +24,17 @@ text = \lyricmode {
     I am there a -- mong them, says the Lord.
 }
 sopNotesAnt = \relative e' {
-  cis4 e8[ fis] e dis e dis[ cis] cis b cis[ gis'] gis gis gis4 fis
-  \hideNotes fis16 \unHideNotes  %so taht I can align the * better
+  cis4 e8[ fis] e \allowBreak dis
+  \allowBreak e
+  \allowBreak dis[ cis]
+  \allowBreak cis
+  \allowBreak b
+  \allowBreak cis[ gis']
+  \allowBreak gis
+  \allowBreak gis
+  \allowBreak gis4
+  \allowBreak fis
+  \noBreak \hideNotes fis16 \unHideNotes  %so taht I can align the * better
   \allowBreak e8
   \allowBreak fis
   \allowBreak gis4
@@ -45,3 +54,4 @@ tenorNotesAnt = \relative g {
 bassNotesAnt = \relative c {
   cis\breve*11/16 e,2 b'2 s16 cis4~ cis4.~ cis\breve*7/16~ cis2
 }
+%% update

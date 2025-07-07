@@ -2,13 +2,13 @@
 
 ;;;; parse the scraped html strings from ibreviary.com
 
-(define s (file->string "test.html"))
-(define office
-  (second (regexp-match "<span class=\"sezione\">(.*?)</span>" s)))
+;; (define s (file->string "test.html"))
+;; (define office
+  ;; (second (regexp-match "<span class=\"sezione\">(.*?)</span>" s)))
 
 (define (parse-ibrev-hymn s)
   "Create a hymn string for LaTeX. TODO refactor to accommodate multiple hymns."
-  (let* ([s (regexp-match "HYMN</span><br /><br />(.*)<br /><br /><span class=\"citazione\">(.*?)</span><a name=\"psalm\"" s)]
+  (let* ([s (regexp-match "HYMN</span><br /><br />(.*)<span class=\"citazione\">(.*)</span></p><p><span class=\"capolettera_piccolo\">PSALMODY</span>" s)]
          [hymn (second s)]
          [citation (third s)]
          [hymn (string-replace hymn "<br /><br />" "@@")]
@@ -28,6 +28,19 @@
             (string-replace
              hymn "<a href=#alternatehymn>Alternate Hymn</a>\n\n" "")
             citation)))
+
+(define (parse-ibrev-hymn2 s)
+  "A rougher veresion. Create a hymn string for LaTeX. TODO refactor to accommodate multiple hymns."
+  (let* ([s (regexp-match "HYMN</span>(.*)PSALMODY</span>" s)]
+         [hymn (first s)]
+         [hymn (string-replace hymn "<br /><br />" "@@")]
+         [hymn (string-replace hymn "<br />" "\\\\\\\\\n")]
+         [hymn (string-replace hymn "@@" "\n\n")]
+         [hymn (string-trim
+                    (with-output-to-string
+                      (λ () (system (format "unescapehtml \"~a\"" hymn)))))])
+    (format "\\hymn\n\n\\begin{verse}\n~a\n\\end{verse}\n\n\\begin{hymnsource}\n\n\\end{hymnsource}"
+            hymn)))
 
 (define (parse-ibrev-reading s)
   "Create a reading string for LaTeX"
@@ -50,12 +63,12 @@
 (define (parse-ibrev-responsory s)
     "Create a responsory string for LaTeX"
   (let* ([s (string-replace s "<span class=\"rubrica\">&mdash;</span> "
-                           "{\\color{red}---\\thinspace}")]
+                           "\n{\\color{red}---\\thinspace}")]
          [s (regexp-match "RESPONSORY</span><br /><br />(.*?)<br /><br />(.*?)<br /><br />(.*?)<br /><br />" s)])
-    (format "\\responsory\n\n\\noindent ~a\n\n\\medskip\\noindent ~a\n\n\\medskip\\noindent ~a"
-            (string-replace (second s) "<br />" "\\\\\n")
-            (string-replace (third s) "<br />" "\\\\\n")
-            (string-replace (fourth s) "<br />" "\\\\\n"))))
+    (format "\\responsory\n\n\\begin{hangpar}\n~a\n\n\\medskip ~a\n\n\\medskip ~a\n\\end{hangpar}"
+            (string-replace (second s) "<br />" "\n")
+            (string-replace (third s) "<br />" "\n")
+            (string-replace (fourth s) "<br />" "\n"))))
 
 (define (parse-ibrev-intercessions s)
   "Create an intercessions string for LaTeX"
@@ -78,8 +91,8 @@
 (define (parse-ibrev-prayer s)
   (let* ([s (second (regexp-match "CONCLUDING PRAYER</span><br /><br />(.*?)<br /><br /><span class=\"capolettera_piccolo\">DISMISSAL" s))]
          [prayers (regexp-split "<br /><br /><span class=\"rubrica\">Or:</span><br /><br />" s)])
-    (format "\\prayer\n\n\\setlength{\\leftmargini}{\\prayerleftmargini}\n\n~a\n\n\\setlength{\\leftmargini}{\\defleftmargini}"
-            (string-join (map parse-ibrev-prayer-aux prayers) "\n\n{\\color{red}Or:}\n\n"))))
+    (format "\\prayer\n\n\\setlength{\\vleftmargin}{\\prayerleftmargini}\n\n~a\n\n\\setlength{\\vleftmargin}{\\defleftmargini}"
+            (string-join (map parse-ibrev-prayer-aux prayers) "\n\n\\noindent{\\color{red}Or:}\n\n"))))
 
 (define (parse-ibrev-prayer-aux s)
   "Create a concluding prayer string for LaTeX. Refactor to allow for alternate prayers. (split on `Or:`)"
@@ -91,14 +104,34 @@
             s)))
 
 
-(define (parse-lauds-vespers s)
-  (let ([memorialp
-         (regexp-match "In those places where this Memorial is observed" s)]
-        [hymntxt (parse-ibrev-hymn s)]
-        [readingtxt (parse-ibrev-reading s)]
-        [responsorytxt (parse-ibrev-responsory s)]
-        [intercessionstxt (parse-ibrev-intercessions s)]
-        [prayertxt (parse-ibrev-prayer s)])
-    (displayln prayertxt)))
+;; (define (parse-lauds-vespers s)
+;;   (let ([memorialp
+;;          (regexp-match "In those places where this Memorial is observed" s)]
+;;         [hymntxt (parse-ibrev-hymn s)]
+;;         [readingtxt (parse-ibrev-reading s)]
+;;         [responsorytxt (parse-ibrev-responsory s)]
+;;         [intercessionstxt (parse-ibrev-intercessions s)]
+;;         [prayertxt (parse-ibrev-prayer s)])
+;;     (displayln prayertxt)))
 
-(parse-lauds-vespers s)
+(for ([sec (list "Hymn" "Reading" "Responsory" "Intercessions" "Prayer")]
+      [fn (list parse-ibrev-hymn2 parse-ibrev-reading parse-ibrev-responsory parse-ibrev-intercessions parse-ibrev-prayer)])
+  (display-to-file
+   (fn (file->string "/home/ryan/scores/like-burning-incense/scripts/test.html"))
+   (string->path (format "/home/ryan/scores/like-burning-incense/offices/saintsAndSolemnities/0703_Thomas/1-Lauds-~a.tex" sec))
+   #:exists 'replace))
+
+;; (display-to-file
+;;  (let* ([s (file->string "/home/ryan/scores/like-burning-incense/offices/saintsAndSolemnities/0703_Thomas/1-Lauds-Cantor.tex")]
+;;         [parts (regexp-match "(%%%% Begin Ant1.*%%%% End Ant1).*(%%%% Begin Ant2.*%%%% End Ant2).*(%%%% Begin Ant3.*%%%%End Ant 3).*(%%%% Begin Ant4.*%%%%End Ant 4")])
+;;    (format "~a~a~a\n\n1\n\n2~a\n\n3\n\n4"))
+;;  (string->path "/home/ryan/scores/like-burning-incense/offices/saintsAndSolemnities/0703_Thomas/1-Lauds-Cantor.tex")
+;;  #:exists 'replace)
+
+;; (displayln (let* ([s (file->string "/home/ryan/scores/like-burning-incense/offices/saintsAndSolemnities/0703_Thomas/1-Lauds-Cantor.tex")]
+;;         [parts (regexp-match "(%%%% Begin Ant1.*%%%% End Ant1).*(%%%% Begin Ant2.*%%%% End Ant2).*(%%%% Begin Ant3.*%%%%End Ant 3).*(%%%% Begin Ant4.*%%%%End Ant 4)" s)])
+;;              (format "~a~a~a\n\n1\n\n2~a\n\n3\n\n4"
+;;                      (first parts)
+;;                      (second parts)
+;;                      (third parts)
+;;                      (fourth parts))))

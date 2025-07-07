@@ -2,7 +2,7 @@
 %% \include "../../../lbi_defs.ily"
 
 % Will need these variables to build the cantor and organ scores:
-antKeysig =  \key cis \minor
+antKeysig =  \key gis \minor
 antiphon = "M"
 psalmtone = "56"
 psalmtonestruct = "43"
@@ -13,7 +13,7 @@ psalmnum = "Magnificat"
 frompitch = a
 topitch = gis
 %% transposition after accounting for psalm tone
-master-from-pitch = a
+master-from-pitch = ais
 master-to-pitch = a
 
 
@@ -26,7 +26,7 @@ text = \lyricmode {
 }
 sopNotesAnt = \relative e' {
   r8 cis8 cis([ gis' a] gis4) gis8 gis fis[ gis] fis fis4
-  \hideNotes fis16 \unHideNotes  %so taht I can align the * better
+  \noBreak \hideNotes fis16 \unHideNotes  %so taht I can align the * better
   \allowBreak fis8
   \allowBreak fis4
   \allowBreak e8
@@ -54,3 +54,4 @@ tenorNotesAnt = \relative g {
 bassNotesAnt = \relative c {
   fis4 e4.~ e2 b2. s16 cis2 gis4 b4.~ b2~ b4~ b4. a\breve*5/16 cis2
 }
+%% update

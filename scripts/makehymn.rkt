@@ -8,7 +8,7 @@
 ;; ~/scores/like-burning-incense/hymns/ directory and updates the
 ;; -cantor and -organ.tex files in offices/ordinaryTime
 
-(define (create-hymn hymnfilestem melodyfilestem [texfiles ""])
+(define (create-hymn hymnfilestem melodyfilestem [texfiles #f])
   (let* ([rootdir "/home/ryan/scores/like-burning-incense"]
          [hymndir (string-append rootdir "/hymns")]
          [notesdir (string-append hymndir "/notes")]
@@ -91,87 +91,83 @@
                                        humantitle hymnfilestem)])
         (display-to-file cantortexfileskel cantortexfile)))
 
-    (for ([f (string-split texfiles)])
-      (let* ([curcantorfile
-              (string->path
-               (format "~a/offices/ordinaryTime/~a-Cantor.tex"
-                       rootdir f))]
-             [curcantorfiletxt (file->string curcantorfile)]
-             [curorganfile
-              (string->path
-               (format "~a/offices/ordinaryTime/~a-Organ.tex"
-                       rootdir f))]
-             [curorganfiletxt (file->string curorganfile)]
-             )
-        
-        (unless (regexp-match hymnfilestem curcantorfiletxt)
-          (display-to-file
-           (regexp-replace #rx"(.*opt{hymn}.*?\n)(.*)"
-                           curcantorfiletxt
-                           (format "\\1\\\\opt{hymnmusic}{\\\\input{/home/ryan/scores/like-burning-incense/hymns/~a-cantor.tex}}\n\\2"
-                                   hymnfilestem)
-                           )
-           curcantorfile
-           #:exists 'replace))
-        (unless (regexp-match hymnfilestem curorganfiletxt)
-          (let ([skel (format "\\opt{hymns}{\\null\\ifoddpage\\null\\else\\null\\newpage\\fi}\n\\opt{hymns}{\\thispagestyle{officetitle}}\n\\opt{hymns}{\\section*{~a ~a Prayer, Week ~a}}\n\\addcontentsline{toc}{section}{~a ~a Prayer}\n\\sectionmark{~a ~a Prayer}\n\\opt{hymns}{\\input{/home/ryan/scores/like-burning-incense/hymns/~a-organ.tex}}\n\\opt{hymns}{\\newpage}"
-                              (list-ref
-                               '("Sunday" "Sunday" "Monday" "Tuesday"
-                                          "Wednesday" "Thursday" "Friday")
-                               (string->number (string (string-ref f 1))))
-                              (if (regexp-match "Vespers" f)
-                                  "Evening"
-                                  "Morning")
-                              (match (string-ref f 0)
-                                (#\A "I")
-                                (#\B "II")
-                                (#\C "III")
-                                (#\D "IV"))
-                              (list-ref
-                               '("Sunday" "Sunday" "Monday" "Tuesday"
-                                          "Wednesday" "Thursday" "Friday")
-                               (string->number (string (string-ref f 1))))
-                              (if (regexp-match "Vespers" f)
-                                  "Evening"
-                                  "Morning")
-                              (list-ref
-                               '("Sunday" "Sunday" "Monday" "Tuesday"
-                                          "Wednesday" "Thursday" "Friday")
-                               (string->number (string (string-ref f 1))))
-                              (if (regexp-match "Vespers" f)
-                                  "Evening"
-                                  "Morning")
-                              hymnfilestem)])
-            (display-to-file (string-append skel "\n\n" curorganfiletxt)
-                             curorganfile
-                             #:exists 'replace)))
+    ;; Do I need to update existing tex files for the given offices?
+    (when texfiles
+      (for ([f (string-split texfiles)])
+        (let* ([curcantorfile
+                (string->path
+                 (format "~a/offices/ordinaryTime/~a-Cantor.tex"
+                         rootdir f))]
+               [curcantorfiletxt (file->string curcantorfile)]
+               [curorganfile
+                (string->path
+                 (format "~a/offices/ordinaryTime/~a-Organ.tex"
+                         rootdir f))]
+               [curorganfiletxt (file->string curorganfile)]
+               )
+          
+          (unless (regexp-match hymnfilestem curcantorfiletxt)
+            (display-to-file
+             (regexp-replace #rx"(.*opt{hymn}.*?\n)(.*)"
+                             curcantorfiletxt
+                             (format "\\1\\\\opt{hymnmusic}{\\\\input{/home/ryan/scores/like-burning-incense/hymns/~a-cantor.tex}}\n\\2"
+                                     hymnfilestem)
+                             )
+             curcantorfile
+             #:exists 'replace))
+          (unless (regexp-match hymnfilestem curorganfiletxt)
+            (let ([skel (format "\\opt{hymns}{\\null\\ifoddpage\\null\\else\\null\\newpage\\fi}\n\\opt{hymns}{\\thispagestyle{officetitle}}\n\\opt{hymns}{\\section*{~a ~a Prayer, Week ~a}}\n\\addcontentsline{toc}{section}{~a ~a Prayer}\n\\sectionmark{~a ~a Prayer}\n\\opt{hymns}{\\input{/home/ryan/scores/like-burning-incense/hymns/~a-organ.tex}}\n\\opt{hymns}{\\newpage}"
+                                (list-ref
+                                 '("Sunday" "Sunday" "Monday" "Tuesday"
+                                            "Wednesday" "Thursday" "Friday")
+                                 (string->number (string (string-ref f 1))))
+                                (if (regexp-match "Vespers" f)
+                                    "Evening"
+                                    "Morning")
+                                (match (string-ref f 0)
+                                  (#\A "I")
+                                  (#\B "II")
+                                  (#\C "III")
+                                  (#\D "IV"))
+                                (list-ref
+                                 '("Sunday" "Sunday" "Monday" "Tuesday"
+                                            "Wednesday" "Thursday" "Friday")
+                                 (string->number (string (string-ref f 1))))
+                                (if (regexp-match "Vespers" f)
+                                    "Evening"
+                                    "Morning")
+                                (list-ref
+                                 '("Sunday" "Sunday" "Monday" "Tuesday"
+                                            "Wednesday" "Thursday" "Friday")
+                                 (string->number (string (string-ref f 1))))
+                                (if (regexp-match "Vespers" f)
+                                    "Evening"
+                                    "Morning")
+                                hymnfilestem)])
+              (display-to-file (string-append skel "\n\n" curorganfiletxt)
+                               curorganfile
+                               #:exists 'replace)))
+          )))))
 
-        ))
-    ))
 
-
-(create-hymn (if (= 3 (vector-length (current-command-line-arguments)))
-                           (format
+(create-hymn (if (= 2 (vector-length (current-command-line-arguments)))
+                 (format
                             "~a" (vector-ref
                                   (current-command-line-arguments) 0))
-                           ;; "this-is-a-hymn"
                            (begin (display "Enter file stem for hymn: ")
-                                  (read-line))
-                           )
-             (if (= 3 (vector-length (current-command-line-arguments)))
+                                  (read-line)))
+             (if (= 2 (vector-length (current-command-line-arguments)))
                              (format
                               "~a" (vector-ref
                                     (current-command-line-arguments) 1))
-                             ;; "this-is-a-melody"
                              (begin (display "Enter file stem for melody: ")
-                                    (read-line))
-                             )
-             (if (= 3 (vector-length (current-command-line-arguments)))
-                 (format
-                  "~a" (vector-ref
-                        (current-command-line-arguments) 2))
-                 ;; "B3-Vespers D3-Vespers"
-                 (begin (display "Enter offices in OT (e.g. `A1-Lauds C1-Lauds`): ")
-                        (read-line))
-                 )
+                                    (read-line)))
+             ;; (if (= 3 (vector-length (current-command-line-arguments)))
+             ;;     (format
+             ;;      "~a" (vector-ref
+             ;;            (current-command-line-arguments) 2))
+             ;;     ;; "B3-Vespers D3-Vespers"
+             ;;     (begin (display "Enter offices in OT (e.g. `A1-Lauds C1-Lauds`) or leave blank: ")
+             ;;            (read-line))
+             ;;     )
              )

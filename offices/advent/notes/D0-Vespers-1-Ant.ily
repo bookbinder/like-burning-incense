@@ -2,7 +2,7 @@
 \include "../../../lbi_defs.ily"
 
 % Will need these variables to build the cantor and organ scores:
-antKeysig =  \key cis \minor
+antKeysig =  \key gis \minor
 antiphon = "1"
 psalmtone = "56"
 psalmtonestruct = "43"
@@ -12,7 +12,8 @@ psalmnum = "Ps_110_1-5,_7"
 % use in in cantor (antiphon) and organ (psalm) scores
 frompitch = a
 topitch = gis
-
+master-from-pitch = ais
+master-to-pitch = a
 
 text = \lyricmode {
   \set includeGraceNotes = ##t

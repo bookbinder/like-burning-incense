@@ -24,7 +24,8 @@
     >>
     }
     \layout
-    {
+  {
+    ragged-last = ##t 
       \context
       {
         \Staff

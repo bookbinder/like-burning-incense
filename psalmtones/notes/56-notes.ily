@@ -1,7 +1,7 @@
 \version "2.18.2"
 
 toneStruct = "43"
-toneKeysig = \key f \major
+toneKeysig = \key c \major
 
 
 sopranoOneFlex = {  a'\breve^"A†" g'4 \bar "'" \bar "" a'\breve g'8 f' g'4 \bar "|" g'\breve f'8 d'4 \bar "||" }

@@ -62,7 +62,7 @@
 %                     % in the cantor/organ scores called lbi_defs
 %                 \oneVoice
 %                 g4( fis8) g e d4 
-%                 \hideNotes d16 \unHideNotes   %so that I can align the * better
+%                 \noBreak \hideNotes d16 \unHideNotes   %so that I can align the * better
 %                 \allowBreak g4
 %                 \allowBreak a8
 %                 \allowBreak g

@@ -24,14 +24,17 @@ text = \lyricmode {
     they will be sa -- tis -- fied.
 }
 sopNotesAnt = \relative e' {
-    ees8 f ees c des f4 ees8 des ees[ aes] f g f ees4 \bar ""
-    \hideNotes e16 \unHideNotes   %so that I can align the * better
-    \allowBreak f4
-    \allowBreak f8
-    \allowBreak g
-    \allowBreak f
-    \allowBreak ees
-    \allowBreak ees4 \bar "||"
+  ees8 f ees c des f4 ees8 des ees[ aes] \allowBreak f
+  \allowBreak g
+  \allowBreak f
+  \allowBreak ees4
+  \noBreak \noBreak \hideNotes e16 \unHideNotes   %so that I can align the * better
+  \allowBreak f4
+  \allowBreak f8
+  \allowBreak g
+  \allowBreak f
+  \allowBreak ees
+  \allowBreak ees4 \bar "||"
 }
 altoNotesAnt = \relative c' {
     s2 s8 s2 ees4. des4 c

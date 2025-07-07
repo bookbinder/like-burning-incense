@@ -25,7 +25,7 @@ text = \lyricmode {
 sopNotesAnt = \relative e' {
   r8^"different alleluias from ordinary time? p. 16 in Seasonal pdf"
   g8 g[ a] b a4 g8 b4 b8[ a] a4 
-  \hideNotes a16 \unHideNotes   %so that I can align the * better
+  \noBreak \hideNotes a16 \unHideNotes   %so that I can align the * better
   a8 b[ d] b a[ g] g4 \bar "||"
 }
 altoNotesAnt = \relative c' {

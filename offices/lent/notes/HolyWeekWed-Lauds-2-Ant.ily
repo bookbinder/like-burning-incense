@@ -26,7 +26,7 @@ sopNotesAnt = \relative e' {
     \global
     \keysig
     r8 ees8 ees f aes[ bes] aes g4
-    \noBreak \hideNotes g16 \unHideNotes
+    \noBreak \noBreak \hideNotes g16 \unHideNotes
     \allowBreak ees8
     \allowBreak ees
     \allowBreak g[ aes]

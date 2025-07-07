@@ -41,7 +41,7 @@ tenorWords = \lyricmode {}
 bassMusic = \relative f {
   e2 f\breve*5/16 c\breve*5/16 c2 d4( f4.)~
   <<
-    {\hideNotes f4}
+    {\noBreak \hideNotes f4}
     \new Voice {\voiceTwo a,4}
   >>
   g2

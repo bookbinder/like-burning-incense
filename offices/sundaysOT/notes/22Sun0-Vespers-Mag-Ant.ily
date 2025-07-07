@@ -20,12 +20,18 @@ master-to-pitch = a
 text = \lyricmode {
     \set includeGraceNotes = ##t
     Of what use is it to a man 
-    \markup { \tiny \raise #.5 \char ##x1F7B6 " "} to gain the whole world, if he pays
+    \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
+    to gain the whole world, if he pays
     for it by lo -- sing his soul?
 }
 sopNotesAnt = \relative e' {
-  r8 g8 c4 b8 c a g f g4 g8 a[ b] a b--[ a] g4
-  \hideNotes g16 \unHideNotes  %so taht I can align the * better
+  r8 g8 c4 b8 c a g f g4 
+  \noBreak \hideNotes g16 \unHideNotes  %so taht I can align the * better
+  \allowBreak g8
+  \allowBreak a[ b]
+  \allowBreak a
+  \allowBreak b--[ a]
+  \allowBreak g4
   \allowBreak g8
   \allowBreak g
   \allowBreak f[ e]

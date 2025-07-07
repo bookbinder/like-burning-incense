@@ -1,7 +1,7 @@
 \version "2.20.0"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key cis \minor 
+keysig =  \key gis \minor 
 antiphon = "1"
 psalmtone = "56"
 psalmtonestruct = "43"
@@ -11,6 +11,8 @@ psalmnum = "Ps_31_1-6"
 	% use in cantor (antiphon) and organ (psalm) scores:
 frompitch = a
 topitch = gis
+master-from-pitch = ais
+master-to-pitch = a
 
 
 text = \lyricmode {

@@ -5,6 +5,8 @@
 \include #(string-append "/home/ryan/scores/like-burning-incense/psalmtones/notes/" psalmtone "-notes.ily")
 
 
+%% update
+
 \score {
   \transpose \master-from-pitch \master-to-pitch {
     <<
@@ -37,6 +39,7 @@
     >>
   } 
   \layout {
+    indent = 0.5\in
     ragged-last = ##t
     \context {
       \Staff

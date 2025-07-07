@@ -61,7 +61,7 @@
 %                 \global
 %                 \oneVoice
 %                 g8[ a] b4 a8 c b a[ b a] \bar "" a4 \bar ""
-%                 \hideNotes a16 \unHideNotes %so that I can align the * better
+%                 \noBreak \hideNotes a16 \unHideNotes %so that I can align the * better
 %                 g8 \bar "" fis[ g] e d4 \bar"'"
 %                 g8 \allowBreak a[ b] \allowBreak g4
 %                 \allowBreak g \bar "||"

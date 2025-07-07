@@ -24,7 +24,7 @@ sopNotesAnt = \relative e' {
 		% in the cantor/organ scores called lbi_defs
     \keysig
      r8 c8 c[ des] c bes \bar "" ees[ f] aes bes aes \bar "" aes4( g) 
-    \noBreak \hideNotes g16 \unHideNotes   %so that I can align the * better
+    \noBreak \noBreak \hideNotes g16 \unHideNotes   %so that I can align the * better
     g8 \allowBreak g \allowBreak aes \bar "" f[ g] \allowBreak f \allowBreak
     ees \allowBreak ees \bar "" c4  \bar "||"
 }

@@ -26,7 +26,7 @@ sopNotesAnt = \relative e' {
     
     
     g8[ c] c b([ c] a4)
-    \noBreak \hideNotes a16 \unHideNotes
+    \noBreak \noBreak \hideNotes a16 \unHideNotes
     a8 b a \breathe g a a[ g] g4 \bar "||"
 }
 altoNotesAnt = \relative c' {

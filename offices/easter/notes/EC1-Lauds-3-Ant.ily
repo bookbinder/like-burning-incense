@@ -26,7 +26,7 @@ sopNotesAnt = \relative e' {
     
     
     r8 cis8 cis4 b8 cis e([ fis] gis4)
-    \noBreak \hideNotes gis16 \unHideNotes
+    \noBreak \noBreak \hideNotes gis16 \unHideNotes
     \allowBreak gis8
     \allowBreak fis[ gis]
     \allowBreak fis

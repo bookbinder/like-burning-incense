@@ -24,7 +24,7 @@ text = \lyricmode {
 }
 sopNotesAnt = \relative e' {
   r8 d8 e[ f] g f e d4
-  \noBreak \hideNotes g16 \unHideNotes
+  \noBreak \noBreak \hideNotes g16 \unHideNotes
   \allowBreak f8
   \allowBreak e
   \allowBreak f4
@@ -48,8 +48,8 @@ altoNotesAnt = \relative c' {
 }
 tenorNotesAnt = \relative g {
   a4 g4. \tieDown
-  <<  {a2 \hideNotes f4 s16 \unHideNotes } \\
-      { \hideNotes  f2~ s16 \unHideNotes f4~ }
+  <<  {a2 \noBreak \hideNotes f4 s16 \unHideNotes } \\
+      { \noBreak \hideNotes  f2~ s16 \unHideNotes f4~ }
     >> \tieUp
   f4~ f4. e4.~ e\breve*7/16 f4. e4 d2
 }

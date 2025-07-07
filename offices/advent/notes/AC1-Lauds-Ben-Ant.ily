@@ -3,7 +3,7 @@
 % Will need these variables to build the cantor and organ scores:
 antiphon = "B"
 psalmtone = "56"
-antKeysig = \key cis \minor
+antKeysig = \key gis \minor
 psalmnum = "Benedictus"
 % transposition interval for the corresponding psalm tone
 % to match the key signature of this antiphon. For
@@ -11,7 +11,7 @@ psalmnum = "Benedictus"
 frompitch = a
 topitch = a
 %% master transposition after accounting for psalm tone
-master-from-pitch = a
+master-from-pitch = ais
 master-to-pitch = a
 
 
@@ -25,7 +25,7 @@ text = \lyricmode {
 }
 sopNotesAnt = \relative e' {
   r8 cis8 cis[ e] cis cis[ b] b4
-  \noBreak \hideNotes b16 \unHideNotes
+  \noBreak \noBreak \hideNotes b16 \unHideNotes
   \allowBreak e8
   \allowBreak fis
   \allowBreak e

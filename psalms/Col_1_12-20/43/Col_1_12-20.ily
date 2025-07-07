@@ -25,6 +25,16 @@ text = \lyricmode {
 
     \ll "It is he who is head of the bo" -- dy, the church;
     \ll "he who is the" be -- ginning,
+
+}
+textB = \lyricmode {
+%    \override InstrumentName #'X-offset = #4
+%    \override InstrumentName #'font-series = #'bold	
+    % \set includeGraceNotes = ##t
+    \set stanza = # "2. "
+%    \set shortVocalName = "2."
+    \set includeGraceNotes = ##t
+    \ll "--->" "-->"
     \ll "the first-born" of the dead,
     \ll "so that primacy may be his" in \ll everything.
 
@@ -35,15 +45,6 @@ text = \lyricmode {
 
     \ll "Glory to the Father and" to the Son,
         \ll "and to the Ho" -- ly \ll Spirit:
-}
-textB = \lyricmode {
-%    \override InstrumentName #'X-offset = #4
-%    \override InstrumentName #'font-series = #'bold	
-    % \set includeGraceNotes = ##t
-    \set stanza = # "2. "
-%    \set shortVocalName = "2."
-    \set includeGraceNotes = ##t
-    \ll "--->" "-->"
     \ll "as it was in the begin" -- ning, is now,
         \ll "and will be for ever." A -- men.  
 

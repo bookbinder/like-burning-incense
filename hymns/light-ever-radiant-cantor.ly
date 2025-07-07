@@ -4,7 +4,7 @@
 \include "/home/ryan/scores/like-burning-incense/hymns/lyrics/light-ever-radiant.ily"
 \include "/home/ryan/scores/like-burning-incense/lbi_defs_cantor.ily"
 
-%% update
+%% update again
 
 \score {
   <<

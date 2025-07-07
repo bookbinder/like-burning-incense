@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 % Will need these variables to build the cantor and organ scores:
-antKeysig =  \key d \minor
+antKeysig =  \key a \minor
 antiphon = "Ben"
 psalmtone = "56"
 psalmtonestruct = "43"
@@ -13,7 +13,7 @@ frompitch = a
 topitch = a
 %% master transposition after accounting for psalm tone
 master-from-pitch = a
-master-to-pitch = a
+master-to-pitch = g
 
 
 text = \lyricmode {
@@ -25,7 +25,7 @@ text = \lyricmode {
 }
 sopNotesAnt = \relative e' {
   d4 f8 g a4 g8 f \bar "" g4 g
-  \noBreak \hideNotes g16 \unHideNotes
+  \noBreak \noBreak \hideNotes g16 \unHideNotes
   g8 \bar "" a([ f] d4) \bar "" c8 d \bar "" e f e \bar "" d4 \bar "'"
   e8 \bar "" f[ e] \bar "" d4 d \bar "||"
 }

@@ -1,7 +1,7 @@
 \version "2.18.2"
 
 toneStruct = "33"
-toneKeysig = \key aes \major
+toneKeysig = \key des \major
 
 
 sopranoOneFlex = { \afterGrace aes'\breve^"A†" f'4 \bar "'" aes'\breve bes'8 aes'4 \bar "|" aes'\breve f'8 des'4 \bar "||" }

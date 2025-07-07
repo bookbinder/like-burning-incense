@@ -39,7 +39,7 @@ sopNotesAnt = \relative e' {
   \allowBreak des
   \allowBreak f[ aes]
   \allowBreak aes4
-  \hideNotes aes16 \unHideNotes  %so taht I can align the * better
+  \noBreak \hideNotes aes16 \unHideNotes  %so taht I can align the * better
   \allowBreak aes8
   \allowBreak bes
   \allowBreak aes

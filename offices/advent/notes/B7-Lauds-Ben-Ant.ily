@@ -5,9 +5,11 @@ antiphon = "B"
 psalmnum = "Benedictus"
 psalmtone = "56"
 psalmtonestruct = "43"
-antKeysig = \key cis \minor
+antKeysig = \key gis \minor
 frompitch = a
 topitch = gis
+master-from-pitch = ais
+master-to-pitch = a
 
 
 text = \lyricmode {

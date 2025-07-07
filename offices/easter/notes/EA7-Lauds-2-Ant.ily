@@ -27,7 +27,7 @@ sopNotesAnt = \relative e' {
     
     
     aes8[ bes] aes f ges aes4 aes
-    \noBreak \hideNotes aes16 \unHideNotes
+    \noBreak \noBreak \hideNotes aes16 \unHideNotes
     \allowBreak aes8[ bes]
     \allowBreak aes
     \allowBreak aes

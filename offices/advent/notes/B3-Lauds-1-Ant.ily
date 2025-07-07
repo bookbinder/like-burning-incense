@@ -5,7 +5,7 @@ antiphon = "1"
 psalmnum = "Ps_43"
 psalmtone = "56"
 psalmtonestruct = "43"
-antKeysig = \key cis \minor
+antKeysig = \key gis \minor
 frompitch = a
 topitch = a
 

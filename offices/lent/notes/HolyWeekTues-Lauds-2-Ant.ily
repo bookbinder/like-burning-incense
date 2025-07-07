@@ -26,7 +26,7 @@ sopNotesAnt = \relative e' {
     \global
     \keysig
     gis8[ a] gis gis4( fis)
-    \noBreak \hideNotes fis16 \unHideNotes
+    \noBreak \noBreak \hideNotes fis16 \unHideNotes
     \allowBreak e8
     \allowBreak fis
     \allowBreak fis[ a]

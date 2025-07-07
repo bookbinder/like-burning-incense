@@ -5,8 +5,13 @@
          net/url
          racket/class)
 
-(define options-page
-  "https://www.ibreviary.com/m2/opzioni.php")
+(define (get-single-office day month year office)
+  (let ([options-page "https://www.ibreviary.com/m2/opzioni.php"]
+        [lauds-page "https://www.ibreviary.com/m2/breviario.php?s=lodi"]
+        [toc-page "https://www.ibreviary.com/m2/breviario.php"])
+    0))
+
+(define options-page "https://www.ibreviary.com/m2/opzioni.php")
 (define lauds
   "https://www.ibreviary.com/m2/breviario.php?s=lodi")
 (define tocpage
@@ -81,16 +86,16 @@
 ;;                                 (cons 'anno "2021"))))
 ;;     '("content-type: application/x-www-form-urlencoded; charset=utf-8"))))
 
-(define (next-day month day [year 2025])
-  (let ([dt
-         (seconds->date
-          (+ (date->seconds (date 0 0 12 day month year 0 0 #f 0))
-             (* 60 60 24)))])
-    (list (date-month dt) (date-day dt))))
+;; (define (next-day month day [year 2025])
+;;   (let ([dt
+;;          (seconds->date
+;;           (+ (date->seconds (date 0 0 12 day month year 0 0 #f 0))
+;;              (* 60 60 24)))])
+;;     (list (date-month dt) (date-day dt))))
 
-(define (prev-day month day [year 2025])
-  (let ([dt
-         (seconds->date
-          (- (date->seconds (date 0 0 12 day month year 0 0 #f 0))
-             (* 60 60 24)))])
-    (list (date-month dt) (date-day dt))))
+;; (define (prev-day month day [year 2025])
+;;   (let ([dt
+;;          (seconds->date
+;;           (- (date->seconds (date 0 0 12 day month year 0 0 #f 0))
+;;              (* 60 60 24)))])
+;;     (list (date-month dt) (date-day dt))))

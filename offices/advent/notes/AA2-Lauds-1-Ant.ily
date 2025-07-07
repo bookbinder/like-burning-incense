@@ -22,7 +22,7 @@ text = \lyricmode {
   
 }
 sopNotesAnt = \relative e' {
-  \noBreak \hideNotes g16 \unHideNotes
+  \noBreak \noBreak \hideNotes g16 \unHideNotes
 }
 altoNotesAnt = \relative c' {
 }

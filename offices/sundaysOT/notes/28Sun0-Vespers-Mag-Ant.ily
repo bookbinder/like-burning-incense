@@ -27,7 +27,7 @@ text = \lyricmode {
 }
 sopNotesAnt = \relative e' {
   r8 g8 g[ f] d f4 g8 a \bar "" b[ a g] g4
-  \hideNotes g16 \unHideNotes  %so taht I can align the * better
+  \noBreak \hideNotes g16 \unHideNotes  %so taht I can align the * better
   \allowBreak g8
   \allowBreak g
   \allowBreak f[ a]
@@ -79,3 +79,4 @@ bassNotesAnt = \relative c {
   e4 d\breve*7/16 g4.~ g2~ s16 g4.~ g2~ g2 s8 a2 e\breve*5/16 g4. c2.
   b4.~ b4. a4. f d4~ d4. f4 g2
 }
+%% update

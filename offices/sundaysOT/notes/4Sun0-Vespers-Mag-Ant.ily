@@ -13,7 +13,7 @@ psalmnum = "Magnificat"
 frompitch = a
 topitch = gis
 %% transposition after accounting for psalm tone
-master-from-pitch = a
+master-from-pitch = ais
 master-to-pitch = a
 
 
@@ -27,7 +27,7 @@ text = \lyricmode {
 }
 sopNotesAnt = \relative e' {
   cis4 e8[ dis] cis \bar "" b cis \bar "" cis4( gis')
-  \hideNotes gis16 \unHideNotes   %so that I can align the * better
+  \noBreak \hideNotes gis16 \unHideNotes   %so that I can align the * better
   \allowBreak gis8
   \allowBreak fis[ gis fis]
   \allowBreak e4
@@ -74,3 +74,4 @@ bassNotesAnt = \relative c {
   dis4. gis fis e\breve*5/16 dis4 cis\breve*5/16
   a2 cis2~ cis2
 }
+%% update

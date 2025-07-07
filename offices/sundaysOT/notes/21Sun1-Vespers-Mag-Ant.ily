@@ -13,7 +13,7 @@ psalmnum = "Magnificat"
 frompitch = a
 topitch = gis
 %% transposition after accounting for psalm tone
-master-from-pitch = a
+master-from-pitch = ais
 master-to-pitch = a
 
 
@@ -25,8 +25,11 @@ text = \lyricmode {
     in the king -- dom of hea -- ven.
 }
 sopNotesAnt = \relative e' {
-  gis4 fis8 gis cis,[ e] dis8 e fis[ gis] fis e dis4
-  \hideNotes dis16 \unHideNotes  %so taht I can align the * better
+  gis4 fis8 gis cis,[ e] dis8 e \allowBreak fis[ gis]
+  \allowBreak fis
+  \allowBreak e
+  \allowBreak dis4
+  \noBreak \hideNotes dis16 \unHideNotes  %so taht I can align the * better
   \allowBreak dis8
   \allowBreak e
   \allowBreak dis

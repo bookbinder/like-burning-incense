@@ -34,5 +34,5 @@ tenorNotesAnt = \relative g {
   f\breve*5/16~ f2
 }
 bassNotesAnt = \relative c {
-  ees4 des4. c\breve*5/16 f2 ees2 bes4. des4 c4. \tieUp f2~ << {\hideNotes  f\breve*5/16 \unHideNotes  \tieDown} \new Voice {des\breve*5/16} >> f,2
+  ees4 des4. c\breve*5/16 f2 ees2 bes4. des4 c4. \tieUp f2~ << {\noBreak \hideNotes  f\breve*5/16 \unHideNotes  \tieDown} \new Voice {des\breve*5/16} >> f,2
 }

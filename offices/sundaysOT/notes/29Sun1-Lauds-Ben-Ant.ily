@@ -38,7 +38,7 @@ sopNotesAnt = \relative e' {
   \allowBreak fis8
   \allowBreak e
   \allowBreak dis4
-  \hideNotes dis16 \unHideNotes  %so taht I can align the * better
+  \noBreak \hideNotes dis16 \unHideNotes  %so taht I can align the * better
   \allowBreak dis8
   \allowBreak dis
   \allowBreak e[ dis]

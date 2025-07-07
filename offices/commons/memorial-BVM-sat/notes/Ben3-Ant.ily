@@ -38,7 +38,7 @@ altoNotesAnt = \relative c' {
     \global
     \keysig
     \voiceTwo
-    s8 \hideNotes des8~ \unHideNotes des4~ des4.~ des\breve*5/16 bes2 des~ des4~
+    s8 \noBreak \hideNotes des8~ \unHideNotes des4~ des4.~ des\breve*5/16 bes2 des~ des4~
     des4. s2. bes\breve*7/16 ces2~ ces bes4
 }
 tenorNotesAnt = \relative g {

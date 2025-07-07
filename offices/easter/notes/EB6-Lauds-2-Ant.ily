@@ -26,7 +26,7 @@ sopNotesAnt = \relative e' {
     
     
     r8 e8 e[ f] e d g a c4 c
-    \noBreak \hideNotes c16 \unHideNotes
+    \noBreak \noBreak \hideNotes c16 \unHideNotes
     \allowBreak c8
     \allowBreak b[ c]
     \allowBreak a

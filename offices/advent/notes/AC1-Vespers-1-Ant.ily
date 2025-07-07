@@ -24,7 +24,7 @@ text = \lyricmode {
 }
 sopNotesAnt = \relative e' {
   r8 des8 ges[ f] ges ges([ bes] aes4)
-  \noBreak \hideNotes g16 \unHideNotes
+  \noBreak \noBreak \hideNotes g16 \unHideNotes
   \allowBreak aes8
   \allowBreak aes[ bes aes]
   \allowBreak bes
@@ -49,7 +49,7 @@ tenorNotesAnt = \relative g {
 }
 bassNotesAnt = \relative c {
   ges'4~ <<
-  { \hideNotes ges4. \unHideNotes }
+  { \noBreak \hideNotes ges4. \unHideNotes }
     \new Voice { bes,4. }
   >>
   des4~ des4. s16 ces2. des\breve*7/16 bes4 ces4 des2

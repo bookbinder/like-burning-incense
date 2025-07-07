@@ -7,5 +7,5 @@ cur:
 	# rm -rf tmp-ly/*.*
 	$(LUATEX) ScoreCantorLong.tex
 	evince ScoreCantorLong.pdf
-	$(LUATEX) ScoreOrganLong.tex
-	evince ScoreOrganLong.pdf
+	# $(LUATEX) ScoreOrganLong.tex
+	# evince ScoreOrganLong.pdf

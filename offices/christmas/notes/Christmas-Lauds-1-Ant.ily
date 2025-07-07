@@ -26,13 +26,41 @@ text = \lyricmode {
 }
 sopNotesAnt = \relative e' {
   aes8 aes g[ aes] f4
-  \noBreak \hideNotes f16 \unHideNotes
-  f8 f aes g4 \bar "'"
-  ees8[ f] aes g ees8 g \bar "" f4 r4 \bar "|"
-  ees8 f aes g ees g \bar "" f4 f4 \bar "'"
-  ees8 f \bar "" aes g \bar "" aes[ bes] bes4 \bar "" aes8[ bes] g aes
-  \bar "" f[ aes]
-  \breathe g8 ees \bar "" g4 f4 \bar "||"
+  \noBreak \noBreak \hideNotes f16 \unHideNotes
+  \allowBreak f8
+  \allowBreak f
+  \allowBreak aes
+  \allowBreak g4 \bar "'"
+  \allowBreak ees8[ f]
+  \allowBreak aes
+  \allowBreak g
+  \allowBreak ees8
+  \allowBreak g
+  \allowBreak f4
+  \allowBreak r4 \bar "|"
+  \allowBreak ees8
+  \allowBreak f
+  \allowBreak aes
+  \allowBreak g
+  \allowBreak ees
+  \allowBreak g
+  \allowBreak f4
+  \allowBreak f4 \bar "'"
+  \allowBreak ees8
+  \allowBreak f
+  \allowBreak aes
+  \allowBreak g
+  \allowBreak aes[ bes]
+  \allowBreak bes4
+  \allowBreak aes8[ bes]
+  \allowBreak g
+  \allowBreak aes
+  \allowBreak f[ aes]
+  \allowBreak \breathe
+  \allowBreak g8
+  \allowBreak ees
+  \allowBreak g4
+  \allowBreak f4 \bar "||"
 }
 altoNotesAnt = \relative c' {
   c\breve*9/16 s16

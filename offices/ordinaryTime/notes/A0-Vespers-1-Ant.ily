@@ -25,7 +25,7 @@ text = \lyricmode {
 sopNotesAnt = \relative e' {
     % will be populated by an include file in the cantor/organ scores called lbi_defs
     r8 d8 f[ e] d \bar "" e[ f] e \bar "" e4
-    \hideNotes e16 \unHideNotes   %so that I can align the * better
+    \noBreak \hideNotes e16 \unHideNotes   %so that I can align the * better
     \allowBreak e8
     \allowBreak f
     \allowBreak d[ a']

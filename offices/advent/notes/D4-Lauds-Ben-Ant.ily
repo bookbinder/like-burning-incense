@@ -1,8 +1,8 @@
 \version "2.20.0"
-\include "../../../lbi_defs.ily"
+\include "home/ryan/scores/like-burning-incense/lbi_defs.ily"
 
 % Will need these variables to build the cantor and organ scores:
-antKeysig =  \key cis \minor
+antKeysig =  \key gis \minor
 antiphon = "B"
 psalmtone = "56"
 psalmtonestruct = "43"
@@ -13,7 +13,7 @@ psalmnum = "Benedictus"
 frompitch = a
 topitch = a
 %% Transposition interval after accounting for psalm tone
-master-from-pitch = a
+master-from-pitch = ais
 master-to-pitch = a
 
 

@@ -21,7 +21,7 @@ text = \lyricmode {
 
 sopNotesAnt = \relative e' {
     r8 des8 f[ ges] aes \bar "" bes4( aes)
-    \hideNotes aes16 \unHideNotes %so that I can align the * better
+    \noBreak \hideNotes aes16 \unHideNotes %so that I can align the * better
     \allowBreak f8[ aes]
     \allowBreak ges[( f] ees4)
     \allowBreak f8
@@ -29,7 +29,7 @@ sopNotesAnt = \relative e' {
     \allowBreak des4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    r8 \hideNotes des8~ \unHideNotes des4.~ des2.
+    r8 \noBreak \hideNotes des8~ \unHideNotes des4.~ des2.
     s16 des4 bes4. aes2
 }
 tenorNotesAnt = \relative g {

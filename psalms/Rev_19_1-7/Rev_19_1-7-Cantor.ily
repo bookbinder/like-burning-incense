@@ -1,13 +1,8 @@
+\include "/home/ryan/scores/like-burning-incense/lbi_defs_cantor.ily"
+
 \header {
     psalm_title = "Canticle, See Revelation 19:1-7"
     psalm_subtitle = "The wedding of the lamb"
-}
-
-global = {
-    \key g \major
-    \cadenzaOn
-    \set tieWaitForNote = ##t
-    \autoBeamOff
 }
 
 textA = \lyricmode {
@@ -16,7 +11,6 @@ textA = \lyricmode {
 %    \override InstrumentName #'font-series = #'bold
     \set stanza = # "1. "
 %    \set shortVocalName = "1."
-    \set stanza = # "1. "
     Al -- le -- lu -- ia.
     \ll "Salvation, glory" and 
     \ll "pow'r to our" God: Al -- le -- lu -- ia  
@@ -29,7 +23,6 @@ textB = \lyricmode {
 %    \override InstrumentName #'font-series = #'bold
     \set stanza = # "2. "
 %    \set shortVocalName = "2."    
-    \set stanza = # "2. "
     Al -- le -- lu -- ia.
     \ll "Sing praise to our God," all \ll "you his" servants,
     Al -- le -- lu -- ia.
@@ -42,7 +35,6 @@ textC = \lyricmode {
 %    \override InstrumentName #'font-series = #'bold
     \set stanza = # "3. "
 %    \set shortVocalName = "3."    
-    \set stanza = # "3. "
     Al -- le -- lu -- ia.
     \ll "The Lord our all-power" -- ful \ll "God is" King;
     Al -- le -- lu -- ia.
@@ -55,7 +47,6 @@ textD = \lyricmode {
 %    \override InstrumentName #'font-series = #'bold
     \set stanza = # "4. "
 %    \set shortVocalName = "4."    
-    \set stanza = # "4. "
     Al -- le -- lu -- ia.
     \ll "The wedding feast of" the \ll "Lamb has be" -- gun,
     Al -- le -- lu -- ia.
@@ -69,7 +60,6 @@ textE = \lyricmode {
 %    \override InstrumentName #'font-series = #'bold
     \set stanza = # "5. "
 %    \set shortVocalName = "5."    
-    \set stanza = # "5. "
     Al -- le -- lu -- ia.
     \ll "Glory to the Father and to the Son,
     and to" the Holy Spirit:
@@ -98,7 +88,7 @@ sopMusic = \relative e' {
            
                 \new Staff ="up"
                 <<
-                    \clef treble \toneKeysig
+                    \clef treble 
                     \accidentalStyle forget
                     \new Voice = "Soprano" { \oneVoice \sopMusic }
                     \new Lyrics \lyricsto Soprano \textA

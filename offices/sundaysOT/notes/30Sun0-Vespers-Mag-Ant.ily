@@ -38,7 +38,7 @@ sopNotesAnt = \relative e' {
   \allowBreak e
   \allowBreak fis
   \allowBreak dis4
-  \hideNotes dis16 \unHideNotes  %so taht I can align the * better
+  \noBreak \hideNotes dis16 \unHideNotes  %so taht I can align the * better
   \allowBreak dis8[ e]
   \allowBreak dis
   \allowBreak cis[ gis']
@@ -72,3 +72,4 @@ bassNotesAnt = \relative c {
   cis2~ cis2 gis1 b\breve*5/16 s16 e4.~ e4~ e4~ e2.~ e2~ e\breve*5/16
   a,\breve*5/16 b4 cis2
 }
+%% update

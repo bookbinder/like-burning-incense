@@ -47,7 +47,8 @@ textB = \lyricmode {
     \ll "and all the kingdoms" of Canaan.
     \ll "He let Israel inherit" their land;
     \ll "on his people their land he" be -- stowed.
-    
+
+    \ll "------>" "--->"
     \ll "Glory to the Father and to" the Son,
     \ll "and to the Ho" -- ly Spirit:
     \ll "as it was in the beginning," is now,

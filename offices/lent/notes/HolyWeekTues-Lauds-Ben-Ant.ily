@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 % Will need these variables to build the cantor and organ scores:
-keysig = \key cis \minor
+keysig = \key gis \minor
 antiphon = "B"
 psalmtone = "56"
 psalmtonestruct = "43"
@@ -12,7 +12,7 @@ psalmnum = "Benedictus"
 frompitch = a
 topitch = gis
 %% master transposition after accounting for psalm tone
-master-from-pitch = a
+master-from-pitch = ais
 master-to-pitch = a
 
 
@@ -26,7 +26,7 @@ sopNotesAnt = \relative e' {
     \global
     \keysig
     cis8([ e fis] e4 cis8) cis4
-    \noBreak \hideNotes cis16 \unHideNotes
+    \noBreak \noBreak \hideNotes cis16 \unHideNotes
     \allowBreak cis8[ gis']
     \allowBreak gis
     \allowBreak fis

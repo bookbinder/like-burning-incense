@@ -13,8 +13,8 @@ psalmnum = "Magnificat"
 frompitch = a
 topitch = a
 %% transposition after accounting for psalm tone
-master-from-pitch = a
-master-to-pitch = a
+master-from-pitch = aes
+master-to-pitch = g
 
 
 text = \lyricmode {
@@ -25,8 +25,10 @@ text = \lyricmode {
     se --ven -- ty times se -- ven.
 }
 sopNotesAnt = \relative e' {
-  aes8[ es] aes f[ ges] aes ees[ des] des4
-  \hideNotes des16 \unHideNotes  %so taht I can align the * better
+  aes8[ es] aes f[ ges] \allowBreak aes
+  \allowBreak ees[ des]
+  \allowBreak des4
+  \noBreak \hideNotes des16 \unHideNotes  %so taht I can align the * better
   \allowBreak f8
   \allowBreak ges
   \allowBreak aes4

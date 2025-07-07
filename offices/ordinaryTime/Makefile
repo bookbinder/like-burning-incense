@@ -7,10 +7,12 @@ LUATEX=lualatex -shell-escape
 cur:
 	# rm -rf out/*/
 	# rm -rf tmp-ly/*.*
-	time $(LUATEX) ScoreCantorLong.tex
-	evince ScoreCantorLong.pdf
-	# time $(LUATEX) ScoreOrganLong.tex
-	# evince ScoreOrganLong.pdf
+	# time $(LUATEX) ScoreCantorLong.tex
+	# evince ScoreCantorLong.pdf
+	time $(LUATEX) ScoreOrganLong.tex
+	evince ScoreOrganLong.pdf
+	# $(LUATEX) ScoreCantorSingle.tex
+	# evince ScoreCantorSingle.pdf
 
 # newver:
 # 	rm -rf out/*/

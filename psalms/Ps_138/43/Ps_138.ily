@@ -1,9 +1,9 @@
 text = \lyricmode {
 %     \override InstrumentName #'X-offset = #4
 %     \override InstrumentName #'font-series = #'bold
-%     \set stanza = # "1. "
+    \set stanza = # "1. "
 %     \set shortVocalName = "1."
-%     \set includeGraceNotes = ##t
+    \set includeGraceNotes = ##t
     \ll "I thank you, Lord, with" all my heart:
     \ll "you have heard the words of" my mouth.
     \ll "In the presence of the angels" I will \ll "bless you."
@@ -19,7 +19,17 @@ text = \lyricmode {
     \ll "They shall sing of" the Lord’s ways:
     \ll "‘How great is the glory of" the Lord!’
     
-    \ll "The Lord is high yet he looks" on the lowly
+    
+}
+textB = \lyricmode {
+%     \override InstrumentName #'X-offset = #4
+%     \override InstrumentName #'font-series = #'bold	
+    \set includeGraceNotes = ##t
+    \set stanza = # "2. "
+%     \set shortVocalName = "2."
+%     \set includeGraceNotes = ##t
+    
+\ll "The Lord is high yet he looks" on the lowly
     \ll "and the haughty he knows from" a -- far.
     \ll "Though I walk in the midst" of af -- fliction
     \ll "you give me life and frustrate" my foes.
@@ -34,12 +44,3 @@ text = \lyricmode {
     \ll "as it was in the begin" -- ning, is now,
     \ll "and will be for ever." A -- men.
 }
-% textB = \lyricmode {
-%     \override InstrumentName #'X-offset = #4
-%     \override InstrumentName #'font-series = #'bold	
-%     \set includeGraceNotes = ##t
-%     \set stanza = # "2. "
-%     \set shortVocalName = "2."
-%     \set includeGraceNotes = ##t
-%     \ll "The Lord will not refuse" an -- y good
-% }

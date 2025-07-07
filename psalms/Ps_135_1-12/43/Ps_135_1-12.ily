@@ -48,6 +48,7 @@ textB = \lyricmode {
     \ll "He let Israel inher" -- it their land;
     \ll "on his people their land he" be -- stowed.
 
+    \ll "------>" "--->"
     \ll "Glory to the Father and" to the Son,
     \ll "and to the Ho" -- ly Spirit:
     \ll "as it was in the begin" -- ning, is now,

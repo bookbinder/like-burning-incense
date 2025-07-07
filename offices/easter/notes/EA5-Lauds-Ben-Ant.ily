@@ -34,7 +34,7 @@ sopNotesAnt = \relative e' {
     \allowBreak ees
     \allowBreak f[ ees des]
     \allowBreak des4
-    \noBreak \hideNotes g16 \unHideNotes
+    \noBreak \noBreak \hideNotes g16 \unHideNotes
     \allowBreak ees8
     \allowBreak f([ aes] g4)
     \allowBreak \breathe
