@@ -57,8 +57,10 @@ altoNotesAnt = \relative c' {
   ees2~ ees4 des2~ des4. bes2
 }
 tenorNotesAnt = \relative g {
-  
+  aes\breve*8/16~ s16 aes2.~ aes2 g\breve*5/16
+  c2 bes4~ bes2 aes4.~ aes4 g
 }
 bassNotesAnt = \relative c {
-  
+  c\breve*8/16 s16 des2. aes2 ees'\breve*5/16~
+  ees2~ ees4 bes2 des4. ees2
 }
