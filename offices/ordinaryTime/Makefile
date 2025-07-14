@@ -11,8 +11,10 @@ cur:
 	# evince ScoreCantorLong.pdf
 	# time $(LUATEX) ScoreOrganLong.tex
 	# evince ScoreOrganLong.pdf
-	$(LUATEX) ScoreCantorSingle.tex
-	evince ScoreCantorSingle.pdf
+	# $(LUATEX) ScoreCantorSingle.tex
+	# evince ScoreCantorSingle.pdf
+	$(LUATEX) ScoreCantorHalfletter.tex
+	evince ScoreCantorHalfletter.pdf
 
 # newver:
 # 	rm -rf out/*/

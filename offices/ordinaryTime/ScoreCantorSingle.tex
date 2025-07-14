@@ -36,7 +36,7 @@
 \newfontfamily\QuintFirst[Scale=2]{Quintessential}
 
 \usepackage{lettrine}
-%% \renewcommand{\LettrineFontHook}{\QuintFirst}
+\renewcommand{\LettrineFontHook}{\QuintFirst}
 
 \usepackage[nofragment, insert=systems]{lyluatex}
 %% \setluaoption{ly}{pass-fonts}{true}
@@ -283,9 +283,9 @@
 %% \opt{vespers}{\section{Tuesday Evening Prayer}}
 %% \opt{vespers}{\input{B3-Vespers-Cantor.tex}}
 
-\opt{lauds}{\section{Wednesday Morning Prayer}}
-\thispagestyle{officeheader}
-\opt{lauds}{\input{B4-Lauds-Cantor.tex}}
+%% \opt{lauds}{\section{Wednesday Morning Prayer}}
+%% \thispagestyle{officeheader}
+%% \opt{lauds}{\input{B4-Lauds-Cantor.tex}}
 
 %% \opt{vespers}{\section{Wednesday Evening Prayer}}
 %% \opt{vespers}{\input{B4-Vespers-Cantor.tex}}
@@ -307,7 +307,7 @@
 
 
 %% \chapter{Week III}
-%% \chaptermark{Week III}
+\chaptermark{Week III}
 
 %% \opt{vespers}{\section{Sunday Evening Prayer I}}
 %% \opt{vespers}{\input{C0-Vespers-Cantor.tex}}
@@ -318,8 +318,8 @@
 %% \opt{vespers}{\section{Sunday Evening Prayer II}}
 %% \opt{vespers}{\input{C1-Vespers-Cantor.tex}}
 
-%% \opt{lauds}{\section{Monday Morning Prayer}}
-%% \opt{lauds}{\input{C2-Lauds-Cantor.tex}}
+\opt{lauds}{\section{Monday Morning Prayer}}
+\opt{lauds}{\input{C2-Lauds-Cantor.tex}}
 
 %% \opt{vespers}{\section{Monday Evening Prayer}}
 %% \opt{vespers}{\input{C2-Vespers-Cantor.tex}}

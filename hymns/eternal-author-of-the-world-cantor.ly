@@ -2,7 +2,7 @@
 
 \include "/home/ryan/scores/like-burning-incense/hymns/notes/melody-26.ily"
 \include "/home/ryan/scores/like-burning-incense/hymns/lyrics/eternal-author-of-the-world.ily"
-\include "/home/ryan/scores/like-burning-incense/lbi_defs.ily"
+\include "/home/ryan/scores/like-burning-incense/lbi_defs_cantor.ily"
 
 %% udpate
 

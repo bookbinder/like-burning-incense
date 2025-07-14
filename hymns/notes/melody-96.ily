@@ -8,11 +8,40 @@ master-from-pitch = c
 master-to-pitch = c
 
 sopNotes = \relative e' {
-  d4 e f g f g( a) g f( e f) \bar "'"
-  d4 e f g f g( a) a g \bar ","
-  a( c) c( c d) c c( b) a( g) a g f( e f) \bar "'"
-  d4 e f g f g( a) a g \bar "||"
-  g( a g) f4.( g4.) \bar "||"
+  \allowBreak d4
+  \allowBreak e
+  \allowBreak f
+  \allowBreak g
+  \allowBreak f
+  \allowBreak g( a)
+  \allowBreak g
+  \allowBreak f( e f) \bar "'"
+  \allowBreak d4
+  \allowBreak e
+  \allowBreak f
+  \allowBreak g
+  \allowBreak f
+  \allowBreak g( a)
+  \allowBreak a
+  \allowBreak g \bar ","
+  \allowBreak a( c)
+  \allowBreak c( c d)
+  \allowBreak c
+  \allowBreak c( b)
+  \allowBreak a( g)
+  \allowBreak a
+  \allowBreak g
+  \allowBreak f( e f) \bar "'"
+  \allowBreak d4
+  \allowBreak e
+  \allowBreak f
+  \allowBreak g
+  \allowBreak f
+  \allowBreak g( a)
+  \allowBreak a
+  \allowBreak g \bar "||"
+  \allowBreak g( a g)
+  \allowBreak f4.( g4.) \bar "||"
 }
 altoNotes = \relative c' {
   d2.~ d2~ d2.~ d2~ d4~
