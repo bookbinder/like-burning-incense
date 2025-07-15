@@ -8,11 +8,40 @@ master-from-pitch = c
 master-to-pitch = c
 
 sopNotes = \relative e' {
-  a4 a( g) a g( f) e( d c) e( f) d d \bar "'"
-  a'( c) c( b) g a g( a) f( e) g( a) a( b a) \bar ","
-  a a g f( e) d d( e) d( c) c \bar "'"
-  e d( g) g( a g) f( e) d( c) e( f) d d \bar "||"
-  d( e d) c4.( d4.) \bar "||"
+  \allowBreak a4
+  \allowBreak a( g)
+  \allowBreak a
+  \allowBreak g( f)
+  \allowBreak e( d c)
+  \allowBreak e( f)
+  \allowBreak d
+  \allowBreak d \bar "'"
+  \allowBreak a'( c)
+  \allowBreak c( b)
+  \allowBreak g
+  \allowBreak a
+  \allowBreak g( a)
+  \allowBreak f( e)
+  \allowBreak g( a)
+  \allowBreak a( b a) \bar ","
+  \allowBreak a
+  \allowBreak a
+  \allowBreak g
+  \allowBreak f( e)
+  \allowBreak d
+  \allowBreak d( e)
+  \allowBreak d( c)
+  \allowBreak c \bar "'"
+  \allowBreak e
+  \allowBreak d( g)
+  \allowBreak g( a g)
+  \allowBreak f( e)
+  \allowBreak d( c)
+  \allowBreak e( f)
+  \allowBreak d
+  \allowBreak d \bar "||"
+  \allowBreak d( e d)
+  \allowBreak c4.( d4.) \bar "||"
 }
 altoNotes = \relative c' {
   d2~ s2 d2 c2.~ c2. s4

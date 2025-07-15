@@ -40,7 +40,8 @@
 
   }
     \layout {
-      ragged-last = ##t 
+      ragged-last = ##t
+      line-width = 3.5\in
       \context { 
         \Staff 
         \remove Time_signature_engraver 
