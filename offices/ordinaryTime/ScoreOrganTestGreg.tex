@@ -1,0 +1,473 @@
+\documentclass{lbi_organ_bind}
+\usepackage[%% uncomment options below to exclude them
+  lauds,
+  vespers,
+  %% hymns,
+  default, %% don't uncomment this one
+]{optional}
+
+\usepackage[strict]{changepage}
+\usepackage{libertine}
+
+\usepackage[nofragment]{lyluatex}
+%% \usepackage[nofragment, insert=systems]{lyluatex}
+
+
+\newcommand*\cleartoleftpage{%
+  \clearpage
+  \ifodd\value{page}\hbox{}\newpage\fi
+}
+
+\usepackage{verse}
+\newcommand{\defleftmargini}{1em}
+\newcommand{\prayerleftmargini}{0em}
+\newcommand{\Aleftmargini}{2em}
+\newcommand{\Bleftmargini}{3em}
+\newcommand{\Cleftmargini}{4em}
+\newcommand{\Dleftmargini}{5em}
+\newcommand{\Eleftmargini}{6em}
+%% \setlength{\vleftmargin}{\defleftmargini}  %% left margin
+\setlength{\stanzaskip}{0.6\baselineskip}  %% space between verses
+\setlength{\vleftskip}{.5em}  %% space between verse numbers and verse
+
+\newcommand{\psalm}[1]{\subsubsection{\textbf{#1}}}
+\newcommand{\psalmsubtitle}[1]{\subsubsection{#1}}
+\newcommand{\antiphonA}{\subsubsection{Antiphon 1}}
+\newcommand{\antiphonB}{\subsubsection{Antiphon 2}}
+\newcommand{\antiphonC}{\subsubsection{Antiphon 3}}
+\newcommand{\antiphonBen}{\subsubsection{Benedictus Antiphon}}
+\newcommand{\antiphonMag}{\subsubsection{Magnificat Antiphon}}
+\newcommand{\antiphon}{\subsubsection{Antiphon}}
+\newcommand{\hymn}{\subsection{\textsc{Hymn}}}
+\newenvironment{hymnsource}%%
+               {%%
+                 \scriptsize
+                 \setlength{\leftskip}{1em}%%
+                 \setlength{\parindent}{-1em}%%
+               }%%
+
+
+\fancypagestyle{officetitle}{%
+  \fancyhf{} % Clear existing headers and footers
+  \fancyhead[LE]{\large\thepage} % Left header
+  \fancyhead[RO]{\large\thepage} % Right header with page number
+}
+
+%% \titleformat{\chapter}[display]
+%%   {\normalfont\sffamily\filcenter}
+%%   {\chaptertitlename\ \thechapter}{0pt}{\LARGE}
+
+\titleformat{\section}
+  {\normalfont\sffamily\Large\bfseries\filcenter}
+  {\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\normalfont}
+  {\thesection}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\large\bfseries\filcenter}
+  {\thesection}{1em}{}
+
+
+\raggedbottom
+\usepackage{fontspec}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks, citecolor=black, filecolor=black, linkcolor=black, urlcolor=black}
+
+\begin{document}
+%% \pagestyle{empty}
+
+
+%% \null\vfill
+%% \begin{center}
+%%   \fontspec{TrajanPro-Regular}
+%%   \huge
+  
+%%   Like Burning Incense
+
+%%   \bigskip\LARGE ordinary time
+
+%%   \vfill\vfill\Large organ score
+
+%% \end{center}
+
+
+%% \newpage
+
+%% \null\vfill
+%% \begin{center}
+%%   \vfill\small
+%%   Musical settings for antiphons and psalm tones --- Abbey of Gethsemani\\
+%%   %% Musical settings for the hymns --- \emph{The Divine Office Hymnal}, 2023\\
+%%   \textcopyright 1981, Dominican Monastery of the Blessed Sacrament, Farmington Hills, MI\\
+%%   Transcribed and set to the Psalms by the Canons Regular of the Immaculate Conception, Santa Paula, CA
+%% \end{center}
+
+%% \tableofcontents
+%% \cleartoleftpage
+
+\pagestyle{fancy}
+
+\chaptermark{Week 1}
+%% \addcontentsline{toc}{chapter}{Week 1}
+\opt{vespers}{\input{A0-Vespers-Organ-G.tex}}
+%% \opt{lauds}{\input{A1-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{A1-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{A2-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{A2-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{A3-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{A3-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{A4-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{A4-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{A5-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{A5-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{A6-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{A6-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{A7-Lauds-Organ.tex}}
+
+%% \chaptermark{Week 2}
+%% \addcontentsline{toc}{chapter}{Week 2}
+%% \opt{vespers}{\input{B0-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{B1-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{B1-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{B2-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{B2-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{B3-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{B3-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{B4-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{B4-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{B5-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{B5-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{B6-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{B6-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{B7-Lauds-Organ.tex}}
+
+%% \chaptermark{Week 3}
+%% \addcontentsline{toc}{chapter}{Week 3}
+%% \opt{vespers}{\input{C0-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{C1-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{C1-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{C2-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{C2-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{C3-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{C3-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{C4-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{C4-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{C5-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{C5-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{C6-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{C6-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{C7-Lauds-Organ.tex}}
+
+%% \chaptermark{Week 4}
+%% \addcontentsline{toc}{chapter}{Week 4}
+%% \opt{vespers}{\input{D0-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{D1-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{D1-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{D2-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{D2-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{D3-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{D3-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{D4-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{D4-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{D5-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{D5-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{D6-Lauds-Organ.tex}}
+%% \opt{vespers}{\input{D6-Vespers-Organ.tex}}
+%% \opt{lauds}{\input{D7-Lauds-Organ.tex}}
+
+%% %% \cleartoleftpage
+%% %% \chapter{Sundays in Ordinary Time}
+
+%% \chaptermark{Second Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Second Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/2Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/2Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/2Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Third Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Third Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/3Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/3Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/3Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Fourth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Fifth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/4Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/4Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/4Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Fifth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Fifth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/5Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/5Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/5Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Sixth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Sixth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/6Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/6Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/6Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Fifth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Fifth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/7Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/7Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/7Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Eighth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Eighth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/8Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/8Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/8Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Ninth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Ninth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/9Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/9Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/9Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Tenth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Tenth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/10Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/10Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/10Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Eleventh Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Eleventh Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/11Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/11Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/11Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Twelfth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Twelfth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/12Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/12Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/12Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Thirteenth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Thirteenth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/13Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/13Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/13Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Fourteenth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Fourteenth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/14Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/14Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/14Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Fifteenth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Fifteenth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/15Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/15Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/15Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Sixteenth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Sixteenth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/16Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/16Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/16Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Seventeenth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Seventeenth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/17Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/17Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/17Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Eighteenth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Eighteenth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/18Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/18Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/18Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Nineteenth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Nineteenth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/19Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/19Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/19Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Twentieth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Twentieth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/20Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/20Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/20Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Twenty-first Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Twenty-first Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/21Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/21Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/21Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Twenty-second Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Twenty-second Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/22Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/22Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/22Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Twenty-third Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Twenty-third Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/23Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/23Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/23Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Twenty-fourth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Twenty-fourth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/24Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/24Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/24Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Twenty-fifth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Twenty-fifth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/25Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/25Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/25Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Twenty-sixth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Twenty-sixth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/26Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/26Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/26Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Twenty-seventh Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Twenty-seventh Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/27Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/27Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/27Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Twenty-eighth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Twenty-eighth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/28Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/28Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/28Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Twenty-ninth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Twenty-ninth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/29Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/29Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/29Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Thirtieth Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Thirtieth Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/30Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/30Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/30Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Thirty-first Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Thirty-first Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/31Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/31Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/31Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Thirty-second Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Thirty-second Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/32Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/32Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/32Sun1-Vespers-Organ.tex}}
+
+%% \chaptermark{Thirty-third Sunday in Ordinary Time}
+%% \addcontentsline{toc}{chapter}{Thirty-third Sunday in Ordinary Time}
+%% \section{Evening Prayer I}
+%% \opt{vespers}{\input{../sundaysOT/33Sun0-Vespers-Organ.tex}}
+%% \section{Morning Prayer}
+%% \opt{lauds}{\input{../sundaysOT/33Sun1-Lauds-Organ.tex}}
+%% \section{Evening Prayer II}
+%% \opt{vespers}{\input{../sundaysOT/33Sun1-Vespers-Organ.tex}}
+
+
+\end{document}

@@ -4,6 +4,7 @@
 antKeysig =  \key a \minor
 antiphon = "1"
 psalmtone = "39"
+psalmtoneG = "IVA"
 psalmtonestruct = "43"
 psalmnum = "Ps_141_1-9"
 % transposition interval for the corresponding psalm tone

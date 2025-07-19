@@ -1,33 +1,32 @@
-\documentclass[12pt,twocolumn]{memoir}
+\documentclass[12pt,largepostvopaper]{memoir}
 
 \usepackage[ %% uncomment options below to exclude them
   lauds,
   vespers,
   %% hymn,
-  hymnmusic,
+  %% hymnmusic,
   psalmody-heading,
   psalmtexts,
-  reading,
-  responsory,
+  %% reading,
+  %% responsory,
   gospelcanticle-heading,
   gospelcanticletexts,
-  intercessions,
-  prayer,
+  %% intercessions,
+  %% prayer,
   default, %% don't uncomment this one
 ]{optional}
 
 %% Layout settings optimized for my linux setup, which doesn't have the
 %% best print drivers. In the print dialog, select 'Fit to whole page' 
-\usepackage[%paperheight=10.66in,%
-  %% paperwidth=8.16in,%
-  inner=0.25in,%
-  outer=0.25in,%
-  top=0.5in,%
-  bottom=0.4in,%
-  headsep=.15in,%
+\usepackage[%
+  inner=.3in,%
+  outer=.2in,%
+  top=.45in,%
+  bottom=.3in,%
+  headsep=.23in,%
   footskip=14pt]{geometry}
 
-%% \usepackage[autocompile]{gregoriotex}
+
 \usepackage[T1]{fontenc}
 \usepackage[USenglish]{babel}
 \usepackage{fontspec}
@@ -36,7 +35,7 @@
 \newfontfamily\QuintFirst[Scale=2]{Quintessential}
 
 \usepackage{lettrine}
-\renewcommand{\LettrineFontHook}{\QuintFirst}
+%% \renewcommand{\LettrineFontHook}{\QuintFirst}
 
 \usepackage[nofragment, insert=systems]{lyluatex}
 %% \setluaoption{ly}{pass-fonts}{true}
@@ -47,37 +46,10 @@
 \fancyhf{}
 \fancyhead[LE]{\sffamily\thepage}
 \fancyhead[RO]{\sffamily\thepage}
-\fancyhead[CO]{\normalfont\sffamily\color{red}\leftmark}
-\fancyhead[CE]{\normalfont\sffamily\color{red}\rightmark}
-
-
-\fancypagestyle{plain}{%
-  \fancyhf{}%
-  \fancyhead[LE]{\sffamily\thepage}
-  \fancyhead[RO]{\sffamily\thepage}
-  \fancyhead[CE]{\normalfont\sffamily\color{red}\leftmark}
-  \fancyhead[CO]{\normalfont\sffamily\color{red}\rightmark}
-  \renewcommand{\headrulewidth}{0pt}% Line at the header invisible
-  \renewcommand{\footrulewidth}{0.4pt}% Line at the footer visible
-}
-
-\fancypagestyle{officeheader}{%
-  \fancyhf{}%
-  %% \fancyhead[LE]{\sffamily\thepage}
-  %% \fancyhead[RO]{\sffamily\thepage}
-  \fancyhead[C]{\normalfont\sffamily\color{red}\leftmark}
-  %% \fancyhead[CO]{\normalfont\sffamily\color{red}\rightmark}
-  \renewcommand{\headrulewidth}{0pt}% Line at the header invisible
-  \renewcommand{\footrulewidth}{0pt}% Line at the footer visible
-}
-
-
+\fancyhead[CE]{\normalfont\sffamily\color{red}\leftmark}
+\fancyhead[CO]{\normalfont\sffamily\color{red}\rightmark}
 \renewcommand{\headrulewidth}{0pt}
 \setlength{\headheight}{14.5pt}
-
-
-
-
 %% \setlength{\headsep}{10pt}
 \setcounter{secnumdepth}{-1}
 \setcounter{tocdepth}{1}
@@ -100,28 +72,16 @@
 \hypersetup{colorlinks, citecolor=black, filecolor=black, linkcolor=black, urlcolor=black}
 
 
-\setlength{\columnseprule}{0.4pt}
-\setlength{\columnsep}{.3in}
+%% \setlength{\columnseprule}{0.4pt}
+%% \setlength{\columnsep}{.3in}
 
 
 \usepackage[nobottomtitles*]{titlesec}
-\renewcommand{\bottomtitlespace}{7\baselineskip}
+\renewcommand{\bottomtitlespace}{8\baselineskip}
 %% \newcommand{\sectionbreak}{\clearpage}
-
-\usepackage{pgfornament}
-\titleformat{\chapter}[block]%
- {\Large\sffamily\bfseries\scshape\filcenter}%
- {\thechapter}%
- {1em}%
- {\makeornament}
-
- \newcommand{\makeornament}[1]{\pgfornament[scale={.1},ydelta={-3pt}]{72}%
-\MakeLowercase{#1}\thinspace\pgfornament[scale={.1},ydelta={-3pt},symmetry=v]{72}}
-
-
-%% \titleformat{\chapter}[display]
-  %% {\normalfont\sffamily\filcenter}
-  %% {\chaptertitlename\ \thechapter}{0pt}{\LARGE}
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily\filcenter}
+  {\chaptertitlename\ \thechapter}{0pt}{\LARGE}
 
 \titleformat{\section}
   {\normalfont\sffamily\large\bfseries\filcenter}
@@ -136,7 +96,7 @@
   {\thesection}{1em}{}
   
 %% \titlespacing*{⟨command ⟩}{⟨left⟩}{⟨before-sep⟩}{⟨after-sep⟩}[⟨right-sep⟩]
-\titlespacing*{\chapter}{0pt}{0pt}{5ex}
+\titlespacing*{\chapter}{0pt}{0pt}{10pt}
 \titlespacing*{\section}{0pt}{20pt}{4pt}
 \titlespacing*{\subsection}{0pt}{3ex}{1ex}
 \titlespacing*{\subsubsection}{0pt}{2ex}{1ex}
@@ -151,6 +111,11 @@
 \newcommand{\antiphonMag}{\subsubsection{Magnificat Antiphon}}
 \newcommand{\antiphon}{\subsubsection{Antiphon}}
 
+%% \newcommand{\topheader}[2]{%
+    %% \noindent\fbox{\large\bfseries #1}\hfill\fbox{\large\bfseries #2}}
+%% \newcommand{\inlily}[1]{\lilypondfile%
+  %% [line-width=4.8\in]%
+  %% {#1}}
 \newcommand{\topheader}[2]{}
 \newcommand{\spacer}{\vspace{1.5\baselineskip}}
 \newcommand{\smallspacer}{\vspace{0.5\baselineskip}}
@@ -163,9 +128,22 @@
 \newcommand{\reading}[1]{\subsection{\textsc{Reading}\hfill\normalsize #1}}
 \newcommand{\benAbsentSeasons}{\subsection{\textsc{Benedictus}, antiphon as in the Proper of Seasons.}}
 
+%% \newcommand{\responsory2}[3]{\subsection{\textsc{Responsory}}%
+%% #1 #2
+
+%% \noindent{\color{red}---}#1 #2
+
+%% \medskip\noindent #3
+
+%% \noindent{\color{red}---}#2
+
+%% \medskip\noindent Glory to the Father, and to the Son, and to the Holy Spirit.
+
+%% \noindent{\color{red}---}#1 #2
+%% }
 \newcommand{\intercessions}{\subsection{\textsc{Intercessions}}}
 \newcommand{\psalmody}{\subsection{\textsc{Psalmody}}}
-\newcommand{\responsory}{\subsection{\textsc{Responsory}}\indent}
+\newcommand{\responsory}{\subsection{\textsc{Responsory}}}
 \newcommand{\hymn}{\subsection{\textsc{Hymn}}}
 \newcommand{\prayer}{\subsubsection{Prayer}}
 \newcommand{\benedictus}{\subsection{\textsc{Canticle of Zechariah}}}
@@ -208,16 +186,51 @@
                  \setlength{\parindent}{-1em}%%
                }%%
 
-\usepackage{fontspec}
-\pagestyle{fancy}
-\begin{document}
 
+\begin{document}
+%% \pagestyle{empty}
+%% \onecolumn
+
+%% \null\vfill
+%% \begin{center}
+%%   \fontspec{TrajanPro-Regular}
+%%   \LARGE
+%%   Like Burning Incense
+
+%%   \bigskip\Large ordinary time
+
+%%   \vfill\vfill\null
+
+%% \end{center}
+
+
+%% \newpage
+
+%% \null\vfill
+%% \begin{center}
+%%   \vfill\footnotesize
+%%   Musical settings for antiphons and psalm tones --- Abbey of Gethsemani\\
+%%   Musical settings for the hymns --- \emph{The Divine Office Hymnal}, 2023\\
+%%   \textcopyright 1981, Dominican Monastery of the Blessed Sacrament, Farmington Hills, MI\\
+%%   Transcribed and set to the Psalms by the\\
+%%   Canons Regular of the Immaculate Conception, Santa Paula, CA
+%% \end{center}
+
+%% \newpage
+
+
+
+%% \tableofcontents*
 
 %% \chapter{Week I}
+
+%% \pagestyle{fancy}
+
+
 \chaptermark{Week I}
 
-%% \opt{vespers}{\section{Sunday Evening Prayer I}}
-%% \opt{vespers}{\input{A0-Vespers-Cantor.tex}}
+\opt{vespers}{\section{Sunday Evening Prayer I}}
+\opt{vespers}{\input{A0-Vespers-Cantor-G.tex}}
 
 %% \opt{lauds}{\section{Sunday Morning Prayer}}
 %% \opt{lauds}{\input{A1-Lauds-Cantor.tex}}
@@ -252,6 +265,7 @@
 %% \opt{lauds}{\section{Friday Morning Prayer}}
 %% \opt{lauds}{\input{A6-Lauds-Cantor.tex}}
 
+%% \newpage
 %% \opt{vespers}{\section{Friday Evening Prayer}}
 %% \opt{vespers}{\input{A6-Vespers-Cantor.tex}}
 
@@ -260,7 +274,7 @@
 
 
 %% \chapter{Week II}
-\chaptermark{Week II}
+%% \chaptermark{Week II}
 
 %% \opt{vespers}{\section{Sunday Evening Prayer I}}
 %% \opt{vespers}{\input{B0-Vespers-Cantor.tex}}
@@ -280,19 +294,21 @@
 %% \opt{lauds}{\section{Tuesday Morning Prayer}}
 %% \opt{lauds}{\input{B3-Lauds-Cantor.tex}}
 
+%% \newpage
 %% \opt{vespers}{\section{Tuesday Evening Prayer}}
 %% \opt{vespers}{\input{B3-Vespers-Cantor.tex}}
 
 %% \opt{lauds}{\section{Wednesday Morning Prayer}}
-%% \thispagestyle{officeheader}
 %% \opt{lauds}{\input{B4-Lauds-Cantor.tex}}
 
 %% \opt{vespers}{\section{Wednesday Evening Prayer}}
 %% \opt{vespers}{\input{B4-Vespers-Cantor.tex}}
 
+%% \newpage
 %% \opt{lauds}{\section{Thursday Morning Prayer}}
 %% \opt{lauds}{\input{B5-Lauds-Cantor.tex}}
 
+%% \newpage
 %% \opt{vespers}{\section{Thursday Evening Prayer}}
 %% \opt{vespers}{\input{B5-Vespers-Cantor.tex}}
 
@@ -307,7 +323,7 @@
 
 
 %% \chapter{Week III}
-\chaptermark{Week III}
+%% \chaptermark{Week III}
 
 %% \opt{vespers}{\section{Sunday Evening Prayer I}}
 %% \opt{vespers}{\input{C0-Vespers-Cantor.tex}}
@@ -321,6 +337,7 @@
 %% \opt{lauds}{\section{Monday Morning Prayer}}
 %% \opt{lauds}{\input{C2-Lauds-Cantor.tex}}
 
+%% \newpage
 %% \opt{vespers}{\section{Monday Evening Prayer}}
 %% \opt{vespers}{\input{C2-Vespers-Cantor.tex}}
 
@@ -348,8 +365,8 @@
 %% \opt{vespers}{\section{Friday Evening Prayer}}
 %% \opt{vespers}{\input{C6-Vespers-Cantor.tex}}
 
-\opt{lauds}{\section{Saturday Morning Prayer}}
-\opt{lauds}{\input{C7-Lauds-Cantor.tex}}
+%% \opt{lauds}{\section{Saturday Morning Prayer}}
+%% \opt{lauds}{\input{C7-Lauds-Cantor.tex}}
 
 
 %% \chapter{Week IV}
@@ -367,6 +384,7 @@
 %% \opt{lauds}{\section{Monday Morning Prayer}}
 %% \opt{lauds}{\input{D2-Lauds-Cantor.tex}}
 
+%% \newpage
 %% \opt{vespers}{\section{Monday Evening Prayer}}
 %% \opt{vespers}{\input{D2-Vespers-Cantor.tex}}
 
@@ -400,7 +418,7 @@
 
 
 %% \chapter{Sundays in Ordinary Time}
-%% \renewcommand{\bottomtitlespace}{11\baselineskip}
+%% \renewcommand{\bottomtitlespace}{8\baselineskip}
 
 %% \section*{SECOND SUNDAY IN ORDINARY TIME}
 %% \sectionmark{Second Sunday in Ordinary Time}
@@ -849,6 +867,6 @@
 %% \opt{vespers}{\section*{Sunday Evening Prayer II}}
 %% \opt{vespers}{\input{~/scores/like-burning-incense/offices/sundaysOT/33Sun1-Vespers-Cantor.tex}}
 
-%% \renewcommand{\bottomtitlespace}{7\baselineskip}
+%% \renewcommand{\bottomtitlespace}{8\baselineskip}
 
 \end{document}

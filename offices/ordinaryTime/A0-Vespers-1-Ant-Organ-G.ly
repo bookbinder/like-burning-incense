@@ -1,0 +1,59 @@
+\version "2.20.0"
+
+
+\include "../../lbi_defs.ily"
+\include "notes/A0-Vespers-1-Ant.ily"
+% \include "../../psalmtones/notes/39-notes.ily"
+\include #(string-append "../../psalmtones/notes/" psalmtoneG "-notes.ily")
+
+
+\score {
+  \transpose \master-from-pitch \master-to-pitch {
+    <<
+       \new ChoirStaff \with {
+           instrumentName = \markup {
+               \center-column {
+                     \bold { \line { Ant. \antiphon } }
+                     \concat { (#psalmtoneG) } }
+           }
+       }
+
+       <<
+           \new Staff = "up"
+           <<
+               \clef treble \antKeysig
+               \accidentalStyle forget
+               \new Voice = "Soprano" { \voiceOne \global \sopNotesAnt }
+               \new Voice = "Alto" { \voiceTwo \global \altoNotesAnt }
+               \new Lyrics \lyricsto Soprano \text
+           >>
+           \new Staff = "down"
+           <<
+               \clef bass \antKeysig
+               \accidentalStyle forget
+               \new Voice = "Tenor" { \voiceOne \global \tenorNotesAnt }
+               \new Voice = "Bass" { \voiceTwo \global \bassNotesAnt }
+           >>
+       >>
+    >>
+
+    }
+    \layout {
+        indent = 0.5\in
+      ragged-last = ##t
+        \context {
+            \Staff
+            \remove Time_signature_engraver
+        }
+    }
+}
+
+%%
+%%
+%%
+%%
+%%
+%%
+%%
+%%
+%%

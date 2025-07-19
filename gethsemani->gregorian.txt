@@ -1,0 +1,5 @@
+Psalm tone mappings (tentative)
+
+GETHSEMANI GREGORIAN
+39         4
+26         8
