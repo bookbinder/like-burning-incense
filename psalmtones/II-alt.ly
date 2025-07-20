@@ -1,6 +1,6 @@
 \version "2.18.2"
 \include "/home/ryan/scores/like-burning-incense/lbi_defs.ily"
-\include "notes/Ig2-notes.ily"
+\include "notes/II-alt-notes.ily"
 
 
 sopMusic = {
@@ -26,12 +26,6 @@ bassMusic = {
     \voiceTwo
     \bassIntone
     \bassFlex
-  }
-pedalMusic = {
-  \global
-  \voiceTwo
-  \pedalOneIntone
-  \pedalOneFlex
 }
 
 \score {
@@ -40,8 +34,8 @@ pedalMusic = {
         %piece = \markup { \fontsize #2 \bold "LBI_1A" }
     }
     <<
-        \transpose e e {
-            \new ChoirStaff \with { instrumentName = #"Ig2" } %LBI_1A
+        \transpose a a {
+            \new ChoirStaff \with { instrumentName = #"II-alt" }
             <<
                 \new Staff ="up"
                 <<
@@ -56,7 +50,6 @@ pedalMusic = {
                     \accidentalStyle forget
                     \new Voice = "Tenor" \tenorMusic
                     \new Voice = "Bass" \bassMusic
-                    % \new Voice = "Pedal" \pedalMusic
                 >>
             >>
         }

@@ -1,6 +1,6 @@
 \version "2.18.2"
 \include "/home/ryan/scores/like-burning-incense/lbi_defs.ily"
-\include "notes/Ig2-notes.ily"
+\include "notes/Ia-notes.ily"
 
 
 sopMusic = {
@@ -41,7 +41,7 @@ pedalMusic = {
     }
     <<
         \transpose e e {
-            \new ChoirStaff \with { instrumentName = #"Ig2" } %LBI_1A
+            \new ChoirStaff \with { instrumentName = #"Ia" } %LBI_1A
             <<
                 \new Staff ="up"
                 <<
