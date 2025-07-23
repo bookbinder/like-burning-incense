@@ -18,7 +18,7 @@ altoNotes = \relative c' {
   c2. a2 s2 c2.~ c4~
   c4~ c2 s2 f2. \allowBreak s2 d2. c4~
   c4 e2. d2 s2 a2 s2 c4~
-  c2.~ c2 s2 d2 s2 c4 c2. r4. b4.
+  c2.~ <c e>2 s2 d2 s2 c4 c2. r4. b4.
 }    
 tenorNotes = \relative g {
   f2.~ f2~ s2 f2. g4~

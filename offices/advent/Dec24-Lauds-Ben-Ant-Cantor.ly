@@ -17,17 +17,23 @@
     <<
       \midi_instrument
       \clef treble
+      \antKeysig
       \accidentalStyle forget
       \new Voice = "Soprano" {
+      \global
+        \oneVoice
+        \mark \markup {\small \psalmtone}
         \sopNotesAnt
         \transpose \frompitch \topitch {
-          \small \sopranoOneFlex
+          \small \sopranoShort
         }
       }
       \new Lyrics \lyricsto Soprano \text
     >>
   }  
   \layout {
+    ragged-last = ##t
+    %%% indent = 0.5\in
     \context {
       \Staff
       \remove Time_signature_engraver

@@ -4,7 +4,7 @@ toneStruct = "43"
 toneKeysig = \key f \major
 
 
-sopranoOneFlex = { \afterGrace a'\breve^"A†" g'4 \bar "'" a'\breve g'8 f' g'4 \bar "|" g'\breve a'8 f'4  \bar "||" }
+sopranoOneFlex = { \mark \markup { "Doesn't sound good. Use another tone." } \afterGrace a'\breve^"A†" g'4 \bar "'" a'\breve g'8 f' g'4 \bar "|" g'\breve a'8 f'4  \bar "||" }
 sopranoOne = { a'\breve^"A" g'8 f' g'4 \bar "|" g'\breve a'8 f'4  \bar "||" }
 sopranoShort = { \override Stem.stencil = ##f
                  \afterGrace a'\breve*1/2 \parenthesize g'4_"+"

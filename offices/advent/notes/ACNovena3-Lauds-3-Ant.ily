@@ -22,7 +22,13 @@ text = \lyricmode {
   pro -- claim your sal -- va -- tion to e -- very na -- tion.
 }
 sopNotesAnt = \relative e' {
-  cis8[ e] dis dis[ e] dis cis[ gis'] gis gis gis fis4
+  cis8[ e] dis dis[ e]
+  \allowBreak dis
+  \allowBreak cis[ gis']
+  \allowBreak gis
+  \allowBreak gis
+  \allowBreak gis
+  \allowBreak fis4
   \noBreak \noBreak \hideNotes fis16 \unHideNotes
   \allowBreak fis8
   \allowBreak fis[ gis]

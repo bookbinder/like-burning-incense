@@ -168,10 +168,10 @@ YEAR is the integer year"
        #:exists 'replace))
 
     ;; update the cantor tex file
-    (let* ([cantortexfileparts (regexp-match #px"(%%%% Begin Ant1.*%%%% End Ant1).*(%%%% Begin Ant2.*%%%% End Ant2).*(%%%% Begin Ant3.*%%%% End Ant3).*(%%%% Begin Ant4.*%%%% End Ant4)"
+    (let* ([cantortexfileparts (regexp-match #px"([% ]+ Begin Ant1.*[% ]+ End Ant1).*([% ]+ Begin Ant2.*[% ]+ End Ant2).*([% ]+ Begin Ant3.*[% ]+ End Ant3).*([% ]+ Begin Ant4.*[% ]+ End Ant4)"
                                              (file->string cantortexfile))])
       (unless cantortexfileparts
-        (set! cantortexfileparts (regexp-match #px"(%%%% Begin Ant1.*%%%% End Ant1).*(%%%% Begin Ant2.*%%%% End Ant2).*(%%%% Begin Ant3.*%%%% End Ant3)"
+        (set! cantortexfileparts (regexp-match #px"([% ]+ Begin Ant1.*[% ]+ End Ant1).*([% ]+ Begin Ant2.*[% ]+ End Ant2).*([% ]+ Begin Ant3.*[% ]+ End Ant3)"
                                                (file->string cantortexfile))))
       (display-to-file (format "\\opt{hymn}{\\input{~a~a-Hymn.tex}}\n\n\\opt{psalmody-heading}{\\psalmody}\n\n~a\n\n~a\n\n~a\n\n\\opt{reading}{\\input{~a~a-Reading.tex}}\n\n\\opt{responsory}{\\input{~a~a-Responsory.tex}}\n\n\\opt{intercessions}{\\input{~a~a-Intercessions.tex}}\n\n~a\n\n\\opt{prayer}{\\input{~a~a-Prayer.tex}}"
                                dir stem
