@@ -28,8 +28,6 @@ text = \lyricmode {
 
     \ll "Why are you cast" down, my soul,
     \ll     "why groan" wi -- \ll "thin me?"
-    \ll "Hope in God; I will" praise him still,
-    \ll     "my saviour and" my God.
 
 }
 textB = \lyricmode {
@@ -38,6 +36,8 @@ textB = \lyricmode {
     \set stanza = # "2. "
 %    \set shortVocalName = "2."
     \set includeGraceNotes = ##t
+    \ll "Hope in God; I will" praise him still,
+    \ll     "my saviour and" my God.
 
     \ll "My soul is cast" down wi -- \ll "thin me"
     \ll     "as I think" of you,
@@ -59,8 +59,6 @@ textB = \lyricmode {
     \ll     "oppressed by" the foe?’
     \ll "With cries that pierce me" to the heart,
     \ll     "my enemies" re -- "vile me,"
-    \ll "saying to me all" the day long:
-    \ll     "‘Where is" your God?’
 
 }
 
@@ -70,6 +68,8 @@ textC = \lyricmode {
     \set includeGraceNotes = ##t
     \set stanza = # "3. "
 %    \set shortVocalName = "3."
+    \ll "saying to me all" the day long:
+    \ll     "‘Where is" your God?’
 
     \ll "Why are you cast" down, my soul,
     \ll     "why groan" wi \ll "thin me?"

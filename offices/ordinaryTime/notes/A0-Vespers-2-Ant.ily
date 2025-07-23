@@ -4,6 +4,7 @@
 antKeysig =  \key aes \major
 antiphon = "2"
 psalmtone = "26"
+psalmtoneG = "VIIIG"
 psalmtonestruct = "33"
 psalmnum = "Ps_42"
 % transposition interval for the corresponding psalm tone
@@ -11,6 +12,8 @@ psalmnum = "Ps_42"
 %       use in in cantor (antiphon) and organ (psalm) scores:
 frompitch = a
 topitch = a
+frompitchG = a
+topitchG = aes
 %% Master transposition after accounting for psalm tone
 master-from-pitch = a
 master-to-pitch = a

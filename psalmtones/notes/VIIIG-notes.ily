@@ -5,8 +5,7 @@ toneKeysig = \key a \major
 
 sopranoIntone = { e'8 fis'8 }
 soprano = { a'\breve b'8 a'4 \bar "|" a'\breve gis'8 a' fis' e'4 \bar "||" }
-sopranoFlex = { a'\breve \parenthesize fis'4 \soprano }
-sopranoShort = {  }
+sopranoFlex = { a'\breve \parenthesize fis'4_"+" \soprano }
 
 altoIntone = { cis'4~ }
 alto = { cis'\breve*17/16~ cis'4 e'\breve*18/16 r8 b4}

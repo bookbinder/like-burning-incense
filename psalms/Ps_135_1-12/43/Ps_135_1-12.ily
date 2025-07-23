@@ -9,7 +9,7 @@ text = \lyricmode {
     \ll "praise him, servants of" the Lord,
     \ll "who stand in the house" of the Lord
     \ll "in the courts of the house of" our God.
-    
+
     \ll "Praise the Lord for the" Lord is good.
     \ll "Sing a psalm to his name for he" is loving.
     \ll "For the Lord has chosen Jacob" for him -- self
@@ -48,7 +48,6 @@ textB = \lyricmode {
     \ll "He let Israel inher" -- it their land;
     \ll "on his people their land he" be -- stowed.
 
-    \ll "------>" "--->"
     \ll "Glory to the Father and" to the Son,
     \ll "and to the Ho" -- ly Spirit:
     \ll "as it was in the begin" -- ning, is now,
