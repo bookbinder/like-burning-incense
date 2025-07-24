@@ -39,6 +39,41 @@ from ibreviary."
 
 (define (parse-ibrev-hymn s)
   "Create a hymn string for LaTeX. TODO refactor to accommodate multiple hymns."
+  (let* ([s (regexp-match "HYMN</span><br /><br />(.*?)<span class=\"citazione\">(.*?)PSALMODY" s)]
+         [hymn (second s)]
+         [hymn (string-trim
+                    (with-output-to-string
+                      (λ () (system (format "unescapehtml \"~a\"" hymn)))))]
+         
+         [hymn (string-replace hymn "<a href=#alternatehymn>Alternate Hymns</a>" "")]
+         [hymn (second (regexp-match "^(?:<[^>]*?>)*(.*)" hymn))]
+         [hymn (string-replace hymn "<br /><br />" "@@")]
+         [hymn (string-replace hymn "<br />" "\\\\\n")]
+         [hymn (string-replace hymn "@@" "\n\n")]
+         [hymn (string-trim hymn "\n")]
+         [charcount (λ (x) (for/sum ([ch x])
+                             (if (char=? ch #\\) 0 1)))]
+         [versewidth (let ([tmp (sort (string-split hymn "\n")
+                                      (λ (a b)
+                                        (> (charcount a) (charcount b))))])
+                       (string-trim (first tmp) "\\" #:repeat? #t))]
+         [citation (third s)]
+         [citation (string-trim
+                    (with-output-to-string
+                      (λ () (system (format "unescapehtml \"~a\"" citation)))))]
+         [citation (regexp-replace "^.*?or (Mode .*)" citation "\\1")]
+         [citation (string-replace citation "<em>" "\\emph{")]
+         [citation (string-replace citation "</em>" "}")]
+         [citation (string-replace citation "<br />" "\n\n")]
+         [citation (second (regexp-match "(.*?)(?:<[^>]*?>)*$" citation))]
+         )
+
+    (format "\\hymn\n\n\\settowidth{\\versewidth}{~a}\n\n\\begin{verse}[\\versewidth]\n~a\\end{verse}\n\n\\begin{hymnsource}\nTune: ~a\n\\end{hymnsource}"
+    versewidth hymn citation
+    )))
+
+(define (parse-ibrev-hymn-bak2 s)
+  "Create a hymn string for LaTeX. TODO refactor to accommodate multiple hymns."
   (let* ([s (regexp-match "HYMN</span><br /><br />(.*)<span class=\"citazione\">(.*)</span></p><p><span class=\"capolettera_piccolo\">PSALMODY</span>" s)]
          [hymn (second s)]
          [citation (third s)]
@@ -60,7 +95,7 @@ from ibreviary."
              hymn "<a href=#alternatehymn>Alternate Hymn</a>\n\n" "")
             citation)))
 
-(define (parse-ibrev-hymn2 s)
+(define (parse-ibrev-hymn-bak1 s)
   "A rougher veresion. Create a hymn string for LaTeX. TODO refactor to accommodate multiple hymns."
   (let* ([s (regexp-match "HYMN</span>(.*)PSALMODY</span>" s)]
          [hymn (first s)]
@@ -78,7 +113,7 @@ from ibreviary."
 (define (parse-ibrev-reading s)
   "Create a reading string for LaTeX"
   (let* ([s
-          (regexp-match "READING</span><br /><span class=\"rubrica\">(.*?)</span><br /><br />(.*?)<br /><br /><span class=\"capolettera_piccolo\">RESPONSORY" s)]
+          (regexp-match "READING *</span> *<br /> *<span class=\"rubrica\">(.*?)</span><br /><br />(.*?)<br /><br /><span class=\"capolettera_piccolo\">RESPONSORY" s)]
          [readcite
           (string-trim
            (with-output-to-string
@@ -98,8 +133,10 @@ from ibreviary."
 
 (define (parse-ibrev-responsory s)
     "Create a responsory string for LaTeX"
-  (let* ([s (string-replace s "<span class=\"rubrica\">&mdash;</span> "
-                           "\n{\\color{red}---\\thinspace}")]
+  (let* ([s (regexp-replace* #px"<span class[^>]*?>&mdash; *</span> *" s "\n{\\\\color{red}---\\\\thinspace }")]
+         ;; [s (string-trim
+         ;;     (with-output-to-string
+         ;;       (λ () (system (format "unescapehtml \"~a\"" s)))))]
          [s (regexp-match "RESPONSORY</span><br /><br />(.*?)<br /><br />(.*?)<br /><br />(.*?)<br /><br />" s)])
     (format "\\responsory\n\n\\begin{hangpar}\n~a\n\n\\medskip ~a\n\n\\medskip ~a\n\\end{hangpar}"
             (string-replace (second s) "<br />" "\n")
@@ -151,7 +188,7 @@ DAY is the integer day
 YEAR is the integer year"
   (let* ([office (second (string-split stem "-"))]
          [s (get-single-office month day year office)]
-         [hymn (parse-ibrev-hymn2 s)]
+         [hymn (parse-ibrev-hymn s)]
          [reading (parse-ibrev-reading s)]
          [responsory (parse-ibrev-responsory s)]
          [intercessions (parse-ibrev-intercessions s)]
@@ -188,4 +225,9 @@ YEAR is the integer year"
                        cantortexfile
                        #:exists 'replace))))
 
-(create-files "/home/ryan/scores/like-burning-incense/offices/saintsAndSolemnities/0725_James_the_Greater/" "1-Lauds" 7 25 2025)
+(create-files
+ "/home/ryan/scores/like-burning-incense/offices/advent/"
+ "AA6-Vespers"
+ 12
+ 6
+ 2024)

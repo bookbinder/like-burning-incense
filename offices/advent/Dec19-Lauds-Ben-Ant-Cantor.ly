@@ -7,13 +7,14 @@
 
 \score {
   \transpose \master-from-pitch \master-to-pitch {
-    \new Staff \with {
-      \omit TextScript instrumentName = \markup {
-        \center-column {
-          \bold { \line { Ant. \antiphon } }
-          \concat { #psalmtone } }
-      }
-    }
+    \new Staff
+    % \with {
+    %   \omit TextScript instrumentName = \markup {
+    %     \center-column {
+    %       \bold { \line { Ant. \antiphon } }
+    %       \concat { #psalmtone } }
+    %   }
+    % }
     <<
       \midi_instrument
       \clef treble

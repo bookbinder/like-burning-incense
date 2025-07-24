@@ -4,8 +4,35 @@ text = \lyricmode {
 %     \set stanza = # "1. "
 %     \set shortVocalName = "1."
 %     \set includeGraceNotes = ##t
-%     \ll "How lovely is your" dwell -- ing place,
-%     etc.
+    \ll "The Lord swore an" oath to David;
+    \ll "he will not go back" on his word:
+    \ll "‘A son, the fruit" of your body,
+    \ll "will I set u" -- pon your throne.
+    
+    \ll "‘If they keep my cove" -- nant in truth
+    \ll "and my laws that" I have \ll "taught them,"
+    \ll "their sons al" -- so shall rule
+    \ll "on your throne from" age to age.’
+    
+    \ll "For the Lord has" cho -- sen Sion;
+    \ll "he has desired it" for his dwelling:
+    \ll "‘This is my resting-" -- place for ever;
+    \ll "here have I cho" -- sen to live.
+    
+    \ll "‘I will greatly" bless her produce,
+    \ll "I will fill her" poor with bread.
+    \ll "I will clothe her priests" with sal -- vation
+    \ll "and her faithful shall ring" out their joy.
+    
+    \ll "‘There David’s" stock will flower;
+    \ll "I will prepare a lamp for" my a -- nointed.
+    \ll "I will cover his ene" -- mies with shame
+    \ll "but on him my" crown shall shine.’
+    
+    \ll "Glory to the Father and" to the Son,
+    \ll "and to the" Ho -- ly Spirit:
+    \ll "as it was in the begin" -- ning, is now,
+    \ll "and will be for e" -- ver. A -- men.
 }
 % textB = \lyricmode {
 %     \override InstrumentName #'X-offset = #4
