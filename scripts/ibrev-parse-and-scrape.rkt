@@ -225,9 +225,66 @@ YEAR is the integer year"
                        cantortexfile
                        #:exists 'replace))))
 
-(create-files
- "/home/ryan/scores/like-burning-incense/offices/advent/"
- "AA6-Vespers"
- 12
- 6
- 2024)
+(define advent-sources
+  '(("AA0-Vespers" 11 29 2025)
+    ("AA1-Lauds" 11 30 2025)
+    ("AA1-Vespers" 11 30 2025)
+    ("AA2-Lauds" 12 1 2025)
+    ("AA2-Vespers" 12 1 2025)
+    ("AA3-Lauds" 12 2 2025)
+    ("AA3-Vespers" 12 2 2025)
+    ("AA4-Lauds" 12 4 2024)
+    ("AA4-Vespers" 12 4 2024)
+    ("AA5-Lauds" 12 5 2024)
+    ("AA5-Vespers" 12 5 2024)
+    ("AA6-Lauds" 12 6 2024)
+    ("AA6-Vespers" 12 6 2024)
+    ("AA7-Lauds" 12 6 2025)
+    ("AB0-Vespers" 12 6 2025)
+    ("AB1-Lauds" 12 7 2025)
+    ("AB1-Vespers" 12 7 2025)
+    ("AB2-Lauds" 12 11 2023)
+    ("AB2-Vespers" 12 11 2023)
+    ("AB3-Lauds" 12 9 2025)
+    ("AB3-Vespers" 12 9 2025)
+    ("AB4-Lauds" 12 10 2025)
+    ("AB4-Vespers" 12 10 2025)
+    ("AB5-Lauds" 12 11 2025)
+    ("AB5-Vespers" 12 11 2025)
+    ("AB6-Lauds" 12 15 2023)
+    ("AB6-Vespers" 12 15 2023)
+    ("AB7-Lauds" 12 16 2023)
+    ("AC0-Vespers" 12 16 2023)
+    ("AC1-Lauds" 12 14 2025)
+    ("AC1-Vespers" 12 14 2025)
+    ("AC2-Lauds" 12 15 2025)
+    ("AC2-Vespers" 12 15 2025)
+    ("AC3-Lauds" 12 16 2025)
+    ("AC3-Vespers" 12 16 2025)
+    ("AC4-Lauds" 12 15 2021)
+    ("AC4-Vespers" 12 15 2021)
+    ("AC5-Lauds" 12 15 2022)
+    ("AC5-Vespers" 12 15 2022)
+    ("AC6-Lauds" 12 16 2022)
+    ("AC6-Vespers" 12 16 2022)
+    ("Dec17-Lauds" 12 17 2024)
+    ("Dec17-Vespers" 12 17 2025)
+    ("Dec18-Lauds" 12 18 2025)
+    ("Dec18-Vespers" 12 18 2025)
+    ("Dec19-Lauds" 12 19 2025)
+    ("Dec19-Vespers" 12 19 2025)
+    ("Dec20-Lauds" 12 20 2025)
+    ("Dec20-Vespers" 12 20 2024)
+    ("Dec21-Lauds" 12 21 2024)
+    ("Dec21-Vespers" 12 21 2023)
+    ("Dec22-Lauds" 12 22 2023)
+    ("Dec22-Vespers" 12 22 2023)
+    ("Dec23-Lauds" 12 23 2023)
+    ("Dec23-Vespers" 12 23 2024)))
+
+;; (create-files
+;;  "/home/ryan/scores/like-burning-incense/offices/advent/"
+;;  "AA7-Lauds"
+;;  12
+;;  6
+;;  2025)
