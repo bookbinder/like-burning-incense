@@ -113,7 +113,7 @@ from ibreviary."
 (define (parse-ibrev-reading s)
   "Create a reading string for LaTeX"
   (let* ([s
-          (regexp-match "READING *</span> *<br /> *<span class=\"rubrica\">(.*?)</span><br /><br />(.*?)<br /><br /><span class=\"capolettera_piccolo\">RESPONSORY" s)]
+          (regexp-match "READING *</span> *<br /> *<span class=\"rubrica\">(.*?)</span><br /><br />(.*?)(?:<[^>]>)*RESPONSORY" s)]
          [readcite
           (string-trim
            (with-output-to-string
@@ -125,7 +125,9 @@ from ibreviary."
              (λ () (system (format "unescapehtml \"~a\"" (third s))))))]
          [readtxt (string-replace readtxt "<br /><br />" "@@")]
          [readtxt (string-replace readtxt "<br />" "\\\\\n")]
-         [readtxt (string-replace readtxt "@@" "\n\n")])
+         [readtxt (string-replace readtxt "@@" "\n\n")]
+         [readtxt (string-replace readtxt "\n\n<span class=capolettera_piccolo>" "")]
+         )
     (format "\\reading{~a}\n\n\\lettrine{~a}{}~a"
             readcite
             (substring readtxt 0 1)
@@ -137,15 +139,15 @@ from ibreviary."
          ;; [s (string-trim
          ;;     (with-output-to-string
          ;;       (λ () (system (format "unescapehtml \"~a\"" s)))))]
-         [s (regexp-match "RESPONSORY</span><br /><br />(.*?)<br /><br />(.*?)<br /><br />(.*?)<br /><br />" s)])
+         [s (regexp-match "RESPONSORY(?:<[^>]>)*(.*?)<br /><br />(.*?)<br /><br />(.*?)<br /><br />" s)])
     (format "\\responsory\n\n\\begin{hangpar}\n~a\n\n\\medskip ~a\n\n\\medskip ~a\n\\end{hangpar}"
-            (string-replace (second s) "<br />" "\n")
+            (string-replace (string-replace (second s) "<br />" "\n") "</span>" "")
             (string-replace (third s) "<br />" "\n")
             (string-replace (fourth s) "<br />" "\n"))))
 
 (define (parse-ibrev-intercessions s)
   "Create an intercessions string for LaTeX"
-  (let* ([s (second (regexp-match "INTERCESSIONS</span><br /><br />(.*?)<br /><br /><span class=\"capolettera_piccolo\">THE LORD" s))]
+  (let* ([s (second (regexp-match "INTERCESSIONS</span><br /><br />(.*?)(?:<[^>]>)*THE LORD" s))]
          [s (string-replace s "<span class=\"rubrica\">&mdash;</span> "
                             "{\\color{red}---\\thinspace}")]
          [s (string-trim
@@ -165,7 +167,10 @@ from ibreviary."
               (string-trim res)))))
 
 (define (parse-ibrev-prayer s)
-  (let* ([s (second (regexp-match "CONCLUDING PRAYER</span><br /><br />(.*?)<br /><br /><span class=\"capolettera_piccolo\">DISMISSAL" s))]
+  (let* ([s (string-trim
+           (with-output-to-string
+             (λ () (system (format "unescapehtml \"~a\"" s)))))]
+         [s (second (regexp-match "CONCLUDING PRAYER</span><br /><br />(.*?)(?:<[^>]>)*DISMISSAL" s))]
          [prayers (regexp-split "<br /><br /><span class=\"rubrica\">Or:</span><br /><br />" s)])
     (format "\\prayer\n\n\\setlength{\\vleftmargin}{\\prayerleftmargini}\n\n~a\n\n\\setlength{\\vleftmargin}{\\defleftmargini}"
             (string-join (map parse-ibrev-prayer-aux prayers) "\n\n\\noindent{\\color{red}Or:}\n\n"))))
@@ -175,6 +180,8 @@ from ibreviary."
   (let* ([s (string-replace s "<span class=\"rubrica\">&mdash;</span> "
                             "{\\color{red}---\\thinspace}")]
          [s (string-replace s "<br />" "\\\\\n")]
+         [s (string-replace s "Amen.\\\\\n\\\\" "Amen.")]
+         [s (regexp-replace #px"<span[^>]*>" s "")]
          )
     (format "\\begin{verse}\n~a\n\\end{verse}"
             s)))
@@ -226,61 +233,69 @@ YEAR is the integer year"
                        #:exists 'replace))))
 
 (define advent-sources
-  '(("AA0-Vespers" 11 29 2025)
-    ("AA1-Lauds" 11 30 2025)
-    ("AA1-Vespers" 11 30 2025)
-    ("AA2-Lauds" 12 1 2025)
-    ("AA2-Vespers" 12 1 2025)
-    ("AA3-Lauds" 12 2 2025)
-    ("AA3-Vespers" 12 2 2025)
-    ("AA4-Lauds" 12 4 2024)
-    ("AA4-Vespers" 12 4 2024)
-    ("AA5-Lauds" 12 5 2024)
-    ("AA5-Vespers" 12 5 2024)
-    ("AA6-Lauds" 12 6 2024)
-    ("AA6-Vespers" 12 6 2024)
-    ("AA7-Lauds" 12 6 2025)
-    ("AB0-Vespers" 12 6 2025)
-    ("AB1-Lauds" 12 7 2025)
-    ("AB1-Vespers" 12 7 2025)
-    ("AB2-Lauds" 12 11 2023)
-    ("AB2-Vespers" 12 11 2023)
-    ("AB3-Lauds" 12 9 2025)
-    ("AB3-Vespers" 12 9 2025)
-    ("AB4-Lauds" 12 10 2025)
-    ("AB4-Vespers" 12 10 2025)
-    ("AB5-Lauds" 12 11 2025)
-    ("AB5-Vespers" 12 11 2025)
-    ("AB6-Lauds" 12 15 2023)
-    ("AB6-Vespers" 12 15 2023)
-    ("AB7-Lauds" 12 16 2023)
-    ("AC0-Vespers" 12 16 2023)
-    ("AC1-Lauds" 12 14 2025)
-    ("AC1-Vespers" 12 14 2025)
-    ("AC2-Lauds" 12 15 2025)
-    ("AC2-Vespers" 12 15 2025)
-    ("AC3-Lauds" 12 16 2025)
-    ("AC3-Vespers" 12 16 2025)
-    ("AC4-Lauds" 12 15 2021)
-    ("AC4-Vespers" 12 15 2021)
-    ("AC5-Lauds" 12 15 2022)
-    ("AC5-Vespers" 12 15 2022)
-    ("AC6-Lauds" 12 16 2022)
-    ("AC6-Vespers" 12 16 2022)
-    ("Dec17-Lauds" 12 17 2024)
-    ("Dec17-Vespers" 12 17 2025)
-    ("Dec18-Lauds" 12 18 2025)
-    ("Dec18-Vespers" 12 18 2025)
-    ("Dec19-Lauds" 12 19 2025)
-    ("Dec19-Vespers" 12 19 2025)
-    ("Dec20-Lauds" 12 20 2025)
-    ("Dec20-Vespers" 12 20 2024)
-    ("Dec21-Lauds" 12 21 2024)
-    ("Dec21-Vespers" 12 21 2023)
-    ("Dec22-Lauds" 12 22 2023)
-    ("Dec22-Vespers" 12 22 2023)
-    ("Dec23-Lauds" 12 23 2023)
-    ("Dec23-Vespers" 12 23 2024)))
+  '(
+    ;; ("AA0-Vespers" 11 29 2025)
+    ;; ("AA1-Lauds" 11 30 2025)
+    ;; ("AA1-Vespers" 11 30 2025)
+    ;; ("AA2-Lauds" 12 1 2025)
+    ;; ("AA2-Vespers" 12 1 2025)
+    ;; ("AA3-Lauds" 12 2 2025)
+    ;; ("AA3-Vespers" 12 2 2025)
+    ;; ("AA4-Lauds" 12 4 2024)
+    ;; ("AA4-Vespers" 12 4 2024)
+    ;; ("AA5-Lauds" 12 5 2024)
+    ;; ("AA5-Vespers" 12 5 2024)
+    ;; ("AA6-Lauds" 12 6 2024)
+    ;; ("AA6-Vespers" 12 6 2024)
+    ;; ("AA7-Lauds" 12 6 2025)
+    ;; ("AB0-Vespers" 12 6 2025)
+    ;; ("AB1-Lauds" 12 7 2025)
+    ;; ("AB1-Vespers" 12 7 2025)
+    ;; ("AB2-Lauds" 12 11 2023)
+    ;; ("AB2-Vespers" 12 11 2023)
+    ;; ("AB3-Lauds" 12 9 2025)
+    ;; ("AB3-Vespers" 12 9 2025)
+    ;; ("AB4-Lauds" 12 10 2025)
+    ;; ("AB4-Vespers" 12 10 2025)
+    ;; ("AB5-Lauds" 12 11 2025)
+    ;; ("AB5-Vespers" 12 11 2025)
+    ;; ("AB6-Lauds" 12 15 2023)
+    ;; ("AB6-Vespers" 12 15 2023)
+    ;; ("AB7-Lauds" 12 16 2023)
+    ;; ("AC0-Vespers" 12 16 2023)
+    ;; ("AC1-Lauds" 12 14 2025)
+    ;; ("AC1-Vespers" 12 14 2025)
+    ;; ("AC2-Lauds" 12 15 2025)
+    ;; ("AC2-Vespers" 12 15 2025)
+    ;; ("AC3-Lauds" 12 16 2025)
+    ;; ("AC3-Vespers" 12 16 2025)
+    ;; ("AC4-Lauds" 12 15 2021)
+    ;; ("AC4-Vespers" 12 15 2021)
+    ;; ("AC5-Lauds" 12 15 2022)
+    ;; ("AC5-Vespers" 12 15 2022)
+    ;; ("AC6-Lauds" 12 16 2022)
+    ;; ("AC6-Vespers" 12 16 2022)
+    ;; ("Dec17-Lauds" 12 17 2024)
+    ;; ("Dec17-Vespers" 12 17 2025)
+    ;; ("Dec18-Lauds" 12 18 2025)
+    ;; ("Dec18-Vespers" 12 18 2025)
+    ;; ("Dec19-Lauds" 12 19 2025)
+    ;; ("Dec19-Vespers" 12 19 2025)
+    ;; ("Dec20-Lauds" 12 20 2025)
+    ;; ("Dec20-Vespers" 12 20 2024)
+    ;; ("Dec21-Lauds" 12 21 2024)
+    ;; ("Dec21-Vespers" 12 21 2023)
+    ;; ("Dec22-Lauds" 12 22 2023)
+    ;; ("Dec22-Vespers" 12 22 2023)
+    ;; ("Dec23-Lauds" 12 23 2023)
+    ;; ("Dec23-Vespers" 12 23 2024)
+    ;; ("Dec24-Lauds" 12 24 2025)
+    ))
+
+(let ([dir "/home/ryan/scores/like-burning-incense/offices/advent/"])
+  (for ([x advent-sources])
+    (displayln (format "Processing ~a..." (first x)))
+    (apply create-files (cons dir x))))
 
 ;; (create-files
 ;;  "/home/ryan/scores/like-burning-incense/offices/advent/"
@@ -288,3 +303,6 @@ YEAR is the integer year"
 ;;  12
 ;;  6
 ;;  2025)
+
+;; (displayln
+;;  (parse-ibrev-prayer (file->string "/home/ryan/scripts/racket/test.html")))

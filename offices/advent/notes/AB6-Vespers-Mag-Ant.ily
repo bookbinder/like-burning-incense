@@ -22,9 +22,19 @@ text = \lyricmode {
   from the well -- springs of the Sa -- vior.
 }
 sopNotesAnt = \relative e' {
-  r8 aes8 g aes f f ees f[ ees] ees4
+  r8 aes8 g aes f \allowBreak f
+  \allowBreak ees
+  \allowBreak f[ ees]
+  \allowBreak ees4
   \noBreak \noBreak \hideNotes ees16 \unHideNotes
-  ees8 des ees[ f ees] ees4 ees8 f des4 des \bar "||"
+  \allowBreak ees8
+  \allowBreak des
+  \allowBreak ees[ f ees]
+  \allowBreak ees4
+  \allowBreak ees8
+  \allowBreak f
+  \allowBreak des4
+  \allowBreak des \bar "||"
 }
 altoNotesAnt = \relative c' {
   c\breve*7/16~ c2. s16 s\breve*7/16 bes4 aes

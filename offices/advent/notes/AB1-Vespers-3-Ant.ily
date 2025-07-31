@@ -26,7 +26,11 @@ sopNotesAnt = \relative e' {
   r8^"different alleluias from ordinary time? p. 16 in Seasonal pdf"
   g8 g[ a] b a4 g8 b4 b8[ a] a4 
   \noBreak \hideNotes a16 \unHideNotes   %so that I can align the * better
-  a8 b[ d] b a[ g] g4 \bar "||"
+  \allowBreak a8
+  \allowBreak b[ d]
+  \allowBreak b
+  \allowBreak a[ g]
+  \allowBreak g4 \bar "||"
 }
 altoNotesAnt = \relative c' {
   d\breve*5/16 e4. d4~ d\breve*5/16~ s16 d4.~ d2

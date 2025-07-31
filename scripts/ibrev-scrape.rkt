@@ -25,9 +25,9 @@
 
 (parameterize ([current-session session-with-cookies])
   (post options-page #:form '((lang . "en")
-                              (giorno . "30")
-                              (mese . "11")
-                              (anno . "2025")))
-  (display-to-file (response-body (get vespers))
+                              (giorno . "17")
+                              (mese . "12")
+                              (anno . "2024")))
+  (display-to-file (response-body (get lauds))
                    (string->path "/home/ryan/scripts/racket/test.html")
                    #:exists 'replace))

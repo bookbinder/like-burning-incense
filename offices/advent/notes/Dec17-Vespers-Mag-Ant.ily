@@ -30,10 +30,32 @@ sopNotesAnt = \relative e' {
   \allowBreak f
   \allowBreak f4
   \noBreak \noBreak \hideNotes f16 \unHideNotes
-  f8 aes[ g] f g f f ees
-  ees f \bar "" g[ aes] g g aes \bar "" bes4 \bar ","
-  c4 c8 \bar "" bes[ aes] g \bar "" f g f \bar "" ees4 g8 aes
-  \bar "" f4 f \bar "||"
+  \allowBreak f8
+  \allowBreak aes[ g]
+  \allowBreak f
+  \allowBreak g
+  \allowBreak f
+  \allowBreak f
+  \allowBreak ees
+  \allowBreak ees
+  \allowBreak f
+  \allowBreak g[ aes]
+  \allowBreak g
+  \allowBreak g
+  \allowBreak aes
+  \allowBreak bes4 \bar ","
+  \allowBreak c4
+  \allowBreak c8
+  \allowBreak bes[ aes]
+  \allowBreak g
+  \allowBreak f
+  \allowBreak g
+  \allowBreak f
+  \allowBreak ees4
+  \allowBreak g8
+  \allowBreak aes
+  \allowBreak f4
+  \allowBreak f \bar "||"
 }
 altoNotesAnt = \relative c' {
   r8 ees8 c\breve*6/16 ees2 \parenthesize c4. s16 ees\breve*9/16~ ees\breve*5/16
