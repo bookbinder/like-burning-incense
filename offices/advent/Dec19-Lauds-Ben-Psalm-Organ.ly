@@ -13,3 +13,6 @@
 
 % psalm/canticle score
 \include #(string-append "/home/ryan/scores/like-burning-incense/psalms/" psalmnum "/" psalmnum ".ily")
+
+
+%%

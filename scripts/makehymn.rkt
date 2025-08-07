@@ -87,7 +87,7 @@
                                       humantitle hymnfilestem)])
         (display-to-file organtexfileskel organtexfile)))
     (unless (file-exists? cantortexfile)
-      (let ([cantortexfileskel (format "\\hymn\n\n\\psalmsubtitle{~a}\n\n\\lilypondfile[line-width=3.73in]{/home/ryan/scores/like-burning-incense/hymns/~a-cantor.ly}\n\n%% \\setlength{\\leftmargini}{2em}\n%% \\begin{verse}\n%% \\flagverse{\\footnotesize\\textbf{5.}}\n\n%% \\end{verse}\n%% \\setlength{\\leftmargini}{\\defleftmargini}"
+      (let ([cantortexfileskel (format "\\hymn\n\n\\psalmsubtitle{~a}\n\n\\lilypondfile{/home/ryan/scores/like-burning-incense/hymns/~a-cantor.ly}\n\n%% \\setlength{\\vleftmargin}{2em}\n%% \\begin{verse}\n%% \\flagverse{\\footnotesize\\textbf{5.}}\n\n%% \\end{verse}\n%% \\setlength{\\vleftmargin}{\\defleftmargini}\n\n%% \\begin{hymnsource}\n\n%% \\end{hymnsource}"
                                        humantitle hymnfilestem)])
         (display-to-file cantortexfileskel cantortexfile)))
 
@@ -152,16 +152,17 @@
 
 ;; (create-hymn (if (= 2 (vector-length (current-command-line-arguments)))
 ;;                  (format
-;;                             "~a" (vector-ref
-;;                                   (current-command-line-arguments) 0))
-;;                            (begin (display "Enter file stem for hymn: ")
-;;                                   (read-line)))
+;;                   "~a" (vector-ref
+;;                         (current-command-line-arguments) 0))
+;;                  (begin (display "Enter file stem for hymn: ")
+;;                         (read-line)))
 ;;              (if (= 2 (vector-length (current-command-line-arguments)))
-;;                              (format
-;;                               "~a" (vector-ref
-;;                                     (current-command-line-arguments) 1))
-;;                              (begin (display "Enter file stem for melody: ")
-;;                                     (read-line)))
+;;                  (format
+;;                   "~a" (vector-ref
+;;                         (current-command-line-arguments) 1))
+;;                  (begin (display "Enter file stem for melody: ")
+;;                         (read-line)))
+;;              #f
 ;;              ;; (if (= 3 (vector-length (current-command-line-arguments)))
 ;;              ;;     (format
 ;;              ;;      "~a" (vector-ref
@@ -172,4 +173,4 @@
 ;;              ;;     )
 ;;              )
 
-(create-hymn "let-heaven-exult-with-highest-praise" "melody-20")
+(create-hymn "how-sweet-the-thought-of-Jesus-name" "melody-125")
