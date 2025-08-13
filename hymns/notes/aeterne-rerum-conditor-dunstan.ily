@@ -8,45 +8,45 @@ master-from-pitch = c
 master-to-pitch = c
 
 sopNotes = \relative e' {
-  \allowBreak f8
-  \allowBreak f
-  \allowBreak g
-  \allowBreak a
-  \allowBreak bes
-  \allowBreak a
-  \allowBreak g
-  \allowBreak a4 \bar "'"
-  \allowBreak a8
-  \allowBreak g
-  \allowBreak c
-  \allowBreak c
-  \allowBreak g
-  \allowBreak a
-  \allowBreak bes
-  \allowBreak a4( g) \bar ","
-  \allowBreak a8
-  \allowBreak a
-  \allowBreak g
-  \allowBreak a
-  \allowBreak g
-  \allowBreak f
-  \allowBreak e
-  \allowBreak f4 \bar "'"
-  \allowBreak g8
-  \allowBreak a
-  \allowBreak g
-  \allowBreak f
-  \allowBreak e
-  \allowBreak f[ g]
-  \allowBreak e
-  \allowBreak d4 \bar "||"
-  \allowBreak d8[ e d]
-  \allowBreak c4( d4) \bar "||"
+  f8
+  f
+  g
+  a
+  bes
+  a
+  g
+  a4 \bar "'"
+  a8
+  g
+  c
+  c
+  g
+  a
+  bes
+  a4( g) \bar ","
+  a8
+  a
+  g
+  a
+  g
+  f
+  e
+  f4 \bar "'"
+  g8
+  a
+  g
+  f
+  e
+  f[ g]
+  e
+  d4 \bar "||"
+  d8[ e d]
+  c4( d4) \bar "||"
 }
 altoNotes = \relative c' {
   s4. f4 e4 f4
-  c8~ c2~ c8 d8 e2
-  c8 d4 e s2
+  c8~ c2~ \allowBreak c8 d8 e2
+  c8 d4  e s2
   c8~ c2 d4 c8 a4
   bes4. a2
 }    
@@ -58,5 +58,5 @@ tenorNotes = \relative g {
 bassNotes = \relative g {
   f8 d2 c4 f4. e2 f4 c2
   a8 bes4 c d2 e8 f4 c4 bes4 c8 d4
-  g4. a4 d,4
+  g,4. a4 d,4
 }

@@ -1,80 +1,80 @@
 \documentclass{lbi_organ_bind}
-\usepackage[%% uncomment options below to exclude them
-  lauds,
-  vespers,
-  %% hymns,
-  default, %% don't uncomment this one
-]{optional}
+%% \usepackage[%% uncomment options below to exclude them
+%%   lauds,
+%%   vespers,
+%%   %% hymns,
+%%   default, %% don't uncomment this one
+%% ]{optional}
 
-\usepackage[strict]{changepage}
-\usepackage{libertine}
+%% \usepackage[strict]{changepage}
+%% \usepackage{libertine}
 
-\usepackage[nofragment]{lyluatex}
-%% \usepackage[nofragment, insert=systems]{lyluatex}
-
-
-\newcommand*\cleartoleftpage{%
-  \clearpage
-  \ifodd\value{page}\hbox{}\newpage\fi
-}
-
-\usepackage{verse}
-\newcommand{\defleftmargini}{1em}
-\newcommand{\prayerleftmargini}{0em}
-\newcommand{\Aleftmargini}{2em}
-\newcommand{\Bleftmargini}{3em}
-\newcommand{\Cleftmargini}{4em}
-\newcommand{\Dleftmargini}{5em}
-\newcommand{\Eleftmargini}{6em}
-%% \setlength{\vleftmargin}{\defleftmargini}  %% left margin
-\setlength{\stanzaskip}{0.6\baselineskip}  %% space between verses
-\setlength{\vleftskip}{.5em}  %% space between verse numbers and verse
-
-\newcommand{\psalm}[1]{\subsubsection{\textbf{#1}}}
-\newcommand{\psalmsubtitle}[1]{\subsubsection{#1}}
-\newcommand{\antiphonA}{\subsubsection{Antiphon 1}}
-\newcommand{\antiphonB}{\subsubsection{Antiphon 2}}
-\newcommand{\antiphonC}{\subsubsection{Antiphon 3}}
-\newcommand{\antiphonBen}{\subsubsection{Benedictus Antiphon}}
-\newcommand{\antiphonMag}{\subsubsection{Magnificat Antiphon}}
-\newcommand{\antiphon}{\subsubsection{Antiphon}}
-\newcommand{\hymn}{\subsection{\textsc{Hymn}}}
-\newenvironment{hymnsource}%%
-               {%%
-                 \scriptsize
-                 \setlength{\leftskip}{1em}%%
-                 \setlength{\parindent}{-1em}%%
-               }%%
+%% \usepackage[nofragment]{lyluatex}
+%% %% \usepackage[nofragment, insert=systems]{lyluatex}
 
 
-\fancypagestyle{officetitle}{%
-  \fancyhf{} % Clear existing headers and footers
-  \fancyhead[LE]{\large\thepage} % Left header
-  \fancyhead[RO]{\large\thepage} % Right header with page number
-}
+%% \newcommand*\cleartoleftpage{%
+%%   \clearpage
+%%   \ifodd\value{page}\hbox{}\newpage\fi
+%% }
 
-%% \titleformat{\chapter}[display]
-%%   {\normalfont\sffamily\filcenter}
-%%   {\chaptertitlename\ \thechapter}{0pt}{\LARGE}
+%% %% \usepackage{verse}
+%% \newcommand{\defleftmargini}{1em}
+%% \newcommand{\prayerleftmargini}{0em}
+%% \newcommand{\Aleftmargini}{2em}
+%% \newcommand{\Bleftmargini}{3em}
+%% \newcommand{\Cleftmargini}{4em}
+%% \newcommand{\Dleftmargini}{5em}
+%% \newcommand{\Eleftmargini}{6em}
+%% %% \setlength{\vleftmargin}{\defleftmargini}  %% left margin
+%% %% \setlength{\stanzaskip}{0.6\baselineskip}  %% space between verses
+%% %% \setlength{\vleftskip}{.5em}  %% space between verse numbers and verse
 
-\titleformat{\section}
-  {\normalfont\sffamily\Large\bfseries\filcenter}
-  {\thesection}{1em}{}
+%% %% \newcommand{\psalm}[1]{\subsubsection{\textbf{#1}}}
+%% %% \newcommand{\psalmsubtitle}[1]{\subsubsection{#1}}
+%% %% \newcommand{\antiphonA}{\subsubsection{Antiphon 1}}
+%% %% \newcommand{\antiphonB}{\subsubsection{Antiphon 2}}
+%% %% \newcommand{\antiphonC}{\subsubsection{Antiphon 3}}
+%% %% \newcommand{\antiphonBen}{\subsubsection{Benedictus Antiphon}}
+%% %% \newcommand{\antiphonMag}{\subsubsection{Magnificat Antiphon}}
+%% %% \newcommand{\antiphon}{\subsubsection{Antiphon}}
+%% %% \newcommand{\hymn}{\subsection{\textsc{Hymn}}}
+%% %% \newenvironment{hymnsource}%%
+%%                %% {%%
+%%                  %% \scriptsize
+%%                  %% \setlength{\leftskip}{1em}%%
+%%                  %% \setlength{\parindent}{-1em}%%
+%%                %% }%%
 
-\titleformat{\subsection}
-  {\normalfont}
-  {\thesection}{1em}{}
 
-\titleformat{\subsubsection}
-  {\normalfont\large\bfseries\filcenter}
-  {\thesection}{1em}{}
+%% \fancypagestyle{officetitle}{%
+%%   \fancyhf{} % Clear existing headers and footers
+%%   \fancyhead[LE]{\large\thepage} % Left header
+%%   \fancyhead[RO]{\large\thepage} % Right header with page number
+%% }
+
+%% %% \titleformat{\chapter}[display]
+%% %%   {\normalfont\sffamily\filcenter}
+%% %%   {\chaptertitlename\ \thechapter}{0pt}{\LARGE}
+
+%% \titleformat{\section}
+%%   {\normalfont\sffamily\Large\bfseries\filcenter}
+%%   {\thesection}{1em}{}
+
+%% \titleformat{\subsection}
+%%   {\normalfont}
+%%   {\thesection}{1em}{}
+
+%% \titleformat{\subsubsection}
+%%   {\normalfont\large\bfseries\filcenter}
+%%   {\thesection}{1em}{}
 
 
-\raggedbottom
-\usepackage{fontspec}
+%% \raggedbottom
+%% \usepackage{fontspec}
 
-\usepackage{hyperref}
-\hypersetup{colorlinks, citecolor=black, filecolor=black, linkcolor=black, urlcolor=black}
+%% \usepackage{hyperref}
+%% \hypersetup{colorlinks, citecolor=black, filecolor=black, linkcolor=black, urlcolor=black}
 
 \begin{document}
 %% \pagestyle{empty}
@@ -147,7 +147,7 @@
 %% \chaptermark{Week 3}
 %% \addcontentsline{toc}{chapter}{Week 3}
 %% \opt{vespers}{\input{C0-Vespers-Organ.tex}}
-%% \opt{lauds}{\input{C1-Lauds-Organ.tex}}
+\opt{lauds}{\input{C1-Lauds-Organ.tex}}
 %% \opt{vespers}{\input{C1-Vespers-Organ.tex}}
 %% \opt{lauds}{\input{C2-Lauds-Organ.tex}}
 %% \opt{vespers}{\input{C2-Vespers-Organ.tex}}
@@ -166,7 +166,7 @@
 %% \opt{vespers}{\input{D0-Vespers-Organ.tex}}
 %% \opt{lauds}{\input{D1-Lauds-Organ.tex}}
 %% \opt{vespers}{\input{D1-Vespers-Organ.tex}}
-\opt{lauds}{\input{D2-Lauds-Organ.tex}}
+%% \opt{lauds}{\input{D2-Lauds-Organ.tex}}
 %% \opt{vespers}{\input{D2-Vespers-Organ.tex}}
 %% \opt{lauds}{\input{D3-Lauds-Organ.tex}}
 %% \opt{vespers}{\input{D3-Vespers-Organ.tex}}

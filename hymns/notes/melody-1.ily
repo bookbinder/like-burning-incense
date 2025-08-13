@@ -8,40 +8,40 @@ master-from-pitch = c
 master-to-pitch = c
 
 sopNotes = \relative e' {
-  \allowBreak a4-4
-  \allowBreak a
-  \allowBreak a
-  \allowBreak a
-  \allowBreak a
-  \allowBreak a( b)
-  \allowBreak a
-  \allowBreak a \bar "'"
-  \allowBreak a-5
-  \allowBreak a
-  \allowBreak a
-  \allowBreak g
-  \allowBreak f
-  \allowBreak g( a)
-  \allowBreak g
-  \allowBreak g \bar ","
-  \allowBreak f-3
-  \allowBreak a
-  \allowBreak a
-  \allowBreak g
-  \allowBreak f
-  \allowBreak g
-  \allowBreak g
-  \allowBreak a \bar "'"
-  \allowBreak g-5
-  \allowBreak g
-  \allowBreak g
-  \allowBreak f
-  \allowBreak d
-  \allowBreak f
-  \allowBreak e
-  \allowBreak d \bar "||"
-  \allowBreak d( e d)
-  \allowBreak c4.( d4.) \bar "||"
+  a4-4
+  a
+  a
+  a
+  a
+  a( b)
+  a
+  a \bar "'"
+  a-5
+  a
+  a
+  g
+  f
+  g( a)
+  g
+  g \bar ","
+  f-3
+  a
+  a
+  g
+  f
+  g
+  g
+  a \bar "'"
+  g-5
+  g
+  g
+  f
+  d
+  f
+  e
+  d \bar "||"
+  d( e d)
+  c4.( d4.) \bar "||"
 }
 altoNotes = \relative c' {
   c2.-1 e2\finger "2-1" f2. e4

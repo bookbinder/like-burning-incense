@@ -7,3 +7,4 @@
 
 %% special arrangement for Sunday Evening Prayer II, NT Canticle
 \include "/home/ryan/scores/like-burning-incense/psalms/Rev_19_1-7/Rev_19_1-7-Organ.ly"
+%%
