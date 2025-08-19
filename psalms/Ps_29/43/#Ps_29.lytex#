@@ -1,5 +1,5 @@
 \settowidth{\versewidth}{The Lord’s voice resounding on the waters, *}
-\begin{verse}[\versewidth]
+\begin{verse}%%[\versewidth]
   \begin{patverse}
     \indentpattern{0101 101 101 1101 101 1 101}
     \FirstLetter{O} give the Lord, you s\pointup{o}ns of God,\Med\\

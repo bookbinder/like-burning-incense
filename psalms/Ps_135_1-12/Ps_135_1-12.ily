@@ -8,7 +8,7 @@ sopMusic = {
     \voiceOne
     \sopranoOneFlex
     \sopranoTwo
-    \sopranoOneFlex
+    \sopranoOne
     \sopranoTwo
     \sopranoOne 
     \sopranoTwo
@@ -21,7 +21,7 @@ altoMusic = {
     \voiceTwo
     \altoOneFlex
     \altoTwo
-    \altoOneFlex
+    \altoOne
     \altoTwo
     \altoOne 
     \altoTwo
@@ -33,7 +33,7 @@ tenorMusic = {
     \voiceOne
     \tenorOneFlex
     \tenorTwo
-    \tenorOneFlex
+    \tenorOne
     \tenorTwo
     \tenorOne 
     \tenorTwo
@@ -45,7 +45,7 @@ bassMusic = {
     \voiceTwo
     \bassOneFlex
     \bassTwo
-    \bassOneFlex
+    \bassOne
     \bassTwo
     \bassOne 
     \bassTwo

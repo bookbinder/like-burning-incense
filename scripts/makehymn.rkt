@@ -87,7 +87,7 @@
                                       humantitle hymnfilestem)])
         (display-to-file organtexfileskel organtexfile)))
     (unless (file-exists? cantortexfile)
-      (let ([cantortexfileskel (format "\\hymn\n\n\\psalmsubtitle{~a}\n\n\\lilypondfile{/home/ryan/scores/like-burning-incense/hymns/~a-cantor.ly}\n\n%% \\setlength{\\vleftmargin}{2em}\n%% \\begin{verse}\n%% \\flagverse{\\footnotesize\\textbf{5.}}\n\n%% \\end{verse}\n%% \\setlength{\\vleftmargin}{\\defleftmargini}\n\n%% \\begin{hymnsource}\n\n%% \\end{hymnsource}"
+      (let ([cantortexfileskel (format "\\hymn\n\n\\psalmsubtitle{~a}\n\n\\lilypondfile{/home/ryan/scores/like-burning-incense/hymns/~a-cantor.ly}\n\n%% \\begin{underhymnverse}\n%% \\flagverse{\\footnotesize\\textbf{5.}}\n\n%% \\end{underhymnverse}\n\n%% \\begin{hymnsource}\n\n%% \\end{hymnsource}"
                                        humantitle hymnfilestem)])
         (display-to-file cantortexfileskel cantortexfile)))
 

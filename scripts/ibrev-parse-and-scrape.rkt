@@ -68,7 +68,7 @@ from ibreviary."
          [citation (second (regexp-match "(.*?)(?:<[^>]*?>)*$" citation))]
          )
 
-    (format "\\hymn\n\n\\settowidth{\\versewidth}{~a}\n\n\\begin{verse}[\\versewidth]\n~a\\end{verse}\n\n\\begin{hymnsource}\nTune: ~a\n\\end{hymnsource}"
+    (format "\\hymn\n\n\\settowidth{\\versewidth}{~a}\n\n\\begin{hymnverse}%%[\\versewidth]\n~a\\end{hymnverse}\n\n\\begin{hymnsource}\nTune: ~a\n\\end{hymnsource}"
     versewidth hymn citation
     )))
 
@@ -90,7 +90,7 @@ from ibreviary."
                     (with-output-to-string
                       (λ () (system (format "unescapehtml \"~a\"" citation)))))]
          )
-    (format "\\hymn\n\n\\begin{verse}\n~a\n\\end{verse}\n\n\\begin{hymnsource}\n~a\n\\end{hymnsource}"
+    (format "\\hymn\n\n\\begin{hymnverse}\n~a\n\\end{hymnverse}\n\n\\begin{hymnsource}\n~a\n\\end{hymnsource}"
             (string-replace
              hymn "<a href=#alternatehymn>Alternate Hymn</a>\n\n" "")
             citation)))
@@ -107,7 +107,7 @@ from ibreviary."
          [hymn (string-trim
                     (with-output-to-string
                       (λ () (system (format "unescapehtml \"~a\"" hymn)))))])
-    (format "\\hymn\n\n\\begin{verse}\n~a\n\\end{verse}\n\n\\begin{hymnsource}\n\n\\end{hymnsource}"
+    (format "\\hymn\n\n\\begin{hymnverse}\n~a\n\\end{hymnverse}\n\n\\begin{hymnsource}\n\n\\end{hymnsource}"
             hymn)))
 
 (define (parse-ibrev-reading s)
@@ -166,25 +166,32 @@ from ibreviary."
               (string-replace (first s) "<br />" "\\\\\n")
               (string-trim res)))))
 
+
 (define (parse-ibrev-prayer s)
-  (let* ([s (string-trim
-           (with-output-to-string
-             (λ () (system (format "unescapehtml \"~a\"" s)))))]
-         [s (second (regexp-match "CONCLUDING PRAYER</span><br /><br />(.*?)(?:<[^>]>)*DISMISSAL" s))]
-         [prayers (regexp-split "<br /><br /><span class=\"rubrica\">Or:</span><br /><br />" s)])
-    (format "\\prayer\n\n\\setlength{\\vleftmargin}{\\prayerleftmargini}\n\n~a\n\n\\setlength{\\vleftmargin}{\\defleftmargini}"
+  (let* (
+         ;; [s (string-trim
+         ;;     (with-output-to-string
+         ;;       (λ () (system (format "unescapehtml \"~a\"" s)))))]
+         [s (second (regexp-match "CONCLUDING PRAYER(?:<[^>]> *)*(.*?)(?:<[^>]>)*DISMISSAL" s))]
+         [prayers (regexp-split "(?:<[^>]> *)*Or:(?:<[^>]>)*" s)])
+    (format "\\prayer\n\n~a"
             (string-join (map parse-ibrev-prayer-aux prayers) "\n\n\\noindent{\\color{red}Or:}\n\n"))))
 
 (define (parse-ibrev-prayer-aux s)
   "Create a concluding prayer string for LaTeX. Refactor to allow for alternate prayers. (split on `Or:`)"
   (let* ([s (string-replace s "<span class=\"rubrica\">&mdash;</span> "
                             "{\\color{red}---\\thinspace}")]
+         [s (string-replace s "</span>" "")]
          [s (string-replace s "<br />" "\\\\\n")]
+
          [s (string-replace s "Amen.\\\\\n\\\\" "Amen.")]
          [s (regexp-replace #px"<span[^>]*>" s "")]
+         [s (regexp-replace #px" *\n\\\\\\\\\n" s "\n")]
+         [s (regexp-replace #px"^\\\\\\\\" s "")]
          )
-    (format "\\begin{verse}\n~a\n\\end{verse}"
+    (format "\\begin{prayerverse}\n~a\n\\end{prayerverse}"
             s)))
+
 
 
 (define (create-files dir stem month day year)
@@ -195,16 +202,19 @@ DAY is the integer day
 YEAR is the integer year"
   (let* ([office (second (string-split stem "-"))]
          [s (get-single-office month day year office)]
-         [hymn (parse-ibrev-hymn s)]
-         [reading (parse-ibrev-reading s)]
-         [responsory (parse-ibrev-responsory s)]
-         [intercessions (parse-ibrev-intercessions s)]
-         [prayer (parse-ibrev-prayer s)]
-         [cantortexfile (string->path (format "~a~a-Cantor.tex" dir stem))])
+         ;; [s (file->string "/home/ryan/scores/like-burning-incense/scripts/test.html")]
+         [hymn (begin (displayln "Parsing hymn") (parse-ibrev-hymn s))]
+         [reading (begin (displayln "Parsing reading") (parse-ibrev-reading s))]
+         [responsory (begin (displayln "Parsing responsory") (parse-ibrev-responsory s))]
+         [intercessions (begin (displayln "Parsing intercessions") (parse-ibrev-intercessions s))]
+         [prayer (begin (displayln "Begin Parsing prayer") (parse-ibrev-prayer s)
+                        (displayln "Done parsing prayer"))]
+         [cantortexfile (begin (displayln "Reading cantortexfile") (string->path (format "~a~a-Cantor.tex" dir stem)))])
 
     ;; create the files, overwriting if they exist already
     (for ([cur (list "Hymn" "Reading" "Responsory" "Intercessions" "Prayer")]
           [val (list hymn reading responsory intercessions prayer)])
+      (displayln (format "For loop - ~a - ~a" cur val))
       (display-to-file
        val
        (string->path (format "~a~a-~a.tex"
@@ -292,17 +302,19 @@ YEAR is the integer year"
     ;; ("Dec24-Lauds" 12 24 2025)
     ))
 
-(let ([dir "/home/ryan/scores/like-burning-incense/offices/advent/"])
-  (for ([x advent-sources])
-    (displayln (format "Processing ~a..." (first x)))
-    (apply create-files (cons dir x))))
+;; (let ([dir "/home/ryan/scores/like-burning-incense/offices/advent/"])
+;;   (for ([x advent-sources])
+;;     (displayln (format "Processing ~a..." (first x)))
+;;     (apply create-files (cons dir x))))
 
-;; (create-files
-;;  "/home/ryan/scores/like-burning-incense/offices/advent/"
-;;  "AA7-Lauds"
-;;  12
-;;  6
-;;  2025)
+(create-files
+ "/home/ryan/scores/like-burning-incense/offices/saintsAndSolemnities/0815_The_Assumption_of_Mary/"
+ "1-Lauds"
+ 8
+ 15
+ 2025)
+
+
 
 ;; (displayln
 ;;  (parse-ibrev-prayer (file->string "/home/ryan/scripts/racket/test.html")))

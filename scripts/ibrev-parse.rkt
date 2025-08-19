@@ -24,7 +24,7 @@
                     (with-output-to-string
                       (λ () (system (format "unescapehtml \"~a\"" citation)))))]
          )
-    (format "\\hymn\n\n\\begin{verse}\n~a\n\\end{verse}\n\n\\begin{hymnsource}\n~a\n\\end{hymnsource}"
+    (format "\\hymn\n\n\\begin{hymnverse}\n~a\n\\end{hymnverse}\n\n\\begin{hymnsource}\n~a\n\\end{hymnsource}"
             (string-replace
              hymn "<a href=#alternatehymn>Alternate Hymn</a>\n\n" "")
             citation)))
@@ -39,7 +39,7 @@
          [hymn (string-trim
                     (with-output-to-string
                       (λ () (system (format "unescapehtml \"~a\"" hymn)))))])
-    (format "\\hymn\n\n\\begin{verse}\n~a\n\\end{verse}\n\n\\begin{hymnsource}\n\n\\end{hymnsource}"
+    (format "\\hymn\n\n\\begin{hymnverse}\n~a\n\\end{hymnverse}\n\n\\begin{hymnsource}\n\n\\end{hymnsource}"
             hymn)))
 
 (define (parse-ibrev-reading s)
@@ -91,7 +91,7 @@
 (define (parse-ibrev-prayer s)
   (let* ([s (second (regexp-match "CONCLUDING PRAYER</span><br /><br />(.*?)<br /><br /><span class=\"capolettera_piccolo\">DISMISSAL" s))]
          [prayers (regexp-split "<br /><br /><span class=\"rubrica\">Or:</span><br /><br />" s)])
-    (format "\\prayer\n\n\\setlength{\\vleftmargin}{\\prayerleftmargini}\n\n~a\n\n\\setlength{\\vleftmargin}{\\defleftmargini}"
+    (format "\\prayer\n\n~a"
             (string-join (map parse-ibrev-prayer-aux prayers) "\n\n\\noindent{\\color{red}Or:}\n\n"))))
 
 (define (parse-ibrev-prayer-aux s)
@@ -100,7 +100,7 @@
                             "{\\color{red}---\\thinspace}")]
          [s (string-replace s "<br />" "\\\\\n")]
          )
-    (format "\\begin{verse}\n~a\n\\end{verse}"
+    (format "\\begin{prayerverse}\n~a\n\\end{prayerverse}"
             s)))
 
 
@@ -118,7 +118,7 @@
       [fn (list parse-ibrev-hymn2 parse-ibrev-reading parse-ibrev-responsory parse-ibrev-intercessions parse-ibrev-prayer)])
   (display-to-file
    (fn (file->string "/home/ryan/scores/like-burning-incense/scripts/test.html"))
-   (string->path (format "/home/ryan/scores/like-burning-incense/offices/saintsAndSolemnities/0703_Thomas/1-Lauds-~a.tex" sec))
+   (string->path (format "/home/ryan/scores/like-burning-incense/offices/saintsAndSolemnities/0815_The_Assumption_of_Mary/1-Lauds-~a.tex" sec))
    #:exists 'replace))
 
 ;; (display-to-file
