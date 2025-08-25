@@ -52,12 +52,10 @@
                                           notesdir melodyfilestem))]
          [lyricsfile (string->path (format "~a/~a.ily"
                                            lyricsdir hymnfilestem))]
+         [prepositions (set "in" "of" "with" "in" "the" "and" "for")]
          [humantitle (let ([tmp (string-split hymnfilestem "-")])
                        (string-join
-                        (map (λ (x) (if (set-member?
-                                         (set "in" "of" "with" "in"
-                                              "the" "and")
-                                         x)
+                        (map (λ (x) (if (set-member? prepositions x)
                                         x
                                         (string-append
                                          (string-upcase (substring x 0 1))
@@ -173,4 +171,4 @@
 ;;              ;;     )
 ;;              )
 
-(create-hymn "how-sweet-the-thought-of-Jesus-name" "melody-125")
+(create-hymn "the-gate-for-Christ" "melody-30")

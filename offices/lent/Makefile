@@ -1,12 +1,11 @@
 LILYPOND-BOOK=lilypond-book -o out --pdf
 LATEX=xelatex
-
+LUATEX=lualatex -shell-escape
 
 cur:
-	rm -rf out/*/
-	$(LILYPOND-BOOK) ScoreCantorLong.lytex
-	cd out && $(LATEX) ScoreCantorLong.tex
-	cd out && evince ScoreCantorLong.pdf
+	# rm -rf out/*/
+	$(LUATEX) ScoreCantorLong.tex
+	evince ScoreCantorLong.pdf
 	# $(LILYPOND-BOOK) ScoreOrganLong.lytex
 	# cd out && $(LATEX) ScoreOrganLong.tex
 	# cd out && evince ScoreOrganLong.pdf

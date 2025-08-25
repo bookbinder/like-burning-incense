@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key aes \major
+antKeysig =  \key aes \major
 antiphon = "2"
 psalmtone = "26"
 psalmtonestruct = "33"
@@ -18,31 +18,21 @@ master-to-pitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    His face was ra -- diant as the "sun, * " and his clo -- thing
+    His face was ra -- diant as the sun, 
+    \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
+    and his clo -- thing
     white as snow.
 }
 sopNotesAnt = \relative e' {
-    \global
-    \keysig
-    \voiceOne
     r8 ees8 \bar "" aes4 aes8 g aes g f \bar "" ees4 \bar "'"
     ees8 ees \bar "" f4 ees8 des[ f] f \bar "" ees4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    \global
-    \keysig
-    \voiceTwo
     s8 ees8~ ees\breve*7/16 c2 des2. bes4
 }
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
-    \voiceOne
     aes\breve*9/16~ aes2~ aes2. g4
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
-    \voiceTwo
     c\breve*9/16 aes2 des4. bes4. ees4
 }

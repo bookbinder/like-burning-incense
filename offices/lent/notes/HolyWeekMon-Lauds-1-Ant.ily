@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 % Will need these variables to build the cantor and organ scores:
-keysig = \key cis \minor
+antKeysig = \key cis \minor
 antiphon = "1"
 psalmtone = "43"
 psalmtonestruct = "43"
@@ -24,8 +24,6 @@ text = \lyricmode {
   keep watch with me.
 }
 sopNotesAnt = \relative e' {
-    \global
-    \keysig
     cis8[ e] e dis4
     \noBreak \hideNotes dis16 \unHideNotes
     \bar ""
@@ -49,19 +47,13 @@ sopNotesAnt = \relative e' {
     \allowBreak dis4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    \global
-    \keysig
     gis4. b4. s16 cis4.~ cis4~ cis2 b2.~
     b4~ b4. cis4~ cis2 b4
 }
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
     e4. fis4. s16 gis4.~ gis4~ gis2~ gis2.
     e4 fis4. gis4 e2 gis4
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
     cis4. b4. s16 e4.~ e4 cis2 gis2. e'4 dis4. cis4~ cis2 gis4
 }

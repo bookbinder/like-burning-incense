@@ -36,7 +36,7 @@ sopNotesAnt = \relative e' {
   \allowBreak a([ b] c4)
   \allowBreak b8([ c] a4)
   \allowBreak b8
-  \allowBreak a([~ a] a[ g])
+  \allowBreak a([~ a~] a[ g])
   \allowBreak g4 \bar "||"
 }
 altoNotesAnt = \relative c' {

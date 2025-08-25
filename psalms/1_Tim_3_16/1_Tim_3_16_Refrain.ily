@@ -1,3 +1,10 @@
+\version "2.24.3"
+
+\include "/home/ryan/scores/like-burning-incense/lbi_defs_cantor.ily"
+% \include "/home/ryan/scores/like-burning-incense/offices/ordinaryTime/notes/A1-Vespers-3-Ant.ily"
+% \include #(string-append "/home/ryan/scores/like-burning-incense/psalmtones/notes/" "68" "-notes.ily")
+
+
 \header {
     psalm_title = "See 1 Timothy 3:16"
     psalm_subtitle = "The mystery and glory of Christ"

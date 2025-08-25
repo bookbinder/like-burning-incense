@@ -19,24 +19,25 @@
         \new Staff = "up"
         <<
           \midi_instrument
-          \clef treble
+          \clef treble \antKeysig
           \accidentalStyle forget
-          \new Voice = "Soprano" \sopNotesAnt
-          \new Voice = "Alto" \altoNotesAnt
+          \new Voice = "Soprano" { \voiceOne \global \sopNotesAnt }
+          \new Voice = "Alto" { \voiceTwo \global \altoNotesAnt }
           \new Lyrics \lyricsto Soprano \text
         >>
         \new Staff = "down"
         <<
           \midi_instrument
-          \clef bass
+          \clef bass \antKeysig
           \accidentalStyle forget
-          \new Voice = "Tenor" \tenorNotesAnt
-          \new Voice = "Bass" \bassNotesAnt
+          \new Voice = "Tenor" { \voiceOne \global \tenorNotesAnt }
+          \new Voice = "Bass" { \voiceTwo \global \bassNotesAnt }
         >>
       >>
     >>
   } 
   \layout {
+    indent = 0.5\in
     ragged-last = ##t
     \context {
       \Staff

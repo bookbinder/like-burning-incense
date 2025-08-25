@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 % Will need these variables to build the cantor and organ scores:
-keysig =  \key cis \minor
+antKeysig =  \key cis \minor
 antiphon = "2"
 psalmtone = "79"
 psalmtonestruct = "43"
@@ -18,32 +18,22 @@ master-to-pitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    A -- wake from your "sleep, * " rise from the dead, and Christ
+    A -- wake from your sleep, 
+    \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
+    rise from the dead, and Christ
     will give you light.
 }
 sopNotesAnt = \relative e' {
-    \global
-    \keysig
-    \voiceOne
     r8 e8 fis[ gis] gis a \bar "" gis4 \bar "'"
     fis8([-- gis] a4) gis8 a \bar "" b4( gis) \bar ","
     e8 \bar "" fis[ gis] fis fis fis \bar "" e4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    \global
-    \keysig
-    \voiceTwo
     s\breve*8/16 e2.~ e\breve*5/16 cis\breve*5/16 gis4
 }
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
-    \voiceOne
     gis2. b4 a2. gis\breve*5/16 s\breve*5/16 s4
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
-    \voiceTwo
     e2.~ e4~ e2.~ e\breve*5/16~ \tieUp <a, e'~>\breve*5/16 <e e'>4
 }

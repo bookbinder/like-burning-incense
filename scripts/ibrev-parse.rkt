@@ -6,7 +6,7 @@
 ;; (define office
   ;; (second (regexp-match "<span class=\"sezione\">(.*?)</span>" s)))
 
-(define (parse-ibrev-hymn s)
+(define (parse-ibrev-hymn-orig s)
   "Create a hymn string for LaTeX. TODO refactor to accommodate multiple hymns."
   (let* ([s (regexp-match "HYMN</span><br /><br />(.*)<span class=\"citazione\">(.*)</span></p><p><span class=\"capolettera_piccolo\">PSALMODY</span>" s)]
          [hymn (second s)]
@@ -29,7 +29,7 @@
              hymn "<a href=#alternatehymn>Alternate Hymn</a>\n\n" "")
             citation)))
 
-(define (parse-ibrev-hymn2 s)
+(define (parse-ibrev-hymn s)
   "A rougher veresion. Create a hymn string for LaTeX. TODO refactor to accommodate multiple hymns."
   (let* ([s (regexp-match "HYMN</span>(.*)PSALMODY</span>" s)]
          [hymn (first s)]
@@ -114,12 +114,18 @@
 ;;         [prayertxt (parse-ibrev-prayer s)])
 ;;     (displayln prayertxt)))
 
-(for ([sec (list "Hymn" "Reading" "Responsory" "Intercessions" "Prayer")]
-      [fn (list parse-ibrev-hymn2 parse-ibrev-reading parse-ibrev-responsory parse-ibrev-intercessions parse-ibrev-prayer)])
-  (display-to-file
-   (fn (file->string "/home/ryan/scores/like-burning-incense/scripts/test.html"))
-   (string->path (format "/home/ryan/scores/like-burning-incense/offices/saintsAndSolemnities/0815_The_Assumption_of_Mary/1-Lauds-~a.tex" sec))
-   #:exists 'replace))
+
+
+;; ;;;; most recently used
+;; (for ([sec (list "Hymn" "Reading" "Responsory" "Intercessions" "Prayer")]
+;;       [fn (list parse-ibrev-hymn2 parse-ibrev-reading parse-ibrev-responsory parse-ibrev-intercessions parse-ibrev-prayer)])
+;;   (display-to-file
+;;    (fn (file->string "/home/ryan/scores/like-burning-incense/scripts/test.html"))
+;;    (string->path (format "/home/ryan/scores/like-burning-incense/offices/saintsAndSolemnities/0815_The_Assumption_of_Mary/1-Lauds-~a.tex" sec))
+;;    #:exists 'replace))
+
+
+
 
 ;; (display-to-file
 ;;  (let* ([s (file->string "/home/ryan/scores/like-burning-incense/offices/saintsAndSolemnities/0703_Thomas/1-Lauds-Cantor.tex")]

@@ -1,0 +1,6 @@
+/\\global/d
+s/^keysig/antKeysig/
+/\\keysig/d
+/\\voiceOne/d
+/\\voiceTwo/d
+s/\"\([^*]*\)\*[^"]*\"/\1\n    \\markup { \\tiny \\raise #.5 \\char ##x1F7B6 " "}\n   /

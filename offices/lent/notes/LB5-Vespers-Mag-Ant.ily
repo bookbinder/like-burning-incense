@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 % Will need these variables to build the cantor and organ scores:
-keysig = \key cis \minor
+antKeysig = \key cis \minor
 antiphon = "M"
 psalmtone = "42"
 psalmtonestruct = "43"
@@ -18,13 +18,12 @@ master-to-pitch = a
 
 text = \lyricmode {
     \set includeGraceNotes = ##t
-    The rich "man, * " who had re -- fused La -- za -- rus a crust of bread,
+    The rich man, 
+    \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
+    who had re -- fused La -- za -- rus a crust of bread,
     plea -- ded for a drop of wa -- ter.
 }
 sopNotesAnt = \relative e' {
-    \global
-    \keysig
-    \voiceOne
     r8^"Different psalm tone below than the original (p 195). Does it work?"
     cis8 e[ dis cis] cis4 cis8 dis e fis[ gis] gis fis e fis \bar ""
     fis[ gis] fis fis4 \bar "'"
@@ -32,22 +31,12 @@ sopNotesAnt = \relative e' {
     e[ fis] fis4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-    \global
-    \keysig
-    \voiceTwo
     gis\breve b\breve*5/16 dis\breve*8/16 r4. e4 dis4
 }
 tenorNotesAnt = \relative g {
-    \global
-    \keysig
-    \voiceOne
     e\breve dis\breve*5/16 b'\breve*8/16 gis4.~ gis4 b4
 }
 bassNotesAnt = \relative c {
-    \global
-    \keysig
-    \voiceTwo
     cis\breve b\breve*5/16 gis'\breve*8/16~
-    << {\voiceOne e4.} {\voiceTwo gis4.} >>
     b,2
 }

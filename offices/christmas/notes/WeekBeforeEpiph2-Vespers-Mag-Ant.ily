@@ -11,8 +11,8 @@ psalmnum = "Magnificat"
 frompitch = a
 topitch = a
 %% master transposition after accounting for psalm tone
-master-from-pitch = a
-master-to-pitch = a
+master-from-pitch = ges
+master-to-pitch = f
 
 
 text = \lyricmode {

@@ -7,27 +7,23 @@
 
 \score {
   \transpose \master-from-pitch \master-to-pitch {
-    \new Staff \with {
-      \omit TextScript instrumentName = \markup {
-        \center-column {
-          \bold { \line { Ant. \antiphon } }
-          \concat { #psalmtone } }
-      }
-    }
+    \new Staff 
     <<
-      \midi_instrument
-      \clef treble
+      %% \midi_instrument
+      \clef treble \antKeysig
       \accidentalStyle forget
       \new Voice = "Soprano" {
-        \sopNotesAnt
+        \mark \markup { \small \psalmtone } \global \oneVoice \sopNotesAnt
         \transpose \frompitch \topitch {
           \small \sopranoOneFlex
         }
       }
-      \new Lyrics \lyricsto Soprano \text
+      \new Lyrics \lyricsto Soprano { \override LyricText.font-size = \lyricsize
+                                      \text }
     >>
   }  
   \layout {
+    ragged-last = ##t
     \context {
       \Staff
       \remove Time_signature_engraver
