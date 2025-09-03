@@ -1,26 +1,36 @@
-%%%% Begin Ant1
-%% \lilypondfile[line-width=6.9in]{AB4-Vespers-1-Ant-Organ.ly}
-%% \null\medskip\lilypondfile[line-width=6.9in]{AB4-Vespers-1-Psalm-Organ.ly}
-%% \newpage
-%%%% End Ant1
+\opt{hymns}{\null\ifoddpage\null\else\null\newpage\fi}
+\opt{hymns}{\thispagestyle{officetitle}}
+\opt{hymns}{\section*{Wednesday Evening Prayer, Week II}}
+\addcontentsline{toc}{section}{Wednesday Evening Prayer}
+\sectionmark{Wednesday Evening Prayer}
+\opt{hymns}{\input{/home/ryan/scores/like-burning-incense/hymns/o-loving-maker-of-the-stars-organ.tex}}
+\opt{hymns}{\newpage}
 
+\lilypondfile[line-width=7.4in]{/home/ryan/scores/like-burning-incense/offices/ordinaryTime/B4-Vespers-1-Ant-Organ.ly}
 
-%%%% Begin Ant2
-%% \lilypondfile[line-width=6.9in]{AB4-Vespers-2-Ant-Organ.ly}
-%% \null\medskip\lilypondfile[line-width=6.9in]{AB4-Vespers-2-Psalm-Organ.ly}
-%% \newpage
-%%%% End Ant2
+\null\medskip\lilypondfile[line-width=7.4in]{/home/ryan/scores/like-burning-incense/offices/ordinaryTime/B4-Vespers-1-Psalm-Organ.ly}
 
+\newpage
 
-%%%% Begin Ant3
-%% \lilypondfile[line-width=6.9in]{AB4-Vespers-3-Ant-Organ.ly}
-%% \null\medskip\lilypondfile[line-width=6.9in]{AB4-Vespers-3-Psalm-Organ.ly}
-%% \newpage
-%%%% End Ant3
+\lilypondfile[line-width=7.4in]{/home/ryan/scores/like-burning-incense/offices/ordinaryTime/B4-Vespers-2-Ant-Organ.ly}
 
+\null\medskip\lilypondfile[line-width=7.4in]{/home/ryan/scores/like-burning-incense/offices/ordinaryTime/B4-Vespers-2-Psalm-Organ.ly}
+
+\newpage
+
+%% \renewcommand{\betweenLilyPondSystem}[1]{\vspace{4mm}\linebreak}
+
+\lilypondfile[line-width=7.4in]{/home/ryan/scores/like-burning-incense/offices/ordinaryTime/B4-Vespers-3-Ant-Organ.ly}
+
+\null\medskip\lilypondfile[line-width=7.4in]{/home/ryan/scores/like-burning-incense/offices/ordinaryTime/B4-Vespers-3-Psalm-Organ.ly}
+
+\newpage
+
+%% \renewcommand{\betweenLilyPondSystem}[1]{\vspace{5mm}\linebreak}
 
 %%%% Begin Ant4
-\lilypondfile[line-width=6.9in]{AB4-Vespers-Mag-Ant-Organ.ly}
-\null\medskip\lilypondfile[line-width=6.9in]{AB4-Vespers-Mag-Psalm-Organ.ly}
+\lilypondfile[line-width=7.4in]{AB4-Vespers-Mag-Ant-Organ.ly}
+
+\null\medskip\lilypondfile[line-width=7.4in]{AB4-Vespers-Mag-Psalm-Organ.ly}
 \newpage
 %%%% End Ant4

@@ -1,7 +1,7 @@
 \version "2.20.0"
 
 \include "../../lbi_defs.ily"
-\include "notes/A0-Vespers-2-Ant.ily"
+\include "/home/ryan/scores/like-burning-incense/offices/ordinaryTime/notes/A0-Vespers-2-Ant.ily"
 \include #(string-append "../../psalmtones/notes/" psalmtoneG "-notes.ily")
 
 

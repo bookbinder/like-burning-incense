@@ -2,7 +2,7 @@
 
 
 \include "../../lbi_defs.ily"
-\include "notes/A0-Vespers-1-Ant.ily"
+\include "/home/ryan/scores/like-burning-incense/offices/ordinaryTime/notes/A0-Vespers-1-Ant.ily"
 % \include "../../psalmtones/notes/39-notes.ily"
 \include #(string-append "../../psalmtones/notes/" psalmtone "-notes.ily")
 

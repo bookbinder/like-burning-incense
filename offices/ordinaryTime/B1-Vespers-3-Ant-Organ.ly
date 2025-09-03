@@ -1,7 +1,7 @@
 \version "2.20.0"
 
 \include "../../lbi_defs.ily"
-\include "notes/B1-Vespers-3-Ant.ily"
+\include "/home/ryan/scores/like-burning-incense/offices/ordinaryTime/notes/B1-Vespers-3-Ant.ily"
 
 
 \score {

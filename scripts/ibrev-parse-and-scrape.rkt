@@ -407,10 +407,10 @@ YEAR is the integer year"
 
 
 (create-files
- "/home/ryan/scores/like-burning-incense/offices/saintsAndSolemnities/0101_Mary,_Mother_of_God/"
- "1-Vespers"
+ "/home/ryan/scores/like-burning-incense/offices/saintsAndSolemnities/Baptism_of_the_Lord/"
+ "1-Lauds"
  1
- 1
+ 12
  2025)
 
 ;; (displayln (parse-ibrev-reading (file->string "test.html")))

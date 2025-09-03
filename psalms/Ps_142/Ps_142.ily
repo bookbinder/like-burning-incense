@@ -12,13 +12,9 @@ sopMusic = {
     \sopranoTwo
     \sopranoOne 
     \sopranoTwo
-    \sopranoOne 
-    \sopranoTwoFlex
-    \sopranoOne 
+    \sopranoOneFlex
     \sopranoTwo
-    \sopranoOne 
-    \sopranoTwo
-    \sopranoOne 
+    \mark "D.C."
 }
 altoMusic = {
     \global
@@ -29,13 +25,8 @@ altoMusic = {
     \altoTwo
     \altoOne 
     \altoTwo
-    \altoOne 
-    \altoTwoFlex
-    \altoOne 
+    \altoOneFlex
     \altoTwo
-    \altoOne 
-    \altoTwo
-    \altoOne 
 }
 tenorMusic = {
     \global
@@ -46,13 +37,8 @@ tenorMusic = {
     \tenorTwo
     \tenorOne 
     \tenorTwo
-    \tenorOne 
-    \tenorTwoFlex
-    \tenorOne 
+    \tenorOneFlex 
     \tenorTwo
-    \tenorOne 
-    \tenorTwo
-    \tenorOne 
 }
 bassMusic = {
     \global
@@ -63,13 +49,8 @@ bassMusic = {
     \bassTwo
     \bassOne 
     \bassTwo
-    \bassOne 
-    \bassTwoFlex
-    \bassOne 
+    \bassOneFlex 
     \bassTwo
-    \bassOne 
-    \bassTwo
-    \bassOne 
 }
 
 \score {
@@ -85,7 +66,7 @@ bassMusic = {
                         \new Voice = "Soprano" \sopMusic
                         \new Voice = "Alto" \altoMusic
                         \new Lyrics \lyricsto Soprano \text
-                        % \new Lyrics \lyricsto Soprano \textB
+                        \new Lyrics \lyricsto Soprano \textB
                         % \new Lyrics \lyricsto Soprano \textC
                     >>
                 \new Staff ="down"

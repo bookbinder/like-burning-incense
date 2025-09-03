@@ -22,7 +22,9 @@ text = \lyricmode {
   do you think he will find faith in men's hearts?
 }
 sopNotesAnt = \relative e' {
-  cis8 dis e[ dis] cis dis[ e] fis[ gis fis] e dis4
+  cis8 dis e[ dis] cis dis[ e] \allowBreak fis[ gis fis]
+  \allowBreak e
+  \allowBreak dis4
   \noBreak \noBreak \hideNotes dis16 \unHideNotes
   \allowBreak dis8
   \allowBreak e

@@ -2,7 +2,7 @@
 
 If you are just here for the PDF files, see 
 [this Google Drive link](
-https://drive.google.com/drive/folders/1ygq5PmqaLeVCf3xUOsLA-igjyIiH6In_?usp=sharing). Currently contains complete organ and cantor scores for Weeks 1-4 in Ordinary Time with Sunday Gospel Canticles for weeks 2-33, as well as psalm tones.
+https://drive.google.com/drive/folders/1ygq5PmqaLeVCf3xUOsLA-igjyIiH6In_?usp=sharing). Currently contains complete organ and cantor scores for Weeks 1-4 in Ordinary Time with Sunday Gospel Canticles for weeks 2-33.
 
 # Update: May 2025
 

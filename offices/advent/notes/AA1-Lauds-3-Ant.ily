@@ -25,8 +25,25 @@ text = \lyricmode {
 sopNotesAnt = \relative e' {
   r8 gis8 gis[ a] gis[ fis] fis4
   \noBreak \noBreak \hideNotes fis16 \unHideNotes
-  fis8 fis([ gis] a4) gis8 fis gis gis gis4 \bar ","
-  gis8 fis[ gis] fis e e e dis e fis4 e8 dis[ cis] cis4 \bar "||"
+  \allowBreak fis8
+  \allowBreak fis([ gis] a4)
+  \allowBreak gis8
+  \allowBreak fis
+  \allowBreak gis
+  \allowBreak gis
+  \allowBreak gis4 \bar ","
+  \allowBreak gis8
+  \allowBreak fis[ gis]
+  \allowBreak fis
+  \allowBreak e
+  \allowBreak e
+  \allowBreak e
+  \allowBreak dis
+  \allowBreak e
+  \allowBreak fis4
+  \allowBreak e8
+  \allowBreak dis[ cis]
+  \allowBreak cis4 \bar "||"
 }
 altoNotesAnt = \relative c' {
   e2 cis\breve*5/16 s16 e2. fis4 e4. cis4 cis2 b4~ b4. a4 gis4

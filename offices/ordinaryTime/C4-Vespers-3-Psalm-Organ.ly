@@ -5,7 +5,7 @@
 %% update
 
 % get variables from the notes file
-\include "notes/C4-Vespers-3-Ant.ily"
+\include "/home/ryan/scores/like-burning-incense/offices/ordinaryTime/notes/C4-Vespers-3-Ant.ily"
 
 % notes for the psalm tone:
 \include #(string-append "../../psalmtones/notes/" psalmtone "-notes.ily")

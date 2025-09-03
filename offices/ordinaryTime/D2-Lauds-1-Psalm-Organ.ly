@@ -5,7 +5,7 @@
 %% update
 
 % get variables from the notes file
-\include "notes/D2-Lauds-1-Ant.ily"
+\include "/home/ryan/scores/like-burning-incense/offices/ordinaryTime/notes/D2-Lauds-1-Ant.ily"
 
 % #(set-global-staff-size 14)
 

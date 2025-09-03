@@ -3,7 +3,7 @@
 \include "../../lbi_defs.ily"
 
 % get variables from the notes file
-\include "notes/A0-Vespers-1-Ant.ily"
+\include "/home/ryan/scores/like-burning-incense/offices/ordinaryTime/notes/A0-Vespers-1-Ant.ily"
 
 % notes for the psalm tone:
 \include #(string-append "../../psalmtones/notes/" psalmtone "-notes.ily")

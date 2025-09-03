@@ -4,7 +4,7 @@
 
 
 % get variables from notes file
-\include "notes/B4-Vespers-1-Ant.ily"
+\include "/home/ryan/scores/like-burning-incense/offices/ordinaryTime/notes/B4-Vespers-1-Ant.ily"
 
 
 
