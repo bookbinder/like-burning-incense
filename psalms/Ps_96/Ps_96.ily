@@ -85,6 +85,7 @@ bassMusic = {
     >>
 
     \layout {
+      #(layout-set-staff-size 15)
         indent = 0.5\in
         \context {
             \Staff

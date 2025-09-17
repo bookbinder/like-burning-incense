@@ -104,7 +104,7 @@ bassMusic = {
     { 
       ragged-last = ##t
       indent = 0.5\in
-      #(layout-set-staff-size 15)
+      #(layout-set-staff-size 14)
       \context 
       { 
         \Staff 

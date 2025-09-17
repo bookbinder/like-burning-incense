@@ -15,3 +15,5 @@
 
 % psalm/canticle score
 \include #(string-append "../../psalms/" psalmnum "/" psalmnum ".ily")
+
+%%

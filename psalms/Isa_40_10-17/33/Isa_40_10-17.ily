@@ -25,13 +25,7 @@ text = \lyricmode {
     \ll "Whom did he consult to gain" knowledge?
     \ll "Who taught him the path" of judgment,
     \ll "or showed him the way of un" -- der -- standing?
-    
-    \ll "Behold, the nations count as a drop of the" bucket,
-    \ll "as dust on" the scales;
-    \ll "the coastlands weigh no more" than powder.
-    
-    \ll "Lebanon would not suffice" for fuel,
-    \ll "nor its animals be enough" for holocausts.
+
 }
 textB = \lyricmode {
 %    \override InstrumentName #'X-offset = #4
@@ -40,6 +34,13 @@ textB = \lyricmode {
     \set stanza = # "2. "
 %    \set shortVocalName = "2."
     \set includeGraceNotes = ##t
+        
+    \ll "Behold, the nations count as a drop of the" bucket,
+    \ll "as dust on" the scales;
+    \ll "the coastlands weigh no more" than powder.
+    
+    \ll "Lebanon would not suffice" for fuel,
+    \ll "nor its animals be enough" for holocausts.
     \ll "Before him all the nations are" as nought,
     \ll "as nothing and void he" ac -- \ll "counts them."
     

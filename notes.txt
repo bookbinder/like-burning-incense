@@ -6,3 +6,5 @@ ADVENT Week 1 Friday Evening Prayer missing
 ADVENT WEEK 3 Saturday morning prayer missing
 ADVENT WEEK 4 Sunday Lauds -- no Benedictus, or do we always use the dec17-24 Benedictus?
 Should psalm tone 34 be transposed up or down a half step?
+
+advent week 2 wednesday magnificat: match key signature of antiphon and psalm tone

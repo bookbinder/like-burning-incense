@@ -91,7 +91,7 @@ bassMusic = {
 
     \layout {
         indent = 0.5\in
-      % #(layout-set-staff-size 14)
+      #(layout-set-staff-size 15)
         \context {
             \Staff
             \remove Time_signature_engraver

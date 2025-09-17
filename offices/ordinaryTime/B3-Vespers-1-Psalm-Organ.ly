@@ -6,7 +6,7 @@
 \include "/home/ryan/scores/like-burning-incense/offices/ordinaryTime/notes/B3-Vespers-1-Ant.ily"
 
 % notes for the psalm tone:
-\include #(string-append "../../psalmtones/notes/" psalmtone "-notes.ily")
+\include #(string-append "../../psalmtones/notes/" "34-diff" "-notes.ily")
 
 % psalm/canticle text
 \include #(string-append "../../psalms/" psalmnum "/" toneStruct "/" psalmnum ".ily")

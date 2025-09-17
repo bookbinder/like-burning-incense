@@ -4,7 +4,7 @@
 antiphon = "1"
 psalmtone = "48"
 antKeysig = \key f \minor
-psalmnum = "Ps_87"
+psalmnum = "Ps_132_1-10"
 % transposition interval for the corresponding psalm tone
 % to match the key signature of this antiphon. For
 % use in in cantor (antiphon) and organ (psalm) scores

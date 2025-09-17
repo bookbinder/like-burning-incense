@@ -3,7 +3,7 @@
 % Will need these variables to build the cantor and organ scores:
 antKeysig =  \key aes \major
 antiphon = "B"
-psalmtone = "27"
+psalmtone = "26"
 psalmtonestruct = "33"
 psalmnum = "Benedictus"
 % transposition interval for the corresponding psalm tone

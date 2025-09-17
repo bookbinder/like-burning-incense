@@ -6,59 +6,51 @@
 sopMusic = {
     \global
     \voiceOne
-    \sopranoOne 
-    \sopranoTwo
-    \sopranoOne 
-    \sopranoTwo
-    \sopranoOne 
-    \sopranoTwoFlex
-    \sopranoOne 
-    \sopranoTwoFlex
     \sopranoOneFlex
     \sopranoTwo
+    \sopranoOne 
+    \sopranoTwo
+    \sopranoOne 
+    \sopranoTwoFlex
+    \sopranoOne 
+    \sopranoTwoFlex
     \mark \markup {"D.C."}
 }
 altoMusic = {
     \global
     \voiceTwo
-    \altoOne 
-    \altoTwo
-    \altoOne 
-    \altoTwo
-    \altoOne 
-    \altoTwoFlex
-    \altoOne 
-    \altoTwoFlex
     \altoOneFlex
     \altoTwo
+    \altoOne 
+    \altoTwo
+    \altoOne 
+    \altoTwoFlex
+    \altoOne 
+    \altoTwoFlex
 }
 tenorMusic = {
     \global
     \voiceOne
-    \tenorOne 
-    \tenorTwo
-    \tenorOne 
-    \tenorTwo
-    \tenorOne 
-    \tenorTwoFlex
-    \tenorOne 
-    \tenorTwoFlex
     \tenorOneFlex
     \tenorTwo
+    \tenorOne 
+    \tenorTwo
+    \tenorOne 
+    \tenorTwoFlex
+    \tenorOne 
+    \tenorTwoFlex
 }
 bassMusic = {
     \global
     \voiceTwo
-    \bassOne 
-    \bassTwo
-    \bassOne 
-    \bassTwo
-    \bassOne 
-    \bassTwoFlex
-    \bassOne 
-    \bassTwoFlex
     \bassOneFlex
     \bassTwo
+    \bassOne 
+    \bassTwo
+    \bassOne 
+    \bassTwoFlex
+    \bassOne 
+    \bassTwoFlex
 }
 
 \score {

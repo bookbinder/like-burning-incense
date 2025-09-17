@@ -2,17 +2,17 @@
 
 % Will need these variables to build the cantor and organ scores:
 antiphon = "M"
-psalmtone = "40"
+psalmtone = "60"
 antKeysig = \key ges \major
 psalmnum = "Magnificat"
 % transposition interval for the corresponding psalm tone
 % to match the key signature of this antiphon. For
 % use in in cantor (antiphon) and organ (psalm) scores
 frompitch = a
-topitch = aes
+topitch = a
 %% master transposition after accounting for psalm tone
-master-from-pitch = aes
-master-to-pitch = g
+master-from-pitch = ges
+master-to-pitch = f
 
 
 text = \lyricmode {
@@ -46,7 +46,7 @@ sopNotesAnt = \relative e' {
   \allowBreak ees4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-  des4~ des4.~ s16
+  des4~^"Different psalm tone. Does it work?" des4.~ s16
   des2~ des4. ees2 r4 bes\breve*5/16
   ces2 bes4
 }
