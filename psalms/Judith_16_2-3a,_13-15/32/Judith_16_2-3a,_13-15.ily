@@ -4,9 +4,9 @@ text = \lyricmode {
 %    \set stanza = # "1. "
 %    \set shortVocalName = "1."
     \set includeGraceNotes = ##t
-    \ll "Strike up" the instruments,
-    \ll "a song to my God with" timbrels,
-    \ll "chant to the Lord with cym" -- bals;
+    \ll "Strike up the instru" -- ments,
+    \ll "a song to my God" with timbrels,
+    \ll "chant to the Lord with" cymbals;
     \ll "Sing to him a" new song,
     \ll "exalt and acclaim his" name.
 
