@@ -2,7 +2,7 @@
 
 % Will need these variables to build the cantor and organ scores:
 antiphon = "M"
-psalmtone = "2"
+psalmtone = "7"
 antKeysig = \key c \major
 psalmnum = "Magnificat"
 % transposition interval for the corresponding psalm tone
@@ -17,42 +17,44 @@ master-to-pitch = a
 
 text = \lyricmode {
   \set includeGraceNotes = ##t
-  The one who o -- beys God's law
+  By my -- self, says the Lord,
   \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
-  and teach -- es oth -- ers to do so will be great
-  in the king -- dom of heav -- en.
+  I can do noth -- ing. I judge as I am told to judge,
+  and my sen -- tence is just.
 }
 sopNotesAnt = \relative e' {
-  r8 g8 g4 e8 f g[ c] b[ a] a4
+  g8 g g([ f] d4) d8[ f] g a4( g)
   \noBreak \hideNotes g16 \unHideNotes
-  \allowBreak g8
-  \allowBreak a4
-  \allowBreak g8
-  \allowBreak f
-  \allowBreak g
+  \allowBreak g4
+  \allowBreak f8
   \allowBreak a
-  \allowBreak a[ g]
+  \allowBreak g4
+  \allowBreak g \bar "|"
+  \allowBreak r8
+  \allowBreak g8
+  \allowBreak b([ c] a4)
+  \allowBreak a8
+  \allowBreak b
+  \allowBreak a
+  \allowBreak g[ a]
+  \allowBreak g
   \allowBreak g4 \bar "'"
-  \allowBreak g8[ a]
+  \allowBreak f8
   \allowBreak g
-  \allowBreak f([ a] c4)
-  \allowBreak b8
-  \allowBreak c
-  \allowBreak a[ b]
+  \allowBreak a([ b] a4)
+  \allowBreak a8
   \allowBreak a
-  \allowBreak a
-  \allowBreak a[ g]
   \allowBreak g4 \bar "||"
 }
 altoNotesAnt = \relative c' {
-  s\breve*8/16 f\breve*5/16~ s16 f\breve*6/16 e\breve*7/16
-  f\breve*6/16~ 2 d
+  s4 d\breve*7/16 e2 s16 r4 f4 d2 e\breve*9/16~
+  \breve*7/16 f2. d4
 }
 tenorNotesAnt = \relative g {
-  c\breve*8/16~ \breve*5/16~ s16 c\breve*6/16~ \breve*7/16~
-  \breve*6/16~ 2~ 4 b
+  c4 a\breve*7/16 c2~ s16 c2~ 4 b a\breve*9/16
+  c\breve*7/16~ 2. b4
 }
 bassNotesAnt = \relative c {
-  e\breve*8/16 f\breve*5/16 s16 d\breve*6/16 c\breve*7/16
-  d\breve*6/16 f2 g
+  e4 f\breve*7/16 c2 s16 d2 g c,\breve*9/16~
+  \breve*7/16 f2. g4
 }

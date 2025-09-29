@@ -2,8 +2,8 @@
 
 % Will need these variables to build the cantor and organ scores:
 antiphon = "B"
-psalmtone = "9"
-antKeysig = \key e \major
+psalmtone = "22"
+antKeysig = \key aes \major
 psalmnum = "Benedictus"
 % transposition interval for the corresponding psalm tone
 % to match the key signature of this antiphon. For
@@ -17,56 +17,36 @@ master-to-pitch = a
 
 text = \lyricmode {
   \set includeGraceNotes = ##t
-  The Lord said:
+  Who -- ev -- er hears my words, says the Lord,
   \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
-  Do not think that I have come to a -- bol -- ish the law and
-  the pro -- phets: I have come not to a -- bol -- ish but to ful -- fill
-  them.
+  and be -- lieves in him who sent me, has e -- ter -- nal life.
 }
 sopNotesAnt = \relative e' {
-  r8 gis8 gis[ fis] fis4( e)
-  \noBreak \hideNotes e16 \unHideNotes
-  \allowBreak e8
-  \allowBreak gis4
-  \allowBreak gis8
-  \allowBreak fis
-  \allowBreak fis[ gis]
-  \allowBreak fis
-  \allowBreak fis4
-  \allowBreak fis8
-  \allowBreak gis
-  \allowBreak a
-  \allowBreak gis
-  \allowBreak fis
-  \allowBreak fis[ a]
-  \allowBreak gis
-  \allowBreak a
-  \allowBreak b[ gis]
-  \allowBreak gis4
-  \allowBreak r4 \bar "|"
-  \allowBreak e8
-  \allowBreak e
-  \allowBreak fis[ gis]
-  \allowBreak fis4
-  \allowBreak fis8
-  \allowBreak gis
-  \allowBreak a[ gis fis]
-  \allowBreak fis4
-  \allowBreak fis8
-  \allowBreak fis
-  \allowBreak gis
-  \allowBreak e4
-  \allowBreak e \bar "||"
+  r8 aes8 aes f aes[ bes c] bes bes[ c] bes bes bes4( aes)
+  \noBreak \hideNotes aes16 \unHideNotes
+  \allowBreak aes8
+  \allowBreak aes
+  \allowBreak g[ aes]
+  \allowBreak f
+  \allowBreak f4
+  \allowBreak ees8
+  \allowBreak f[ ees des]
+  \allowBreak des4 \bar "'"
+  \allowBreak des8
+  \allowBreak des
+  \allowBreak ees([ f] ees4)
+  \allowBreak ees8
+  \allowBreak f([ ees] des4) \bar "||"
 }
 altoNotesAnt = \relative c' {
-  b2^"Different psalm tone. Does it work?" gis\breve*5/16 s16 b2 cis\breve*10/16~ cis2
-  e2.~ 4 cis\breve*12/16~ 4 b2
+  f2 ees f des2.~ s16 des2.
+  c4. bes2 aes\breve*5/16 aes2
 }
 tenorNotesAnt = \relative g {
-  e2~ \breve*5/16~ s16 e2~ \breve*10/16 a2
-  gis4 b2~ 4 a\breve*12/16~ 4~ 4 gis
+  des'2 c des f,2. s16 bes4. aes4.~
+  4. f2 ees\breve*5/16 des4( f)
 }
 bassNotesAnt = \relative c {
-  e2~ \breve*5/16 s16 e,2 a\breve*10/16~ 2
-  e'2. gis4 a\breve*12/16 a,4 e'2
+  s2 s2 s2 des2.~ s16 des2.
+  aes4. bes2 c\breve*5/16 des2
 }
