@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 \include "/home/ryan/scores/like-burning-incense/lbi_defs_cantor.ily"
-\include "notes/HolyWeekTues-Lauds-3-Ant.ily"
+\include "notes/HolyWeekTues-Vespers-3-Ant.ily"
 \include #(string-append "/home/ryan/scores/like-burning-incense/psalmtones/notes/" psalmtone "-notes.ily")
 
 
@@ -15,6 +15,7 @@
     \new Staff
     <<
       \clef treble
+          \antKeysig
       \accidentalStyle forget
       \new Voice = "Soprano" {
         \oneVoice \sopNotesAnt

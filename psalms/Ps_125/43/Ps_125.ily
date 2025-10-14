@@ -9,7 +9,7 @@ text = \lyricmode {
     \ll "that stands" for ever.
 
     \ll "Jerusalem! The mountains surround" her,
-    \ll "so the Lord sur" rounds his people
+    \ll "so the Lord sur" -- rounds his people
     \ll "both now and" for ever.
         
     \ll "For the scepter of the wicked" shall not rest

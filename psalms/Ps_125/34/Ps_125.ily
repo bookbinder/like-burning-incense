@@ -3,16 +3,29 @@ text = \lyricmode {
 %     \override InstrumentName #'font-series = #'bold
 %     \set stanza = # "1. "
 %     \set shortVocalName = "1."
-%     \set includeGraceNotes = ##t
-%     \ll "How lovely is your" dwell -- ing place,
-%     etc.
+    \set includeGraceNotes = ##t
+    \ll "Those who put their trust in the" Lord
+    \ll "are like Mount Zion, that cannot" be shaken,
+    \ll "that" stands for ever.
+
+    \ll "Jerusalem! The mountains surround" her,
+    \ll "so the Lord surrounds" his people
+    \ll "both now" and for ever.
+        
+    \ll "For the scepter of the wicked shall" not rest
+    \ll "over the land" of the just
+    \ll "for fear that the hands of" the just
+    \ll "should" turn to evil.
+        
+    \ll "Do good, Lord, to those who" are good,
+    \ll "to the up" -- right of heart;
+    \ll "but the crooked and those who do" evil,
+    \ll "drive them" a -- way!
+
+    \ll "On Is" -- ra -- el, peace!
+
+    \ll "Glory to the Father and to" the Son,
+    \ll "and to the" Ho -- ly Spirit:
+    \ll "as it was in the beginning," is now,
+    \ll "and will be fore" -- ver. A -- men.
 }
-% textB = \lyricmode {
-%     \override InstrumentName #'X-offset = #4
-%     \override InstrumentName #'font-series = #'bold	
-%     \set includeGraceNotes = ##t
-%     \set stanza = # "2. "
-%     \set shortVocalName = "2."
-%     \set includeGraceNotes = ##t
-%     \ll "The Lord will not refuse" an -- y good
-% }

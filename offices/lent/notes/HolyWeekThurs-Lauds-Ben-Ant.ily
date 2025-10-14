@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 % Will need these variables to build the cantor and organ scores:
-antKeysig = \key gis \minor
+antKeysig = \key cis \minor
 antiphon = "B"
 psalmtone = "39"
 psalmtonestruct = "43"

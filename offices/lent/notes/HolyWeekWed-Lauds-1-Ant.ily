@@ -34,8 +34,7 @@ sopNotesAnt = \relative e' {
     \allowBreak fis8
     \allowBreak e([ fis] e4)
     \allowBreak e8
-    \allowBreak e[ dis]
-    \allowBreak dis4 \bar "||"
+    \allowBreak e[ dis] dis4 \bar "||"
 }
 altoNotesAnt = \relative c' {
     gis\breve*12/16 s16 dis'\breve*5/16 cis4.~ cis\breve*5/16 b2

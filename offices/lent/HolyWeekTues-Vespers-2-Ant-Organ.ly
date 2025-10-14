@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 \include "/home/ryan/scores/like-burning-incense/lbi_defs.ily"
-\include "notes/HolyWeekTues-Lauds-2-Ant.ily"
+\include "notes/HolyWeekTues-Vespers-2-Ant.ily"
 \include #(string-append "/home/ryan/scores/like-burning-incense/psalmtones/notes/" psalmtone "-notes.ily")
 
 
@@ -20,18 +20,20 @@
         <<
           \midi_instrument
           \clef treble
+          \antKeysig
           \accidentalStyle forget
-          \new Voice = "Soprano" { \voiceOne \sopNotesAnt }
-          \new Voice = "Alto" { \voiceTwo \altoNotesAnt }
+          \new Voice = "Soprano" { \voiceOne \global \sopNotesAnt }
+          \new Voice = "Alto" { \voiceTwo \global \altoNotesAnt }
           \new Lyrics \lyricsto Soprano \text
         >>
         \new Staff = "down"
         <<
           \midi_instrument
           \clef bass
+          \antKeysig
           \accidentalStyle forget
-          \new Voice = "Tenor" { \voiceThree \tenorNotesAnt }
-          \new Voice = "Bass" { \voiceFour \bassNotesAnt }
+          \new Voice = "Tenor" { \voiceThree \global \tenorNotesAnt }
+          \new Voice = "Bass" { \voiceFour \global \bassNotesAnt }
         >>
       >>
     >>

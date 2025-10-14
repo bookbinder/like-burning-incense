@@ -1,0 +1,50 @@
+\version "2.24.0"
+
+% Will need these variables to build the cantor and organ scores:
+antiphon = "2"
+psalmtone = "16"
+antKeysig = \key e \major
+psalmnum = "Ps_45_11-18"
+% transposition interval for the corresponding psalm tone
+% to match the key signature of this antiphon. For
+% use in in cantor (antiphon) and organ (psalm) scores
+frompitch = a
+topitch = gis
+%% master transposition after accounting for psalm tone
+master-from-pitch = a
+master-to-pitch = a
+
+
+text = \lyricmode {
+  \set includeGraceNotes = ##t
+  I will en -- trust all peo -- ple to his care,
+  \markup { \tiny \raise #.5 \char ##x1F7B6 " "}
+  for he has giv -- en him -- self up to death for all.
+}
+sopNotesAnt = \relative e' {
+  e8 fis gis gis4 fis8([-- gis] a4) a8 a gis fis e4
+  \noBreak \hideNotes g16 \unHideNotes
+  \allowBreak e8
+  \allowBreak dis
+  \allowBreak e
+  \allowBreak cis
+  \allowBreak dis
+  \allowBreak cis
+  \allowBreak b[ e]
+  \allowBreak e
+  \allowBreak fis
+  \allowBreak fis[-- gis a gis]
+  \allowBreak fis
+  \allowBreak e4 \bar "||"
+}
+altoNotesAnt = \relative c' {
+  e\breve*5/16~ \breve*8/16~ 4. s16 s4 s4.
+  b2 cis\breve*5/16 gis4
+}
+tenorNotesAnt = \relative g {
+  gis\breve*5/16 cis\breve*8/16 b4 s16 a4 gis4.
+  e2~ \breve*5/16~ 4
+}
+bassNotesAnt = \relative c {
+  
+}

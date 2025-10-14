@@ -71,7 +71,12 @@ tenorNotesAnt = \relative g {
     aes4~ aes4~ aes\breve*7/16~ aes\breve*5/16~ aes4. f2 bes aes4 g
 }
 bassNotesAnt = \relative c {
-    c4 f2 ees2 s16 g,\breve*10/16 c4 des4. ees2.
+  c4 f2 ees2~
+  s16
+  << { \hideNotes \once \override NoteColumn.force-hshift = 0
+       ees\breve*10/16 \unHideNotes }
+     \new Voice { \voiceTwo g,\breve*10/16 } >>
+  c4 des4. ees2.
     aes,4 des4 bes\breve*7/16 c\breve*5/16 des4.~
     des2~ des2. ees4
 }

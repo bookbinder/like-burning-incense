@@ -20,6 +20,7 @@
         <<
           \clef treble
           \antKeysig
+          \antKeysig
           \accidentalStyle forget
           \new Voice = "Soprano" { \voiceOne \global \sopNotesAnt }
           \new Voice = "Alto" { \voiceTwo \global \altoNotesAnt }
@@ -28,6 +29,7 @@
         \new Staff = "down"
         <<
           \clef bass
+          \antKeysig
           \antKeysig
           \accidentalStyle forget
           \new Voice = "Tenor" { \voiceThree \global \tenorNotesAnt }

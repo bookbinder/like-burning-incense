@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 % Will need these variables to build the cantor and organ scores:
-antKeysig = \key gis \minor
+antKeysig = \key cis \minor
 antiphon = "B"
 psalmtone = "56"
 psalmtonestruct = "43"
@@ -12,7 +12,7 @@ psalmnum = "Benedictus"
 frompitch = a
 topitch = gis
 %% master transposition after accounting for psalm tone
-master-from-pitch = ais
+master-from-pitch = a
 master-to-pitch = a
 
 

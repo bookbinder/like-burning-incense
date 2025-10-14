@@ -15,6 +15,7 @@
     \new Staff  %\with { instrumentName = "56" }
     <<
       \clef treble
+          \antKeysig
       \accidentalStyle forget
       \new Voice = "Soprano" {
         \oneVoice \mark \markup {\small \psalmtone}
