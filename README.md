@@ -6,7 +6,7 @@ https://drive.google.com/drive/folders/1ygq5PmqaLeVCf3xUOsLA-igjyIiH6In_?usp=sha
 
 # Update: November 2025
 
-Because a new translation of the Breviary coming out soon, I have paused work on this project.
+Because a new translation of the Breviary is coming out soon, I have paused work on this project.
 
 # Update: May 2025
 
